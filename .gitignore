@@ -1,0 +1,8 @@
+.DS_Store
+node_modules
+*~
+*.pyc
+build/
+*.log*
+chrome-user-data
+.vscode
