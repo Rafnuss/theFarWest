@@ -4,8 +4,9 @@ import "bootstrap";
 import "mapbox-gl/dist/mapbox-gl.css";
 import mapboxgl from "mapbox-gl";
 import * as turf from "@turf/turf";
-import region_geojson from "./assets/region_geojson.json";
-import region from "./assets/region_info.json";
+import polyUtil from "polyline-encoded";
+
+import regions from "./assets/regions.json";
 </script>
 
 <template>
@@ -16,12 +17,12 @@ import region from "./assets/region_info.json";
       </div>
       <div class="col col-xs-12 md-6 col-lg-4">
         <ul class="nav nav-pills nav-justified">
-          <li class="nav-item" v-for="v in ['Current', 'Past']" :key="v">
+          <li class="nav-item" v-for="v in ['Plan', 'Live']" :key="v">
             <a class="nav-link" :class="view == v ? 'active' : ''" href="#" @click="view = v">{{ v }}</a>
           </li>
         </ul>
         <div class="row">
-          <div class="col" v-if="view == 'Current'">
+          <div class="col" v-if="view == 'Live'">
             <div class="card">
               <img src="..." class="card-img-top" alt="..." />
               <div class="card-body">
@@ -36,9 +37,7 @@ import region from "./assets/region_info.json";
               </div>
             </div>
           </div>
-          <div class="col" v-if="view == 'Past'">
-            {{ region.filter((e) => e.region == hoveredStateId) }}
-          </div>
+          <div class="col" v-if="view == 'Plan'"></div>
         </div>
       </div>
     </div>
@@ -52,7 +51,7 @@ export default {
       accessToken: "pk.eyJ1IjoicmFmbnVzcyIsImEiOiIzMVE1dnc0In0.3FNMKIlQ_afYktqki-6m0g",
       map: null,
       hoveredStateId: null,
-      view: "Current",
+      view: "Plan",
     };
   },
   methods: {},
@@ -62,7 +61,7 @@ export default {
     let map = new mapboxgl.Map({
       container: "mapContainer",
       style: "mapbox://styles/mapbox/streets-v11",
-      bounds: turf.bbox(region_geojson),
+      bounds: [-180, -90, 180, 90], //turf.bbox(region_geojson),
       projection: "globe",
     });
     map.addControl(new mapboxgl.NavigationControl());
@@ -77,7 +76,51 @@ export default {
       source: "mapbox-dem",
       exaggeration: 5,
     });
-    map.addSource("region_geojson", {
+
+    regions.forEach((r) => {
+      if (r.route) {
+        console.log(polyUtil.decode(r.route));
+        map.addSource("route-" + r.region, {
+          type: "geojson",
+          data: {
+            type: "FeatureCollection",
+            features: [
+              {
+                type: "Feature",
+                geometry: {
+                  type: "LineString",
+                  coordinates: polyUtil.decode(r.route).map((c) => [c[1], c[0]]),
+                },
+              },
+            ],
+          },
+        });
+        map.addLayer({
+          id: "route-" + r.region,
+          type: "line",
+          source: "route-" + r.region,
+          layout: {
+            "line-cap": "round",
+            "line-join": "round",
+          },
+          paint: {
+            "line-color": "#ed6498",
+            "line-width": 5,
+            "line-opacity": 0.8,
+          },
+        });
+      }
+
+      r.highlights.forEach((h) => {
+        new mapboxgl.Marker({
+          color: r.color,
+        })
+          .setLngLat([h.lat, h.lon])
+          .addTo(map);
+      });
+    });
+
+    /*map.addSource("region_geojson", {
       type: "geojson",
       promoteId: "region",
       data: region_geojson,
@@ -108,7 +151,7 @@ export default {
       }
       this.hoveredStateId = null;
     });
-
+*/
     const size = 150;
     const pulsingDot = {
       width: size,
