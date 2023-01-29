@@ -31,54 +31,132 @@ export default {
   async mounted() {
     mapboxgl.accessToken = this.accessToken;
 
-    this.map = new mapboxgl.Map({
+    let map = new mapboxgl.Map({
       container: "mapContainer",
       style: "mapbox://styles/mapbox/streets-v11",
       bounds: turf.bbox(region_geojson),
       projection: "globe",
     });
-    this.map.addControl(new mapboxgl.NavigationControl());
+    map.addControl(new mapboxgl.NavigationControl());
 
-    await this.map.once("style.load");
-    this.map.setFog({});
-    this.map.addSource("mapbox-dem", {
+    await map.once("style.load");
+    map.setFog({});
+    map.addSource("mapbox-dem", {
       type: "raster-dem",
       url: "mapbox://mapbox.terrain-rgb",
     });
-    this.map.setTerrain({
+    map.setTerrain({
       source: "mapbox-dem",
       exaggeration: 5,
     });
-    this.map.addSource("region_geojson", {
+    map.addSource("region_geojson", {
       type: "geojson",
       promoteId: "region",
       data: region_geojson,
     });
-    this.map.addLayer({
+    map.addLayer({
       id: "region_geojson",
       type: "fill",
-      source: "region_geojson", // reference the data source
+      source: "region_geojson",
       layout: {},
       paint: {
-        "fill-color": "#0080ff", // blue color fill
+        "fill-color": "#0080ff",
         "fill-opacity": ["case", ["boolean", ["feature-state", "hover"], false], 1, 0.5],
       },
     });
 
-    this.map.on("mousemove", "region_geojson", (e) => {
+    map.on("mousemove", "region_geojson", (e) => {
       if (e.features.length > 0) {
         if (this.hoveredStateId !== null) {
-          this.map.setFeatureState({ source: "region_geojson", id: this.hoveredStateId }, { hover: false });
+          map.setFeatureState({ source: "region_geojson", id: this.hoveredStateId }, { hover: false });
         }
         this.hoveredStateId = e.features[0].id;
-        this.map.setFeatureState({ source: "region_geojson", id: this.hoveredStateId }, { hover: true });
+        map.setFeatureState({ source: "region_geojson", id: this.hoveredStateId }, { hover: true });
       }
     });
-    this.map.on("mouseleave", "region_geojson", () => {
+    map.on("mouseleave", "region_geojson", () => {
       if (this.hoveredStateId !== null) {
-        this.map.setFeatureState({ source: "region_geojson", id: this.hoveredStateId }, { hover: false });
+        map.setFeatureState({ source: "region_geojson", id: this.hoveredStateId }, { hover: false });
       }
       this.hoveredStateId = null;
+    });
+
+    const size = 150;
+    const pulsingDot = {
+      width: size,
+      height: size,
+      data: new Uint8Array(size * size * 4),
+
+      // When the layer is added to the map,
+      // get the rendering context for the map canvas.
+      onAdd: function () {
+        const canvas = document.createElement("canvas");
+        canvas.width = this.width;
+        canvas.height = this.height;
+        this.context = canvas.getContext("2d");
+      },
+
+      // Call once before every frame where the icon will be used.
+      render: function () {
+        const duration = 1000;
+        const t = (performance.now() % duration) / duration;
+
+        const radius = (size / 2) * 0.3;
+        const outerRadius = (size / 2) * 0.7 * t + radius;
+        const context = this.context;
+
+        // Draw the outer circle.
+        context.clearRect(0, 0, this.width, this.height);
+        context.beginPath();
+        context.arc(this.width / 2, this.height / 2, outerRadius, 0, Math.PI * 2);
+        context.fillStyle = `rgba(255, 200, 200, ${1 - t})`;
+        context.fill();
+
+        // Draw the inner circle.
+        context.beginPath();
+        context.arc(this.width / 2, this.height / 2, radius, 0, Math.PI * 2);
+        context.fillStyle = "rgba(255, 100, 100, 1)";
+        context.strokeStyle = "white";
+        context.lineWidth = 2 + 4 * (1 - t);
+        context.fill();
+        context.stroke();
+
+        // Update this image's data with data from the canvas.
+        this.data = context.getImageData(0, 0, this.width, this.height).data;
+
+        // Continuously repaint the map, resulting
+        // in the smooth animation of the dot.
+        map.triggerRepaint();
+
+        // Return `true` to let the map know that the image was updated.
+        return true;
+      },
+    };
+
+    map.addImage("pulsing-dot", pulsingDot, { pixelRatio: 2 });
+
+    map.addSource("dot-point", {
+      type: "geojson",
+      data: {
+        type: "FeatureCollection",
+        features: [
+          {
+            type: "Feature",
+            geometry: {
+              type: "Point",
+              coordinates: [-76.450331, 42.472841], // icon position [lng, lat]
+            },
+          },
+        ],
+      },
+    });
+    map.addLayer({
+      id: "layer-with-pulsing-dot",
+      type: "symbol",
+      source: "dot-point",
+      layout: {
+        "icon-image": "pulsing-dot",
+      },
     });
   },
 };
