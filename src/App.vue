@@ -14,7 +14,33 @@ import region from "./assets/region_info.json";
       <div class="col h-100">
         <div id="mapContainer" class="h-100"></div>
       </div>
-      <div class="col col-xs-12 md-6 col-lg-4">{{ hoveredStateId }}</div>
+      <div class="col col-xs-12 md-6 col-lg-4">
+        <ul class="nav nav-pills nav-justified">
+          <li class="nav-item" v-for="v in ['Current', 'Past']" :key="v">
+            <a class="nav-link" :class="view == v ? 'active' : ''" href="#" @click="view = v">{{ v }}</a>
+          </li>
+        </ul>
+        <div class="row">
+          <div class="col" v-if="view == 'Current'">
+            <div class="card">
+              <img src="..." class="card-img-top" alt="..." />
+              <div class="card-body">
+                <h5 class="card-title">Card title</h5>
+                <p class="card-text">
+                  Some quick example text to build on the card title and make up the bulk of the card's content.
+                </p>
+              </div>
+              <div class="card-body">
+                <a href="#" class="card-link">Card link</a>
+                <a href="#" class="card-link">Another link</a>
+              </div>
+            </div>
+          </div>
+          <div class="col" v-if="view == 'Past'">
+            {{ region.filter((e) => e.region == hoveredStateId) }}
+          </div>
+        </div>
+      </div>
     </div>
   </div>
 </template>
@@ -26,6 +52,7 @@ export default {
       accessToken: "pk.eyJ1IjoicmFmbnVzcyIsImEiOiIzMVE1dnc0In0.3FNMKIlQ_afYktqki-6m0g",
       map: null,
       hoveredStateId: null,
+      view: "Current",
     };
   },
   methods: {},
