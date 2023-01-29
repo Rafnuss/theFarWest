@@ -1,0 +1,107 @@
+[
+    {
+        "region": "midwest",
+        "name": "Mid West",
+        "start_date": "31-Mar",
+        "color": "",
+        "highlights": [
+            {
+                "lat": "-76.5018807",
+                "lon": "42.4439614",
+                "region": "midwest",
+                "name": "Ithaca",
+                "text": "<p>thsi <strong>there</strong><p>",
+                "phot_url": "./assets/photos/1.png",
+                "date": "4/8/23"
+            },
+            {
+                "lat": "-79.8711024",
+                "lon": "43.2557206",
+                "region": "midwest",
+                "name": "Hamilton",
+                "text": "",
+                "phot_url": "",
+                "date": ""
+            },
+            {
+                "lat": "-86.8015683",
+                "lon": "40.1627906",
+                "region": "midwest",
+                "name": "Lye Creek",
+                "text": "",
+                "phot_url": "",
+                "date": ""
+            },
+            {
+                "lat": "-90.19940419999999",
+                "lon": "38.6270025",
+                "region": "midwest",
+                "name": "St. Louis",
+                "text": "",
+                "phot_url": "",
+                "date": ""
+            },
+            {
+                "lat": "-95.2344983",
+                "lon": "38.92012",
+                "region": "midwest",
+                "name": "Baker Wetlands",
+                "text": "",
+                "phot_url": "",
+                "date": ""
+            },
+            {
+                "lat": "-101.0192308",
+                "lon": "38.8894633",
+                "region": "midwest",
+                "name": "Smoky Valley Ranch",
+                "text": "",
+                "phot_url": "",
+                "date": ""
+            }
+        ],
+        "route": "wy`bGdx|qMejNpeJuyKb}U_iOhzJa|PthEaTtqKwjF~_AodM|{@akGhcDyaF~c[spBv`OugBp|i@_bG`ud@qx@fce@fwCtycBp_L~c|AsxBnoKgmE`bJfsAruNcnCxbJqxGrtCufJbs@kxFtzK}GleRoqJhqzA{oIlq[_wKxfJnlFtgHdsBly@x}BkmB`iEz_Op`D`_QxkE`ga@vsJn~cBvoOnhVvzIff[rzErkd@lzPvjPne\\nxg@hvOvt[p{FzmQ`zMhf\\tiLhmUz_K~a`@plGv~Vp_HpkZpiBl`PjaBfzh@jLvmr@}oNftPhvL~rSlgFv`FnaKdiAlxNn}AprHpmHtvH~qG~{IxhBhbTprPnkQdzGrzD~gOmlA~iPd}EnbCj}LiVdbHhrBl{EpvHfwG~iIp}CzvQxcEdam@hvPl_f@laHreQpdIrmd@p}Ljgm@xrGdsTjkJ|mD|mI~_QjxDnxRwr@j}OzBriJvrBjzEvsFz~HiZpwJpcDtiIh}Dlg^`xC`xUx_Cj`RqO`wQrdE~aIrsBriUjhAnmKrjAjfVhbE|aRttJbsVf_D|}Hb_FvmBp|JtyLf`MdpAnvTm@tuHdWtk@vuEv~Gd@duFQp}DzgBrhInW`aLjgQz`LnvHxpOzzOtiBv~Dd{DdpBwCfsDtzDp`@zyThTjgM}FruUhsBb`KrDtSnhFf[|jIdyApca@gjBtxMlnC~tX~`Dxs`@zaSlxq@xpNhki@n_H~dVjnCr}[xmBryHvfF||BzdCbxLbgBjdIlqFhtXfhG`b\\pW~}ZvfLpy_@vzLdeo@`vGj`XhuC|rUpj@deNhwGpeMxkEllMvvGdbYpaAvhHev@`aIbJliOy{@bm_@gbGxy^qhPflUwaFfhNgpAtmUdAdx\\ihDziUafGrxa@cbAnpb@wqA|{TygExcb@k_Atjp@kpBd`z@ngB~gT|~A~uDxKtqQtPdah@mwBxej@sdCrtu@i}EfmbCgqEtj_AasApdRfrFvmAhlNjhFqKfvj@udBprq@joDxwPjo@hxY_QmeCPvdB}dB|jMkuIpdC}eC|gb@yaB`lSeLlkE}pBdcAmpAd`Jx{@rnW}Qx|s@}VxbkAwJ`c\\vf@znNzcEr`IvuDpdMr]niRbkHh}a@nkBlwe@paCxyOrHpfRliEb_XoVhnO{BrqXp`@nyc@vvClxp@_q@lv|AetB|~~@}P|iTu~DlaVgzFbhg@ijMtelA{Cbdg@i|I|hYgnBpeXg{A|a{@vI~vq@vVlvBd{IfsA|a[hJtnBfA"
+    },
+    {
+        "region": "colorado",
+        "name": "Colorada",
+        "start_date": "8-Mar",
+        "color": "",
+        "highlights": []
+    },
+    {
+        "region": "texas",
+        "name": "Texas",
+        "start_date": "17-Apr",
+        "color": "",
+        "highlights": []
+    },
+    {
+        "region": "arizona",
+        "name": "Arizona",
+        "start_date": "1-May",
+        "color": "",
+        "highlights": []
+    },
+    {
+        "region": "california",
+        "name": "California",
+        "start_date": "12-May",
+        "color": "",
+        "highlights": []
+    },
+    {
+        "region": "mountainwest",
+        "name": "Mountain West",
+        "start_date": "24-May",
+        "color": "",
+        "highlights": []
+    },
+    {
+        "region": "cascadia",
+        "name": "Cascadia",
+        "start_date": "10-Jun",
+        "color": "",
+        "highlights": []
+    }
+]
