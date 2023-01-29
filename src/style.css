@@ -1,7 +1,5 @@
 html,
 body,
-#root,
-#map {
-  width: 100%;
+#app {
   height: 100%;
 }
