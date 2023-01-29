@@ -4,7 +4,8 @@ import "bootstrap";
 import "mapbox-gl/dist/mapbox-gl.css";
 import mapboxgl from "mapbox-gl";
 import * as turf from "@turf/turf";
-import region_geojson from "./assets/region.json";
+import region_geojson from "./assets/region_geojson.json";
+import region from "./assets/region_info.json";
 </script>
 
 <template>

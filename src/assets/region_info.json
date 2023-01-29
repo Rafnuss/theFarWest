@@ -1,0 +1,44 @@
+﻿[
+  {
+    "region": "midwest",
+    "name": "Mid West",
+    "start_date": "31-Mar",
+    "color": ""
+  },
+  {
+    "region": "colorado",
+    "name": "Colorada",
+    "start_date": "8-Mar",
+    "color": ""
+  },
+  {
+    "region": "texas",
+    "name": "Texas",
+    "start_date": "17-Apr",
+    "color": ""
+  },
+  {
+    "region": "arizona",
+    "name": "Arizona",
+    "start_date": "1-May",
+    "color": ""
+  },
+  {
+    "region": "california",
+    "name": "California",
+    "start_date": "12-May",
+    "color": ""
+  },
+  {
+    "region": "mountainwest",
+    "name": "Mountain West",
+    "start_date": "24-May",
+    "color": ""
+  },
+  {
+    "region": "cascadia",
+    "name": "Cascadia",
+    "start_date": "10-Jun",
+    "color": ""
+  }
+]
