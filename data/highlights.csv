@@ -1,7 +1,44 @@
-﻿lat,lon,region,name,text,phot_url,date
--76.5018807, 42.4439614,midwest,Ithaca,<p>thsi <strong>there</strong><p>,./assets/photos/1.png,4/8/23
--79.8711024, 43.2557206,midwest,Hamilton,,,
--86.8015683, 40.1627906,midwest,Lye Creek,,,
--90.19940419999999 ,38.6270025,midwest,St. Louis,,,
--95.2344983 ,38.92012,midwest,Baker Wetlands,,,
--101.0192308, 38.8894633,midwest,Smoky Valley Ranch,,,
+﻿lat,lon,region,name,text,phot_url,date,added to map
+42.472859,-76.451521,midwest,Le grand départ!,<p>déménagement d'Ithaca</p>,,31.03.23,1
+43.213465,-79.855361,midwest,Premier arrêt chez nos amis canadiens,<p>Arrêt à Hamilton pour déposer les affaires qui rentrent pas dans la voiture</p>,,01.04.23,1
+40.16279,-86.80156,midwest,Première cible de notre voyage,"<p>Lye Creek, Smith Longspur. oiseau des champs, ….</p>",,02.04.23,1
+38.87,-90.18488,midwest,Le moineau du conte,"<p>après plusieurs essais, est-ce que notre chance va tourner?</p>",,04.04.23,1
+38.92011,-95.23449,midwest,Baker Wetlands,<p>arrivée a Kansas!</p>,,06.04.23,1
+38.88946,-101.01923,midwest,A la recherche de la poule des prairies,<p>premier tour guidé de notre voyage (pour Raph du moins!)</p>,,07.04.23,1
+39.26918,-103.28517,colorado,Les praires du Colorado,"<p>Thick-billed longspur, Chestnut-collared Longspur, Mountain Plover, check for Ferruginous Hawk</p>",,08.04.23,1
+40.52081,-105.89251,colorado,Col de Cameron,<p>Tengmalm’s Owl (same as Switzerland!) – 3100m d’altitude début avril – froid!!</p>,,09.04.23,1
+40.55591,-107.00313,colorado,Chasse aux tétras,"<p>Greater Sage, Dusky, Sharp-tailed</p>",,10.04.23,1
+39.65837,-105.87975,colorado,Dans les stations de ski?,<p>mais pas pour faire du ski! Ptargmigan – cold mountain</p>,,12.04.23,1
+38.46393,-106.61205,colorado,Gunnison Gorge National Conservation Area,<p>à la recherche du tétras de Gunnison - Endangered</p>,,14.04.23,1
+38.08484,-103.17158,colorado,Black rail,,,15.05.23,0
+32.85104,-101.41112,texas,En route vers le Sud!,<p>avec plusieurs espèces à chercher sur la route</p>,,16.04.23,1
+29.80762,-99.5706,texas,Lost Maple States Natural Area ,,,17.04.23,1
+26.77668,-97.76981,texas,Dans un ranch au Texas,<p>Comment trouver un petit hibou sur un terrain privé au Texas </p>,,18.04.23,1
+26.13746,-97.17428,texas,L'ile du Padre,,,19.04.23,0
+25.93846,-97.52133,texas,Le point au Sud de notre voyage,"<p>et première vue de la mer! Pas mal d'espèces cibles, perroquets, migrateurs, … </p>",,20.04.23,1
+26.08234,-98.13551,texas,Santa Ana Refuge,,,,0
+26.51499,-99.1157,texas,Au bord du Rio Grande,"<p>a la frontière mexicaine (y aura-t-il un mur??), mais on cherche d'autres sortes de migrants!</p>",,24.04.23,1
+29.27001,-103.3007,texas,Big Bend,"<p>premier parc national! 2 nuits dans le parc, avec une ascension matinale</p>",,27.04.23,1
+31.9331,-109.2718,arizona,Pinery Canyon,<p>first stop in Arizona</p>,,01.05.23,1
+31.44852,-110.30664,arizona,Ramsey Canyon,,,,0
+31.40281,-111.24216,arizona,De retour a la frontière mexicaine,"<p>On s'est fait recaler la dernière fois, donc on reessaye (difficile de rentrer au Mexique!)</p>",,04.05.23,1
+31.72514,-110.88007,arizona,Santa Rita Lodge,,,,0
+32.29905, -111.11187,arizona,Saguaro national park ,<p>Le pays des cactus géants !</p>,,08.05.23,1
+33.53464,-112.05977,arizona,Arielle & David,<p>Visite à nos amis américains rencontrés dans l'église en Suisse - leur salle de bain sera appréciée aussi ;)</p>,,09.05.23,1
+33.13917,-115.66585,california,Sunny Bono Salton Sea National Wildlife Refuge,<p>oiseaux d'eau au bord d'un lac</p>,,12.05.23,1
+32.74776,-116.45132,california,Kitchen Creek Trailhead,<p>Part of PCT to look for Bell’s Sparrow + Mountain Quail</p>,,12.05.23,1
+32.59145,-117.11367,california,San Diego,<p>Océan Pacifique!</p>,,13.05.23,1
+33.98168,-118.22507,california,Los Angeles,<p>La visite de Hollywood est un incontournable pour nous</p>,,15.05.23,1
+34.0183,-119.78255,california,Santa Cruz Island,<p>Tour en bateau pour découvrir cette ile au large de la côte</p>,,16.05.23,1
+34.67302,-119.51635,california,Los Padres National Forest ,<p>A la recherche du fameux condor!</p>,,18.05.23,1
+37.17117,-122.22265,california,Redwoods state park,<p>Un pengouin perdu dans une forêt</p>,,19.05.23,1
+37.80789,-122.472855,california,San Fransisco,<p>sur les traces des Dumont</p>,,21.05.23,1
+37.835,-119.847,california,Yosemite,<p>Great Grey Owl</p>,,22.05.23,1
+39.33102,-120.70836,california,Sierra Nevada,<p>Un tétras de suie dans la Tahoe National Forest</p>,,23.05.23,1
+40.69159,-115.47422,Mountain West,Tétraogalle de l'Himalaya,<p>Lamoille Canyon</p>,,25.05.23,1
+42.18991,-114.2728,Mountain West,Entrée dans Idaho,<p>Bec-croisé de Cassia</p>,,26.05.23,1
+44.469169,-110.558355,Mountain West,Yellowstone,"<p>Les big 5 : bison, renne, loup, ours et élan</p>",,28.05.23,1
+46.52899,-109.76671,Cascadia,Sur les traces de Pierrick,"<p>Après les montagnes, les plaines du Montana</p>",,30.05.23,1
+48.01209,-123.37131,Cascadia,Olympic National Park,<p>Mer et montagne</p>,,01.06.23,1
+48.39011,-124.71735,Cascadia,Le cap de la flatterie,<p>Seawatch</p>,,02.06.23,1
+49.032879,-122.687726,Cascadia,A Rocha Canada,"<p>Visite à nos amis anciennement Ithacois, qui travaillent désormais à A Rocha Canada</p>",,03.06.23,1
