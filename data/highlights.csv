@@ -29,7 +29,7 @@
 31.44852,-110.30664,arizona,Ramsey Canyon,,,,0
 31.40281,-111.24216,arizona,De retour a la frontière mexicaine,"<p>On s'est fait recaler la dernière fois, donc on reessaye (difficile de rentrer au Mexique!)</p>",,04.05.23,1
 31.72514,-110.88007,arizona,Santa Rita Lodge,,,,0
-32.29905, -111.11187,arizona,Saguaro national park ,<p>Le pays des cactus géants !</p>,,08.05.23,1
+32.29905,-111.11187,arizona,Saguaro national park ,<p>Le pays des cactus géants !</p>,,08.05.23,1
 33.53464,-112.05977,arizona,Arielle & David,<p>Visite à nos amis américains rencontrés dans l'église en Suisse - leur salle de bain sera appréciée aussi ;)</p>,,09.05.23,1
 33.604783,-114.53067,arizona,Arizona end,,,,0
 33.604783,-114.53067,california,California start,,,,0
@@ -37,20 +37,20 @@
 32.74776,-116.45132,california,Kitchen Creek Trailhead,<p>Part of PCT to look for Bell’s Sparrow + Mountain Quail</p>,,12.05.23,1
 32.59145,-117.11367,california,San Diego,<p>Océan Pacifique!</p>,,13.05.23,1
 33.98168,-118.22507,california,Los Angeles,<p>La visite de Hollywood est un incontournable pour nous</p>,,15.05.23,1
-34.0183,-119.78255,california,Santa Cruz Island,<p>Tour en bateau pour découvrir cette ile au large de la côte</p>,,16.05.23,1
+34.276019, -119.290370,california,Santa Cruz Island,<p>Tour en bateau pour découvrir cette ile au large de la côte</p>,,16.05.23,1
 34.67302,-119.51635,california,Los Padres National Forest ,<p>A la recherche du fameux condor!</p>,,18.05.23,1
 37.17117,-122.22265,california,Redwoods state park,<p>Un pengouin perdu dans une forêt</p>,,19.05.23,1
 37.80789,-122.472855,california,San Fransisco,<p>sur les traces des Dumont</p>,,21.05.23,1
 37.835,-119.847,california,Yosemite,<p>Great Grey Owl</p>,,22.05.23,1
-39.33102,-120.70836,california,Sierra Nevada,<p>Un tétras de suie dans la Tahoe National Forest</p>,,23.05.23,1
+39.30919, -120.68431,california,Sierra Nevada,<p>Un tétras de suie dans la Tahoe National Forest</p>,,23.05.23,1
 39.468348,-120.002843,california,California end,,,,0
-39.468348,-120.002843,Mountain West,Mountain West start,,,,0
-40.69159,-115.47422,Mountain West,Tétraogalle de l'Himalaya,<p>Lamoille Canyon</p>,,25.05.23,1
-42.18991,-114.2728,Mountain West,Entrée dans Idaho,<p>Bec-croisé de Cassia</p>,,26.05.23,1
-44.469169,-110.558355,Mountain West,Yellowstone,"<p>Les big 5 : bison, renne, loup, ours et élan</p>",,28.05.23,1
-44.651501,-111.055341,Mountain West,Mountain West end,,,,0
-44.651501,-111.055341,Cascadia,Cascadia start,,,,0
-46.52899,-109.76671,Cascadia,Sur les traces de Pierrick,"<p>Après les montagnes, les plaines du Montana</p>",,30.05.23,1
-48.01209,-123.37131,Cascadia,Olympic National Park,<p>Mer et montagne</p>,,01.06.23,1
-48.39011,-124.71735,Cascadia,Le cap de la flatterie,<p>Seawatch</p>,,02.06.23,1
-49.032879,-122.687726,Cascadia,A Rocha Canada,"<p>Visite à nos amis anciennement Ithacois, qui travaillent désormais à A Rocha Canada</p>",,03.06.23,1
+39.468348,-120.002843,mountainwest,Mountain West start,,,,0
+40.60869, -115.37383,mountainwest,Tétraogalle de l'Himalaya,<p>Lamoille Canyon</p>,,25.05.23,1
+42.19012, -114.27313,mountainwest,Entrée dans Idaho,<p>Bec-croisé de Cassia</p>,,26.05.23,1
+44.65868, -111.09744,mountainwest,Yellowstone,"<p>Les big 5 : bison, renne, loup, ours et élan</p>",,28.05.23,1
+46.59177, -109.76559,mountainwest,Sur les traces de Pierrick,"<p>Après les montagnes, les plaines du Montana</p>",,30.05.23,1
+47.696883, -117.048610,mountainwest,Mountain West end,,,,0
+47.696883, -117.048610,cascadia,Cascadia start,,,,0
+48.01209,-123.37131,cascadia,Olympic National Park,<p>Mer et montagne</p>,,01.06.23,1
+48.39011,-124.71735,cascadia,Le cap de la flatterie,<p>Seawatch</p>,,02.06.23,1
+49.032879,-122.687726,cascadia,A Rocha Canada,"<p>Visite à nos amis anciennement Ithacois, qui travaillent désormais à A Rocha Canada</p>",,03.06.23,1

@@ -1,5 +1,18 @@
-import { createApp } from 'vue'
-import './style.css'
+import Vue from 'vue'
+import './style.scss'
 import App from './App.vue'
 
-createApp(App).mount('#app')
+import { BootstrapVue, BootstrapVueIcons } from "bootstrap-vue";
+Vue.use(BootstrapVue);
+Vue.use(BootstrapVueIcons);
+
+import "bootstrap/dist/css/bootstrap.css";
+import "bootstrap-vue/dist/bootstrap-vue.css";
+
+import "leaflet/dist/leaflet.css";
+import "leaflet/dist/images/marker-shadow.png";
+
+
+new Vue({
+    render: (h) => h(App),
+}).$mount("#app");
