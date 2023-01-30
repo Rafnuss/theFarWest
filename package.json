@@ -10,11 +10,11 @@
     "process": "node processData.js"
   },
   "dependencies": {
-    "@turf/turf": "^6.5.0",
     "bootstrap": "^5.2.3",
-    "mapbox-gl": "^2.12.0",
     "polyline-encoded": "^0.0.9",
-    "vue": "^3.2.45"
+    "vue": "^3.2.45",
+    "@vue-leaflet/vue-leaflet": "^0.7.0",
+    "leaflet": "^1.9.3"
   },
   "devDependencies": {
     "@vitejs/plugin-vue": "^4.0.0",
