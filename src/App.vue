@@ -2,7 +2,29 @@
   <div class="container-fluid h-100 px-0">
     <div class="row h-100 gx-0">
       <div class="col h-100">
-        <l-map class="h-100" :zoom="0" :center="[0, 0]" :minZoom="3" :maxZoom="18" :zoomSnap="0.2">
+        <div>
+          <b-button-group class="w-100">
+            <b-button
+              squared
+              v-for="r in regions"
+              :key="r.region"
+              :style="{ 'background-color': r.color, 'border-color': r.color }"
+              @click="activeRegion = r.region"
+            >
+              {{ r.name }}
+            </b-button>
+          </b-button-group>
+        </div>
+        <l-map
+          class="h-100"
+          :bounds="[
+            [26, -72],
+            [50, -127],
+          ]"
+          :minZoom="3"
+          :maxZoom="18"
+          :zoomSnap="0.2"
+        >
           <l-tile-layer
             :url="'https://api.mapbox.com/styles/v1/mapbox/streets-v9/tiles/{z}/{x}/{y}?access_token=' + mapboxToken"
           />
