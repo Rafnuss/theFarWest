@@ -13,31 +13,28 @@
             :color="r.color"
             :opacity="r.region == activeRegion ? 0.8 : 0.4"
             :weight="6"
-            @click="test(r)"
           />
           <l-marker v-for="h in activeHighlights" :key="h.name" :lat-lng="[h.lat, h.lon]"></l-marker>
         </l-map>
       </div>
-      <div class="col col-xs-12 md-6 col-lg-4">
+      <div class="col h-100 d-flex flex-column col-xs-12 md-6 col-lg-4">
         <ul class="nav nav-pills nav-justified">
           <li class="nav-item" v-for="v in ['Plan', 'Live']" :key="v">
             <a class="nav-link" :class="view == v ? 'active' : ''" href="#" @click="view = v">{{ v }}</a>
           </li>
         </ul>
-        <div class="row vh-100">
+        <div class="overflow-auto">
           <div class="col" v-if="view == 'Live'"></div>
-          <div class="col vh-100" v-if="view == 'Plan'">
-            <div class="vh-100 overflow-auto">
-              <div class="card mx-2 my-2" v-for="h in activeHighlights" :key="h.name">
-                <img :src="h.phot_url" class="card-img-top" />
-                <div class="card-body">
-                  <h5 class="card-title">{{ h.name }}</h5>
-                  <p class="card-text" v-html="h.text"></p>
-                </div>
-                <div class="card-body">
-                  <a href="#" class="card-link">Card link</a>
-                  <a href="#" class="card-link">Another link</a>
-                </div>
+          <div class="col" v-if="view == 'Plan'">
+            <div class="card mx-2 my-2" v-for="h in activeHighlights" :key="h.name">
+              <img :src="h.phot_url" class="card-img-top" />
+              <div class="card-body">
+                <h5 class="card-title">{{ h.name }}</h5>
+                <p class="card-text" v-html="h.text"></p>
+              </div>
+              <div class="card-body">
+                <a href="#" class="card-link">Card link</a>
+                <a href="#" class="card-link">Another link</a>
               </div>
             </div>
           </div>
@@ -73,12 +70,7 @@ export default {
       }),
     };
   },
-  methods: {
-    test(r) {
-      console.log(r);
-      this.activeRegion = r.region;
-    },
-  },
+  methods: {},
   computed: {
     activeHighlights() {
       return this.regions.filter((r) => r.region == this.activeRegion)[0].highlights;
