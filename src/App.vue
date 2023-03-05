@@ -51,7 +51,20 @@
           </b-nav-item>
         </b-nav>
         <div class="overflow-auto">
-          <b-col v-if="view == 'Live'"></b-col>
+          <b-col v-if="view == 'Live'">
+            <b-card-group columns>
+              <b-card v-for="p in posts" :key="p.title" :title="p.title">
+                <b-card-header>
+                  <b-img :src="p.cover" img-right fluid style="max-height: 100px" />
+                </b-card-header>
+                <b-card-text>
+                  {{ p.author }}
+                  {{ p.date }}
+                  {{ p.text1 }}
+                </b-card-text>
+              </b-card>
+            </b-card-group>
+          </b-col>
           <b-col v-if="view == 'Plan'">
             <b-card-group columns>
               <b-card
@@ -76,6 +89,8 @@ import regionsJson from "./assets/regions.json";
 </script>
 
 <script>
+var google_api_key = "AIzaSyCaVWdIpSvq8BoF7PvEK4oY3LByPYTQ2Xs";
+
 import polyUtil from "polyline-encoded";
 import { LMap, LTileLayer, LPolyline, LMarker, LIcon } from "vue2-leaflet";
 
@@ -96,6 +111,8 @@ export default {
         r.route = polyUtil.decode(r.route);
         return r;
       }),
+      locations: [],
+      posts: [],
     };
   },
   methods: {
@@ -120,7 +137,7 @@ export default {
       this.locations = locations;
     },
     async refreshLocations() {
-      this.locations = await loadLocations();
+      this.locations = await this.loadLocations();
     },
   },
   computed: {
@@ -138,6 +155,42 @@ export default {
     this.loadLocations();
     setInterval(this.refreshLocations, 15 * 60 * 1000);
 
+    /*fetch("http://tripreport.raphaelnussbaumer.com/tripreport-internal/v1/taxon-list/86087")
+      .then((response) => response.json())
+      .then((data) => {
+        // Data contains the values of the cells in the specified range.
+        console.log(data);
+      })
+      .catch((error) => console.error(error));
+
+    */
+    var url =
+      "https://sheets.googleapis.com/v4/spreadsheets/12VqL_Epf2l6NnHHQM3Osd_3nh0h61bPvD66uCSsPAXg/values/A1:K100?key=" +
+      google_api_key;
+
+    fetch(url)
+      .then((response) => response.json())
+      .then((data) => {
+        const rows = data.values.slice(1);
+
+        this.posts = rows.map((row) => {
+          console.log(row[0]);
+          return {
+            title: row[1],
+            author: row[6],
+            date: new Date(row[0]),
+            lon: parseFloat(row[6].split(", ")[1]),
+            lat: parseFloat(row[6].split(", ")[0]),
+            cover: row[3].replace("open?", "uc?export=view&"),
+            text1: row[2],
+            photo1: row[7],
+            text2: row[9],
+            photo2: row[8],
+            text3: row[9],
+          };
+        });
+      })
+      .catch((error) => console.error(error));
   },
 };
 </script>
