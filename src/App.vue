@@ -3,7 +3,7 @@
     <b-row class="h-100 gx-0">
       <b-col class="h-100 d-flex flex-column">
         <b-row height="100px;">
-          <b-col> Birding ssection {{ locations }}</b-col>
+          <b-col> Birding ssection</b-col>
         </b-row>
         <l-map
           :bounds="[
@@ -32,7 +32,7 @@
             <l-icon icon-url="/logo.svg" :icon-size="[104, 40]" :icon-anchor="[52, 20]" />
           </l-marker>
         </l-map>
-        <b-button-group class="w-100">
+        <b-button-group>
           <b-button
             squared
             v-for="r in regions"
@@ -43,6 +43,7 @@
             {{ r.name }}
           </b-button>
         </b-button-group>
+        <Photos />
       </b-col>
       <b-col class="h-100 d-flex flex-column col-xs-12 md-6 col-lg-4">
         <b-nav pills class="m-auto">
@@ -89,10 +90,11 @@ import regionsJson from "./assets/regions.json";
 </script>
 
 <script>
-var google_api_key = "AIzaSyCaVWdIpSvq8BoF7PvEK4oY3LByPYTQ2Xs";
+const google_api_key = "AIzaSyCaVWdIpSvq8BoF7PvEK4oY3LByPYTQ2Xs";
 
 import polyUtil from "polyline-encoded";
 import { LMap, LTileLayer, LPolyline, LMarker, LIcon } from "vue2-leaflet";
+import Photos from "./Photos.vue";
 
 export default {
   components: {
@@ -101,6 +103,7 @@ export default {
     LPolyline,
     LMarker,
     LIcon,
+    Photos,
   },
   data() {
     return {
@@ -164,11 +167,11 @@ export default {
       .catch((error) => console.error(error));
 
     */
-    var url =
-      "https://sheets.googleapis.com/v4/spreadsheets/12VqL_Epf2l6NnHHQM3Osd_3nh0h61bPvD66uCSsPAXg/values/A1:K100?key=" +
-      google_api_key;
 
-    fetch(url)
+    var url = fetch(
+      "https://sheets.googleapis.com/v4/spreadsheets/12VqL_Epf2l6NnHHQM3Osd_3nh0h61bPvD66uCSsPAXg/values/A1:K100?key=" +
+        google_api_key
+    )
       .then((response) => response.json())
       .then((data) => {
         const rows = data.values.slice(1);
