@@ -3,8 +3,8 @@ import fs from "fs";
 
 const GOOGLE_MAP_API = "AIzaSyCaVWdIpSvq8BoF7PvEK4oY3LByPYTQ2Xs"
 
-let regions = await csvtojson.csv().fromFile("data/regions.csv")
-const highlights = await csvtojson.csv().fromFile("data/highlights.csv")
+let regions = await csvtojson.csv().fromFile("data/regions/regions.csv")
+const highlights = await csvtojson.csv().fromFile("data/regions/highlights.csv")
 
 
 const highlights_route = await Promise.all(regions.map(async (r, i) => {

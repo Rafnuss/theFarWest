@@ -9,7 +9,7 @@
       <b-img :src="modal_link" />
     </b-modal>
   </b-container>-->
-  <b-row class="bg-dark" style="height: 200px">
+  <b-row class="bg-dark" style="height: 200px" v-if="(photos.length > 0) & false">
     <swiper-container
       slides-per-view="4"
       grab-cursor="true"
@@ -53,7 +53,6 @@ export default {
       }
       const json = await response.json();
       if (json != null) {
-        console.log(json);
         this.photos = json;
         /* this.photos = [
           "PXL_20230122_135023845.jpg",

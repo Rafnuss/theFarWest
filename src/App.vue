@@ -2,9 +2,7 @@
   <b-container fluid class="h-100 px-0">
     <b-row class="h-100 gx-0">
       <b-col class="h-100 col-xs-12 md-6 col-lg-8 d-flex flex-column">
-        <b-row height="100px;">
-          <b-col> Birding ssection</b-col>
-        </b-row>
+        <eBird />
         <b-row class="flex-grow-1">
           <b-col class="flex-grow-1">
             <l-map
@@ -13,6 +11,12 @@
                 [50, -127],
               ]"
             >
+              <l-control-layers :collapsed="false" :sort-layers="true" />
+              <l-control position="topright">
+                <div class="leaflet-control-layers leaflet-control-layers-expanded" aria-haspopup="true">
+                  Name: {{ selectedHotspot.name }}
+                </div>
+              </l-control>
               <l-tile-layer
                 :url="
                   'https://api.mapbox.com/styles/v1/mapbox/streets-v9/tiles/{z}/{x}/{y}?access_token=' + mapboxToken
@@ -35,6 +39,19 @@
               <l-marker v-if="locations.length > 0 && locations[0].lat" :lat-lng="[locations[0].lat, locations[0].lon]">
                 <l-icon icon-url="/logo.svg" :icon-size="[104, 40]" :icon-anchor="[52, 20]" />
               </l-marker>
+              <l-polyline :lat-lngs="locations.map((l) => [l.lat, l.lon])" color="green" :weight="10" />
+              <l-layer-group layer-type="overlay" name="eBird Checklist">
+                <l-circle-marker
+                  v-for="loc in tripreport[0].locations"
+                  :key="loc.locID"
+                  :lat-lng="[loc.latitude, loc.longitude]"
+                  :weight="0"
+                  fillColor="#4ca800"
+                  :radius="5"
+                  :fillOpacity="0.8"
+                  @click="selectedHotspot = loc"
+                />
+              </l-layer-group>
             </l-map>
           </b-col>
         </b-row>
@@ -94,14 +111,26 @@
 </template>
 <script setup>
 import regionsJson from "./assets/regions.json";
+import tripreport from "./assets/tripreport.json";
 </script>
 
 <script>
 const google_api_key = "AIzaSyCaVWdIpSvq8BoF7PvEK4oY3LByPYTQ2Xs";
 
 import polyUtil from "polyline-encoded";
-import { LMap, LTileLayer, LPolyline, LMarker, LIcon } from "vue2-leaflet";
+import {
+  LMap,
+  LTileLayer,
+  LPolyline,
+  LMarker,
+  LIcon,
+  LCircleMarker,
+  LLayerGroup,
+  LControlLayers,
+  LControl,
+} from "vue2-leaflet";
 import Photos from "./Photos.vue";
+import eBird from "./eBird.vue";
 
 export default {
   components: {
@@ -111,6 +140,11 @@ export default {
     LMarker,
     LIcon,
     Photos,
+    eBird,
+    LCircleMarker,
+    LLayerGroup,
+    LControlLayers,
+    LControl,
   },
   data() {
     return {
@@ -121,8 +155,10 @@ export default {
         r.route = polyUtil.decode(r.route);
         return r;
       }),
+      tripreport: [],
       locations: [],
       posts: [],
+      selectedHotspot: {},
     };
   },
   methods: {
@@ -165,17 +201,22 @@ export default {
     this.loadLocations();
     setInterval(this.refreshLocations, 15 * 60 * 1000);
 
-    /*fetch("http://tripreport.raphaelnussbaumer.com/tripreport-internal/v1/taxon-list/86087")
-      .then((response) => response.json())
-      .then((data) => {
-        // Data contains the values of the cells in the specified range.
-        console.log(data);
-      })
-      .catch((error) => console.error(error));
+    this.tripreport = tripreport.map((trip) => {
+      if (trip.status == "live") {
+        console.log(trip);
+        var taxon_link = "http://tripreport.raphaelnussbaumer.com/tripreport-internal/v1/taxon-list/" + trip.id;
+        var locations_link = "http://tripreport.raphaelnussbaumer.com/tripreport-internal/v1/locations/" + trip.id;
+        fetch(locations_link)
+          .then((response) => response.json())
+          .then((data) => {
+            trip.locations = data;
+          })
+          .catch((error) => console.error(error));
+      }
+      return trip;
+    });
 
-    */
-
-    var url = fetch(
+    fetch(
       "https://sheets.googleapis.com/v4/spreadsheets/12VqL_Epf2l6NnHHQM3Osd_3nh0h61bPvD66uCSsPAXg/values/A1:K100?key=" +
         google_api_key
     )
@@ -184,7 +225,6 @@ export default {
         const rows = data.values.slice(1);
 
         this.posts = rows.map((row) => {
-          console.log(row[0]);
           return {
             title: row[1],
             author: row[6],
