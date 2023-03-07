@@ -1,51 +1,59 @@
 <template>
   <b-container fluid class="h-100 px-0">
     <b-row class="h-100 gx-0">
-      <b-col class="h-100 d-flex flex-column">
+      <b-col class="h-100 col-xs-12 md-6 col-lg-8 d-flex flex-column">
         <b-row height="100px;">
           <b-col> Birding ssection</b-col>
         </b-row>
-        <l-map
-          :bounds="[
-            [26, -72],
-            [50, -127],
-          ]"
-        >
-          <l-tile-layer
-            :url="'https://api.mapbox.com/styles/v1/mapbox/streets-v9/tiles/{z}/{x}/{y}?access_token=' + mapboxToken"
-          />
-          <l-polyline
-            v-for="r in regions"
-            :key="r.region"
-            :lat-lngs="r.route"
-            :color="r.color"
-            :opacity="r.region == activeRegion ? 0.8 : 0.4"
-            :weight="6"
-          />
-          <l-marker
-            v-for="(h, i) in activeHighlights"
-            :key="h.name"
-            :lat-lng="[h.lat, h.lon]"
-            :icon="getIcon(h, i + 1)"
-          ></l-marker>
-          <l-marker v-if="locations.length > 0 && locations[0].lat" :lat-lng="[locations[0].lat, locations[0].lon]">
-            <l-icon icon-url="/logo.svg" :icon-size="[104, 40]" :icon-anchor="[52, 20]" />
-          </l-marker>
-        </l-map>
-        <b-button-group>
-          <b-button
-            squared
-            v-for="r in regions"
-            :key="r.region"
-            :style="{ 'background-color': r.color, 'border-color': r.color }"
-            @click="activeRegion = r.region"
-          >
-            {{ r.name }}
-          </b-button>
-        </b-button-group>
+        <b-row class="flex-grow-1">
+          <b-col class="flex-grow-1">
+            <l-map
+              :bounds="[
+                [26, -72],
+                [50, -127],
+              ]"
+            >
+              <l-tile-layer
+                :url="
+                  'https://api.mapbox.com/styles/v1/mapbox/streets-v9/tiles/{z}/{x}/{y}?access_token=' + mapboxToken
+                "
+              />
+              <l-polyline
+                v-for="r in regions"
+                :key="r.region"
+                :lat-lngs="r.route"
+                :color="r.color"
+                :opacity="r.region == activeRegion ? 0.8 : 0.4"
+                :weight="6"
+              />
+              <l-marker
+                v-for="(h, i) in activeHighlights"
+                :key="h.name"
+                :lat-lng="[h.lat, h.lon]"
+                :icon="getIcon(h, i + 1)"
+              ></l-marker>
+              <l-marker v-if="locations.length > 0 && locations[0].lat" :lat-lng="[locations[0].lat, locations[0].lon]">
+                <l-icon icon-url="/logo.svg" :icon-size="[104, 40]" :icon-anchor="[52, 20]" />
+              </l-marker>
+            </l-map>
+          </b-col>
+        </b-row>
+        <b-row>
+          <b-button-group>
+            <b-button
+              squared
+              v-for="r in regions"
+              :key="r.region"
+              :style="{ 'background-color': r.color, 'border-color': r.color }"
+              @click="activeRegion = r.region"
+            >
+              {{ r.name }}
+            </b-button>
+          </b-button-group>
+        </b-row>
         <Photos />
       </b-col>
-      <b-col class="h-100 d-flex flex-column col-xs-12 md-6 col-lg-4">
+      <b-col class="h-100 d-flex flex-column">
         <b-nav pills class="m-auto">
           <b-nav-item v-for="v in ['Plan', 'Live']" :key="v" @click="view = v" :active="view == v">
             {{ v }}
@@ -84,7 +92,6 @@
     </b-row>
   </b-container>
 </template>
-
 <script setup>
 import regionsJson from "./assets/regions.json";
 </script>
@@ -195,5 +202,6 @@ export default {
       })
       .catch((error) => console.error(error));
   },
+  mounted() {},
 };
 </script>
