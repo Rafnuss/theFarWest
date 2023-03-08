@@ -18,7 +18,7 @@ const tripreport = [
     },
     {
         id: 112348,
-        status: "futur",
+        status: "future",
         region: "midwest"
     },
     {
@@ -53,19 +53,42 @@ const tripreport = [
     }
 ];
 
-tripreport.map(trip => {
+const taxonList = tripreport.reduce((acc2, trip) => {
+    if (trip.status == "past") {
+        const data = fs.readFileSync("data/tripreport/taxon-list-" + trip.id + ".json");
+        const data2 = JSON.parse(data)
+        acc2 = [...acc2, ...data2].reduce((acc, curr) => {
+            const foundIndex = acc.findIndex((item) => item.speciesCode === curr.speciesCode);
+            if (foundIndex !== -1) {
+                acc[foundIndex].numIndividuals += curr.numIndividuals;
+                acc[foundIndex].numChecklists += curr.numChecklists;
+                acc[foundIndex].numPhotos += curr.numPhotos;
+                acc[foundIndex].numAudio += curr.numAudio;
+                acc[foundIndex].numVideo += curr.numVideo;
+                acc[foundIndex].numMedia += curr.numMedia;
+                acc[foundIndex].isLifer = acc[foundIndex].isLifer || curr.isLifer;
+            } else {
+                acc.push(curr);
+            }
+            return acc;
+        }, []);
+    }
+    return acc2;
+}, []);
+
+const taxonListOutput = JSON.stringify(taxonList);
+fs.writeFileSync('src/assets/taxon-list.json', taxonListOutput);
+
+
+
+const locations = tripreport.reduce((acc, trip) => {
     console.log(trip)
     if (trip.status == "past") {
-        console.log(`Reading ${trip.region}`);
-        const data = fs.readFileSync("data/tripreport/taxon-list-" + trip.id + ".json");
-        trip.taxons = JSON.parse(data);
-        const data2 = fs.readFileSync("data/tripreport/locations-" + trip.id + ".json");
-        trip.locations = JSON.parse(data2);
+        const data = fs.readFileSync("data/tripreport/checklists-" + trip.id + ".json");
+        acc = [...acc, ...JSON.parse(data)];
     }
-    return trip
-})
+    return acc
+}, [])
 
-
-const outputData = JSON.stringify(tripreport);
-fs.writeFileSync('src/assets/tripreport.json', outputData);
-console.log(`Merged data`);
+const locationsData = JSON.stringify(locations);
+fs.writeFileSync('src/assets/checklists.json', locationsData);

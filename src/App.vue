@@ -1,10 +1,16 @@
 <template>
-  <b-container fluid class="h-100 px-0">
-    <b-row class="h-100 gx-0">
+  <b-container fluid class="h-100 bg-light">
+    <b-row class="h-100">
       <b-col class="h-100 col-xs-12 md-6 col-lg-8 d-flex flex-column">
-        <eBird />
+        <b-row style="height: 100px">
+          {{ liferCount }}
+
+          <b-button variant="outline-primary" @click="openSpeciesChecklist(latestLifer[2])">{{
+            latestLifer[1]
+          }}</b-button>
+        </b-row>
         <b-row class="flex-grow-1">
-          <b-col class="flex-grow-1">
+          <b-col class="flex-grow-1 px-0">
             <l-map
               :bounds="[
                 [26, -72],
@@ -14,7 +20,11 @@
               <l-control-layers :collapsed="false" :sort-layers="true" />
               <l-control position="topright">
                 <div class="leaflet-control-layers leaflet-control-layers-expanded" aria-haspopup="true">
-                  Name: {{ selectedHotspot.name }}
+                  Place: {{ selectedChecklist.loc.Name }} Date: {{ selectedChecklist.obsDt }}
+                  {{ selectedChecklist.obsTime }} Number of species: {{ selectedChecklist.numSpecies }}
+                  <b-button :href="'https://ebird.org/checklist/' + selectedChecklist.subId">
+                    {{ selectedChecklist.subId }}
+                  </b-button>
                 </div>
               </l-control>
               <l-tile-layer
@@ -30,33 +40,40 @@
                 :opacity="r.region == activeRegion ? 0.8 : 0.4"
                 :weight="6"
               />
-              <l-marker
-                v-for="(h, i) in activeHighlights"
-                :key="h.name"
-                :lat-lng="[h.lat, h.lon]"
-                :icon="getIcon(h, i + 1)"
-              ></l-marker>
-              <l-marker v-if="locations.length > 0 && locations[0].lat" :lat-lng="[locations[0].lat, locations[0].lon]">
-                <l-icon icon-url="/logo.svg" :icon-size="[104, 40]" :icon-anchor="[52, 20]" />
-              </l-marker>
-              <l-polyline :lat-lngs="locations.map((l) => [l.lat, l.lon])" color="green" :weight="10" />
               <l-layer-group layer-type="overlay" name="eBird Checklist">
                 <l-circle-marker
-                  v-for="loc in tripreport[0].locations"
-                  :key="loc.locID"
-                  :lat-lng="[loc.latitude, loc.longitude]"
+                  v-for="check in checklists"
+                  :key="check.subID"
+                  :lat-lng="[check.loc.lat, check.loc.lng]"
                   :weight="0"
                   fillColor="#4ca800"
                   :radius="5"
                   :fillOpacity="0.8"
-                  @click="selectedHotspot = loc"
+                  @click="selectedChecklist = check"
                 />
               </l-layer-group>
+              <!--<l-marker
+                v-for="(h, i) in activeHighlights"
+                :key="h.name"
+                :lat-lng="[h.lat, h.lon]"
+                :icon="getIcon(h, i + 1)"
+              ></l-marker>-->
+              <l-polyline :lat-lngs="locations.map((l) => [l.lat, l.lon])" color="green" :weight="10" />
+              <l-marker
+                v-for="(p, i) in posts"
+                :key="p.title"
+                :lat-lng="[p.lat, p.lon]"
+                :icon="getIcon(p, i + 1)"
+              ></l-marker>
+
+              <l-marker v-if="locations.length > 0 && locations[0].lat" :lat-lng="[locations[0].lat, locations[0].lon]">
+                <l-icon icon-url="/logo.svg" :icon-size="[104, 40]" :icon-anchor="[52, 20]" />
+              </l-marker>
             </l-map>
           </b-col>
         </b-row>
         <b-row>
-          <b-button-group>
+          <b-button-group class="w-100">
             <b-button
               squared
               v-for="r in regions"
@@ -70,52 +87,57 @@
         </b-row>
         <Photos />
       </b-col>
-      <b-col class="h-100 d-flex flex-column">
-        <b-nav pills class="m-auto">
-          <b-nav-item v-for="v in ['Plan', 'Live']" :key="v" @click="view = v" :active="view == v">
-            {{ v }}
-          </b-nav-item>
-        </b-nav>
-        <div class="overflow-auto">
-          <b-col v-if="view == 'Live'">
-            <b-card-group columns>
-              <b-card v-for="p in posts" :key="p.title" :title="p.title">
-                <b-card-header>
-                  <b-img :src="p.cover" img-right fluid style="max-height: 100px" />
-                </b-card-header>
-                <b-card-text>
-                  {{ p.author }}
-                  {{ p.date }}
-                  {{ p.text1 }}
-                </b-card-text>
-              </b-card>
-            </b-card-group>
-          </b-col>
-          <b-col v-if="view == 'Plan'">
-            <b-card-group columns>
-              <b-card
-                v-for="(h, i) in activeHighlights"
-                :key="h.name"
-                :img-src="h.photo_url"
-                img-right
-                :title="i + 1 + '. ' + h.name"
-              >
-                <b-card-text v-html="h.text" />
-              </b-card>
-            </b-card-group>
-          </b-col>
-        </div>
+      <b-col class="h-100 col-xs-12 md-6 col-lg-4 py-2">
+        <b-card v-if="posts[i_post]" no-body class="h-100">
+          <div
+            class="card-header text-light"
+            :style="{ backgroundColor: regions.find((r) => r.region == posts[i_post].region).color }"
+          >
+            <h1>{{ posts[i_post].title }}</h1>
+
+            <div class="d-flex justify-content-between">
+              <div><b-icon icon="person-lines-fill"></b-icon> {{ posts[i_post].author }}</div>
+              <div><b-icon icon="calendar-date-fill"></b-icon> {{ posts[i_post].date }}</div>
+              <div>
+                <b-icon icon="geo-alt-fill"></b-icon>
+                {{ posts[i_post].location }}
+              </div>
+              <div>
+                <b-icon :icon="posts[i_post].weather"></b-icon>
+              </div>
+            </div>
+          </div>
+          <b-card-body class="overflow-auto">
+            <b-card-text>
+              <h4>{{ posts[i_post].subtitle }}</h4>
+            </b-card-text>
+            <b-card-text>
+              {{ posts[i_post].text1 }}
+            </b-card-text>
+            <b-card-img :src="posts[i_post].photo1"></b-card-img>
+            <b-card-text>
+              {{ posts[i_post].text2 }}
+            </b-card-text>
+            <b-card-img :src="posts[i_post].photo2"></b-card-img>
+            <b-card-text>
+              {{ posts[i_post].text3 }}
+            </b-card-text>
+            <b-card-img :src="posts[i_post].photo3"></b-card-img>
+          </b-card-body>
+        </b-card>
       </b-col>
     </b-row>
   </b-container>
 </template>
 <script setup>
 import regionsJson from "./assets/regions.json";
-import tripreport from "./assets/tripreport.json";
+import past_checklists from "./assets/checklists.json";
+import past_taxon from "./assets/taxon-list.json";
 </script>
 
 <script>
 const google_api_key = "AIzaSyCaVWdIpSvq8BoF7PvEK4oY3LByPYTQ2Xs";
+const live_tripreport_id = 86087;
 
 import polyUtil from "polyline-encoded";
 import {
@@ -130,7 +152,6 @@ import {
   LControl,
 } from "vue2-leaflet";
 import Photos from "./Photos.vue";
-import eBird from "./eBird.vue";
 
 export default {
   components: {
@@ -140,7 +161,6 @@ export default {
     LMarker,
     LIcon,
     Photos,
-    eBird,
     LCircleMarker,
     LLayerGroup,
     LControlLayers,
@@ -149,16 +169,18 @@ export default {
   data() {
     return {
       mapboxToken: "pk.eyJ1IjoicmFmbnVzcyIsImEiOiIzMVE1dnc0In0.3FNMKIlQ_afYktqki-6m0g",
-      view: "Plan",
       activeRegion: "midwest",
       regions: regionsJson.map((r) => {
         r.route = polyUtil.decode(r.route);
         return r;
       }),
-      tripreport: [],
-      locations: [],
+      checklists: [],
       posts: [],
-      selectedHotspot: {},
+      i_post: 0,
+      selectedChecklist: {},
+      locations: [],
+      latestLifer: "",
+      taxon: [],
     };
   },
   methods: {
@@ -185,6 +207,21 @@ export default {
     async refreshLocations() {
       this.locations = await this.loadLocations();
     },
+    async openSpeciesChecklist(spCode) {
+      const response = await fetch(
+        "http://tripreport.raphaelnussbaumer.com/tripreport-internal/v1/taxon-detail/" +
+          live_tripreport_id +
+          "/" +
+          spCode
+      );
+      const json = await response.json();
+      const check = json.checklists.reduce((acc, current) => {
+        return current.obsDt < acc.obsDt ? current : acc;
+      }, json.checklists[0]);
+
+      const url = "https://ebird.org/checklist/" + check.subId + "#" + spCode;
+      window.open(url, "_blank");
+    },
   },
   computed: {
     activeHighlights() {
@@ -196,52 +233,94 @@ export default {
           return h;
         });
     },
+    liferCount() {
+      try {
+        return this.taxon.filter((t) => t.isLifer & (t.category == "species")).length;
+      } catch (error) {
+        return null;
+      }
+    },
   },
   created: function () {
     this.loadLocations();
     setInterval(this.refreshLocations, 15 * 60 * 1000);
 
-    this.tripreport = tripreport.map((trip) => {
-      if (trip.status == "live") {
-        console.log(trip);
-        var taxon_link = "http://tripreport.raphaelnussbaumer.com/tripreport-internal/v1/taxon-list/" + trip.id;
-        var locations_link = "http://tripreport.raphaelnussbaumer.com/tripreport-internal/v1/locations/" + trip.id;
-        fetch(locations_link)
-          .then((response) => response.json())
-          .then((data) => {
-            trip.locations = data;
-          })
-          .catch((error) => console.error(error));
-      }
-      return trip;
-    });
+    // Checklsit
+    fetch("http://tripreport.raphaelnussbaumer.com/tripreport-internal/v1/checklists/" + live_tripreport_id)
+      .then((response) => response.json())
+      .then((data) => {
+        this.checklists = [...past_checklists, ...data];
+      })
+      .catch((error) => console.error(error));
 
     fetch(
-      "https://sheets.googleapis.com/v4/spreadsheets/12VqL_Epf2l6NnHHQM3Osd_3nh0h61bPvD66uCSsPAXg/values/A1:K100?key=" +
+      "https://sheets.googleapis.com/v4/spreadsheets/12VqL_Epf2l6NnHHQM3Osd_3nh0h61bPvD66uCSsPAXg/values/A1:Z100?key=" +
         google_api_key
     )
       .then((response) => response.json())
       .then((data) => {
         const rows = data.values.slice(1);
 
-        this.posts = rows.map((row) => {
-          return {
-            title: row[1],
-            author: row[6],
-            date: new Date(row[0]),
-            lon: parseFloat(row[6].split(", ")[1]),
-            lat: parseFloat(row[6].split(", ")[0]),
-            cover: row[3].replace("open?", "uc?export=view&"),
-            text1: row[2],
-            photo1: row[7],
-            text2: row[9],
-            photo2: row[8],
-            text3: row[9],
-          };
-        });
+        this.posts = rows
+          .map((row) => {
+            return {
+              title: row[1],
+              text1: row[2],
+              cover: row[3] ? row[3].replace("open?", "uc?export=view&") : "",
+              date: row[4],
+              lon: parseFloat(row[5].split(", ")[1]) || null,
+              lat: parseFloat(row[5].split(", ")[0]) || null,
+              author: row[6],
+              photo1: row[7] ? row[7].replace("open?", "uc?export=view&") : "",
+              photo3: row[8] ? row[8].replace("open?", "uc?export=view&") : "",
+              text2: row[9],
+              weather: row[10],
+              subtitle: row[11],
+              text3: row[12],
+              photo2: row[13] ? row[13].replace("open?", "uc?export=view&") : "",
+              location: row[14],
+              region: row[15],
+            };
+          })
+          .sort((a, b) => a.date - b.date);
+      })
+      .catch((error) => console.error(error));
+
+    // Taxon
+    fetch("http://tripreport.raphaelnussbaumer.com/tripreport-internal/v1//taxon-list/" + live_tripreport_id)
+      .then((response) => response.json())
+      .then((data) => {
+        this.taxon = [...past_taxon, ...data].reduce((acc, curr) => {
+          const foundIndex = acc.findIndex((item) => item.speciesCode === curr.speciesCode);
+          if (foundIndex !== -1) {
+            acc[foundIndex].numIndividuals += curr.numIndividuals;
+            acc[foundIndex].numChecklists += curr.numChecklists;
+            acc[foundIndex].numPhotos += curr.numPhotos;
+            acc[foundIndex].numAudio += curr.numAudio;
+            acc[foundIndex].numVideo += curr.numVideo;
+            acc[foundIndex].numMedia += curr.numMedia;
+            acc[foundIndex].isLifer = acc[foundIndex].isLifer || curr.isLifer;
+          } else {
+            acc.push(curr);
+          }
+          return acc;
+        }, []);
+      })
+      .catch((error) => console.error(error));
+
+    fetch(
+      "https://sheets.googleapis.com/v4/spreadsheets/1tJUNjqhX6L7bXPapc1VMyymRk9KbMjARpWB24J2tbK4/values/Sheet3!A1:C1?key=" +
+        google_api_key
+    )
+      .then((response) => response.json())
+      .then((data) => {
+        console.log(data.values);
+        this.latestLifer = data.values[0];
       })
       .catch((error) => console.error(error));
   },
   mounted() {},
 };
 </script>
+
+<style></style>
