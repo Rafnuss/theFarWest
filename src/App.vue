@@ -1,91 +1,104 @@
 <template>
   <b-container fluid class="h-100 bg-light">
     <b-row class="h-100">
-      <b-col class="h-100 col-xs-12 md-6 col-lg-8 d-flex flex-column">
+      <b-col class="h-100 col-xs-12 md-6 col-lg-8 d-flex flex-column pr-0">
         <b-row style="height: 100px">
-          {{ liferCount }}
-
-          <b-button variant="outline-primary" @click="openSpeciesChecklist(latestLifer[2])">{{
-            latestLifer[1]
-          }}</b-button>
+          <b-col class="py-2">
+            <b-card class="w-100">
+              # {{ liferCount }} Latest lifer:<b-button
+                variant="outline-primary"
+                @click="openSpeciesChecklist(latestLifer[2])"
+                >{{ latestLifer[1] }}</b-button
+              >
+              {{ formatNumber(individualCount) }}
+              {{ specieCount }}
+            </b-card>
+          </b-col>
         </b-row>
         <b-row class="flex-grow-1">
-          <b-col class="flex-grow-1 px-0">
-            <l-map
-              :bounds="[
-                [26, -72],
-                [50, -127],
-              ]"
-            >
-              <l-control-layers :collapsed="false" :sort-layers="true" />
-              <l-control position="topright">
-                <div class="leaflet-control-layers leaflet-control-layers-expanded" aria-haspopup="true">
-                  Place: {{ selectedChecklist.loc.Name }} Date: {{ selectedChecklist.obsDt }}
-                  {{ selectedChecklist.obsTime }} Number of species: {{ selectedChecklist.numSpecies }}
-                  <b-button :href="'https://ebird.org/checklist/' + selectedChecklist.subId">
-                    {{ selectedChecklist.subId }}
-                  </b-button>
-                </div>
-              </l-control>
-              <l-tile-layer
-                :url="
-                  'https://api.mapbox.com/styles/v1/mapbox/streets-v9/tiles/{z}/{x}/{y}?access_token=' + mapboxToken
-                "
-              />
-              <l-polyline
-                v-for="r in regions"
-                :key="r.region"
-                :lat-lngs="r.route"
-                :color="r.color"
-                :opacity="r.region == activeRegion ? 0.8 : 0.4"
-                :weight="6"
-              />
-              <l-layer-group layer-type="overlay" name="eBird Checklist">
-                <l-circle-marker
-                  v-for="check in checklists"
-                  :key="check.subID"
-                  :lat-lng="[check.loc.lat, check.loc.lng]"
-                  :weight="0"
-                  fillColor="#4ca800"
-                  :radius="5"
-                  :fillOpacity="0.8"
-                  @click="selectedChecklist = check"
+          <b-col class="flex-grow-1">
+            <b-card class="w-100 h-100" no-body>
+              <l-map
+                :bounds="[
+                  [26, -72],
+                  [50, -127],
+                ]"
+              >
+                <l-control-layers :collapsed="false" :sort-layers="true" />
+                <l-control position="topright" v-if="selectedChecklist.length">
+                  {{ selectedChecklist }}
+                  <div class="leaflet-control-layers leaflet-control-layers-expanded" aria-haspopup="true">
+                    Place: {{ selectedChecklist.loc.Name }} Date: {{ selectedChecklist.obsDt }}
+                    {{ selectedChecklist.obsTime }} Number of species:
+                    {{ selectedChecklist.numSpecies }}
+                    <b-button :href="'https://ebird.org/checklist/' + selectedChecklist.subId">
+                      {{ selectedChecklist.subId }}
+                    </b-button>
+                  </div>
+                </l-control>
+                <l-tile-layer
+                  :url="
+                    'https://api.mapbox.com/styles/v1/mapbox/streets-v9/tiles/{z}/{x}/{y}?access_token=' + mapboxToken
+                  "
                 />
-              </l-layer-group>
-              <!--<l-marker
+                <l-polyline
+                  v-for="r in regions"
+                  :key="r.region"
+                  :lat-lngs="r.route"
+                  :color="r.color"
+                  :opacity="r.region == activeRegion ? 0.8 : 0.4"
+                  :weight="6"
+                />
+                <l-layer-group layer-type="overlay" name="eBird Checklist">
+                  <l-circle-marker
+                    v-for="check in checklists"
+                    :key="check.subID"
+                    :lat-lng="[check.loc.lat, check.loc.lng]"
+                    :weight="0"
+                    fillColor="#4ca800"
+                    :radius="5"
+                    :fillOpacity="0.8"
+                    @click="selectedChecklist = check"
+                  />
+                </l-layer-group>
+                <!--<l-marker
                 v-for="(h, i) in activeHighlights"
                 :key="h.name"
                 :lat-lng="[h.lat, h.lon]"
                 :icon="getIcon(h, i + 1)"
               ></l-marker>-->
-              <l-polyline :lat-lngs="locations.map((l) => [l.lat, l.lon])" color="green" :weight="10" />
-              <l-marker
-                v-for="(p, i) in posts"
-                :key="p.title"
-                :lat-lng="[p.lat, p.lon]"
-                :icon="getIcon(p, i + 1)"
-              ></l-marker>
+                <l-polyline :lat-lngs="locations.map((l) => [l.lat, l.lon])" color="green" :weight="10" />
+                <l-marker
+                  v-for="(p, i) in posts"
+                  :key="p.title"
+                  :lat-lng="[p.lat, p.lon]"
+                  :icon="getIcon(p, i + 1)"
+                ></l-marker>
 
-              <l-marker v-if="locations.length > 0 && locations[0].lat" :lat-lng="[locations[0].lat, locations[0].lon]">
-                <l-icon icon-url="/logo.svg" :icon-size="[104, 40]" :icon-anchor="[52, 20]" />
-              </l-marker>
-            </l-map>
+                <l-marker
+                  v-if="locations.length > 0 && locations[0].lat"
+                  :lat-lng="[locations[0].lat, locations[0].lon]"
+                >
+                  <l-icon icon-url="/logo.svg" :icon-size="[104, 40]" :icon-anchor="[52, 20]" />
+                </l-marker>
+              </l-map>
+              <b-button-group class="w-100">
+                <b-button
+                  squared
+                  v-for="r in regions"
+                  :key="r.region"
+                  :style="{ 'background-color': r.color, 'border-color': r.color }"
+                  @click="activeRegion = r.region"
+                >
+                  {{ r.name }}
+                </b-button>
+              </b-button-group>
+            </b-card>
           </b-col>
         </b-row>
-        <b-row>
-          <b-button-group class="w-100">
-            <b-button
-              squared
-              v-for="r in regions"
-              :key="r.region"
-              :style="{ 'background-color': r.color, 'border-color': r.color }"
-              @click="activeRegion = r.region"
-            >
-              {{ r.name }}
-            </b-button>
-          </b-button-group>
+        <b-row class="py-2">
+          <Photos />
         </b-row>
-        <Photos />
       </b-col>
       <b-col class="h-100 col-xs-12 md-6 col-lg-4 py-2">
         <b-card v-if="posts[i_post]" no-body class="h-100">
@@ -222,6 +235,15 @@ export default {
       const url = "https://ebird.org/checklist/" + check.subId + "#" + spCode;
       window.open(url, "_blank");
     },
+    formatNumber(num) {
+      if (num >= 1000000) {
+        return (num / 1000000).toFixed(1) + "M";
+      } else if (num >= 1000) {
+        return (num / 1000).toFixed(1) + "K";
+      } else {
+        return num.toString();
+      }
+    },
   },
   computed: {
     activeHighlights() {
@@ -236,6 +258,20 @@ export default {
     liferCount() {
       try {
         return this.taxon.filter((t) => t.isLifer & (t.category == "species")).length;
+      } catch (error) {
+        return null;
+      }
+    },
+    specieCount() {
+      try {
+        return this.taxon.filter((t) => t.category == "species").length;
+      } catch (error) {
+        return null;
+      }
+    },
+    individualCount() {
+      try {
+        return this.taxon.reduce((acc, t) => acc + t.numIndividuals, 0);
       } catch (error) {
         return null;
       }

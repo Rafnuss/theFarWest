@@ -9,20 +9,35 @@
       <b-img :src="modal_link" />
     </b-modal>
   </b-container>-->
-  <b-row class="bg-dark" style="height: 200px" v-if="(photos.length > 0) & false">
-    <swiper-container
-      slides-per-view="4"
-      grab-cursor="true"
-      space-between="10"
-      free-mode="true"
-      scrollbar="true"
-      class="h-100"
-    >
-      <swiper-slide v-for="p in photos" :key="p.uid" class="d-flex justify-content-center">
-        <b-img-lazy :src="p.url" />
-      </swiper-slide>
-    </swiper-container>
-  </b-row>
+  <b-col style="height: 200px" v-if="photos.length > 0">
+    <b-card no-body class="bg-dark h-100 p-1">
+      <swiper-container
+        slides-per-view="4"
+        grab-cursor="true"
+        space-between="0"
+        free-mode="true"
+        scrollbar="true"
+        class="h-100 w-100"
+      >
+        <swiper-slide v-for="p in photos" :key="p.uid" class="d-flex justify-content-center">
+          <a
+            :href="
+              'https://photos.google.com/share/AF1QipOLgdj0ER3a_cn65K57LMusJT3LgR497ja65WUBSjo-Dl2DSAZdSSFtyzaGUKuDwg/photo/' +
+              p.uid
+            "
+            target="_blank"
+          >
+            <b-img-lazy fluid class="h-100" :src="p.url" />
+          </a>
+        </swiper-slide>
+        <swiper-slide>
+          <div class="h-100 d-flex justify-content-center align-items-center bg-light">
+            <a href="https://photos.app.goo.gl/VPdgZR1rM6jrhfr57">See more on google album... </a>
+          </div>
+        </swiper-slide>
+      </swiper-container>
+    </b-card>
+  </b-col>
 </template>
 
 <script>
@@ -54,8 +69,7 @@ export default {
       const json = await response.json();
       if (json != null) {
         this.photos = json;
-        /* this.photos = [
-          "PXL_20230122_135023845.jpg",
+        /*this.photos = [
           "PXL_20230123_003245995.PORTRAIT.jpg",
           "PXL_20230212_174355161.jpg",
           "PXL_20230301_134654730.PORTRAIT.jpg",
@@ -67,7 +81,7 @@ export default {
           "PXL_20230211_000205467.PORTRAIT.jpg",
           "PXL_20230218_142137347.jpg",
         ].map((e) => {
-          return { url: "Photos-001/" + e };
+          return { url: "photos/" + e };
         });*/
         return true;
       } else {
