@@ -25,8 +25,7 @@
                 ]"
               >
                 <l-control-layers :collapsed="false" :sort-layers="true" />
-                <l-control position="topright" v-if="selectedChecklist.length">
-                  {{ selectedChecklist }}
+                <l-control position="topright" v-if="selectedChecklist.locId">
                   <div class="leaflet-control-layers leaflet-control-layers-expanded" aria-haspopup="true">
                     Place: {{ selectedChecklist.loc.Name }} Date: {{ selectedChecklist.obsDt }}
                     {{ selectedChecklist.obsTime }} Number of species:
@@ -68,16 +67,12 @@
                 :icon="getIcon(h, i + 1)"
               ></l-marker>-->
                 <l-polyline :lat-lngs="locations.map((l) => [l.lat, l.lon])" color="green" :weight="10" />
-                <l-marker
-                  v-for="(p, i) in posts"
-                  :key="p.title"
-                  :lat-lng="[p.lat, p.lon]"
-                  :icon="getIcon(p, i + 1)"
-                ></l-marker>
+                <l-marker v-for="(p, i) in posts" :key="p.title" :lat-lng="[p.lat, p.lon]" :icon="getIcon(p, i + 1)" />
 
                 <l-marker
                   v-if="locations.length > 0 && locations[0].lat"
                   :lat-lng="[locations[0].lat, locations[0].lon]"
+                  :zIndexOffset="100"
                 >
                   <l-icon icon-url="/logo.svg" :icon-size="[104, 40]" :icon-anchor="[52, 20]" />
                 </l-marker>
@@ -96,7 +91,7 @@
             </b-card>
           </b-col>
         </b-row>
-        <b-row class="py-2">
+        <b-row class="py-2" v-if="false">
           <Photos />
         </b-row>
       </b-col>
@@ -106,8 +101,21 @@
             class="card-header text-light"
             :style="{ backgroundColor: regions.find((r) => r.region == posts[i_post].region).color }"
           >
-            <h1>{{ posts[i_post].title }}</h1>
-
+            <div class="d-flex justify-content-between align-items-center">
+              <b-icon
+                icon="chevron-left"
+                @click="i_post = Math.max(i_post - 1, 0)"
+                class="cursor-pointer"
+                :disabled="i_post == 0"
+              />
+              <h1 class="cursor-pointer">{{ posts[i_post].title }}</h1>
+              <b-icon
+                icon="chevron-right"
+                class="cursor-pointer"
+                @click="i_post = Math.min(i_post + 1, posts.length - 1)"
+                :disabled="i_post == posts.length"
+              />
+            </div>
             <div class="d-flex justify-content-between">
               <div><b-icon icon="person-lines-fill"></b-icon> {{ posts[i_post].author }}</div>
               <div><b-icon icon="calendar-date-fill"></b-icon> {{ posts[i_post].date }}</div>
@@ -359,4 +367,11 @@ export default {
 };
 </script>
 
-<style></style>
+<style>
+.leaflet-control-layers label {
+  margin-bottom: 0px;
+}
+.cursor-pointer {
+  cursor: pointer;
+}
+</style>
