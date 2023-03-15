@@ -66,12 +66,12 @@
                 :lat-lng="[h.lat, h.lon]"
                 :icon="getIcon(h, i + 1)"
               ></l-marker>-->
-                <l-polyline :lat-lngs="locations.map((l) => [l.lat, l.lon])" color="green" :weight="10" />
+                <l-polyline :lat-lngs="locations" color="black" :weight="1" />
+                <l-polyline :lat-lngs="locations2" color="red" :weight="2" />
                 <l-marker v-for="(p, i) in posts" :key="p.title" :lat-lng="[p.lat, p.lon]" :icon="getIcon(p, i + 1)" />
-
                 <l-marker
-                  v-if="locations.length > 0 && locations[0].lat"
-                  :lat-lng="[locations[0].lat, locations[0].lon]"
+                  v-if="locations.length > 0 && locations[locations.length - 1]"
+                  :lat-lng="locations[locations.length - 1]"
                   :zIndexOffset="100"
                 >
                   <l-icon icon-url="/logo.svg" :icon-size="[104, 40]" :icon-anchor="[52, 20]" />
@@ -200,6 +200,7 @@ export default {
       i_post: 0,
       selectedChecklist: {},
       locations: [],
+      locations2: [],
       latestLifer: "",
       taxon: [],
     };
@@ -219,14 +220,18 @@ export default {
       const response = await fetch("http://farwest-locations.raphaelnussbaumer.com/locations.csv");
       const text = await response.text();
       const rows = text.trim().split("\n");
-      const locations = rows.map((row) => {
+      let locations = rows.map((row) => {
         const [lat, lon, time] = row.split(",");
         return { time: parseInt(time), lat: parseFloat(lat), lon: parseFloat(lon) };
       });
-      this.locations = locations;
-    },
-    async refreshLocations() {
-      this.locations = await this.loadLocations();
+      this.locations = locations.map((l) => [l.lat, l.lon]);
+      console.log(locations.length);
+      locations = detectOutliers(locations, 2, 2);
+      locations = locations.map((l) => [l.lat, l.lon]);
+      console.log(locations.length);
+      locations = filterLatLngArray(locations, 1 / 111 / 100);
+      console.log(locations.length);
+      this.locations2 = locations;
     },
     async openSpeciesChecklist(spCode) {
       const response = await fetch(
@@ -287,7 +292,6 @@ export default {
   },
   created: function () {
     this.loadLocations();
-    setInterval(this.refreshLocations, 15 * 60 * 1000);
 
     // Checklsit
     fetch("http://tripreport.raphaelnussbaumer.com/tripreport-internal/v1/checklists/" + live_tripreport_id)
@@ -331,7 +335,7 @@ export default {
       .catch((error) => console.error(error));
 
     // Taxon
-    fetch("http://tripreport.raphaelnussbaumer.com/tripreport-internal/v1//taxon-list/" + live_tripreport_id)
+    fetch("http://tripreport.raphaelnussbaumer.com/tripreport-internal/v1/taxon-list/" + live_tripreport_id)
       .then((response) => response.json())
       .then((data) => {
         this.taxon = [...past_taxon, ...data].reduce((acc, curr) => {
@@ -358,13 +362,101 @@ export default {
     )
       .then((response) => response.json())
       .then((data) => {
-        console.log(data.values);
         this.latestLifer = data.values[0];
       })
       .catch((error) => console.error(error));
   },
   mounted() {},
 };
+
+function detectOutliers(data, halfWindowSize, threshold) {
+  // Create an empty array to store the outliers
+  const outliers = [];
+
+  // Loop through the data points
+  for (let i = halfWindowSize; i < data.length - halfWindowSize - 1; i++) {
+    // Get the current window of data
+    const window = data.slice(i - halfWindowSize, i + halfWindowSize);
+
+    // Check that the temporal is the same
+    const arr = window.map((d) => d.time);
+    const differences = arr.slice(1).map((currentValue, index) => currentValue - arr[index]);
+    if (Math.max(...differences) - Math.min(...differences) > 5) {
+      continue;
+    }
+
+    // Calculate the median latitude and longitude
+    const latitudes = window.map((d) => d.lat);
+    const longitudes = window.map((d) => d.lon);
+    const medianLatitude = median(latitudes);
+    const medianLongitude = median(longitudes);
+
+    // Calculate the median absolute deviation (MAD) for latitude and longitude
+    const latDeviations = latitudes.map((d) => Math.abs(d - medianLatitude));
+    const longDeviations = longitudes.map((d) => Math.abs(d - medianLongitude));
+    const latMAD = median(latDeviations);
+    const longMAD = median(longDeviations);
+
+    // Calculate the upper and lower bounds for latitude and longitude
+    const upperLatBound = medianLatitude + threshold * latMAD;
+    const lowerLatBound = medianLatitude - threshold * latMAD;
+    const upperLongBound = medianLongitude + threshold * longMAD;
+    const lowerLongBound = medianLongitude - threshold * longMAD;
+
+    // Check if any points in the window fall outside the bounds
+    if (
+      data[i].lat > upperLatBound ||
+      data[i].lat < lowerLatBound ||
+      data[i].lon > upperLongBound ||
+      data[i].lon < lowerLongBound
+    ) {
+      outliers.push(i);
+    }
+  }
+
+  return data.filter((x, id) => {
+    return !outliers.includes(id);
+  });
+}
+
+function median(values) {
+  values.sort((a, b) => a - b);
+  const half = Math.floor(values.length / 2);
+  if (values.length % 2 === 0) {
+    return (values[half - 1] + values[half]) / 2;
+  } else {
+    return values[half];
+  }
+}
+
+function filterLatLngArray(array, threshold) {
+  return array.reduce((accumulator, currentValue, currentIndex, array) => {
+    if (currentIndex === 0 || currentIndex === array.length - 1) {
+      accumulator.push(currentValue);
+    } else {
+      let prevLatLng = array[currentIndex - 1];
+      let nextLatLng = array[currentIndex + 1];
+      let prevDistance = getDistanceFromLatLng(prevLatLng[0], prevLatLng[1], currentValue[0], currentValue[1]);
+      let nextDistance = getDistanceFromLatLng(currentValue[0], currentValue[1], nextLatLng[0], nextLatLng[1]);
+
+      if (prevDistance > threshold || nextDistance > threshold) {
+        let prevnextDistance = getDistanceFromLatLng(prevLatLng[0], prevLatLng[1], nextLatLng[0], nextLatLng[1]);
+        if (2 * prevnextDistance > prevDistance || 2 * prevnextDistance > nextDistance) {
+          accumulator.push(currentValue);
+        }
+      }
+    }
+    return accumulator;
+  }, []);
+}
+
+function getDistanceFromLatLng(lat1, lng1, lat2, lng2) {
+  // Calculation of distance between two latitude-longitude pairs
+  // You can use any formula here, for example Haversine formula
+  // This example uses the Pythagorean theorem approximation
+  let distance = Math.sqrt(Math.pow(lat2 - lat1, 2) + Math.pow(lng2 - lng1, 2));
+  return distance;
+}
 </script>
 
 <style>
