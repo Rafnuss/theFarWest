@@ -2,16 +2,32 @@
   <b-container fluid class="h-100 bg-light">
     <b-row class="h-100">
       <b-col class="h-100 col-xs-12 md-6 col-lg-8 d-flex flex-column pr-0">
-        <b-row style="height: 100px">
+        <b-row>
           <b-col class="py-2">
-            <b-card class="w-100">
-              # {{ liferCount }} Latest lifer:<b-button
-                variant="outline-primary"
-                @click="openSpeciesChecklist(latestLifer[2])"
-                >{{ latestLifer[1] }}</b-button
-              >
-              {{ formatNumber(individualCount) }}
-              {{ specieCount }}
+            <b-card class="w-100 p-2 d-flex flex-row bg-beige andy flex-wrap" no-body>
+              <b-img src="pikachu.png" height="100%;" />
+              <div><b-img src="title.svg" height="100%;" /></div>
+              <div class="d-flex align-items-center"><b-img src="pokeball.png" height="50%;" /></div>
+              <div class="d-flex flex-column text-center pl-3">
+                <div style="font-size: 1.2rem">LIFER#</div>
+                <div class="life-count pokemon">{{ liferCount }}</div>
+                <div>
+                  <b-link variant="outline-primary" @click="openSpeciesChecklist(latestLifer[2])">
+                    {{ latestLifer[1] }}
+                  </b-link>
+                </div>
+              </div>
+              <div class="d-flex flex-column text-center pl-3">
+                <div class="h-50 align-items-center">
+                  <b-img src="pokedex.png" height="50%;" />
+                  {{ specieCount }}
+                  espèce au compteur
+                </div>
+                <div class="h-50 align-items-center">
+                  {{ formatNumber(individualCount) }}
+                  Oiseaux comptés
+                </div>
+              </div>
             </b-card>
           </b-col>
         </b-row>

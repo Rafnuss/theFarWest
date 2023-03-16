@@ -1,6 +1,7 @@
 $theme-colors: (
-  "primary": #1abc9c,
+  "primary": #ab6f4c,
   "secondary": #2c3e50,
+  "beige": #ded5d7,
 );
 
 //"orange": #fbbd58
@@ -9,6 +10,15 @@ $theme-colors: (
 @import "node_modules/bootstrap-vue/src/index.scss";
 
 @import url("https://fonts.googleapis.com/css2?family=Jost:wght@200;400&display=swap");
+
+@font-face {
+  font-family: pokemon;
+  src: url(pokemon_monk.ttf);
+}
+@font-face {
+  font-family: andy;
+  src: url(andy.ttf);
+}
 
 html,
 body,
@@ -35,4 +45,16 @@ h1 {
 }
 .cursor-pointer {
   cursor: pointer;
+}
+.pokemon {
+  font-family: pokemon;
+  line-height: 1em;
+}
+.andy {
+  font-family: andy;
+  line-height: 1em;
+}
+.life-count {
+  font-size: 6rem;
+  line-height: 0.8;
 }
