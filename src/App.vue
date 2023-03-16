@@ -23,6 +23,7 @@
                   [26, -72],
                   [50, -127],
                 ]"
+                ref="map"
               >
                 <l-control-layers :collapsed="false" :sort-layers="true" />
                 <l-control position="topright" v-if="selectedChecklist.locId">
@@ -67,12 +68,13 @@
                 :icon="getIcon(h, i + 1)"
               ></l-marker>-->
                 <l-polyline :lat-lngs="locations" color="black" :weight="1" />
-                <l-polyline :lat-lngs="locations2" color="red" :weight="2" />
+                <!--<l-polyline :lat-lngs="locations2" color="red" :weight="2" />-->
                 <l-marker v-for="(p, i) in posts" :key="p.title" :lat-lng="[p.lat, p.lon]" :icon="getIcon(p, i + 1)" />
                 <l-marker
                   v-if="locations.length > 0 && locations[locations.length - 1]"
                   :lat-lng="locations[locations.length - 1]"
                   :zIndexOffset="100"
+                  @click="map.flyTo(locations[locations.length - 1], 14)"
                 >
                   <l-icon icon-url="/logo.svg" :icon-size="[104, 40]" :icon-anchor="[52, 20]" />
                 </l-marker>
@@ -190,6 +192,7 @@ export default {
   data() {
     return {
       mapboxToken: "pk.eyJ1IjoicmFmbnVzcyIsImEiOiIzMVE1dnc0In0.3FNMKIlQ_afYktqki-6m0g",
+      map: null,
       activeRegion: "midwest",
       regions: regionsJson.map((r) => {
         r.route = polyUtil.decode(r.route);
@@ -224,14 +227,11 @@ export default {
         const [lat, lon, time] = row.split(",");
         return { time: parseInt(time), lat: parseFloat(lat), lon: parseFloat(lon) };
       });
-      this.locations = locations.map((l) => [l.lat, l.lon]);
-      console.log(locations.length);
+      this.locations2 = locations.map((l) => [l.lat, l.lon]);
       locations = detectOutliers(locations, 2, 2);
       locations = locations.map((l) => [l.lat, l.lon]);
-      console.log(locations.length);
       locations = filterLatLngArray(locations, 1 / 111 / 100);
-      console.log(locations.length);
-      this.locations2 = locations;
+      this.locations = locations;
     },
     async openSpeciesChecklist(spCode) {
       const response = await fetch(
@@ -366,7 +366,11 @@ export default {
       })
       .catch((error) => console.error(error));
   },
-  mounted() {},
+  mounted() {
+    this.$nextTick(() => {
+      this.map = this.$refs.map.mapObject; // work as expected
+    });
+  },
 };
 
 function detectOutliers(data, halfWindowSize, threshold) {
