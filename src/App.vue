@@ -25,16 +25,37 @@
                 ]"
                 ref="map"
               >
-                <l-control-layers :collapsed="false" :sort-layers="true" />
-                <l-control position="topright" v-if="selectedChecklist.locId">
-                  <div class="leaflet-control-layers leaflet-control-layers-expanded" aria-haspopup="true">
-                    Place: {{ selectedChecklist.loc.Name }} Date: {{ selectedChecklist.obsDt }}
-                    {{ selectedChecklist.obsTime }} Number of species:
-                    {{ selectedChecklist.numSpecies }}
-                    <b-button :href="'https://ebird.org/checklist/' + selectedChecklist.subId">
-                      {{ selectedChecklist.subId }}
-                    </b-button>
-                  </div>
+                <l-control>
+                  <b-container class="control-ebird px-0">
+                    <b-row>
+                      <b-col class="text-center px-4">
+                        <b-checkbox v-model="showChecklist" switch> Show eBird checklists </b-checkbox>
+                      </b-col>
+                    </b-row>
+                    <div v-if="showChecklist && selectedChecklist.loc">
+                      <b-list-group flush>
+                        <b-list-group-item class="d-flex py-2">
+                          <v-icon name="map-marker-alt" class="mr-2" />
+                          {{ selectedChecklist.loc.name }}
+                        </b-list-group-item>
+                        <b-list-group-item class="d-flex py-2">
+                          <b-icon icon="clock-fill" class="mr-2" />
+                          {{ selectedChecklist.obsDt }}
+                          {{ selectedChecklist.obsTime }}
+                        </b-list-group-item>
+                        <b-list-group-item class="d-flex py-2">
+                          <v-icon name="dove" class="mr-2" />
+                          {{ selectedChecklist.numSpecies }}
+                        </b-list-group-item>
+                        <b-list-group-item class="d-flex py-2">
+                          <v-icon name="list-alt" class="mr-2" />
+                          <b-link :href="'https://ebird.org/checklist/' + selectedChecklist.subId">
+                            {{ selectedChecklist.subId }}
+                          </b-link>
+                        </b-list-group-item>
+                      </b-list-group>
+                    </div>
+                  </b-container>
                 </l-control>
                 <l-tile-layer
                   :url="
@@ -49,7 +70,7 @@
                   :opacity="r.region == activeRegion ? 0.8 : 0.4"
                   :weight="6"
                 />
-                <l-layer-group layer-type="overlay" name="eBird Checklist">
+                <template v-if="showChecklist">
                   <l-circle-marker
                     v-for="check in checklists"
                     :key="check.subID"
@@ -60,7 +81,7 @@
                     :fillOpacity="0.8"
                     @click="selectedChecklist = check"
                   />
-                </l-layer-group>
+                </template>
                 <!--<l-marker
                 v-for="(h, i) in activeHighlights"
                 :key="h.name"
@@ -69,7 +90,13 @@
               ></l-marker>-->
                 <l-polyline :lat-lngs="locations" color="black" :weight="1" />
                 <!--<l-polyline :lat-lngs="locations2" color="red" :weight="2" />-->
-                <l-marker v-for="(p, i) in posts" :key="p.title" :lat-lng="[p.lat, p.lon]" :icon="getIcon(p, i + 1)" />
+                <l-marker
+                  v-for="(p, i) in posts"
+                  :key="p.title"
+                  :lat-lng="[p.lat, p.lon]"
+                  :icon="getIcon(p, i + 1)"
+                  @click="i_post = i"
+                />
                 <l-marker
                   v-if="locations.length > 0 && locations[locations.length - 1]"
                   :lat-lng="locations[locations.length - 1]"
@@ -103,7 +130,7 @@
             class="card-header text-light"
             :style="{ backgroundColor: regions.find((r) => r.region == posts[i_post].region).color }"
           >
-            <div class="d-flex justify-content-between align-items-center">
+            <div class="d-flex py-2">
               <b-icon
                 icon="chevron-left"
                 @click="i_post = Math.max(i_post - 1, 0)"
@@ -206,6 +233,7 @@ export default {
       locations2: [],
       latestLifer: "",
       taxon: [],
+      showChecklist: false,
     };
   },
   methods: {
@@ -462,12 +490,3 @@ function getDistanceFromLatLng(lat1, lng1, lat2, lng2) {
   return distance;
 }
 </script>
-
-<style>
-.leaflet-control-layers label {
-  margin-bottom: 0px;
-}
-.cursor-pointer {
-  cursor: pointer;
-}
-</style>

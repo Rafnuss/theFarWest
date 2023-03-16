@@ -17,7 +17,22 @@ body,
   font-family: "Jost";
 }
 
+.leaflet-container {
+  font-family: "Jost" !important;
+}
+
 h1 {
   font-weight: 200;
   text-transform: uppercase;
+}
+
+.control-ebird {
+  width: 200px;
+  border: 2px solid rgba(0, 0, 0, 0.2);
+  background: #fff;
+  border-radius: 4px;
+  color: #212529;
+}
+.cursor-pointer {
+  cursor: pointer;
 }
