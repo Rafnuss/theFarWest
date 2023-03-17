@@ -4,17 +4,21 @@
       <b-col class="h-100 col-xs-12 md-6 col-lg-8 d-flex flex-column pr-0">
         <b-row>
           <b-col class="py-2">
-            <b-card class="w-100 p-2 d-flex flex-row bg-beige andy flex-wrap" no-body>
-              <b-img src="pikachu.png" height="100%;" />
-              <div><b-img src="title.svg" height="100%;" /></div>
-              <div class="d-flex align-items-center"><b-img src="pokeball.png" height="50%;" /></div>
-              <div class="d-flex flex-column text-center pl-3">
-                <div style="font-size: 1.2rem">LIFER#</div>
-                <div class="life-count pokemon">{{ liferCount }}</div>
-                <div>
-                  <b-link variant="outline-primary" @click="openSpeciesChecklist(latestLifer[2])">
-                    {{ latestLifer[1] }}
-                  </b-link>
+            <b-card class="w-100 p-2 d-flex flex-row justify-content-between bg-beige andy flex-wrap" no-body>
+              <div class="d-flex flex-row">
+                <b-img src="pikachu.png" height="100%;" />
+                <div><b-img src="title.svg" height="100%;" /></div>
+              </div>
+              <div class="d-flex flex-row">
+                <div class="d-flex align-items-center"><b-img src="pokeball.png" height="50%;" /></div>
+                <div class="d-flex flex-column text-center pl-3">
+                  <div style="font-size: 1.2rem">LIFER#</div>
+                  <div class="life-count pokemon">{{ liferCount }}</div>
+                  <div>
+                    <b-link variant="outline-primary" @click="openSpeciesChecklist(latestLifer[2])">
+                      {{ latestLifer[1] }}
+                    </b-link>
+                  </div>
                 </div>
               </div>
               <div class="d-flex flex-column text-center pl-3">
@@ -80,7 +84,7 @@
                   "
                 />
                 <l-polyline
-                  v-for="r in regions"
+                  v-for="r in route"
                   :key="r.region"
                   :lat-lngs="r.route"
                   :color="r.color"
@@ -197,14 +201,73 @@
   </b-container>
 </template>
 <script setup>
-import regionsJson from "./assets/regions.json";
+import route_json from "./assets/route.json";
 import past_checklists from "./assets/checklists.json";
 import past_taxon from "./assets/taxon-list.json";
 </script>
 
 <script>
 const google_api_key = "AIzaSyCaVWdIpSvq8BoF7PvEK4oY3LByPYTQ2Xs";
-const live_tripreport_id = 86087;
+const live_tripreport_id = 114024;
+
+const regions = [
+  {
+    region: "midwest",
+    name: "Mid West",
+    start_date: "2023-3-31",
+    end_date: "2023-4-08",
+    color: "#ab6f4c",
+    logo: "wheat",
+  },
+  {
+    region: "colorado",
+    name: "Colorado",
+    start_date: "2023-4-08",
+    end_date: "2023-4-17",
+    color: "#646345",
+    logo: "trees",
+  },
+  {
+    region: "texas",
+    name: "Texas",
+    start_date: "2023-4-17",
+    end_date: "2023-5-1",
+    color: "#8c3309",
+    logo: "hat-cowboy",
+  },
+  {
+    region: "arizona",
+    name: "Arizona",
+    start_date: "2023-5-1",
+    end_date: "2023-5-1",
+    color: "#d05c10",
+    logo: "cactus",
+  },
+  {
+    region: "california",
+    name: "California",
+    start_date: "2023-5-1",
+    end_date: "2023-5-24",
+    color: "#0b8189",
+    logo: "water",
+  },
+  {
+    region: "mountainwest",
+    name: "Mountain West",
+    start_date: "2023-5-24",
+    end_date: "2023-6-10",
+    color: "#6e5558",
+    logo: "mountain",
+  },
+  {
+    region: "cascadia",
+    name: "Cascadia",
+    start_date: "2023-6-10",
+    end_date: "2023-6-31",
+    color: "#a4a77b",
+    logo: "canadian-maple-leaf",
+  },
+];
 
 import polyUtil from "polyline-encoded";
 import {
@@ -238,9 +301,11 @@ export default {
       mapboxToken: "pk.eyJ1IjoicmFmbnVzcyIsImEiOiIzMVE1dnc0In0.3FNMKIlQ_afYktqki-6m0g",
       map: null,
       activeRegion: "midwest",
-      regions: regionsJson.map((r) => {
-        r.route = polyUtil.decode(r.route);
-        return r;
+      regions: regions,
+      route: route_json.map((s) => {
+        s.route = polyUtil.decode(s.route);
+        s.color = regions.find((r) => r.region == s.region).color;
+        return s;
       }),
       checklists: [],
       posts: [],

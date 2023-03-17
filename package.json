@@ -7,7 +7,7 @@
     "dev": "vite",
     "build": "vite build",
     "preview": "vite preview",
-    "processRegion": "node processRegion.js",
+    "processRoute": "node processRoute.js",
     "processTripreport": "node processTripreport.js"
   },
   "dependencies": {
