@@ -44,8 +44,9 @@
                 <l-control>
                   <b-container class="control-ebird px-0">
                     <b-row>
-                      <b-col class="text-center px-4">
-                        <b-checkbox v-model="showChecklist" switch> Show eBird checklists </b-checkbox>
+                      <b-col class="text-center px-4 d-flex align-items-center">
+                        <b-form-checkbox v-model="showChecklist" id="switch_1" switch />
+                        <label for="switch_1" class="mb-0">Afficher les listes eBird</label>
                       </b-col>
                     </b-row>
                     <div v-if="showChecklist && selectedChecklist.loc">
