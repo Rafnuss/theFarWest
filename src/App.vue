@@ -89,7 +89,7 @@
                 />
                 <template v-if="showChecklist">
                   <l-circle-marker
-                    v-for="check in checklists"
+                    v-for="check in checklists.filter((d) => d.loc.name != d.loc.subnational2Name)"
                     :key="check.subID"
                     :lat-lng="[check.loc.lat, check.loc.lng]"
                     :weight="0"
