@@ -1,9 +1,73 @@
 <template>
   <b-container fluid class="h-100 bg-light">
     <b-row class="h-100">
-      <b-col class="h-100 col-xs-12 md-6 col-lg-8 d-flex flex-column pr-0">
+      <b-col class="h-100 col-xs-12 md-6 col-lg-4 d-flex flex-column py-2">
         <b-row>
-          <b-col class="py-2">
+          <b-col class="pb-2">
+            <b-card class="w-100 p-2 d-flex flex-row bg-beige align-items-center justify-content-between" no-body>
+              <b-img src="title.svg" height="64px" />
+              <div>
+                <b-form-radio-group
+                  v-model="modeSelected"
+                  :options="modeOptions"
+                  button-variant="outline-primary"
+                  buttons
+                />
+              </div>
+            </b-card>
+          </b-col>
+        </b-row>
+        <b-card v-if="posts[i_post]" no-body class="flex-grow-1 overflow-hidden">
+          <div class="card-header text-light" :style="{ backgroundColor: posts[i_post].color }">
+            <div class="d-flex py-2">
+              <b-icon
+                icon="chevron-left"
+                @click="i_post = Math.max(i_post - 1, 0)"
+                class="cursor-pointer"
+                :disabled="i_post == 0"
+              />
+              <h1 class="cursor-pointer">{{ posts[i_post].title }}</h1>
+              <b-icon
+                icon="chevron-right"
+                class="cursor-pointer"
+                @click="i_post = Math.min(i_post + 1, posts.length - 1)"
+                :disabled="i_post == posts.length"
+              />
+            </div>
+            <div class="d-flex justify-content-between">
+              <div><b-icon icon="person-lines-fill"></b-icon> {{ posts[i_post].author }}</div>
+              <div><b-icon icon="calendar-date-fill"></b-icon> {{ posts[i_post].date }}</div>
+              <div>
+                <b-icon icon="geo-alt-fill"></b-icon>
+                {{ posts[i_post].location }}
+              </div>
+              <div>
+                <b-icon :icon="posts[i_post].weather"></b-icon>
+              </div>
+            </div>
+          </div>
+          <b-card-body class="overflow-auto flex-grow-1">
+            <b-card-text>
+              <h4>{{ posts[i_post].subtitle }}</h4>
+            </b-card-text>
+            <b-card-text>
+              {{ posts[i_post].text1 }}
+            </b-card-text>
+            <b-card-img :src="posts[i_post].photo1"></b-card-img>
+            <b-card-text>
+              {{ posts[i_post].text2 }}
+            </b-card-text>
+            <b-card-img :src="posts[i_post].photo2"></b-card-img>
+            <b-card-text>
+              {{ posts[i_post].text3 }}
+            </b-card-text>
+            <b-card-img :src="posts[i_post].photo3"></b-card-img>
+          </b-card-body>
+        </b-card>
+      </b-col>
+      <b-col class="h-100 col-xs-12 md-6 col-lg-8 d-flex flex-column py-2">
+        <b-row>
+          <b-col class="pb-2">
             <b-card class="w-100 p-2 d-flex flex-row justify-content-between bg-beige andy flex-wrap" no-body>
               <div class="d-flex flex-row">
                 <b-img src="pikachu.png" height="100%;" />
@@ -38,6 +102,19 @@
         <b-row class="flex-grow-1">
           <b-col class="flex-grow-1">
             <b-card class="w-100 h-100" no-body>
+              <b-button-group class="w-100">
+                <b-button
+                  squared
+                  v-for="r in regions"
+                  :key="r.region"
+                  :style="{ 'background-color': r.color, 'border-color': r.color }"
+                  :class="activeRegion == r.region ? '' : 'opacity-50'"
+                  @mouseover="activeRegion = r.region"
+                >
+                  <b-img :src="r.region + '.png'" class="mr-2 h-16" />
+                  {{ r.name }}
+                </b-button>
+              </b-button-group>
               <l-map
                 :bounds="[
                   [26, -72],
@@ -127,73 +204,12 @@
                   <l-icon icon-url="/logo.svg" :icon-size="[104, 40]" :icon-anchor="[52, 20]" />
                 </l-marker>
               </l-map>
-              <b-button-group class="w-100">
-                <b-button
-                  squared
-                  v-for="r in regions"
-                  :key="r.region"
-                  :style="{ 'background-color': r.color, 'border-color': r.color }"
-                  @click="activeRegion = r.region"
-                >
-                  <b-img :src="r.region + '.png'" class="mr-2 h-16" />
-                  {{ r.name }}
-                </b-button>
-              </b-button-group>
             </b-card>
           </b-col>
         </b-row>
-        <b-row class="py-2" v-if="false">
+        <b-row v-if="true">
           <Photos />
         </b-row>
-      </b-col>
-      <b-col class="h-100 col-xs-12 md-6 col-lg-4 py-2">
-        <b-card v-if="posts[i_post]" no-body class="h-100">
-          <div class="card-header text-light" :style="{ backgroundColor: posts[i_post].color }">
-            <div class="d-flex py-2">
-              <b-icon
-                icon="chevron-left"
-                @click="i_post = Math.max(i_post - 1, 0)"
-                class="cursor-pointer"
-                :disabled="i_post == 0"
-              />
-              <h1 class="cursor-pointer">{{ posts[i_post].title }}</h1>
-              <b-icon
-                icon="chevron-right"
-                class="cursor-pointer"
-                @click="i_post = Math.min(i_post + 1, posts.length - 1)"
-                :disabled="i_post == posts.length"
-              />
-            </div>
-            <div class="d-flex justify-content-between">
-              <div><b-icon icon="person-lines-fill"></b-icon> {{ posts[i_post].author }}</div>
-              <div><b-icon icon="calendar-date-fill"></b-icon> {{ posts[i_post].date }}</div>
-              <div>
-                <b-icon icon="geo-alt-fill"></b-icon>
-                {{ posts[i_post].location }}
-              </div>
-              <div>
-                <b-icon :icon="posts[i_post].weather"></b-icon>
-              </div>
-            </div>
-          </div>
-          <b-card-body class="overflow-auto">
-            <b-card-text>
-              <h4>{{ posts[i_post].subtitle }}</h4>
-            </b-card-text>
-            <b-card-text>
-              {{ posts[i_post].text1 }}
-            </b-card-text>
-            <b-card-img :src="posts[i_post].photo1"></b-card-img>
-            <b-card-text>
-              {{ posts[i_post].text2 }}
-            </b-card-text>
-            <b-card-img :src="posts[i_post].photo2"></b-card-img>
-            <b-card-text>
-              {{ posts[i_post].text3 }}
-            </b-card-text>
-            <b-card-img :src="posts[i_post].photo3"></b-card-img>
-          </b-card-body>
-        </b-card>
       </b-col>
     </b-row>
   </b-container>
@@ -293,6 +309,11 @@ export default {
       map: null,
       activeRegion: "midwest",
       regions: regions,
+      modeSelected: "live",
+      modeOptions: [
+        { text: "Suivez-nous live", value: "live" },
+        { text: "Découvrez le parcours", value: "route" },
+      ],
       route: route_json.map((s) => {
         s.route = polyUtil.decode(s.route);
         s.color = regions.find((r) => r.region == s.region).color;

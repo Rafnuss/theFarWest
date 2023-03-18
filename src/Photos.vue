@@ -9,7 +9,7 @@
       <b-img :src="modal_link" />
     </b-modal>
   </b-container>-->
-  <b-col style="height: 200px" v-if="photos.length > 0">
+  <b-col style="height: 200px" class="pt-2" v-if="photos.length > 0">
     <b-card no-body class="bg-dark h-100 p-1">
       <swiper-container
         slides-per-view="4"
@@ -62,14 +62,14 @@ export default {
       this.$refs["modal"].show();
     },
     async loadPhotos() {
-      const response = await fetch("http://farwest-photos.raphaelnussbaumer.com/");
+      const response = await fetch("https://farwest-photos.raphaelnussbaumer.com/");
       if (!response.ok) {
         throw new Error("Network response was not OK");
       }
       const json = await response.json();
       if (json != null) {
-        this.photos = json;
-        /*this.photos = [
+        //this.photos = json;
+        this.photos = [
           "PXL_20230123_003245995.PORTRAIT.jpg",
           "PXL_20230212_174355161.jpg",
           "PXL_20230301_134654730.PORTRAIT.jpg",
@@ -82,7 +82,7 @@ export default {
           "PXL_20230218_142137347.jpg",
         ].map((e) => {
           return { url: "photos/" + e };
-        });*/
+        });
         return true;
       } else {
         return false;
