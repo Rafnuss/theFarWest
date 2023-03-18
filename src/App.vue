@@ -56,7 +56,7 @@
                     <div v-if="showChecklist && selectedChecklist.loc">
                       <b-list-group flush>
                         <b-list-group-item class="d-flex py-2">
-                          <v-icon name="map-marker-alt" class="mr-2" />
+                          <b-icon icon="geo-alt-fill" class="mr-2" />
                           {{ selectedChecklist.loc.name }}
                         </b-list-group-item>
                         <b-list-group-item class="d-flex py-2">
@@ -65,11 +65,11 @@
                           {{ selectedChecklist.obsTime }}
                         </b-list-group-item>
                         <b-list-group-item class="d-flex py-2">
-                          <v-icon name="dove" class="mr-2" />
+                          <b-img src="bird-checklist.png" class="mr-2 h-16" />
                           {{ selectedChecklist.numSpecies }}
                         </b-list-group-item>
                         <b-list-group-item class="d-flex py-2">
-                          <v-icon name="list-alt" class="mr-2" />
+                          <b-icon icon="card-checklist" class="mr-2" />
                           <b-link :href="'https://ebird.org/checklist/' + selectedChecklist.subId">
                             {{ selectedChecklist.subId }}
                           </b-link>
@@ -135,6 +135,7 @@
                   :style="{ 'background-color': r.color, 'border-color': r.color }"
                   @click="activeRegion = r.region"
                 >
+                  <b-img :src="r.region + '.png'" class="mr-2 h-16" />
                   {{ r.name }}
                 </b-button>
               </b-button-group>
@@ -147,10 +148,7 @@
       </b-col>
       <b-col class="h-100 col-xs-12 md-6 col-lg-4 py-2">
         <b-card v-if="posts[i_post]" no-body class="h-100">
-          <div
-            class="card-header text-light"
-            :style="{ backgroundColor: regions.find((r) => r.region == posts[i_post].region).color }"
-          >
+          <div class="card-header text-light" :style="{ backgroundColor: posts[i_post].color }">
             <div class="d-flex py-2">
               <b-icon
                 icon="chevron-left"
@@ -217,7 +215,6 @@ const regions = [
     start_date: "2023-3-31",
     end_date: "2023-4-08",
     color: "#ab6f4c",
-    logo: "wheat",
   },
   {
     region: "colorado",
@@ -225,7 +222,6 @@ const regions = [
     start_date: "2023-4-08",
     end_date: "2023-4-17",
     color: "#646345",
-    logo: "trees",
   },
   {
     region: "texas",
@@ -233,7 +229,6 @@ const regions = [
     start_date: "2023-4-17",
     end_date: "2023-5-1",
     color: "#8c3309",
-    logo: "hat-cowboy",
   },
   {
     region: "arizona",
@@ -241,7 +236,6 @@ const regions = [
     start_date: "2023-5-1",
     end_date: "2023-5-1",
     color: "#d05c10",
-    logo: "cactus",
   },
   {
     region: "california",
@@ -249,7 +243,6 @@ const regions = [
     start_date: "2023-5-1",
     end_date: "2023-5-24",
     color: "#0b8189",
-    logo: "water",
   },
   {
     region: "mountainwest",
@@ -257,7 +250,6 @@ const regions = [
     start_date: "2023-5-24",
     end_date: "2023-6-10",
     color: "#6e5558",
-    logo: "mountain",
   },
   {
     region: "cascadia",
@@ -265,7 +257,6 @@ const regions = [
     start_date: "2023-6-10",
     end_date: "2023-6-31",
     color: "#a4a77b",
-    logo: "canadian-maple-leaf",
   },
 ];
 
@@ -320,6 +311,7 @@ export default {
   },
   methods: {
     getIcon(h, i) {
+      console.log(h);
       return L.divIcon({
         className: "my-custom-icon",
         popupAnchor: [0, -34],
@@ -438,6 +430,7 @@ export default {
               photo2: row[13] ? row[13].replace("open?", "uc?export=view&") : "",
               location: row[14],
               region: row[15],
+              color: this.regions.find((r) => r.region == row[15]).color,
             };
           })
           .sort((a, b) => a.date - b.date);
