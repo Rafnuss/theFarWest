@@ -24,24 +24,28 @@
               <b-icon
                 icon="chevron-left"
                 @click="i_post = Math.max(i_post - 1, 0)"
-                class="cursor-pointer"
+                :class="i_post == 0 ? 'opacity-0' : 'cursor-pointer'"
                 :disabled="i_post == 0"
               />
               <h1 class="mb-0">{{ posts[i_post].title }}</h1>
               <b-icon
                 icon="chevron-right"
-                class="cursor-pointer"
+                :class="i_post == posts.length - 1 ? 'opacity-0' : 'cursor-pointer'"
                 @click="i_post = Math.min(i_post + 1, posts.length - 1)"
                 :disabled="i_post == posts.length"
               />
             </div>
-            <div class="d-flex justify-content-between">
+            <div class="d-flex justify-content-between align-items-center">
               <div><b-icon icon="person-lines-fill"></b-icon> {{ posts[i_post].author }}</div>
               <div><b-icon icon="calendar-date-fill"></b-icon> {{ posts[i_post].date }}</div>
-              <div>
+              <b-button
+                size="sm"
+                variant="outline-light"
+                @click="map.flyTo([posts[i_post].lat, posts[i_post].lon], 12)"
+              >
                 <b-icon icon="geo-alt-fill"></b-icon>
                 {{ posts[i_post].location }}
-              </div>
+              </b-button>
               <div>
                 <b-icon :icon="posts[i_post].weather"></b-icon>
               </div>
@@ -71,52 +75,39 @@
               <b-icon
                 icon="chevron-left"
                 @click="i_pres = Math.max(i_pres - 1, 0)"
-                class="cursor-pointer"
+                :class="i_pres == 0 ? 'opacity-0' : 'cursor-pointer'"
                 :disabled="i_pres == 0"
               />
               <div class="d-flex">
                 <b-img :src="pres[i_pres].region + '.png'" class="mr-2" style="height: 2.5rem" />
-                <h1 class="cursor-pointer mb-0">{{ pres[i_pres].region }}</h1>
+                <h1 class="cursor-pointer mb-0">{{ pres[i_pres].name }}</h1>
               </div>
               <b-icon
                 icon="chevron-right"
-                class="cursor-pointer"
+                :class="i_pres == pres.length - 1 ? 'opacity-0' : 'cursor-pointer'"
                 @click="i_pres = Math.min(i_pres + 1, pres.length - 1)"
-                :disabled="i_pres == pres.length"
               />
             </div>
           </div>
           <b-card-body class="overflow-auto flex-grow-1">
-            <h3>Target List</h3>
+            <h3>Espèces cibles</h3>
             <b-table
               hover
               small
               responsive
               :fields="[
-                { key: 'seen', label: '' },
-                { key: 'common_name', label: 'Common Name', sortable: true },
-                { key: 'prob', label: 'Difficulty', sortable: true },
+                { key: 'seen', label: '', class: 'text-center' },
+                { key: 'common_name', label: 'Nom commun', sortable: true },
+                { key: 'prob', label: 'Difficulté', sortable: true, class: 'text-center' },
               ]"
-              :items="pres[i_pres].species"
+              :items="pres[i_pres].species.filter((sp) => sp.target)"
             >
               <template #cell(seen)="sp">
-                <template v-if="sp.item.seen">
-                  <b-icon icon="check2-square" />
-                  <b-link
-                    :href="
-                      'https://media.ebird.org/catalog?taxonCode=' +
-                      sp.item.species_code +
-                      '&sort=rating_rank_desc&regionCode=US&userId=USER497615'
-                    "
-                    target="_blank"
-                    v-if="sp.item.hasMedia"
-                  >
-                    <b-icon class="ml-1" icon="camera" />
-                  </b-link>
+                <template v-if="sp.value">
+                  <b-icon icon="check-square" />
                 </template>
                 <template v-else>
-                  <b-icon v-if="sp.item.world_lifer" icon="globe" />
-                  <b-icon v-if="sp.item.US_lifer" icon="globe2" />
+                  <b-icon icon="square" />
                 </template>
               </template>
 
@@ -126,12 +117,29 @@
                   target="_blank"
                 >
                   {{ sp.value }}
-                  <template v-if="sp.item.exotic.length > 0">
-                    <b-img :src="'exotic_' + sp.item.exotic + '.png'" class="h-16" />
-                  </template>
+                </b-link>
+                <template v-if="sp.item.exotic.length > 0">
+                  <b-img :src="'exotic_' + sp.item.exotic + '.png'" class="h-16" />
+                </template>
+                <b-link
+                  :href="
+                    'https://media.ebird.org/catalog?taxonCode=' +
+                    sp.item.species_code +
+                    '&sort=rating_rank_desc&userId=USER497615'
+                  "
+                  target="_blank"
+                  v-if="sp.item.hasMedia"
+                >
+                  <b-icon class="ml-1" icon="camera" />
                 </b-link>
               </template>
-              <template #cell(prob)="sp"> {{ sp.value }} % </template>
+              <template #cell(prob)="sp">
+                <b-icon
+                  icon="binoculars-fill"
+                  v-b-tooltip.hover="sp.value + '%'"
+                  :variant="sp.value > 3 ? 'success' : sp.value > 1 ? 'warning' : 'danger'"
+                />
+              </template>
             </b-table>
           </b-card-body>
         </b-card>
@@ -176,7 +184,7 @@
                   :key="r.region"
                   :style="{ 'background-color': r.color, 'border-color': r.color }"
                   :class="i == i_pres ? '' : 'opacity-50'"
-                  @mouseover="i_pres = i"
+                  @click="i_pres = i"
                 >
                   <b-img :src="r.region + '.png'" class="mr-2 h-16" />
                   {{ r.name }}
@@ -229,6 +237,7 @@
                     :color="r.color"
                     :opacity="i == i_pres ? 0.8 : 0.4"
                     :weight="6"
+                    @click="i_pres = i"
                   />
                 </template>
                 <template v-if="showChecklist">
