@@ -4,10 +4,11 @@
       <b-col class="h-100 col-xs-12 md-6 col-lg-4 d-flex flex-column py-2">
         <b-row>
           <b-col class="pb-2">
-            <b-card class="w-100 p-2 d-flex flex-row bg-beige align-items-center justify-content-between" no-body>
+            <b-card class="w-100 p-2 d-flex flex-row align-items-center justify-content-between" no-body>
               <b-img src="title.svg" height="64px" />
               <div>
                 <b-form-radio-group
+                  class="bg-beige"
                   v-model="modeSelected"
                   :options="modeOptions"
                   button-variant="outline-primary"
@@ -70,10 +71,6 @@
           <b-col class="pb-2">
             <b-card class="w-100 p-2 d-flex flex-row justify-content-between bg-beige andy flex-wrap" no-body>
               <div class="d-flex flex-row">
-                <b-img src="pikachu.png" height="100%;" />
-                <div><b-img src="title.svg" height="100%;" /></div>
-              </div>
-              <div class="d-flex flex-row">
                 <div class="d-flex align-items-center"><b-img src="pokeball.png" height="50%;" /></div>
                 <div class="d-flex flex-column text-center pl-3">
                   <div style="font-size: 1.2rem">LIFER#</div>
@@ -102,7 +99,7 @@
         <b-row class="flex-grow-1">
           <b-col class="flex-grow-1">
             <b-card class="w-100 h-100" no-body>
-              <b-button-group class="w-100">
+              <b-button-group class="w-100" v-if="modeSelected == 'route'">
                 <b-button
                   squared
                   v-for="r in regions"
@@ -115,13 +112,7 @@
                   {{ r.name }}
                 </b-button>
               </b-button-group>
-              <l-map
-                :bounds="[
-                  [26, -72],
-                  [50, -127],
-                ]"
-                ref="map"
-              >
+              <l-map ref="map">
                 <l-control>
                   <b-container class="control-ebird px-0">
                     <b-row>
@@ -160,14 +151,16 @@
                     'https://api.mapbox.com/styles/v1/mapbox/streets-v9/tiles/{z}/{x}/{y}?access_token=' + mapboxToken
                   "
                 />
-                <l-polyline
-                  v-for="r in route"
-                  :key="r.region"
-                  :lat-lngs="r.route"
-                  :color="r.color"
-                  :opacity="r.region == activeRegion ? 0.8 : 0.4"
-                  :weight="6"
-                />
+                <template v-if="modeSelected == 'route'">
+                  <l-polyline
+                    v-for="r in route"
+                    :key="r.region"
+                    :lat-lngs="r.route"
+                    :color="r.color"
+                    :opacity="r.region == activeRegion ? 0.8 : 0.4"
+                    :weight="6"
+                  />
+                </template>
                 <template v-if="showChecklist">
                   <l-circle-marker
                     v-for="check in checklists.filter((d) => d.loc.name != d.loc.subnational2Name)"
@@ -188,13 +181,15 @@
               ></l-marker>-->
                 <l-polyline :lat-lngs="locations" color="black" :weight="1" />
                 <!--<l-polyline :lat-lngs="locations2" color="red" :weight="2" />-->
-                <l-marker
-                  v-for="(p, i) in posts"
-                  :key="p.title"
-                  :lat-lng="[p.lat, p.lon]"
-                  :icon="getIcon(p, i + 1)"
-                  @click="i_post = i"
-                />
+                <template v-if="modeSelected == 'live'">
+                  <l-marker
+                    v-for="(p, i) in posts"
+                    :key="p.title"
+                    :lat-lng="[p.lat, p.lon]"
+                    :icon="getIcon(p, i + 1)"
+                    @click="i_post = i"
+                  />
+                </template>
                 <l-marker
                   v-if="locations.length > 0 && locations[locations.length - 1]"
                   :lat-lng="locations[locations.length - 1]"
@@ -332,7 +327,6 @@ export default {
   },
   methods: {
     getIcon(h, i) {
-      console.log(h);
       return L.divIcon({
         className: "my-custom-icon",
         popupAnchor: [0, -34],
@@ -355,6 +349,8 @@ export default {
       locations = locations.map((l) => [l.lat, l.lon]);
       locations = filterLatLngArray(locations, 1 / 111 / 100);
       this.locations = locations;
+      console.log(this.map);
+      this.map.setView(locations[locations.length - 1], 14);
     },
     async openSpeciesChecklist(spCode) {
       const response = await fetch(
@@ -491,9 +487,22 @@ export default {
       .catch((error) => console.error(error));
   },
   mounted() {
-    this.$nextTick(() => {
+    /*this.$nextTick(() => {
       this.map = this.$refs.map.mapObject; // work as expected
-    });
+    });*/
+    this.map = this.$refs.map.mapObject; // work as expected
+  },
+  watch: {
+    modeSelected(val) {
+      if (val == "route") {
+        this.map.fitBounds([
+          [26, -72],
+          [50, -127],
+        ]);
+      } else {
+        this.map.setView(this.locations[this.locations.length - 1], 14);
+      }
+    },
   },
 };
 
