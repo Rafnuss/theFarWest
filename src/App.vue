@@ -65,7 +65,7 @@
             <b-card-img :src="posts[i_post].photo3"></b-card-img>
           </b-card-body>
         </b-card>
-        <b-card v-if="modeSelected == 'route'" no-body class="flex-grow-1 overflow-hidden">
+        <b-card v-if="(modeSelected == 'route') & (pres[i_pres] != null)" no-body class="flex-grow-1 overflow-hidden">
           <div class="card-header text-light" :style="{ backgroundColor: pres[i_pres].color }">
             <div class="d-flex justify-content-between align-items-center py-2">
               <b-icon
@@ -86,7 +86,54 @@
               />
             </div>
           </div>
-          <b-card-body class="overflow-auto flex-grow-1"> </b-card-body>
+          <b-card-body class="overflow-auto flex-grow-1">
+            <h3>Target List</h3>
+            <b-table
+              hover
+              small
+              responsive
+              :fields="[
+                { key: 'seen', label: '' },
+                { key: 'common_name', label: 'Common Name', sortable: true },
+                { key: 'prob', label: 'Difficulty', sortable: true },
+              ]"
+              :items="pres[i_pres].species"
+            >
+              <template #cell(seen)="sp">
+                <template v-if="sp.item.seen">
+                  <b-icon icon="check2-square" />
+                  <b-link
+                    :href="
+                      'https://media.ebird.org/catalog?taxonCode=' +
+                      sp.item.species_code +
+                      '&sort=rating_rank_desc&regionCode=US&userId=USER497615'
+                    "
+                    target="_blank"
+                    v-if="sp.item.hasMedia"
+                  >
+                    <b-icon class="ml-1" icon="camera" />
+                  </b-link>
+                </template>
+                <template v-else>
+                  <b-icon v-if="sp.item.world_lifer" icon="globe" />
+                  <b-icon v-if="sp.item.US_lifer" icon="globe2" />
+                </template>
+              </template>
+
+              <template #cell(common_name)="sp">
+                <b-link
+                  :href="'https://ebird.org/species/' + sp.item.species_code + '/' + pres[i_pres].ebirdcode"
+                  target="_blank"
+                >
+                  {{ sp.value }}
+                  <template v-if="sp.item.exotic.length > 0">
+                    <b-img :src="'exotic_' + sp.item.exotic + '.png'" class="h-16" />
+                  </template>
+                </b-link>
+              </template>
+              <template #cell(prob)="sp"> {{ sp.value }} % </template>
+            </b-table>
+          </b-card-body>
         </b-card>
       </b-col>
       <b-col class="h-100 col-xs-12 md-6 col-lg-8 d-flex flex-column py-2">
@@ -236,6 +283,7 @@
 import route_json from "./assets/route.json";
 import past_checklists from "./assets/checklists.json";
 import past_taxon from "./assets/taxon-list.json";
+import species_list from "./assets/species_list.json";
 </script>
 
 <script>
@@ -249,6 +297,7 @@ const regions = [
     start_date: "2023-3-31",
     end_date: "2023-4-08",
     color: "#ab6f4c",
+    ebirdcode: "US-KS",
   },
   {
     region: "colorado",
@@ -256,6 +305,7 @@ const regions = [
     start_date: "2023-4-08",
     end_date: "2023-4-17",
     color: "#646345",
+    ebirdcode: "US-CO",
   },
   {
     region: "texas",
@@ -263,6 +313,7 @@ const regions = [
     start_date: "2023-4-17",
     end_date: "2023-5-1",
     color: "#8c3309",
+    ebirdcode: "US-TX",
   },
   {
     region: "arizona",
@@ -270,6 +321,7 @@ const regions = [
     start_date: "2023-5-1",
     end_date: "2023-5-1",
     color: "#d05c10",
+    ebirdcode: "US-AZ",
   },
   {
     region: "california",
@@ -277,6 +329,7 @@ const regions = [
     start_date: "2023-5-1",
     end_date: "2023-5-24",
     color: "#0b8189",
+    ebirdcode: "US-CA",
   },
   {
     region: "mountainwest",
@@ -284,6 +337,7 @@ const regions = [
     start_date: "2023-5-24",
     end_date: "2023-6-10",
     color: "#6e5558",
+    ebirdcode: "US-MT",
   },
   {
     region: "cascadia",
@@ -291,6 +345,7 @@ const regions = [
     start_date: "2023-6-10",
     end_date: "2023-6-31",
     color: "#a4a77b",
+    ebirdcode: "US-WT",
   },
 ];
 
@@ -434,7 +489,11 @@ export default {
     },
   },
   created: function () {
-    this.pres = this.regions;
+    this.pres = this.regions.map((r) => {
+      r.species = species_list.find((sp) => sp.region == r.region).species;
+      r.seen = false;
+      return r;
+    });
     this.loadLocations();
 
     // Checklsit
@@ -497,6 +556,17 @@ export default {
           }
           return acc;
         }, []);
+        const spcode = this.taxon.map((t) => t.speciesCode);
+        const spmedia = this.taxon.map((t) => t.numMedia);
+        this.pres = this.pres.map((p) => {
+          p.species = p.species.map((sp) => {
+            const id = spcode.findIndex((s) => s == sp.species_code);
+            sp.seen = id > 0;
+            sp.hasMedia = sp.seen ? spmedia[id] : 0;
+            return sp;
+          });
+          return p;
+        });
       })
       .catch((error) => console.error(error));
 
