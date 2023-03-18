@@ -32,7 +32,7 @@
         </swiper-slide>
         <swiper-slide>
           <div class="h-100 d-flex justify-content-center align-items-center bg-light">
-            <a href="https://photos.app.goo.gl/VPdgZR1rM6jrhfr57">See more on google album... </a>
+            <a href="https://photos.app.goo.gl/VPdgZR1rM6jrhfr57" target="_blank">See more on google album... </a>
           </div>
         </swiper-slide>
       </swiper-container>

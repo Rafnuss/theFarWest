@@ -4,8 +4,8 @@
       <b-col class="h-100 col-xs-12 md-6 col-lg-4 d-flex flex-column py-2">
         <b-row>
           <b-col class="pb-2">
-            <b-card class="w-100 p-2 d-flex flex-row align-items-center justify-content-between" no-body>
-              <b-img src="title.svg" height="64px" />
+            <b-card class="w-100 p-2 d-flex flex-row align-items-center" no-body>
+              <b-img src="title.svg" height="64px" class="mx-auto" />
               <div>
                 <b-form-radio-group
                   class="bg-beige"
@@ -42,6 +42,7 @@
                 size="sm"
                 variant="outline-light"
                 @click="map.flyTo([posts[i_post].lat, posts[i_post].lon], 12)"
+                v-b-tooltip.hover="'Voir sur la carte'"
               >
                 <b-icon icon="geo-alt-fill"></b-icon>
                 {{ posts[i_post].location }}
@@ -49,6 +50,20 @@
               <div>
                 <b-icon :icon="posts[i_post].weather"></b-icon>
               </div>
+              <b-button
+                size="sm"
+                variant="outline-light"
+                :href="
+                  'https://dashboard.birdcast.info/region/' +
+                  posts[i_post].ebirdcode +
+                  '?night=' +
+                  posts[i_post].dateISO
+                "
+                target="_blank"
+                v-b-tooltip.hover="'Condition de migration observé par les radar météo'"
+              >
+                <b-img src="birdcast.svg" class="h-16" />
+              </b-button>
             </div>
           </div>
           <b-card-body class="overflow-auto flex-grow-1">
@@ -154,9 +169,9 @@
                   <div style="font-size: 1.2rem">LIFER#</div>
                   <div class="life-count pokemon">{{ liferCount }}</div>
                   <div>
-                    <b-link variant="outline-primary" @click="openSpeciesChecklist(latestLifer[2])">
+                    <b-button variant="link" @click="openSpeciesChecklist(latestLifer[2])" size="sm">
                       {{ latestLifer[1] }}
-                    </b-link>
+                    </b-button>
                   </div>
                 </div>
               </div>
@@ -170,6 +185,23 @@
                   {{ formatNumber(individualCount) }}
                   Oiseaux comptés
                 </div>
+              </div>
+              <div>
+                <b-button
+                  variant="primary"
+                  :href="
+                    'https://alert.birdcast.info/?latLng=' +
+                    locations[locations.length - 1][0] +
+                    ',' +
+                    locations[locations.length - 1][1] +
+                    '&locName=Exactly%20where%20Améline,%20Mady%20and%20Raphaël%20are!'
+                  "
+                  target="_blank"
+                  class="d-flex align-items-baseline"
+                >
+                  <div class="mr-2">Prévision de migration par</div>
+                  <b-img src="birdcast.svg" class="h-16" />
+                </b-button>
               </div>
             </b-card>
           </b-col>
@@ -275,7 +307,7 @@
                   :zIndexOffset="100"
                   @click="map.flyTo(locations[locations.length - 1], 14)"
                 >
-                  <l-icon icon-url="/logo.svg" :icon-size="[104, 40]" :icon-anchor="[52, 20]" />
+                  <l-icon icon-url="logo.svg" :icon-size="[104, 40]" :icon-anchor="[52, 20]" />
                 </l-marker>
               </l-map>
             </b-card>
@@ -441,19 +473,21 @@ export default {
       this.map.setView(locations[locations.length - 1], 14);
     },
     async openSpeciesChecklist(spCode) {
-      const response = await fetch(
+      fetch(
         "http://tripreport.raphaelnussbaumer.com/tripreport-internal/v1/taxon-detail/" +
           live_tripreport_id +
           "/" +
           spCode
-      );
-      const json = await response.json();
-      const check = json.checklists.reduce((acc, current) => {
-        return current.obsDt < acc.obsDt ? current : acc;
-      }, json.checklists[0]);
-
-      const url = "https://ebird.org/checklist/" + check.subId + "#" + spCode;
-      window.open(url, "_blank");
+      )
+        .then((response) => response.json())
+        .then((json) => {
+          const check = json.checklists.reduce((acc, current) => {
+            return current.obsDt < acc.obsDt ? current : acc;
+          }, json.checklists[0]);
+          const url = "https://ebird.org/checklist/" + check.subId + "#" + spCode;
+          window.open(url, "_blank");
+        })
+        .catch((error) => console.error(error));
     },
     formatNumber(num) {
       if (num >= 1000000) {
@@ -522,7 +556,7 @@ export default {
         const rows = data.values.slice(1);
         this.posts = rows
           .map((row) => {
-            return {
+            let r = {
               title: row[1],
               text1: row[2],
               cover: row[3] ? row[3].replace("open?", "uc?export=view&") : "",
@@ -540,7 +574,12 @@ export default {
               location: row[14],
               region: row[15],
               color: this.regions.find((r) => r.region == row[15]).color,
+              ebirdcode: this.regions.find((r) => r.region == row[15]).ebirdcode,
             };
+            var dateTime = r.date.split("/");
+            r.dateISO = dateTime[2] + "-" + dateTime[1] + "-" + dateTime[0];
+
+            return r;
           })
           .sort((a, b) => a.date - b.date);
       })
