@@ -18,16 +18,16 @@
             </b-card>
           </b-col>
         </b-row>
-        <b-card v-if="posts[i_post]" no-body class="flex-grow-1 overflow-hidden">
+        <b-card v-if="(modeSelected == 'live') & (posts[i_post] != null)" no-body class="flex-grow-1 overflow-hidden">
           <div class="card-header text-light" :style="{ backgroundColor: posts[i_post].color }">
-            <div class="d-flex py-2">
+            <div class="d-flex py-2 justify-content-between align-items-center">
               <b-icon
                 icon="chevron-left"
                 @click="i_post = Math.max(i_post - 1, 0)"
                 class="cursor-pointer"
                 :disabled="i_post == 0"
               />
-              <h1 class="cursor-pointer">{{ posts[i_post].title }}</h1>
+              <h1 class="mb-0">{{ posts[i_post].title }}</h1>
               <b-icon
                 icon="chevron-right"
                 class="cursor-pointer"
@@ -64,6 +64,29 @@
             </b-card-text>
             <b-card-img :src="posts[i_post].photo3"></b-card-img>
           </b-card-body>
+        </b-card>
+        <b-card v-if="modeSelected == 'route'" no-body class="flex-grow-1 overflow-hidden">
+          <div class="card-header text-light" :style="{ backgroundColor: pres[i_pres].color }">
+            <div class="d-flex justify-content-between align-items-center py-2">
+              <b-icon
+                icon="chevron-left"
+                @click="i_pres = Math.max(i_pres - 1, 0)"
+                class="cursor-pointer"
+                :disabled="i_pres == 0"
+              />
+              <div class="d-flex">
+                <b-img :src="pres[i_pres].region + '.png'" class="mr-2" style="height: 2.5rem" />
+                <h1 class="cursor-pointer mb-0">{{ pres[i_pres].region }}</h1>
+              </div>
+              <b-icon
+                icon="chevron-right"
+                class="cursor-pointer"
+                @click="i_pres = Math.min(i_pres + 1, pres.length - 1)"
+                :disabled="i_pres == pres.length"
+              />
+            </div>
+          </div>
+          <b-card-body class="overflow-auto flex-grow-1"> </b-card-body>
         </b-card>
       </b-col>
       <b-col class="h-100 col-xs-12 md-6 col-lg-8 d-flex flex-column py-2">
@@ -102,11 +125,11 @@
               <b-button-group class="w-100" v-if="modeSelected == 'route'">
                 <b-button
                   squared
-                  v-for="r in regions"
+                  v-for="(r, i) in regions"
                   :key="r.region"
                   :style="{ 'background-color': r.color, 'border-color': r.color }"
-                  :class="activeRegion == r.region ? '' : 'opacity-50'"
-                  @mouseover="activeRegion = r.region"
+                  :class="i == i_pres ? '' : 'opacity-50'"
+                  @mouseover="i_pres = i"
                 >
                   <b-img :src="r.region + '.png'" class="mr-2 h-16" />
                   {{ r.name }}
@@ -151,13 +174,13 @@
                     'https://api.mapbox.com/styles/v1/mapbox/streets-v9/tiles/{z}/{x}/{y}?access_token=' + mapboxToken
                   "
                 />
-                <template v-if="modeSelected == 'route'">
+                <template v-if="(modeSelected == 'route') & (route.length > 0)">
                   <l-polyline
-                    v-for="r in route"
+                    v-for="(r, i) in route"
                     :key="r.region"
                     :lat-lngs="r.route"
                     :color="r.color"
-                    :opacity="r.region == activeRegion ? 0.8 : 0.4"
+                    :opacity="i == i_pres ? 0.8 : 0.4"
                     :weight="6"
                   />
                 </template>
@@ -179,7 +202,7 @@
                 :lat-lng="[h.lat, h.lon]"
                 :icon="getIcon(h, i + 1)"
               ></l-marker>-->
-                <l-polyline :lat-lngs="locations" color="black" :weight="1" />
+                <l-polyline v-if="locations.length > 0" :lat-lngs="locations" color="black" :weight="1" />
                 <!--<l-polyline :lat-lngs="locations2" color="red" :weight="2" />-->
                 <template v-if="modeSelected == 'live'">
                   <l-marker
@@ -317,6 +340,8 @@ export default {
       checklists: [],
       posts: [],
       i_post: 0,
+      pres: [],
+      i_pres: 0,
       selectedChecklist: {},
       locations: [],
       locations2: [],
@@ -349,7 +374,6 @@ export default {
       locations = locations.map((l) => [l.lat, l.lon]);
       locations = filterLatLngArray(locations, 1 / 111 / 100);
       this.locations = locations;
-      console.log(this.map);
       this.map.setView(locations[locations.length - 1], 14);
     },
     async openSpeciesChecklist(spCode) {
@@ -410,6 +434,7 @@ export default {
     },
   },
   created: function () {
+    this.pres = this.regions;
     this.loadLocations();
 
     // Checklsit
@@ -427,7 +452,6 @@ export default {
       .then((response) => response.json())
       .then((data) => {
         const rows = data.values.slice(1);
-
         this.posts = rows
           .map((row) => {
             return {
