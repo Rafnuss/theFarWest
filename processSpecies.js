@@ -34,9 +34,9 @@ const regions = [
     },
 ];
 
+/*
 const sp_region = regions.map(r => {
     const spr = sp.filter(s => s.region.includes(r.region))
-
     return {
         region: r.region,
         species: spr.map(s => {
@@ -51,6 +51,24 @@ const sp_region = regions.map(r => {
             }
         })
     }
+})
+*/
+const sp_region = sp.map(s => {
+    let so = {
+        common_name: s.common_name,
+        species_code: s.species_code,
+        world_lifer: s.world_lifer == "1",
+        US_lifer: s.US_lifer == "1",
+        exotic: s.exotic,
+        target: s.target == "1",
+        region: s.region
+    }
+    so.prob = regions.map(r => {
+        let prob = Math.max.apply(null, r.states.map(st => Number(s["freq_" + st].replace('%', ''))))
+        prob = prob == undefined ? 0 : prob
+        return prob
+    })
+    return so
 })
 
 await fs.writeFileSync('src/assets/species_list.json', JSON.stringify(sp_region));

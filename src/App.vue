@@ -25,14 +25,12 @@
                 icon="chevron-left"
                 @click="i_post = Math.max(i_post - 1, 0)"
                 :class="i_post == 0 ? 'opacity-0' : 'cursor-pointer'"
-                :disabled="i_post == 0"
               />
               <h1 class="mb-0">{{ posts[i_post].title }}</h1>
               <b-icon
                 icon="chevron-right"
                 :class="i_post == posts.length - 1 ? 'opacity-0' : 'cursor-pointer'"
                 @click="i_post = Math.min(i_post + 1, posts.length - 1)"
-                :disabled="i_post == posts.length"
               />
             </div>
             <div class="d-flex justify-content-between align-items-center">
@@ -84,27 +82,31 @@
             <b-card-img :src="posts[i_post].photo3"></b-card-img>
           </b-card-body>
         </b-card>
-        <b-card v-if="(modeSelected == 'route') & (pres[i_pres] != null)" no-body class="flex-grow-1 overflow-hidden">
-          <div class="card-header text-light" :style="{ backgroundColor: pres[i_pres].color }">
+        <b-card
+          v-if="(modeSelected == 'route') & (regions[i_region] != null)"
+          no-body
+          class="flex-grow-1 overflow-hidden"
+        >
+          <div class="card-header text-light" :style="{ backgroundColor: regions[i_region].color }">
             <div class="d-flex justify-content-between align-items-center py-2">
               <b-icon
                 icon="chevron-left"
-                @click="i_pres = Math.max(i_pres - 1, 0)"
-                :class="i_pres == 0 ? 'opacity-0' : 'cursor-pointer'"
-                :disabled="i_pres == 0"
+                @click="i_region = Math.max(i_region - 1, 0)"
+                :class="i_region == 0 ? 'opacity-0' : 'cursor-pointer'"
               />
               <div class="d-flex">
-                <b-img :src="pres[i_pres].region + '.png'" class="mr-2" style="height: 2.5rem" />
-                <h1 class="cursor-pointer mb-0">{{ pres[i_pres].name }}</h1>
+                <b-img :src="regions[i_region].region + '.png'" class="mr-2" style="height: 2.5rem" />
+                <h1 class="cursor-pointer mb-0">{{ regions[i_region].name }}</h1>
               </div>
               <b-icon
                 icon="chevron-right"
-                :class="i_pres == pres.length - 1 ? 'opacity-0' : 'cursor-pointer'"
-                @click="i_pres = Math.min(i_pres + 1, pres.length - 1)"
+                :class="i_region == regions.length - 1 ? 'opacity-0' : 'cursor-pointer'"
+                @click="i_region = Math.min(i_region + 1, regions.length - 1)"
               />
             </div>
           </div>
           <b-card-body class="overflow-auto flex-grow-1">
+            <div v-html="regions[i_region].presentation"></div>
             <h3>Espèces cibles</h3>
             <b-table
               hover
@@ -113,9 +115,9 @@
               :fields="[
                 { key: 'seen', label: '', class: 'text-center' },
                 { key: 'common_name', label: 'Nom commun', sortable: true },
-                { key: 'prob', label: 'Difficulté', sortable: true, class: 'text-center' },
+                { key: 'prob_region', label: 'Difficulté', sortable: true, class: 'text-center' },
               ]"
-              :items="pres[i_pres].species.filter((sp) => sp.target)"
+              :items="species_list_table"
             >
               <template #cell(seen)="sp">
                 <template v-if="sp.value">
@@ -128,7 +130,7 @@
 
               <template #cell(common_name)="sp">
                 <b-link
-                  :href="'https://ebird.org/species/' + sp.item.species_code + '/' + pres[i_pres].ebirdcode"
+                  :href="'https://ebird.org/species/' + sp.item.species_code + '/' + regions[i_region].ebirdcode"
                   target="_blank"
                 >
                   {{ sp.value }}
@@ -186,7 +188,7 @@
                   Oiseaux comptés
                 </div>
               </div>
-              <div>
+              <div v-if="locations.length > 0">
                 <b-button
                   variant="primary"
                   :href="
@@ -215,8 +217,9 @@
                   v-for="(r, i) in regions"
                   :key="r.region"
                   :style="{ 'background-color': r.color, 'border-color': r.color }"
-                  :class="i == i_pres ? '' : 'opacity-50'"
-                  @click="i_pres = i"
+                  :class="i == i_region ? '' : 'opacity-50'"
+                  class="cursor-pointer"
+                  @click="i_region = i"
                 >
                   <b-img :src="r.region + '.png'" class="mr-2 h-16" />
                   {{ r.name }}
@@ -267,9 +270,9 @@
                     :key="r.region"
                     :lat-lngs="r.route"
                     :color="r.color"
-                    :opacity="i == i_pres ? 0.8 : 0.4"
+                    :opacity="i == i_region ? 0.8 : 0.4"
                     :weight="6"
-                    @click="i_pres = i"
+                    @click="i_region = i"
                   />
                 </template>
                 <template v-if="showChecklist">
@@ -330,7 +333,6 @@ import species_list from "./assets/species_list.json";
 <script>
 const google_api_key = "AIzaSyCaVWdIpSvq8BoF7PvEK4oY3LByPYTQ2Xs";
 const live_tripreport_id = 114024;
-
 const regions = [
   {
     region: "midwest",
@@ -339,6 +341,9 @@ const regions = [
     end_date: "2023-4-08",
     color: "#ab6f4c",
     ebirdcode: "US-KS",
+    presentation: `
+  <p>test</p>
+  `,
   },
   {
     region: "colorado",
@@ -347,6 +352,9 @@ const regions = [
     end_date: "2023-4-17",
     color: "#646345",
     ebirdcode: "US-CO",
+    presentation: `
+  <p>test</p>
+  `,
   },
   {
     region: "texas",
@@ -355,6 +363,9 @@ const regions = [
     end_date: "2023-5-1",
     color: "#8c3309",
     ebirdcode: "US-TX",
+    presentation: `
+  <p>test</p>
+  `,
   },
   {
     region: "arizona",
@@ -363,6 +374,9 @@ const regions = [
     end_date: "2023-5-1",
     color: "#d05c10",
     ebirdcode: "US-AZ",
+    presentation: `
+  <p>test</p>
+  `,
   },
   {
     region: "california",
@@ -371,6 +385,9 @@ const regions = [
     end_date: "2023-5-24",
     color: "#0b8189",
     ebirdcode: "US-CA",
+    presentation: `
+  <p>test</p>
+  `,
   },
   {
     region: "mountainwest",
@@ -379,6 +396,9 @@ const regions = [
     end_date: "2023-6-10",
     color: "#6e5558",
     ebirdcode: "US-MT",
+    presentation: `
+  <p>test</p>
+  `,
   },
   {
     region: "cascadia",
@@ -387,6 +407,9 @@ const regions = [
     end_date: "2023-6-31",
     color: "#a4a77b",
     ebirdcode: "US-WT",
+    presentation: `
+  <p>test</p>
+  `,
   },
 ];
 
@@ -421,8 +444,8 @@ export default {
     return {
       mapboxToken: "pk.eyJ1IjoicmFmbnVzcyIsImEiOiIzMVE1dnc0In0.3FNMKIlQ_afYktqki-6m0g",
       map: null,
-      activeRegion: "midwest",
       regions: regions,
+      i_region: 0,
       modeSelected: "live",
       modeOptions: [
         { text: "Suivez-nous live", value: "live" },
@@ -434,16 +457,36 @@ export default {
         return s;
       }),
       checklists: [],
-      posts: [],
-      i_post: 0,
-      pres: [],
-      i_pres: 0,
       selectedChecklist: {},
+      posts: [
+        {
+          title: "",
+          text1: "",
+          cover: "",
+          date: "",
+          lon: 0,
+          lat: 0,
+          author: "",
+          photo1: "",
+          photo3: "",
+          text2: "",
+          weather: "",
+          subtitle: "",
+          text3: "",
+          photo2: "",
+          location: "",
+          region: "",
+          color: regions[0].color,
+          ebirdcode: "",
+        },
+      ],
+      i_post: 0,
       locations: [],
       locations2: [],
       latestLifer: "",
       taxon: [],
       showChecklist: false,
+      species_list: species_list,
     };
   },
   methods: {
@@ -530,13 +573,17 @@ export default {
         return null;
       }
     },
+    species_list_table() {
+      return this.species_list
+        .filter((s) => s.target && s.region.includes(this.regions[this.i_region].region))
+        .map((s) => {
+          console.log(s);
+          s.prob_region = s.prob[this.i_region];
+          return s;
+        });
+    },
   },
   created: function () {
-    this.pres = this.regions.map((r) => {
-      r.species = species_list.find((sp) => sp.region == r.region).species;
-      r.seen = false;
-      return r;
-    });
     this.loadLocations();
 
     // Checklsit
@@ -606,14 +653,11 @@ export default {
         }, []);
         const spcode = this.taxon.map((t) => t.speciesCode);
         const spmedia = this.taxon.map((t) => t.numMedia);
-        this.pres = this.pres.map((p) => {
-          p.species = p.species.map((sp) => {
-            const id = spcode.findIndex((s) => s == sp.species_code);
-            sp.seen = id > 0;
-            sp.hasMedia = sp.seen ? spmedia[id] : 0;
-            return sp;
-          });
-          return p;
+        this.species_list = this.species_list.map((sp) => {
+          const id = spcode.findIndex((s) => s == sp.species_code);
+          sp.seen = id > 0;
+          sp.hasMedia = sp.seen ? spmedia[id] : 0;
+          return sp;
         });
       })
       .catch((error) => console.error(error));
