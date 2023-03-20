@@ -53,18 +53,25 @@ const sp_region = regions.map(r => {
     }
 })
 */
-const sp_region = sp.map(s => {
+
+//const a = sp.map(s => s.region.replace(" ", "").split(',')).flat(1)
+//console.log([...new Set(a)])
+
+const sp_region = sp.sort((a, b) => a.taxon_sort - b.taxon_sort).map(s => {
     let so = {
         common_name: s.common_name,
         species_code: s.species_code,
+        aba: Number(s.aba ? s.aba : 0),
         world_lifer: s.world_lifer == "1",
         US_lifer: s.US_lifer == "1",
+        media_lifer: s.media_lifer == "1",
         exotic: s.exotic,
-        target: s.target == "1",
+        target: s.target == "1" | s.target == "",
         region: s.region
     }
     so.prob = regions.map(r => {
-        let prob = Math.max.apply(null, r.states.map(st => Number(s["freq_" + st].replace('%', ''))))
+        let prob = Number(s[r.region].replace('%', ''))
+        //Math.max.apply(null, r.states.map(st => Number(s["freq_" + st].replace('%', ''))))
         prob = prob == undefined ? 0 : prob
         return prob
     })
