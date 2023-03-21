@@ -4,15 +4,16 @@
       <b-col class="h-100 col-xs-12 md-6 col-lg-4 d-flex flex-column py-2">
         <b-row>
           <b-col class="pb-2">
-            <b-card class="w-100 p-2 d-flex flex-row align-items-center" no-body>
+            <b-card class="w-100 p-2 d-flex flex-row flex-wrap align-items-center" no-body>
               <b-img src="title.svg" height="64px" class="mx-auto" />
               <div>
                 <b-form-radio-group
-                  class="bg-beige"
+                  class="bg-beige mx-auto"
                   v-model="modeSelected"
                   :options="modeOptions"
                   button-variant="outline-primary"
                   buttons
+                  size="sm"
                 />
               </div>
             </b-card>
@@ -100,8 +101,8 @@
               </div>
               <b-icon
                 icon="chevron-right"
-                :class="i_region == regions.length - 1 ? 'opacity-0' : 'cursor-pointer'"
-                @click="i_region = Math.min(i_region + 1, regions.length - 1)"
+                :class="i_region == max_region ? 'opacity-0' : 'cursor-pointer'"
+                @click="i_region = Math.min(i_region + 1, max_region)"
               />
             </div>
           </div>
@@ -239,9 +240,10 @@
               <div class="d-flex flex-row">
                 <div class="d-flex align-items-center"><b-img src="pokeball.png" height="50%;" /></div>
                 <div class="d-flex flex-column text-center pl-3">
-                  <div style="font-size: 1.2rem">LIFER#</div>
-                  <div class="life-count pokemon">{{ liferCount }}</div>
+                  <div style="font-size: 1.2rem">LIFER US#</div>
+                  <div class="life-count pokemon">{{ USliferCount }}</div>
                   <div>
+                    Dernière addition:
                     <b-button variant="link" @click="openSpeciesChecklist(latestLifer[2])" size="sm">
                       {{ latestLifer[1] }}
                     </b-button>
@@ -254,6 +256,11 @@
                   {{ specieCount }}
                   espèce au compteur
                 </div>
+                <div class="h-50 align-items-center">
+                  {{ liferCount() }}
+                  Lifer#
+                </div>
+
                 <div class="h-50 align-items-center">
                   {{ formatNumber(individualCount) }}
                   Oiseaux comptés
@@ -292,9 +299,9 @@
                   v-for="(r, i) in regions"
                   :key="r.region"
                   :style="{ 'background-color': r.color, 'border-color': r.color }"
-                  :class="i == i_region ? '' : 'opacity-50'"
-                  class="cursor-pointer"
+                  :class="[i == i_region ? '' : 'opacity-50', r.active ? 'cursor-pointer' : 'cursor-not-allowed']"
                   @click="i_region = i"
+                  :disabled="!r.active"
                 >
                   <b-img :src="r.region + '.png'" class="mr-2 h-16" />
                   {{ r.name }}
@@ -362,12 +369,6 @@
                     @click="selectedChecklist = check"
                   />
                 </template>
-                <!--<l-marker
-                v-for="(h, i) in activeHighlights"
-                :key="h.name"
-                :lat-lng="[h.lat, h.lon]"
-                :icon="getIcon(h, i + 1)"
-              ></l-marker>-->
                 <l-polyline v-if="locations.length > 0" :lat-lngs="locations" color="black" :weight="1" />
                 <!--<l-polyline :lat-lngs="locations2" color="red" :weight="2" />-->
                 <template v-if="modeSelected == 'live'">
@@ -416,6 +417,7 @@ const regions = [
     end_date: "2023-4-08",
     color: "#ab6f4c",
     ebirdcode: "US-KS",
+    active: true,
     presentation: `
   <p>test</p>
   `,
@@ -427,6 +429,7 @@ const regions = [
     end_date: "2023-4-17",
     color: "#646345",
     ebirdcode: "US-CO",
+    active: true,
     presentation: `
   <p>test</p>
   `,
@@ -438,6 +441,7 @@ const regions = [
     end_date: "2023-5-1",
     color: "#8c3309",
     ebirdcode: "US-TX",
+    active: true,
     presentation: `
   <p>test</p>
   `,
@@ -449,6 +453,7 @@ const regions = [
     end_date: "2023-5-1",
     color: "#d05c10",
     ebirdcode: "US-AZ",
+    active: false,
     presentation: `
   <p>test</p>
   `,
@@ -460,6 +465,7 @@ const regions = [
     end_date: "2023-5-24",
     color: "#0b8189",
     ebirdcode: "US-CA",
+    active: false,
     presentation: `
   <p>test</p>
   `,
@@ -471,6 +477,7 @@ const regions = [
     end_date: "2023-6-10",
     color: "#6e5558",
     ebirdcode: "US-MT",
+    active: false,
     presentation: `
   <p>test</p>
   `,
@@ -482,6 +489,7 @@ const regions = [
     end_date: "2023-6-31",
     color: "#a4a77b",
     ebirdcode: "US-WT",
+    active: false,
     presentation: `
   <p>test</p>
   `,
@@ -522,7 +530,8 @@ export default {
       mapboxToken: "pk.eyJ1IjoicmFmbnVzcyIsImEiOiIzMVE1dnc0In0.3FNMKIlQ_afYktqki-6m0g",
       map: null,
       regions: regions,
-      i_region: 0,
+      max_region: regions.reduce((acc, r) => (r.active ? acc + 1 : acc), 0) - 1,
+      i_region: regions.reduce((acc, r) => (r.active ? acc + 1 : acc), 0) - 1,
       modeSelected: "live",
       modeOptions: [
         { text: "Suivez-nous live", value: "live" },
@@ -564,6 +573,8 @@ export default {
       taxon: [],
       showChecklist: false,
       species_list: species_list,
+      USliferCount: 0,
+      USliferCountInterval: false,
     };
   },
   methods: {
@@ -618,24 +629,27 @@ export default {
         return num.toString();
       }
     },
+    liferCount() {
+      return 1839 + this.taxon.filter((t) => t.isLifer & (t.category == "species")).length;
+    },
+    animateUSliferCount(lifer) {
+      clearInterval(this.USliferCountInterval);
+      if (lifer == this.USliferCount) {
+        return;
+      }
+      this.USliferCountInterval = window.setInterval(
+        function () {
+          if (this.USliferCount != lifer) {
+            var change = (lifer - this.USliferCount) / 10;
+            change = change >= 0 ? Math.ceil(change) : Math.floor(change);
+            this.USliferCount = this.USliferCount + change;
+          }
+        }.bind(this),
+        30
+      );
+    },
   },
   computed: {
-    activeHighlights() {
-      const r = this.regions.filter((r) => r.region == this.activeRegion)[0];
-      return r.highlights
-        .filter((h) => (h.keep == "1") | (h.keep == "true"))
-        .map((h) => {
-          h.color = r.color;
-          return h;
-        });
-    },
-    liferCount() {
-      try {
-        return this.taxon.filter((t) => t.isLifer & (t.category == "species")).length;
-      } catch (error) {
-        return null;
-      }
-    },
     specieCount() {
       try {
         return this.taxon.filter((t) => t.category == "species").length;
@@ -706,6 +720,7 @@ export default {
             return r;
           })
           .sort((a, b) => a.date - b.date);
+        this.i_post = this.posts.length - 1;
       })
       .catch((error) => console.error(error));
 
@@ -713,6 +728,7 @@ export default {
     fetch("http://tripreport.raphaelnussbaumer.com/tripreport-internal/v1/taxon-list/" + live_tripreport_id)
       .then((response) => response.json())
       .then((data) => {
+        // Add new taxon from latest tripreport
         this.taxon = [...past_taxon, ...data].reduce((acc, curr) => {
           const foundIndex = acc.findIndex((item) => item.speciesCode === curr.speciesCode);
           if (foundIndex !== -1) {
@@ -736,6 +752,10 @@ export default {
           sp.hasMedia = sp.seen ? spmedia[id] : 0;
           return sp;
         });
+        let uslifercount = this.species_list.filter((sp) => (!sp.US_lifer | sp.seen) & (sp.exotic != "X")).length;
+        //Lilac-crowned Parrot exotic in florida but P in california
+        uslifercount = uslifercount - 2;
+        this.animateUSliferCount(uslifercount);
       })
       .catch((error) => console.error(error));
 

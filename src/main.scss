@@ -14,10 +14,16 @@ $theme-colors: (
 @font-face {
   font-family: pokemon;
   src: url(pokemon_monk.ttf);
+  font-weight: 400;
+  font-style: normal;
+  font-display: block;
 }
 @font-face {
   font-family: andy;
   src: url(andy.ttf);
+  font-weight: 400;
+  font-style: normal;
+  font-display: block;
 }
 
 html,
@@ -45,6 +51,9 @@ h1 {
 }
 .cursor-pointer {
   cursor: pointer;
+}
+.cursor-not-allowed {
+  cursor: not-allowed;
 }
 .pokemon {
   font-family: pokemon;
