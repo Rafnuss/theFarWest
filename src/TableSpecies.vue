@@ -88,8 +88,12 @@
         <template v-if="sp.item.exotic.length > 0">
           <b-img :src="'exotic_' + sp.item.exotic + '.png'" class="h-16" v-b-modal.modal-exotic />
         </template>
-        <b-badge v-if="(sp.item.aba >= 3) & (sp.item.aba <= 6)" :class="'ml-2 font-weight-normal bg-aba-' + sp.item.aba"
-          >ABA-{{ sp.item.aba }}
+        <b-badge
+          v-if="(sp.item.aba >= 3) & (sp.item.aba <= 6)"
+          :class="'ml-2 font-weight-normal bg-aba-' + sp.item.aba"
+          v-b-modal.modal-aba
+        >
+          ABA-{{ sp.item.aba }}
         </b-badge>
         <b-link
           :href="
