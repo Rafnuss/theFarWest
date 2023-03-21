@@ -6,9 +6,9 @@
           <b-col class="pb-2">
             <b-card class="w-100 p-2 d-flex flex-row flex-wrap align-items-center" no-body>
               <b-img src="title.svg" height="64px" class="mx-auto" />
-              <div>
+              <div class="mx-auto mt-2">
                 <b-form-radio-group
-                  class="bg-beige mx-auto"
+                  class="bg-beige"
                   v-model="modeSelected"
                   :options="modeOptions"
                   button-variant="outline-primary"

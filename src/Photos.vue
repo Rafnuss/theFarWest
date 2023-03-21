@@ -9,10 +9,11 @@
       <b-img :src="modal_link" />
     </b-modal>
   </b-container>-->
-  <b-col style="height: 200px" class="pt-2" v-if="photos.length > 0">
-    <b-card no-body class="bg-dark h-100 p-1">
+  <b-col v-show="photos.length > 0" style="height: 200px" class="pt-2">
+    <b-card no-body class="bg-dark h-100 p-1" ref="resizeContainer">
+      <!--slides-per-view="4"-->
       <swiper-container
-        slides-per-view="4"
+        :slides-per-view="slidesPerView"
         grab-cursor="true"
         space-between="0"
         free-mode="true"
@@ -27,7 +28,7 @@
             "
             target="_blank"
           >
-            <b-img-lazy fluid class="h-100" :src="p.url" />
+            <b-img-lazy class="h-100" :src="p.url" />
           </a>
         </swiper-slide>
         <swiper-slide>
@@ -54,6 +55,8 @@ export default {
     return {
       modal_link: "",
       photos: [],
+      observer: null,
+      slidesPerView: 4,
     };
   },
   methods: {
@@ -88,6 +91,11 @@ export default {
         return false;
       }
     },
+    handleResize(entries) {
+      const w = entries[0].contentRect.width;
+      const h = entries[0].contentRect.height;
+      this.slidesPerView = Math.floor(((w / h) * 3) / 4);
+    },
   },
   created() {
     const maxTries = 3;
@@ -103,6 +111,13 @@ export default {
         console.log(`Error: ${tries}. Retrying...`);
       }
     }
+  },
+  mounted() {
+    this.observer = new ResizeObserver(this.handleResize);
+    this.observer.observe(this.$refs.resizeContainer);
+  },
+  beforeDestroy() {
+    this.observer.disconnect();
   },
 };
 </script>
