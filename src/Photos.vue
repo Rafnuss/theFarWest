@@ -9,7 +9,7 @@
       <b-img :src="modal_link" />
     </b-modal>
   </b-container>-->
-  <b-col v-show="photos.length > 0" style="height: 200px" class="pt-2">
+  <b-col class="pt-2" style="height: 200px">
     <b-card no-body class="bg-dark h-100 p-1" ref="resizeContainer">
       <!--slides-per-view="4"-->
       <swiper-container

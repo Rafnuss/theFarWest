@@ -4,7 +4,7 @@
       <b-col class="h-100 col-xs-12 md-6 col-lg-4 d-flex flex-column py-2">
         <b-row>
           <b-col class="pb-2">
-            <b-card class="w-100 p-2 d-flex flex-row flex-wrap align-items-center" no-body>
+            <b-card class="w-100 p-2 d-flex flex-row flex-wrap align-items-center" no-body style="gap: 0.5rem">
               <b-img src="title.svg" height="64px" class="mx-auto" />
               <div class="mx-auto">
                 <b-form-radio-group
@@ -183,54 +183,57 @@
                 <div>JOUR#</div>
                 <div class="d-flex flex-row">
                   <div class="d-flex mr-3 align-items-center"><b-img src="pokeball.png" height="50%;" /></div>
-                  <div class="pokemon jour-count">
+                  <div class="pokemon" style="font-size: 3rem">
                     {{ Math.floor((new Date() - new Date("2023-03-01")) / (1000 * 60 * 60 * 24)) }}
                   </div>
                 </div>
               </div>
-              <div class="d-flex flex-column text-center text-primary">
+              <div class="d-flex flex-column text-center text-red">
                 <div style="font-size: 1.2rem">LIFER US#</div>
                 <div class="d-flex flex-row align-items-center">
                   <div class="d-flex mr-3"><b-img src="pokeball.png" height="50%;" /></div>
-                  <div class="life-count pokemon">{{ USliferCount }}</div>
+                  <div class="pokemon" style="font-size: 6rem; line-height: 0.8">{{ USliferCount }}</div>
                 </div>
                 <div>
-                  <small> dernière addition:</small>
-                  <b-button variant="link" @click="openSpeciesChecklist(latestLifer[2])">
+                  <small> dernière addition: </small>
+                  <b-link @click="openSpeciesChecklist(latestLifer[2])">
                     {{ latestLifer[1] }}
-                  </b-button>
+                  </b-link>
                 </div>
               </div>
-              <div class="d-flex flex-column">
-                <div class="align-items-center">
+              <div class="d-flex flex-column justify-content-around">
+                <!--<div class="align-items-center">
                   {{ liferCount() }}
                   Lifer#
-                </div>
-
-                <div class="d-flex flex-row">
-                  <b-img src="pokedex.png" height="50%;" />
-                  <div class="d-flex flex-column justify-content-around p-2">
-                    <h3 class="pokemon">{{ specieCount }}</h3>
+                </div>-->
+                <div class="d-flex flex-row text-green align-items-center">
+                  <b-img src="pokedex_fill.png" height="50%;" class="" />
+                  <div class="d-flex flex-column justify-content-around px-2 py-1">
+                    <h2 class="pokemon mb-0" style="font-size: 2.3rem; line-height: 0.8">{{ specieCount }}</h2>
                     espèce au compteur
                   </div>
                 </div>
-
-                <div class="h-50 align-items-center">
-                  {{ formatNumber(individualCount) }}
-                  Oiseaux comptés
+                <div class="d-flex flex-row text-blue align-items-center">
+                  <b-img src="counted.png" height="50%;" class="" />
+                  <div class="d-flex flex-column justify-content-around px-2 py-1">
+                    <h2 class="pokemon mb-0" style="font-size: 2.3rem; line-height: 0.8">
+                      {{ numberWithSpaces(individualCount) }}
+                    </h2>
+                    Oiseaux comptés
+                  </div>
                 </div>
               </div>
               <div class="d-flex flex-column">
-                Explorer d'avantage:
+                EXPLORER D'AVANTAGE:
                 <a variant="link" :href="'https://ebird.org/tripreport/' + live_tripreport_id" target="_blank">
-                  Trip Report
+                  eBird Trip Report
                 </a>
                 <a
                   variant="link"
                   href="https://media.ebird.org/catalog?searchField=user&userId=USER497615&sort=rating_rank_desc&unconfirmed=incl&regionCode=US&beginMonth=4&endMonth=12&beginYear=2023&endYear=2023"
                   target="_blank"
                 >
-                  Nos photos
+                  Photos d'oiseaux
                 </a>
                 <a v-b-modal.modal-full-list href="#" variant="link">Liste des targets US</a>
                 <b-modal id="modal-full-list" scrollable title="Full Target Species List" size="xl" hide-footer>
@@ -248,8 +251,8 @@
                   target="_blank"
                   class="d-flex align-items-baseline"
                 >
-                  <div class="mr-2">Prévision de migration par</div>
-                  <b-img src="birdcast.svg" class="h-16" />
+                  <div class="mr-2">Prévision de migration</div>
+                  <!--<b-img src="birdcast.svg" class="h-16" />-->
                 </a>
               </div>
             </b-card>
@@ -272,7 +275,7 @@
                   {{ r.name }}
                 </b-button>
               </b-button-group>
-              <l-map ref="map">
+              <l-map ref="map" style="min-height: 300px">
                 <l-control>
                   <b-container class="control-ebird px-0">
                     <b-row>
@@ -512,6 +515,9 @@ export default {
       } else {
         return num.toString();
       }
+    },
+    numberWithSpaces(x) {
+      return x.toString().replace(/\B(?=(\d{3})+(?!\d))/g, " ");
     },
     liferCount() {
       return 1839 + this.taxon.filter((t) => t.isLifer & (t.category == "species")).length;

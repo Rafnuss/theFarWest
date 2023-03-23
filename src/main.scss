@@ -2,6 +2,9 @@ $theme-colors: (
   "primary": #ab6f4c,
   "secondary": #2c3e50,
   "beige": #ded5d7,
+  "red": rgb(140, 51, 9),
+  "green": #9a9c77,
+  "blue": #008ea4,
 );
 
 //"orange": #fbbd58
@@ -67,13 +70,6 @@ h2 {
 .andy {
   font-family: andy;
   line-height: 1em;
-}
-.life-count {
-  font-size: 6rem;
-  line-height: 0.8;
-}
-.jour-count {
-  font-size: 3rem;
 }
 
 .h-16 {
