@@ -6,7 +6,7 @@
           <b-col class="pb-2">
             <b-card class="w-100 p-2 d-flex flex-row flex-wrap align-items-center" no-body>
               <b-img src="title.svg" height="64px" class="mx-auto" />
-              <div class="mx-auto mt-2">
+              <div class="mx-auto">
                 <b-form-radio-group
                   class="bg-beige"
                   v-model="modeSelected"
@@ -19,24 +19,30 @@
             </b-card>
           </b-col>
         </b-row>
-        <b-card v-if="(modeSelected == 'live') & (posts[i_post] != null)" no-body class="flex-grow-1 overflow-hidden">
-          <div class="card-header text-light" :style="{ backgroundColor: posts[i_post].color }">
+        <b-card v-if="modeSelected == 'live'" no-body class="flex-grow-1 overflow-hidden">
+          <div class="card-header text-light px-3" :style="{ backgroundColor: posts[i_post].color }">
             <div class="d-flex py-2 justify-content-between align-items-center">
               <b-icon
                 icon="chevron-left"
                 @click="i_post = Math.max(i_post - 1, 0)"
                 :class="i_post == 0 ? 'opacity-0' : 'cursor-pointer'"
               />
-              <h1 class="mb-0">{{ posts[i_post].title }}</h1>
+              <h2 class="mb-0 px-2">{{ posts[i_post].title }}</h2>
               <b-icon
                 icon="chevron-right"
                 :class="i_post == posts.length - 1 ? 'opacity-0' : 'cursor-pointer'"
                 @click="i_post = Math.min(i_post + 1, posts.length - 1)"
               />
             </div>
-            <div class="d-flex justify-content-between align-items-center">
+            <div class="d-flex justify-content-around flex-wrap align-items-center">
               <div><b-icon icon="person-lines-fill"></b-icon> {{ posts[i_post].author }}</div>
-              <div><b-icon icon="calendar-date-fill"></b-icon> {{ posts[i_post].date }}</div>
+              <div>
+                <b-icon icon="calendar-date-fill"></b-icon>
+                {{ posts[i_post].date.getDate() + " " + posts[i_post].date.toLocaleString("FR", { month: "long" }) }}
+              </div>
+              <div>
+                <b-icon :icon="posts[i_post].weather"></b-icon>
+              </div>
               <b-button
                 size="sm"
                 variant="outline-light"
@@ -46,9 +52,6 @@
                 <b-icon icon="geo-alt-fill"></b-icon>
                 {{ posts[i_post].location }}
               </b-button>
-              <div>
-                <b-icon :icon="posts[i_post].weather"></b-icon>
-              </div>
               <b-button
                 size="sm"
                 variant="outline-light"
@@ -59,7 +62,7 @@
                   posts[i_post].dateISO
                 "
                 target="_blank"
-                v-b-tooltip.hover="'Condition de migration observé par les radar météo'"
+                v-b-tooltip.hover="'Conditions de migration observées par les radars météo'"
               >
                 <b-img src="birdcast.svg" class="h-16" />
               </b-button>
@@ -107,7 +110,7 @@
             </div>
           </div>
           <b-card-body class="overflow-auto flex-grow-1">
-            <div v-html="regions[i_region].presentation"></div>
+            <Presentation :region="regions[i_region].region" />
             <h3>Espèces cibles</h3>
             <b-table
               hover
@@ -172,29 +175,44 @@
       <b-col class="h-100 col-xs-12 md-6 col-lg-8 d-flex flex-column py-2">
         <b-row>
           <b-col class="pb-2">
-            <b-card class="w-100 p-2 d-flex flex-row justify-content-between bg-beige andy flex-wrap" no-body>
-              <div class="d-flex flex-row">
-                <div class="d-flex align-items-center"><b-img src="pokeball.png" height="50%;" /></div>
-                <div class="d-flex flex-column text-center pl-3">
-                  <div style="font-size: 1.2rem">LIFER US#</div>
-                  <div class="life-count pokemon">{{ USliferCount }}</div>
-                  <div>
-                    Dernière addition:
-                    <b-button variant="link" @click="openSpeciesChecklist(latestLifer[2])" size="sm">
-                      {{ latestLifer[1] }}
-                    </b-button>
+            <b-card class="w-100 p-2 d-flex flex-row justify-content-between bg-beige flex-wrap" no-body>
+              <div
+                class="bg-primary text-white d-flex flex-column text-center align-self-start p-2"
+                style="margin-top: -0.5rem"
+              >
+                <div>JOUR#</div>
+                <div class="d-flex flex-row">
+                  <div class="d-flex mr-3 align-items-center"><b-img src="pokeball.png" height="50%;" /></div>
+                  <div class="pokemon jour-count">
+                    {{ Math.floor((new Date() - new Date("2023-03-01")) / (1000 * 60 * 60 * 24)) }}
                   </div>
                 </div>
               </div>
-              <div class="d-flex flex-column text-center pl-3">
-                <div class="h-50 align-items-center">
-                  <b-img src="pokedex.png" height="50%;" />
-                  {{ specieCount }}
-                  espèce au compteur
+              <div class="d-flex flex-column text-center text-primary">
+                <div style="font-size: 1.2rem">LIFER US#</div>
+                <div class="d-flex flex-row align-items-center">
+                  <div class="d-flex mr-3"><b-img src="pokeball.png" height="50%;" /></div>
+                  <div class="life-count pokemon">{{ USliferCount }}</div>
                 </div>
-                <div class="h-50 align-items-center">
+                <div>
+                  <small> dernière addition:</small>
+                  <b-button variant="link" @click="openSpeciesChecklist(latestLifer[2])">
+                    {{ latestLifer[1] }}
+                  </b-button>
+                </div>
+              </div>
+              <div class="d-flex flex-column">
+                <div class="align-items-center">
                   {{ liferCount() }}
                   Lifer#
+                </div>
+
+                <div class="d-flex flex-row">
+                  <b-img src="pokedex.png" height="50%;" />
+                  <div class="d-flex flex-column justify-content-around p-2">
+                    <h3 class="pokemon">{{ specieCount }}</h3>
+                    espèce au compteur
+                  </div>
                 </div>
 
                 <div class="h-50 align-items-center">
@@ -202,9 +220,24 @@
                   Oiseaux comptés
                 </div>
               </div>
-              <div v-if="locations.length > 0">
-                <b-button
-                  variant="primary"
+              <div class="d-flex flex-column">
+                Explorer d'avantage:
+                <a variant="link" :href="'https://ebird.org/tripreport/' + live_tripreport_id" target="_blank">
+                  Trip Report
+                </a>
+                <a
+                  variant="link"
+                  href="https://media.ebird.org/catalog?searchField=user&userId=USER497615&sort=rating_rank_desc&unconfirmed=incl&regionCode=US&beginMonth=4&endMonth=12&beginYear=2023&endYear=2023"
+                  target="_blank"
+                >
+                  Nos photos
+                </a>
+                <a v-b-modal.modal-full-list href="#" variant="link">Liste des targets US</a>
+                <b-modal id="modal-full-list" scrollable title="Full Target Species List" size="xl" hide-footer>
+                  <TableSpecies :regions="regions" />
+                </b-modal>
+                <a
+                  v-if="locations.length > 0"
                   :href="
                     'https://alert.birdcast.info/?latLng=' +
                     locations[locations.length - 1][0] +
@@ -217,11 +250,7 @@
                 >
                   <div class="mr-2">Prévision de migration par</div>
                   <b-img src="birdcast.svg" class="h-16" />
-                </b-button>
-                <b-button v-b-modal.modal-full-list>Liste des targets US</b-button>
-                <b-modal id="modal-full-list" scrollable title="Full Target Species List" size="xl" hide-footer>
-                  <TableSpecies :regions="regions" />
-                </b-modal>
+                </a>
               </div>
             </b-card>
           </b-col>
@@ -322,7 +351,7 @@
                   :zIndexOffset="100"
                   @click="map.flyTo(locations[locations.length - 1], 14)"
                 >
-                  <l-icon icon-url="logo.svg" :icon-size="[104, 40]" :icon-anchor="[52, 20]" />
+                  <l-icon icon-url="logo.svg" :icon-size="[156, 60]" :icon-anchor="[78, 30]" />
                 </l-marker>
               </l-map>
             </b-card>
@@ -341,98 +370,10 @@ import route_json from "./assets/route.json";
 import past_checklists from "./assets/checklists.json";
 import past_taxon from "./assets/taxon-list.json";
 import species_list from "./assets/species_list.json";
+import regions from "./assets/regions.json";
 </script>
 
 <script>
-const google_api_key = "AIzaSyCaVWdIpSvq8BoF7PvEK4oY3LByPYTQ2Xs";
-const live_tripreport_id = 114024;
-const regions = [
-  {
-    region: "midwest",
-    name: "Mid West",
-    start_date: "2023-3-31",
-    end_date: "2023-4-08",
-    color: "#ab6f4c",
-    ebirdcode: "US-KS",
-    active: true,
-    presentation: `
-  <p>test</p>
-  `,
-  },
-  {
-    region: "colorado",
-    name: "Colorado",
-    start_date: "2023-4-08",
-    end_date: "2023-4-17",
-    color: "#646345",
-    ebirdcode: "US-CO",
-    active: true,
-    presentation: `
-  <p>test</p>
-  `,
-  },
-  {
-    region: "texas",
-    name: "Texas",
-    start_date: "2023-4-17",
-    end_date: "2023-5-1",
-    color: "#8c3309",
-    ebirdcode: "US-TX",
-    active: true,
-    presentation: `
-  <p>test</p>
-  `,
-  },
-  {
-    region: "arizona",
-    name: "Arizona",
-    start_date: "2023-5-1",
-    end_date: "2023-5-1",
-    color: "#d05c10",
-    ebirdcode: "US-AZ",
-    active: false,
-    presentation: `
-  <p>test</p>
-  `,
-  },
-  {
-    region: "california",
-    name: "California",
-    start_date: "2023-5-1",
-    end_date: "2023-5-24",
-    color: "#0b8189",
-    ebirdcode: "US-CA",
-    active: false,
-    presentation: `
-  <p>test</p>
-  `,
-  },
-  {
-    region: "mountainwest",
-    name: "Mountain West",
-    start_date: "2023-5-24",
-    end_date: "2023-6-10",
-    color: "#6e5558",
-    ebirdcode: "US-MT",
-    active: false,
-    presentation: `
-  <p>test</p>
-  `,
-  },
-  {
-    region: "cascadia",
-    name: "Cascadia",
-    start_date: "2023-6-10",
-    end_date: "2023-6-31",
-    color: "#a4a77b",
-    ebirdcode: "US-WT",
-    active: false,
-    presentation: `
-  <p>test</p>
-  `,
-  },
-];
-
 import polyUtil from "polyline-encoded";
 import {
   LMap,
@@ -448,6 +389,7 @@ import {
 import Photos from "./Photos.vue";
 import TableSpecies from "./TableSpecies.vue";
 import Modal from "./Modal.vue";
+import Presentation from "./Presentation.vue";
 
 export default {
   components: {
@@ -463,9 +405,12 @@ export default {
     LControl,
     TableSpecies,
     Modal,
+    Presentation,
   },
   data() {
     return {
+      live_tripreport_id: 114024,
+      google_api_key: "AIzaSyCaVWdIpSvq8BoF7PvEK4oY3LByPYTQ2Xs",
       mapboxToken: "pk.eyJ1IjoicmFmbnVzcyIsImEiOiIzMVE1dnc0In0.3FNMKIlQ_afYktqki-6m0g",
       map: null,
       regions: regions,
@@ -488,7 +433,7 @@ export default {
           title: "",
           text1: "",
           cover: "",
-          date: "",
+          date: new Date(),
           lon: 0,
           lat: 0,
           author: "",
@@ -545,7 +490,7 @@ export default {
     async openSpeciesChecklist(spCode) {
       fetch(
         "http://tripreport.raphaelnussbaumer.com/tripreport-internal/v1/taxon-detail/" +
-          live_tripreport_id +
+          this.live_tripreport_id +
           "/" +
           spCode
       )
@@ -607,7 +552,6 @@ export default {
       return this.species_list
         .filter((s) => s.target && s.region.includes(this.regions[this.i_region].region))
         .map((s) => {
-          console.log(s);
           s.prob_region = s.prob[this.i_region];
           return s;
         });
@@ -617,7 +561,7 @@ export default {
     this.loadLocations();
 
     // Checklsit
-    fetch("http://tripreport.raphaelnussbaumer.com/tripreport-internal/v1/checklists/" + live_tripreport_id)
+    fetch("http://tripreport.raphaelnussbaumer.com/tripreport-internal/v1/checklists/" + this.live_tripreport_id)
       .then((response) => response.json())
       .then((data) => {
         this.checklists = [...past_checklists, ...data];
@@ -626,7 +570,7 @@ export default {
 
     fetch(
       "https://sheets.googleapis.com/v4/spreadsheets/12VqL_Epf2l6NnHHQM3Osd_3nh0h61bPvD66uCSsPAXg/values/A1:Z100?key=" +
-        google_api_key
+        this.google_api_key
     )
       .then((response) => response.json())
       .then((data) => {
@@ -637,7 +581,7 @@ export default {
               title: row[1],
               text1: row[2],
               cover: row[3] ? row[3].replace("open?", "uc?export=view&") : "",
-              date: row[4],
+              date: new Date(row[4].split("/")[2], row[4].split("/")[1] - 1, row[4].split("/")[0]),
               lon: parseFloat(row[5].split(", ")[1]) || null,
               lat: parseFloat(row[5].split(", ")[0]) || null,
               author: row[6],
@@ -653,9 +597,7 @@ export default {
               color: this.regions.find((r) => r.region == row[15]).color,
               ebirdcode: this.regions.find((r) => r.region == row[15]).ebirdcode,
             };
-            var dateTime = r.date.split("/");
-            r.dateISO = dateTime[2] + "-" + dateTime[1] + "-" + dateTime[0];
-
+            r.dateISO = r.date.getMonth() + "-" + r.date.getDate() + "-" + r.date.getFullYear();
             return r;
           })
           .sort((a, b) => a.date - b.date);
@@ -664,7 +606,7 @@ export default {
       .catch((error) => console.error(error));
 
     // Taxon
-    fetch("http://tripreport.raphaelnussbaumer.com/tripreport-internal/v1/taxon-list/" + live_tripreport_id)
+    fetch("http://tripreport.raphaelnussbaumer.com/tripreport-internal/v1/taxon-list/" + this.live_tripreport_id)
       .then((response) => response.json())
       .then((data) => {
         // Add new taxon from latest tripreport
@@ -700,7 +642,7 @@ export default {
 
     fetch(
       "https://sheets.googleapis.com/v4/spreadsheets/1tJUNjqhX6L7bXPapc1VMyymRk9KbMjARpWB24J2tbK4/values/Sheet3!A1:C1?key=" +
-        google_api_key
+        this.google_api_key
     )
       .then((response) => response.json())
       .then((data) => {
