@@ -10,7 +10,7 @@
     </b-modal>
   </b-container>-->
   <b-col class="pt-2" style="height: 200px">
-    <b-card no-body class="bg-dark h-100 p-1" ref="resizeContainer">
+    <b-card no-body class="bg-photo h-100 p-1" ref="resizeContainer">
       <!--slides-per-view="4"-->
       <swiper-container
         :slides-per-view="slidesPerView"
@@ -71,8 +71,8 @@ export default {
       }
       const json = await response.json();
       if (json != null) {
-        //this.photos = json;
-        this.photos = [
+        this.photos = json;
+        /*this.photos = [
           "PXL_20230123_003245995.PORTRAIT.jpg",
           "PXL_20230212_174355161.jpg",
           "PXL_20230301_134654730.PORTRAIT.jpg",
@@ -85,7 +85,7 @@ export default {
           "PXL_20230218_142137347.jpg",
         ].map((e) => {
           return { url: "photos/" + e };
-        });
+        });*/
         return true;
       } else {
         return false;

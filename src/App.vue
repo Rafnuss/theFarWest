@@ -5,10 +5,10 @@
         <b-row>
           <b-col class="pb-2">
             <b-card class="w-100 p-2 d-flex flex-row flex-wrap align-items-center" no-body style="gap: 0.5rem">
-              <b-img src="title.svg" height="64px" class="mx-auto" />
+              <b-img src="logo.svg" height="64px" class="mx-auto" />
               <div class="mx-auto">
                 <b-form-radio-group
-                  class="bg-beige"
+                  class="bg-light"
                   v-model="modeSelected"
                   :options="modeOptions"
                   button-variant="outline-primary"
@@ -20,52 +20,46 @@
           </b-col>
         </b-row>
         <b-card v-if="modeSelected == 'live'" no-body class="flex-grow-1 overflow-hidden">
-          <div class="card-header text-light px-3" :style="{ backgroundColor: posts[i_post].color }">
-            <div class="d-flex py-2 justify-content-between align-items-center">
+          <div class="card-header text-light px-0 bg-primary">
+            <div class="d-flex justify-content-between align-items-center px-1">
               <b-icon
                 icon="chevron-left"
                 @click="i_post = Math.max(i_post - 1, 0)"
                 :class="i_post == 0 ? 'opacity-0' : 'cursor-pointer'"
               />
-              <h2 class="mb-0 px-2">{{ posts[i_post].title }}</h2>
+              <div class="w-100 px-2">
+                <h2 class="flex-stretch mb-0 text-left">{{ posts[i_post].title }}</h2>
+                <div class="d-flex justify-content-between align-items-center">
+                  <!--
+                  <b-icon icon="person-lines-fill"></b-icon>
+                <b-icon icon="calendar-date-fill"></b-icon>
+                -->
+                  <div>
+                    par {{ posts[i_post].author }},
+                    {{
+                      posts[i_post].date.toLocaleString("FR", { weekday: "long" }) +
+                      " " +
+                      posts[i_post].date.getDate() +
+                      " " +
+                      posts[i_post].date.toLocaleString("FR", { month: "long" })
+                    }}
+                  </div>
+                  <b-button
+                    variant="outline-light"
+                    size="sm"
+                    @click="map.flyTo([posts[i_post].lat, posts[i_post].lon], 12)"
+                    v-b-tooltip.hover="'Voir sur la carte'"
+                  >
+                    <b-icon icon="geo-alt-fill"></b-icon>
+                    {{ posts[i_post].location }}
+                  </b-button>
+                </div>
+              </div>
               <b-icon
                 icon="chevron-right"
-                :class="i_post == posts.length - 1 ? 'opacity-0' : 'cursor-pointer'"
+                :class="(i_post == posts.length - 1 ? 'opacity-0' : 'cursor-pointer') + ' ml-auto'"
                 @click="i_post = Math.min(i_post + 1, posts.length - 1)"
               />
-            </div>
-            <div class="d-flex justify-content-around flex-wrap align-items-center">
-              <div><b-icon icon="person-lines-fill"></b-icon> {{ posts[i_post].author }}</div>
-              <div>
-                <b-icon icon="calendar-date-fill"></b-icon>
-                {{ posts[i_post].date.getDate() + " " + posts[i_post].date.toLocaleString("FR", { month: "long" }) }}
-              </div>
-              <div>
-                <b-icon :icon="posts[i_post].weather"></b-icon>
-              </div>
-              <b-button
-                size="sm"
-                variant="outline-light"
-                @click="map.flyTo([posts[i_post].lat, posts[i_post].lon], 12)"
-                v-b-tooltip.hover="'Voir sur la carte'"
-              >
-                <b-icon icon="geo-alt-fill"></b-icon>
-                {{ posts[i_post].location }}
-              </b-button>
-              <b-button
-                size="sm"
-                variant="outline-light"
-                :href="
-                  'https://dashboard.birdcast.info/region/' +
-                  posts[i_post].ebirdcode +
-                  '?night=' +
-                  posts[i_post].dateISO
-                "
-                target="_blank"
-                v-b-tooltip.hover="'Conditions de migration observées par les radars météo'"
-              >
-                <b-img src="birdcast.svg" class="h-16" />
-              </b-button>
             </div>
           </div>
           <b-card-body class="overflow-auto flex-grow-1">
@@ -75,16 +69,32 @@
             <b-card-text>
               {{ posts[i_post].text1 }}
             </b-card-text>
-            <b-card-img :src="posts[i_post].photo1"></b-card-img>
+            <b-card-img v-if="posts[i_post].photo1" :src="posts[i_post].photo1" class="mb-1"></b-card-img>
             <b-card-text>
               {{ posts[i_post].text2 }}
             </b-card-text>
-            <b-card-img :src="posts[i_post].photo2"></b-card-img>
+            <b-card-img v-if="posts[i_post].photo2" :src="posts[i_post].photo2" class="mb-1"></b-card-img>
             <b-card-text>
               {{ posts[i_post].text3 }}
             </b-card-text>
-            <b-card-img :src="posts[i_post].photo3"></b-card-img>
+            <b-card-img v-if="posts[i_post].photo3" :src="posts[i_post].photo3" class="mb-1"></b-card-img>
           </b-card-body>
+          <b-card-footer class="d-flex justify-content-between align-items-center bg-primary text-white">
+            <div>
+              <b-icon :icon="posts[i_post].weather"></b-icon>
+            </div>
+            <b-button
+              size="sm"
+              variant="outline-light"
+              :href="
+                'https://dashboard.birdcast.info/region/' + posts[i_post].ebirdcode + '?night=' + posts[i_post].dateISO
+              "
+              target="_blank"
+              v-b-tooltip.hover="'Conditions de migration observées par les radars météo'"
+            >
+              <b-img src="birdcast.svg" class="h-16" />
+            </b-button>
+          </b-card-footer>
         </b-card>
         <b-card
           v-if="(modeSelected == 'route') & (regions[i_region] != null)"
@@ -128,7 +138,7 @@
                   <b-icon icon="check-square" variant="success" />
                 </template>
                 <template v-else>
-                  <b-icon icon="square" variant="secondary" />
+                  <b-icon icon="square" />
                 </template>
               </template>
 
@@ -175,28 +185,29 @@
       <b-col class="h-100 col-xs-12 md-6 col-lg-8 d-flex flex-column py-2">
         <b-row>
           <b-col class="pb-2">
-            <b-card class="w-100 p-2 d-flex flex-row justify-content-between bg-beige flex-wrap" no-body>
+            <b-card class="w-100 p-2 d-flex flex-row justify-content-around bg-primary flex-wrap text-light" no-body>
               <div
-                class="bg-primary text-white d-flex flex-column text-center align-self-start p-2"
-                style="margin-top: -0.5rem"
+                class="bg-secondary text-white d-flex flex-column text-center align-self-start px-3 py-2 rounded-bottom"
+                style="margin-top: -0.5rem; box-shadow: 3px 3px 4px 2px rgba(0, 0, 0, 0.2)"
               >
                 <div>JOUR#</div>
                 <div class="d-flex flex-row">
-                  <div class="d-flex mr-3 align-items-center"><b-img src="pokeball.png" height="50%;" /></div>
                   <div class="pokemon" style="font-size: 3rem">
-                    {{ Math.floor((new Date() - new Date("2023-03-01")) / (1000 * 60 * 60 * 24)) }}
+                    {{ Math.floor((new Date() - new Date("2023-03-29")) / (1000 * 60 * 60 * 24)) }}
                   </div>
                 </div>
               </div>
-              <div class="d-flex flex-column text-center text-red">
+              <div class="d-flex flex-column text-center">
                 <div style="font-size: 1.2rem">LIFER US#</div>
                 <div class="d-flex flex-row align-items-center">
-                  <div class="d-flex mr-3"><b-img src="pokeball.png" height="50%;" /></div>
+                  <div class="d-flex mr-3">
+                    <IconBase class="" name="pokeball" width="50" height="50" />
+                  </div>
                   <div class="pokemon" style="font-size: 6rem; line-height: 0.8">{{ USliferCount }}</div>
                 </div>
                 <div>
                   <small> dernière addition: </small>
-                  <b-link @click="openSpeciesChecklist(latestLifer[2])">
+                  <b-link class="text-secondary" @click="openSpeciesChecklist(latestLifer[2])">
                     {{ latestLifer[1] }}
                   </b-link>
                 </div>
@@ -206,17 +217,17 @@
                   {{ liferCount() }}
                   Lifer#
                 </div>-->
-                <div class="d-flex flex-row text-green align-items-center">
-                  <b-img src="pokedex_fill.png" height="50%;" class="" />
-                  <div class="d-flex flex-column justify-content-around px-2 py-1">
-                    <h2 class="pokemon mb-0" style="font-size: 2.3rem; line-height: 0.8">{{ specieCount }}</h2>
-                    espèce au compteur
+                <div class="d-flex flex-row align-items-center">
+                  <IconBase name="pokedex" width="40" height="40" />
+                  <div class="d-flex flex-column justify-content-center px-2">
+                    <h2 class="pokemon mb-0 mt-2" style="font-size: 2.3rem; line-height: 0.8">{{ specieCount }}</h2>
+                    Espèces pour le trip
                   </div>
                 </div>
-                <div class="d-flex flex-row text-blue align-items-center">
-                  <b-img src="counted.png" height="50%;" class="" />
-                  <div class="d-flex flex-column justify-content-around px-2 py-1">
-                    <h2 class="pokemon mb-0" style="font-size: 2.3rem; line-height: 0.8">
+                <div class="d-flex flex-row align-items-center">
+                  <IconBase name="count" width="40" height="40" />
+                  <div class="d-flex flex-column justify-content-center px-2">
+                    <h2 class="pokemon mb-0 mt-2" style="font-size: 2.3rem; line-height: 0.8">
                       {{ numberWithSpaces(individualCount) }}
                     </h2>
                     Oiseaux comptés
@@ -224,18 +235,18 @@
                 </div>
               </div>
               <div class="d-flex flex-column">
-                EXPLORER D'AVANTAGE:
-                <a variant="link" :href="'https://ebird.org/tripreport/' + live_tripreport_id" target="_blank">
+                <strong>EXPLORER D'AVANTAGE</strong>
+                <a class="text-secondary" :href="'https://ebird.org/tripreport/' + live_tripreport_id" target="_blank">
                   eBird Trip Report
                 </a>
                 <a
-                  variant="link"
+                  class="text-secondary"
                   href="https://media.ebird.org/catalog?searchField=user&userId=USER497615&sort=rating_rank_desc&unconfirmed=incl&regionCode=US&beginMonth=4&endMonth=12&beginYear=2023&endYear=2023"
                   target="_blank"
                 >
                   Photos d'oiseaux
                 </a>
-                <a v-b-modal.modal-full-list href="#" variant="link">Liste des targets US</a>
+                <a v-b-modal.modal-full-list href="#" class="text-secondary">Liste cibles US</a>
                 <b-modal id="modal-full-list" scrollable title="Full Target Species List" size="xl" hide-footer>
                   <TableSpecies :regions="regions" />
                 </b-modal>
@@ -249,7 +260,7 @@
                     '&locName=Exactly%20where%20Améline,%20Mady%20and%20Raphaël%20are!'
                   "
                   target="_blank"
-                  class="d-flex align-items-baseline"
+                  class="d-flex align-items-baseline text-secondary"
                 >
                   <div class="mr-2">Prévision de migration</div>
                   <!--<b-img src="birdcast.svg" class="h-16" />-->
@@ -261,8 +272,9 @@
         <b-row class="flex-grow-1">
           <b-col class="flex-grow-1">
             <b-card class="w-100 h-100" no-body>
-              <b-button-group class="w-100" v-if="modeSelected == 'route'">
+              <b-button-group class="w-100 text-light" v-if="modeSelected == 'route'">
                 <b-button
+                  variant="outline-light"
                   squared
                   v-for="(r, i) in regions"
                   :key="r.region"
@@ -354,7 +366,9 @@
                   :zIndexOffset="100"
                   @click="map.flyTo(locations[locations.length - 1], 14)"
                 >
-                  <l-icon icon-url="logo.svg" :icon-size="[156, 60]" :icon-anchor="[78, 30]" />
+                  <l-icon :icon-anchor="[35, 35]">
+                    <IconBase class="text-dark" name="car" width="70" height="70" />
+                  </l-icon>
                 </l-marker>
               </l-map>
             </b-card>
@@ -377,6 +391,12 @@ import regions from "./assets/regions.json";
 </script>
 
 <script>
+import Photos from "./Photos.vue";
+import TableSpecies from "./TableSpecies.vue";
+import Modal from "./Modal.vue";
+import Presentation from "./Presentation.vue";
+import IconBase from "./IconBase.vue";
+
 import polyUtil from "polyline-encoded";
 import {
   LMap,
@@ -389,10 +409,6 @@ import {
   LControlLayers,
   LControl,
 } from "vue2-leaflet";
-import Photos from "./Photos.vue";
-import TableSpecies from "./TableSpecies.vue";
-import Modal from "./Modal.vue";
-import Presentation from "./Presentation.vue";
 
 export default {
   components: {
@@ -409,6 +425,7 @@ export default {
     TableSpecies,
     Modal,
     Presentation,
+    IconBase,
   },
   data() {
     return {
@@ -601,6 +618,7 @@ export default {
               location: row[14],
               region: row[15],
               color: this.regions.find((r) => r.region == row[15]).color,
+              color2: this.regions.find((r) => r.region == row[15]).color2,
               ebirdcode: this.regions.find((r) => r.region == row[15]).ebirdcode,
             };
             r.dateISO = r.date.getMonth() + "-" + r.date.getDate() + "-" + r.date.getFullYear();
