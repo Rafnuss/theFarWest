@@ -34,7 +34,7 @@
                   <b-icon icon="person-lines-fill"></b-icon>
                 <b-icon icon="calendar-date-fill"></b-icon>
                 -->
-                  <div>
+                  <small>
                     par {{ posts[i_post].author }},
                     {{
                       posts[i_post].date.toLocaleString("FR", { weekday: "long" }) +
@@ -43,7 +43,7 @@
                       " " +
                       posts[i_post].date.toLocaleString("FR", { month: "long" })
                     }}
-                  </div>
+                  </small>
                   <b-button
                     variant="outline-light"
                     size="sm"
@@ -218,7 +218,7 @@
                   Lifer#
                 </div>-->
                 <div class="d-flex flex-row align-items-center">
-                  <IconBase name="pokedex" width="40" height="40" />
+                  <IconBase name="pokedex-outline" width="40" height="40" />
                   <div class="d-flex flex-column justify-content-center px-2">
                     <h2 class="pokemon mb-0 mt-2" style="font-size: 2.3rem; line-height: 0.8">{{ specieCount }}</h2>
                     Espèces pour le trip
