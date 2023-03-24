@@ -6,7 +6,7 @@
           <b-col class="pb-2">
             <b-card class="w-100 p-2 d-flex flex-row flex-wrap align-items-center" no-body style="gap: 0.5rem">
               <b-img src="logo.svg" height="64px" class="mx-auto" />
-              <div class="mx-auto">
+              <div class="mx-auto" v-if="true">
                 <b-form-radio-group
                   class="bg-light"
                   v-model="modeSelected"
@@ -79,7 +79,7 @@
             </b-card-text>
             <b-card-img v-if="posts[i_post].photo3" :src="posts[i_post].photo3" class="mb-1"></b-card-img>
           </b-card-body>
-          <b-card-footer class="d-flex justify-content-between align-items-center bg-primary text-white">
+          <b-card-footer class="d-flex justify-content-between align-items-center bg-primary text-white" v-if="true">
             <div>
               <b-icon :icon="posts[i_post].weather"></b-icon>
             </div>
@@ -197,9 +197,9 @@
                   </div>
                 </div>
               </div>
-              <div class="d-flex flex-column text-center">
+              <div class="d-flex flex-column text-center" style="min-width: 230px">
                 <div style="font-size: 1.2rem">LIFER US#</div>
-                <div class="d-flex flex-row align-items-center">
+                <div class="d-flex flex-row align-items-center justify-content-center">
                   <div class="d-flex mr-3">
                     <IconBase class="" name="pokeball" width="50" height="50" />
                   </div>
@@ -234,7 +234,7 @@
                   </div>
                 </div>
               </div>
-              <div class="d-flex flex-column">
+              <div class="d-flex flex-column" v-if="true">
                 <strong>EXPLORER D'AVANTAGE</strong>
                 <a class="text-secondary" :href="'https://ebird.org/tripreport/' + live_tripreport_id" target="_blank">
                   eBird Trip Report
@@ -247,7 +247,15 @@
                   Photos d'oiseaux
                 </a>
                 <a v-b-modal.modal-full-list href="#" class="text-secondary">Liste cibles US</a>
-                <b-modal id="modal-full-list" scrollable title="Full Target Species List" size="xl" hide-footer>
+                <b-modal
+                  id="modal-full-list"
+                  scrollable
+                  title="Full Target Species List"
+                  size="xl"
+                  hide-footer
+                  class="h-100"
+                  centered
+                >
                   <TableSpecies :regions="regions" />
                 </b-modal>
                 <a
@@ -263,6 +271,17 @@
                   class="d-flex align-items-baseline text-secondary"
                 >
                   <div class="mr-2">Prévision de migration</div>
+                  <!--<b-img src="birdcast.svg" class="h-16" />-->
+                </a>
+                <a
+                  :href="
+                    'https://zoziologie.raphaelnussbaumer.com/global-rare-ebird/?mode=r&t=1&r=' +
+                    regions[max_region].ebirdcode
+                  "
+                  target="_blank"
+                  class="d-flex align-items-baseline text-secondary"
+                >
+                  <div class="mr-2">Oiseaux Rare</div>
                   <!--<b-img src="birdcast.svg" class="h-16" />-->
                 </a>
               </div>
@@ -304,7 +323,7 @@
                         </b-list-group-item>
                         <b-list-group-item class="d-flex py-2">
                           <b-icon icon="clock-fill" class="mr-2" />
-                          {{ selectedChecklist.map((c) => c.obsDt + " " + c.obsTime).join(", ") }}
+                          {{ selectedChecklist.map((c) => c.obsDt + (c.obsTime ? " " + c.obsTime : "")).join(", ") }}
                         </b-list-group-item>
                         <b-list-group-item class="d-flex py-2">
                           <IconBase name="bird" class="mr-2 h-16" />
