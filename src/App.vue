@@ -296,25 +296,29 @@
                         <label for="switch_1" class="mb-0">Afficher les listes eBird</label>
                       </b-col>
                     </b-row>
-                    <div v-if="showChecklist && selectedChecklist.loc">
+                    <div v-if="showChecklist && selectedLocId">
                       <b-list-group flush>
                         <b-list-group-item class="d-flex py-2">
                           <b-icon icon="geo-alt-fill" class="mr-2" />
-                          {{ selectedChecklist.loc.name }}
+                          {{ selectedChecklist[0].loc.name }}
                         </b-list-group-item>
                         <b-list-group-item class="d-flex py-2">
                           <b-icon icon="clock-fill" class="mr-2" />
-                          {{ selectedChecklist.obsDt }}
-                          {{ selectedChecklist.obsTime }}
+                          {{ selectedChecklist.map((c) => c.obsDt + " " + c.obsTime).join(", ") }}
                         </b-list-group-item>
                         <b-list-group-item class="d-flex py-2">
-                          <b-img src="bird-checklist.png" class="mr-2 h-16" />
-                          {{ selectedChecklist.numSpecies }}
+                          <IconBase name="bird" class="mr-2 h-16" />
+                          {{ selectedChecklist.map((c) => c.numSpecies).join(", ") }}
                         </b-list-group-item>
-                        <b-list-group-item class="d-flex py-2">
+                        <b-list-group-item class="d-flex py-2 flex-wrap">
                           <b-icon icon="card-checklist" class="mr-2" />
-                          <b-link :href="'https://ebird.org/checklist/' + selectedChecklist.subId">
-                            {{ selectedChecklist.subId }}
+                          <b-link
+                            v-for="c in selectedChecklist"
+                            :key="c.subId"
+                            :href="'https://ebird.org/checklist/' + c.subId"
+                            class="mr-2"
+                          >
+                            {{ c.subId }}
                           </b-link>
                         </b-list-group-item>
                       </b-list-group>
@@ -346,7 +350,7 @@
                     fillColor="#4ca800"
                     :radius="5"
                     :fillOpacity="0.8"
-                    @click="selectedChecklist = check"
+                    @click="selectedLocId = check.locId"
                   />
                 </template>
                 <l-polyline v-if="locations.length > 0" :lat-lngs="locations" color="black" :weight="1" />
@@ -447,7 +451,7 @@ export default {
         return s;
       }),
       checklists: [],
-      selectedChecklist: {},
+      selectedLocId: null,
       posts: [
         {
           title: "",
@@ -578,6 +582,9 @@ export default {
           s.prob_region = s.prob[this.i_region];
           return s;
         });
+    },
+    selectedChecklist() {
+      return this.checklists.filter((c) => c.locId == this.selectedLocId);
     },
   },
   created: function () {
