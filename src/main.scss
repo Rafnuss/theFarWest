@@ -63,6 +63,10 @@ h2 {
 .cursor-not-allowed {
   cursor: not-allowed;
 }
+.regions-button:hover {
+  opacity: 50%;
+  color: black;
+}
 .pokemon {
   font-family: pokemon;
   line-height: 1em;
@@ -71,13 +75,11 @@ h2 {
   font-family: andy;
   line-height: 1em;
 }
-
 .h-16 {
   height: 16px;
 }
-
 .opacity-50 {
-  opacity: 65%;
+  opacity: 50%;
 }
 .opacity-0 {
   opacity: 0%;
@@ -97,4 +99,17 @@ h2 {
 .bg-aba-5 {
   background-color: #94970a;
   color: white;
+}
+.iframe-wrapper {
+  position: relative;
+  width: 100%;
+  padding-bottom: 90%; /* 16:9 aspect ratio */
+}
+
+.iframe-wrapper iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
 }

@@ -187,19 +187,3 @@ export default {
   props: ["region"],
 };
 </script>
-
-<style>
-.iframe-wrapper {
-  position: relative;
-  width: 100%;
-  padding-bottom: 90%; /* 16:9 aspect ratio */
-}
-
-.iframe-wrapper iframe {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-}
-</style>

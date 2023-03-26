@@ -19,7 +19,7 @@
             </b-card>
           </b-col>
         </b-row>
-        <b-card v-if="modeSelected == 'live'" no-body class="flex-grow-1 overflow-hidden">
+        <b-card v-if="modeSelected == 'live' && posts.length > 0" no-body class="flex-grow-1 overflow-hidden">
           <div class="card-header text-light px-0 bg-primary">
             <div class="d-flex justify-content-between align-items-center px-1">
               <b-icon
@@ -35,7 +35,7 @@
                 <b-icon icon="calendar-date-fill"></b-icon>
                 -->
                   <small>
-                    par {{ posts[i_post].author }},
+                    {{ posts[i_post].author }},
                     {{
                       posts[i_post].date.toLocaleString("FR", { weekday: "long" }) +
                       " " +
@@ -43,17 +43,31 @@
                       " " +
                       posts[i_post].date.toLocaleString("FR", { month: "long" })
                     }}
+                    <b-icon :icon="posts[i_post].weather"></b-icon>
                   </small>
                   <b-button
                     variant="outline-light"
                     size="sm"
                     @click="map.flyTo([posts[i_post].lat, posts[i_post].lon], 12)"
                     v-b-tooltip.hover="'Voir sur la carte'"
+                    :style="{ backgroundColor: post2region(i_post).color }"
                   >
-                    <b-icon icon="geo-alt-fill"></b-icon>
-                    {{ posts[i_post].location }}
+                    <b-img :src="post2region(i_post).region + '.png'" class="mr-1" style="height: 1rem" />
+                    {{ posts[i_post].location }}, {{ post2region(i_post).name }}
                   </b-button>
-                </div>
+                  <!--<b-button
+                  class="ml-2"
+                  size="sm"
+                  variant="outline-light"
+                  :href="
+                    'https://dashboard.birdcast.info/region/' + posts[i_post].ebirdcode + '?night=' + posts[i_post].dateISO
+                  "
+                  target="_blank"
+                  v-b-tooltip.hover="'Conditions de migration observées par les radars météo'"
+                >
+                  <b-img src="birdcast.svg" class="h-16" />
+                </b-button>
+                --></div>
               </div>
               <b-icon
                 icon="chevron-right"
@@ -63,38 +77,27 @@
             </div>
           </div>
           <b-card-body class="overflow-auto flex-grow-1">
-            <b-card-text>
-              <h4>{{ posts[i_post].subtitle }}</h4>
-            </b-card-text>
-            <b-card-text>
-              {{ posts[i_post].text1 }}
-            </b-card-text>
-            <b-card-img v-if="posts[i_post].photo1" :src="posts[i_post].photo1" class="mb-1"></b-card-img>
-            <b-card-text>
-              {{ posts[i_post].text2 }}
-            </b-card-text>
-            <b-card-img v-if="posts[i_post].photo2" :src="posts[i_post].photo2" class="mb-1"></b-card-img>
-            <b-card-text>
-              {{ posts[i_post].text3 }}
-            </b-card-text>
-            <b-card-img v-if="posts[i_post].photo3" :src="posts[i_post].photo3" class="mb-1"></b-card-img>
+            <template v-if="posts[i_post].content">
+              <span v-html="posts[i_post].content"></span>
+            </template>
+            <template v-else>
+              <b-card-text v-if="posts[i_post].subtitle">
+                <h4>{{ posts[i_post].subtitle }}</h4>
+              </b-card-text>
+              <b-card-text>
+                {{ posts[i_post].text1 }}
+              </b-card-text>
+              <b-card-img v-if="posts[i_post].photo1" :src="posts[i_post].photo1" class="mb-1"></b-card-img>
+              <b-card-text>
+                {{ posts[i_post].text2 }}
+              </b-card-text>
+              <b-card-img v-if="posts[i_post].photo2" :src="posts[i_post].photo2" class="mb-1"></b-card-img>
+              <b-card-text>
+                {{ posts[i_post].text3 }}
+              </b-card-text>
+              <b-card-img v-if="posts[i_post].photo3" :src="posts[i_post].photo3" class="mb-1"></b-card-img>
+            </template>
           </b-card-body>
-          <b-card-footer class="d-flex justify-content-between align-items-center bg-primary text-white" v-if="true">
-            <div>
-              <b-icon :icon="posts[i_post].weather"></b-icon>
-            </div>
-            <b-button
-              size="sm"
-              variant="outline-light"
-              :href="
-                'https://dashboard.birdcast.info/region/' + posts[i_post].ebirdcode + '?night=' + posts[i_post].dateISO
-              "
-              target="_blank"
-              v-b-tooltip.hover="'Conditions de migration observées par les radars météo'"
-            >
-              <b-img src="birdcast.svg" class="h-16" />
-            </b-button>
-          </b-card-footer>
         </b-card>
         <b-card
           v-if="(modeSelected == 'route') & (regions[i_region] != null)"
@@ -108,8 +111,8 @@
                 @click="i_region = Math.max(i_region - 1, 0)"
                 :class="i_region == 0 ? 'opacity-0' : 'cursor-pointer'"
               />
-              <div class="d-flex">
-                <b-img :src="regions[i_region].region + '.png'" class="mr-2" style="height: 2.5rem" />
+              <div class="d-flex align-items-center">
+                <b-img :src="regions[i_region].region + '.png'" class="mr-2" style="height: 2rem" />
                 <h1 class="cursor-pointer mb-0">{{ regions[i_region].name }}</h1>
               </div>
               <b-icon
@@ -246,11 +249,11 @@
                 >
                   Photos d'oiseaux
                 </a>
-                <a v-b-modal.modal-full-list href="#" class="text-secondary">Liste cibles US</a>
+                <a v-b-modal.modal-full-list href="#" class="text-secondary">Liste des cibles US</a>
                 <b-modal
                   id="modal-full-list"
                   scrollable
-                  title="Full Target Species List"
+                  title="Liste complète des cibles US"
                   size="xl"
                   hide-footer
                   class="h-100"
@@ -270,7 +273,7 @@
                   target="_blank"
                   class="d-flex align-items-baseline text-secondary"
                 >
-                  <div class="mr-2">Prévision de migration</div>
+                  <div class="mr-2">Prévisions de migration</div>
                   <!--<b-img src="birdcast.svg" class="h-16" />-->
                 </a>
                 <a
@@ -281,7 +284,7 @@
                   target="_blank"
                   class="d-flex align-items-baseline text-secondary"
                 >
-                  <div class="mr-2">Oiseaux Rare</div>
+                  <div class="mr-2">Oiseaux rares</div>
                   <!--<b-img src="birdcast.svg" class="h-16" />-->
                 </a>
               </div>
@@ -298,7 +301,8 @@
                   v-for="(r, i) in regions"
                   :key="r.region"
                   :style="{ 'background-color': r.color, 'border-color': r.color }"
-                  :class="[i == i_region ? '' : 'opacity-50', r.active ? 'cursor-pointer' : 'cursor-not-allowed']"
+                  :class="[r.active ? 'cursor-pointer' : 'cursor-not-allowed']"
+                  class="regions-button"
                   @click="i_region = i"
                   :disabled="!r.active"
                 >
@@ -308,6 +312,9 @@
               </b-button-group>
               <l-map ref="map" style="min-height: 300px">
                 <l-control>
+                  <b-button size="sm" class="w-100 mb-2 text-white" @click="map.fitBounds(locations)">
+                    Afficher tout le parcours
+                  </b-button>
                   <b-container class="control-ebird px-0">
                     <b-row>
                       <b-col class="text-center px-4 d-flex align-items-center">
@@ -374,7 +381,7 @@
                 </template>
                 <l-polyline v-if="locations.length > 0" :lat-lngs="locations" color="black" :weight="1" />
                 <!--<l-polyline :lat-lngs="locations2" color="red" :weight="2" />-->
-                <template v-if="modeSelected == 'live'">
+                <template v-if="modeSelected == 'live' && posts != null">
                   <l-marker
                     v-for="(p, i) in posts"
                     :key="p.title"
@@ -419,6 +426,7 @@ import TableSpecies from "./TableSpecies.vue";
 import Modal from "./Modal.vue";
 import Presentation from "./Presentation.vue";
 import IconBase from "./IconBase.vue";
+import posts_hard from "./assets/posts.js";
 
 import polyUtil from "polyline-encoded";
 import {
@@ -471,28 +479,7 @@ export default {
       }),
       checklists: [],
       selectedLocId: null,
-      posts: [
-        {
-          title: "",
-          text1: "",
-          cover: "",
-          date: new Date(),
-          lon: 0,
-          lat: 0,
-          author: "",
-          photo1: "",
-          photo3: "",
-          text2: "",
-          weather: "",
-          subtitle: "",
-          text3: "",
-          photo2: "",
-          location: "",
-          region: "",
-          color: regions[0].color,
-          ebirdcode: "",
-        },
-      ],
+      posts: [],
       i_post: 0,
       locations: [],
       locations2: [],
@@ -506,13 +493,14 @@ export default {
   },
   methods: {
     getIcon(h, i) {
+      const color = this.regions.find((r) => r.region == h.region).color;
       return L.divIcon({
         className: "my-custom-icon",
         popupAnchor: [0, -34],
         iconAnchor: [12.5, 34],
         iconSize: [25, 34],
-        html: `
-        <?xml version="1.0" encoding="UTF-8"?><svg id="Layer_1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24.66 33.31"><defs><style>.cls-1,.cls-2{fill:#fff;}#cls-3{fill:${h.color};}.cls-2{font-family:ArialMT, Arial;font-size:14.2px; fill:#fff;}</style></defs><g><path id="cls-3" d="M12.35,32.81c-.32,0-.8-.11-1.27-.66-2.97-3.44-5.33-6.7-7.21-9.96-1.43-2.49-2.36-4.61-2.91-6.66C.01,12.01,.54,8.71,2.52,5.74,4.22,3.21,6.6,1.55,9.6,.83c.42-.1,.86-.17,1.29-.23,.19-.03,.38-.06,.57-.09h1.67c.27,.03,.46,.06,.65,.09,.43,.06,.87,.13,1.29,.23,3.35,.83,5.92,2.79,7.64,5.83,.84,1.5,1.33,3.18,1.43,5.01,.15,2.57-.65,4.85-1.36,6.55-1.22,2.91-2.94,5.85-5.26,8.98-1.01,1.36-2.09,2.69-3.14,3.98l-.78,.97c-.45,.56-.93,.68-1.25,.68Z"/><path class="cls-1" d="M13.13,1c.61,.1,1.23,.17,1.83,.32,3.25,.8,5.69,2.69,7.32,5.59,.83,1.48,1.27,3.09,1.37,4.79,.13,2.23-.48,4.31-1.32,6.33-1.33,3.19-3.15,6.11-5.2,8.87-1.25,1.68-2.59,3.3-3.91,4.93-.27,.33-.57,.49-.87,.49s-.61-.16-.89-.49c-2.67-3.09-5.11-6.34-7.15-9.88-1.19-2.07-2.24-4.22-2.86-6.54-.9-3.35-.43-6.5,1.5-9.38,1.63-2.44,3.91-4.01,6.78-4.7,.6-.14,1.22-.21,1.83-.32h1.59m.08-1h-1.84c-.19,.05-.37,.07-.56,.1-.43,.07-.88,.13-1.33,.24C6.35,1.1,3.87,2.82,2.11,5.46,.04,8.56-.51,11.99,.48,15.66c.56,2.09,1.5,4.25,2.96,6.78,1.89,3.29,4.27,6.57,7.26,10.03,.6,.69,1.23,.84,1.65,.84,.61,0,1.19-.31,1.64-.86l.79-.97c1.05-1.29,2.13-2.62,3.15-3.99,2.35-3.16,4.09-6.13,5.32-9.08,.73-1.75,1.55-4.1,1.4-6.77-.11-1.9-.61-3.66-1.5-5.22-1.78-3.16-4.46-5.21-7.95-6.07-.45-.11-.9-.18-1.34-.24-.19-.03-.37-.06-.56-.09h-.08Z"/></g><text class="cls-2" transform="translate(8.39 18.5)"><tspan x="0" y="0">${i}</tspan></text></svg>`,
+        html: `<?xml version="1.0" encoding="UTF-8"?><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 25 33"><path fill="${color}" d="m12.02,32.98c-.32,0-.81-.11-1.29-.67-3.01-3.51-5.41-6.84-7.31-10.17-1.45-2.54-2.39-4.71-2.95-6.8C-.5,11.74.04,8.37,2.05,5.34,3.77,2.76,6.19,1.06,9.23.33c.43-.1.87-.17,1.31-.23.19-.03.39-.06.58-.09h1.69c.27.03.47.06.66.09.44.06.88.13,1.31.23,3.4.85,6.01,2.85,7.75,5.95.85,1.53,1.35,3.25,1.45,5.12.15,2.62-.66,4.95-1.38,6.69-1.24,2.97-2.98,5.97-5.34,9.17-1.02,1.39-2.12,2.75-3.19,4.06l-.79.99c-.46.57-.94.69-1.27.69v-.02Z"/>
+        <text x="50%" y="43%" fill="#ffff" dominant-baseline="middle" text-anchor="middle"></text></svg>`, //${i}
       });
     },
     async loadLocations() {
@@ -578,6 +566,13 @@ export default {
         30
       );
     },
+    post2region(i) {
+      if (this.posts.length > 0) {
+        return this.regions.find((r) => r.region == this.posts[i].region);
+      } else {
+        return {};
+      }
+    },
   },
   computed: {
     specieCount() {
@@ -624,12 +619,12 @@ export default {
       .then((response) => response.json())
       .then((data) => {
         const rows = data.values.slice(1);
-        this.posts = rows
-          .map((row) => {
+        this.posts = [
+          ...posts_hard,
+          ...rows.map((row) => {
             let r = {
               title: row[1],
               text1: row[2],
-              cover: row[3] ? row[3].replace("open?", "uc?export=view&") : "",
               date: new Date(row[4].split("/")[2], row[4].split("/")[1] - 1, row[4].split("/")[0]),
               lon: parseFloat(row[5].split(", ")[1]) || null,
               lat: parseFloat(row[5].split(", ")[0]) || null,
@@ -643,14 +638,11 @@ export default {
               photo2: row[13] ? row[13].replace("open?", "uc?export=view&") : "",
               location: row[14],
               region: row[15],
-              color: this.regions.find((r) => r.region == row[15]).color,
-              color2: this.regions.find((r) => r.region == row[15]).color2,
-              ebirdcode: this.regions.find((r) => r.region == row[15]).ebirdcode,
             };
             r.dateISO = r.date.getMonth() + "-" + r.date.getDate() + "-" + r.date.getFullYear();
             return r;
-          })
-          .sort((a, b) => a.date - b.date);
+          }),
+        ].sort((a, b) => a.date - b.date);
         this.i_post = this.posts.length - 1;
       })
       .catch((error) => console.error(error));

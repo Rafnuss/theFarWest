@@ -4,8 +4,7 @@
         "name": "Mid West",
         "start_date": "2023-3-31",
         "end_date": "2023-4-08",
-        "color": "#ab6f4c",
-        "color2": "#dc9672",
+        "color": "#dfa95e",
         "ebirdcode": "US-KS",
         "active": true
     },
@@ -14,8 +13,7 @@
         "name": "Colorado",
         "start_date": "2023-4-08",
         "end_date": "2023-4-17",
-        "color": "#646345",
-        "color2": "#939260",
+        "color": "#634435",
         "ebirdcode": "US-CO",
         "active": true
     },
@@ -24,8 +22,7 @@
         "name": "Texas",
         "start_date": "2023-4-17",
         "end_date": "2023-5-1",
-        "color": "#8c3309",
-        "color2": "#cb542b",
+        "color": "#a9641c",
         "ebirdcode": "US-TX",
         "active": true
     },
@@ -34,8 +31,7 @@
         "name": "Arizona",
         "start_date": "2023-5-1",
         "end_date": "2023-5-1",
-        "color": "#d05c10",
-        "color2": "#d17e4d",
+        "color": "#9e8e6d",
         "ebirdcode": "US-AZ",
         "active": true
     },
@@ -44,8 +40,7 @@
         "name": "California",
         "start_date": "2023-5-1",
         "end_date": "2023-5-24",
-        "color": "#0b8189",
-        "color2": "#9dc1c0",
+        "color": "#4e8c9b",
         "ebirdcode": "US-CA",
         "active": true
     },
@@ -54,8 +49,7 @@
         "name": "Mountain West",
         "start_date": "2023-5-24",
         "end_date": "2023-6-10",
-        "color": "#6e5558",
-        "color2": "#a99c9c",
+        "color": "#c6ac90",
         "ebirdcode": "US-MT",
         "active": true
     },
@@ -64,8 +58,7 @@
         "name": "Cascadia",
         "start_date": "2023-6-10",
         "end_date": "2023-6-31",
-        "color": "#a4a77b",
-        "color2": "#c2c4ac",
+        "color": "#95bfb6",
         "ebirdcode": "US-WA",
         "active": true
     }
