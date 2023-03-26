@@ -133,7 +133,7 @@ export default {
         return sp;
       }),
       species_list_show: [],
-      tickSelected: ["trip", "remain"],
+      tickSelected: ["trip"],
       exclureLifer: true,
       onlyTarget: true,
       filterCommonName: "",
@@ -143,9 +143,6 @@ export default {
   methods: {
     onSubmit(event) {
       this.update = true;
-      setTimeout(() => {
-        this.update = false;
-      }, 1500);
       if (event) {
         event.preventDefault();
       }
@@ -159,6 +156,9 @@ export default {
       t = t.filter((sp) => this.tickSelected.includes(sp.tick));
       t = t.filter((sp) => sp.common_name.toLowerCase().includes(this.filterCommonName.toLowerCase()));
       this.species_list_show = t;
+      setTimeout(() => {
+        this.update = false;
+      }, 1500);
     },
   },
   created() {

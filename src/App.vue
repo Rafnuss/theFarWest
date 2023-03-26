@@ -189,16 +189,20 @@
         <b-row>
           <b-col class="pb-2">
             <b-card class="w-100 p-2 d-flex flex-row justify-content-around bg-primary flex-wrap text-light" no-body>
-              <div
-                class="bg-secondary text-white d-flex flex-column text-center align-self-start px-3 py-2 rounded-bottom"
-                style="margin-top: -0.5rem; box-shadow: 3px 3px 4px 2px rgba(0, 0, 0, 0.2)"
-              >
-                <div>JOUR#</div>
-                <div class="d-flex flex-row">
-                  <div class="pokemon" style="font-size: 3rem">
-                    {{ Math.floor((new Date() - new Date("2023-03-29")) / (1000 * 60 * 60 * 24)) }}
+              <div class="d-flex flex-column justify-content-between">
+                <div
+                  class="bg-secondary text-white d-flex flex-column text-center align-self-start px-3 py-2 rounded-bottom mx-auto"
+                  style="margin-top: -0.5rem; box-shadow: 3px 3px 4px 2px rgba(0, 0, 0, 0.2)"
+                >
+                  <div>JOUR#</div>
+                  <div class="d-flex flex-row">
+                    <div class="pokemon" style="font-size: 3rem">
+                      {{ Math.floor((new Date() - new Date("2023-03-28")) / (1000 * 60 * 60 * 24)) }}
+                    </div>
                   </div>
                 </div>
+                <b-button variant="outline-secondary" size="sm" v-b-modal.modal-defis>Les défis de Mady</b-button>
+                <Defis />
               </div>
               <div class="d-flex flex-column text-center" style="min-width: 230px">
                 <div style="font-size: 1.2rem">LIFER US#</div>
@@ -208,7 +212,7 @@
                   </div>
                   <div class="pokemon" style="font-size: 6rem; line-height: 0.8">{{ USliferCount }}</div>
                 </div>
-                <div>
+                <div v-if="latestLifer[1] != '#N/A'">
                   <small> dernière addition: </small>
                   <b-link class="text-secondary" @click="openSpeciesChecklist(latestLifer[2])">
                     {{ latestLifer[1] }}
@@ -426,6 +430,7 @@ import TableSpecies from "./TableSpecies.vue";
 import Modal from "./Modal.vue";
 import Presentation from "./Presentation.vue";
 import IconBase from "./IconBase.vue";
+import Defis from "./Defis.vue";
 import posts_hard from "./assets/posts.js";
 
 import polyUtil from "polyline-encoded";
@@ -456,11 +461,12 @@ export default {
     TableSpecies,
     Modal,
     Presentation,
+    Defis,
     IconBase,
   },
   data() {
     return {
-      live_tripreport_id: 114024,
+      live_tripreport_id: 112348,
       google_api_key: "AIzaSyCaVWdIpSvq8BoF7PvEK4oY3LByPYTQ2Xs",
       mapboxToken: "pk.eyJ1IjoicmFmbnVzcyIsImEiOiIzMVE1dnc0In0.3FNMKIlQ_afYktqki-6m0g",
       map: null,
@@ -483,7 +489,7 @@ export default {
       i_post: 0,
       locations: [],
       locations2: [],
-      latestLifer: "",
+      latestLifer: [],
       taxon: [],
       showChecklist: false,
       species_list: species_list,
@@ -499,7 +505,7 @@ export default {
         popupAnchor: [0, -34],
         iconAnchor: [12.5, 34],
         iconSize: [25, 34],
-        html: `<?xml version="1.0" encoding="UTF-8"?><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 25 33"><path fill="${color}" d="m12.02,32.98c-.32,0-.81-.11-1.29-.67-3.01-3.51-5.41-6.84-7.31-10.17-1.45-2.54-2.39-4.71-2.95-6.8C-.5,11.74.04,8.37,2.05,5.34,3.77,2.76,6.19,1.06,9.23.33c.43-.1.87-.17,1.31-.23.19-.03.39-.06.58-.09h1.69c.27.03.47.06.66.09.44.06.88.13,1.31.23,3.4.85,6.01,2.85,7.75,5.95.85,1.53,1.35,3.25,1.45,5.12.15,2.62-.66,4.95-1.38,6.69-1.24,2.97-2.98,5.97-5.34,9.17-1.02,1.39-2.12,2.75-3.19,4.06l-.79.99c-.46.57-.94.69-1.27.69v-.02Z"/>
+        html: `<?xml version="1.0" encoding="UTF-8"?><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 25 33"><path fill="${color}" stroke="#ffffff" stroke-width="1px" d="m12.02,32.98c-.32,0-.81-.11-1.29-.67-3.01-3.51-5.41-6.84-7.31-10.17-1.45-2.54-2.39-4.71-2.95-6.8C-.5,11.74.04,8.37,2.05,5.34,3.77,2.76,6.19,1.06,9.23.33c.43-.1.87-.17,1.31-.23.19-.03.39-.06.58-.09h1.69c.27.03.47.06.66.09.44.06.88.13,1.31.23,3.4.85,6.01,2.85,7.75,5.95.85,1.53,1.35,3.25,1.45,5.12.15,2.62-.66,4.95-1.38,6.69-1.24,2.97-2.98,5.97-5.34,9.17-1.02,1.39-2.12,2.75-3.19,4.06l-.79.99c-.46.57-.94.69-1.27.69v-.02Z"/>
         <text x="50%" y="43%" fill="#ffff" dominant-baseline="middle" text-anchor="middle"></text></svg>`, //${i}
       });
     },
@@ -642,7 +648,9 @@ export default {
             r.dateISO = r.date.getMonth() + "-" + r.date.getDate() + "-" + r.date.getFullYear();
             return r;
           }),
-        ].sort((a, b) => a.date - b.date);
+        ]
+          .sort((a, b) => a.date - b.date)
+          .filter((p) => new Date() >= p.date);
         this.i_post = this.posts.length - 1;
       })
       .catch((error) => console.error(error));
