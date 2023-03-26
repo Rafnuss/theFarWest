@@ -1,11 +1,10 @@
 <template>
   <div>
     <p>
-      Ce tableau liste toutes les espèces des USA lower 48 (càd, excluant Hawai et Alaska). Les poursentage affichées
-      correspondes à la fréquence d'observation de l'espèce dans l'Etat sur les checklists eBird. Vu que la plupart des
-      checklists sont soumises à proximité des villes, certaines espèces très localisé dans des lieux réclus peuvent
-      apparaitre comment très rare alors que, lorsque nous irons la chercher dans le bon habitat, on devrait la trouver
-      sans trop de soucis.
+      Ce tableau liste toutes les espèces des US excluant Hawai et Alaska. Les pourcentages affichés correspondent à la
+      fréquence d'observation de l'espèce dans la région sur les checklists eBird. Vu que la plupart des checklists sont
+      soumises à proximité des villes, certaines espèces localisées dans des lieux reclus peuvent apparaître comme rares
+      alors que, si on la cherche dans le bon habitat, elle n'est pas très difficile à trouver.
     </p>
     <b-button v-b-toggle.collapse-1 variant="primary" size="sm" class="mb-2">Ajuster les filtres d'affichage</b-button>
     <b-collapse id="collapse-1" class="mb-2">
@@ -16,41 +15,41 @@
               <b-form-group label="Filtre par status USA">
                 <b-form-checkbox-group v-model="tickSelected" stacked>
                   <b-form-checkbox value="before"
-                    >Observé aux USA avant le trip <b-icon icon="check-square"
+                    >Observé aux US avant le trip <b-icon icon="check-square"
                   /></b-form-checkbox>
                   <b-form-checkbox value="trip"
                     >Observé pendant le trip <b-icon icon="check-square" variant="success"
                   /></b-form-checkbox>
                   <b-form-checkbox value="remain"
-                    >Observé recherché pendant le trip <b-icon icon="square"
+                    >Reste à voir pendant le trip <b-icon icon="square"
                   /></b-form-checkbox>
                 </b-form-checkbox-group>
               </b-form-group>
             </b-col>
             <b-col>
-              <b-form-group label="Autre filtre">
-                <b-form-checkbox
-                  v-model="exclureLifer"
-                  v-b-tooltip.hover="'Ne pas inclure les espèces déjà observées en dehors des USA'"
-                >
-                  Exclure lifer
+              <b-form-group label="Autres filtres">
+                <b-form-checkbox v-model="exclureLifer">
+                  <span v-b-tooltip.hover="'Ne pas inclure les espèces déjà observées en dehors des USA'">
+                    Exclure lifer</span
+                  >
                 </b-form-checkbox>
 
-                <b-form-checkbox
-                  v-model="onlyTarget"
-                  v-b-tooltip.hover="'Exclure les espèces très rare que nous ne chercherons pas activement.'"
-                >
-                  Inclure seulement les cibles</b-form-checkbox
+                <b-form-checkbox v-model="onlyTarget">
+                  <span v-b-tooltip.hover="'Exclure les espèces très rares que nous ne chercherons pas activement.'"
+                    >Inclure seulement les cibles</span
+                  ></b-form-checkbox
                 >
               </b-form-group>
             </b-col>
             <b-col>
-              <b-form-group label="Filtrer par nom common anglais">
+              <b-form-group label="Filtrer par nom (anglais)">
                 <b-form-input v-model="filterCommonName" />
               </b-form-group>
             </b-col>
           </b-row>
-          <b-button type="submit" variant="primary" size="sm" class="mx-auto"> Update </b-button>
+          <b-button type="submit" variant="primary" size="sm" class="mx-auto">
+            Mettre à jour <b-icon icon="check" v-if="update" animation="fade" />
+          </b-button>
         </b-form>
       </b-card>
     </b-collapse>
@@ -138,10 +137,15 @@ export default {
       exclureLifer: true,
       onlyTarget: true,
       filterCommonName: "",
+      update: false,
     };
   },
   methods: {
     onSubmit(event) {
+      this.update = true;
+      setTimeout(() => {
+        this.update = false;
+      }, 1500);
       if (event) {
         event.preventDefault();
       }

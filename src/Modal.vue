@@ -1,33 +1,31 @@
 <template>
   <div>
-    <b-modal id="modal-aba" scrollable title="Légende des espèces ABA" size="xl" hide-footer centered>
-      <p>
-        Le American Birding Association (ABA) listes la rarités des espèces d'Amérique du Nord selon ce classemenent:
-      </p>
+    <b-modal id="modal-aba" scrollable title="Légende des espèces ABA" size="l" hide-footer centered>
+      <p>La American Birding Association (ABA) classe les espèces d'Amérique du Nord par niveau de rarité :</p>
       <b-row class="mb-2">
         <b-col>
-          <strong>Code-3: Rare.</strong>: Espèce présente en très petit nombre, mais annuellement. Cela comprend les
+          <strong>Code-3: Rare</strong>: Espèce présente en très petit nombre, mais annuellement. Cela comprend les
           visiteurs et les rares résidents reproducteurs.
         </b-col>
       </b-row>
       <b-row class="mb-2">
         <b-col>
-          <strong>Code-4: Occasionnel.</strong>: Espèces non enregistrées annuellement, mais avec six ou plus nombre
+          <strong>Code-4: Occasionnel</strong>: Espèces non enregistrées annuellement, mais avec six ou plus nombre
           total d'observation - dont trois ou plus au cours des 30 dernières années - reflétant un certain schéma
           d'occurrence.
         </b-col>
       </b-row>
       <b-row class="mb-2">
         <b-col>
-          <strong>Code-5: Accidentel.</strong>Espèces enregistrées cinq fois ou moins , ou moins de trois records au
+          <strong>Code-5: Accidentel</strong>Espèces enregistrées cinq fois ou moins , ou moins de trois records au
           cours des 30 dernières années.
         </b-col>
       </b-row>
       <b-button href="https://www.aba.org/aba-checklist/" target="_blank"> Plus d'informations </b-button>
     </b-modal>
-    <b-modal id="modal-exotic" scrollable title="Légende des espèces exotiques" size="xl" hide-footer centered>
+    <b-modal id="modal-exotic" scrollable title="Légende des espèces exotiques" size="l" hide-footer centered>
       <p>
-        Les avertissements d'espèces exotiques différencient les espèces introduites localement des espèces indigènes.
+        Toutes les observations d’espèces exotiques dans eBird sont classées dans l’une des trois catégories suivantes :
       </p>
       <b-row class="mb-2">
         <b-col md="auto"><b-img :src="'exotic_N.png'" class="h-16" /></b-col>
@@ -56,7 +54,7 @@
           statut Provisoire. Les espèces échappées ne sont pas prises en compte dans les totaux d'eBird.
         </b-col>
       </b-row>
-      <b-button href="https://support.ebird.org/support/solutions/articles/48001218430" target="_blank">
+      <b-button href="https://support.ebird.org/fr/support/solutions/articles/48001218430" target="_blank">
         Plus d'informations
       </b-button>
     </b-modal>
