@@ -510,7 +510,7 @@ export default {
       });
     },
     async loadLocations() {
-      const response = await fetch("http://farwest-locations.raphaelnussbaumer.com/locations.csv");
+      const response = await fetch("https://farwest-locations.raphaelnussbaumer.com/locations.csv");
       const text = await response.text();
       const rows = text.trim().split("\n");
       let locations = rows.map((row) => {
@@ -526,7 +526,7 @@ export default {
     },
     async openSpeciesChecklist(spCode) {
       fetch(
-        "http://tripreport.raphaelnussbaumer.com/tripreport-internal/v1/taxon-detail/" +
+        "https://tripreport.raphaelnussbaumer.com/tripreport-internal/v1/taxon-detail/" +
           this.live_tripreport_id +
           "/" +
           spCode
@@ -611,7 +611,7 @@ export default {
     this.loadLocations();
 
     // Checklsit
-    fetch("http://tripreport.raphaelnussbaumer.com/tripreport-internal/v1/checklists/" + this.live_tripreport_id)
+    fetch("https://tripreport.raphaelnussbaumer.com/tripreport-internal/v1/checklists/" + this.live_tripreport_id)
       .then((response) => response.json())
       .then((data) => {
         this.checklists = [...past_checklists, ...data];
@@ -656,7 +656,7 @@ export default {
       .catch((error) => console.error(error));
 
     // Taxon
-    fetch("http://tripreport.raphaelnussbaumer.com/tripreport-internal/v1/taxon-list/" + this.live_tripreport_id)
+    fetch("https://tripreport.raphaelnussbaumer.com/tripreport-internal/v1/taxon-list/" + this.live_tripreport_id)
       .then((response) => response.json())
       .then((data) => {
         // Add new taxon from latest tripreport
