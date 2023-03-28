@@ -19,6 +19,7 @@
             </b-card>
           </b-col>
         </b-row>
+        {{ posts }}
         <b-card v-if="modeSelected == 'live' && posts.length > 0" no-body class="flex-grow-1 overflow-hidden">
           <div class="card-header text-light px-0 bg-primary">
             <div class="d-flex justify-content-between align-items-center px-1">
@@ -79,6 +80,7 @@
           <b-card-body class="overflow-auto flex-grow-1">
             <template v-if="posts[i_post].content">
               <span v-html="posts[i_post].content"></span>
+              <b-button v-if="posts[i_post].newsView" @click="newsView = true">bravo!</b-button>
             </template>
             <template v-else>
               <b-card-text v-if="posts[i_post].subtitle">
@@ -191,13 +193,13 @@
             <b-card class="w-100 p-2 d-flex flex-row justify-content-around bg-primary flex-wrap text-light" no-body>
               <div class="d-flex flex-column justify-content-between">
                 <div
-                  class="bg-secondary text-white d-flex flex-column text-center align-self-start px-3 py-2 rounded-bottom mx-auto"
+                  class="bg-secondary text-white d-flex flex-column text-center align-self-start px-3 py-2 mb-2 rounded-bottom mx-auto"
                   style="margin-top: -0.5rem; box-shadow: 3px 3px 4px 2px rgba(0, 0, 0, 0.2)"
                 >
                   <div>JOUR#</div>
                   <div class="d-flex flex-row">
                     <div class="pokemon" style="font-size: 3rem">
-                      {{ Math.floor((new Date() - new Date("2023-03-28")) / (1000 * 60 * 60 * 24)) }}
+                      {{ jourNb }}
                     </div>
                   </div>
                 </div>
@@ -205,16 +207,24 @@
                 <Defis />
               </div>
               <div class="d-flex flex-column text-center" style="min-width: 230px">
-                <div style="font-size: 1.2rem">LIFER US#</div>
+                <div style="font-size: 1.2rem">LIFER {{ newsView ? "" : "US" }}#</div>
                 <div class="d-flex flex-row align-items-center justify-content-center">
                   <div class="d-flex mr-3">
                     <IconBase class="" name="pokeball" width="50" height="50" />
                   </div>
-                  <div class="pokemon" style="font-size: 6rem; line-height: 0.8">{{ USliferCount }}</div>
+                  <div class="pokemon" style="font-size: 6rem; line-height: 0.8">{{ newsView ? 1 : USliferCount }}</div>
                 </div>
-                <div v-if="latestLifer[1] != '#N/A'">
+                <div v-if="(latestLifer[1] != '#N/A') | newsView">
                   <small> dernière addition: </small>
-                  <b-link class="text-secondary" @click="openSpeciesChecklist(latestLifer[2])">
+                  <b-link
+                    v-if="newsView"
+                    class="text-secondary"
+                    href="https://photos.google.com/share/AF1QipMql-g36t6iaBhaX2Aa69fQnv-D2u1bB_qPr8WRTO3-fkxsElmDbV29ojUz-YQKrw/photo/AF1QipOVJPnms0L_2iJx9eJetenFfI65kBQrjjxgk_f_?key=clUydHJSdl9YeGhSTFduMEE2YURLOGtoUjVTaHZR"
+                    target="_blank"
+                  >
+                    Mady Nuss
+                  </b-link>
+                  <b-link v-else class="text-secondary" @click="openSpeciesChecklist(latestLifer[2])">
                     {{ latestLifer[1] }}
                   </b-link>
                 </div>
@@ -227,21 +237,25 @@
                 <div class="d-flex flex-row align-items-center">
                   <IconBase name="pokedex-outline" width="40" height="40" />
                   <div class="d-flex flex-column justify-content-center px-2">
-                    <h2 class="pokemon mb-0 mt-2" style="font-size: 2.3rem; line-height: 0.8">{{ specieCount }}</h2>
-                    Espèces pour le trip
+                    <h2 class="pokemon mb-0 mt-2" style="font-size: 2.3rem; line-height: 0.8">
+                      {{ newsView ? newsSize()[1] : specieCount }}
+                    </h2>
+                    <span v-if="newsView">{{ newsSize()[0] }} </span>
+                    <span v-else>Espèces pour le trip</span>
                   </div>
                 </div>
                 <div class="d-flex flex-row align-items-center">
                   <IconBase name="count" width="40" height="40" />
                   <div class="d-flex flex-column justify-content-center px-2">
                     <h2 class="pokemon mb-0 mt-2" style="font-size: 2.3rem; line-height: 0.8">
-                      {{ numberWithSpaces(individualCount) }}
+                      {{ newsView ? 0 : numberWithSpaces(individualCount) }}
                     </h2>
-                    Oiseaux comptés
+                    <span v-if="newsView">Nombre de kick </span>
+                    <span v-else>Oiseaux comptés</span>
                   </div>
                 </div>
               </div>
-              <div class="d-flex flex-column" v-if="true">
+              <div class="d-flex flex-column" v-if="true && !newsView">
                 <strong>EXPLORER D'AVANTAGE</strong>
                 <a class="text-secondary" :href="'https://ebird.org/tripreport/' + live_tripreport_id" target="_blank">
                   eBird Trip Report
@@ -291,6 +305,14 @@
                   <div class="mr-2">Oiseaux rares</div>
                   <!--<b-img src="birdcast.svg" class="h-16" />-->
                 </a>
+              </div>
+              <div class="d-flex flex-column" v-if="newsView">
+                <strong>EXPLORER D'AVANTAGE</strong>
+                <a class="text-secondary" href="https://ebird.org/tripreport/" target="_blank"> eBird Trip Report </a>
+                <a class="text-secondary" href="https://ebird.org/tripreport/" target="_blank"> eBird Trip Report </a>
+                <a class="text-secondary" href="https://ebird.org/tripreport/" target="_blank"> eBird Trip Report </a>
+                <a class="text-secondary" href="https://ebird.org/tripreport/" target="_blank"> eBird Trip Report </a>
+                <a class="text-secondary" href="https://ebird.org/tripreport/" target="_blank"> eBird Trip Report </a>
               </div>
             </b-card>
           </b-col>
@@ -408,7 +430,7 @@
             </b-card>
           </b-col>
         </b-row>
-        <b-row v-if="true">
+        <b-row v-if="true && !newsView">
           <Photos />
         </b-row>
       </b-col>
@@ -485,7 +507,7 @@ export default {
       }),
       checklists: [],
       selectedLocId: null,
-      posts: [],
+      posts: posts_hard,
       i_post: 0,
       locations: [],
       locations2: [],
@@ -495,6 +517,7 @@ export default {
       species_list: species_list,
       USliferCount: 0,
       USliferCountInterval: false,
+      newsView: false,
     };
   },
   methods: {
@@ -606,6 +629,10 @@ export default {
     selectedChecklist() {
       return this.checklists.filter((c) => c.locId == this.selectedLocId);
     },
+    jourNb() {
+      const ref = this.newsView ? new Date("2023-09-21") : new Date("2023-03-28");
+      return Math.floor((new Date() - ref) / (1000 * 60 * 60 * 24));
+    },
   },
   created: function () {
     this.loadLocations();
@@ -626,7 +653,7 @@ export default {
       .then((data) => {
         const rows = data.values.slice(1);
         this.posts = [
-          ...posts_hard,
+          ...this.posts,
           ...rows.map((row) => {
             let r = {
               title: row[1],
@@ -685,7 +712,7 @@ export default {
         });
         let uslifercount = this.species_list.filter((sp) => (!sp.US_lifer | sp.seen) & (sp.exotic != "X")).length;
         //Lilac-crowned Parrot exotic in florida but P in california
-        uslifercount = uslifercount - 2;
+        uslifercount = uslifercount - 1;
         this.animateUSliferCount(uslifercount);
       })
       .catch((error) => console.error(error));
@@ -807,5 +834,30 @@ function getDistanceFromLatLng(lat1, lng1, lat2, lng2) {
   // This example uses the Pythagorean theorem approximation
   let distance = Math.sqrt(Math.pow(lat2 - lat1, 2) + Math.pow(lng2 - lng1, 2));
   return distance;
+}
+
+function newsSize() {
+  const weeks = Math.floor((Date.now() - new Date("2022-12-18")) / (1000 * 60 * 60 * 24 * 7));
+  if (weeks <= 4) {
+    return ["poppy seed", "<1 cm"];
+  } else if (weeks <= 8) {
+    return ["Framboise", "1.6-2.5 cm"];
+  } else if (weeks <= 12) {
+    return ["Citron Vert", "5.4-6.8 cm"];
+  } else if (weeks <= 16) {
+    return ["Avocat", "10 cm"];
+  } else if (weeks <= 20) {
+    return ["Banane", "17 cm"];
+  } else if (weeks <= 24) {
+    return ["Maïs", "25 cm"];
+  } else if (weeks <= 28) {
+    return ["Aubergine", "36 cm"];
+  } else if (weeks <= 32) {
+    return ["Butternut", "43 cm"];
+  } else if (weeks <= 36) {
+    return ["Melon", "47 cm"];
+  } else {
+    return ["Pastèque", "49 cm"];
+  }
 }
 </script>
