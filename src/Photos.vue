@@ -105,7 +105,7 @@ export default {
       //console.log(JSON.stringify(re, null, 2))
       if (res) {
         console.log(`Success after: ${tries}.`);
-        tries = 1000;
+        tries = maxTries;
       } else {
         tries++;
         console.log(`Error: ${tries}. Retrying...`);

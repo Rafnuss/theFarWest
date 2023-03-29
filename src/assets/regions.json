@@ -15,7 +15,7 @@
         "end_date": "2023-4-17",
         "color": "#634435",
         "ebirdcode": "US-CO",
-        "active": true
+        "active": false
     },
     {
         "region": "texas",
@@ -24,7 +24,7 @@
         "end_date": "2023-5-1",
         "color": "#a9641c",
         "ebirdcode": "US-TX",
-        "active": true
+        "active": false
     },
     {
         "region": "arizona",
@@ -33,7 +33,7 @@
         "end_date": "2023-5-1",
         "color": "#9e8e6d",
         "ebirdcode": "US-AZ",
-        "active": true
+        "active": false
     },
     {
         "region": "california",
@@ -42,7 +42,7 @@
         "end_date": "2023-5-24",
         "color": "#4e8c9b",
         "ebirdcode": "US-CA",
-        "active": true
+        "active": false
     },
     {
         "region": "mountainwest",
@@ -51,7 +51,7 @@
         "end_date": "2023-6-10",
         "color": "#c6ac90",
         "ebirdcode": "US-MT",
-        "active": true
+        "active": false
     },
     {
         "region": "cascadia",
@@ -60,6 +60,6 @@
         "end_date": "2023-6-31",
         "color": "#95bfb6",
         "ebirdcode": "US-WA",
-        "active": true
+        "active": false
     }
 ]

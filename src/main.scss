@@ -50,12 +50,14 @@ h2 {
   text-transform: uppercase;
 }
 
-.control-ebird {
-  width: 180px;
+.control {
   border: 2px solid rgba(0, 0, 0, 0.2);
   background: #fff;
   border-radius: 4px;
   color: #212529;
+}
+.control-ebird {
+  width: 180px;
 }
 .cursor-pointer {
   cursor: pointer;

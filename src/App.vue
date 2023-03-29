@@ -19,7 +19,6 @@
             </b-card>
           </b-col>
         </b-row>
-        {{ posts }}
         <b-card v-if="modeSelected == 'live' && posts.length > 0" no-body class="flex-grow-1 overflow-hidden">
           <div class="card-header text-light px-0 bg-primary">
             <div class="d-flex justify-content-between align-items-center px-1">
@@ -197,13 +196,15 @@
                   style="margin-top: -0.5rem; box-shadow: 3px 3px 4px 2px rgba(0, 0, 0, 0.2)"
                 >
                   <div>JOUR#</div>
-                  <div class="d-flex flex-row">
+                  <div class="d-flex flex-row mx-auto">
                     <div class="pokemon" style="font-size: 3rem">
                       {{ jourNb }}
                     </div>
                   </div>
                 </div>
-                <b-button variant="outline-secondary" size="sm" v-b-modal.modal-defis>Les défis de Mady</b-button>
+                <b-button variant="outline-secondary" size="sm" v-b-modal.modal-defis v-if="false"
+                  >Les défis de Mady</b-button
+                >
                 <Defis />
               </div>
               <div class="d-flex flex-column text-center" style="min-width: 230px">
@@ -264,10 +265,11 @@
                   class="text-secondary"
                   href="https://media.ebird.org/catalog?searchField=user&userId=USER497615&sort=rating_rank_desc&unconfirmed=incl&regionCode=US&beginMonth=4&endMonth=12&beginYear=2023&endYear=2023"
                   target="_blank"
+                  v-if="false"
                 >
                   Photos d'oiseaux
                 </a>
-                <a v-b-modal.modal-full-list href="#" class="text-secondary">Liste des cibles US</a>
+                <a v-b-modal.modal-full-list href="#" class="text-secondary" v-if="false">Liste des cibles US</a>
                 <b-modal
                   id="modal-full-list"
                   scrollable
@@ -280,7 +282,7 @@
                   <TableSpecies :regions="regions" />
                 </b-modal>
                 <a
-                  v-if="locations.length > 0"
+                  v-if="locations.length > 0 && false"
                   :href="
                     'https://alert.birdcast.info/?latLng=' +
                     locations[locations.length - 1][0] +
@@ -291,7 +293,7 @@
                   target="_blank"
                   class="d-flex align-items-baseline text-secondary"
                 >
-                  <div class="mr-2">Prévisions de migration</div>
+                  <div class="mr-2" v-if="false">Prévisions de migration</div>
                   <!--<b-img src="birdcast.svg" class="h-16" />-->
                 </a>
                 <a
@@ -301,6 +303,7 @@
                   "
                   target="_blank"
                   class="d-flex align-items-baseline text-secondary"
+                  v-if="false"
                 >
                   <div class="mr-2">Oiseaux rares</div>
                   <!--<b-img src="birdcast.svg" class="h-16" />-->
@@ -341,7 +344,7 @@
                   <b-button size="sm" class="w-100 mb-2 text-white" @click="map.fitBounds(locations)">
                     Afficher tout le parcours
                   </b-button>
-                  <b-container class="control-ebird px-0">
+                  <b-container class="control control-ebird px-0">
                     <b-row>
                       <b-col class="text-center px-4 d-flex align-items-center">
                         <b-form-checkbox v-model="showChecklist" id="switch_1" switch />
@@ -375,6 +378,11 @@
                         </b-list-group-item>
                       </b-list-group>
                     </div>
+                  </b-container>
+                </l-control>
+                <l-control :position="'bottomleft'">
+                  <b-container class="control px-2">
+                    <small> Dernière MAJ: {{ last_update.toLocaleString().slice(0, -3) }} </small>
                   </b-container>
                 </l-control>
                 <l-tile-layer
@@ -430,7 +438,7 @@
             </b-card>
           </b-col>
         </b-row>
-        <b-row v-if="true && !newsView">
+        <b-row>
           <Photos />
         </b-row>
       </b-col>
@@ -518,6 +526,7 @@ export default {
       USliferCount: 0,
       USliferCountInterval: false,
       newsView: false,
+      last_update: new Date(2023, 2, 28),
     };
   },
   methods: {
@@ -540,6 +549,7 @@ export default {
         const [lat, lon, time] = row.split(",");
         return { time: parseInt(time), lat: parseFloat(lat), lon: parseFloat(lon) };
       });
+      this.last_update = new Date(locations[locations.length - 1].time * 1000);
       this.locations2 = locations.map((l) => [l.lat, l.lon]);
       locations = detectOutliers(locations, 2, 2);
       locations = locations.map((l) => [l.lat, l.lon]);
@@ -675,9 +685,7 @@ export default {
             r.dateISO = r.date.getMonth() + "-" + r.date.getDate() + "-" + r.date.getFullYear();
             return r;
           }),
-        ]
-          .sort((a, b) => a.date - b.date)
-          .filter((p) => new Date() >= p.date);
+        ].sort((a, b) => a.date - b.date);
         this.i_post = this.posts.length - 1;
       })
       .catch((error) => console.error(error));
