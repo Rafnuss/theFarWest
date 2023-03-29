@@ -63,7 +63,8 @@ h2 {
   cursor: pointer;
 }
 .cursor-not-allowed {
-  cursor: not-allowed;
+  cursor: not-allowed !important;
+  opacity: 0.65;
 }
 .regions-button:hover {
   opacity: 50%;

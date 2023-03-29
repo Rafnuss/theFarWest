@@ -22,11 +22,11 @@
         <b-card v-if="modeSelected == 'live' && posts.length > 0" no-body class="flex-grow-1 overflow-hidden">
           <div class="card-header text-light px-0 bg-primary">
             <div class="d-flex justify-content-between align-items-center px-1">
-              <b-icon
+              <!--<b-icon
                 icon="chevron-left"
                 @click="i_post = Math.max(i_post - 1, 0)"
                 :class="i_post == 0 ? 'opacity-0' : 'cursor-pointer'"
-              />
+              />-->
               <div class="w-100 px-2">
                 <h2 class="flex-stretch mb-0 text-left">{{ posts[i_post].title }}</h2>
                 <div class="d-flex justify-content-between align-items-center">
@@ -69,11 +69,11 @@
                 </b-button>
                 --></div>
               </div>
-              <b-icon
+              <!--<b-icon
                 icon="chevron-right"
                 :class="(i_post == posts.length - 1 ? 'opacity-0' : 'cursor-pointer') + ' ml-auto'"
                 @click="i_post = Math.min(i_post + 1, posts.length - 1)"
-              />
+              />-->
             </div>
           </div>
           <b-card-body class="overflow-auto flex-grow-1">
@@ -99,6 +99,40 @@
               <b-card-img v-if="posts[i_post].photo3" :src="posts[i_post].photo3" class="mb-1"></b-card-img>
             </template>
           </b-card-body>
+          <b-card-footer class="w-100 p-0">
+            <b-input-group>
+              <template #prepend>
+                <b-button
+                  @click="
+                    i_post = Math.max(i_post - 1, 0);
+                    map.flyTo([posts[i_post].lat, posts[i_post].lon]);
+                  "
+                  variant="primary"
+                >
+                  <b-icon icon="chevron-left" />
+                </b-button>
+              </template>
+              <b-form-select
+                v-model="i_post"
+                :options="
+                  posts.map((p, i) => {
+                    return { value: i, text: i + 1 + '. ' + p.title };
+                  })
+                "
+              />
+              <template #append>
+                <b-button
+                  @click="
+                    i_post = Math.min(i_post + 1, posts.length - 1);
+                    map.flyTo([posts[i_post].lat, posts[i_post].lon]);
+                  "
+                  variant="primary"
+                >
+                  <b-icon icon="chevron-right" />
+                </b-button>
+              </template>
+            </b-input-group>
+          </b-card-footer>
         </b-card>
         <b-card
           v-if="(modeSelected == 'route') & (regions[i_region] != null)"
@@ -331,9 +365,9 @@
                   :key="r.region"
                   :style="{ 'background-color': r.color, 'border-color': r.color }"
                   :class="[r.active ? 'cursor-pointer' : 'cursor-not-allowed']"
+                  v-b-tooltip.hover="r.active ? '' : 'Cette région sera débloquée quand nous y arriverons.'"
                   class="regions-button"
-                  @click="i_region = i"
-                  :disabled="!r.active"
+                  @click="i_region = r.active ? i : i_region"
                 >
                   <b-img :src="r.region + '.png'" class="mr-2 h-16" />
                   {{ r.name }}
@@ -342,7 +376,7 @@
               <l-map ref="map" style="min-height: 300px">
                 <l-control>
                   <b-button size="sm" class="w-100 mb-2 text-white" @click="map.fitBounds(locations)">
-                    Afficher tout le parcours
+                    Zoomer sur le trajet
                   </b-button>
                   <b-container class="control control-ebird px-0">
                     <b-row>
@@ -382,7 +416,7 @@
                 </l-control>
                 <l-control :position="'bottomleft'">
                   <b-container class="control px-2">
-                    <small> Dernière MAJ: {{ last_update.toLocaleString().slice(0, -3) }} </small>
+                    <small> Dernière MÀJ: {{ last_update.toLocaleString().slice(0, -3) }} </small>
                   </b-container>
                 </l-control>
                 <l-tile-layer
@@ -422,7 +456,9 @@
                     :lat-lng="[p.lat, p.lon]"
                     :icon="getIcon(p, i + 1)"
                     @click="i_post = i"
-                  />
+                  >
+                    <!--<l-tooltip>Cliquer pour afficher l'article</l-tooltip>-->
+                  </l-marker>
                 </template>
                 <l-marker
                   v-if="locations.length > 0 && locations[locations.length - 1]"
@@ -467,6 +503,7 @@ import polyUtil from "polyline-encoded";
 import {
   LMap,
   LTileLayer,
+  LTooltip,
   LPolyline,
   LMarker,
   LIcon,
@@ -479,6 +516,7 @@ import {
 export default {
   components: {
     LMap,
+    LTooltip,
     LTileLayer,
     LPolyline,
     LMarker,
@@ -538,7 +576,7 @@ export default {
         iconAnchor: [12.5, 34],
         iconSize: [25, 34],
         html: `<?xml version="1.0" encoding="UTF-8"?><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 25 33"><path fill="${color}" stroke="#ffffff" stroke-width="1px" d="m12.02,32.98c-.32,0-.81-.11-1.29-.67-3.01-3.51-5.41-6.84-7.31-10.17-1.45-2.54-2.39-4.71-2.95-6.8C-.5,11.74.04,8.37,2.05,5.34,3.77,2.76,6.19,1.06,9.23.33c.43-.1.87-.17,1.31-.23.19-.03.39-.06.58-.09h1.69c.27.03.47.06.66.09.44.06.88.13,1.31.23,3.4.85,6.01,2.85,7.75,5.95.85,1.53,1.35,3.25,1.45,5.12.15,2.62-.66,4.95-1.38,6.69-1.24,2.97-2.98,5.97-5.34,9.17-1.02,1.39-2.12,2.75-3.19,4.06l-.79.99c-.46.57-.94.69-1.27.69v-.02Z"/>
-        <text x="50%" y="43%" fill="#ffff" dominant-baseline="middle" text-anchor="middle"></text></svg>`, //${i}
+        <text x="50%" y="43%" fill="#ffff" dominant-baseline="middle" text-anchor="middle">${i}</text></svg>`, //${i}
       });
     },
     async loadLocations() {
