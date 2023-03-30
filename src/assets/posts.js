@@ -59,11 +59,11 @@ const posts_hard = [
         
         Apres notre arrivée chez nous amis de Canada, je fais une petite sortie à la tombée de la nuit avec Matt pour aller écouter les <a href="https://ebird.org/species/amewoo" target="_blank">bécasses d’Amérique</a>, un petit limicole au long bec, difficile à voir de jour car il est camouflé dans la forêt mais qui, pendant la période de reproduction, fait des vols de parade au crépuscule avec une série de sons assez uniques !
         
-        <div class="iframe-wrapper">
+        <div class="iframe-wrapper iframe-wrapper-100">
             <iframe src="https://macaulaylibrary.org/asset/548676431/embed" frameborder="0"></iframe>
         </div>
 
-        <div class="iframe-wrapper">
+        <div class="iframe-wrapper iframe-wrapper-100">
             <iframe src="https://macaulaylibrary.org/asset/548676441/embed" frameborder="0"></iframe>
         </div>
         
