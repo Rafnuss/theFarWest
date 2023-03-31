@@ -1,14 +1,4 @@
 <template>
-  <!--<b-container fluid class="bg-dark" style="overflow-y: hidden">
-    <b-row class="flex-row flex-nowrap">
-      <b-col v-for="p in photos" :key="p.uid" md="2">
-        <b-img-lazy @click.native="openModal(p.url)" thumbnail fluid :src="p.url" style="max-height: 100%" />
-      </b-col>
-    </b-row>
-    <b-modal ref="modal" hide-footer centered hide-header size="xl">
-      <b-img :src="modal_link" />
-    </b-modal>
-  </b-container>-->
   <b-col class="pt-2" style="height: 200px">
     <b-card no-body class="bg-photo h-100 p-1" ref="resizeContainer">
       <!--slides-per-view="4"-->
@@ -20,16 +10,8 @@
         scrollbar="true"
         class="h-100 w-100"
       >
-        <swiper-slide v-for="p in photos" :key="p.uid" class="d-flex justify-content-center">
-          <a
-            :href="
-              'https://photos.google.com/share/AF1QipOLgdj0ER3a_cn65K57LMusJT3LgR497ja65WUBSjo-Dl2DSAZdSSFtyzaGUKuDwg/photo/' +
-              p.uid
-            "
-            target="_blank"
-          >
-            <b-img-lazy class="h-100" :src="p.url" />
-          </a>
+        <swiper-slide v-for="(p, i) in photos" :key="p.uid" class="d-flex justify-content-center">
+          <b-img-lazy class="h-100 cursor-pointer" :src="p.url" @click.native="openModal(i)" />
         </swiper-slide>
         <!-- <swiper-slide>
           <div class="h-100 d-flex justify-content-center align-items-center bg-light">
@@ -37,6 +19,26 @@
           </div>
         </swiper-slide>-->
       </swiper-container>
+      <div id="see-all-photos" class="bg-photo px-2">
+        <a href="https://photos.app.goo.gl/VPdgZR1rM6jrhfr57" target="_blank">See all photos </a>
+      </div>
+      <b-modal ref="modal" hide-footer centered hide-header scrollable size="xl">
+        <div class="w-100 h-100 d-flex justify-content-center align-items-center" v-if="photos.length > 0">
+          <b-icon
+            icon="caret-left-fill"
+            scale="3"
+            class="mr-2 cursor-pointer"
+            @click="i_photo = Math.max(i_photo - 1, 0)"
+          />
+          <b-img :src="photos[i_photo].url + '=w1920-h1080'" fluid class="h-100" />
+          <b-icon
+            icon="caret-right-fill"
+            scale="3"
+            class="ml-2 cursor-pointer"
+            @click="i_photo = Math.min(i_photo + 1, photos.length - 1)"
+          />
+        </div>
+      </b-modal>
     </b-card>
   </b-col>
 </template>
@@ -57,11 +59,12 @@ export default {
       photos: [],
       observer: null,
       slidesPerView: 4,
+      i_photo: 0,
     };
   },
   methods: {
-    openModal(link) {
-      this.modal_link = link + "=w1920-h1080";
+    openModal(i_new) {
+      this.i_photo = i_new;
       this.$refs["modal"].show();
     },
     async loadPhotos() {
@@ -121,3 +124,12 @@ export default {
   },
 };
 </script>
+<style scoped>
+#see-all-photos {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  z-index: 99;
+  opacity: 80%;
+}
+</style>
