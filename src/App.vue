@@ -675,7 +675,7 @@ export default {
         });
     },
     selectedChecklist() {
-      return this.checklists.filter((c) => c.locId == this.selectedLocId);
+      return this.checklists.filter((c) => (c.locId == this.selectedLocId) & (c.numSpecies > 3));
     },
     jourNb() {
       const ref = this.newsView ? new Date("2023-09-21") : new Date("2023-03-28");
