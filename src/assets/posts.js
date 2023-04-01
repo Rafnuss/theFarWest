@@ -38,7 +38,7 @@ const posts_hard = [
         title: "Première journée",
         lon: -77.7264261,
         lat: 43.3201355,
-        date: new Date(2024, 2, 28),
+        date: new Date(2023, 2, 28),
         author: "Raphaël",
         weather: "cloud-fill", // sun-fill cloud-fill, cloud-rain-heavy-fill
         location: "Braddock Bay",
@@ -52,8 +52,8 @@ const posts_hard = [
         De la taille d’une mésange, cette chouette qui se laisse approcher facilement est en fait assez difficile à trouver. Nous profitons d’un lieu de suivi de rapace nocturne migratoire dans le "Owl Woods" de Braddock Bay sur la côte sud du lac Ontario pour avoir des infos précises et actualisées. On a même été mis en contact avec un birder local. Malheureusement, aucune chouette n’a été vue le matin de notre visite. Mais on ne lâche pas l’affaire, on retentera notre chance d’ici quelques jours. Affaire à suivre! </p>
         
         <div class="iframe-wrapper">
-              <iframe src="https://macaulaylibrary.org/asset/320501371/embed" frameborder="0"></iframe>
-            </div>
+            <iframe src="https://macaulaylibrary.org/asset/320501371/embed" frameborder="0"></iframe>
+        </div>
         
         <h4>Petit dernier pour la route</h4>
         
@@ -70,6 +70,61 @@ const posts_hard = [
         `,
         newsView: false
     },
+
+    {
+        title: "Mon amie préférée",
+        lon: -79.886878,
+        lat: 43.249614,
+        date: new Date(2023, 2, 30),
+        author: "Mady",
+        weather: "sun-fill", // sun-fill cloud-fill, cloud-rain-heavy-fill
+        location: "Hamilton",
+        region: "midwest", //
+        content: `
+<h4>Ils m'ont compris !</h4>
+<p>Après avoir répété le nom de ma copine Avery tous les jours pendant deux mois, expliqué sous toutes ses formes que "Avery partie", prié pour elle tous les soirs (et même avant les repas), et même dit son nom dans mon sommeil, enfin, papa et maman ont compris mon message : on est retourné la voir ! Quand maman m'a dit qu'on y allait bientôt, j'arrivais à peine à contenir ma joie, j'étais obligée de courir partout dans la maison vide pour l'exprimer.</p>
+<img fluid class="mb-3 card-img" src="https://lh3.googleusercontent.com/rDM_bKZrUAKeIo7Glmd27zL80tR3e-QGHYgHMMstqngaFZse9A1ybPsghY1gEJ1OBl7eEmBeIFCneCCXFLG0RMzt5_7WrkDiu5Bt8_FQxbEkS63xOsN6Lye61tSMAbLPQX60wjikZN4"/>
+
+<p>Même si on a fait nos timides pendant quelques minutes dans les jambes de nos papas, on a vite recommencé à jouer ensemble. Elle m'a prêté sa chambre et même son lit, ca tombe bien parce que maman s'est débarassé du mien, j'ai pas trop compris pourquoi. On a lu des livres ensemble, fait de la gymnastique sur le lit des parents, et elle m'a montré  son terrain de jeux préféré. On a même passé le balais dehors comme des grandes, pendant que les parents faisaient leurs frileux à rester dedans. </p>
+
+<h4>Ma nouvelle collection</h4>
+<p>Comme mon papa, j'aime bien collectionner les choses. Après les cailloux et galets sur les plages en Floride l'année dernière (mon jouet préféré pendant toute l'année), je me lance dans une nouvelle série : les batons ! Pendant que papa et maman regardent en l'air, moi je regarde par terre pour trouver toutes sortes de batons. En plus j'arrive à dire le mot en français et en anglais - c'est pratique quand même de pouvoir communiquer ! Du coup, je crois que papa et maman ont compris ma passion, ils m'aident à les collectioner en s'arrêtant souvent pour se balader dans les forêts, parcs, plages... pratique pour faire grandir ma collection !</p>
+
+<img fluid class="mb-3 card-img" src="https://lh3.googleusercontent.com/cAPJuHvdXQwPut5LtLd1efWrS8gVu01y6nJUVlD-JdtzKI8mmUDxig84MlMQTDVZkX0bVWaSV8pk93rlg5prHy4DWvIeQyUM_bUxw8oUds2drMlT8k0p3tjtlyEMQmInKCzIcGF2ik0"/>
+        `,
+        newsView: false
+    },
+
+    {
+        title: "Premier lifer du voyage",
+        lon: -86.852722,
+        lat: 40.138583,
+        date: new Date(2023, 2, 30),
+        author: "Raphael",
+        weather: "cloud-fill", // sun-fill cloud-fill, cloud-rain-heavy-fill
+        location: "Lye Creek",
+        region: "midwest", //
+        content: `
+    
+        <p>Notre premier lifer du trip est <a href="https://ebird.org/species/smilon/US-IN" target="_blank">le plectrophane de Smith</a> (vous comprenez pourquoi on a une préférence pour les noms anglais ?), un joli bruant aux teintes oranges avec un masque noir en plumage nuptial - nettement moins marqué en plumage d’hiver mais sympa à trouver quand même ! Comportement typique des oiseaux de plaines, ils se regroupent à plusieurs centaines en hiver et se nourrissent des graines laissées dans les champs.</p>
+        
+        <div class="iframe-wrapper">
+            <iframe src="https://macaulaylibrary.org/asset/551925521/embed" frameborder="0"></iframe>
+        </div>
+
+        <h4>Coche facile, photo difficile</h4>
+
+        <p>Après un début de journée dans la grisaille et sous la pluie, on décide de prendre la route vers l’ouest pour aller dans le sens opposé de la pluie. 4 heures de route plus tard, on a gagné 15 degrés, mais le vent souffle d’autant plus fort. J’ai à peine le temps de sortir de la voiture que je vois deux plectrophanes s’envoler du champ à quelques mètres de moi, presque trop facile ! Par contre, ils se camouflent extrêmement bien : ils peuvent être à 2 mètres sans qu’on les voie, jusqu’à ce qu’on s’approche et ils s’envolent. Photographier ces oiseaux n'a pas été simple !</p>
+
+        <img fluid class="mb-3 card-img" src="https://lh3.googleusercontent.com/dn6h71zIC8IFjS7j85gr9ue35TSFP82zf40s0gUotgnGRn5YcntlK2AitsuA-Slqai7B3x5kLK9A6bfrQ9_TzhMuBV7ABN07lWvHiz1uFsqu_ZQR53Ycl0yE4uRKFNOQToyUHO6hHh4"/>
+
+        <h4>Une espèce atypique</h4>
+
+        <p>Les plectrophanes de Smith sont connus pour leur sexualité plutôt particulière : à la fois les mâles et les femelles ont plusieurs partenaires. Les mouvements migratoires de cette espèce sont aussi assez atypiques, avec un arrêt intermédiaire dans l'Indiana uniquement lors de leur remontée vers le nord en mars-avril. Vous pouvez visualiser ces déplacements sur <a href="https://science.ebird.org/en/status-and-trends/species/smilon/abundance-map-weekly" target="_blank">Status and Trend</a>, un produit du Cornell Lab of Ornithology. Ces modélisations de distribution d'espèces sont possibles grâce aux données participatives collectées sur eBird - une des raisons pour lesquelles on soumet autant de checklists ! </p>
+        
+        `,
+        newsView: false
+    }
 ]
 export default posts_hard
 
