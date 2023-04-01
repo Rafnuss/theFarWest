@@ -29,6 +29,7 @@
             scale="3"
             class="mr-2 cursor-pointer"
             @click="i_photo = Math.max(i_photo - 1, 0)"
+            v-if="i_photo != 0"
           />
           <b-img :src="photos[i_photo].url + '=w1920-h1080'" fluid class="h-100" />
           <b-icon
@@ -36,6 +37,7 @@
             scale="3"
             class="ml-2 cursor-pointer"
             @click="i_photo = Math.min(i_photo + 1, photos.length - 1)"
+            v-if="i_photo != photos.length - 1"
           />
         </div>
       </b-modal>
