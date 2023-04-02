@@ -702,27 +702,29 @@ export default {
         const rows = data.values.slice(1);
         this.posts = [
           ...this.posts,
-          ...rows.map((row) => {
-            let r = {
-              title: row[1],
-              text1: row[2],
-              date: new Date(row[4].split("/")[2], row[4].split("/")[1] - 1, row[4].split("/")[0]),
-              lon: parseFloat(row[5].split(", ")[1]) || null,
-              lat: parseFloat(row[5].split(", ")[0]) || null,
-              author: row[6],
-              photo1: row[7] ? row[7].replace("open?", "uc?export=view&") : "",
-              photo3: row[8] ? row[8].replace("open?", "uc?export=view&") : "",
-              text2: row[9],
-              weather: row[10],
-              subtitle: row[11],
-              text3: row[12],
-              photo2: row[13] ? row[13].replace("open?", "uc?export=view&") : "",
-              location: row[14],
-              region: row[15],
-            };
-            r.dateISO = r.date.getMonth() + "-" + r.date.getDate() + "-" + r.date.getFullYear();
-            return r;
-          }),
+          ...rows
+            .filter((row) => row.length > 0)
+            .map((row) => {
+              let r = {
+                title: row[1],
+                text1: row[2],
+                date: new Date(row[4].split("/")[2], row[4].split("/")[1] - 1, row[4].split("/")[0]),
+                lon: parseFloat(row[5].split(", ")[1]) || null,
+                lat: parseFloat(row[5].split(", ")[0]) || null,
+                author: row[6],
+                photo1: row[7] ? row[7].replace("open?", "uc?export=view&") : "",
+                photo3: row[8] ? row[8].replace("open?", "uc?export=view&") : "",
+                text2: row[9],
+                weather: row[10],
+                subtitle: row[11],
+                text3: row[12],
+                photo2: row[13] ? row[13].replace("open?", "uc?export=view&") : "",
+                location: row[14],
+                region: row[15],
+              };
+              r.dateISO = r.date.getMonth() + "-" + r.date.getDate() + "-" + r.date.getFullYear();
+              return r;
+            }),
         ].sort((a, b) => a.date - b.date);
         this.i_post = this.posts.length - 1;
       })
