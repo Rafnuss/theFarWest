@@ -124,6 +124,27 @@ const posts_hard = [
         
         `,
         newsView: false
+    },
+    {
+        title: "Un air européen",
+        lon: -90.077734,
+        lat: 38.708493,
+        date: new Date(2024, 3, 2),
+        author: "Raphaël",
+        weather: "sun-fill", // sun-fill cloud-fill, cloud-rain-heavy-fill
+        location: "St Louis",
+        region: "midwest", //
+        content: `
+<p>On continue notre route vers l’ouest avec un arret à St Louis, non pas in Alsace, mais entre l’Ilinois et le Missouri. Par contre, notre espèce cible de la journée nous rappelle bien l’Alsace parce qu’on l’a vue la-bas à maintes reprises ! Il s’agit d’une espèce que vous connaissez sûrement, le <a href=”https://ebird.org/species/smilon/US-IL” target=”_blank”>moineau friquet</a>. </p>
+<h4>Remède contre le mal du pays</h4>
+<p>Douze individus auraient été introduits d’Allemagne en 1870 pour que les immigrants européens du Missouri aient des oiseaux  familiers sur ce nouveau continent… En tant qu’immigrants français, c’est à notre tour de le chercher ! 150 ans plus tard, l’espèce s’est intégrée à l’ecosystème local, mais reste localisée autour de St Louis. Avec le temps, les moineaux friquets américains ont développé des différences  en termes de taille, génétique, et chant (les oiseaux aussi prennent l’accent américain). </p>
+<div class="iframe-wrapper">
+<iframe src="https://macaulaylibrary.org/asset/552854781/embed" frameborder="0"></iframe>
+</div>
+<p>A nouveau, une espèce plutôt facile et répandue dans la région, qu’on a pu observer à deux reprises dans la journée - ces petits moineaux étaient nos voisins de table lors de notre repas au soleil. Mais des espèces plus difficiles nous attendent ces prochains jours, à suivre ! </p>
+<img fluid class="mb-3 card-img" src="https://lh3.googleusercontent.com/pw/AMWts8C4JOv9u8Cx8y3mjqywirIpdujbcDvxWtF29D9Ve2CtgEVJ3sg__3lbgf6E22Ul__g6yfrxVxxPxL9hb7bt_bHFICInP7g-57T64b2JAFSUURPpanhJ"/>
+        `,
+        newsView: false
     }
 ]
 export default posts_hard
@@ -133,7 +154,7 @@ export default posts_hard
         title: "",
         lon: 0,
         lat: 0,
-        date: new Date(2024, 2, 27),
+        date: new Date(2024, 3, 2),
         author: "",
         weather: "", // sun-fill cloud-fill, cloud-rain-heavy-fill
         location: "",

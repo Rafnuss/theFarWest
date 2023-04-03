@@ -11,7 +11,7 @@
         class="h-100 w-100"
       >
         <swiper-slide v-for="(p, i) in photos" :key="p.uid" class="d-flex justify-content-center">
-          <b-img-lazy class="h-100 cursor-pointer" :src="p.url" @click.native="openModal(i)" />
+          <b-img class="h-100 cursor-pointer" :src="p.url" @click.native="openModal(i)" />
         </swiper-slide>
         <!-- <swiper-slide>
           <div class="h-100 d-flex justify-content-center align-items-center bg-light">
