@@ -129,7 +129,7 @@ const posts_hard = [
         title: "Un air européen",
         lon: -90.077734,
         lat: 38.708493,
-        date: new Date(2024, 3, 2),
+        date: new Date(2023, 3, 2),
         author: "Raphaël",
         weather: "sun-fill", // sun-fill cloud-fill, cloud-rain-heavy-fill
         location: "St Louis",
@@ -154,7 +154,7 @@ export default posts_hard
         title: "",
         lon: 0,
         lat: 0,
-        date: new Date(2024, 3, 2),
+        date: new Date(2023, 3, 2),
         author: "",
         weather: "", // sun-fill cloud-fill, cloud-rain-heavy-fill
         location: "",
