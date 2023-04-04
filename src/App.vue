@@ -726,7 +726,7 @@ export default {
               return r;
             }),
         ].sort((a, b) => a.date - b.date);
-        this.i_post = this.posts.length - 1;
+        this.i_post = 6; //this.posts.length - 1;
       })
       .catch((error) => console.error(error));
 

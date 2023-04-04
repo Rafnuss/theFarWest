@@ -145,6 +145,50 @@ const posts_hard = [
 <img fluid class="mb-3 card-img" src="https://lh3.googleusercontent.com/pw/AMWts8C4JOv9u8Cx8y3mjqywirIpdujbcDvxWtF29D9Ve2CtgEVJ3sg__3lbgf6E22Ul__g6yfrxVxxPxL9hb7bt_bHFICInP7g-57T64b2JAFSUURPpanhJ"/>
         `,
         newsView: false
+    },
+    {
+        title: "Des défis pour Taty",
+        lon: -93.635259,
+        lat: 38.989265,
+        date: new Date(2023, 3, 3),
+        author: "Mady (aka Taty)",
+        weather: "sun-fill", // sun-fill cloud-fill, cloud-rain-heavy-fill
+        location: "Dans la voiture",
+        region: "midwest", //
+        content: `
+<h4>Les parents se sont perdus ?</h4>
+<p>Le chemin du retour de chez ma copine semble plus long que d'habitude, je sais pas pourquoi on rentre pas à la maison. En attendant, la voiture semble être la nouvelle maison, donc j'enlève mes chaussures à chaque fois que j'y entre. L'avantage c'est qu'il fait pas aussi froid maintenant, j'ai plus besoin de mettre deux pantalons, les gants et le bonnet a chaque fois qu'on sort, c'est plus pratique pour courir !</p>
+<img fluid class="mb-3 card-img" src="https://drive.google.com/uc?export=view&id=1qor7gLxnRteRKb8gdy_PfMviE5CRjUzZ"/>
+<p>Je passe quand même beaucoup de temps dans la voiture, et desfois je m'ennuie un peu à l'arrière. Quand papa cherche ses oiseaux, je peux m'amuser dehors avec des bâtons ou des cailloux, mais j'aimerais bien avoir ma propre liste à cocher comme les grands. Est-ce que vous pouvez m'aider ?</p>
+<img fluid class="mb-3 card-img" src="https://drive.google.com/uc?export=view&id=1M9ON_yPXlZ2tWSc4H7X6oMNQxZ8Bx_C0"/>
+<p> Papa et maman m'ont dit que je pouvais vous demander des idées de défis, occupations, ou surprises que je devrais faire pendant ce voyage (mais papa a bien précisé qu'il ne pourra pas faire trop de déviations de son parcours). Si vous avez des idées pour moi, vous pouvez me les partager ici :</p>
+<a href="https://docs.google.com/forms/d/e/1FAIpQLSeposcoqcu7mKpzoE4phDZxLwHmq39UHPzbnLFjHkrnovJnpw/viewform?usp=sf_link" target="_blank" class="btn w-100 mb-2 text-white btn-secondary btn-sm">Donne-moi un défi !</a>
+<p>Je vous tiendrai au courant de mes progrès bien sûr. Bye !</p>
+        `,
+        newsView: false
+    },
+
+    {
+        title: "Bonus bird",
+        lon: -95.234354,
+        lat: 40.070370,
+        date: new Date(2023, 3, 3),
+        author: "Raphaël",
+        weather: "cloud-fill", // sun-fill cloud-fill, cloud-rain-heavy-fill
+        location: "Dans la voiture",
+        region: "midwest", //
+        content: `
+<p>Voyager pour voir des oiseaux, c'est un mélange de planification à l'avance et d'improvisation sur le terrain en fonction de la météo et des espèces rares signalées dans la region. Alors quand on voit qu'une sarcelle d'été (un autre oiseau européen, vu en moyenne une fois par an aux US) a été vue à 1h de notre route, on décide de ré-organiser notre itinéraire. C'est l'avantage de la flexibilité de la voiture !</p>
+<div class="iframe-wrapper">
+<iframe src="https://macaulaylibrary.org/asset/553223021/embed" frameborder="0"></iframe>
+</div>
+<p>Mais trouver cette petite sarcelle n'a pas été facile : elle se cachait au milieu de 18 000 autres canards, autant dire que c'est comme chercher une aiguille dans une botte de foin. Heureusement, on n'était pas les seuls à chercher, et un autre birder nous a partagé sa localisation. Et comme les espèces rares rassemblent du monde, c'était aussi l'occasion d'échanger avec des locaux fort sympatiques.</p>
+<img fluid class="mb-3 card-img" src="https://lh3.googleusercontent.com/NySfo2UzkTt3WipGfOA59tzzBAAMNXVhS1RmOWvNCP5H3thp0I-BqdVE8oZRtp_dNIVklpWw45j2nx3A4z8eX6O0gX5aMOo4rRIWV1Xo0fSW8dPEEtaMHHjB3txGO3T4k85z-HWWZUA"/>
+<p>Finalement, c'est 4h qu'on passe dans cette grande réserve (on atteint les limites de la patience d'Améline & Mady), pour y compter plus de 28 000 oiseaux ! Notre plus grande checklist du trip, avec quelques nouveaux lifers en plus. Et maintenant, on en profite pour faire un petit tour par le Nebraska, juste à côté. </p>
+<img fluid class="mb-3 card-img" src="https://lh3.googleusercontent.com/34sZxo3lBeoQzbDKvlB8UpHxR2f14SFp9JGNJScyou3Z_YV6IR3KUWlBS-WvBN-PvlZ6hV4CvnfrgLQvg6ayEq1n6uYQZQ_KOIVQ1vcc6YCeviljpVdJbVHsKQyHYAR_yceUz_bSdx4"/>
+
+        `,
+        newsView: false
     }
 ]
 export default posts_hard
