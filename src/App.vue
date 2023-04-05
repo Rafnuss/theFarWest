@@ -79,7 +79,28 @@
           <b-card-body class="overflow-auto flex-grow-1">
             <template v-if="posts[i_post].content">
               <span v-html="posts[i_post].content"></span>
-              <b-button v-if="posts[i_post].newsView" @click="newsView = true">bravo!</b-button>
+              <div v-if="posts[i_post].newsView">
+                <b-button @click="newsView = true">solve</b-button>
+                <b-list-group v-if="!newsView">
+                  <b-list-group-item v-for="(e, i) in game" :key="e.audio">
+                    <audio controls class="w-100">
+                      <source :src="e.audio" />
+                    </audio>
+                    <b-form-select v-model="game_selected[i]" :options="game_options" size="sm"></b-form-select>
+                  </b-list-group-item>
+                </b-list-group>
+                <div v-else>
+                  <b-alert show variant="success">
+                    <h4 class="alert-heading">Bravo !</h4>
+                    <p>
+                      Maintenant que vous arrivez à décoder mon language, je peux vous révéler une info scoop :
+                      <audio controls class="w-100">
+                        <source src="https://drive.google.com/uc?export=view&id=1PHVPpLkHw6koDrOJYYEbMH3G1NSmwlej" />
+                      </audio>
+                    </p>
+                  </b-alert>
+                </div>
+              </div>
             </template>
             <template v-else>
               <b-card-text v-if="posts[i_post].subtitle">
@@ -342,11 +363,24 @@
               </div>
               <div class="d-flex flex-column" v-if="newsView">
                 <strong>EXPLORER D'AVANTAGE</strong>
-                <a class="text-secondary" href="https://ebird.org/tripreport/" target="_blank"> eBird Trip Report </a>
-                <a class="text-secondary" href="https://ebird.org/tripreport/" target="_blank"> eBird Trip Report </a>
-                <a class="text-secondary" href="https://ebird.org/tripreport/" target="_blank"> eBird Trip Report </a>
-                <a class="text-secondary" href="https://ebird.org/tripreport/" target="_blank"> eBird Trip Report </a>
-                <a class="text-secondary" href="https://ebird.org/tripreport/" target="_blank"> eBird Trip Report </a>
+                <a
+                  class="text-secondary"
+                  href="https://naitreetgrandir.com/fr/grossesse/trimestre1/grossesse-developpement-foetus-embryon/"
+                  target="_blank"
+                  >Le B.A.BA du développement du foetus</a
+                >
+                <a
+                  class="text-secondary"
+                  href="https://www.paris-normandie.fr/id233568/article/2021-09-22/pourquoi-le-23-septembre-est-il-le-jour-de-lannee-ou-il-y-le-plus-de-naissances"
+                  target="_blank"
+                  >Une date de terme populaire</a
+                >
+                <a
+                  class="text-secondary"
+                  href="https://max.sudinfo.be/psycho-sexo/le-deuxieme-enfant-serait-le-plus-difficile-de-la-famille-selon-la-science"
+                  target="_blank"
+                  >Que dit la science sur le #2 ?</a
+                >
               </div>
             </b-card>
           </b-col>
@@ -472,7 +506,7 @@
           </b-col>
         </b-row>
         <b-row>
-          <Photos />
+          <Photos :newsView="newsView" />
         </b-row>
       </b-col>
     </b-row>
@@ -562,6 +596,51 @@ export default {
       USliferCountInterval: false,
       newsView: false,
       last_update: new Date(2023, 2, 28),
+      game: [
+        {
+          name: "Viens Papa!",
+          audio: "https://drive.google.com/uc?export=view&id=1urknXTcekfe7SdpKBKqGbxsAVrkjSZGv",
+        },
+        {
+          name: "Clé",
+          audio: "https://drive.google.com/uc?export=view&id=1o0NV0MqzelqJYbFFpOqo0RXiSS0kvz-S",
+        },
+        {
+          name: "Avocat",
+          audio: "https://drive.google.com/uc?export=view&id=1JBx6Fz4WPgXGIGlkoDNJuQo1z79xqhRb",
+        },
+        {
+          name: "Tracteur",
+          audio: "https://drive.google.com/uc?export=view&id=14hgXbRPsnYvuXGho4415hYcy6O8DwIIF",
+        },
+        {
+          name: "Livre",
+          audio: "https://drive.google.com/uc?export=view&id=1tIDngk-iZFxMC04PBDLg1JEmNkd4r2wV",
+        },
+        {
+          name: "Raisin",
+          audio: "https://drive.google.com/uc?export=view&id=1uMmHnvlB4N1Qi0kTrfXzuV2gxtTw0DQB",
+        },
+        {
+          name: "Oiseau",
+          audio: "https://drive.google.com/uc?export=view&id=1idFn9TcGHJm9-VZJHglzx7wDlXfSt2jt",
+        },
+        {
+          name: "Avion",
+          audio: "https://drive.google.com/uc?export=view&id=1-QCP8ma0gxA6TaGHYQ0DJXvUvthnS9h7",
+        },
+        {
+          name: "Banane",
+          audio: "https://drive.google.com/uc?export=view&id=1x0AWJS-VWUGwI9mdHMXzfPLLlJiD1fVy",
+        },
+        {
+          name: "Abeille",
+          audio: "https://drive.google.com/uc?export=view&id=1bLDQwPOOBYRKfJHVXu5P43408sas4CZM",
+        },
+      ],
+      game_options: [],
+      game_selected: [],
+      gamePage: false,
     };
   },
   methods: {
@@ -591,7 +670,7 @@ export default {
       locations = locations.map((l) => [l.lat, l.lon]);
       locations = filterLatLngArray(locations, 1 / 111 / 100);
       this.locations = [...this.locations, ...locations];
-      this.map.setView(locations[locations.length - 1], 14);
+      this.map.setView(this.locations[this.locations.length - 1], 14);
     },
     async openSpeciesChecklist(spCode) {
       fetch(
@@ -681,6 +760,9 @@ export default {
     },
   },
   created: function () {
+    this.game_options = shuffle(this.game.map((g) => g.name));
+    this.game_selected = shuffle(this.game.map((g) => g.name));
+
     this.loadLocations();
 
     // Checklsit
@@ -723,7 +805,15 @@ export default {
               r.dateISO = r.date.getMonth() + "-" + r.date.getDate() + "-" + r.date.getFullYear();
               return r;
             }),
-        ].sort((a, b) => a.date - b.date);
+        ]
+          .sort((a, b) => a.date - b.date)
+          .filter((a) => {
+            if (this.gamePage) {
+              return true;
+            } else {
+              return !a.newsView;
+            }
+          });
         this.i_post = this.posts.length - 1;
       })
       .catch((error) => console.error(error));
@@ -773,12 +863,6 @@ export default {
       })
       .catch((error) => console.error(error));
   },
-  mounted() {
-    /*this.$nextTick(() => {
-      this.map = this.$refs.map.mapObject; // work as expected
-    });*/
-    this.map = this.$refs.map.mapObject; // work as expected
-  },
   watch: {
     modeSelected(val) {
       if (val == "route") {
@@ -790,6 +874,22 @@ export default {
         this.map.setView(this.locations[this.locations.length - 1], 14);
       }
     },
+    game_selected(val) {
+      if (this.game.every((g, i) => g.name == val[i])) {
+        this.newsView = true;
+      } else {
+        this.newsView = false;
+      }
+    },
+  },
+  mounted() {
+    this.map = this.$refs.map.mapObject;
+    let qp = new URLSearchParams(window.location.search);
+    if (qp.get("game")) {
+      if (qp.get("game")) {
+        this.gamePage = true;
+      }
+    }
   },
 };
 
@@ -905,5 +1005,22 @@ function newsSize() {
   } else {
     return ["Pastèque", "49 cm"];
   }
+}
+
+function shuffle(array) {
+  let currentIndex = array.length,
+    randomIndex;
+
+  // While there remain elements to shuffle.
+  while (currentIndex != 0) {
+    // Pick a remaining element.
+    randomIndex = Math.floor(Math.random() * currentIndex);
+    currentIndex--;
+
+    // And swap it with the current element.
+    [array[currentIndex], array[randomIndex]] = [array[randomIndex], array[currentIndex]];
+  }
+
+  return array;
 }
 </script>

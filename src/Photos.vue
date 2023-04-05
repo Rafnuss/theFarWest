@@ -19,7 +19,7 @@
           </div>
         </swiper-slide>-->
       </swiper-container>
-      <div id="see-all-photos" class="bg-photo px-2">
+      <div id="see-all-photos" class="bg-photo px-2" v-if="!newsView">
         <a href="https://photos.app.goo.gl/VPdgZR1rM6jrhfr57" target="_blank">See all photos </a>
       </div>
       <b-modal ref="modal" hide-footer centered hide-header scrollable size="xl">
@@ -55,10 +55,13 @@ import "swiper/css/free-mode";
 import "swiper/css/pagination";
 
 export default {
+  props: ["newsView"],
   data() {
     return {
       modal_link: "",
-      photos: [],
+      photos_google: [],
+      photos_news: [{ url: "https://drive.google.com/uc?export=view&id=1yxmKzYhO-R8l9mZo7yQpcnApPsLM8KTB" }],
+
       observer: null,
       slidesPerView: 4,
       i_photo: 0,
@@ -76,7 +79,7 @@ export default {
       }
       const json = await response.json();
       if (json != null) {
-        this.photos = json;
+        this.photos_google = json;
         /*this.photos = [
           "PXL_20230123_003245995.PORTRAIT.jpg",
           "PXL_20230212_174355161.jpg",
@@ -100,6 +103,15 @@ export default {
       const w = entries[0].contentRect.width;
       const h = entries[0].contentRect.height;
       this.slidesPerView = Math.floor(((w / h) * 3) / 4);
+    },
+  },
+  computed: {
+    photos() {
+      if (this.newsView) {
+        return this.photos_news;
+      } else {
+        return this.photos_google;
+      }
     },
   },
   created() {
