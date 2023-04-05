@@ -237,17 +237,17 @@ const posts_hard = [
 
         <img fluid class="mb-3 card-img" src="https://lh3.googleusercontent.com/SJxDoj33cJGwO2OrMIYFnWBdYTGCNnnX66z4XOqqXcF0Yv5Gwd48LuHaHq7WqWmbFwdCNfXFA9oGAPtaqY7jn44VHtZyPrvET-A8BIS1T_0QhcW5h6HIx9VCK9MufPT8oYo1BX6gTz4"/>
         
-        <p>Alors qu’on progresse au Nebraska, on perd quasiment 20 degrés en à peine quelques heures de route, un petit choc au système ! On passe notre première nuit dans des températures négatives (ressenti -16 à cause des vents froids) à quelques mètres du plus grand rassemblement de grues des Etats-Unis. En soirée, on a pu observer près de 100 000 grues en vol et posées, rejoignant leur site de repos, plutôt exceptionnel ! Le matin, on se réveille au son particulier des grues, qu’on peut observer alors que le soleil se lève, posées dans le lit de la rivière, une belle vue pour le réveil ! Difficile d’estimer de telles quantités, mais Raph en estime plus de 60 000 posées devant nous. </p>
+        <p>Alors qu’on progresse au Nebraska, on perd quasiment 20 degrés en à peine quelques heures de route, un petit choc au système ! On passe notre première nuit dans des températures négatives (ressenti -16 à cause des vents froids) à quelques mètres du plus grand rassemblement de grues des Etats-Unis. En soirée, on a pu observer près de 100 000 grues en vol et posées, rejoignant leur site de repos, plutôt exceptionnel ! Le matin, on se réveille au son particulier des grues, qu’on peut observer alors que le soleil se lève, posées dans le lit de la rivière, une belle vue pour le réveil ! Difficile d’estimer de telles quantités, mais au total, on aura vu près de 200 000 grues sur les dernières 24h. </p>
         
         <div class="iframe-wrapper">
         <iframe src="https://macaulaylibrary.org/asset/553779281/embed" frameborder="0"></iframe>
     </div>
         
         <h4>Regroupement migratoire</h4>
-        <p>Plus de 80% de la population mondiale des grues du Canada se rassemble dans ce tronçon de la Platte River entre février et avril avant de continuer leur migration qui les amènent jusqu’en Sibérie orientale. Après avoir parcouru environ 1 000 km depuis le sud-ouest américain, elles se gavent des restes dans les champs de maïs, prenant 20 % de leur poids en prévision des milliers de kilomètres qu'il leur reste à parcourir. Malgré leur alimentation frénétique, ces oiseaux sociaux - qui choisissent leur partenaire à vie et restent sur place si celui-ci est malade ou blessé - trouvent encore le temps de faire ce pour quoi les grues sont les plus célèbres : danser !</p>
+        <p>Plus de 80% de la population mondiale des grues du Canada se rassemble dans ce tronçon de la Platte River entre février et avril avant de continuer leur migration qui les amènent jusqu’en Sibérie orientale. Après avoir parcouru environ 1 000 km depuis le sud-ouest américain, elles se gavent des restes dans les champs de maïs, prenant 20 % de leur poids en prévision des milliers de kilomètres qu'il leur reste à parcourir.</p>
         
         <h4>Encore une espèce européenne</h4>
-        <p>Parmi cette masse de grues, on a pu en trouver une que vous connaissez sans doute, la grue cendrée, signalée dans un champ de maïs pas loin de la rivière. Elle nous a même fait une petite danse, sympa non ?</p>
+        <p>Parmi cette masse de grues, on a pu en trouver une que vous connaissez sans doute, la grue cendrée, signalée dans un champ de maïs pas loin de la rivière. Elle nous a même fait sa petite danse typique des grues, sympa non ?</p>
         
         <div class="iframe-wrapper">
         <iframe src="https://macaulaylibrary.org/asset/553561091/embed" frameborder="0"></iframe>

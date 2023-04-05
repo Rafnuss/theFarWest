@@ -1,9 +1,7 @@
 <template>
   <div>
     <b-modal id="modal-defis" scrollable title="Les défis de Mady (aka Taty)" size="lg" hide-footer centered>
-      <p>
-        Suivez ma liste de coches avec ces 10 premiers défis reçus - quand je les aurai tous cochés, à moi de vous en
-        donner un !
+      <p>Je vous avais demandé des idées de défis pour construire ma propre liste de coches et m'occuper dans la voiture. Suivez ma liste de coches sur les premiers défis reçus ci-dessous - quand je les aurai tous cochés, à moi de vous en donner un !
       </p>
       <b-table
         hover
