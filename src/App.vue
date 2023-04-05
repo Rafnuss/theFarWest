@@ -236,9 +236,7 @@
                     </div>
                   </div>
                 </div>
-                <b-button variant="outline-secondary" size="sm" v-b-modal.modal-defis v-if="false"
-                  >Les défis de Mady</b-button
-                >
+                <b-button variant="outline-secondary" size="sm" v-b-modal.modal-defis>Les défis de Mady</b-button>
                 <Defis />
               </div>
               <div class="d-flex flex-column text-center" style="min-width: 230px">
@@ -299,7 +297,6 @@
                   class="text-secondary"
                   href="https://media.ebird.org/catalog?searchField=user&userId=USER497615&sort=rating_rank_desc&unconfirmed=incl&regionCode=US&beginMonth=4&endMonth=12&beginYear=2023&endYear=2023"
                   target="_blank"
-                  v-if="false"
                 >
                   Photos d'oiseaux
                 </a>
@@ -727,7 +724,7 @@ export default {
               return r;
             }),
         ].sort((a, b) => a.date - b.date);
-        this.i_post = 6; //this.posts.length - 1;
+        this.i_post = this.posts.length - 1;
       })
       .catch((error) => console.error(error));
 

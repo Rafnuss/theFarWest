@@ -1,6 +1,6 @@
 <template>
   <div>
-    <b-modal id="modal-defis" scrollable title="Les défis de Mady" size="lg" hide-footer centered>
+    <b-modal id="modal-defis" scrollable title="Les défis de Mady (aka Taty)" size="lg" hide-footer centered>
       <p>
         Suivez ma liste de coches avec ces 10 premiers défis reçus - quand je les aurai tous cochés, à moi de vous en
         donner un !
@@ -24,12 +24,19 @@
             <b-icon icon="square" />
           </template>
         </template>
-        <template #cell(name)="d"> {{ d.index + 1 }}. {{ d.value }}</template>
+        <template #cell(name)="d"> {{ d.index + 1 }}. <span v-html="d.value"></span></template>
         <template #cell(diff)="d">
           <b-icon icon="binoculars-fill" :variant="d.value == 1 ? 'success' : d.value == 2 ? 'warning' : 'danger'" />
         </template>
       </b-table>
-      <b-carousel controls indicators background="#ababab" style="text-shadow: 1px 1px 2px #333" :interval="0">
+      <b-carousel
+        controls
+        indicators
+        background="#ababab"
+        style="text-shadow: 1px 1px 2px #333"
+        :interval="0"
+        v-if="false"
+      >
         <b-carousel-slide
           v-for="(d, i) in defis.filter((d) => d.done)"
           :key="d.name"
@@ -38,6 +45,12 @@
           :img-src="d.src"
         />
       </b-carousel>
+      <a
+        href="https://docs.google.com/forms/d/e/1FAIpQLSeposcoqcu7mKpzoE4phDZxLwHmq39UHPzbnLFjHkrnovJnpw/viewform?usp=sf_link"
+        target="_blank"
+        class="btn w-100 mb-2 text-white btn-secondary"
+        >Ajoutez un défi à Taty!</a
+      >
     </b-modal>
   </div>
 </template>
@@ -48,21 +61,39 @@ export default {
     return {
       defis: [
         {
-          name: "Name a bird",
+          name: "Prendre une photo sur un gros tracteur John Deere",
           done: false,
-          src: "https://drive.google.com/uc?export=view&id=1oHkXd_poVr_WhujQnrqfPXlJje29RPtn",
-          diff: 1,
-        },
-        {
-          name: "Run two miles",
-          done: false,
-          src: "https://drive.google.com/uc?export=view&id=1eOBqVU_2FhTNpIuLqSDhar8HEVcm_U0A",
+          src: "",
           diff: 2,
         },
         {
-          name: "draw apicture",
-          done: true,
-          src: "https://drive.google.com/uc?export=view&id=1Q1W75BogCuFzGd5WETvTuzG-ZwfN1nau",
+          name: "Collecter un maximum de containers à frites McDo (soit en commander, soit les ramasser dans la nature)",
+          done: false,
+          src: "",
+          diff: 2,
+        },
+        {
+          name: "Ecouter <i>Histoires pour les oreilles</i>",
+          done: false,
+          src: "",
+          diff: 1,
+        },
+        {
+          name: "Écouter en boucle <i>Jésus est le rocher de ma vie</i> jusqu’à connaître les paroles",
+          done: false,
+          src: "",
+          diff: 1,
+        },
+        {
+          name: "Compléter : <i> tape tape petites ..., tourne, tourne petit ..., vole vole petit ..., nage nage petit ... dans l'eau !</i>",
+          done: false,
+          src: "",
+          diff: 3,
+        },
+        {
+          name: "Faire une journée de woofing ou prier et/ou dormir dans un monastère",
+          done: false,
+          src: "",
           diff: 3,
         },
       ],
