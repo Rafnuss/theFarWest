@@ -498,6 +498,7 @@ import Presentation from "./Presentation.vue";
 import IconBase from "./IconBase.vue";
 import Defis from "./Defis.vue";
 import posts_hard from "./assets/posts.js";
+import locations_hard from "./assets/locations.js";
 
 import polyUtil from "polyline-encoded";
 import {
@@ -555,8 +556,7 @@ export default {
       selectedLocId: null,
       posts: posts_hard,
       i_post: 0,
-      locations: [],
-      locations2: [],
+      locations: locations_hard,
       latestLifer: [],
       taxon: [],
       showChecklist: false,
@@ -583,16 +583,17 @@ export default {
       const response = await fetch("https://farwest-locations.raphaelnussbaumer.com/locations.csv");
       const text = await response.text();
       const rows = text.trim().split("\n");
-      let locations = rows.map((row) => {
-        const [lat, lon, time] = row.split(",");
-        return { time: parseInt(time), lat: parseFloat(lat), lon: parseFloat(lon) };
-      });
+      let locations = rows
+        .map((row) => {
+          const [lat, lon, time] = row.split(",");
+          return { time: parseInt(time), lat: parseFloat(lat), lon: parseFloat(lon) };
+        })
+        .filter((row) => row.time > 1680706200);
       this.last_update = new Date(locations[locations.length - 1].time * 1000);
-      this.locations2 = locations.map((l) => [l.lat, l.lon]);
       locations = detectOutliers(locations, 2, 2);
       locations = locations.map((l) => [l.lat, l.lon]);
       locations = filterLatLngArray(locations, 1 / 111 / 100);
-      this.locations = locations;
+      this.locations = [...this.locations, ...locations];
       this.map.setView(locations[locations.length - 1], 14);
     },
     async openSpeciesChecklist(spCode) {
