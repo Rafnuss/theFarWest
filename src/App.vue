@@ -429,7 +429,7 @@
                     :color="r.color"
                     :opacity="i == i_region ? 0.8 : 0.4"
                     :weight="6"
-                    @click="i_region = i"
+                    @click="i_region = r.active ? i : i_region"
                   />
                 </template>
                 <template v-if="showChecklist">
