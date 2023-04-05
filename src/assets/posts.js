@@ -167,7 +167,6 @@ const posts_hard = [
         `,
         newsView: false
     },
-
     {
         title: "Bonus bird",
         lon: -95.234354,
@@ -186,10 +185,77 @@ const posts_hard = [
 <img fluid class="mb-3 card-img" src="https://lh3.googleusercontent.com/NySfo2UzkTt3WipGfOA59tzzBAAMNXVhS1RmOWvNCP5H3thp0I-BqdVE8oZRtp_dNIVklpWw45j2nx3A4z8eX6O0gX5aMOo4rRIWV1Xo0fSW8dPEEtaMHHjB3txGO3T4k85z-HWWZUA"/>
 <p>Finalement, c'est 4h qu'on passe dans cette grande réserve (on atteint les limites de la patience d'Améline & Mady), pour y compter plus de 28 000 oiseaux ! Notre plus grande checklist du trip, avec quelques nouveaux lifers en plus. Et maintenant, on en profite pour faire un petit tour par le Nebraska, juste à côté. </p>
 <img fluid class="mb-3 card-img" src="https://lh3.googleusercontent.com/34sZxo3lBeoQzbDKvlB8UpHxR2f14SFp9JGNJScyou3Z_YV6IR3KUWlBS-WvBN-PvlZ6hV4CvnfrgLQvg6ayEq1n6uYQZQ_KOIVQ1vcc6YCeviljpVdJbVHsKQyHYAR_yceUz_bSdx4"/>
-
         `,
         newsView: false
-    }
+    },
+    {
+        title: "La danse des poules des prairies",
+        lon: -96.302982,
+        lat: 40.167113,
+        date: new Date(2023, 3, 4),
+        author: "Améline",
+        weather: "sun-fill", // sun-fill cloud-fill, cloud-rain-heavy-fill
+        location: "Burchard WMA",
+        region: "midwest", //
+        content: `
+        <h4>Le tétras des prairies</h4>
+        Des oiseaux dodus ressemblant à des poules, les tétras des prairies se trouvent... dans les prairies ! Au printemps, les mâles se rassemblent sur leurs aires de parade et font une danse particulière pour attirer les femelles : ils s’inclinent vers le sol, relèvent leur plumes ressemblant à des oreilles dépassant de la tête, et gonflent leur peau jaune-orange sur le cou (appelés des sacs gulaires, pour ceux que ça intéresse). Ils font aussi des duels avec des petits sauts, qui nous ont un peu rappelé l’escrime (sans l’épée ;). 
+
+        <div class="iframe-wrapper">
+            <iframe src="https://macaulaylibrary.org/asset/553778811/embed" frameborder="0"></iframe>
+        </div>
+        <p><a href="https://media.ebird.org/catalog?taxonCode=grpchi&sort=rating_rank_desc&userId=USER497615" target="_blank">Cliquer ici pour voir plus de photo et vidéo.</a></p>
+        
+        <h4>Spectacle naturel</h4>
+        C’était une expérience unique de graduellement découvrir ces tétras alors que le soleil se lève, au son de leurs cris ressemblant à lorsqu’on souffle dans une bouteille vide, camouflés dans notre petite cabane à quelques mètres d’eux. C’est un peu comme si on venait observer une performance théâtrale ou un match sportif, mis à part qu’on ne connaît pas les règles : comment les femelles décryptent ces mouvements et choisissent leur mâle reste un mystère pour moi !
+
+        <div class="iframe-wrapper">
+            <iframe src="https://macaulaylibrary.org/asset/553778941/embed" frameborder="0"></iframe>
+        </div>
+        
+        <h4>”Co-co-qui !”</h4>
+        Toute une étiquette est associée à l’observation de ces tétras : il faut arriver à la cabane 1h avant le lever du soleil (6h), pour ne pas déranger l’arrivée des oiseaux, et y rester jusqu’à ce que le dernier oiseau reparte (dans notre cas, 9h30), en faisant le moins de bruit possible tout du long bien sûr... 
+        
+        Tout un défi avec un enfant de 2 ans qui aime bouger et s’exprimer ! Mais, à l’aide de beaucoup de livres, d’histoires, et d’un petit déjeuner tiré en longueur, Mady a joué le jeu (à quelques exceptions près…), et on a tenu jusqu’à la fin - un succès presque aussi grand pour moi que de voir les tétras en question ! Heureusement, il y avait 2 cabanes sur ce site ce qui a permis aux autres spectateurs d’assister à ce spectacle en paix.
+
+        <img fluid class="mb-3 card-img" src="https://lh3.googleusercontent.com/2iaSVQsUKC3qF-BiXJnEDHjB6uPSxes4Xayevp3CY7nXxIuldZPKynwoXB-xjPMcmd-P0oC-F89R4rW4h2GabUn-2Io7_B6fdWVw91kPDQYDvYv8koX0XmuPzExprF82hYbWzNCNfU0"/>
+        `,
+        newsView: false
+    },
+    {
+        title: "Un rassemblement mondial",
+        lon: -98.4938049,
+        lat: 40.7726769,
+        date: new Date(2023, 3, 5),
+        author: "Améline",
+        weather: "cloud-fill", // sun-fill cloud-fill, cloud-rain-heavy-fill
+        location: "Platte River",
+        region: "midwest", //
+        content: `
+        <h4>En terrain agricole</h4>
+        <p>Suite à la petite déviation de notre parcours, on décide de continuer la route vers l’ouest par le Nebraska. On a vraiment l’impression d’être dans le Midwest agricole qu’on imaginait : des immenses champs de maïs à perte de vue, avec quelques petites villes espacées à l’ambiance très agricole. </p>
+
+        <img fluid class="mb-3 card-img" src="https://lh3.googleusercontent.com/SJxDoj33cJGwO2OrMIYFnWBdYTGCNnnX66z4XOqqXcF0Yv5Gwd48LuHaHq7WqWmbFwdCNfXFA9oGAPtaqY7jn44VHtZyPrvET-A8BIS1T_0QhcW5h6HIx9VCK9MufPT8oYo1BX6gTz4"/>
+        
+        <p>Alors qu’on progresse au Nebraska, on perd quasiment 20 degrés en à peine quelques heures de route, un petit choc au système ! On passe notre première nuit dans des températures négatives (ressenti -16 à cause des vents froids) à quelques mètres du plus grand rassemblement de grues des Etats-Unis. En soirée, on a pu observer près de 100 000 grues en vol et posées, rejoignant leur site de repos, plutôt exceptionnel ! Le matin, on se réveille au son particulier des grues, qu’on peut observer alors que le soleil se lève, posées dans le lit de la rivière, une belle vue pour le réveil ! Difficile d’estimer de telles quantités, mais Raph en estime plus de 60 000 posées devant nous. </p>
+        
+        <div class="iframe-wrapper">
+        <iframe src="https://macaulaylibrary.org/asset/553779281/embed" frameborder="0"></iframe>
+    </div>
+        
+        <h4>Regroupement migratoire</h4>
+        <p>Plus de 80% de la population mondiale des grues du Canada se rassemble dans ce tronçon de la Platte River entre février et avril avant de continuer leur migration qui les amènent jusqu’en Sibérie orientale. Après avoir parcouru environ 1 000 km depuis le sud-ouest américain, elles se gavent des restes dans les champs de maïs, prenant 20 % de leur poids en prévision des milliers de kilomètres qu'il leur reste à parcourir. Malgré leur alimentation frénétique, ces oiseaux sociaux - qui choisissent leur partenaire à vie et restent sur place si celui-ci est malade ou blessé - trouvent encore le temps de faire ce pour quoi les grues sont les plus célèbres : danser !</p>
+        
+        <h4>Encore une espèce européenne</h4>
+        <p>Parmi cette masse de grues, on a pu en trouver une que vous connaissez sans doute, la grue cendrée, signalée dans un champ de maïs pas loin de la rivière. Elle nous a même fait une petite danse, sympa non ?</p>
+        
+        <div class="iframe-wrapper">
+        <iframe src="https://macaulaylibrary.org/asset/553561091/embed" frameborder="0"></iframe>
+    </div>
+        
+        `,
+        newsView: false
+    },
 ]
 export default posts_hard
 
