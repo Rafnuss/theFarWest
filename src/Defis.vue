@@ -1,7 +1,10 @@
 <template>
   <div>
     <b-modal id="modal-defis" scrollable title="Les défis de Mady (aka Taty)" size="lg" hide-footer centered>
-      <p>Je vous avais demandé des idées de défis pour construire ma propre liste de coches et m'occuper dans la voiture. Suivez ma liste de coches sur les premiers défis reçus ci-dessous - quand je les aurai tous cochés, à moi de vous en donner un !
+      <p>
+        Je vous avais demandé des idées de défis pour construire ma propre liste de coches et m'occuper dans la voiture.
+        Suivez ma liste de coches sur les premiers défis reçus ci-dessous - quand je les aurai tous cochés, à moi de
+        vous en donner un !
       </p>
       <b-table
         hover
@@ -15,7 +18,7 @@
         :items="defis"
       >
         <template #cell(done)="d">
-          <template v-if="d.done">
+          <template v-if="d.value">
             <b-icon icon="check-square" variant="success" />
           </template>
           <template v-else>
@@ -27,14 +30,7 @@
           <b-icon icon="binoculars-fill" :variant="d.value == 1 ? 'success' : d.value == 2 ? 'warning' : 'danger'" />
         </template>
       </b-table>
-      <b-carousel
-        controls
-        indicators
-        background="#ababab"
-        style="text-shadow: 1px 1px 2px #333"
-        :interval="0"
-        v-if="false"
-      >
+      <b-carousel controls indicators background="#ababab" style="text-shadow: 1px 1px 2px #333" :interval="0">
         <b-carousel-slide
           v-for="(d, i) in defis.filter((d) => d.done)"
           :key="d.name"
@@ -46,7 +42,7 @@
       <a
         href="https://docs.google.com/forms/d/e/1FAIpQLSeposcoqcu7mKpzoE4phDZxLwHmq39UHPzbnLFjHkrnovJnpw/viewform?usp=sf_link"
         target="_blank"
-        class="btn w-100 mb-2 text-white btn-secondary"
+        class="btn w-100 my-2 text-white btn-secondary"
         >Ajoutez un défi à Taty!</a
       >
     </b-modal>
@@ -60,8 +56,8 @@ export default {
       defis: [
         {
           name: "Prendre une photo sur un gros tracteur John Deere",
-          done: false,
-          src: "",
+          done: true,
+          src: "https://drive.google.com/uc?export=view&id=129Oj_6zzwx88nHrkKGRtaFkQNRlREM-8",
           diff: 2,
         },
         {
@@ -78,8 +74,8 @@ export default {
         },
         {
           name: "Écouter en boucle <i>Jésus est le rocher de ma vie</i> jusqu’à connaître les paroles",
-          done: false,
-          src: "",
+          done: true,
+          src: "https://drive.google.com/uc?export=view&id=1jGTSXUxc9MHqHat5LjAr9MUJcKp6sgjs",
           diff: 1,
         },
         {
