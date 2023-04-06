@@ -11,7 +11,12 @@
         class="h-100 w-100"
       >
         <swiper-slide v-for="(p, i) in photos" :key="p.uid" class="d-flex justify-content-center">
-          <b-img class="h-100 cursor-pointer" :src="p.url" @click="openModal(i)" />
+          <template v-if="i < 10">
+            <b-img class="h-100 cursor-pointer" :src="p.url" @click="openModal(i)" />
+          </template>
+          <template v-else>
+            <b-img-lazy class="h-100 cursor-pointer" :src="p.url" @click="openModal(i)" />
+          </template>
         </swiper-slide>
         <!-- <swiper-slide>
           <div class="h-100 d-flex justify-content-center align-items-center bg-light">
