@@ -257,17 +257,15 @@ const posts_hard = [
         newsView: false
     },
     {
-        title: "Un défis pour vous!",
+        title: "Un défis pour vous !",
         lon: 0,
         lat: 0,
-        date: new Date(2024, 3, 5),
+        date: new Date(2024, 3, 7),
         author: "Mady",
         weather: "sun-fill", // sun-fill cloud-fill, cloud-rain-heavy-fill
         location: "Nowhere",
         region: "midwest", //
         content: `
-<h4>A mon tour de vous mettre au défi !</h4>
-<p>Prononcer les mots en entier, c’est dépassé, la nouvelle mode c’est les raccourcis. Mes parents sont parfois un peu lents mais dans l’ensemble commencent à comprendre ce que je veux dire. Et vous, saurez-vous décoder mon language ? Associez le bon mot à chacune des mes expressions !</p>
         `,
         newsView: true
     }

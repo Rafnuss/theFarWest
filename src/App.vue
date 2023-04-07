@@ -79,27 +79,40 @@
           <b-card-body class="overflow-auto flex-grow-1">
             <template v-if="posts[i_post].content">
               <span v-html="posts[i_post].content"></span>
+
               <div v-if="posts[i_post].newsView">
-                <b-button @click="newsView = true">solve</b-button>
-                <b-list-group v-if="!newsView">
-                  <b-list-group-item v-for="(e, i) in game" :key="e.audio">
-                    <audio controls class="w-100">
-                      <source :src="e.audio" />
-                    </audio>
-                    <b-form-select v-model="game_selected[i]" :options="game_options" size="sm"></b-form-select>
-                  </b-list-group-item>
-                </b-list-group>
-                <div v-else>
+                <template v-if="!newsView">
+                  <h4>A mon tour de vous mettre au défi !</h4>
+                  <p>
+                    Prononcer les mots en entier, c’est dépassé, la nouvelle mode c’est les raccourcis. Mes parents sont
+                    parfois un peu lents mais dans l’ensemble commencent à comprendre ce que je veux dire. Et vous,
+                    saurez-vous décoder mon language ? Associez le bon mot à chacune des mes expressions !
+                  </p>
+                  <b-list-group>
+                    <b-list-group-item v-for="(e, i) in game" :key="e.audio">
+                      <audio controls class="w-100">
+                        <source :src="e.audio" />
+                      </audio>
+                      <b-form-select v-model="game_selected[i]" :options="game_options" size="sm"></b-form-select>
+                    </b-list-group-item>
+                  </b-list-group>
+                  <b-button @click="checkNews" class="w-100 mt-2">Verifier</b-button>
+                  <b-alert show variant="danger" class="mt-2" v-if="newsTry > 0">
+                    <h4 class="alert-heading">Nope ! Essais: {{ newsTry }}</h4>
+                    <p>Pas tout a fait bon!</p>
+                  </b-alert>
+                </template>
+                <template v-else>
                   <b-alert show variant="success">
                     <h4 class="alert-heading">Bravo !</h4>
                     <p>
                       Maintenant que vous arrivez à décoder mon language, je peux vous révéler une info scoop :
-                      <audio controls class="w-100">
+                      <audio controls class="w-100 mt-4">
                         <source src="https://drive.google.com/uc?export=view&id=1PHVPpLkHw6koDrOJYYEbMH3G1NSmwlej" />
                       </audio>
                     </p>
                   </b-alert>
-                </div>
+                </template>
               </div>
             </template>
             <template v-else>
@@ -455,52 +468,62 @@
                     'https://api.mapbox.com/styles/v1/mapbox/streets-v9/tiles/{z}/{x}/{y}?access_token=' + mapboxToken
                   "
                 />
-                <template v-if="(modeSelected == 'route') & (route.length > 0)">
-                  <l-polyline
-                    v-for="(r, i) in route"
-                    :key="r.region"
-                    :lat-lngs="r.route"
-                    :color="r.color"
-                    :opacity="i == i_region ? 0.8 : 0.4"
-                    :weight="6"
-                    @click="i_region = r.active ? i : i_region"
-                  />
-                </template>
-                <template v-if="showChecklist">
-                  <l-circle-marker
-                    v-for="check in checklists.filter((d) => d.loc.name != d.loc.subnational2Name)"
-                    :key="check.subID"
-                    :lat-lng="[check.loc.lat, check.loc.lng]"
-                    :weight="0"
-                    fillColor="#4ca800"
-                    :radius="5"
-                    :fillOpacity="0.8"
-                    @click="selectedLocId = check.locId"
-                  />
-                </template>
-                <l-polyline v-if="locations.length > 0" :lat-lngs="locations" color="black" :weight="1" />
-                <!--<l-polyline :lat-lngs="locations2" color="red" :weight="2" />-->
-                <template v-if="modeSelected == 'live' && posts != null">
+                <template v-if="!newsView">
+                  <template v-if="(modeSelected == 'route') & (route.length > 0)">
+                    <l-polyline
+                      v-for="(r, i) in route"
+                      :key="r.region"
+                      :lat-lngs="r.route"
+                      :color="r.color"
+                      :opacity="i == i_region ? 0.8 : 0.4"
+                      :weight="6"
+                      @click="i_region = r.active ? i : i_region"
+                    />
+                  </template>
+                  <template v-if="showChecklist">
+                    <l-circle-marker
+                      v-for="check in checklists.filter((d) => d.loc.name != d.loc.subnational2Name)"
+                      :key="check.subID"
+                      :lat-lng="[check.loc.lat, check.loc.lng]"
+                      :weight="0"
+                      fillColor="#4ca800"
+                      :radius="5"
+                      :fillOpacity="0.8"
+                      @click="selectedLocId = check.locId"
+                    />
+                  </template>
+                  <l-polyline v-if="locations.length > 0" :lat-lngs="locations" color="black" :weight="1" />
+                  <!--<l-polyline :lat-lngs="locations2" color="red" :weight="2" />-->
+                  <template v-if="modeSelected == 'live' && posts != null">
+                    <l-marker
+                      v-for="(p, i) in posts"
+                      :key="p.title"
+                      :lat-lng="[p.lat, p.lon]"
+                      :icon="getIcon(p, i + 1)"
+                      @click="i_post = i"
+                    >
+                      <!--<l-tooltip>Cliquer pour afficher l'article</l-tooltip>-->
+                    </l-marker>
+                  </template>
                   <l-marker
-                    v-for="(p, i) in posts"
-                    :key="p.title"
-                    :lat-lng="[p.lat, p.lon]"
-                    :icon="getIcon(p, i + 1)"
-                    @click="i_post = i"
+                    v-if="locations.length > 0 && locations[locations.length - 1]"
+                    :lat-lng="locations[locations.length - 1]"
+                    :zIndexOffset="100"
+                    @click="map.flyTo(locations[locations.length - 1], 14)"
                   >
-                    <!--<l-tooltip>Cliquer pour afficher l'article</l-tooltip>-->
+                    <l-icon :icon-anchor="[35, 35]">
+                      <IconBase class="text-dark" name="car" width="70" height="70" />
+                    </l-icon>
                   </l-marker>
                 </template>
-                <l-marker
-                  v-if="locations.length > 0 && locations[locations.length - 1]"
-                  :lat-lng="locations[locations.length - 1]"
-                  :zIndexOffset="100"
-                  @click="map.flyTo(locations[locations.length - 1], 14)"
-                >
-                  <l-icon :icon-anchor="[35, 35]">
-                    <IconBase class="text-dark" name="car" width="70" height="70" />
-                  </l-icon>
-                </l-marker>
+                <l-image-overlay
+                  url="./flight_baby.svg"
+                  :bounds="[
+                    [32, -100],
+                    [60, 7],
+                  ]"
+                  v-if="newsView"
+                />
               </l-map>
             </b-card>
           </b-col>
@@ -543,6 +566,7 @@ import {
   LLayerGroup,
   LControlLayers,
   LControl,
+  LImageOverlay,
 } from "vue2-leaflet";
 
 export default {
@@ -563,6 +587,7 @@ export default {
     Presentation,
     Defis,
     IconBase,
+    LImageOverlay,
   },
   data() {
     return {
@@ -595,6 +620,7 @@ export default {
       USliferCount: 0,
       USliferCountInterval: false,
       newsView: false,
+      newsTry: 0,
       last_update: new Date(2023, 2, 28),
       game: [
         {
@@ -725,6 +751,25 @@ export default {
         return this.regions.find((r) => r.region == this.posts[i].region);
       } else {
         return {};
+      }
+    },
+    checkNews() {
+      if (this.game.every((g, i) => g.name == this.game_selected[i])) {
+        this.newsView = true;
+        this.map.flyToBounds([
+          [32, -100],
+          [60, 7],
+        ]);
+      } else {
+        this.newsTry = this.newsTry + 1;
+        this.newsView = false;
+        if (this.newsTry > 5) {
+          this.newsView = true;
+          this.map.flyToBounds([
+            [32, -100],
+            [60, 7],
+          ]);
+        }
       }
     },
   },
@@ -872,13 +917,6 @@ export default {
         ]);
       } else {
         this.map.setView(this.locations[this.locations.length - 1], 14);
-      }
-    },
-    game_selected(val) {
-      if (this.game.every((g, i) => g.name == val[i])) {
-        this.newsView = true;
-      } else {
-        this.newsView = false;
       }
     },
   },

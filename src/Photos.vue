@@ -65,7 +65,7 @@ export default {
     return {
       modal_link: "",
       photos_google: [],
-      photos_news: [{ url: "https://drive.google.com/uc?export=view&id=1yxmKzYhO-R8l9mZo7yQpcnApPsLM8KTB" }],
+      photos_news: [{ url: "https://drive.google.com/uc?export=view&id=1WoptqqCjpFND71hzwg3qwZcdQwJ_rL6f" }],
 
       observer: null,
       slidesPerView: 4,
