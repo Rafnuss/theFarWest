@@ -15,7 +15,7 @@
         "end_date": "2023-4-17",
         "color": "#634435",
         "ebirdcode": "US-CO",
-        "active": false
+        "active": true
     },
     {
         "region": "texas",

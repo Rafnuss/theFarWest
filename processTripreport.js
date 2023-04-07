@@ -2,28 +2,13 @@ import fs from "fs";
 
 const tripreport = [
     {
-        id: 51870,
-        status: "past",
-        region: "africa"
-    },
-    {
-        id: 34758,
-        status: "past",
-        region: "africa-2"
-    },
-    {
-        id: 86087,
-        status: "live",
-        region: "florida"
-    },
-    {
         id: 112348,
-        status: "future",
+        status: "past",
         region: "midwest"
     },
     {
         id: 112349,
-        status: "future",
+        status: "live",
         retion: "colorado",
     },
     {

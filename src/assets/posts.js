@@ -258,12 +258,12 @@ const posts_hard = [
     },
     {
         title: "Un défis pour vous !",
-        lon: 0,
-        lat: 0,
+        lon: -102.352717,
+        lat: 39.250464,
         date: new Date(2024, 3, 7),
         author: "Mady",
         weather: "sun-fill", // sun-fill cloud-fill, cloud-rain-heavy-fill
-        location: "Nowhere",
+        location: "Burlington",
         region: "colorado", //
         content: `
         `,
