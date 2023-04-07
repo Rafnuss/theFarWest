@@ -660,8 +660,8 @@ export default {
           audio: "https://drive.google.com/uc?export=view&id=1x0AWJS-VWUGwI9mdHMXzfPLLlJiD1fVy",
         },
         {
-          name: "Abeille",
-          audio: "https://drive.google.com/uc?export=view&id=1bLDQwPOOBYRKfJHVXu5P43408sas4CZM",
+          name: "Jus",
+          audio: "https://drive.google.com/uc?export=view&id=1CuHWfjTQkgP9X7YdYiDvPlY4PQ-bMZzr",
         },
       ],
       game_options: [],

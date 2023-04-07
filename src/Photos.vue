@@ -65,8 +65,12 @@ export default {
     return {
       modal_link: "",
       photos_google: [],
-      photos_news: [{ url: "https://drive.google.com/uc?export=view&id=1WoptqqCjpFND71hzwg3qwZcdQwJ_rL6f" }],
-
+      photos_news: [
+        { url: "https://drive.google.com/uc?export=view&id=1lEi58Vw0aOzaJsRM5nt-Qk5sC2H9PNDj" },
+        { url: "https://drive.google.com/uc?export=view&id=1xSg7BQjo0Ipnya6le1ek3rDqgRk-5OhQ" },
+        { url: "https://drive.google.com/uc?export=view&id=1r4_XvVuaLtVyLP_LypRh0igVr7aGr-zj" },
+        { url: "https://drive.google.com/uc?export=view&id=1T13zyOY5gi37vBxrEWIROp0EOtX24Unu" },
+      ],
       observer: null,
       slidesPerView: 4,
       i_photo: 0,

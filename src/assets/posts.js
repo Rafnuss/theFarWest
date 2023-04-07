@@ -257,7 +257,7 @@ const posts_hard = [
         newsView: false
     },
     {
-        title: "Un défis pour vous !",
+        title: "Un défi pour vous !",
         lon: -102.352717,
         lat: 39.250464,
         date: new Date(2024, 3, 7),
