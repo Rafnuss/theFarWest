@@ -264,7 +264,7 @@ const posts_hard = [
         author: "Mady",
         weather: "sun-fill", // sun-fill cloud-fill, cloud-rain-heavy-fill
         location: "Nowhere",
-        region: "midwest", //
+        region: "colorado", //
         content: `
         `,
         newsView: true

@@ -55,18 +55,6 @@ export default {
     return {
       defis: [
         {
-          name: "Prendre une photo sur un gros tracteur John Deere",
-          done: true,
-          src: "https://drive.google.com/uc?export=view&id=129Oj_6zzwx88nHrkKGRtaFkQNRlREM-8",
-          diff: 2,
-        },
-        {
-          name: "Collecter un maximum de containers à frites McDo (soit en commander, soit les ramasser dans la nature)",
-          done: false,
-          src: "",
-          diff: 2,
-        },
-        {
           name: "Ecouter <i>Histoires pour les oreilles</i>",
           done: false,
           src: "",
@@ -79,15 +67,27 @@ export default {
           diff: 1,
         },
         {
+          name: "Prendre une photo sur un gros tracteur John Deere",
+          done: true,
+          src: "https://drive.google.com/uc?export=view&id=129Oj_6zzwx88nHrkKGRtaFkQNRlREM-8",
+          diff: 2,
+        },
+        {
+          name: "Collecter un maximum de containers à frites McDo",
+          done: false,
+          src: "",
+          diff: 2,
+        },
+        {
           name: "Compléter : <i> tape tape petites ..., tourne, tourne petit ..., vole vole petit ..., nage nage petit ... dans l'eau !</i>",
           done: false,
           src: "",
           diff: 3,
         },
         {
-          name: "Faire une journée de woofing ou prier et/ou dormir dans un monastère",
-          done: false,
-          src: "",
+          name: "Prier dans un monastère",
+          done: true,
+          src: "https://drive.google.com/uc?export=view&id=1elJLmDPaEU20IvBoh69gmpQ_A4BYmvB5",
           diff: 3,
         },
       ],
