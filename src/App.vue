@@ -763,13 +763,6 @@ export default {
       } else {
         this.newsTry = this.newsTry + 1;
         this.newsView = false;
-        if (this.newsTry > 5) {
-          this.newsView = true;
-          this.map.flyToBounds([
-            [32, -100],
-            [60, 7],
-          ]);
-        }
       }
     },
   },
