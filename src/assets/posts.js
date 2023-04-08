@@ -234,7 +234,7 @@ const posts_hard = [
         content: `
         <h4>En terrain agricole</h4>
         <p>Suite à la petite déviation de notre parcours, on décide de continuer la route vers l’ouest par le Nebraska. On a vraiment l’impression d’être dans le Midwest agricole qu’on imaginait : des immenses champs de maïs à perte de vue, avec quelques petites villes espacées à l’ambiance très agricole. </p>
-
+>
         <img fluid class="mb-3 card-img" src="https://lh3.googleusercontent.com/SJxDoj33cJGwO2OrMIYFnWBdYTGCNnnX66z4XOqqXcF0Yv5Gwd48LuHaHq7WqWmbFwdCNfXFA9oGAPtaqY7jn44VHtZyPrvET-A8BIS1T_0QhcW5h6HIx9VCK9MufPT8oYo1BX6gTz4"/>
         
         <p>Alors qu’on progresse au Nebraska, on perd quasiment 20 degrés en à peine quelques heures de route, un petit choc au système ! On passe notre première nuit dans des températures négatives (ressenti -16 à cause des vents froids) à quelques mètres du plus grand rassemblement de grues des Etats-Unis. En soirée, on a pu observer près de 100 000 grues en vol et posées, rejoignant leur site de repos, plutôt exceptionnel ! Le matin, on se réveille au son particulier des grues, qu’on peut observer alors que le soleil se lève, posées dans le lit de la rivière, une belle vue pour le réveil ! Difficile d’estimer de telles quantités, mais au total, on aura vu près de 200 000 grues sur les dernières 24h. </p>
@@ -253,6 +253,34 @@ const posts_hard = [
         <iframe src="https://macaulaylibrary.org/asset/553561091/embed" frameborder="0"></iframe>
     </div>
         
+        `,
+        newsView: false
+    },
+    {
+        title: "Goodbye Midwest - Hello Colorado",
+        lon: -102.048607,
+        lat: 39.329642,
+        date: new Date(2023, 3, 7),
+        author: "Améline",
+        weather: "sun-fill", // sun-fill cloud-fill, cloud-rain-heavy-fill
+        location: "Colorado border",
+        region: "colorado", //
+        content: `
+        <h4>En avant ! </h4>
+        <p>Alors qu’on entre au Colorado et qu’on a traversé le Midwest, on a l’impression que l’échauffement est fini, et les choses sérieuses commencent ! Dans le Midwest, on a beaucoup roulé, et on a vu quelques nouveaux lifers, mais dans l’ensemble la plupart des espèces étaient similaires à ce qu’on peut trouver dans le Nord Est.</p>
+        
+        <p>On passe maintenant plus dans le couloir migratoire ouest, ce qui veut dire beaucoup de nouvelles espèces à chercher. On se réjouit aussi de découvrir des paysages plus diversifiés, après beaucoup de plaines ! Vous pouvez lire plus sur le Colorado en cliquant sur “Découvrez le parcours” au dessus des articles. </p>
+        <img fluid class="mb-3 card-img" src="https://lh3.googleusercontent.com/ioIXt1ja2dQuU2mjz7D1FF-vL8Wzt7w1q80seoaVm891Z2JKLfmkwkmqKxxcLYGyq5K4iEEZtzqFiePImv3-DheAwfmHLFqt61mKrRSJzZO41kLIQsGcB9NSj7AG-4RBlRv7ibF_gj0"/>
+        <h4>Regard en arrière</h4>
+
+        <p>Les premiers 10 jours du voyage se sont dans l’ensemble bien passés, on est allés un peu plus vite que prévu au début, du coup les deux dernières journées étaient un peu plus relax. On s’est offert un brunch au chaud mercredi, alors que le vent soufflait fort dehors, avec suffisamment de pancakes pour nourrir un bataillon ;).</p>
+        <img fluid class="mb-3 card-img" src="https://lh3.googleusercontent.com/pw/AMWts8BoHiYcJI_6RUN7uXVBy6rwqJM8UvrEaN_VtnXkDPswPgmdyYmRvkaqmYkEGiACgugIgq1TERGJMBeiVkdWbJ_gCFEXSEbecwjloTBopMpg7BfrrXbZ"/>
+        
+    
+        <p>La vie dans le van se passe bien, on est reconnaissant que Mady se soit adaptée et dorme facilement (faites-les courir toute la journée, c’est plutôt efficace !). Elle se met à l’aise dans la voiture, prend ses habitudes, et connaît la place de chaque chose. Elle communique aussi de plus en plus, et les longs trajets sont l’occasion de s’exprimer et d’apprendre des nouveaux mots (ou de répéter en boucle ceux qu’elle connaît déjà -  “encore raisin !”). Il faut juste accepter de se faire grimper dessus beaucoup plus fréquemment... </p>
+        <img fluid class="mb-3 card-img" src="https://lh3.googleusercontent.com/pw/AMWts8DKbk1HlOf-eUOMuzrJ60RYwc1aCMuFpIQMi6cLhZRiGF_-cYo6bUF9f8MJsbTHNVsOCiSYKt12jhvFZch-NXqljkiS6ztQikq4kELEUIxZQ490PJzw"/>
+        
+        <p>On appréhendait un peu le froid, mais les isolations aux fenêtres font une grosse différence, et nous permettent de dormir confortablement (la plupart du temps ;). Après pas mal de chemins de terre, la voiture a pris une nouvelle couleur et on vit avec une fine couche de poussière à peu près permanente. Nos premiers essais à la cuisine à l’arrière étaient plutôt précipités par le vent ou les températures froides, mais on ne lâche pas l’affaire, et Raph improvise des paravents quand c’est nécessaire. On verra ce que les montagnes nous réservent !</p>
         `,
         newsView: false
     },
