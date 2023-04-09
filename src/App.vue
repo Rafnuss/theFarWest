@@ -612,7 +612,7 @@ export default {
       selectedLocId: null,
       posts: posts_hard,
       i_post: 0,
-      locations: locations_hard,
+      locations: [],
       latestLifer: [],
       taxon: [],
       showChecklist: false,
@@ -690,12 +690,12 @@ export default {
           const [lat, lon, time] = row.split(",");
           return { time: parseInt(time), lat: parseFloat(lat), lon: parseFloat(lon) };
         })
-        .filter((row) => row.time > 1680706200);
+        .filter((row) => row.time > 1681068000);
       this.last_update = new Date(locations[locations.length - 1].time * 1000);
       locations = detectOutliers(locations, 2, 2);
       locations = locations.map((l) => [l.lat, l.lon]);
       locations = filterLatLngArray(locations, 1 / 111 / 100);
-      this.locations = [...this.locations, ...locations];
+      this.locations = [...locations_hard, ...locations];
       this.map.setView(this.locations[this.locations.length - 1], 14);
     },
     async openSpeciesChecklist(spCode) {
