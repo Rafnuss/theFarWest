@@ -285,6 +285,32 @@ const posts_hard = [
         newsView: false
     },
     {
+        title: "Breakfast & birding in bed",
+        lon: -106.440112,
+        lat: 40.546524,
+        date: new Date(2023, 3, 8),
+        author: "Améline",
+        weather: "sun-fill", // sun-fill cloud-fill, cloud-rain-heavy-fill
+        location: "Plaines du Colorado",
+        region: "colorado", //
+        content: `
+        
+        <p>Après une journée de 25h plutôt intense vendredi (on gagne une heure à l'entrée au Colorado), du réveil à 5h du matin pour un tour organisé pour Raph, à la recherche d’hiboux tard dans la nuit, la matinée de samedi a apporté une expérience inédite plutôt bienvenue : l’observation d’oiseaux depuis son lit ! </p>
+        <p>Sur un site de parade de Tétras des armoises, les règles sont claires dans le nom du hotspot sur eBird : “Coalmont Lek -- ARRIVE IN DARK, STAY IN CAR, DO NOT DISTURB DISPLAYING BIRDS!” Impossible donc de sortir de la voiture. Avec -4 degrés dehors, disons que ce n’était pas trop difficile de respecter la règle ;) </p>
+        <img fluid class="mb-3 card-img" src="https://lh3.googleusercontent.com/pw/AMWts8B4pgUG52kn7gwkxVKKBth95XzI1WiWGUMxX4-Q5Mi9YEeWizHE5ac8fWMwlmwFbMqEhLQQA_p1nzKaALueG5Ip_PkAOjo3uT2w-IEc2fFX3UdSBA5C"/>
+        <p>On profite de rester sous la couette un peu plus longtemps, admirer les montagnes à l'aube, et observer ces oiseaux faire leur parade tellement unique. Ces tétras sont parmis les plus bizarres que j’ai observés (Dieu a vraiment un sens de l’humour) - la vidéo ci-dessous vous donne un petit aperçu… </p>
+
+        <div class="iframe-wrapper">
+        <iframe src="https://macaulaylibrary.org/asset/555610451/embed" frameborder="0"></iframe>
+    </div>
+
+        <p>On réarrange aussi les meubles à plusieurs reprises pour l’expert photographe - voici la disposition la plus concluante ! <a href="https://media.ebird.org/catalog?mediaType=photo&userId=USER497615&taxonCode=saggro" target="_blank">Vous pouvez regarder les résultats en photos et vidéos ici</a>. </p>
+        <img fluid class="mb-3 card-img" src="https://lh3.googleusercontent.com/pw/AMWts8AnCxSkHlZN6ZihWaYeCaj-SC1Xzq42xOsJeYxEvKl6X8-WC5sN5dBBHzkqDw_Hic6yvfdm1pzaJbJfOFx4KK6sgguzbaMQLn7UQQ0kBN3DAck9SC7V=w1920-h1080
+        "/>
+        `,
+        newsView: false
+    },
+    {
         title: "Un défi pour vous !",
         lon: -102.352717,
         lat: 39.250464,
