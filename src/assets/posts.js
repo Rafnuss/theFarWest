@@ -304,9 +304,35 @@ const posts_hard = [
         <iframe src="https://macaulaylibrary.org/asset/555610451/embed" frameborder="0"></iframe>
     </div>
 
-        <p>On réarrange aussi les meubles à plusieurs reprises pour l’expert photographe - voici la disposition la plus concluante ! <a href="https://media.ebird.org/catalog?mediaType=photo&userId=USER497615&taxonCode=saggro" target="_blank">Vous pouvez regarder les résultats en photos et vidéos ici</a>. </p>
+        <p>On réarrange aussi les meubles à plusieurs reprises pour l’expert photographe - voici la disposition la plus concluante ! <a href="https://media.ebird.org/catalog?userId=USER497615&taxonCode=saggro&sort=rating_rank_desc" target="_blank">Vous pouvez regarder les résultats en photos et vidéos ici</a>. </p>
         <img fluid class="mb-3 card-img" src="https://lh3.googleusercontent.com/pw/AMWts8AnCxSkHlZN6ZihWaYeCaj-SC1Xzq42xOsJeYxEvKl6X8-WC5sN5dBBHzkqDw_Hic6yvfdm1pzaJbJfOFx4KK6sgguzbaMQLn7UQQ0kBN3DAck9SC7V=w1920-h1080
         "/>
+        `,
+        newsView: false
+    },
+    {
+        title: "Ups and downs",
+        lon: -105.87942,
+        lat: 39.66264,
+        date: new Date(2023, 3, 9),
+        author: "Raphaël",
+        weather: "sun-fill", // sun-fill cloud-fill, cloud-rain-heavy-fill
+        location: "Loveland Pass",
+        region: "colorado", //
+        content: `
+        
+        <p>A l’image du relief des montagnes qu’on traverse dans cette région, ces derniers jours ont été caractérisés par des hauts et des bas pour nous aussi.</p>
+        <img fluid class="mb-3 card-img" src="https://lh3.googleusercontent.com/PVplB76-H1Jg8HsThCD180ktXb4IrsTXxBV2QDCD5jUr7rdB00pby0sjhL8XgQjJ6swi5BxpBdt4T-W8j4B9jVyt7ngrXtBKeR4rnNKyvHvP-KQRaV3R7554SkEebrusQPa9mGABxU0"/>
+        <p>Côté oiseaux, les premiers jours au Colorado ont apporté de belles surprises. On a pu trouver des espèces difficiles plutôt facilement : le premier soir, on a été récompensés de notre longue route de nuit lorsqu’on a entendu la <a href="https://ebird.org/checklist/S133014176" target="_blank">Chouette de Tengmalm</a>, et le lendemain soir, alors qu’on dormait sur un site de parade de tétras, j’ai entendu la <a href="https://ebird.org/checklist/S133134297" target="_blank">Chouette naine du nord</a>, qu’on avait loupé la veille – une belle surprise ! Les tétras ont, jusqu’à présent, aussi été au rendez-vous, et on a pu observer la plupart des espèces sur notre route. En même temps, d’autres espèces se font désirer, comme le <a href="https://ebird.org/checklist/S133260901" target="_blank">Lagopède à queue blanche</a> qui a attendu le coucher du soleil pour se montrer, et les roselins qui ne viennent plus trop aux mangeoires maintenant que la météo est plus clémente. </p>
+        <img fluid class="mb-3 card-img" src="https://lh3.googleusercontent.com/xMJDIGygOnh4dmPjbn1lCUc5JGUIRgYTOd7AyjldZAJen2iMLNumz3WBP4BiM4rOBgwgOXdSf2Xr-6s9M9tP6VJRaSzReH-xbC_Vgqs59YA_lm05EXBpR72W8K-zTutcF-kvCi3Ro5M=w1920-h1080"/>
+        <p>La voiture nous fait voir beaucoup de hauts et de bas aussi. Je ne suis pas complètement serein depuis nos aventures avec l’embrayage (réparé à deux reprises au cours des six derniers mois). Et hier soir, le voyant fatidique (voyant moteur) s’est allumé… est-ce l’embrayage ? Si oui, qu’est-ce que cela veut dire pour la suite du voyage ? On est en route vers un garage, donc tout est encore ouvert…
+        </p>
+        <p>Niveau santé, ma forme fait des hauts et des bas (est-ce le mal des montagnes qui revient ?) et j’ai un sommeil assez interrompu - plutôt nouveau pour moi !</p>
+        <img fluid class="mb-3 card-img" src="https://lh3.googleusercontent.com/7KwhKBuoQACpRgmfRdOrscoQ68nm7fOcpH9GEdQKwblgpilKTshInpYtCKwosTbXB7UIvpnUHS0AERdLw2a1lxoSZPlfLZ29NPNJ-V01cQuLY4GDsev0bzNxCtX1hCQe6goZyQZZ4aQ"/>
+
+        <p>C’est intéressant de vivre ces hauts et bas avec Mady, qui elle aussi passe par ses propres hauts et bas, plus intenses émotionnellement mais aussi beaucoup plus courts. Par exemple lorsqu’elle enlève ses gants en montagne et souffre d’avoir les mains très froides, mais quelques minutes après, réchauffée, retourne jouer avec la neige et les cailloux. On semble vivre la même chose à différentes échelles.</p>
+        <p>Voyager nous confronte à la gestion des imprévus, et j’apprends à gérer mes sentiments face à mes limites et à l’inconnu. Ma foi en Dieu m’aide à remettre ces craintes en perspective et à traverser ces hauts et bas en sachant que la façon dont je vis ces moments est plus importante que le résultat. </p>
+        <img fluid class="mb-3 card-img" src="https://lh3.googleusercontent.com/j1mvWmOyHyQ0LOeFs4fdCpwFxC2T9VYyrkdWVeUd2Ibgf-aYSHaH4KPxMFvw4SCRfWGVo9MBG9tMeH0k-7fZa_rlVcMRVYp9Csk0QECKZf-ZNVTZmrcOJM8qXPZDuFC0UlP8fCtM3uA"/>
         `,
         newsView: false
     },

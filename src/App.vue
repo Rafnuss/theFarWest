@@ -528,6 +528,7 @@
             </b-card>
           </b-col>
         </b-row>
+        {{ selectedLocId }}
         <b-row>
           <Photos :newsView="newsView" />
         </b-row>
