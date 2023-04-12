@@ -528,7 +528,6 @@
             </b-card>
           </b-col>
         </b-row>
-        {{ selectedLocId }}
         <b-row>
           <Photos :newsView="newsView" />
         </b-row>
@@ -791,7 +790,7 @@ export default {
         });
     },
     selectedChecklist() {
-      return this.checklists.filter((c) => (c.locId == this.selectedLocId) & (c.numSpecies > 3));
+      return this.checklists.filter((c) => c.locId == this.selectedLocId);
     },
     jourNb() {
       const ref = this.newsView ? new Date("2023-09-21") : new Date("2023-03-28");
