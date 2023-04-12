@@ -80,14 +80,26 @@ export default {
         },
         {
           name: "Compléter : <i> tape tape petites ..., tourne, tourne petit ..., vole vole petit ..., nage nage petit ... dans l'eau !</i>",
-          done: false,
-          src: "",
+          done: true,
+          src: "https://drive.google.com/uc?export=view&id=1VZXpzmEgvdAPpamjWl9hdXaACtQzp76Y",
           diff: 3,
         },
         {
           name: "Prier dans un monastère",
           done: true,
           src: "https://drive.google.com/uc?export=view&id=1elJLmDPaEU20IvBoh69gmpQ_A4BYmvB5",
+          diff: 3,
+        },
+        {
+          name: "Que mes parents me préparent un sac avec des objets surprises pour la voiture",
+          done: false,
+          src: "",
+          diff: 2,
+        },
+        {
+          name: "Faire du cheval comme Lucky Luke",
+          done: false,
+          src: "",
           diff: 3,
         },
       ],
