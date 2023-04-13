@@ -337,6 +337,44 @@ const posts_hard = [
         newsView: false
     },
     {
+        title: "Des montagnes aux canyons",
+        lon: -105.293361,
+        lat: 38.401059,
+        date: new Date(2023, 3, 12),
+        author: "Améline",
+        weather: "sun-fill", // sun-fill cloud-fill, cloud-rain-heavy-fill
+        location: "Temple Canyon Park",
+        region: "colorado", //
+        content: `
+        
+        <p>On espère que vous avez eu votre dose de photos de tétras, car c'est la fin, on a coché les deux dernières de notre liste ! On a eu une belle rencontre avec le <a href="https://ebird.org/species/dusgro" target="_blank">Tétras obscur</a>, tétras plus montagnard, qui nous attendait juste sur le bord du chemin (trop proche pour l'appareil de Raph!) lors d'une belle rando en montagne hier matin. 
+        </p>
+
+        <div class="iframe-wrapper">
+        <iframe src="https://macaulaylibrary.org/asset/557084951/embed" frameborder="0"></iframe>
+    </div>
+
+        <p>Puis ce matin, on a pu observer, de très loin cette fois, le <a href="https://ebird.org/species/gusgro" target="_blank">Tétras du Gunnison</a>, une espèce menacée que l'on trouve uniquement dans cette région précise du Colorado. On a joué les rebelles, car en arrivant sur place tard hier soir, on réalise que le site est officiellement fermé une semaine pour ne pas déranger les oiseaux… mais c'est le seul endroit et moment pour les voir donc on tente le coup, nous disant qu'on ne sortira pas de la voiture pour éviter tout dérangement. Vers 5h30, l'employée de l'agence de conservation locale nous réveille mais nous autorise à rester. On fait un max d’efforts pour être super discrets pendant 2h (à peine on ose ouvrir la fenêtre au cas où Mady se manifeste), seulement pour réaliser ensuite que les tétras sont bien trop loin pour nous entendre, à plusieurs km de nous… 
+        </p>
+        <div class="iframe-wrapper">
+        <iframe src="https://macaulaylibrary.org/asset/556821511/embed" frameborder="0"></iframe>
+    </div>
+
+        
+
+        <p>Ensuite nous attendaient nos dernières espèces de montagne, les roselins. Ceux-ci viennent se nourrir aux mangeoires en hiver et sont plus dures à observer plus tard dans la saison car elles montent haut en altitude. Après avoir essayé plusieurs mangeoires ces derniers jours, on commençait vaguement à perdre espoir (du moins moi), se disant qu'on était sans doute trop tard pour les deux espèces qui nous manquaient. C'est sans compter sur la persévérance de Raph, qui a trouvé une espèce dans la matinée, et la deuxième lors d’une dernière tentative après la pause déjeuner ! Un petit miracle pour moi, qui avait déjà abandonné l’affaire ;) 
+        </p>
+        
+        <div class="iframe-wrapper">
+        <iframe src="https://macaulaylibrary.org/asset/557102541/embed" frameborder="0"></iframe>
+    </div>
+
+        <p>C’est la fin de la neige et des montagnes, et, à peine 2-3h de route plus tard, on se retrouve en t-shirt dans de magnifiques canyons rocheux, parsemés de cactus et petits buissons - quel contraste ! Qui dit nouvel habitat dit nouveaux lifers, et on en coche quelques uns facilement en se baladant dans ces canyons en soirée. Le Colorado continue de nous offrir des beaux paysages à découvrir !</p>
+        <img fluid class="mb-3 card-img" src="https://lh3.googleusercontent.com/PpUTDPDujn2xlAcFJWXaMsSzGfAoQNM4NAyaQ2JPr1qN6L7hHS4XbMlN81KkiuMQA8E12AtPU5GTDKBPiA8UtbPYGaP_I0MgE6mYbqo3nWR0PIh1oplQl8s_bPUx7sd7ZW5Ffi-e6Lg"/>
+        `,
+        newsView: false
+    },
+    {
         title: "Un défi pour vous !",
         lon: -102.352717,
         lat: 39.250464,
