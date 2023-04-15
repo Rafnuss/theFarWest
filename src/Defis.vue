@@ -56,8 +56,8 @@ export default {
       defis: [
         {
           name: "Ecouter <i>Histoires pour les oreilles</i>",
-          done: false,
-          src: "",
+          done: true,
+          src: "https://drive.google.com/file/d/1FCRIWo4E53LPKKtJkOeC-5IdpByKNiyC/view?usp=share_link",
           diff: 1,
         },
         {
