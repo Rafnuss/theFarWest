@@ -135,7 +135,7 @@ const posts_hard = [
         location: "St Louis",
         region: "midwest", //
         content: `
-<p>On continue notre route vers l’ouest avec un arret à St Louis, non pas in Alsace, mais entre l’Ilinois et le Missouri. Par contre, notre espèce cible de la journée nous rappelle bien l’Alsace parce qu’on l’a vue la-bas à maintes reprises ! Il s’agit d’une espèce que vous connaissez sûrement, le <a href=”https://ebird.org/species/smilon/US-IL” target=”_blank”>moineau friquet</a>. </p>
+<p>On continue notre route vers l’ouest avec un arret à St Louis, non pas in Alsace, mais entre l’Ilinois et le Missouri. Par contre, notre espèce cible de la journée nous rappelle bien l’Alsace parce qu’on l’a vue la-bas à maintes reprises ! Il s’agit d’une espèce que vous connaissez sûrement, le <a href="https://ebird.org/species/smilon/US-IL" target="_blank">moineau friquet</a>. </p>
 <h4>Remède contre le mal du pays</h4>
 <p>Douze individus auraient été introduits d’Allemagne en 1870 pour que les immigrants européens du Missouri aient des oiseaux  familiers sur ce nouveau continent… En tant qu’immigrants français, c’est à notre tour de le chercher ! 150 ans plus tard, l’espèce s’est intégrée à l’ecosystème local, mais reste localisée autour de St Louis. Avec le temps, les moineaux friquets américains ont développé des différences  en termes de taille, génétique, et chant (les oiseaux aussi prennent l’accent américain). </p>
 <div class="iframe-wrapper">
@@ -213,7 +213,7 @@ const posts_hard = [
             <iframe src="https://macaulaylibrary.org/asset/553778941/embed" frameborder="0"></iframe>
         </div>
         
-        <h4>”Co-co-qui !”</h4>
+        <h4>"Co-co-qui !"</h4>
         Toute une étiquette est associée à l’observation de ces tétras : il faut arriver à la cabane 1h avant le lever du soleil (6h), pour ne pas déranger l’arrivée des oiseaux, et y rester jusqu’à ce que le dernier oiseau reparte (dans notre cas, 9h30), en faisant le moins de bruit possible tout du long bien sûr... 
         
         Tout un défi avec un enfant de 2 ans qui aime bouger et s’exprimer ! Mais, à l’aide de beaucoup de livres, d’histoires, et d’un petit déjeuner tiré en longueur, Mady a joué le jeu (à quelques exceptions près…), et on a tenu jusqu’à la fin - un succès presque aussi grand pour moi que de voir les tétras en question ! Heureusement, il y avait 2 cabanes sur ce site ce qui a permis aux autres spectateurs d’assister à ce spectacle en paix.
@@ -269,7 +269,7 @@ const posts_hard = [
         <h4>En avant ! </h4>
         <p>Alors qu’on entre au Colorado et qu’on a traversé le Midwest, on a l’impression que l’échauffement est fini, et les choses sérieuses commencent ! Dans le Midwest, on a beaucoup roulé, et on a vu quelques nouveaux lifers, mais dans l’ensemble la plupart des espèces étaient similaires à ce qu’on peut trouver dans le Nord Est.</p>
         
-        <p>On passe maintenant plus dans le couloir migratoire ouest, ce qui veut dire beaucoup de nouvelles espèces à chercher. On se réjouit aussi de découvrir des paysages plus diversifiés, après beaucoup de plaines ! Vous pouvez lire plus sur le Colorado en cliquant sur “Découvrez le parcours” au dessus des articles. </p>
+        <p>On passe maintenant plus dans le couloir migratoire ouest, ce qui veut dire beaucoup de nouvelles espèces à chercher. On se réjouit aussi de découvrir des paysages plus diversifiés, après beaucoup de plaines ! Vous pouvez lire plus sur le Colorado en cliquant sur “Découvrez le parcours" au dessus des articles. </p>
         <img fluid class="mb-3 card-img" src="https://lh3.googleusercontent.com/ioIXt1ja2dQuU2mjz7D1FF-vL8Wzt7w1q80seoaVm891Z2JKLfmkwkmqKxxcLYGyq5K4iEEZtzqFiePImv3-DheAwfmHLFqt61mKrRSJzZO41kLIQsGcB9NSj7AG-4RBlRv7ibF_gj0"/>
         <h4>Regard en arrière</h4>
 
@@ -277,7 +277,7 @@ const posts_hard = [
         <img fluid class="mb-3 card-img" src="https://lh3.googleusercontent.com/pw/AMWts8BoHiYcJI_6RUN7uXVBy6rwqJM8UvrEaN_VtnXkDPswPgmdyYmRvkaqmYkEGiACgugIgq1TERGJMBeiVkdWbJ_gCFEXSEbecwjloTBopMpg7BfrrXbZ"/>
         
     
-        <p>La vie dans le van se passe bien, on est reconnaissant que Mady se soit adaptée et dorme facilement (faites-les courir toute la journée, c’est plutôt efficace !). Elle se met à l’aise dans la voiture, prend ses habitudes, et connaît la place de chaque chose. Elle communique aussi de plus en plus, et les longs trajets sont l’occasion de s’exprimer et d’apprendre des nouveaux mots (ou de répéter en boucle ceux qu’elle connaît déjà -  “encore raisin !”). Il faut juste accepter de se faire grimper dessus beaucoup plus fréquemment... </p>
+        <p>La vie dans le van se passe bien, on est reconnaissant que Mady se soit adaptée et dorme facilement (faites-les courir toute la journée, c’est plutôt efficace !). Elle se met à l’aise dans la voiture, prend ses habitudes, et connaît la place de chaque chose. Elle communique aussi de plus en plus, et les longs trajets sont l’occasion de s’exprimer et d’apprendre des nouveaux mots (ou de répéter en boucle ceux qu’elle connaît déjà -  “encore raisin !"). Il faut juste accepter de se faire grimper dessus beaucoup plus fréquemment... </p>
         <img fluid class="mb-3 card-img" src="https://lh3.googleusercontent.com/pw/AMWts8DKbk1HlOf-eUOMuzrJ60RYwc1aCMuFpIQMi6cLhZRiGF_-cYo6bUF9f8MJsbTHNVsOCiSYKt12jhvFZch-NXqljkiS6ztQikq4kELEUIxZQ490PJzw"/>
         
         <p>On appréhendait un peu le froid, mais les isolations aux fenêtres font une grosse différence, et nous permettent de dormir confortablement (la plupart du temps ;). Après pas mal de chemins de terre, la voiture a pris une nouvelle couleur et on vit avec une fine couche de poussière à peu près permanente. Nos premiers essais à la cuisine à l’arrière étaient plutôt précipités par le vent ou les températures froides, mais on ne lâche pas l’affaire, et Raph improvise des paravents quand c’est nécessaire. On verra ce que les montagnes nous réservent !</p>
@@ -296,7 +296,7 @@ const posts_hard = [
         content: `
         
         <p>Après une journée de 25h plutôt intense vendredi (on gagne une heure à l'entrée au Colorado), du réveil à 5h du matin pour un tour organisé pour Raph, à la recherche d’hiboux tard dans la nuit, la matinée de samedi a apporté une expérience inédite plutôt bienvenue : l’observation d’oiseaux depuis son lit ! </p>
-        <p>Sur un site de parade de Tétras des armoises, les règles sont claires dans le nom du hotspot sur eBird : “Coalmont Lek -- ARRIVE IN DARK, STAY IN CAR, DO NOT DISTURB DISPLAYING BIRDS!” Impossible donc de sortir de la voiture. Avec -4 degrés dehors, disons que ce n’était pas trop difficile de respecter la règle ;) </p>
+        <p>Sur un site de parade de Tétras des armoises, les règles sont claires dans le nom du hotspot sur eBird : “Coalmont Lek -- ARRIVE IN DARK, STAY IN CAR, DO NOT DISTURB DISPLAYING BIRDS!" Impossible donc de sortir de la voiture. Avec -4 degrés dehors, disons que ce n’était pas trop difficile de respecter la règle ;) </p>
         <img fluid class="mb-3 card-img" src="https://lh3.googleusercontent.com/pw/AMWts8B4pgUG52kn7gwkxVKKBth95XzI1WiWGUMxX4-Q5Mi9YEeWizHE5ac8fWMwlmwFbMqEhLQQA_p1nzKaALueG5Ip_PkAOjo3uT2w-IEc2fFX3UdSBA5C"/>
         <p>On profite de rester sous la couette un peu plus longtemps, admirer les montagnes à l'aube, et observer ces oiseaux faire leur parade tellement unique. Ces tétras sont parmis les plus bizarres que j’ai observés (Dieu a vraiment un sens de l’humour) - la vidéo ci-dessous vous donne un petit aperçu… </p>
 
@@ -375,18 +375,58 @@ const posts_hard = [
         newsView: false
     },
     {
+        title: "Birding and big data",
+        lon: -101.623083,
+        lat: 33.492597,
+        date: new Date(2023, 3, 15),
+        author: "Raphaël",
+        weather: "sun-fill", // sun-fill cloud-fill, cloud-rain-heavy-fill
+        location: "Lubbock",
+        region: "texas", //
+        content: `
+        <p>Texas, here we are ! La région du Texas est maintenant débloquée, vous pouvez lire un aperçu de ce qui nous attend dans l'onglet: Découvrez le parcours.</p>
+
+        <h3>Pourquoi ce parcours ? </h3>
+        
+        <p>Je profite de ces deux journées avec pas mal de route pour prendre un peu de temps pour expliquer comment on a défini notre parcours. Vous l’aurez compris, l’objectif de ce voyage est de voir un maximum d’espèces d’oiseaux aux US (comme collecter des Pokémons - <a href="https://www.youtube.com/watch?v=GtSmZns8v-Y" target="_blank">attrapez-les tous !</a>). On cherche à voir tous les oiseaux nicheurs et visiteurs réguliers des US (càd, <a href="https://www.aba.org/aba-checklist/" target="_blank">avec un code ABA 1 et 2</a>). </p>
+        
+        <p>Les Etats Unis (excluant Alaska et Hawaï) comptent <a href="https://ebird.org/region/lower48" target="_blank">987 oiseaux observés</a> dont 678 espèces ABA 1 ou 2. Au début du voyage j’en avais 419, l’objectif est d’en rajouter autour de 250 - ça fait beaucoup à voir en quelques mois ! Il faut donc réfléchir à un trajet qui prend en compte quand et où chaque espèce peut être vue le plus facilement. </p>
+        
+        <h3>Vue d’ensemble</h3>
+        
+        <p>On a choisi de partir fin mars pour être au Colorado début avril, pour cibler à la fois la saison de parade des tétras qui ne dure que quelques semaines en avril, et les espèces montagnardes qui sont encore en basse altitude avec la neige. Après cela, il faut rapidement filer vers le Sud (Texas et Arizona) pour y trouver les nombreuses espèces qui nichent tôt dans l’année. Une fois qu’un oiseau a pondu, il est généralement silencieux et donc plus dûr à trouver. On suit ensuite les migrateurs en remontant vers le Nord en même temps qu’eux. Ce trajet optimise le nombre d’espèces à ajouter à notre liste US, mais nous fait rater les quelques hivernants de la cote Nord Ouest ainsi que les espèces océaniques.</p>
+        
+        <img fluid class="mb-3 card-img" src="https://drive.google.com/uc?export=view&id=17Cn0WBemDUhgtC8YZzrK--Vnw67_IxZN"/>
+
+        <h3>Plus en détail </h3>
+        
+        <p>Pour identifier où et quand voir chaque espèce, j’utilise les données de <a href=“https://ebird.org/home" target=“_blank">eBird</a>. J’ai passé plusieurs jours à naviguer les cartes de distribution des 265 espèces cibles pour déterminer le meilleur endroit pour les trouver sur notre parcours. </p>
+
+        <img fluid class="mb-3 card-img" src="https://drive.google.com/uc?export=view&id=1-RWZnDyhk63xb3TgWVpG5sgRXRyZP71A"/>
+        <img fluid class="mb-3 card-img" src="https://drive.google.com/uc?export=view&id=1zZn1vErzBXRO61EBflKz1jblmsubqtxE"/>
+        
+        <p>J’utilise aussi des vues satellites pour visualiser les habitats et l’accès, pour au final produire une carte détaillée de l’endroit précis à viser pour chaque espèce cible. Je me focalise sur les espèces plus difficiles à voir (les espèces cibles listées dans la description de chaque région), les espèces faciles à trouver ne nécéssitent pas de recherches particulières : à force d’être dehors, on est sûr des les trouver à un moment ! Ce processus peut paraître fastidieux mais ça me plaît d’utiliser toutes les informations disponibles pour préparer le voyage de cette façon :)</p>
+        
+        
+
+        <h3>Nouvelle fonctionnalité</h3>
+        <p> Maintenant que vous savez tout sur la méthodologie des espèces cibles, vous pouvez voir la liste complète de ces espèces dans le nouvel onglet en haut à droite et suivre lesquelles on a coché. </p>
+        `,
+        newsView: false
+    },
+    {
         title: "Un défi pour vous !",
-        lon: -102.352717,
-        lat: 39.250464,
-        date: new Date(2024, 3, 7),
+        lon: -99.570814,
+        lat: 29.807560,
+        date: new Date(2023, 3, 16),
         author: "Mady",
         weather: "sun-fill", // sun-fill cloud-fill, cloud-rain-heavy-fill
         location: "Burlington",
-        region: "colorado", //
+        region: "texas", //
         content: `
         `,
         newsView: true
-    }
+    },
 ]
 export default posts_hard
 
@@ -399,7 +439,7 @@ export default posts_hard
         author: "",
         weather: "", // sun-fill cloud-fill, cloud-rain-heavy-fill
         location: "",
-        region: "midwest", //
+        region: "texas", //
         content: `
 <h4>Tout s’accélère</h4>
 <p></p>

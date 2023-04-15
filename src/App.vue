@@ -683,7 +683,6 @@ export default {
       ],
       game_options: [],
       game_selected: [],
-      gamePage: false,
       TableSpeciesMode: "target",
     };
   },
@@ -861,15 +860,7 @@ export default {
               r.dateISO = r.date.getMonth() + "-" + r.date.getDate() + "-" + r.date.getFullYear();
               return r;
             }),
-        ]
-          .sort((a, b) => a.date - b.date)
-          .filter((a) => {
-            if (this.gamePage) {
-              return true;
-            } else {
-              return !a.newsView;
-            }
-          });
+        ].sort((a, b) => a.date - b.date);
         this.i_post = this.posts.length - 1;
       })
       .catch((error) => console.error(error));
@@ -933,12 +924,6 @@ export default {
   },
   mounted() {
     this.map = this.$refs.map.mapObject;
-    let qp = new URLSearchParams(window.location.search);
-    if (qp.get("game")) {
-      if (qp.get("game")) {
-        this.gamePage = true;
-      }
-    }
   },
 };
 

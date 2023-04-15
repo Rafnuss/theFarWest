@@ -39,12 +39,12 @@
           :img-src="d.src"
         />
       </b-carousel>
-      <a
+      <!--<a
         href="https://docs.google.com/forms/d/e/1FAIpQLSeposcoqcu7mKpzoE4phDZxLwHmq39UHPzbnLFjHkrnovJnpw/viewform?usp=sf_link"
         target="_blank"
         class="btn w-100 my-2 text-white btn-secondary"
         >Ajoutez un défi à Taty!</a
-      >
+      >-->
     </b-modal>
   </div>
 </template>
@@ -57,7 +57,7 @@ export default {
         {
           name: "Ecouter <i>Histoires pour les oreilles</i>",
           done: true,
-          src: "https://drive.google.com/file/d/1FCRIWo4E53LPKKtJkOeC-5IdpByKNiyC/view?usp=share_link",
+          src: "https://drive.google.com/uc?export=view&id=1FCRIWo4E53LPKKtJkOeC-5IdpByKNiyC",
           diff: 1,
         },
         {
@@ -74,8 +74,8 @@ export default {
         },
         {
           name: "Collecter un maximum de containers à frites McDo",
-          done: false,
-          src: "",
+          done: true,
+          src: "https://drive.google.com/uc?export=view&id=1UENMzJsF-zRQzvDCXenU5PeL5kqwRvvw",
           diff: 2,
         },
         {
