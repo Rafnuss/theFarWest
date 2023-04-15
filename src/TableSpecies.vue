@@ -121,7 +121,7 @@
 <script>
 import species_list from "./assets/species_list.json";
 export default {
-  props: ["regions"],
+  props: ["regions", "mode"],
   data() {
     return {
       species_list: species_list.map((sp) => {
@@ -133,7 +133,7 @@ export default {
         return sp;
       }),
       species_list_show: [],
-      tickSelected: ["trip"],
+      tickSelected: ["trip", "remain"],
       exclureLifer: true,
       onlyTarget: true,
       filterCommonName: "",
@@ -162,6 +162,12 @@ export default {
     },
   },
   created() {
+    console.log(this.mode);
+    if (this.mode == "list") {
+      this.onlyTarget = false;
+      this.exclureLifer = false;
+      this.tickSelected = ["before", "trip"];
+    }
     this.onSubmit();
   },
 };
