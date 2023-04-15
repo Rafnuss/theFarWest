@@ -24,7 +24,7 @@
         "end_date": "2023-5-1",
         "color": "#a9641c",
         "ebirdcode": "US-TX",
-        "active": false
+        "active": true
     },
     {
         "region": "arizona",

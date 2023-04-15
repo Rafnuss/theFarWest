@@ -279,7 +279,16 @@
                   <div class="d-flex mr-3">
                     <IconBase class="" name="pokeball" width="50" height="50" />
                   </div>
-                  <div class="pokemon" style="font-size: 6rem; line-height: 0.8">{{ newsView ? 1 : USliferCount }}</div>
+                  <div
+                    class="pokemon cursor-pointer"
+                    style="font-size: 6rem; line-height: 0.8"
+                    @click="
+                      TableSpeciesMode = 'list';
+                      $bvModal.show('modal-full-list');
+                    "
+                  >
+                    {{ newsView ? 1 : USliferCount }}
+                  </div>
                 </div>
                 <div v-if="(latestLifer[1] != '#N/A') | newsView">
                   <small> dernière addition: </small>
@@ -334,7 +343,15 @@
                 >
                   Photos d'oiseaux
                 </a>
-                <a v-b-modal.modal-full-list href="#" class="text-secondary" v-if="false">Liste des cibles US</a>
+                <a
+                  @click="
+                    TableSpeciesMode = 'target';
+                    $bvModal.show('modal-full-list');
+                  "
+                  href="#"
+                  class="text-secondary"
+                  >Liste des cibles US</a
+                >
                 <b-modal
                   id="modal-full-list"
                   scrollable
@@ -344,7 +361,7 @@
                   class="h-100"
                   centered
                 >
-                  <TableSpecies :regions="regions" />
+                  <TableSpecies :regions="regions" :mode="TableSpeciesMode" />
                 </b-modal>
                 <a
                   v-if="locations.length > 0 && false"
@@ -591,7 +608,7 @@ export default {
   },
   data() {
     return {
-      live_tripreport_id: 112349,
+      live_tripreport_id: 112350,
       google_api_key: "AIzaSyCaVWdIpSvq8BoF7PvEK4oY3LByPYTQ2Xs",
       mapboxToken: "pk.eyJ1IjoicmFmbnVzcyIsImEiOiIzMVE1dnc0In0.3FNMKIlQ_afYktqki-6m0g",
       map: null,
@@ -667,6 +684,7 @@ export default {
       game_options: [],
       game_selected: [],
       gamePage: false,
+      TableSpeciesMode: "target",
     };
   },
   methods: {
