@@ -427,6 +427,41 @@ const posts_hard = [
         `,
         newsView: true
     },
+    {
+        title: "Nouvelle saison",
+        lon: -99.570929,
+        lat: 29.808032,
+        date: new Date(2023, 3, 16),
+        author: "Améline",
+        weather: "sun-fill", // sun-fill cloud-fill, cloud-rain-heavy-fill
+        location: "Lost Maples SNA",
+        region: "texas", //
+        content: `
+        <p>Ça y est, on est dans le Sud ! Plus précisément, 1 600 km plus au sud qu'il y a trois jours - et on sent la différence en termes de température et paysages. Ca veut aussi dire crème solaire et anti-moustiques, et sans doute que l'on regrettera la fraîcheur d'ici dans quelques jours, mais pour l'instant j'en suis contente ! 
+        </p>
+        <h3>Point d'étape</h3>
+        <p>On a fait notre première nuit en camping hier soir, c'était un luxe d'avoir eau, douches, et table de picnic a proximité ! Un nettoyage est requis pour nous comme pour la voiture... On en profite pour faire une réorganisation saisonnière des placards de notre petite maison : on troque les vestes d'hiver pour les shorts, les grosses chaussures pour les sandales, et les bonnets pour les casquettes - un changement bienvenu ! On opère aussi un petit rangement de la cuisine et on effectue un tri pour faire de la place, avec quelques affaires à donner. 
+        </p>
+
+        <img fluid class="mb-3 card-img" src="https://lh3.googleusercontent.com/pw/AJFCJaUrclzxvvvalfeYj2F3ba5iKS9I7TboLQx95Eru7Z72g3-RSQwoz1g1X68EBIMFF_LnwtDxoPiWCiVZvq-dtrVJrG3SA_8SGMItmkQw1wlPb6l0zyyS"/>
+        
+        <h3>Rando matinale</h3>
+        <p>On passe la matinée à randonner dans cette réserve naturelle, avec des paysages qui dégagent un air du sud : chemins rocailleux, cactus, et petits buissons, ainsi que des forêts aux arbres verts et non dégarnis par l'hiver ! Après beaucoup de birding en "stop and go" (petits arrêts avec de la voiture entre) ces dernières semaines, je suis contente de passer la matinée dehors dans ce beau cadre. 
+        </p>
+        <img fluid class="mb-3 card-img" src="https://lh3.googleusercontent.com/Kx8cMon5tR8AXyXR_UQw2nIsuOJ9w4AtRdZlXxDhzCS1HsNNyqmIGaaFseTNMaqdlzRKF60KaQJMeS0VfMkhnYuiwYvCziOOY2U5kq0qBPcQAUXwETNjjMZYL4KUjDWpQ_3IEWMMxGI"/>
+        
+        <p>Ce nouvel habitat regorge évidemment d'oiseaux à découvrir - et donc aussi de chants d'oiseaux avec lesquels se familiariser. Merci à <a href="https://merlin.allaboutbirds.org/" target="_blank">Merlin</a>, une application qui détecte les sons et identifie les oiseaux avec une précision remarquable ! On trouve plein de <a href="https://ebird.org/species/gchwar" target="_blank">Parulines à dos noir</a>, l'oiseau cible de cette réserve, dont on vous partageait la carte de distribution hier. En plus, on a droit à quelques bonnes surprises, donc la <a href="https://ebird.org/species/tropar" target="_blank">Paruline à joues noires</a>, une espèce rare mais qui avait déjà été vue dans la région. Une bonne surprise car cela nous évite plusieurs autres arrêts sur la route pour la chercher, nous offrant un rythme un peu plus relax pour l'après midi (juste 4h de route…).
+        </p>
+
+        <div class="iframe-wrapper">
+        <iframe src="https://macaulaylibrary.org/asset/559157941/embed" frameborder="0"></iframe>
+    </div>
+    <h3>Hallelujah !</h3>
+        <p>Mady exprime régulièrement des "Hallelujah" (approximatifs) en levant les bras au ciel - c'est un bon rappel pour nous, qui me semble pertinent pour ce début de voyage a pas mal de niveaux. Récemment, les trois journées avec pas mal de route se sont très bien passées, Mady était coopérative, les oiseaux au rdv, le sommeil va mieux, et le voyant moteur ne s'est plus manifesté depuis notre arrivée au Texas ! Hallelujah ! Que cette nouvelle saison chaude soit vécue avec tout autant de Hallelujah :) 
+        </p>
+        `,
+        newsView: false
+    },
 ]
 export default posts_hard
 
