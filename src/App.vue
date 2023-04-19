@@ -82,11 +82,16 @@
 
               <div v-if="posts[i_post].newsView">
                 <template v-if="!newsView">
+                  <p>
+                    <a href="#" v-b-modal.modal-defis
+                      >Merci pour tous les défis que vous m'avez donné pour m'occuper pendant ce voyage ! J'ai fait de
+                      bons progrès mais je travaille encore sur quelques uns.
+                    </a>
+                  </p>
                   <h4>A mon tour de vous mettre au défi !</h4>
                   <p>
-                    Prononcer les mots en entier, c’est dépassé, la nouvelle mode c’est les raccourcis. Mes parents sont
-                    parfois un peu lents mais dans l’ensemble commencent à comprendre ce que je veux dire. Et vous,
-                    saurez-vous décoder mon language ? Associez le bon mot à chacune des mes expressions !
+                    J'ai un message à vous communiquer, mais d'abord, il faut que vous appreniez à décoder mon language.
+                    Associez le bon mot à chacune des mes expressions !
                   </p>
                   <b-list-group>
                     <b-list-group-item v-for="(e, i) in game" :key="e.audio">
@@ -98,8 +103,8 @@
                   </b-list-group>
                   <b-button @click="checkNews" class="w-100 mt-2">Verifier</b-button>
                   <b-alert show variant="danger" class="mt-2" v-if="newsTry > 0">
-                    <h4 class="alert-heading">Nope ! Essais: {{ newsTry }}</h4>
-                    <p>Pas tout a fait bon!</p>
+                    <h4 class="alert-heading">Nope ! Essai: {{ newsTry }}</h4>
+                    <p>Pas tout à fait juste !</p>
                   </b-alert>
                 </template>
                 <template v-else>
@@ -270,7 +275,7 @@
                     </div>
                   </div>
                 </div>
-                <b-button variant="outline-secondary" size="sm" v-b-modal.modal-defis>Les défis de Mady</b-button>
+                <b-button variant="outline-secondary" size="sm" @click="i_post = 17">Le défi de Mady</b-button>
                 <Defis />
               </div>
               <div class="d-flex flex-column text-center" style="min-width: 230px">
