@@ -102,6 +102,30 @@ export default {
           src: "",
           diff: 3,
         },
+        {
+          name: "Trouver un fossile",
+          done: false,
+          src: "",
+          diff: 3,
+        },
+        {
+          name: "Faire 10 photos de Land'art comprenant au minimum 3 éléments de la nature différents",
+          done: false,
+          src: "",
+          diff: 1,
+        },
+        {
+          name: "Rapporter un coquillage",
+          done: false,
+          src: "",
+          diff: 1,
+        },
+        {
+          name: "Faire un 'Hallelujah' dans une mégachurch",
+          done: false,
+          src: "",
+          diff: 2,
+        },
       ],
     };
   },
