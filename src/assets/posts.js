@@ -498,6 +498,39 @@ const posts_hard = [
 
         newsView: false
     },
+    {
+        title: "Les zazos !",
+        lon: -98.382019,
+        lat: 26.169785,
+        date: new Date(2023, 3, 21),
+        author: "Mady",
+        weather: "sun-fill", // sun-fill cloud-fill, cloud-rain-heavy-fill
+        location: "Bentsen Rio Valley Park",
+        region: "texas", //
+        content: `
+        <h4>Le déclic</h4>
+        <p>Ça y est, j’ai compris l’objectif de ce voyage ! C'est ni pour les cailloux ni pour les bâtons (même si je continue d'en trouver plein), mais pour chercher les “zazos” (ndlr: oiseaux). C'est pour ça que papa décide de marcher sur la route plutôt que de rester dans la voiture avec nous, ou se couche par terre dehors... Maintenant je pointe les oiseaux et je regarde dans mes jumelles pour faire comme les grands !
+        </p>
+
+        <img fluid class="mb-3 card-img" src="https://lh3.googleusercontent.com/LpwuCH3zlRinqxpHAzkuHsDNxL65xBRfhgmaQh6mvSYyZSXNL9rdxuHDHwmWxmM6extnPcCCpDuesWHvHNpZSaAaZTOvF3LhgV628ekGvg6rpWNyW-rv_8hUcOYi7Rnh50ef3WYrFQg"/>
+
+        <h4>Tête en l'air</h4>
+        <p>Ces derniers jours, on a passé beaucoup de temps sur une plateforme avec plein d'autres personnes, tous la tête levée vers le ciel. J’essayais de faire comme eux avec mes jumelles pour être acceptée dans leur bande, mais en vrai je voyais rien, du coup je me suis rabattue sur les papillons posés à mes pieds. C'était un peu long, alors pour passer le temps j’ai proposé à papa et maman d'échanger de chaussures: moi ca marchait très bien, mais eux ils voulaient pas essayer les miennes. J'ai aussi créé des parcours de course pour m’entraîner à courir et sauter, jusqu’à ce que papa me disent d’arrêter, soit disant je ferais tout trembler. Les gens ont complimenté papa et maman que j’étais sage sur la plateforme, j’étais plutôt contente (mais je pouvais pas rougir, j’étais déjà toute rouge à cause du soleil qui tapait fort).
+        </p>
+
+        <img fluid class="mb-3 card-img" src="https://lh3.googleusercontent.com/95hv1wClpi1_UKfcVsSv5TuyjMTryluMavSvD_yXr37ydLcclQHqlQ0R2WHVbn-z88OzAGUrFCsZlHEyf1bSlGTj54y8jjjlNgRUymOCqSseh2ZJ7povjN6BfN5fMbhgTE3oO-xaS9k"/>
+
+        <h4>Le petit bus</h4>
+        <p>C'est pas toujours facile de chercher des oiseaux, il faut beaucoup marcher et parfois c'est fatigant. J'essaye d'aller dire bonjour aux oiseaux, mais ils s'enfuient trop vite, pas très sympa !</p> 
+        <p>Hier les parents m'ont forcé à marcher pendant des heures (ndlr: une heure max) et refusaient de prendre le petit bus blanc que je leur pointais à chaque fois qu'il passait. Ce matin, enfin, on a eu le droit de monter dedans ! C'est tellement plus facile que de marcher, et encore mieux que dans le dos de papa. Un monsieur nous a même donné de l'eau fraîche, il a dû voir nos visages tous rouges et nos gourdes vides. C'est bien pratique une bouteille vide pour y collectioner des petits cailloux !</p>
+
+        <img fluid class="mb-3 card-img" src="https://lh3.googleusercontent.com/xIimWprh2jdhqv9t32_AC0NQOMvcwx8LWXPEoMleO82pHQUIi-C6QpL3ZKXqAkMiuGSIKxfxMX3ALkl73xSr2_kgxIdMhcMiTQjNR8X9zYvRoX6g8xyK4JtI25t9fHO8IgUh56S6b6g"/>
+
+
+        `,
+
+        newsView: false
+    },
 ]
 export default posts_hard
 
