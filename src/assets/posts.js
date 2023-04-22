@@ -462,6 +462,40 @@ const posts_hard = [
         `,
         newsView: false
     },
+    {
+        title: "Texas - couloir de migration",
+        lon: -97.174566,
+        lat: 26.140066,
+        date: new Date(2023, 3, 19),
+        author: "Raphaël",
+        weather: "sun-fill", // sun-fill cloud-fill, cloud-rain-heavy-fill
+        location: "South Padre Island",
+        region: "texas", //
+        content: `
+        <h4>Back on the road !</h4>
+        <p>Grâce à la gentillesse de Mme Neto, l'expertise de M. Neto, et l'efficacité de M. Neto Jr., nous voici de retour sur la route à peine 24h plus tard ! On espère qu'avec une nouvelle transmission, c'est la fin de nos aventures mécaniques dans ce domaine. </p>
+
+        <img fluid class="mb-3 card-img" src=" https://lh3.googleusercontent.com/G-FAatvKTfxf_e-Sm3QsuVBFIwEOrFieLwlbUzqmzCt-vnWMqOQX89P8cndtMrIVEppdfsQOUeZYxLEHW0ju3Is3jbzxihwWSgWUTYT2Wf8oAg1-RFsbniDvEqLx6DHLWgWbqbo1nzA"/>
+       
+        <p>Alors qu'on avait raté quelques cibles à notre arrivée dans le sud, la première matinée avec la voiture réparée nous a permis de rattraper notre retard avec quelques jolies coches : <a href=”https://ebird.org/species/grbani” target=”_blank”>l’Ani à bec cannelé</a> et <a href=”https://ebird.org/species/altori/L613081” target=”_blank”>l’Oriole d’Altamira</a>. Il nous reste toujours la <a href=”https://ebird.org/species/fepowl” target=”_blank”>Chevêchette brune</a> qu’on a déjà cherché plusieurs heures sans succès… Elle serait éventuellement possible en Arizona, on espère l'y trouver la-bas.</p>
+
+        <h4>Haut lieu de migration</h4>
+        <p>Le sud du Texas est connu pour être un couloir de migration important pour les oiseaux. Bien que ce ne soit pas directement notre objectif de chercher les espèces de passage, on a pu voir quelques espèces rares, observer les limicoles et fauvettes (warblers) en migration sur la côte, et des centaines de rapaces en migration plus à l’intérieur des terres.</p>
+        
+        <p>Ce mouvement synchrone de plusieurs milliards d'oiseaux à travers tous les continents est un des aspects des oiseaux qui me passionne le plus, et j'ai la chance de pouvoir travailler dessus ! Pour visualiser la migration avec nous, vous pouvez cliquer sur “Prévisions de migration” en haut à droite, pour suivre les conditions de migration prédites par Birdcast (mon groupe de recherche à Ithaca).
+
+        <img fluid class="mb-3 card-img" src="https://drive.google.com/uc?export=view&id=1subBNe3QCp8mbpIGsHCtuVkuOV7GRaQm"/>
+
+        <h4>Quel lien avec mon travail ?</h4>
+
+        <p>J’en profite pour vous partager un peu l’objet de ma recherche sur la migration. Jusqu’à présent, Birdcast s’est focalisé sur l’étude des oiseaux migratoires en vol. Cela permet d’identifier les lieux de forte migration à l’avance et de mettre en place des mesures de conservation (éteindre les lumières des bâtiments pour ne pas désorienter les oiseaux, arrêter les éoliennes, etc.).</p> <p>Ma recherche vise à complémenter cette compréhension des oiseaux en l'air avec leur mouvements vers et depuis le sol. La plupart des oiseaux migrent de nuit et se posent au sol en journée pour se reposer et reprendre des forces. Protéger les oiseaux migratoires nécessite aussi de comprendre où ils se posent afin de conserver ces lieux importants pour leur survie. Mon projet ces deux dernières années a été de connecter les données sur les oiseaux en l'air (mesurées par les radars météo) avec les informations sur les oiseaux au sol (données eBird).</p>
+
+        `,
+
+
+        
+        newsView: false
+    },
 ]
 export default posts_hard
 
