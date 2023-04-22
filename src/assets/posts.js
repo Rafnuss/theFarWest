@@ -488,12 +488,14 @@ const posts_hard = [
 
         <h4>Quel lien avec mon travail ?</h4>
 
-        <p>J’en profite pour vous partager un peu l’objet de ma recherche sur la migration. Jusqu’à présent, Birdcast s’est focalisé sur l’étude des oiseaux migratoires en vol. Cela permet d’identifier les lieux de forte migration à l’avance et de mettre en place des mesures de conservation (éteindre les lumières des bâtiments pour ne pas désorienter les oiseaux, arrêter les éoliennes, etc.).</p> <p>Ma recherche vise à complémenter cette compréhension des oiseaux en l'air avec leur mouvements vers et depuis le sol. La plupart des oiseaux migrent de nuit et se posent au sol en journée pour se reposer et reprendre des forces. Protéger les oiseaux migratoires nécessite aussi de comprendre où ils se posent afin de conserver ces lieux importants pour leur survie. Mon projet ces deux dernières années a été de connecter les données sur les oiseaux en l'air (mesurées par les radars météo) avec les informations sur les oiseaux au sol (données eBird).</p>
+        <p>J’en profite pour vous partager un peu l’objet de ma recherche sur la migration. Jusqu’à présent, Birdcast utilise des radars météo pour étudier des oiseaux migratoires en vol. Cela permet, entre autres, d’identifier les lieux de forte migration à l’avance et de mettre en place des mesures de conservation (éteindre les lumières des bâtiments pour ne pas désorienter les oiseaux, arrêter les éoliennes, etc.).</p> 
+        
+        <p>Ma recherche vise à étendre l'utilisation de données radar pour comprendre les mouvements des oiseaux vers et depuis le sol pendant leur migration. La plupart des oiseaux migrent de nuit et se posent au sol en journée pour se reposer et reprendre des forces. Protéger les oiseaux migratoires nécessite donc aussi de comprendre où ils se posent. Mon projet ces deux dernières années a été de montrer que notre approche est cohérente avec les informations sur les oiseaux au sol (données eBird). Similaire aux cartes déjà disponibles sur la migration en l'air, j'espère pouvoir créer des cartes live montrant où les oiseaux se sont posés au sol chaque jour. </p>
 
         `,
 
 
-        
+
         newsView: false
     },
 ]

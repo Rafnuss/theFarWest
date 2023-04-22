@@ -368,8 +368,10 @@
                 >
                   <TableSpecies :regions="regions" :mode="TableSpeciesMode" />
                 </b-modal>
-                <a
-                  v-if="locations.length > 0 && false"
+
+                <!-- <a
+                  v-if="locations.length > 0"
+                  
                   :href="
                     'https://alert.birdcast.info/?latLng=' +
                     locations[locations.length - 1][0] +
@@ -380,7 +382,16 @@
                   target="_blank"
                   class="d-flex align-items-baseline text-secondary"
                 >
-                  <div class="mr-2" v-if="false">Prévisions de migration</div>
+                  <div class="mr-2">Prévisions de migration</div>
+                  <b-img src="birdcast.svg" class="h-16" />
+                </a>-->
+                <a
+                  v-if="locations.length > 0"
+                  :href="'https://dashboard.birdcast.info/region/US-TX'"
+                  target="_blank"
+                  class="d-flex align-items-baseline text-secondary"
+                >
+                  <div class="mr-2">Migration live</div>
                   <!--<b-img src="birdcast.svg" class="h-16" />-->
                 </a>
                 <a
