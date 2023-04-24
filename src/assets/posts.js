@@ -536,7 +536,7 @@ const posts_hard = [
         title: "Texas aux milles visages",
         lon: -100.452987,
         lat: 29.610477,
-        date: new Date(2023, 3, 21),
+        date: new Date(2023, 3, 23),
         author: "Améline",
         weather: "sun-fill", // sun-fill cloud-fill, cloud-rain-heavy-fill
         location: "Kickapoo Cavern State Park",
