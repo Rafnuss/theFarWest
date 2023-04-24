@@ -335,7 +335,7 @@
         <img fluid class="mb-3 card-img" src="https://lh3.googleusercontent.com/xIimWprh2jdhqv9t32_AC0NQOMvcwx8LWXPEoMleO82pHQUIi-C6QpL3ZKXqAkMiuGSIKxfxMX3ALkl73xSr2_kgxIdMhcMiTQjNR8X9zYvRoX6g8xyK4JtI25t9fHO8IgUh56S6b6g"/>
 
 
-        `,newsView:!1},{title:"Texas aux milles visages",lon:-100.452987,lat:29.610477,date:new Date(2023,3,21),author:"Améline",weather:"sun-fill",location:"Kickapoo Cavern State Park",region:"texas",content:`
+        `,newsView:!1},{title:"Texas aux milles visages",lon:-100.452987,lat:29.610477,date:new Date(2023,3,23),author:"Améline",weather:"sun-fill",location:"Kickapoo Cavern State Park",region:"texas",content:`
         <h4>Hablas español ?</h4>
         <p>Dans le sud du Texas, l'espagnol remplace l'anglais, les fast food font place aux taquerias (même si on peut toujours compter sur un ou deux McDo dans le coin), et les résidences luxueuses des montagnes du Colorado sont remplacées par des ranchs et petites demeures sobres (ou même carrément délabrées) - il faut de temps en temps se rappeler qu’on est encore aux Etats Unis ! Avec la chaleur, les journées commencent tôt et finissent tard, car les matinées et soirées sont les meilleurs moments pour être dehors. C’était du coup des journées assez chargées et plutôt fatigantes, ce qui a rendu très appréciable une soirée plus tranquille et une nuit plus longue, au bord du Rio Grande. 
 
