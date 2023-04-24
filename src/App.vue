@@ -101,7 +101,21 @@
                       <b-form-select v-model="game_selected[i]" :options="game_options" size="sm"></b-form-select>
                     </b-list-group-item>
                   </b-list-group>
-                  <b-button @click="checkNews" class="w-100 mt-2">Verifier</b-button>
+                  <b-button @click="checkNews" class="w-100 mt-2">Vérifier</b-button>
+                  <b-button
+                    @click="
+                      newsView = true;
+                      map.flyToBounds([
+                        [32, -100],
+                        [60, 7],
+                      ]);
+                    "
+                    variant="link"
+                    class="mt-2 w-100"
+                    size="sm"
+                  >
+                    J'abandonne. Désolé Mady, je ne te comprends pas !
+                  </b-button>
                   <b-alert show variant="danger" class="mt-2" v-if="newsTry > 0">
                     <h4 class="alert-heading">Nope ! Essai: {{ newsTry }}</h4>
                     <p>Pas tout à fait juste !</p>
@@ -329,9 +343,9 @@
                   <IconBase name="count" width="40" height="40" />
                   <div class="d-flex flex-column justify-content-center px-2">
                     <h2 class="pokemon mb-0 mt-2" style="font-size: 2.3rem; line-height: 0.8">
-                      {{ newsView ? 0 : numberWithSpaces(individualCount) }}
+                      {{ newsView ? 1 : numberWithSpaces(individualCount) }}
                     </h2>
-                    <span v-if="newsView">Nombre de kick </span>
+                    <span v-if="newsView">Nombre de kicks </span>
                     <span v-else>Oiseaux comptés</span>
                   </div>
                 </div>

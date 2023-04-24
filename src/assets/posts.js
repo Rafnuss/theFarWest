@@ -416,8 +416,8 @@ const posts_hard = [
     },
     {
         title: "Un défi pour vous !",
-        lon: -99.570814,
-        lat: 29.807560,
+        lon: -99.771835,
+        lat: 30.505727,
         date: new Date(2023, 3, 16),
         author: "Mady",
         weather: "sun-fill", // sun-fill cloud-fill, cloud-rain-heavy-fill
