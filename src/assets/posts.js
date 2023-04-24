@@ -531,6 +531,47 @@ const posts_hard = [
 
         newsView: false
     },
+
+    {
+        title: "Texas aux milles visages",
+        lon: -100.452987,
+        lat: 29.610477,
+        date: new Date(2023, 3, 21),
+        author: "Améline",
+        weather: "sun-fill", // sun-fill cloud-fill, cloud-rain-heavy-fill
+        location: "Kickapoo Cavern State Park",
+        region: "texas", //
+        content: `
+        <h4>Hablas español ?</h4>
+        <p>Dans le sud du Texas, l'espagnol remplace l'anglais, les fast food font place aux taquerias (même si on peut toujours compter sur un ou deux McDo dans le coin), et les résidences luxueuses des montagnes du Colorado sont remplacées par des ranchs et petites demeures sobres (ou même carrément délabrées) - il faut de temps en temps se rappeler qu’on est encore aux Etats Unis ! Avec la chaleur, les journées commencent tôt et finissent tard, car les matinées et soirées sont les meilleurs moments pour être dehors. C’était du coup des journées assez chargées et plutôt fatigantes, ce qui a rendu très appréciable une soirée plus tranquille et une nuit plus longue, au bord du Rio Grande. 
+
+        </p>
+
+        <img fluid class="mb-3 card-img" src="https://lh3.googleusercontent.com/9BXsjNA2sCjEJzC78--09FoFGGh0FCURtyVuaOgiIrqN02uDuyCgq0t-dtDncDhXwH1_ApMFs2sYABnRsOIbLxU4QfTt5CUcxv3pC4X1CWP7HCq34-yjRgjBHKa57fXc0huaxsbQZJ8"/>
+
+         <p>L'ambiance le long de la frontière était particulière, on est loin de l'esprit Schengen ! Interceptés à plusieurs reprises par des gardes frontières de nuit, dès qu'ils comprennent qu'on est migrants européens, on est traités avec une gentillesse extrême : ils nous souhaitent la bienvenue, cherchent à nous aider à atteindre notre destination, et nous invitent à être vigilants. Je ne peux m'empêcher d'imaginer le contraste présumé avec le traitement des migrants mexicains… </p>
+
+         <p>Sur la route, on passe régulièrement par des "border checkpoints" avec vérification des passeports. L'un des gardes frontières n'a même pas pris la peine d'ouvrir nos passeports : leur couleur et pays d'origine faisaient déjà office de laisser passer ("no need to check these, we like them!").</p>
+
+
+        <img fluid class="mb-3 card-img" src="https://lh3.googleusercontent.com/NQ7iTr64zNQk4nJAgDzbKI2gKbvCLXYxIM54_j7DszD7S9NL104wPHuwFgh4yV0QpEgotaiPmxV2GMKHRDwwBQ5iHt3cVnZCiobVAUqUGwCoNFaP0lYGVrrn8UQJ0FsZ9IRzWoeEBDE"/>
+
+        <h4>Changement d’atmosphère</h4>
+        <p>On a commencé à remonter vers le nord ouest hier, et on prend à nouveau conscience de l'immensité du Texas et de la diversité des paysages. 300km sur la même route avec plaines rocailleuses et canyons à perte de vue : on est vraiment dans le roadtrip américain ! Après la côte, les forêts, et les ranchs, nous voilà à présent à 1 800m d'altitude en montagne ! 
+        </p>
+
+        <img fluid class="mb-3 card-img" src="https://lh3.googleusercontent.com/Pi0_QUJocWLiuF_5h-pW_VsouzBqkd34yPg7FJiyWbPoqjta6O_bNxuJpHX0rhsTAOshKL09tGxlwsIbyKrxIOYATaMqy0fg_6SeJLHkCBP7hE-pvz-o4JQuRxxwQPT7XEqWXOsdmAk"/>
+
+        <p>A peine 4 heures de route vers le nord (et une nuit orageuse) plus tard, on a perdu 20 degrés. Première rando sous la pluie ce matin, on ressort les vestes et les bonnets, on ne s'attendait pas à les ré-utiliser aussi rapidement ! Après des journées bien chaudes au sud, la fraîcheur est presque appréciable (surtout après la douche chaude au camping). Ce parc est connu pour ses grottes de chauve souris : on a pu observer l’envol d’un million de Molosses du Brésil hier soir juste après le coucher du soleil, plutôt impressionnant ! (peut-être qu’on devrait commencer un nouveau compteur ?). </p>
+
+
+        
+
+
+        `,
+
+        newsView: false
+    },
 ]
 export default posts_hard
 
