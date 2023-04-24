@@ -387,7 +387,10 @@
                 </a>-->
                 <a
                   v-if="locations.length > 0"
-                  :href="'https://dashboard.birdcast.info/region/US-TX'"
+                  :href="
+                    'https://dashboard.birdcast.info/region/' +
+                    regions.reduce((acc, r) => (acc = r.active ? r.ebirdcode : acc), '')
+                  "
                   target="_blank"
                   class="d-flex align-items-baseline text-secondary"
                 >
