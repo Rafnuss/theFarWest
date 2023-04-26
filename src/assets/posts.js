@@ -572,6 +572,42 @@ const posts_hard = [
 
         newsView: false
     },
+    {
+        title: "L'aventure à l'oasis",
+        lon: -103.4670389,
+        lat: 29.4917768,
+        date: new Date(2023, 3, 25),
+        author: "Améline",
+        weather: "sun-fill", // sun-fill cloud-fill, cloud-rain-heavy-fill
+        location: "Christmas Mountain Oasis",
+        region: "texas", //
+        content: `
+       
+        <p>Ce qui devait être un rapide détour le temps d'une soirée s'est transformé en aventure un peu plus longue...
+        </p>
+        <div class="iframe-wrapper">
+        <iframe src="https://macaulaylibrary.org/asset/563197781/embed" frameborder="0"></iframe>
+    </div>
+        <p>L'idée était de passer à Christmas Mountain Oasis, un hotspot connu pour voir les <a href =”https://ebird.org/species/luchum” target=”_blank”>Colibri Lucifer</a>. Par contre notre planning n'avait pas pris en compte que la route pour y arriver était de plus en plus accidentée, plutôt conçue pour des pick up/4x4 que pour notre minivan ! Mais une fois engagés, difficile de faire demi tour… à quelques km de l'arrivée, après déjà 15-20 min de route non-goudronnée, on se retrouve face à un panneau "Private property, No trespassing", à côté d'un panneau indiquant une réserve d'oiseaux… que faire ? On est au Texas après tout, on ne rigole pas avec les propriétés privées. Et en même temps, c'est la seule route d'accès, comment les gens y arriveraient autrement ? Vu qu'on est déjà si proches du but, on décide de s'aventurer plus loin… c'est assez anxieux que l'on gravit les pentes rocailleuses pour arriver à cet oasis perdue au milieu de la montagne : la voiture va-t-elle tenir ? Y'aura-t-il une barrière nous forçant à faire marche arrière ? Le propriétaire nous attend-t-il au prochain virage avec un fusil ? (scénario à peine exagéré au Texas)</p>
+
+        <img fluid class="mb-3 card-img" src="https://lh3.googleusercontent.com/URVP-Ahg9AhY67vgszh3ColNzcyAfEbKxfKn9Mz-8Q38RpFw7Hhu566LJGL4KNwTX_uOaike-WpKggXwrkrxgYxpMjWnY0WLweQwyMdGekX9DSEWtKK9Q5Ww9mzeWbNwh3ENhFQq-oQ"/>
+
+         <p>Finalement, Dieu merci, on arrive sains et saufs à cet oasis, et la propriétaire en question nous accueille dans son petit paradis aux oiseaux - mis à part une règle "pas d'enfant"... mais maintenant qu'on est là, Mady est acceptée. On y trouve une multitude de mangeoires, des petites fontaines, des chemins ombragés, et des chaises dispersées un peu partout pour observer confortablement les zazos. Une anomalie écologique au milieu du paysage sec, entourés de buissons épineux et cactus ! </p>
+
+         <p>La propriétaire est un personnage particulier - une dame âgée seule, pas la plus avenante, et en même temps semble être en recherche de relation… Cela fait presque 30 ans qu'elle prend soin de ce lieu, seule dans sa montagne, nouveau level de passionnés d'oiseaux ?</p>
+
+
+         <img fluid class="mb-3 card-img" src="https://lh3.googleusercontent.com/HFAPkDkPeXVYvtnbc9yrNPDLL9VcaButhFQtGdf9OQ9rWYNcPvE5xaMX9n4_ZMB2qlA6jOJNifDSP289kM2x76Pjz0lpZkjpeoAib9Kw2WKbY9rgBm8AsAKuWYgNhTnsZtgkrTAwB6Q"/>
+        
+        <p>Vu l'aventure que c'était d'arriver dans ce coin perdu, et autorisés à rester jusqu'à l'arrivée d'autres birders (faudrait pas que Mady dérange les photographes), on décide de passer la nuit sur place. Cela permet de profiter d'une soirée tranquille - sûrs qu'ici on ne sera pas dérangés ! - et redescendre la montagne de jour. On y trouve le colibri en question ainsi que cinq autres lifers, et quelques migrants intéressants dont une <a href="https://ebird.org/species/camwar" target="_blank">Paruline tigrée</a>. Le matin, on profite d'un petit déjeuner face aux mangeoires et notre petit van survit à la descente de la montagne - une aventure qui se finit bien :) 
+
+        </p>
+
+       
+        `,
+
+        newsView: false
+    },
 ]
 export default posts_hard
 
