@@ -266,7 +266,7 @@
                 <b-icon
                   icon="binoculars-fill"
                   v-b-tooltip.hover="'Probabilité d\'observation régionale: ' + sp.value + '%'"
-                  :variant="sp.value > 3 ? 'success' : sp.value > 1 ? 'warning' : 'danger'"
+                  :variant="sp.value > 1 ? 'success' : sp.value > 0.5 ? 'warning' : 'danger'"
                 />
               </template>
             </b-table>
