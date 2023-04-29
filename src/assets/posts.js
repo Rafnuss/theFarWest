@@ -608,6 +608,38 @@ const posts_hard = [
 
         newsView: false
     },
+    {
+        title: "Big Bend",
+        lon: -103.298417,
+        lat: 29.272356,
+        date: new Date(2023, 3, 27),
+        author: "Améline",
+        weather: "sun-fill", // sun-fill cloud-fill, cloud-rain-heavy-fill
+        location: "Big Bend National Park",
+        region: "texas", //
+        content: `
+       
+        <p>On a passé les trois derniers jours au Parc National de Big Bend, au sud-ouest du Texas, le long de la frontière mexicaine. C'est le premier parc national de ce voyage, et le plus grand et touristique des parcs qu'on a visité jusqu'à présent. L'effet parc national semble amplifier les mesures de précaution liées à la chaleur : tout le monde se promène avec un grand chapeau pare soleil (qui ferait pleurer un parisien) et une gourde taille XXL, même sur des petits sentiers d'1km, ne sait-on jamais... </p>
+
+        <img fluid class="mb-3 card-img" src="https://lh3.googleusercontent.com/7U82Pbq-dwLet0kfHbH7t8Uu-4zTy8focl_rw1RsLfX46OZK8eQQ24jzgRDFHQuePbx7KHFUHHUX0xrhPXTX64SvnOaDHNUJ00FVYiJla-5yf9DV1qKqKdyU0jLX2AM-X6O3FVR-qYE"/>
+
+         <p>On s'essaye à une rando plus longue, avec un départ matinal de nuit pour éviter les grosses chaleurs. Un peu appréhensifs vis à vis de la longueur et du dénivelé, finalement on trouve que c'est comparable à nos randos en Suisse, il faut "juste" ajouter Mady dans l'équation ;) </p>
+         <p>Malgré les épaules en compote d'avoir porté Mady (là il faut assumer le choix d'un porte bébé léger et pas cher !), chacun y trouve son compte. Raph est content de trouver plusieurs <a href="https://ebird.org/species/colwar" target="_blank">Parulines de Colima</a>, qui nichent uniquement dans les hauteurs de ces montagnes, et constituaient donc l'espèce cible de ce Parc, ainsi que plusieurs autres lifers dans ces montagnes. De mon côté, je me régale de faire une rando plus longue qui me rappelle nos sorties en Suisse, et d'être entourée de ces sommets rocheux à la forme unique. Quant à Mady, après avoir fini sa nuit dans le porte bébé pendant la montée, elle est ravie de dévaler les sentiers de montagne : elle prend en confiance et découvre qu'elle n'a plus besoin de tenir la main des parents pour gambader toute seule et négocier ce petit parcours d'obstacles qu'est le chemin de montagne. Elle n'a fait "boom" que 8 fois sur la journée (!) et se relevait vaillamment pour continuer à chaque fois.  </p>
+
+        <img fluid class="mb-3 card-img" src="https://lh3.googleusercontent.com/xzPyt5TQYGy_07TWHjMavH8M6iKyRJyFoc4QqjUrZLxc_-ZFv5fU4cSY14RogUyzxoN0p_TAr1Emz4cqooQhh4rYerQP3xsNfZzzXLj2PolEcyfDLHAjbP78UONcAEGoThfQEyuOM7M"/>
+        
+
+         <p>Je profite aussi de me baigner dans le Rio Grande au coucher du soleil avec Mady. On a jugé d'un commun accord que les sources chaudes naturelles à côté étaient un peu trop chaudes par 30 degrés… (mais agréables pour y tremper les pieds !). La baignade est d'autant plus appréciable que les campings du parc n'ont pas de douches… ;) Dans l'ensemble une belle expérience pour clôre notre temps au Texas ! </p>
+
+         <img fluid class="mb-3 card-img" src="https://lh3.googleusercontent.com/YkUtxuqapE5S1r_pKIlRmzvNy7AmkLNB1MqVWEI4WQ6HwuAKmipEeD2yHpYtAK9x0071SW_jf_hgWsfYRpxOglJeDIW33y8fxMCFyM1LDuc1lfGljatG8Ia76JgKx8wQAnBemcIOoGk"/>
+
+
+
+       
+        `,
+
+        newsView: false
+    },
 ]
 export default posts_hard
 
