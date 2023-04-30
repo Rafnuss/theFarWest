@@ -33,7 +33,7 @@
         "end_date": "2023-5-1",
         "color": "#9e8e6d",
         "ebirdcode": "US-AZ",
-        "active": false
+        "active": true
     },
     {
         "region": "california",

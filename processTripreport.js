@@ -13,12 +13,12 @@ const tripreport = [
     },
     {
         id: 112350,
-        status: "live",
+        status: "past",
         retion: "texas",
     },
     {
         id: 112351,
-        status: "future",
+        status: "live",
         retion: "arizona",
     },
     {
