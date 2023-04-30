@@ -903,7 +903,39 @@ export default {
       .then((response) => response.json())
       .then((data) => {
         // Add new taxon from latest tripreport
-        this.taxon = [...past_taxon, ...data].reduce((acc, curr) => {
+        this.taxon = [
+          ...past_taxon,
+          ...data,
+          {
+            speciesCode: "spoowl",
+            category: "species",
+            commonName: "Spotted Owl",
+            sciName: "Strix occidentalis",
+            hideFlags: "S",
+            numIndividuals: 3,
+            numChecklists: 2,
+            numPhotos: 0,
+            numAudio: 0,
+            numVideo: 0,
+            isLifer: true,
+            numMedia: 0,
+          },
+          {
+            speciesCode: "gusgro",
+            category: "species",
+            commonName: "Gunnison Sage-Grouse",
+            sciName: "Centrocercus minimus",
+            hideFlags: "S",
+            numIndividuals: 10,
+            numChecklists: 1,
+            numPhotos: 3,
+            numAudio: 0,
+            numVideo: 0,
+            isLifer: true,
+            isPhotoLifer: true,
+            numMedia: 3,
+          },
+        ].reduce((acc, curr) => {
           const foundIndex = acc.findIndex((item) => item.speciesCode === curr.speciesCode);
           if (foundIndex !== -1) {
             acc[foundIndex].numIndividuals += curr.numIndividuals;
@@ -929,7 +961,7 @@ export default {
         let uslifercount = this.species_list.filter((sp) => (!sp.US_lifer | sp.seen) & (sp.exotic != "X")).length;
         //Lilac-crowned Parrot exotic in florida but P in california, but red-crown parrot is the opposite.
         //uslifercount = uslifercount;
-        this.animateUSliferCount(uslifercount);
+        this.animateUSliferCount(uslifercount - 1);
       })
       .catch((error) => console.error(error));
 
