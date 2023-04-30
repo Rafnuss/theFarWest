@@ -640,6 +640,41 @@ const posts_hard = [
 
         newsView: false
     },
+
+    {
+        title: "Calin !",
+        lon: -106.308122,
+        lat: 31.641256,
+        date: new Date(2023, 3, 28),
+        author: "Mady",
+        weather: "sun-fill", // sun-fill cloud-fill, cloud-rain-heavy-fill
+        location: "El Paso",
+        region: "texas", //
+        content: `
+       
+        <p>J'aime bien me promener dehors avec papa et maman, mais je deviens vite impatiente quand ils s'arrêtent toutes les 5 minutes pour chercher un oiseau ou enregistrer quelque chose (alors en plus il faut faire silence, pas facile). C'est pas faute d'essayer de tirer maman, elle refuse d'avancer. Difficile de garder un rythme de marche avec tout ça !</p>
+
+        <img fluid class="mb-3 card-img" src="https://lh3.googleusercontent.com/16k2YWLLiivNw7WSFKEmWQA4cLfpBLgk-rOWgWSYwQdNbqdTo0PRlBNeU5DWm57lH278jXInjohoNetlIXgPOUFLiG_h2yi9qBcd4UfidcOXFls-4u94qYm6HlPltwcMcgVe0PlqL8Q"/>
+
+         <p>Entre temps, je continue mes recherches pour comprendre pourquoi papa et maman passent leur temps à chercher des oiseaux… Grâce à mon livre de la Bible qu'on a commencé 15 fois, je commence à comprendre le message de la Création et j'ai une nouvelle théorie : Dieu aime toute la Création, et il a dit que tous les animaux étaient bons, donc papa et maman veulent faire pareil, aimer les oiseaux !
+         </p>
+
+        <img fluid class="mb-3 card-img" src="https://lh3.googleusercontent.com/3LRjtm288_fL08vTKuFe4ghLXEIbDeZz5ysXaEZdDUjBNJ4-BdZUDR4qZpr76YJntkKHfixUklzz2skFvk7VjFJzNITh0d-YVA_FXDz_P_By__CgAf2XIRlapNKPaiZN0PELS5CnhsQ"/>
+        
+
+         <p>Alors j'essaye de participer à leur mission : dès que je vois un oiseau ou un animal, je cours vers lui pour lui faire un câlin. Malheureusement jusqu’à présent ils n’étaient pas très réceptifs, ils s'enfuient souvent avant que j'arrive. J'ai essayé avec des geais, des pigeons, un géocoucou, une biche et un écureuil, mais tous sont trop rapides… Bien sûr je leur dis toujours bye bye quand ils partent se cacher dans les buissons. Je persévère dans cette mission, si vous avez des conseils sur comment s'y prendre, tenez-moi au courant !
+         </p>
+         
+
+         <img fluid class="mb-3 card-img" src="https://lh3.googleusercontent.com/s6AtRxsiSkNDzEXWBOwdJPFwBjfyh7VsynJoYM3PMjkv2oCmkStZmKm6z-HGreaQKGgxidPZHRF6pdxtqbqBxf1sZnF_gbYASprrYAGS7IfZVjH8BknlzDOqDwoIWbHmmqGhLT5vjhA"/>
+
+         <p>PS: j'ai commencé une nouvelle collection: les pommes de pin !</p>
+
+       
+        `,
+
+        newsView: false
+    },
 ]
 export default posts_hard
 
