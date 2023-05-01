@@ -474,28 +474,16 @@ const posts_hard = [
         content: `
         <h4>Back on the road !</h4>
         <p>Grâce à la gentillesse de Mme Neto, l'expertise de M. Neto, et l'efficacité de M. Neto Jr., nous voici de retour sur la route à peine 24h plus tard ! On espère qu'avec une nouvelle transmission, c'est la fin de nos aventures mécaniques dans ce domaine. </p>
-
         <img fluid class="mb-3 card-img" src=" https://lh3.googleusercontent.com/G-FAatvKTfxf_e-Sm3QsuVBFIwEOrFieLwlbUzqmzCt-vnWMqOQX89P8cndtMrIVEppdfsQOUeZYxLEHW0ju3Is3jbzxihwWSgWUTYT2Wf8oAg1-RFsbniDvEqLx6DHLWgWbqbo1nzA"/>
-       
         <p>Alors qu'on avait raté quelques cibles à notre arrivée dans le sud, la première matinée avec la voiture réparée nous a permis de rattraper notre retard avec quelques jolies coches : <a href=”https://ebird.org/species/grbani” target=”_blank”>l’Ani à bec cannelé</a> et <a href=”https://ebird.org/species/altori/L613081” target=”_blank”>l’Oriole d’Altamira</a>. Il nous reste toujours la <a href=”https://ebird.org/species/fepowl” target=”_blank”>Chevêchette brune</a> qu’on a déjà cherché plusieurs heures sans succès… Elle serait éventuellement possible en Arizona, on espère l'y trouver la-bas.</p>
-
         <h4>Haut lieu de migration</h4>
         <p>Le sud du Texas est connu pour être un couloir de migration important pour les oiseaux. Bien que ce ne soit pas directement notre objectif de chercher les espèces de passage, on a pu voir quelques espèces rares, observer les limicoles et fauvettes (warblers) en migration sur la côte, et des centaines de rapaces en migration plus à l’intérieur des terres.</p>
-        
         <p>Ce mouvement synchrone de plusieurs milliards d'oiseaux à travers tous les continents est un des aspects des oiseaux qui me passionne le plus, et j'ai la chance de pouvoir travailler dessus ! Pour visualiser la migration avec nous, vous pouvez cliquer sur “Prévisions de migration” en haut à droite, pour suivre les conditions de migration prédites par Birdcast (mon groupe de recherche à Ithaca).
-
         <img fluid class="mb-3 card-img" src="https://drive.google.com/uc?export=view&id=1subBNe3QCp8mbpIGsHCtuVkuOV7GRaQm"/>
-
         <h4>Quel lien avec mon travail ?</h4>
-
         <p>J’en profite pour vous partager un peu l’objet de ma recherche sur la migration. Jusqu’à présent, Birdcast utilise des radars météo pour étudier des oiseaux migratoires en vol. Cela permet, entre autres, d’identifier les lieux de forte migration à l’avance et de mettre en place des mesures de conservation (éteindre les lumières des bâtiments pour ne pas désorienter les oiseaux, arrêter les éoliennes, etc.).</p> 
-        
         <p>Ma recherche vise à étendre l'utilisation de données radar pour comprendre les mouvements des oiseaux vers et depuis le sol pendant leur migration. La plupart des oiseaux migrent de nuit et se posent au sol en journée pour se reposer et reprendre des forces. Protéger les oiseaux migratoires nécessite donc aussi de comprendre où ils se posent. Mon projet ces deux dernières années a été de montrer que notre approche est cohérente avec les informations sur les oiseaux au sol (données eBird). Similaire aux cartes déjà disponibles sur la migration en l'air, j'espère pouvoir créer des cartes live montrant où les oiseaux se sont posés au sol chaque jour. </p>
-
         `,
-
-
-
         newsView: false
     },
     {
@@ -511,27 +499,18 @@ const posts_hard = [
         <h4>Le déclic</h4>
         <p>Ça y est, j’ai compris l’objectif de ce voyage ! C'est ni pour les cailloux ni pour les bâtons (même si je continue d'en trouver plein), mais pour chercher les “zazos” (ndlr: oiseaux). C'est pour ça que papa décide de marcher sur la route plutôt que de rester dans la voiture avec nous, ou se couche par terre dehors... Maintenant je pointe les oiseaux et je regarde dans mes jumelles pour faire comme les grands !
         </p>
-
         <img fluid class="mb-3 card-img" src="https://lh3.googleusercontent.com/LpwuCH3zlRinqxpHAzkuHsDNxL65xBRfhgmaQh6mvSYyZSXNL9rdxuHDHwmWxmM6extnPcCCpDuesWHvHNpZSaAaZTOvF3LhgV628ekGvg6rpWNyW-rv_8hUcOYi7Rnh50ef3WYrFQg"/>
-
         <h4>Tête en l'air</h4>
         <p>Ces derniers jours, on a passé beaucoup de temps sur une plateforme avec plein d'autres personnes, tous la tête levée vers le ciel. J’essayais de faire comme eux avec mes jumelles pour être acceptée dans leur bande, mais en vrai je voyais rien, du coup je me suis rabattue sur les papillons posés à mes pieds. C'était un peu long, alors pour passer le temps j’ai proposé à papa et maman d'échanger de chaussures: moi ca marchait très bien, mais eux ils voulaient pas essayer les miennes. J'ai aussi créé des parcours de course pour m’entraîner à courir et sauter, jusqu’à ce que papa me disent d’arrêter, soit disant je ferais tout trembler. Les gens ont complimenté papa et maman que j’étais sage sur la plateforme, j’étais plutôt contente (mais je pouvais pas rougir, j’étais déjà toute rouge à cause du soleil qui tapait fort).
         </p>
-
         <img fluid class="mb-3 card-img" src="https://lh3.googleusercontent.com/95hv1wClpi1_UKfcVsSv5TuyjMTryluMavSvD_yXr37ydLcclQHqlQ0R2WHVbn-z88OzAGUrFCsZlHEyf1bSlGTj54y8jjjlNgRUymOCqSseh2ZJ7povjN6BfN5fMbhgTE3oO-xaS9k"/>
-
         <h4>Le petit bus</h4>
         <p>C'est pas toujours facile de chercher des oiseaux, il faut beaucoup marcher et parfois c'est fatigant. J'essaye d'aller dire bonjour aux oiseaux, mais ils s'enfuient trop vite, pas très sympa !</p> 
         <p>Hier les parents m'ont forcé à marcher pendant des heures (ndlr: une heure max) et refusaient de prendre le petit bus blanc que je leur pointais à chaque fois qu'il passait. Ce matin, enfin, on a eu le droit de monter dedans ! C'est tellement plus facile que de marcher, et encore mieux que dans le dos de papa. Un monsieur nous a même donné de l'eau fraîche, il a dû voir nos visages tous rouges et nos gourdes vides. C'est bien pratique une bouteille vide pour y collectioner des petits cailloux !</p>
-
         <img fluid class="mb-3 card-img" src="https://lh3.googleusercontent.com/xIimWprh2jdhqv9t32_AC0NQOMvcwx8LWXPEoMleO82pHQUIi-C6QpL3ZKXqAkMiuGSIKxfxMX3ALkl73xSr2_kgxIdMhcMiTQjNR8X9zYvRoX6g8xyK4JtI25t9fHO8IgUh56S6b6g"/>
-
-
         `,
-
         newsView: false
     },
-
     {
         title: "Texas aux milles visages",
         lon: -100.452987,
@@ -544,32 +523,17 @@ const posts_hard = [
         content: `
         <h4>Hablas español ?</h4>
         <p>Dans le sud du Texas, l'espagnol remplace l'anglais, les fast food font place aux taquerias (même si on peut toujours compter sur un ou deux McDo dans le coin), et les résidences luxueuses des montagnes du Colorado sont remplacées par des ranchs et petites demeures sobres (ou même carrément délabrées) - il faut de temps en temps se rappeler qu’on est encore aux Etats Unis ! Avec la chaleur, les journées commencent tôt et finissent tard, car les matinées et soirées sont les meilleurs moments pour être dehors. C’était du coup des journées assez chargées et plutôt fatigantes, ce qui a rendu très appréciable une soirée plus tranquille et une nuit plus longue, au bord du Rio Grande. 
-
         </p>
-
         <img fluid class="mb-3 card-img" src="https://lh3.googleusercontent.com/9BXsjNA2sCjEJzC78--09FoFGGh0FCURtyVuaOgiIrqN02uDuyCgq0t-dtDncDhXwH1_ApMFs2sYABnRsOIbLxU4QfTt5CUcxv3pC4X1CWP7HCq34-yjRgjBHKa57fXc0huaxsbQZJ8"/>
-
          <p>L'ambiance le long de la frontière était particulière, on est loin de l'esprit Schengen ! Interceptés à plusieurs reprises par des gardes frontières de nuit, dès qu'ils comprennent qu'on est migrants européens, on est traités avec une gentillesse extrême : ils nous souhaitent la bienvenue, cherchent à nous aider à atteindre notre destination, et nous invitent à être vigilants. Je ne peux m'empêcher d'imaginer le contraste présumé avec le traitement des migrants mexicains… </p>
-
          <p>Sur la route, on passe régulièrement par des "border checkpoints" avec vérification des passeports. L'un des gardes frontières n'a même pas pris la peine d'ouvrir nos passeports : leur couleur et pays d'origine faisaient déjà office de laisser passer ("no need to check these, we like them!").</p>
-
-
         <img fluid class="mb-3 card-img" src="https://lh3.googleusercontent.com/NQ7iTr64zNQk4nJAgDzbKI2gKbvCLXYxIM54_j7DszD7S9NL104wPHuwFgh4yV0QpEgotaiPmxV2GMKHRDwwBQ5iHt3cVnZCiobVAUqUGwCoNFaP0lYGVrrn8UQJ0FsZ9IRzWoeEBDE"/>
-
         <h4>Changement d’atmosphère</h4>
         <p>On a commencé à remonter vers le nord ouest hier, et on prend à nouveau conscience de l'immensité du Texas et de la diversité des paysages. 300km sur la même route avec plaines rocailleuses et canyons à perte de vue : on est vraiment dans le roadtrip américain ! Après la côte, les forêts, et les ranchs, nous voilà à présent à 1 800m d'altitude en montagne ! 
         </p>
-
         <img fluid class="mb-3 card-img" src="https://lh3.googleusercontent.com/Pi0_QUJocWLiuF_5h-pW_VsouzBqkd34yPg7FJiyWbPoqjta6O_bNxuJpHX0rhsTAOshKL09tGxlwsIbyKrxIOYATaMqy0fg_6SeJLHkCBP7hE-pvz-o4JQuRxxwQPT7XEqWXOsdmAk"/>
-
         <p>A peine 4 heures de route vers le nord (et une nuit orageuse) plus tard, on a perdu 20 degrés. Première rando sous la pluie ce matin, on ressort les vestes et les bonnets, on ne s'attendait pas à les ré-utiliser aussi rapidement ! Après des journées bien chaudes au sud, la fraîcheur est presque appréciable (surtout après la douche chaude au camping). Ce parc est connu pour ses grottes de chauve souris : on a pu observer l’envol d’un million de Molosses du Brésil hier soir juste après le coucher du soleil, plutôt impressionnant ! (peut-être qu’on devrait commencer un nouveau compteur ?). </p>
-
-
-        
-
-
         `,
-
         newsView: false
     },
     {
@@ -582,30 +546,19 @@ const posts_hard = [
         location: "Christmas Mountain Oasis",
         region: "texas", //
         content: `
-       
         <p>Ce qui devait être un rapide détour le temps d'une soirée s'est transformé en aventure un peu plus longue...
         </p>
         <div class="iframe-wrapper">
         <iframe src="https://macaulaylibrary.org/asset/563197781/embed" frameborder="0"></iframe>
     </div>
         <p>L'idée était de passer à Christmas Mountain Oasis, un hotspot connu pour voir les <a href =”https://ebird.org/species/luchum” target=”_blank”>Colibri Lucifer</a>. Par contre notre planning n'avait pas pris en compte que la route pour y arriver était de plus en plus accidentée, plutôt conçue pour des pick up/4x4 que pour notre minivan ! Mais une fois engagés, difficile de faire demi tour… à quelques km de l'arrivée, après déjà 15-20 min de route non-goudronnée, on se retrouve face à un panneau "Private property, No trespassing", à côté d'un panneau indiquant une réserve d'oiseaux… que faire ? On est au Texas après tout, on ne rigole pas avec les propriétés privées. Et en même temps, c'est la seule route d'accès, comment les gens y arriveraient autrement ? Vu qu'on est déjà si proches du but, on décide de s'aventurer plus loin… c'est assez anxieux que l'on gravit les pentes rocailleuses pour arriver à cet oasis perdue au milieu de la montagne : la voiture va-t-elle tenir ? Y'aura-t-il une barrière nous forçant à faire marche arrière ? Le propriétaire nous attend-t-il au prochain virage avec un fusil ? (scénario à peine exagéré au Texas)</p>
-
         <img fluid class="mb-3 card-img" src="https://lh3.googleusercontent.com/URVP-Ahg9AhY67vgszh3ColNzcyAfEbKxfKn9Mz-8Q38RpFw7Hhu566LJGL4KNwTX_uOaike-WpKggXwrkrxgYxpMjWnY0WLweQwyMdGekX9DSEWtKK9Q5Ww9mzeWbNwh3ENhFQq-oQ"/>
-
          <p>Finalement, Dieu merci, on arrive sains et saufs à cet oasis, et la propriétaire en question nous accueille dans son petit paradis aux oiseaux - mis à part une règle "pas d'enfant"... mais maintenant qu'on est là, Mady est acceptée. On y trouve une multitude de mangeoires, des petites fontaines, des chemins ombragés, et des chaises dispersées un peu partout pour observer confortablement les zazos. Une anomalie écologique au milieu du paysage sec, entourés de buissons épineux et cactus ! </p>
-
          <p>La propriétaire est un personnage particulier - une dame âgée seule, pas la plus avenante, et en même temps semble être en recherche de relation… Cela fait presque 30 ans qu'elle prend soin de ce lieu, seule dans sa montagne, nouveau level de passionnés d'oiseaux ?</p>
-
-
          <img fluid class="mb-3 card-img" src="https://lh3.googleusercontent.com/HFAPkDkPeXVYvtnbc9yrNPDLL9VcaButhFQtGdf9OQ9rWYNcPvE5xaMX9n4_ZMB2qlA6jOJNifDSP289kM2x76Pjz0lpZkjpeoAib9Kw2WKbY9rgBm8AsAKuWYgNhTnsZtgkrTAwB6Q"/>
-        
         <p>Vu l'aventure que c'était d'arriver dans ce coin perdu, et autorisés à rester jusqu'à l'arrivée d'autres birders (faudrait pas que Mady dérange les photographes), on décide de passer la nuit sur place. Cela permet de profiter d'une soirée tranquille - sûrs qu'ici on ne sera pas dérangés ! - et redescendre la montagne de jour. On y trouve le colibri en question ainsi que cinq autres lifers, et quelques migrants intéressants dont une <a href="https://ebird.org/species/camwar" target="_blank">Paruline tigrée</a>. Le matin, on profite d'un petit déjeuner face aux mangeoires et notre petit van survit à la descente de la montagne - une aventure qui se finit bien :) 
-
         </p>
-
-       
         `,
-
         newsView: false
     },
     {
@@ -618,29 +571,16 @@ const posts_hard = [
         location: "Big Bend National Park",
         region: "texas", //
         content: `
-       
         <p>On a passé les trois derniers jours au Parc National de Big Bend, au sud-ouest du Texas, le long de la frontière mexicaine. C'est le premier parc national de ce voyage, et le plus grand et touristique des parcs qu'on a visité jusqu'à présent. L'effet parc national semble amplifier les mesures de précaution liées à la chaleur : tout le monde se promène avec un grand chapeau pare soleil (qui ferait pleurer un parisien) et une gourde taille XXL, même sur des petits sentiers d'1km, ne sait-on jamais... </p>
-
         <img fluid class="mb-3 card-img" src="https://lh3.googleusercontent.com/7U82Pbq-dwLet0kfHbH7t8Uu-4zTy8focl_rw1RsLfX46OZK8eQQ24jzgRDFHQuePbx7KHFUHHUX0xrhPXTX64SvnOaDHNUJ00FVYiJla-5yf9DV1qKqKdyU0jLX2AM-X6O3FVR-qYE"/>
-
          <p>On s'essaye à une rando plus longue, avec un départ matinal de nuit pour éviter les grosses chaleurs. Un peu appréhensifs vis à vis de la longueur et du dénivelé, finalement on trouve que c'est comparable à nos randos en Suisse, il faut "juste" ajouter Mady dans l'équation ;) </p>
          <p>Malgré les épaules en compote d'avoir porté Mady (là il faut assumer le choix d'un porte bébé léger et pas cher !), chacun y trouve son compte. Raph est content de trouver plusieurs <a href="https://ebird.org/species/colwar" target="_blank">Parulines de Colima</a>, qui nichent uniquement dans les hauteurs de ces montagnes, et constituaient donc l'espèce cible de ce Parc, ainsi que plusieurs autres lifers dans ces montagnes. De mon côté, je me régale de faire une rando plus longue qui me rappelle nos sorties en Suisse, et d'être entourée de ces sommets rocheux à la forme unique. Quant à Mady, après avoir fini sa nuit dans le porte bébé pendant la montée, elle est ravie de dévaler les sentiers de montagne : elle prend en confiance et découvre qu'elle n'a plus besoin de tenir la main des parents pour gambader toute seule et négocier ce petit parcours d'obstacles qu'est le chemin de montagne. Elle n'a fait "boom" que 8 fois sur la journée (!) et se relevait vaillamment pour continuer à chaque fois.  </p>
-
         <img fluid class="mb-3 card-img" src="https://lh3.googleusercontent.com/xzPyt5TQYGy_07TWHjMavH8M6iKyRJyFoc4QqjUrZLxc_-ZFv5fU4cSY14RogUyzxoN0p_TAr1Emz4cqooQhh4rYerQP3xsNfZzzXLj2PolEcyfDLHAjbP78UONcAEGoThfQEyuOM7M"/>
-        
-
          <p>Je profite aussi de me baigner dans le Rio Grande au coucher du soleil avec Mady. On a jugé d'un commun accord que les sources chaudes naturelles à côté étaient un peu trop chaudes par 30 degrés… (mais agréables pour y tremper les pieds !). La baignade est d'autant plus appréciable que les campings du parc n'ont pas de douches… ;) Dans l'ensemble une belle expérience pour clôre notre temps au Texas ! </p>
-
          <img fluid class="mb-3 card-img" src="https://lh3.googleusercontent.com/YkUtxuqapE5S1r_pKIlRmzvNy7AmkLNB1MqVWEI4WQ6HwuAKmipEeD2yHpYtAK9x0071SW_jf_hgWsfYRpxOglJeDIW33y8fxMCFyM1LDuc1lfGljatG8Ia76JgKx8wQAnBemcIOoGk"/>
-
-
-
-       
         `,
-
         newsView: false
     },
-
     {
         title: "Calin !",
         lon: -106.308122,
@@ -651,30 +591,50 @@ const posts_hard = [
         location: "El Paso",
         region: "texas", //
         content: `
-       
         <p>J'aime bien me promener dehors avec papa et maman, mais je deviens vite impatiente quand ils s'arrêtent toutes les 5 minutes pour chercher un oiseau ou enregistrer quelque chose (alors en plus il faut faire silence, pas facile). C'est pas faute d'essayer de tirer maman, elle refuse d'avancer. Difficile de garder un rythme de marche avec tout ça !</p>
-
         <img fluid class="mb-3 card-img" src="https://lh3.googleusercontent.com/16k2YWLLiivNw7WSFKEmWQA4cLfpBLgk-rOWgWSYwQdNbqdTo0PRlBNeU5DWm57lH278jXInjohoNetlIXgPOUFLiG_h2yi9qBcd4UfidcOXFls-4u94qYm6HlPltwcMcgVe0PlqL8Q"/>
-
          <p>Entre temps, je continue mes recherches pour comprendre pourquoi papa et maman passent leur temps à chercher des oiseaux… Grâce à mon livre de la Bible qu'on a commencé 15 fois, je commence à comprendre le message de la Création et j'ai une nouvelle théorie : Dieu aime toute la Création, et il a dit que tous les animaux étaient bons, donc papa et maman veulent faire pareil, aimer les oiseaux !
          </p>
-
         <img fluid class="mb-3 card-img" src="https://lh3.googleusercontent.com/3LRjtm288_fL08vTKuFe4ghLXEIbDeZz5ysXaEZdDUjBNJ4-BdZUDR4qZpr76YJntkKHfixUklzz2skFvk7VjFJzNITh0d-YVA_FXDz_P_By__CgAf2XIRlapNKPaiZN0PELS5CnhsQ"/>
-        
-
          <p>Alors j'essaye de participer à leur mission : dès que je vois un oiseau ou un animal, je cours vers lui pour lui faire un câlin. Malheureusement jusqu’à présent ils n’étaient pas très réceptifs, ils s'enfuient souvent avant que j'arrive. J'ai essayé avec des geais, des pigeons, un géocoucou, une biche et un écureuil, mais tous sont trop rapides… Bien sûr je leur dis toujours bye bye quand ils partent se cacher dans les buissons. Je persévère dans cette mission, si vous avez des conseils sur comment s'y prendre, tenez-moi au courant !
          </p>
-         
-
          <img fluid class="mb-3 card-img" src="https://lh3.googleusercontent.com/s6AtRxsiSkNDzEXWBOwdJPFwBjfyh7VsynJoYM3PMjkv2oCmkStZmKm6z-HGreaQKGgxidPZHRF6pdxtqbqBxf1sZnF_gbYASprrYAGS7IfZVjH8BknlzDOqDwoIWbHmmqGhLT5vjhA"/>
-
          <p>PS: j'ai commencé une nouvelle collection: les pommes de pin !</p>
-
-       
         `,
-
         newsView: false
     },
+    {
+        title: "Coloriage de birder",
+        lon: -109.825804,
+        lat: 32.233684,
+        date: new Date(2023, 3, 29),
+        author: "Raphaël",
+        weather: "sun-fill", // sun-fill cloud-fill, cloud-rain-heavy-fill
+        location: "",
+        region: "arizona", //
+        content: `
+        <p>Avec un peu de retard, voici un petit article pour clore le Texas et introduire l'Arizona.</p>
+        <h4>Coloriage</h4>
+        <img fluid class="mb-3 card-img" src="https://lh3.googleusercontent.com/pw/AJFCJaXjAFidt22RcZyyCaxKtrrfZFk0Ci7clN0_PpU2z2wlkPN7oYHi12kcvx5vEFT7svVpYWYArmE7pqH6xhx4UCubL2CwVMB7cuj4rcJk_3_13M8ggaiE"/>
+        <p>Vivre dans une voiture offre beaucoup de flexibilité sur la route empruntée et l'endroit où dormir, mais a quelques lacunes en services électroniques. Nous devons donc nous arrêter tous les jours (ou presque) dans un lieu pour recharger les batteries, planifier la suite du trip, écrire les blogs, etc. Souvent, ça se finit au McDo (1$ le café avec wifi et prises à disposition - c'est dur à battre !). Mady s'occupe en jouant dans leurs aires de jeux avec d'autres d'enfants ou à faire du coloriage.</p>
+        <p>De notre côté, on fait aussi une forme de coloriage. Au-dela de l'objectif principal du trip de voir un max d'espèces aux US, on a quelques objectifs secondaires : voir un max d'espèces dans chaque état et essayer de voir au moins une espèce dans chaque "county" (=comté) que l'on traverse. Pourquoi ? Ne pas m'ennuyer en roulant, travailler mon identification par jizz et, comme Mady, colorier la carte ! En effet, eBird offre un <a href ="https://ebird.org/profile/NDk3NjE1/US" target="_blank">visuel sympa pour voir le nombre d'espèces vues par région à differentes échelles</a>.</p>
+        
+        <a href ="https://ebird.org/profile/NDk3NjE1/US-TX" target="_blank"><img fluid class="mb-3 card-img" src="https://drive.google.com/uc?export=view&id=11Wg3SOjfYlS8W0ha26d6iyeksBYYmohe"/></a>
+    
+        <h4>Le Texas en quelques chiffres</h4>
+        <p>Le Texas a été très prolifique pour tous nos objectifs : en deux semaines, on a eu 105 US lifers (95 lifers monde) ! Avec un total de 308 espèces, le Texas est passé devant l'état de New York où on à passé plus d'un an et demi (286 espèces), avec presque autant d'espèces que la Suisse où j'ai habité 8 ans (311 espèces). On a aussi pris <a href="https://media.ebird.org/catalog?searchField=user&userId=USER497615&sort=rating_rank_desc&unconfirmed=incl&regionCode=US-TX&beginMonth=4&endMonth=12&beginYear=2023&endYear=2023" target="_blank">500 photos et presque 100 audios</a> ! </p>
+   
+        <h4>Arizona</h4>
+
+        <img fluid class="mb-3 card-img" src="https://lh3.googleusercontent.com/pw/AJFCJaVBCg5Fa_ANJNgVEtUTdq_ehjm2JMgWyvEVayMrbrhmu9hvW5WBukG85WCH3E49wmdHsCHir_bcTQ8BHUDsEX92kIxu7FA8gYEDkJmAcQbN1sUuwAQx"/>
+
+        <p>Après avoir quitté Big Bend, on a pris la route vers l'Arizona en continuant de suivre au plus près la frontière mexicaine. Nous avons fait un petit detour pour chercher <a href="https://ebird.org/checklist/S135495256#whiwag" target="_blank">une Bergeronnette grise</a> - oui, la même espèce qui se trouve partout en Europe ! Mais cette fois c'est la sous-espèce asiatique que l'on voit, un petit bonus non-prévu ! </p>
+        <img fluid class="mb-3 card-img" src="https://lh3.googleusercontent.com/pw/AJFCJaVswtDyD_bRvQOGpBMYCQqZhpC-RX1NOhg4JmolJpKnZYUDW3NIuJkEb0fsCRdsQ1mHCP_FW285WFJ2AM9m_RXDYjGAfoxG9ftkBjuc97c-9_8Kq1CL"/>
+        <p>La plupart des espèces à distribution limitée sont localisées dans les montagnes de l'Arizona, qui constituent un habitat similaire au Mexique, attirant donc beaucoup d'espèces mexicaines. L'Arizona est aussi connu pour ses colibris, qu'il faudra chercher à proximité des mangeoires. </p>
+
+        `,
+        newsView: false
+    }
 ]
 export default posts_hard
 
@@ -687,7 +647,7 @@ export default posts_hard
         author: "",
         weather: "", // sun-fill cloud-fill, cloud-rain-heavy-fill
         location: "",
-        region: "texas", //
+        region: "arizona", //
         content: `
 <h4>Tout s’accélère</h4>
 <p></p>

@@ -343,7 +343,7 @@
                   <IconBase name="count" width="40" height="40" />
                   <div class="d-flex flex-column justify-content-center px-2">
                     <h2 class="pokemon mb-0 mt-2" style="font-size: 2.3rem; line-height: 0.8">
-                      {{ newsView ? 1 : numberWithSpaces(individualCount) }}
+                      {{ newsView ? 8 : numberWithSpaces(individualCount) }}
                     </h2>
                     <span v-if="newsView">Nombre de kicks </span>
                     <span v-else>Oiseaux comptés</span>
