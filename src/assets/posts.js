@@ -610,7 +610,7 @@ const posts_hard = [
         date: new Date(2023, 3, 29),
         author: "Raphaël",
         weather: "sun-fill", // sun-fill cloud-fill, cloud-rain-heavy-fill
-        location: "",
+        location: "Willcox",
         region: "arizona", //
         content: `
         <p>Avec un peu de retard, voici un petit article pour clore le Texas et introduire l'Arizona.</p>
@@ -631,6 +631,46 @@ const posts_hard = [
         <p>Après avoir quitté Big Bend, on a pris la route vers l'Arizona en continuant de suivre au plus près la frontière mexicaine. Nous avons fait un petit detour pour chercher <a href="https://ebird.org/checklist/S135495256#whiwag" target="_blank">une Bergeronnette grise</a> - oui, la même espèce qui se trouve partout en Europe ! Mais cette fois c'est la sous-espèce asiatique que l'on voit, un petit bonus non-prévu ! </p>
         <img fluid class="mb-3 card-img" src="https://lh3.googleusercontent.com/pw/AJFCJaVswtDyD_bRvQOGpBMYCQqZhpC-RX1NOhg4JmolJpKnZYUDW3NIuJkEb0fsCRdsQ1mHCP_FW285WFJ2AM9m_RXDYjGAfoxG9ftkBjuc97c-9_8Kq1CL"/>
         <p>La plupart des espèces à distribution limitée sont localisées dans les montagnes de l'Arizona, qui constituent un habitat similaire au Mexique, attirant donc beaucoup d'espèces mexicaines. L'Arizona est aussi connu pour ses colibris, qu'il faudra chercher à proximité des mangeoires. </p>
+
+        `,
+        newsView: false
+    },
+
+    {
+        title: "Welcome to Arizona !",
+        lon: -109.141545,
+        lat: 31.914054,
+        date: new Date(2023, 4, 1),
+        author: "Améline",
+        weather: "sun-fill", // sun-fill cloud-fill, cloud-rain-heavy-fill
+        location: "Portal",
+        region: "arizona", //
+        content: `
+        <h4>Premières 24h prolifiques</h4>
+        
+        <p>Notre première nuit en Arizona nous amène dans les montagnes pour y chercher la Chouette tachetée. Malheureusement pour mon sommeil, cela implique de se réveiller régulièrement la nuit pour écouter si elle chante… La chouette en question s'est montrée un peu capricieuse : elle a refusé de chanter lorsqu'on était réveillés, mais heureusement Raph l'a entendu alors qu'il dormait a moitié (l'oreille de birder, réveillé par une chouette mais pas par sa fille qui pleure :P ) - un soulagement qu'on ait pas besoin de remettre ça le lendemain ! Grâce au conseil d'un autre birder qui nous indique où la trouver, on a aussi pu l'observer de jour par la suite, plutôt rare pour une chouette (photo à suivre).
+
+
+        </p>
+        <img fluid class="mb-3 card-img" src="https://lh3.googleusercontent.com/w3W2CKIbcb8WPdgPDYAlOhMeNYRhFYiSGcS5OGE1qM1topKgjy6IAaDYMMsPGaaXdYl8Bmt4L2muXBMkAh1ruugRC18OizmBCawchHcVwP1Cp4FCdIcWZZPKTac3RtxW6GuFaq1NqTQ"/>
+        <p>Réveillé à 5h du matin (avec le décalage horaire, le soleil se lève a 5h30 !), Raph fait 6 lifers en l'espace de 5 minutes pendant qu'on traine au lit - Arizona commence bien ! La matinée s'annonce bonne, avec pas mal de migration de passeraux au col où on se pose pour petit déjeuner. On continue avec une rando dans les montagnes jusqu'à un camping abandonné qui visiblement n'attire plus que les oiseaux et les birders ;) Pendant que certain(e)s mangent, d'autres y trouvent encore quelques nouvelles parulines, mésanges mexicaines et gobe-mouches. On s'évite la descente en faisant du stop - mes épaules sont reconnaissantes que Mady ait trouvé un autre moyen de locomotion !
+        </p>
+   
+        
+
+        <img fluid class="mb-3 card-img" src="https://lh3.googleusercontent.com/Ov2O_rp36Um8oFMP9o3k4IMiBKq-JICQEpKmjm6NiOTF3oIVLW5tpUNUkaHRIwpth8hU404UoaqwJklrWBqJTagUyUTjLSWaWDUEcgJlpc6ZdGcm0R2Vh6aaygW7LmH0a86LpV6oIwA"/>
+
+        <h4>Le village des oiselleurs</h4>
+
+        <p>On se dirige ensuite vers le petit village de Portal, centré autour un café fréquenté quasi exclusivement par des birders, avec une terrasse entourée de mangeoires. Les locaux sont très sympas, Mady reçoit même une glace gratuite pour la consoler quand elle se réveille de sa sieste ! (elle a la vie dure non ?!). Certains habitants ont installé une collection de mangeoires et des chaises dans leur jardin, et ouvrent leurs portes aux birders pour y observer zazos en général, et en particulier les colibris. On se prête à cette activité quelques heures (birding plutôt reposant pour une fois ;) ), avec un succès mitigé: les colibris sont plus difficiles qu'anticipé ! Les mangeoires sont si proches que même Mady pointe les colibris qui vrillent a quelques mètres de nous. 
+        </p>
+        <img fluid class="mb-3 card-img" src="https://lh3.googleusercontent.com/Fd_kZPzGPitmmJVALm-0_20enkmt4awsTqc7Z3XJ0sgHtuUMEW0zVHD1zcKspgqrgAtKoUta-bG8sQ1DrounhVtPrwu3zVcw7yObTuEV-178M5r57kl-37wgBlgi0hd1Q_-BGswI9_I"/>
+        <p>On fait la rencontre d'un grand serpent à sonnette, auquel Mady veut bien sur aussi donner un câlin, avant de retourner en forêt en soirée pour y chercher une autre le Petit duc à moustaches. Dieu merci, celui ci décide de se manifester dès 20h - la nuit sera plus calme sans devoir faire des points d'écoute réguliers ! Avec 15 lifers dans la journée, c'est une des journées les plus prolifiques du voyage (et probablement la dernière avec autant de lifers).</p>
+        <img fluid class="mb-3 card-img" src="https://lh3.googleusercontent.com/2gi8o_k7-mBqzz2YIoralbkryk6-_HDLK9HCz4nzYgcG4g0JZb3-1eI0ntx6YHCOhQoZ2jd4Vy4auSNbG6wflDVi5nkF1DUOY5A09tvIGNZPpGgAk8p9kTfSqYpDs0KoBzbT9FrhGAM"/>
+        
+
+        
+        <p>Le lendemain, on se balade au fond d'un canyon, et les quelques nouveaux lifers de la matinée permettent à Raph de passer le cap des 2 000 espèces vues dans sa vie ! Combien de temps jusqu'aux 3 000 ? Les paris sont ouverts…</p>
 
         `,
         newsView: false
