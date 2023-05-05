@@ -674,7 +674,38 @@ const posts_hard = [
 
         `,
         newsView: false
-    }
+    },
+    {
+        title: "L'envers du décors",
+        lon: -110.760619,
+        lat: 31.539231,
+        date: new Date(2023, 4, 2),
+        author: "Mady",
+        weather: "sun-fill", // sun-fill cloud-fill, cloud-rain-heavy-fill
+        location: "Patagonia",
+        region: "arizona", //
+        content: `
+        <p>Papa et maman vous racontent de belles choses sur notre voyage, moi je vais vous raconter la réalité d’une journée typique avec deux chercheurs de zazos. </p>
+        <h4>Les matins</h4>
+        <p>Les journées commencent tôt - réveil entre 5h et 5h30. Papa et maman veulent toujours que je dorme en journée, par contre le matin pas moyen de finir ma nuit de sommeil tranquillement ! Je suis vite tirée du lit, habillée, et mise “dedans” (ndlr: dans le porte-bébé). Quelques heures plus tard, on fait enfin la pause petit-déjeuner et j’ai le droit de manger ma banane et mon yayourt. </p>
+        <img fluid class="mb-3 card-img" src="https://lh3.googleusercontent.com/sHmDx8mxI-3jkpNYBJDN58zaYoKA3CTjx4upESjOHZ87ZABNtVuC57nV6u3OmXjinBQf3Tcvspl5EbPlI3N-hMmlQrbRiHyQEnF_GcO12AzMw5azkc1DpWxCeQbqTogB0r6tx1X9m04"/>
+        <p>Après ça, j’ai l’énergie pour marcher avec papa et maman. Mais c'est pas toujours évident de les suivre : parfois ils font des sprints et je dois courir pour les rattraper, et à d’autres moments c’est à moi de les tirer pour avancer… Ils vous disent que je fais des progrès en rando, c’est sans parler des bobos et égratignures partout sur mes jambes, mes bras, et, depuis ce matin, ma main. “Taty boom” très souvent quand même, mais même si je pleure, c’est jamais longtemps.</p>
+   
+        <img fluid class="mb-3 card-img" src="https://lh3.googleusercontent.com/IVnBVBWHtWWuhsMeEVGunVkLtaLLytCNphf3KBjqdHhue6RTCFHmBVUycOoii04Xjas_NX6UMjUhwV8YMTHF98-Al0WCX2RDqw2G_WeXo0pYPcWSHqVhYtlWhA8vg9Fh8b9I97yrCPM"/>
+        <h4>Les repas</h4>
+        <p>Les repas c’est la débrouille ! A la maison, ils m’avaient appris à manger assise à table, dans une assiette, avec des couverts… Ici on mange n’importe où ! Maintenant, j’ai l’habitude de manger assise par terre ou sur un “gos cayou” (ndlr: gros caillou), parfois y’a un bol et une cuillère, mais pas toujours. Il faut souvent que j'aille apporter la nourriture à papa qui regarde encore dans les arbres. J’aime bien faire le café avec papa (même s'il n'a toujours pas compris que je veux presser toute seule) et boire un peu du thé de maman. 
+        </p>
+        <img fluid class="mb-3 card-img" src="https://lh3.googleusercontent.com/jtySY0qJWJWrDQB5Ktu8-HERLbmcEymRwXrS8scqJwJCuLIHxN_rJNHmG1rfWjgKaKtL3cSGQSP9qb4x-ILuKePMTqJObC7aDo4zqJVdyXgURVMiq5UClB7wrOV3KGzY3QqItDCE78Y"/>
+        <h4>Les aprems</h4>
+        <p>Pour caler ma sieste dans ces journées bien remplies, je pique un somme dès qu’on roule (ou parfois sur les épaules de papa, quand je suis vraiment trop fatiguée). Parfois je me réveille toute seule dans la voiture, et je dois attendre que papa et maman viennent me chercher… Quand on est dans des cafés, papa et maman fixent leurs écrans alors que regarder les gens de la table d’à côté, c’est tellement plus intéressant ! Ils veulent que je colorie toute seule, ils ont pas compris que c’est plus drôle ensemble. Mais au moins mon air desespéré, s'il n'attire pas l'attention de papa et maman, interpelle les personnes autour et parfois les gens m’offrent des “gaces” (ndlr: glace), ça c’est pas mal. 
+        </p>
+        <img fluid class="mb-3 card-img" src="https://lh3.googleusercontent.com/pWu71uE_kPzqn8whVIDd3cp3e-B25HgwS_-BRdByczVeiyz_XovvbfVZ97uUHSAb0CtPIsPg6a8oCpK7p7RyO9NIUDUaioGFl65cyHdzKRt1OTI6k5Zm1LFkMq0VN2vvHjtfo1pXZ5A"/>
+        <h4>Les soirs</h4>
+        <p>Mon moment préféré c’est quand je peux jouer à la balle avec papa, alors j’essaye souvent de la sortir pour lui proposer de jouer, ça ne marche qu'une fois sur dix mais ça en vaut la peine. Parfois on doit aller chercher des "owl" (ndlr: chouettes) le soir : j’essaye de rester réveillée pour les entendre, mais à chaque fois je m’endors avant… J'vous dis, vivre avec des chercheurs de zazos, c'est pas de tout repos !</p>
+        <img fluid class="mb-3 card-img" src="https://lh3.googleusercontent.com/BIe81h4X-NBeD2ClUSFbgBvL46PAQXNbBBqzmT9tXhwIMty2iMZg6Ez4C06W5c1v8DBbwV4d-5rhpKDUqCBG47GgPpCWxnrMPPxvruzAaMv2iCejCgWJHcJYLti_WwKm2MjZPPlSMkc"/>
+        `,
+        newsView: false
+    },
 ]
 export default posts_hard
 
