@@ -740,7 +740,7 @@ export default {
           const [lat, lon, time] = row.split(",");
           return { time: parseInt(time), lat: parseFloat(lat), lon: parseFloat(lon) };
         })
-        .filter((row) => row.time > 1681932000);
+        .filter((row) => row.time > 1683417300);
       this.last_update = new Date(locations[locations.length - 1].time * 1000);
       locations = detectOutliers(locations, 2, 2);
       locations = locations.map((l) => [l.lat, l.lon]);
@@ -907,6 +907,21 @@ export default {
           ...past_taxon,
           ...data,
           {
+            speciesCode: "fepowl",
+            category: "species",
+            commonName: "Ferruginous Pygmy-Owl",
+            sciName: "Glaucidium brasilianum",
+            hideFlags: "S",
+            numIndividuals: 2,
+            numChecklists: 1,
+            numPhotos: 7,
+            numAudio: 0,
+            numVideo: 0,
+            isLifer: true,
+            isPhotoLifer: true,
+            numMedia: 7,
+          },
+          {
             speciesCode: "spoowl",
             category: "species",
             commonName: "Spotted Owl",
@@ -914,11 +929,11 @@ export default {
             hideFlags: "S",
             numIndividuals: 3,
             numChecklists: 2,
-            numPhotos: 0,
+            numPhotos: 4,
             numAudio: 0,
             numVideo: 0,
             isLifer: true,
-            numMedia: 0,
+            numMedia: 4,
           },
           {
             speciesCode: "gusgro",
