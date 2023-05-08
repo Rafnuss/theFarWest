@@ -706,6 +706,45 @@ const posts_hard = [
         `,
         newsView: false
     },
+
+    {
+        title: "Virage dans le voyage",
+        lon: -111.836566,
+        lat: 33.402744,
+        date: new Date(2023, 4, 6),
+        author: "Améline",
+        weather: "sun-fill", // sun-fill cloud-fill, cloud-rain-heavy-fill
+        location: "Phoenix",
+        region: "arizona", //
+        content: `
+        <p>Arrivés à Phoenix, la capitale de l'Arizona, on sent qu'on est à un tournant dans le voyage. Avec le Colorado, Texas, et Arizona, on clôture le premier chapitre du voyage, intense et riche en nombre d'espèces à chercher. Pour donner une idée, on aura vu 200 nouvelles espèces en un mois, et il en reste environ 30 à chercher dans les deux prochains mois ! Un autre rythme donc ;) On est reconnaissant d'avoir pu voir quasiment tout ce qu'on avait espéré, à quelques exceptions près en Arizona (espèces pas encore arrivées ou inaccessibles avec notre voiture) - jusqu'ici l'objectif est en bonne voie d'être atteint ! 
+        </p>
+        <div class="iframe-wrapper">
+        <iframe src="https://macaulaylibrary.org/asset/567022721/embed" frameborder="0"></iframe>
+    </div>
+        <p>Les oiseaux du sud nous en ont mis plein les yeux avec leurs couleurs vives et chants en tous genres. C'était une chouette expérience de les chercher chacun dans leurs habitats respectifs - faut dire qu'ils nous ont amené à découvrir des beaux coins de nature ! Tous ces oiseaux qui n'étaient avant qu'une image théorique dans un guide sont maintenant associés à des expériences personnelles et lieux précis. 
+        </p>
+   
+        <img fluid class="mb-3 card-img" src="https://lh3.googleusercontent.com/pw/AJFCJaUTcCwS-uiZAXaYi0aB9tw2YVj3fM0YG29qkPsubfuKSjZu77vu_R5mMzYbMovWt_6lvTh6yC9kZ1rbLfm9it9PAXKNnrzZOi7ecqUeLrz3HbtPL6qt "/>
+        <h4>Arizona du sud</h4>
+        <p>On a beaucoup aimé le sud de l'Arizona, en particulier explorer les petits canyons arborés lors des matinées encore fraîches et y découvrir les parulines qui s'y cachent, se familiariser avec les colibris qui virevoltent autour des plantes en fleurs ou mangeoires, et se balader parmis les cactus géants bien connus dans la région.</p>
+        <div class="iframe-wrapper">
+        <iframe src="https://macaulaylibrary.org/asset/567019731/embed" frameborder="0"></iframe>
+    </div>
+    <h4>Les chouettes au RDV</h4>
+        <p>On y trouve aussi les trois espèces de chouette qui nous manquaient, et qu'on pensait plutôt difficiles : la Chevêchette naine, qu'on pensait (à tort) avoir entendu au Colorado, que j'ai vue perchée en plein jour lors d'une marche seule - elle est connue pour être active de jour mais c'était quand même une belle surprise !</p>
+        <img fluid class="mb-3 card-img" src="https://lh3.googleusercontent.com/pw/AJFCJaW11ofQRma4-jEqfl6sJeM0ND-cNMGDCXlbl_1t8quM9nOlHpCYEUOLLqPJ5l6i-Lt8G45cv3tjYwydaE543zYVlxDJh6k4OXMQLx06qKipvwjT4-CZ"/>
+        
+        <p>On est ensuite allé chercher sa cousine, la Chevêchette brune, dans une plaine désertique avec des cactus. Alors qu'elle nous avait échappé au Texas, là elle nous a donné la totale : chant et pleine vue au lever du soleil. Et enfin, dans la même journée, on entend le Petit-duc nain peu après le coucher du soleil plus haut en montagne - un soulagement de ne pas avoir à se lever pour le chercher au milieu de la nuit !</p>
+        <div class="iframe-wrapper">
+        <iframe src="https://macaulaylibrary.org/asset/567943731/embed" frameborder="0"></iframe>
+
+    </div>
+    <h4>La suite</h4>
+        <p>On profite d'avoir quelques jours d'avance pour faire un détour par le nord, et y voir le légendaire Grand Canyon et quelques parcs nationaux en Utah. Cela implique un peu plus de route chaque jour - il faut se réhabituer ! Après les coins reculés du Texas et du sud de l'Arizona, on passe donc dans un registre plus touristique, et aussi dans une phase moins planifiée - demandant un peu plus d'improvisation ;)</p>
+        `,
+        newsView: false
+    },
 ]
 export default posts_hard
 
