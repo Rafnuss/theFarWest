@@ -42,7 +42,7 @@
         "end_date": "2023-5-24",
         "color": "#4e8c9b",
         "ebirdcode": "US-CA",
-        "active": false
+        "active": true
     },
     {
         "region": "mountainwest",
