@@ -745,6 +745,47 @@ const posts_hard = [
         `,
         newsView: false
     },
+    {
+        title: "Vive les pac' !",
+        lon: -112.957989,
+        lat: 37.248715,
+        date: new Date(2023, 4, 10),
+        author: "Mady",
+        weather: "sun-fill", // sun-fill cloud-fill, cloud-rain-heavy-fill
+        location: "Zion",
+        region: "arizona", //
+        content: `
+        <p>Ces derniers jours, on a passé beaucoup de temps dans ce que papa et maman appellent des pac' <i>(ndlr : parcs nationaux)</i>. Je vois pas trop la différence, si ce n'est que y'a beaucoup de gens qui se promènent avec nous.</p>
+        <img fluid class="mb-3 card-img" src="https://lh3.googleusercontent.com/jbiO-2WDiij5y6nUACm9J172fTKJ_GSW01ikAYF8bHqxpNUER22JktQ1HxCZdXoEtRm6yRw94kmmj8y7PeIlvwnt1eOcqUcZcR-pS2p2B8IXw_Fr5Z35dbhc-csa0FX9fvhFN4odjgc"/>
+        <p>Les pac' ont beaucoup d'endroits où Taty pourrait faire "gos boom" <i>(ndlr: grosse chute)</i> alors j'ai pas le droit de m'approcher… mais les plus belles feuilles sont souvent de ce côté du chemin ! 
+        </p>
+   
+        <img fluid class="mb-3 card-img" src="https://lh3.googleusercontent.com/pw/AJFCJaXe4YWkua7p0-iz6wpUO4PuAE1_ULpPHH2SUcmnLpkTXmCLu5pWC_3JYgwO8TkO3ZJDxE-0W6qnNb_33sQNegR89hkKZHdo5MLxg31Nvu_Rd9VVhkN-"/>
+        <p>J'ai bien aimé ces pac' pour plusieurs raisons : </p>
+        <h4>"Cates" <i>(= Cartes)</i></h4>
+        <p>Quand on rentre, on donne une carte <i>(ndlr : carte bancaire)</i> et après on reçoit d'autres cartes <i>(ndlr : le plan du parc - le même mot a créé un peu de confusion…)</i> ! C'est moi la responsable des cartes. Comme papa, je peux les étudier pendant un long moment, même si parfois je regarde trop la carte et pas assez devant moi… alors "boom" ! <i>(ndlr : ce cas de figure a eu lieu quelques secondes après la photo ci dessous, elle a foncé droit dans le mur)</i>. Papa et maman semblent marcher plus vite dans les pac', c'est pas mal de pas devoir s'arrêter toutes les deux minutes <i>(ndlr : il y a peu d'oiseaux dans les parcs nationaux !)</i>. 
+        </p>
+        <img fluid class="mb-3 card-img" src=" https://lh3.googleusercontent.com/UVMBnhPl0lAUIoQyYgq_lC2jtFPjyE1qVkpYSrPfb91rljGHKFXCLPiUXuEnNYE6LDaoty2ACnQJWWLZ2ocFO6hFGUgURhjkLyMdSkH19uCNLn0PFph1eWf21Psi4Gs69kTPuUVS8W4"/>
+
+   
+    <h4>"Buuus !"</h4>
+        <p>On peut prendre des bus ! Je les repère direct et crie bien fort "Buuus !" pour que papa puisse les voir (il a toujours le nez dans les jumelles) et qu'on soit sûrs de rentrer dedans. Je pense que c'est pour les bus que les gens viennent dans les pac', la preuve c'est que les gens font la queue pour rentrer dedans tellement c'est cool. Une fois on a pris le bus, on est sortis quelques minutes pour rien faire, et après tout le monde voulait retourner dans le bus <i>(ndlr: coucher de soleil sur le Grand Canyon)</i>. C'est trop bien j'ai pas besoin d'être dans mon siège ou d'avoir la ceinture ! Tous les grands veulent s'asseoir, mais le plus drôle c'est de rester debout et de garder l'équilibre… je me tiens bien donc ça va je tombe (presque) plus !
+        </p>
+        <img fluid class="mb-3 card-img" src="https://lh3.googleusercontent.com/pw/AJFCJaVNUBSQXhN3-zXqmCFNu_Vsq-J8cUSS7xSCjqQeZJG-wRyt-7PXpYBt6tuIvWTnQMKQYV9nd42RR2bZvNzhbZXyjjf6aXvOt3F1vyyG0YeFFysPPWHM"/>
+        <h4>"Enco' neige !" <i>(Encore de la neige)</i></h4>
+
+        <p>Les parents m'avaient dit que c'était fini le froid,  mais dans les pac' il fait froid le matin ! J'aime bien marcher dans la neige : à chaque fois que y'a de la neige sur le chemin, je crie "Enco' neige !" et je grimpe sur la neige avec papa. Desfois on s'enfonce un peu, surtout papa. On y dépose aussi des pommes de pin que j'ai collectées. 
+        </p>
+        
+    <img fluid class="mb-3 card-img" src="https://lh3.googleusercontent.com/xdA5m8XJ07-pCjbeaafTcxi8-MkO_AjpU59mh7nivUV_igMIYkV_KzD0AxlDl1dC9EXXlyrE42OIzv9PmJHBxLdEH57hH8oYmDkprTri7Pmq8xzx-XYUGOUuDQf5ljiGdB1LPfhDGP0"/>
+    
+    
+        <p>Si vous aimez les cates, les bus, ou la neige - allez aux pac' !
+
+        </p>
+        `,
+        newsView: false
+    },
 ]
 export default posts_hard
 
