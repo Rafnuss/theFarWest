@@ -457,7 +457,10 @@
         <p>On profite d'avoir quelques jours d'avance pour faire un détour par le nord, et y voir le légendaire Grand Canyon et quelques parcs nationaux en Utah. Cela implique un peu plus de route chaque jour - il faut se réhabituer ! Après les coins reculés du Texas et du sud de l'Arizona, on passe donc dans un registre plus touristique, et aussi dans une phase moins planifiée - demandant un peu plus d'improvisation ;)</p>
         `,newsView:!1},{title:"Vive les pac' !",lon:-112.957989,lat:37.248715,date:new Date(2023,4,10),author:"Mady",weather:"sun-fill",location:"Zion",region:"arizona",content:`
         <p>Ces derniers jours, on a passé beaucoup de temps dans ce que papa et maman appellent des pac' <i>(ndlr : parcs nationaux)</i>. Je vois pas trop la différence, si ce n'est que y'a beaucoup de gens qui se promènent avec nous.</p>
-        <img fluid class="mb-3 card-img" src="https://lh3.googleusercontent.com/jbiO-2WDiij5y6nUACm9J172fTKJ_GSW01ikAYF8bHqxpNUER22JktQ1HxCZdXoEtRm6yRw94kmmj8y7PeIlvwnt1eOcqUcZcR-pS2p2B8IXw_Fr5Z35dbhc-csa0FX9fvhFN4odjgc"/>
+        <img fluid class="mb-3 card-img" src="https://lh3.googleusercontent.com/eUacW3-vPbhi1kmD7Ki6-Un75kJkAfMA95GPsAqm2xmcxCQjhnprIdnBoh_ERGSDV7Z-_SATC_c6ZOPV4sA7f7tZ930jPXurhaRHYsgqL5_WUspNH_pTdFq1YsZE1y5gVrfYqSsaMMM"/>
+
+        <p>Dans les pac', papa et maman me disent tout le temps de regarder par la fenêtre ou de regarder la vue, mais je préfère dormir, manger ma banane, ou regarder les gens autour, bien plus important que de regarder des gros cailloux ! </p>
+        <img fluid class="mb-3 card-img" src="https://lh3.googleusercontent.com/wTY9XdyS3Q1xDX0LtgH0JZOl3F1p1Q6LMOjgLKohl4HCPEF4J02YDXhq6Q7B19v58T5y02uE8ILJkGXV2KOJ23JojoUX5lC-0J-9MqIkPbOqkIaUwVhQhum-4QipR5F_J13CXT2GFIE"/>
         <p>Les pac' ont beaucoup d'endroits où Taty pourrait faire "gos boom" <i>(ndlr: grosse chute)</i> alors j'ai pas le droit de m'approcher… mais les plus belles feuilles sont souvent de ce côté du chemin ! 
         </p>
    
