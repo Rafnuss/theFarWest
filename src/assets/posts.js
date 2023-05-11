@@ -755,6 +755,7 @@ const posts_hard = [
         location: "Zion",
         region: "arizona", //
         content: `
+
         <p>Ces derniers jours, on a passé beaucoup de temps dans les pac' <i>(ndlr: parcs nationaux)</i>. Je ne vois pas trop la différence avec nos balades habituelles, si ce n'est que y'a beaucoup de gens qui se promènent avec nous.</p>
         <img fluid class="mb-3 card-img" src="https://lh3.googleusercontent.com/eUacW3-vPbhi1kmD7Ki6-Un75kJkAfMA95GPsAqm2xmcxCQjhnprIdnBoh_ERGSDV7Z-_SATC_c6ZOPV4sA7f7tZ930jPXurhaRHYsgqL5_WUspNH_pTdFq1YsZE1y5gVrfYqSsaMMM"/>
         <p>Dans les pac', papa et maman me disent tout le temps de regarder par la fenêtre ou de regarder la vue, mais je préfère dormir, manger ma banane, ou regarder les gens autour, bien plus important que de regarder des gros cailloux ! 
@@ -762,8 +763,7 @@ const posts_hard = [
         <img fluid class="mb-3 card-img" src="hhttps://lh3.googleusercontent.com/wTY9XdyS3Q1xDX0LtgH0JZOl3F1p1Q6LMOjgLKohl4HCPEF4J02YDXhq6Q7B19v58T5y02uE8ILJkGXV2KOJ23JojoUX5lC-0J-9MqIkPbOqkIaUwVhQhum-4QipR5F_J13CXT2GFIE
         "/>
         
-        <p>Les pac' ont beaucoup d'endroits où Taty pourrait faire gos boom <i>(ndlr: grosse chute)</i> alors je n'ai pas le droit de m'approcher… mais les plus belles feuilles sont souvent de ce côté du chemin ! 
-        </p>
+        <p>Les pac' ont beaucoup d'endroits où Taty pourrait faire gos boom <i>(ndlr: grosse chute)</i> alors je n'ai pas le droit de m'approcher… mais les plus belles feuilles sont souvent de ce côté du chemin ! </p>
    
         <img fluid class="mb-3 card-img" src="https://lh3.googleusercontent.com/pw/AJFCJaXe4YWkua7p0-iz6wpUO4PuAE1_ULpPHH2SUcmnLpkTXmCLu5pWC_3JYgwO8TkO3ZJDxE-0W6qnNb_33sQNegR89hkKZHdo5MLxg31Nvu_Rd9VVhkN-"/>
         <p>Laissez-moi vous présenter mes trois choses préférées dans les pac :</p>
