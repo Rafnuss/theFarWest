@@ -176,7 +176,44 @@
 
     <b-card-img fluid class="mb-3" src="https://drive.google.com/uc?export=view&id=1oHkXd_poVr_WhujQnrqfPXlJje29RPtn" />
   </div>
-  <div v-else-if="region == 'california'"></div>
+  <div v-else-if="region == 'california'">
+    <p>Après les plaines, montagnes, déserts, cactus, et canyons, ça y est, on atteint la côte Ouest !</p>
+    <h2>Golden State</h2>
+    <p>
+      La Californie est l'État le plus peuplé (quasiment 40 millions d’habitants) et le plus riche des Etats Unis. De la
+      ruée vers l’or dans les années 1840 (découvert sur un terrain tenu par un Suisse, comme par hasard), à la
+      découverte du pétrole dans les années 1920, à l’industrie du cinéma et, plus récemment, à l’essor de l’industrie
+      de pointe et haute technologie, la Californie est le symbole du rêve américain.
+    </p>
+    <b-card-img fluid class="mb-3" src="https://drive.google.com/uc?export=view&id=18jNAc__U1GDgp4GS-Wt--YREgxqVfO54" />
+    <h2>L'État des extrêmes</h2>
+    <p>
+      On y trouve le sommet le plus haut des Etats-Unis hors Alaska (Mount Whitney à 4 421m), ainsi que le point le plus
+      bas, dans la Vallée de la Mort à -82m, ainsi que les plus grands arbres du monde, en volume et en hauteur
+      (séquoias), et les plus vieux (pin Bristlecone). Même si le climat y est plutôt idéal, c’est aussi une région aux
+      nombreux aléas climatiques : des inondations au Nord, à la sécheresse et aux incendies au Sud, aux tremblements de
+      terre réguliers… Ces risques climatiques, combinés avec des tarifs immobiliers exorbitants, poussent de plus en
+      plus d’américains à se relocaliser dans des zones plus abordables telles que le Texas.
+    </p>
+    <h2>La remontée vers le Nord</h2>
+    <p>
+      On se concentrera sur la côte, qu’on longera de San Diego à San Francisco. Entre les espèces endémiques (le Condor
+      étant la plus connue, mais pas la seule ! ci-dessous une photo du Colin de Californie, beaucoup plus joli ;) ),
+      les espèces exotiques telles que les perroquets à Los Angeles, et les migrateurs, on aura de quoi s’occuper sur la
+      route.
+    </p>
+    <div class="iframe-wrapper">
+      <iframe src="https://macaulaylibrary.org/asset/94749171/embed" frameborder="0"></iframe>
+    </div>
+
+    <p>
+      On s’arrêtera aussi pour faire un tour dans le parc national des Channel Islands pour observer otaries, baleines,
+      et requins depuis le ferry, et repérer le petit renard endémique à l’île. Au Nord, après San Francisco, selon le
+      temps disponible, on fera peut-être un crochet dans la Sierra Nevada, avant de prendre la route vers l’intérieur
+      des terres.
+    </p>
+    <b-card-img fluid class="mb-3" src="https://drive.google.com/uc?export=view&id=1EASlwdMvofQfDBG6jOKZiacVdi0XsATM" />
+  </div>
   <div v-else-if="region == 'mountainwest'"></div>
   <div v-else-if="region == 'cascadia'"></div>
   <div v-else></div>
