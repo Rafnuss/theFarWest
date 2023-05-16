@@ -550,7 +550,7 @@
         <h4>Les jambes à l'air</h4>
         <p>J'ai pu me promener sur le ponton sans pantalon, c'était trop cool ! <i>(ndlr: maman a oublié de changer Mady et de prendre des habits de rechange…!)</i>. Après on a tous enlevé nos chaussures et chaussettes, c'est bien plus agréable de marcher pieds nus, enfin papa et maman ont compris ça ! 
         </p>
-        <img fluid class="mb-3 card-img" src="https://lh3.googleusercontent.com/rRv0E2V_OVIUdBNvthZik9ACz7INmYDbXyzIz8Ucnr7HWlaKRA12AluaEvWk9xeEaptcrOgqGPrbsBKVHUDdnDzMXgjqOzjyQWkQG17WNuO5tvf5BU32I2av2UpYm2gB3vgo3NnSX0Q 89"/>
+        <img fluid class="mb-3 card-img" src="https://lh3.googleusercontent.com/rRv0E2V_OVIUdBNvthZik9ACz7INmYDbXyzIz8Ucnr7HWlaKRA12AluaEvWk9xeEaptcrOgqGPrbsBKVHUDdnDzMXgjqOzjyQWkQG17WNuO5tvf5BU32I2av2UpYm2gB3vgo3NnSX0Q"/>
         
         <h4>La sieste dans l'herbe</h4>
         <p>Ici, la sieste c'est couché dans l'herbe ! C'est super confortable, je recommande. Même papa a testé et a piqué un somme à côté de moi, c'est bien la première fois ! <i>(ndlr: Mady a dormi quasiment deux heures en sandwich entre nos deux k-way - il a fallu la réveiller pour pouvoir aller explorer l'île !)</i>.
