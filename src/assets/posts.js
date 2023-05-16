@@ -1,6 +1,6 @@
 const posts_hard = [
     {
-        title: "C’est parti !",
+        title: "C'est parti !",
         lon: -76.451470,
         lat: 42.472715,
         date: new Date(2023, 2, 27),
@@ -9,28 +9,28 @@ const posts_hard = [
         location: "Ithaca",
         region: "midwest",
         content: `
-<h4>Tout s’accélère</h4>
+<h4>Tout s'accélère</h4>
 
-<p>Ca y est, on est la veille du départ, la maison est vidée, récurée (standards américains, pas suisses ;-) ), et la voiture quasiment chargée… Après avoir rêvé, discuté, et planifié ce projet pendant aussi longtemps, c’est fou de se dire que ça commence demain ! Le départ paraissait lointain, jusqu’à ce que, la semaine avant, tout s’accélère et il faut boucler les projets professionels, vendre les affaires, faire les bagages, et nettoyer la maison en quelques jours. </p>
+<p>Ca y est, on est la veille du départ, la maison est vidée, récurée (standards américains, pas suisses ;-) ), et la voiture quasiment chargée… Après avoir rêvé, discuté, et planifié ce projet pendant aussi longtemps, c'est fou de se dire que ça commence demain ! Le départ paraissait lointain, jusqu'à ce que, la semaine avant, tout s'accélère et il faut boucler les projets professionels, vendre les affaires, faire les bagages, et nettoyer la maison en quelques jours. </p>
 
 <img fluid class="mb-3 card-img" src="https://lh3.googleusercontent.com/yx7wghe8zFkWBcNWifUn7H_zERleIZgZKWp2h782au9rc44795E3WNGKlE18t_7o0lLgtum27Iu-SLWLTc3LWNdVCgbsO5ysYBj-mgkOlshOq5NqfdL9Y2fpxohBPPMZJXv6Ll_t5X0"/>
 
-<p>Quand je regarde en arrière, je vois un beau travail d’équipe pour arriver à cet objectif. Même Mady était motivée pour aider, phase d’imitation oblige. On apprécie les efforts et l’esprit volontaire, même si cela ralentit parfois plutôt qu’autre chose ! Elle garde le sourire, court dans les grands espaces libérés des meubles, et nous aide a mettre les choses en perspective et garder le moral.</p>
+<p>Quand je regarde en arrière, je vois un beau travail d'équipe pour arriver à cet objectif. Même Mady était motivée pour aider, phase d'imitation oblige. On apprécie les efforts et l'esprit volontaire, même si cela ralentit parfois plutôt qu'autre chose ! Elle garde le sourire, court dans les grands espaces libérés des meubles, et nous aide a mettre les choses en perspective et garder le moral.</p>
 
 <h4>Des adieux particuliers</h4>
-<p>Alors que l’esprit est occupé par la logistique de cette transition, l’aspect émotionel du départ n’est pas aussi présent que lorsqu’on a quitté la Suisse ou le Kenya. C'est l’avantage d’avoir eu des liens plutôt limités à Ithaca: les au revoirs ne sont pas déchirants ! On a quand même pu faire un pot de départ avec les collègues de Raph (avec qui les relations se sont approfondies depuis sa conférence en Afrique) vu quelques amis de l’église et du quartier, et partagé un café avec les voisins, mais dans l’ensemble c’est le coeur plutôt léger qu’on passe à la prochaine étape. </p>
+<p>Alors que l'esprit est occupé par la logistique de cette transition, l'aspect émotionel du départ n'est pas aussi présent que lorsqu'on a quitté la Suisse ou le Kenya. C'est l'avantage d'avoir eu des liens plutôt limités à Ithaca: les au revoirs ne sont pas déchirants ! On a quand même pu faire un pot de départ avec les collègues de Raph (avec qui les relations se sont approfondies depuis sa conférence en Afrique) vu quelques amis de l'église et du quartier, et partagé un café avec les voisins, mais dans l'ensemble c'est le coeur plutôt léger qu'on passe à la prochaine étape. </p>
 
 <img fluid class="mb-3 card-img" src="https://lh3.googleusercontent.com/HMP0BRUcobZKlC_xj6EDG1dkShm_F462hyRiEXsCUqe44AeW8cR3p5STgWlgZ7IGnNzLg7IVraqpYyQCYuFIMf06dkRNLiYkALn0HurhTFAqfZmnLcK1UejtBP6v-pryGzexwMWWuZE"/>
 
-<p>On quitte Ithaca avec reconnaissance pour cette période ici : pour cette maison confortable et les conditions de travail flexibles qui nous ont permis de garder Mady à la maison, profiter de la voir grandir, et voyager. Professionnellement c'était aussi une période riche, que ce soit mon rôle de consultant qui s'est développé plutôt facilement, ou les connections que Raph a pu établir entre le Lab et son expérience en Afrique, ainsi qu'une certaine reconnaissance de ses compétences dans son domaine. Les défis rencontrés, notamment les questionnements et déceptions au niveau de l’intégration dans une communauté ici, ont permis de grandir dans le couple et ont créé de la place pour des temps privilégiés en famille. </p>
+<p>On quitte Ithaca avec reconnaissance pour cette période ici : pour cette maison confortable et les conditions de travail flexibles qui nous ont permis de garder Mady à la maison, profiter de la voir grandir, et voyager. Professionnellement c'était aussi une période riche, que ce soit mon rôle de consultant qui s'est développé plutôt facilement, ou les connections que Raph a pu établir entre le Lab et son expérience en Afrique, ainsi qu'une certaine reconnaissance de ses compétences dans son domaine. Les défis rencontrés, notamment les questionnements et déceptions au niveau de l'intégration dans une communauté ici, ont permis de grandir dans le couple et ont créé de la place pour des temps privilégiés en famille. </p>
 
 <h4>Déménagement ou emménagement ?</h4>
 
-<p>Le déménagement est directement associé à un emménagement dans notre nouvelle maison pour ces prochains 3 mois : notre minivan ! Après une maison spacieuse pendant ces dernières deux années, avec ses soirées autour du feu de cheminée, douches chaudes, et repas cuisinés, on change d’échelle et de rythme ! Le partage d'un petit espace nécessitera sans doute une adaptation pour tout le monde... </p>
+<p>Le déménagement est directement associé à un emménagement dans notre nouvelle maison pour ces prochains 3 mois : notre minivan ! Après une maison spacieuse pendant ces dernières deux années, avec ses soirées autour du feu de cheminée, douches chaudes, et repas cuisinés, on change d'échelle et de rythme ! Le partage d'un petit espace nécessitera sans doute une adaptation pour tout le monde... </p>
 
 <img fluid class="mb-3 card-img" src="https://lh3.googleusercontent.com/bOVW5abe7lisFzzCNrVrDGrEYHQ71Tb-qPZzPqVLZCd5X8_LSEuDzqefi-nzUMUb6IhbQrlktFSYYIHYU7NAvrYCiH6Utc4Wus7kpqq9k90wDrcBepFnMR80XS09Obq4_j68ktJrsBQ"/>
 
-<p>Il faut donc se débarasser d’une grande partie de nos affaires matérielles et partir avec l’essentiel - expérience que je trouve plutôt libératrice (mis à part la gestion des nombreuses annonces pour vendre lesdites affaires et du casse-tête logistique des différents bagages). La voiture finit toujours plus pleine qu'on ne l'aimerait, et on aura inévitablement oublié certaines choses, peu importe : c'est parti ! </p>
+<p>Il faut donc se débarasser d'une grande partie de nos affaires matérielles et partir avec l'essentiel - expérience que je trouve plutôt libératrice (mis à part la gestion des nombreuses annonces pour vendre lesdites affaires et du casse-tête logistique des différents bagages). La voiture finit toujours plus pleine qu'on ne l'aimerait, et on aura inévitablement oublié certaines choses, peu importe : c'est parti ! </p>
         `,
         newsView: false
     },
@@ -46,10 +46,10 @@ const posts_hard = [
         content: `
         <h4>Des débuts familiers </h4>
 
-        <p>Après une dernière nuit à Ithaca mouvementée (Mady était un peu perdue sans son lit), la première journée de notre périple nous a fait passer par des lieux connus qu’on a souhaité visiter une dernière fois, pour finir chez nos amis au Canada. On passe une journée chez eux avant de prendre la route vers l'ouest. </p>
+        <p>Après une dernière nuit à Ithaca mouvementée (Mady était un peu perdue sans son lit), la première journée de notre périple nous a fait passer par des lieux connus qu'on a souhaité visiter une dernière fois, pour finir chez nos amis au Canada. On passe une journée chez eux avant de prendre la route vers l'ouest. </p>
         
         <h4>Petite nyctale</h4>
-        De la taille d’une mésange, cette chouette qui se laisse approcher facilement est en fait assez difficile à trouver. Nous profitons d’un lieu de suivi de rapace nocturne migratoire dans le "Owl Woods" de Braddock Bay sur la côte sud du lac Ontario pour avoir des infos précises et actualisées. On a même été mis en contact avec un birder local. Malheureusement, aucune chouette n’a été vue le matin de notre visite. Mais on ne lâche pas l’affaire, on retentera notre chance d’ici quelques jours. Affaire à suivre! </p>
+        De la taille d'une mésange, cette chouette qui se laisse approcher facilement est en fait assez difficile à trouver. Nous profitons d'un lieu de suivi de rapace nocturne migratoire dans le "Owl Woods" de Braddock Bay sur la côte sud du lac Ontario pour avoir des infos précises et actualisées. On a même été mis en contact avec un birder local. Malheureusement, aucune chouette n'a été vue le matin de notre visite. Mais on ne lâche pas l'affaire, on retentera notre chance d'ici quelques jours. Affaire à suivre! </p>
         
         <div class="iframe-wrapper">
             <iframe src="https://macaulaylibrary.org/asset/320501371/embed" frameborder="0"></iframe>
@@ -57,7 +57,7 @@ const posts_hard = [
         
         <h4>Petit dernier pour la route</h4>
         
-        Apres notre arrivée chez nous amis de Canada, je fais une petite sortie à la tombée de la nuit avec Matt pour aller écouter les <a href="https://ebird.org/species/amewoo" target="_blank">bécasses d’Amérique</a>, un petit limicole au long bec, difficile à voir de jour car il est camouflé dans la forêt mais qui, pendant la période de reproduction, fait des vols de parade au crépuscule avec une série de sons assez uniques !
+        Apres notre arrivée chez nous amis de Canada, je fais une petite sortie à la tombée de la nuit avec Matt pour aller écouter les <a href="https://ebird.org/species/amewoo" target="_blank">bécasses d'Amérique</a>, un petit limicole au long bec, difficile à voir de jour car il est camouflé dans la forêt mais qui, pendant la période de reproduction, fait des vols de parade au crépuscule avec une série de sons assez uniques !
         
         <div class="iframe-wrapper iframe-wrapper-100">
             <iframe src="https://macaulaylibrary.org/asset/548676431/embed" frameborder="0"></iframe>
@@ -106,7 +106,7 @@ const posts_hard = [
         region: "midwest", //
         content: `
     
-        <p>Notre premier lifer du trip est <a href="https://ebird.org/species/smilon/US-IN" target="_blank">le plectrophane de Smith</a> (vous comprenez pourquoi on a une préférence pour les noms anglais ?), un joli bruant aux teintes oranges avec un masque noir en plumage nuptial - nettement moins marqué en plumage d’hiver mais sympa à trouver quand même ! Comportement typique des oiseaux de plaines, ils se regroupent à plusieurs centaines en hiver et se nourrissent des graines laissées dans les champs.</p>
+        <p>Notre premier lifer du trip est <a href="https://ebird.org/species/smilon/US-IN" target="_blank">le plectrophane de Smith</a> (vous comprenez pourquoi on a une préférence pour les noms anglais ?), un joli bruant aux teintes oranges avec un masque noir en plumage nuptial - nettement moins marqué en plumage d'hiver mais sympa à trouver quand même ! Comportement typique des oiseaux de plaines, ils se regroupent à plusieurs centaines en hiver et se nourrissent des graines laissées dans les champs.</p>
         
         <div class="iframe-wrapper">
             <iframe src="https://macaulaylibrary.org/asset/551925521/embed" frameborder="0"></iframe>
@@ -114,7 +114,7 @@ const posts_hard = [
 
         <h4>Coche facile, photo difficile</h4>
 
-        <p>Après un début de journée dans la grisaille et sous la pluie, on décide de prendre la route vers l’ouest pour aller dans le sens opposé de la pluie. 4 heures de route plus tard, on a gagné 15 degrés, mais le vent souffle d’autant plus fort. J’ai à peine le temps de sortir de la voiture que je vois deux plectrophanes s’envoler du champ à quelques mètres de moi, presque trop facile ! Par contre, ils se camouflent extrêmement bien : ils peuvent être à 2 mètres sans qu’on les voie, jusqu’à ce qu’on s’approche et ils s’envolent. Photographier ces oiseaux n'a pas été simple !</p>
+        <p>Après un début de journée dans la grisaille et sous la pluie, on décide de prendre la route vers l'ouest pour aller dans le sens opposé de la pluie. 4 heures de route plus tard, on a gagné 15 degrés, mais le vent souffle d'autant plus fort. J'ai à peine le temps de sortir de la voiture que je vois deux plectrophanes s'envoler du champ à quelques mètres de moi, presque trop facile ! Par contre, ils se camouflent extrêmement bien : ils peuvent être à 2 mètres sans qu'on les voie, jusqu'à ce qu'on s'approche et ils s'envolent. Photographier ces oiseaux n'a pas été simple !</p>
 
         <img fluid class="mb-3 card-img" src="https://lh3.googleusercontent.com/dn6h71zIC8IFjS7j85gr9ue35TSFP82zf40s0gUotgnGRn5YcntlK2AitsuA-Slqai7B3x5kLK9A6bfrQ9_TzhMuBV7ABN07lWvHiz1uFsqu_ZQR53Ycl0yE4uRKFNOQToyUHO6hHh4"/>
 
@@ -135,13 +135,13 @@ const posts_hard = [
         location: "St Louis",
         region: "midwest", //
         content: `
-<p>On continue notre route vers l’ouest avec un arret à St Louis, non pas in Alsace, mais entre l’Ilinois et le Missouri. Par contre, notre espèce cible de la journée nous rappelle bien l’Alsace parce qu’on l’a vue la-bas à maintes reprises ! Il s’agit d’une espèce que vous connaissez sûrement, le <a href="https://ebird.org/species/smilon/US-IL" target="_blank">moineau friquet</a>. </p>
+<p>On continue notre route vers l'ouest avec un arret à St Louis, non pas in Alsace, mais entre l'Ilinois et le Missouri. Par contre, notre espèce cible de la journée nous rappelle bien l'Alsace parce qu'on l'a vue la-bas à maintes reprises ! Il s'agit d'une espèce que vous connaissez sûrement, le <a href="https://ebird.org/species/smilon/US-IL" target="_blank">moineau friquet</a>. </p>
 <h4>Remède contre le mal du pays</h4>
-<p>Douze individus auraient été introduits d’Allemagne en 1870 pour que les immigrants européens du Missouri aient des oiseaux  familiers sur ce nouveau continent… En tant qu’immigrants français, c’est à notre tour de le chercher ! 150 ans plus tard, l’espèce s’est intégrée à l’ecosystème local, mais reste localisée autour de St Louis. Avec le temps, les moineaux friquets américains ont développé des différences  en termes de taille, génétique, et chant (les oiseaux aussi prennent l’accent américain). </p>
+<p>Douze individus auraient été introduits d'Allemagne en 1870 pour que les immigrants européens du Missouri aient des oiseaux  familiers sur ce nouveau continent… En tant qu'immigrants français, c'est à notre tour de le chercher ! 150 ans plus tard, l'espèce s'est intégrée à l'ecosystème local, mais reste localisée autour de St Louis. Avec le temps, les moineaux friquets américains ont développé des différences  en termes de taille, génétique, et chant (les oiseaux aussi prennent l'accent américain). </p>
 <div class="iframe-wrapper">
 <iframe src="https://macaulaylibrary.org/asset/552854781/embed" frameborder="0"></iframe>
 </div>
-<p>A nouveau, une espèce plutôt facile et répandue dans la région, qu’on a pu observer à deux reprises dans la journée - ces petits moineaux étaient nos voisins de table lors de notre repas au soleil. Mais des espèces plus difficiles nous attendent ces prochains jours, à suivre ! </p>
+<p>A nouveau, une espèce plutôt facile et répandue dans la région, qu'on a pu observer à deux reprises dans la journée - ces petits moineaux étaient nos voisins de table lors de notre repas au soleil. Mais des espèces plus difficiles nous attendent ces prochains jours, à suivre ! </p>
 <img fluid class="mb-3 card-img" src="https://lh3.googleusercontent.com/pw/AMWts8C4JOv9u8Cx8y3mjqywirIpdujbcDvxWtF29D9Ve2CtgEVJ3sg__3lbgf6E22Ul__g6yfrxVxxPxL9hb7bt_bHFICInP7g-57T64b2JAFSUURPpanhJ"/>
         `,
         newsView: false
@@ -199,7 +199,7 @@ const posts_hard = [
         region: "midwest", //
         content: `
         <h4>Le tétras des prairies</h4>
-        Des oiseaux dodus ressemblant à des poules, les tétras des prairies se trouvent... dans les prairies ! Au printemps, les mâles se rassemblent sur leurs aires de parade et font une danse particulière pour attirer les femelles : ils s’inclinent vers le sol, relèvent leur plumes ressemblant à des oreilles dépassant de la tête, et gonflent leur peau jaune-orange sur le cou (appelés des sacs gulaires, pour ceux que ça intéresse). Ils font aussi des duels avec des petits sauts, qui nous ont un peu rappelé l’escrime (sans l’épée ;). 
+        Des oiseaux dodus ressemblant à des poules, les tétras des prairies se trouvent... dans les prairies ! Au printemps, les mâles se rassemblent sur leurs aires de parade et font une danse particulière pour attirer les femelles : ils s'inclinent vers le sol, relèvent leur plumes ressemblant à des oreilles dépassant de la tête, et gonflent leur peau jaune-orange sur le cou (appelés des sacs gulaires, pour ceux que ça intéresse). Ils font aussi des duels avec des petits sauts, qui nous ont un peu rappelé l'escrime (sans l'épée ;). 
 
         <div class="iframe-wrapper">
             <iframe src="https://macaulaylibrary.org/asset/553778811/embed" frameborder="0"></iframe>
@@ -207,16 +207,16 @@ const posts_hard = [
         <p><a href="https://media.ebird.org/catalog?taxonCode=grpchi&sort=rating_rank_desc&userId=USER497615" target="_blank">Cliquer ici pour voir plus de photo et vidéo.</a></p>
         
         <h4>Spectacle naturel</h4>
-        C’était une expérience unique de graduellement découvrir ces tétras alors que le soleil se lève, au son de leurs cris ressemblant à lorsqu’on souffle dans une bouteille vide, camouflés dans notre petite cabane à quelques mètres d’eux. C’est un peu comme si on venait observer une performance théâtrale ou un match sportif, mis à part qu’on ne connaît pas les règles : comment les femelles décryptent ces mouvements et choisissent leur mâle reste un mystère pour moi !
+        C'était une expérience unique de graduellement découvrir ces tétras alors que le soleil se lève, au son de leurs cris ressemblant à lorsqu'on souffle dans une bouteille vide, camouflés dans notre petite cabane à quelques mètres d'eux. C'est un peu comme si on venait observer une performance théâtrale ou un match sportif, mis à part qu'on ne connaît pas les règles : comment les femelles décryptent ces mouvements et choisissent leur mâle reste un mystère pour moi !
 
         <div class="iframe-wrapper">
             <iframe src="https://macaulaylibrary.org/asset/553778941/embed" frameborder="0"></iframe>
         </div>
         
         <h4>"Co-co-qui !"</h4>
-        Toute une étiquette est associée à l’observation de ces tétras : il faut arriver à la cabane 1h avant le lever du soleil (6h), pour ne pas déranger l’arrivée des oiseaux, et y rester jusqu’à ce que le dernier oiseau reparte (dans notre cas, 9h30), en faisant le moins de bruit possible tout du long bien sûr... 
+        Toute une étiquette est associée à l'observation de ces tétras : il faut arriver à la cabane 1h avant le lever du soleil (6h), pour ne pas déranger l'arrivée des oiseaux, et y rester jusqu'à ce que le dernier oiseau reparte (dans notre cas, 9h30), en faisant le moins de bruit possible tout du long bien sûr... 
         
-        Tout un défi avec un enfant de 2 ans qui aime bouger et s’exprimer ! Mais, à l’aide de beaucoup de livres, d’histoires, et d’un petit déjeuner tiré en longueur, Mady a joué le jeu (à quelques exceptions près…), et on a tenu jusqu’à la fin - un succès presque aussi grand pour moi que de voir les tétras en question ! Heureusement, il y avait 2 cabanes sur ce site ce qui a permis aux autres spectateurs d’assister à ce spectacle en paix.
+        Tout un défi avec un enfant de 2 ans qui aime bouger et s'exprimer ! Mais, à l'aide de beaucoup de livres, d'histoires, et d'un petit déjeuner tiré en longueur, Mady a joué le jeu (à quelques exceptions près…), et on a tenu jusqu'à la fin - un succès presque aussi grand pour moi que de voir les tétras en question ! Heureusement, il y avait 2 cabanes sur ce site ce qui a permis aux autres spectateurs d'assister à ce spectacle en paix.
 
         <img fluid class="mb-3 card-img" src="https://lh3.googleusercontent.com/2iaSVQsUKC3qF-BiXJnEDHjB6uPSxes4Xayevp3CY7nXxIuldZPKynwoXB-xjPMcmd-P0oC-F89R4rW4h2GabUn-2Io7_B6fdWVw91kPDQYDvYv8koX0XmuPzExprF82hYbWzNCNfU0"/>
         `,
@@ -233,18 +233,18 @@ const posts_hard = [
         region: "midwest", //
         content: `
         <h4>En terrain agricole</h4>
-        <p>Suite à la petite déviation de notre parcours, on décide de continuer la route vers l’ouest par le Nebraska. On a vraiment l’impression d’être dans le Midwest agricole qu’on imaginait : des immenses champs de maïs à perte de vue, avec quelques petites villes espacées à l’ambiance très agricole. </p>
+        <p>Suite à la petite déviation de notre parcours, on décide de continuer la route vers l'ouest par le Nebraska. On a vraiment l'impression d'être dans le Midwest agricole qu'on imaginait : des immenses champs de maïs à perte de vue, avec quelques petites villes espacées à l'ambiance très agricole. </p>
 >
         <img fluid class="mb-3 card-img" src="https://lh3.googleusercontent.com/SJxDoj33cJGwO2OrMIYFnWBdYTGCNnnX66z4XOqqXcF0Yv5Gwd48LuHaHq7WqWmbFwdCNfXFA9oGAPtaqY7jn44VHtZyPrvET-A8BIS1T_0QhcW5h6HIx9VCK9MufPT8oYo1BX6gTz4"/>
         
-        <p>Alors qu’on progresse au Nebraska, on perd quasiment 20 degrés en à peine quelques heures de route, un petit choc au système ! On passe notre première nuit dans des températures négatives (ressenti -16 à cause des vents froids) à quelques mètres du plus grand rassemblement de grues des Etats-Unis. En soirée, on a pu observer près de 100 000 grues en vol et posées, rejoignant leur site de repos, plutôt exceptionnel ! Le matin, on se réveille au son particulier des grues, qu’on peut observer alors que le soleil se lève, posées dans le lit de la rivière, une belle vue pour le réveil ! Difficile d’estimer de telles quantités, mais au total, on aura vu près de 200 000 grues sur les dernières 24h. </p>
+        <p>Alors qu'on progresse au Nebraska, on perd quasiment 20 degrés en à peine quelques heures de route, un petit choc au système ! On passe notre première nuit dans des températures négatives (ressenti -16 à cause des vents froids) à quelques mètres du plus grand rassemblement de grues des Etats-Unis. En soirée, on a pu observer près de 100 000 grues en vol et posées, rejoignant leur site de repos, plutôt exceptionnel ! Le matin, on se réveille au son particulier des grues, qu'on peut observer alors que le soleil se lève, posées dans le lit de la rivière, une belle vue pour le réveil ! Difficile d'estimer de telles quantités, mais au total, on aura vu près de 200 000 grues sur les dernières 24h. </p>
         
         <div class="iframe-wrapper">
         <iframe src="https://macaulaylibrary.org/asset/553779281/embed" frameborder="0"></iframe>
     </div>
         
         <h4>Regroupement migratoire</h4>
-        <p>Plus de 80% de la population mondiale des grues du Canada se rassemble dans ce tronçon de la Platte River entre février et avril avant de continuer leur migration qui les amènent jusqu’en Sibérie orientale. Après avoir parcouru environ 1 000 km depuis le sud-ouest américain, elles se gavent des restes dans les champs de maïs, prenant 20 % de leur poids en prévision des milliers de kilomètres qu'il leur reste à parcourir.</p>
+        <p>Plus de 80% de la population mondiale des grues du Canada se rassemble dans ce tronçon de la Platte River entre février et avril avant de continuer leur migration qui les amènent jusqu'en Sibérie orientale. Après avoir parcouru environ 1 000 km depuis le sud-ouest américain, elles se gavent des restes dans les champs de maïs, prenant 20 % de leur poids en prévision des milliers de kilomètres qu'il leur reste à parcourir.</p>
         
         <h4>Encore une espèce européenne</h4>
         <p>Parmi cette masse de grues, on a pu en trouver une que vous connaissez sans doute, la grue cendrée, signalée dans un champ de maïs pas loin de la rivière. Elle nous a même fait sa petite danse typique des grues, sympa non ?</p>
@@ -267,20 +267,20 @@ const posts_hard = [
         region: "colorado", //
         content: `
         <h4>En avant ! </h4>
-        <p>Alors qu’on entre au Colorado et qu’on a traversé le Midwest, on a l’impression que l’échauffement est fini, et les choses sérieuses commencent ! Dans le Midwest, on a beaucoup roulé, et on a vu quelques nouveaux lifers, mais dans l’ensemble la plupart des espèces étaient similaires à ce qu’on peut trouver dans le Nord Est.</p>
+        <p>Alors qu'on entre au Colorado et qu'on a traversé le Midwest, on a l'impression que l'échauffement est fini, et les choses sérieuses commencent ! Dans le Midwest, on a beaucoup roulé, et on a vu quelques nouveaux lifers, mais dans l'ensemble la plupart des espèces étaient similaires à ce qu'on peut trouver dans le Nord Est.</p>
         
-        <p>On passe maintenant plus dans le couloir migratoire ouest, ce qui veut dire beaucoup de nouvelles espèces à chercher. On se réjouit aussi de découvrir des paysages plus diversifiés, après beaucoup de plaines ! Vous pouvez lire plus sur le Colorado en cliquant sur “Découvrez le parcours" au dessus des articles. </p>
+        <p>On passe maintenant plus dans le couloir migratoire ouest, ce qui veut dire beaucoup de nouvelles espèces à chercher. On se réjouit aussi de découvrir des paysages plus diversifiés, après beaucoup de plaines ! Vous pouvez lire plus sur le Colorado en cliquant sur "Découvrez le parcours" au dessus des articles. </p>
         <img fluid class="mb-3 card-img" src="https://lh3.googleusercontent.com/ioIXt1ja2dQuU2mjz7D1FF-vL8Wzt7w1q80seoaVm891Z2JKLfmkwkmqKxxcLYGyq5K4iEEZtzqFiePImv3-DheAwfmHLFqt61mKrRSJzZO41kLIQsGcB9NSj7AG-4RBlRv7ibF_gj0"/>
         <h4>Regard en arrière</h4>
 
-        <p>Les premiers 10 jours du voyage se sont dans l’ensemble bien passés, on est allés un peu plus vite que prévu au début, du coup les deux dernières journées étaient un peu plus relax. On s’est offert un brunch au chaud mercredi, alors que le vent soufflait fort dehors, avec suffisamment de pancakes pour nourrir un bataillon ;).</p>
+        <p>Les premiers 10 jours du voyage se sont dans l'ensemble bien passés, on est allés un peu plus vite que prévu au début, du coup les deux dernières journées étaient un peu plus relax. On s'est offert un brunch au chaud mercredi, alors que le vent soufflait fort dehors, avec suffisamment de pancakes pour nourrir un bataillon ;).</p>
         <img fluid class="mb-3 card-img" src="https://lh3.googleusercontent.com/pw/AMWts8BoHiYcJI_6RUN7uXVBy6rwqJM8UvrEaN_VtnXkDPswPgmdyYmRvkaqmYkEGiACgugIgq1TERGJMBeiVkdWbJ_gCFEXSEbecwjloTBopMpg7BfrrXbZ"/>
         
     
-        <p>La vie dans le van se passe bien, on est reconnaissant que Mady se soit adaptée et dorme facilement (faites-les courir toute la journée, c’est plutôt efficace !). Elle se met à l’aise dans la voiture, prend ses habitudes, et connaît la place de chaque chose. Elle communique aussi de plus en plus, et les longs trajets sont l’occasion de s’exprimer et d’apprendre des nouveaux mots (ou de répéter en boucle ceux qu’elle connaît déjà -  “encore raisin !"). Il faut juste accepter de se faire grimper dessus beaucoup plus fréquemment... </p>
+        <p>La vie dans le van se passe bien, on est reconnaissant que Mady se soit adaptée et dorme facilement (faites-les courir toute la journée, c'est plutôt efficace !). Elle se met à l'aise dans la voiture, prend ses habitudes, et connaît la place de chaque chose. Elle communique aussi de plus en plus, et les longs trajets sont l'occasion de s'exprimer et d'apprendre des nouveaux mots (ou de répéter en boucle ceux qu'elle connaît déjà -  "encore raisin !"). Il faut juste accepter de se faire grimper dessus beaucoup plus fréquemment... </p>
         <img fluid class="mb-3 card-img" src="https://lh3.googleusercontent.com/pw/AMWts8DKbk1HlOf-eUOMuzrJ60RYwc1aCMuFpIQMi6cLhZRiGF_-cYo6bUF9f8MJsbTHNVsOCiSYKt12jhvFZch-NXqljkiS6ztQikq4kELEUIxZQ490PJzw"/>
         
-        <p>On appréhendait un peu le froid, mais les isolations aux fenêtres font une grosse différence, et nous permettent de dormir confortablement (la plupart du temps ;). Après pas mal de chemins de terre, la voiture a pris une nouvelle couleur et on vit avec une fine couche de poussière à peu près permanente. Nos premiers essais à la cuisine à l’arrière étaient plutôt précipités par le vent ou les températures froides, mais on ne lâche pas l’affaire, et Raph improvise des paravents quand c’est nécessaire. On verra ce que les montagnes nous réservent !</p>
+        <p>On appréhendait un peu le froid, mais les isolations aux fenêtres font une grosse différence, et nous permettent de dormir confortablement (la plupart du temps ;). Après pas mal de chemins de terre, la voiture a pris une nouvelle couleur et on vit avec une fine couche de poussière à peu près permanente. Nos premiers essais à la cuisine à l'arrière étaient plutôt précipités par le vent ou les températures froides, mais on ne lâche pas l'affaire, et Raph improvise des paravents quand c'est nécessaire. On verra ce que les montagnes nous réservent !</p>
         `,
         newsView: false
     },
@@ -295,16 +295,16 @@ const posts_hard = [
         region: "colorado", //
         content: `
         
-        <p>Après une journée de 25h plutôt intense vendredi (on gagne une heure à l'entrée au Colorado), du réveil à 5h du matin pour un tour organisé pour Raph, à la recherche d’hiboux tard dans la nuit, la matinée de samedi a apporté une expérience inédite plutôt bienvenue : l’observation d’oiseaux depuis son lit ! </p>
-        <p>Sur un site de parade de Tétras des armoises, les règles sont claires dans le nom du hotspot sur eBird : “Coalmont Lek -- ARRIVE IN DARK, STAY IN CAR, DO NOT DISTURB DISPLAYING BIRDS!" Impossible donc de sortir de la voiture. Avec -4 degrés dehors, disons que ce n’était pas trop difficile de respecter la règle ;) </p>
+        <p>Après une journée de 25h plutôt intense vendredi (on gagne une heure à l'entrée au Colorado), du réveil à 5h du matin pour un tour organisé pour Raph, à la recherche d'hiboux tard dans la nuit, la matinée de samedi a apporté une expérience inédite plutôt bienvenue : l'observation d'oiseaux depuis son lit ! </p>
+        <p>Sur un site de parade de Tétras des armoises, les règles sont claires dans le nom du hotspot sur eBird : "Coalmont Lek -- ARRIVE IN DARK, STAY IN CAR, DO NOT DISTURB DISPLAYING BIRDS!" Impossible donc de sortir de la voiture. Avec -4 degrés dehors, disons que ce n'était pas trop difficile de respecter la règle ;) </p>
         <img fluid class="mb-3 card-img" src="https://lh3.googleusercontent.com/pw/AMWts8B4pgUG52kn7gwkxVKKBth95XzI1WiWGUMxX4-Q5Mi9YEeWizHE5ac8fWMwlmwFbMqEhLQQA_p1nzKaALueG5Ip_PkAOjo3uT2w-IEc2fFX3UdSBA5C"/>
-        <p>On profite de rester sous la couette un peu plus longtemps, admirer les montagnes à l'aube, et observer ces oiseaux faire leur parade tellement unique. Ces tétras sont parmis les plus bizarres que j’ai observés (Dieu a vraiment un sens de l’humour) - la vidéo ci-dessous vous donne un petit aperçu… </p>
+        <p>On profite de rester sous la couette un peu plus longtemps, admirer les montagnes à l'aube, et observer ces oiseaux faire leur parade tellement unique. Ces tétras sont parmis les plus bizarres que j'ai observés (Dieu a vraiment un sens de l'humour) - la vidéo ci-dessous vous donne un petit aperçu… </p>
 
         <div class="iframe-wrapper">
         <iframe src="https://macaulaylibrary.org/asset/555610451/embed" frameborder="0"></iframe>
     </div>
 
-        <p>On réarrange aussi les meubles à plusieurs reprises pour l’expert photographe - voici la disposition la plus concluante ! <a href="https://media.ebird.org/catalog?userId=USER497615&taxonCode=saggro&sort=rating_rank_desc" target="_blank">Vous pouvez regarder les résultats en photos et vidéos ici</a>. </p>
+        <p>On réarrange aussi les meubles à plusieurs reprises pour l'expert photographe - voici la disposition la plus concluante ! <a href="https://media.ebird.org/catalog?userId=USER497615&taxonCode=saggro&sort=rating_rank_desc" target="_blank">Vous pouvez regarder les résultats en photos et vidéos ici</a>. </p>
         <img fluid class="mb-3 card-img" src="https://lh3.googleusercontent.com/pw/AMWts8AnCxSkHlZN6ZihWaYeCaj-SC1Xzq42xOsJeYxEvKl6X8-WC5sN5dBBHzkqDw_Hic6yvfdm1pzaJbJfOFx4KK6sgguzbaMQLn7UQQ0kBN3DAck9SC7V=w1920-h1080
         "/>
         `,
@@ -321,17 +321,17 @@ const posts_hard = [
         region: "colorado", //
         content: `
         
-        <p>A l’image du relief des montagnes qu’on traverse dans cette région, ces derniers jours ont été caractérisés par des hauts et des bas pour nous aussi.</p>
+        <p>A l'image du relief des montagnes qu'on traverse dans cette région, ces derniers jours ont été caractérisés par des hauts et des bas pour nous aussi.</p>
         <img fluid class="mb-3 card-img" src="https://lh3.googleusercontent.com/PVplB76-H1Jg8HsThCD180ktXb4IrsTXxBV2QDCD5jUr7rdB00pby0sjhL8XgQjJ6swi5BxpBdt4T-W8j4B9jVyt7ngrXtBKeR4rnNKyvHvP-KQRaV3R7554SkEebrusQPa9mGABxU0"/>
-        <p>Côté oiseaux, les premiers jours au Colorado ont apporté de belles surprises. On a pu trouver des espèces difficiles plutôt facilement : le premier soir, on a été récompensés de notre longue route de nuit lorsqu’on a entendu la <a href="https://ebird.org/checklist/S133014176" target="_blank">Chouette de Tengmalm</a>, et le lendemain soir, alors qu’on dormait sur un site de parade de tétras, j’ai entendu la <a href="https://ebird.org/checklist/S133134297" target="_blank">Petite nyctale du nord</a>, qu’on avait loupé au début de notre trip - une belle surprise ! Les tétras ont, jusqu’à présent, aussi été au rendez-vous, et on a pu observer la plupart des espèces sur notre route. En même temps, d’autres espèces se font désirer, comme le <a href="https://ebird.org/checklist/S133260901" target="_blank">Lagopède à queue blanche</a> qui a attendu le coucher du soleil pour se montrer, et les roselins qui ne viennent plus trop aux mangeoires maintenant que la météo est plus clémente. </p>
+        <p>Côté oiseaux, les premiers jours au Colorado ont apporté de belles surprises. On a pu trouver des espèces difficiles plutôt facilement : le premier soir, on a été récompensés de notre longue route de nuit lorsqu'on a entendu la <a href="https://ebird.org/checklist/S133014176" target="_blank">Chouette de Tengmalm</a>, et le lendemain soir, alors qu'on dormait sur un site de parade de tétras, j'ai entendu la <a href="https://ebird.org/checklist/S133134297" target="_blank">Petite nyctale du nord</a>, qu'on avait loupé au début de notre trip - une belle surprise ! Les tétras ont, jusqu'à présent, aussi été au rendez-vous, et on a pu observer la plupart des espèces sur notre route. En même temps, d'autres espèces se font désirer, comme le <a href="https://ebird.org/checklist/S133260901" target="_blank">Lagopède à queue blanche</a> qui a attendu le coucher du soleil pour se montrer, et les roselins qui ne viennent plus trop aux mangeoires maintenant que la météo est plus clémente. </p>
         <img fluid class="mb-3 card-img" src="https://lh3.googleusercontent.com/xMJDIGygOnh4dmPjbn1lCUc5JGUIRgYTOd7AyjldZAJen2iMLNumz3WBP4BiM4rOBgwgOXdSf2Xr-6s9M9tP6VJRaSzReH-xbC_Vgqs59YA_lm05EXBpR72W8K-zTutcF-kvCi3Ro5M=w1920-h1080"/>
-        <p>La voiture nous fait voir beaucoup de hauts et de bas aussi. Je ne suis pas complètement serein depuis nos aventures avec l’embrayage (réparé à deux reprises au cours des six derniers mois). Et hier soir, le voyant fatidique (voyant moteur) s’est allumé… est-ce l’embrayage ? Si oui, qu’est-ce que cela veut dire pour la suite du voyage ? On est en route vers un garage, donc tout est encore ouvert…
+        <p>La voiture nous fait voir beaucoup de hauts et de bas aussi. Je ne suis pas complètement serein depuis nos aventures avec l'embrayage (réparé à deux reprises au cours des six derniers mois). Et hier soir, le voyant fatidique (voyant moteur) s'est allumé… est-ce l'embrayage ? Si oui, qu'est-ce que cela veut dire pour la suite du voyage ? On est en route vers un garage, donc tout est encore ouvert…
         </p>
-        <p>Niveau santé, ma forme fait des hauts et des bas (est-ce le mal des montagnes qui revient ?) et j’ai un sommeil assez interrompu - plutôt nouveau pour moi !</p>
+        <p>Niveau santé, ma forme fait des hauts et des bas (est-ce le mal des montagnes qui revient ?) et j'ai un sommeil assez interrompu - plutôt nouveau pour moi !</p>
         <img fluid class="mb-3 card-img" src="https://lh3.googleusercontent.com/7KwhKBuoQACpRgmfRdOrscoQ68nm7fOcpH9GEdQKwblgpilKTshInpYtCKwosTbXB7UIvpnUHS0AERdLw2a1lxoSZPlfLZ29NPNJ-V01cQuLY4GDsev0bzNxCtX1hCQe6goZyQZZ4aQ"/>
 
-        <p>C’est intéressant de vivre ces hauts et bas avec Mady, qui elle aussi passe par ses propres hauts et bas, plus intenses émotionnellement mais aussi beaucoup plus courts. Par exemple lorsqu’elle enlève ses gants en montagne et souffre d’avoir les mains très froides, mais quelques minutes après, réchauffée, retourne jouer avec la neige et les cailloux. On semble vivre la même chose à différentes échelles.</p>
-        <p>Voyager nous confronte à la gestion des imprévus, et j’apprends à gérer mes sentiments face à mes limites et à l’inconnu. Ma foi en Dieu m’aide à remettre ces craintes en perspective et à traverser ces hauts et bas en sachant que la façon dont je vis ces moments est plus importante que le résultat. </p>
+        <p>C'est intéressant de vivre ces hauts et bas avec Mady, qui elle aussi passe par ses propres hauts et bas, plus intenses émotionnellement mais aussi beaucoup plus courts. Par exemple lorsqu'elle enlève ses gants en montagne et souffre d'avoir les mains très froides, mais quelques minutes après, réchauffée, retourne jouer avec la neige et les cailloux. On semble vivre la même chose à différentes échelles.</p>
+        <p>Voyager nous confronte à la gestion des imprévus, et j'apprends à gérer mes sentiments face à mes limites et à l'inconnu. Ma foi en Dieu m'aide à remettre ces craintes en perspective et à traverser ces hauts et bas en sachant que la façon dont je vis ces moments est plus importante que le résultat. </p>
         <img fluid class="mb-3 card-img" src="https://lh3.googleusercontent.com/j1mvWmOyHyQ0LOeFs4fdCpwFxC2T9VYyrkdWVeUd2Ibgf-aYSHaH4KPxMFvw4SCRfWGVo9MBG9tMeH0k-7fZa_rlVcMRVYp9Csk0QECKZf-ZNVTZmrcOJM8qXPZDuFC0UlP8fCtM3uA"/>
         `,
         newsView: false
@@ -354,7 +354,7 @@ const posts_hard = [
         <iframe src="https://macaulaylibrary.org/asset/557084951/embed" frameborder="0"></iframe>
     </div>
 
-        <p>Puis ce matin, on a pu observer, de très loin cette fois, le <a href="https://ebird.org/species/gusgro" target="_blank">Tétras du Gunnison</a>, une espèce menacée que l'on trouve uniquement dans cette région précise du Colorado. On a joué les rebelles, car en arrivant sur place tard hier soir, on réalise que le site est officiellement fermé une semaine pour ne pas déranger les oiseaux… mais c'est le seul endroit et moment pour les voir donc on tente le coup, nous disant qu'on ne sortira pas de la voiture pour éviter tout dérangement. Vers 5h30, l'employée de l'agence de conservation locale nous réveille mais nous autorise à rester. On fait un max d’efforts pour être super discrets pendant 2h (à peine on ose ouvrir la fenêtre au cas où Mady se manifeste), seulement pour réaliser ensuite que les tétras sont bien trop loin pour nous entendre, à plusieurs km de nous… 
+        <p>Puis ce matin, on a pu observer, de très loin cette fois, le <a href="https://ebird.org/species/gusgro" target="_blank">Tétras du Gunnison</a>, une espèce menacée que l'on trouve uniquement dans cette région précise du Colorado. On a joué les rebelles, car en arrivant sur place tard hier soir, on réalise que le site est officiellement fermé une semaine pour ne pas déranger les oiseaux… mais c'est le seul endroit et moment pour les voir donc on tente le coup, nous disant qu'on ne sortira pas de la voiture pour éviter tout dérangement. Vers 5h30, l'employée de l'agence de conservation locale nous réveille mais nous autorise à rester. On fait un max d'efforts pour être super discrets pendant 2h (à peine on ose ouvrir la fenêtre au cas où Mady se manifeste), seulement pour réaliser ensuite que les tétras sont bien trop loin pour nous entendre, à plusieurs km de nous… 
         </p>
         <div class="iframe-wrapper">
         <iframe src="https://macaulaylibrary.org/asset/556821511/embed" frameborder="0"></iframe>
@@ -362,14 +362,14 @@ const posts_hard = [
 
         
 
-        <p>Ensuite nous attendaient nos dernières espèces de montagne, les roselins. Ceux-ci viennent se nourrir aux mangeoires en hiver et sont plus dures à observer plus tard dans la saison car elles montent haut en altitude. Après avoir essayé plusieurs mangeoires ces derniers jours, on commençait vaguement à perdre espoir (du moins moi), se disant qu'on était sans doute trop tard pour les deux espèces qui nous manquaient. C'est sans compter sur la persévérance de Raph, qui a trouvé une espèce dans la matinée, et la deuxième lors d’une dernière tentative après la pause déjeuner ! Un petit miracle pour moi, qui avait déjà abandonné l’affaire ;) 
+        <p>Ensuite nous attendaient nos dernières espèces de montagne, les roselins. Ceux-ci viennent se nourrir aux mangeoires en hiver et sont plus dures à observer plus tard dans la saison car elles montent haut en altitude. Après avoir essayé plusieurs mangeoires ces derniers jours, on commençait vaguement à perdre espoir (du moins moi), se disant qu'on était sans doute trop tard pour les deux espèces qui nous manquaient. C'est sans compter sur la persévérance de Raph, qui a trouvé une espèce dans la matinée, et la deuxième lors d'une dernière tentative après la pause déjeuner ! Un petit miracle pour moi, qui avait déjà abandonné l'affaire ;) 
         </p>
         
         <div class="iframe-wrapper">
         <iframe src="https://macaulaylibrary.org/asset/557102541/embed" frameborder="0"></iframe>
     </div>
 
-        <p>C’est la fin de la neige et des montagnes, et, à peine 2-3h de route plus tard, on se retrouve en t-shirt dans de magnifiques canyons rocheux, parsemés de cactus et petits buissons - quel contraste ! Qui dit nouvel habitat dit nouveaux lifers, et on en coche quelques uns facilement en se baladant dans ces canyons en soirée. Le Colorado continue de nous offrir des beaux paysages à découvrir !</p>
+        <p>C'est la fin de la neige et des montagnes, et, à peine 2-3h de route plus tard, on se retrouve en t-shirt dans de magnifiques canyons rocheux, parsemés de cactus et petits buissons - quel contraste ! Qui dit nouvel habitat dit nouveaux lifers, et on en coche quelques uns facilement en se baladant dans ces canyons en soirée. Le Colorado continue de nous offrir des beaux paysages à découvrir !</p>
         <img fluid class="mb-3 card-img" src="https://lh3.googleusercontent.com/PpUTDPDujn2xlAcFJWXaMsSzGfAoQNM4NAyaQ2JPr1qN6L7hHS4XbMlN81KkiuMQA8E12AtPU5GTDKBPiA8UtbPYGaP_I0MgE6mYbqo3nWR0PIh1oplQl8s_bPUx7sd7ZW5Ffi-e6Lg"/>
         `,
         newsView: false
@@ -388,24 +388,24 @@ const posts_hard = [
 
         <h3>Pourquoi ce parcours ? </h3>
         
-        <p>Je profite de ces deux journées avec pas mal de route pour prendre un peu de temps pour expliquer comment on a défini notre parcours. Vous l’aurez compris, l’objectif de ce voyage est de voir un maximum d’espèces d’oiseaux aux US (comme collecter des Pokémons - <a href="https://www.youtube.com/watch?v=GtSmZns8v-Y" target="_blank">attrapez-les tous !</a>). On cherche à voir tous les oiseaux nicheurs et visiteurs réguliers des US (càd, <a href="https://www.aba.org/aba-checklist/" target="_blank">avec un code ABA 1 et 2</a>). </p>
+        <p>Je profite de ces deux journées avec pas mal de route pour prendre un peu de temps pour expliquer comment on a défini notre parcours. Vous l'aurez compris, l'objectif de ce voyage est de voir un maximum d'espèces d'oiseaux aux US (comme collecter des Pokémons - <a href="https://www.youtube.com/watch?v=GtSmZns8v-Y" target="_blank">attrapez-les tous !</a>). On cherche à voir tous les oiseaux nicheurs et visiteurs réguliers des US (càd, <a href="https://www.aba.org/aba-checklist/" target="_blank">avec un code ABA 1 et 2</a>). </p>
         
-        <p>Les Etats Unis (excluant Alaska et Hawaï) comptent <a href="https://ebird.org/region/lower48" target="_blank">987 oiseaux observés</a> dont 678 espèces ABA 1 ou 2. Au début du voyage j’en avais 419, l’objectif est d’en rajouter autour de 250 - ça fait beaucoup à voir en quelques mois ! Il faut donc réfléchir à un trajet qui prend en compte quand et où chaque espèce peut être vue le plus facilement. </p>
+        <p>Les Etats Unis (excluant Alaska et Hawaï) comptent <a href="https://ebird.org/region/lower48" target="_blank">987 oiseaux observés</a> dont 678 espèces ABA 1 ou 2. Au début du voyage j'en avais 419, l'objectif est d'en rajouter autour de 250 - ça fait beaucoup à voir en quelques mois ! Il faut donc réfléchir à un trajet qui prend en compte quand et où chaque espèce peut être vue le plus facilement. </p>
         
-        <h3>Vue d’ensemble</h3>
+        <h3>Vue d'ensemble</h3>
         
-        <p>On a choisi de partir fin mars pour être au Colorado début avril, pour cibler à la fois la saison de parade des tétras qui ne dure que quelques semaines en avril, et les espèces montagnardes qui sont encore en basse altitude avec la neige. Après cela, il faut rapidement filer vers le Sud (Texas et Arizona) pour y trouver les nombreuses espèces qui nichent tôt dans l’année. Une fois qu’un oiseau a pondu, il est généralement silencieux et donc plus dûr à trouver. On suit ensuite les migrateurs en remontant vers le Nord en même temps qu’eux. Ce trajet optimise le nombre d’espèces à ajouter à notre liste US, mais nous fait rater les quelques hivernants de la cote Nord Ouest ainsi que les espèces océaniques.</p>
+        <p>On a choisi de partir fin mars pour être au Colorado début avril, pour cibler à la fois la saison de parade des tétras qui ne dure que quelques semaines en avril, et les espèces montagnardes qui sont encore en basse altitude avec la neige. Après cela, il faut rapidement filer vers le Sud (Texas et Arizona) pour y trouver les nombreuses espèces qui nichent tôt dans l'année. Une fois qu'un oiseau a pondu, il est généralement silencieux et donc plus dûr à trouver. On suit ensuite les migrateurs en remontant vers le Nord en même temps qu'eux. Ce trajet optimise le nombre d'espèces à ajouter à notre liste US, mais nous fait rater les quelques hivernants de la cote Nord Ouest ainsi que les espèces océaniques.</p>
         
         <img fluid class="mb-3 card-img" src="https://drive.google.com/uc?export=view&id=17Cn0WBemDUhgtC8YZzrK--Vnw67_IxZN"/>
 
         <h3>Plus en détail </h3>
         
-        <p>Pour identifier où et quand voir chaque espèce, j’utilise les données de <a href=“https://ebird.org/home" target=“_blank">eBird</a>. J’ai passé plusieurs jours à naviguer les cartes de distribution des 265 espèces cibles pour déterminer le meilleur endroit pour les trouver sur notre parcours. </p>
+        <p>Pour identifier où et quand voir chaque espèce, j'utilise les données de <a href="https://ebird.org/home" target="_blank">eBird</a>. J'ai passé plusieurs jours à naviguer les cartes de distribution des 265 espèces cibles pour déterminer le meilleur endroit pour les trouver sur notre parcours. </p>
 
         <img fluid class="mb-3 card-img" src="https://drive.google.com/uc?export=view&id=1-RWZnDyhk63xb3TgWVpG5sgRXRyZP71A"/>
         <img fluid class="mb-3 card-img" src="https://drive.google.com/uc?export=view&id=1zZn1vErzBXRO61EBflKz1jblmsubqtxE"/>
         
-        <p>J’utilise aussi des vues satellites pour visualiser les habitats et l’accès, pour au final produire une carte détaillée de l’endroit précis à viser pour chaque espèce cible. Je me focalise sur les espèces plus difficiles à voir (les espèces cibles listées dans la description de chaque région), les espèces faciles à trouver ne nécéssitent pas de recherches particulières : à force d’être dehors, on est sûr des les trouver à un moment ! Ce processus peut paraître fastidieux mais ça me plaît d’utiliser toutes les informations disponibles pour préparer le voyage de cette façon :)</p>
+        <p>J'utilise aussi des vues satellites pour visualiser les habitats et l'accès, pour au final produire une carte détaillée de l'endroit précis à viser pour chaque espèce cible. Je me focalise sur les espèces plus difficiles à voir (les espèces cibles listées dans la description de chaque région), les espèces faciles à trouver ne nécéssitent pas de recherches particulières : à force d'être dehors, on est sûr des les trouver à un moment ! Ce processus peut paraître fastidieux mais ça me plaît d'utiliser toutes les informations disponibles pour préparer le voyage de cette façon :)</p>
         
         
 
@@ -475,13 +475,13 @@ const posts_hard = [
         <h4>Back on the road !</h4>
         <p>Grâce à la gentillesse de Mme Neto, l'expertise de M. Neto, et l'efficacité de M. Neto Jr., nous voici de retour sur la route à peine 24h plus tard ! On espère qu'avec une nouvelle transmission, c'est la fin de nos aventures mécaniques dans ce domaine. </p>
         <img fluid class="mb-3 card-img" src=" https://lh3.googleusercontent.com/G-FAatvKTfxf_e-Sm3QsuVBFIwEOrFieLwlbUzqmzCt-vnWMqOQX89P8cndtMrIVEppdfsQOUeZYxLEHW0ju3Is3jbzxihwWSgWUTYT2Wf8oAg1-RFsbniDvEqLx6DHLWgWbqbo1nzA"/>
-        <p>Alors qu'on avait raté quelques cibles à notre arrivée dans le sud, la première matinée avec la voiture réparée nous a permis de rattraper notre retard avec quelques jolies coches : <a href=”https://ebird.org/species/grbani” target=”_blank”>l’Ani à bec cannelé</a> et <a href=”https://ebird.org/species/altori/L613081” target=”_blank”>l’Oriole d’Altamira</a>. Il nous reste toujours la <a href=”https://ebird.org/species/fepowl” target=”_blank”>Chevêchette brune</a> qu’on a déjà cherché plusieurs heures sans succès… Elle serait éventuellement possible en Arizona, on espère l'y trouver la-bas.</p>
+        <p>Alors qu'on avait raté quelques cibles à notre arrivée dans le sud, la première matinée avec la voiture réparée nous a permis de rattraper notre retard avec quelques jolies coches : <a href="https://ebird.org/species/grbani" target="_blank">l'Ani à bec cannelé</a> et <a href="https://ebird.org/species/altori/L613081" target="_blank">l'Oriole d'Altamira</a>. Il nous reste toujours la <a href="https://ebird.org/species/fepowl" target="_blank">Chevêchette brune</a> qu'on a déjà cherché plusieurs heures sans succès… Elle serait éventuellement possible en Arizona, on espère l'y trouver la-bas.</p>
         <h4>Haut lieu de migration</h4>
-        <p>Le sud du Texas est connu pour être un couloir de migration important pour les oiseaux. Bien que ce ne soit pas directement notre objectif de chercher les espèces de passage, on a pu voir quelques espèces rares, observer les limicoles et fauvettes (warblers) en migration sur la côte, et des centaines de rapaces en migration plus à l’intérieur des terres.</p>
-        <p>Ce mouvement synchrone de plusieurs milliards d'oiseaux à travers tous les continents est un des aspects des oiseaux qui me passionne le plus, et j'ai la chance de pouvoir travailler dessus ! Pour visualiser la migration avec nous, vous pouvez cliquer sur “Prévisions de migration” en haut à droite, pour suivre les conditions de migration prédites par Birdcast (mon groupe de recherche à Ithaca).
+        <p>Le sud du Texas est connu pour être un couloir de migration important pour les oiseaux. Bien que ce ne soit pas directement notre objectif de chercher les espèces de passage, on a pu voir quelques espèces rares, observer les limicoles et fauvettes (warblers) en migration sur la côte, et des centaines de rapaces en migration plus à l'intérieur des terres.</p>
+        <p>Ce mouvement synchrone de plusieurs milliards d'oiseaux à travers tous les continents est un des aspects des oiseaux qui me passionne le plus, et j'ai la chance de pouvoir travailler dessus ! Pour visualiser la migration avec nous, vous pouvez cliquer sur "Prévisions de migration" en haut à droite, pour suivre les conditions de migration prédites par Birdcast (mon groupe de recherche à Ithaca).
         <img fluid class="mb-3 card-img" src="https://drive.google.com/uc?export=view&id=1subBNe3QCp8mbpIGsHCtuVkuOV7GRaQm"/>
         <h4>Quel lien avec mon travail ?</h4>
-        <p>J’en profite pour vous partager un peu l’objet de ma recherche sur la migration. Jusqu’à présent, Birdcast utilise des radars météo pour étudier des oiseaux migratoires en vol. Cela permet, entre autres, d’identifier les lieux de forte migration à l’avance et de mettre en place des mesures de conservation (éteindre les lumières des bâtiments pour ne pas désorienter les oiseaux, arrêter les éoliennes, etc.).</p> 
+        <p>J'en profite pour vous partager un peu l'objet de ma recherche sur la migration. Jusqu'à présent, Birdcast utilise des radars météo pour étudier des oiseaux migratoires en vol. Cela permet, entre autres, d'identifier les lieux de forte migration à l'avance et de mettre en place des mesures de conservation (éteindre les lumières des bâtiments pour ne pas désorienter les oiseaux, arrêter les éoliennes, etc.).</p> 
         <p>Ma recherche vise à étendre l'utilisation de données radar pour comprendre les mouvements des oiseaux vers et depuis le sol pendant leur migration. La plupart des oiseaux migrent de nuit et se posent au sol en journée pour se reposer et reprendre des forces. Protéger les oiseaux migratoires nécessite donc aussi de comprendre où ils se posent. Mon projet ces deux dernières années a été de montrer que notre approche est cohérente avec les informations sur les oiseaux au sol (données eBird). Similaire aux cartes déjà disponibles sur la migration en l'air, j'espère pouvoir créer des cartes live montrant où les oiseaux se sont posés au sol chaque jour. </p>
         `,
         newsView: false
@@ -497,11 +497,11 @@ const posts_hard = [
         region: "texas", //
         content: `
         <h4>Le déclic</h4>
-        <p>Ça y est, j’ai compris l’objectif de ce voyage ! C'est ni pour les cailloux ni pour les bâtons (même si je continue d'en trouver plein), mais pour chercher les “zazos” (ndlr: oiseaux). C'est pour ça que papa décide de marcher sur la route plutôt que de rester dans la voiture avec nous, ou se couche par terre dehors... Maintenant je pointe les oiseaux et je regarde dans mes jumelles pour faire comme les grands !
+        <p>Ça y est, j'ai compris l'objectif de ce voyage ! C'est ni pour les cailloux ni pour les bâtons (même si je continue d'en trouver plein), mais pour chercher les "zazos" (ndlr: oiseaux). C'est pour ça que papa décide de marcher sur la route plutôt que de rester dans la voiture avec nous, ou se couche par terre dehors... Maintenant je pointe les oiseaux et je regarde dans mes jumelles pour faire comme les grands !
         </p>
         <img fluid class="mb-3 card-img" src="https://lh3.googleusercontent.com/LpwuCH3zlRinqxpHAzkuHsDNxL65xBRfhgmaQh6mvSYyZSXNL9rdxuHDHwmWxmM6extnPcCCpDuesWHvHNpZSaAaZTOvF3LhgV628ekGvg6rpWNyW-rv_8hUcOYi7Rnh50ef3WYrFQg"/>
         <h4>Tête en l'air</h4>
-        <p>Ces derniers jours, on a passé beaucoup de temps sur une plateforme avec plein d'autres personnes, tous la tête levée vers le ciel. J’essayais de faire comme eux avec mes jumelles pour être acceptée dans leur bande, mais en vrai je voyais rien, du coup je me suis rabattue sur les papillons posés à mes pieds. C'était un peu long, alors pour passer le temps j’ai proposé à papa et maman d'échanger de chaussures: moi ca marchait très bien, mais eux ils voulaient pas essayer les miennes. J'ai aussi créé des parcours de course pour m’entraîner à courir et sauter, jusqu’à ce que papa me disent d’arrêter, soit disant je ferais tout trembler. Les gens ont complimenté papa et maman que j’étais sage sur la plateforme, j’étais plutôt contente (mais je pouvais pas rougir, j’étais déjà toute rouge à cause du soleil qui tapait fort).
+        <p>Ces derniers jours, on a passé beaucoup de temps sur une plateforme avec plein d'autres personnes, tous la tête levée vers le ciel. J'essayais de faire comme eux avec mes jumelles pour être acceptée dans leur bande, mais en vrai je voyais rien, du coup je me suis rabattue sur les papillons posés à mes pieds. C'était un peu long, alors pour passer le temps j'ai proposé à papa et maman d'échanger de chaussures: moi ca marchait très bien, mais eux ils voulaient pas essayer les miennes. J'ai aussi créé des parcours de course pour m'entraîner à courir et sauter, jusqu'à ce que papa me disent d'arrêter, soit disant je ferais tout trembler. Les gens ont complimenté papa et maman que j'étais sage sur la plateforme, j'étais plutôt contente (mais je pouvais pas rougir, j'étais déjà toute rouge à cause du soleil qui tapait fort).
         </p>
         <img fluid class="mb-3 card-img" src="https://lh3.googleusercontent.com/95hv1wClpi1_UKfcVsSv5TuyjMTryluMavSvD_yXr37ydLcclQHqlQ0R2WHVbn-z88OzAGUrFCsZlHEyf1bSlGTj54y8jjjlNgRUymOCqSseh2ZJ7povjN6BfN5fMbhgTE3oO-xaS9k"/>
         <h4>Le petit bus</h4>
@@ -522,17 +522,17 @@ const posts_hard = [
         region: "texas", //
         content: `
         <h4>Hablas español ?</h4>
-        <p>Dans le sud du Texas, l'espagnol remplace l'anglais, les fast food font place aux taquerias (même si on peut toujours compter sur un ou deux McDo dans le coin), et les résidences luxueuses des montagnes du Colorado sont remplacées par des ranchs et petites demeures sobres (ou même carrément délabrées) - il faut de temps en temps se rappeler qu’on est encore aux Etats Unis ! Avec la chaleur, les journées commencent tôt et finissent tard, car les matinées et soirées sont les meilleurs moments pour être dehors. C’était du coup des journées assez chargées et plutôt fatigantes, ce qui a rendu très appréciable une soirée plus tranquille et une nuit plus longue, au bord du Rio Grande. 
+        <p>Dans le sud du Texas, l'espagnol remplace l'anglais, les fast food font place aux taquerias (même si on peut toujours compter sur un ou deux McDo dans le coin), et les résidences luxueuses des montagnes du Colorado sont remplacées par des ranchs et petites demeures sobres (ou même carrément délabrées) - il faut de temps en temps se rappeler qu'on est encore aux Etats Unis ! Avec la chaleur, les journées commencent tôt et finissent tard, car les matinées et soirées sont les meilleurs moments pour être dehors. C'était du coup des journées assez chargées et plutôt fatigantes, ce qui a rendu très appréciable une soirée plus tranquille et une nuit plus longue, au bord du Rio Grande. 
         </p>
         <img fluid class="mb-3 card-img" src="https://lh3.googleusercontent.com/9BXsjNA2sCjEJzC78--09FoFGGh0FCURtyVuaOgiIrqN02uDuyCgq0t-dtDncDhXwH1_ApMFs2sYABnRsOIbLxU4QfTt5CUcxv3pC4X1CWP7HCq34-yjRgjBHKa57fXc0huaxsbQZJ8"/>
          <p>L'ambiance le long de la frontière était particulière, on est loin de l'esprit Schengen ! Interceptés à plusieurs reprises par des gardes frontières de nuit, dès qu'ils comprennent qu'on est migrants européens, on est traités avec une gentillesse extrême : ils nous souhaitent la bienvenue, cherchent à nous aider à atteindre notre destination, et nous invitent à être vigilants. Je ne peux m'empêcher d'imaginer le contraste présumé avec le traitement des migrants mexicains… </p>
          <p>Sur la route, on passe régulièrement par des "border checkpoints" avec vérification des passeports. L'un des gardes frontières n'a même pas pris la peine d'ouvrir nos passeports : leur couleur et pays d'origine faisaient déjà office de laisser passer ("no need to check these, we like them!").</p>
         <img fluid class="mb-3 card-img" src="https://lh3.googleusercontent.com/NQ7iTr64zNQk4nJAgDzbKI2gKbvCLXYxIM54_j7DszD7S9NL104wPHuwFgh4yV0QpEgotaiPmxV2GMKHRDwwBQ5iHt3cVnZCiobVAUqUGwCoNFaP0lYGVrrn8UQJ0FsZ9IRzWoeEBDE"/>
-        <h4>Changement d’atmosphère</h4>
+        <h4>Changement d'atmosphère</h4>
         <p>On a commencé à remonter vers le nord ouest hier, et on prend à nouveau conscience de l'immensité du Texas et de la diversité des paysages. 300km sur la même route avec plaines rocailleuses et canyons à perte de vue : on est vraiment dans le roadtrip américain ! Après la côte, les forêts, et les ranchs, nous voilà à présent à 1 800m d'altitude en montagne ! 
         </p>
         <img fluid class="mb-3 card-img" src="https://lh3.googleusercontent.com/Pi0_QUJocWLiuF_5h-pW_VsouzBqkd34yPg7FJiyWbPoqjta6O_bNxuJpHX0rhsTAOshKL09tGxlwsIbyKrxIOYATaMqy0fg_6SeJLHkCBP7hE-pvz-o4JQuRxxwQPT7XEqWXOsdmAk"/>
-        <p>A peine 4 heures de route vers le nord (et une nuit orageuse) plus tard, on a perdu 20 degrés. Première rando sous la pluie ce matin, on ressort les vestes et les bonnets, on ne s'attendait pas à les ré-utiliser aussi rapidement ! Après des journées bien chaudes au sud, la fraîcheur est presque appréciable (surtout après la douche chaude au camping). Ce parc est connu pour ses grottes de chauve souris : on a pu observer l’envol d’un million de Molosses du Brésil hier soir juste après le coucher du soleil, plutôt impressionnant ! (peut-être qu’on devrait commencer un nouveau compteur ?). </p>
+        <p>A peine 4 heures de route vers le nord (et une nuit orageuse) plus tard, on a perdu 20 degrés. Première rando sous la pluie ce matin, on ressort les vestes et les bonnets, on ne s'attendait pas à les ré-utiliser aussi rapidement ! Après des journées bien chaudes au sud, la fraîcheur est presque appréciable (surtout après la douche chaude au camping). Ce parc est connu pour ses grottes de chauve souris : on a pu observer l'envol d'un million de Molosses du Brésil hier soir juste après le coucher du soleil, plutôt impressionnant ! (peut-être qu'on devrait commencer un nouveau compteur ?). </p>
         `,
         newsView: false
     },
@@ -551,7 +551,7 @@ const posts_hard = [
         <div class="iframe-wrapper">
         <iframe src="https://macaulaylibrary.org/asset/563197781/embed" frameborder="0"></iframe>
     </div>
-        <p>L'idée était de passer à Christmas Mountain Oasis, un hotspot connu pour voir les <a href =”https://ebird.org/species/luchum” target=”_blank”>Colibri Lucifer</a>. Par contre notre planning n'avait pas pris en compte que la route pour y arriver était de plus en plus accidentée, plutôt conçue pour des pick up/4x4 que pour notre minivan ! Mais une fois engagés, difficile de faire demi tour… à quelques km de l'arrivée, après déjà 15-20 min de route non-goudronnée, on se retrouve face à un panneau "Private property, No trespassing", à côté d'un panneau indiquant une réserve d'oiseaux… que faire ? On est au Texas après tout, on ne rigole pas avec les propriétés privées. Et en même temps, c'est la seule route d'accès, comment les gens y arriveraient autrement ? Vu qu'on est déjà si proches du but, on décide de s'aventurer plus loin… c'est assez anxieux que l'on gravit les pentes rocailleuses pour arriver à cet oasis perdue au milieu de la montagne : la voiture va-t-elle tenir ? Y'aura-t-il une barrière nous forçant à faire marche arrière ? Le propriétaire nous attend-t-il au prochain virage avec un fusil ? (scénario à peine exagéré au Texas)</p>
+        <p>L'idée était de passer à Christmas Mountain Oasis, un hotspot connu pour voir les <a href ="https://ebird.org/species/luchum" target="_blank">Colibri Lucifer</a>. Par contre notre planning n'avait pas pris en compte que la route pour y arriver était de plus en plus accidentée, plutôt conçue pour des pick up/4x4 que pour notre minivan ! Mais une fois engagés, difficile de faire demi tour… à quelques km de l'arrivée, après déjà 15-20 min de route non-goudronnée, on se retrouve face à un panneau "Private property, No trespassing", à côté d'un panneau indiquant une réserve d'oiseaux… que faire ? On est au Texas après tout, on ne rigole pas avec les propriétés privées. Et en même temps, c'est la seule route d'accès, comment les gens y arriveraient autrement ? Vu qu'on est déjà si proches du but, on décide de s'aventurer plus loin… c'est assez anxieux que l'on gravit les pentes rocailleuses pour arriver à cet oasis perdue au milieu de la montagne : la voiture va-t-elle tenir ? Y'aura-t-il une barrière nous forçant à faire marche arrière ? Le propriétaire nous attend-t-il au prochain virage avec un fusil ? (scénario à peine exagéré au Texas)</p>
         <img fluid class="mb-3 card-img" src="https://lh3.googleusercontent.com/URVP-Ahg9AhY67vgszh3ColNzcyAfEbKxfKn9Mz-8Q38RpFw7Hhu566LJGL4KNwTX_uOaike-WpKggXwrkrxgYxpMjWnY0WLweQwyMdGekX9DSEWtKK9Q5Ww9mzeWbNwh3ENhFQq-oQ"/>
          <p>Finalement, Dieu merci, on arrive sains et saufs à cet oasis, et la propriétaire en question nous accueille dans son petit paradis aux oiseaux - mis à part une règle "pas d'enfant"... mais maintenant qu'on est là, Mady est acceptée. On y trouve une multitude de mangeoires, des petites fontaines, des chemins ombragés, et des chaises dispersées un peu partout pour observer confortablement les zazos. Une anomalie écologique au milieu du paysage sec, entourés de buissons épineux et cactus ! </p>
          <p>La propriétaire est un personnage particulier - une dame âgée seule, pas la plus avenante, et en même temps semble être en recherche de relation… Cela fait presque 30 ans qu'elle prend soin de ce lieu, seule dans sa montagne, nouveau level de passionnés d'oiseaux ?</p>
@@ -596,7 +596,7 @@ const posts_hard = [
          <p>Entre temps, je continue mes recherches pour comprendre pourquoi papa et maman passent leur temps à chercher des oiseaux… Grâce à mon livre de la Bible qu'on a commencé 15 fois, je commence à comprendre le message de la Création et j'ai une nouvelle théorie : Dieu aime toute la Création, et il a dit que tous les animaux étaient bons, donc papa et maman veulent faire pareil, aimer les oiseaux !
          </p>
         <img fluid class="mb-3 card-img" src="https://lh3.googleusercontent.com/3LRjtm288_fL08vTKuFe4ghLXEIbDeZz5ysXaEZdDUjBNJ4-BdZUDR4qZpr76YJntkKHfixUklzz2skFvk7VjFJzNITh0d-YVA_FXDz_P_By__CgAf2XIRlapNKPaiZN0PELS5CnhsQ"/>
-         <p>Alors j'essaye de participer à leur mission : dès que je vois un oiseau ou un animal, je cours vers lui pour lui faire un câlin. Malheureusement jusqu’à présent ils n’étaient pas très réceptifs, ils s'enfuient souvent avant que j'arrive. J'ai essayé avec des geais, des pigeons, un géocoucou, une biche et un écureuil, mais tous sont trop rapides… Bien sûr je leur dis toujours bye bye quand ils partent se cacher dans les buissons. Je persévère dans cette mission, si vous avez des conseils sur comment s'y prendre, tenez-moi au courant !
+         <p>Alors j'essaye de participer à leur mission : dès que je vois un oiseau ou un animal, je cours vers lui pour lui faire un câlin. Malheureusement jusqu'à présent ils n'étaient pas très réceptifs, ils s'enfuient souvent avant que j'arrive. J'ai essayé avec des geais, des pigeons, un géocoucou, une biche et un écureuil, mais tous sont trop rapides… Bien sûr je leur dis toujours bye bye quand ils partent se cacher dans les buissons. Je persévère dans cette mission, si vous avez des conseils sur comment s'y prendre, tenez-moi au courant !
          </p>
          <img fluid class="mb-3 card-img" src="https://lh3.googleusercontent.com/s6AtRxsiSkNDzEXWBOwdJPFwBjfyh7VsynJoYM3PMjkv2oCmkStZmKm6z-HGreaQKGgxidPZHRF6pdxtqbqBxf1sZnF_gbYASprrYAGS7IfZVjH8BknlzDOqDwoIWbHmmqGhLT5vjhA"/>
          <p>PS: j'ai commencé une nouvelle collection: les pommes de pin !</p>
@@ -685,23 +685,23 @@ const posts_hard = [
         location: "Patagonia",
         region: "arizona", //
         content: `
-        <p>Papa et maman vous racontent de belles choses sur notre voyage, moi je vais vous raconter la réalité d’une journée typique avec deux chercheurs de zazos. </p>
+        <p>Papa et maman vous racontent de belles choses sur notre voyage, moi je vais vous raconter la réalité d'une journée typique avec deux chercheurs de zazos. </p>
         <h4>Les matins</h4>
-        <p>Les journées commencent tôt - réveil entre 5h et 5h30. Papa et maman veulent toujours que je dorme en journée, par contre le matin pas moyen de finir ma nuit de sommeil tranquillement ! Je suis vite tirée du lit, habillée, et mise “dedans” (ndlr: dans le porte-bébé). Quelques heures plus tard, on fait enfin la pause petit-déjeuner et j’ai le droit de manger ma banane et mon yayourt. </p>
+        <p>Les journées commencent tôt - réveil entre 5h et 5h30. Papa et maman veulent toujours que je dorme en journée, par contre le matin pas moyen de finir ma nuit de sommeil tranquillement ! Je suis vite tirée du lit, habillée, et mise "dedans" (ndlr: dans le porte-bébé). Quelques heures plus tard, on fait enfin la pause petit-déjeuner et j'ai le droit de manger ma banane et mon yayourt. </p>
         <img fluid class="mb-3 card-img" src="https://lh3.googleusercontent.com/sHmDx8mxI-3jkpNYBJDN58zaYoKA3CTjx4upESjOHZ87ZABNtVuC57nV6u3OmXjinBQf3Tcvspl5EbPlI3N-hMmlQrbRiHyQEnF_GcO12AzMw5azkc1DpWxCeQbqTogB0r6tx1X9m04"/>
-        <p>Après ça, j’ai l’énergie pour marcher avec papa et maman. Mais c'est pas toujours évident de les suivre : parfois ils font des sprints et je dois courir pour les rattraper, et à d’autres moments c’est à moi de les tirer pour avancer… Ils vous disent que je fais des progrès en rando, c’est sans parler des bobos et égratignures partout sur mes jambes, mes bras, et, depuis ce matin, ma main. “Taty boom” très souvent quand même, mais même si je pleure, c’est jamais longtemps.</p>
+        <p>Après ça, j'ai l'énergie pour marcher avec papa et maman. Mais c'est pas toujours évident de les suivre : parfois ils font des sprints et je dois courir pour les rattraper, et à d'autres moments c'est à moi de les tirer pour avancer… Ils vous disent que je fais des progrès en rando, c'est sans parler des bobos et égratignures partout sur mes jambes, mes bras, et, depuis ce matin, ma main. "Taty boom" très souvent quand même, mais même si je pleure, c'est jamais longtemps.</p>
    
         <img fluid class="mb-3 card-img" src="https://lh3.googleusercontent.com/IVnBVBWHtWWuhsMeEVGunVkLtaLLytCNphf3KBjqdHhue6RTCFHmBVUycOoii04Xjas_NX6UMjUhwV8YMTHF98-Al0WCX2RDqw2G_WeXo0pYPcWSHqVhYtlWhA8vg9Fh8b9I97yrCPM"/>
         <h4>Les repas</h4>
-        <p>Les repas c’est la débrouille ! A la maison, ils m’avaient appris à manger assise à table, dans une assiette, avec des couverts… Ici on mange n’importe où ! Maintenant, j’ai l’habitude de manger assise par terre ou sur un “gos cayou” (ndlr: gros caillou), parfois y’a un bol et une cuillère, mais pas toujours. Il faut souvent que j'aille apporter la nourriture à papa qui regarde encore dans les arbres. J’aime bien faire le café avec papa (même s'il n'a toujours pas compris que je veux presser toute seule) et boire un peu du thé de maman. 
+        <p>Les repas c'est la débrouille ! A la maison, ils m'avaient appris à manger assise à table, dans une assiette, avec des couverts… Ici on mange n'importe où ! Maintenant, j'ai l'habitude de manger assise par terre ou sur un "gos cayou" (ndlr: gros caillou), parfois y'a un bol et une cuillère, mais pas toujours. Il faut souvent que j'aille apporter la nourriture à papa qui regarde encore dans les arbres. J'aime bien faire le café avec papa (même s'il n'a toujours pas compris que je veux presser toute seule) et boire un peu du thé de maman. 
         </p>
         <img fluid class="mb-3 card-img" src="https://lh3.googleusercontent.com/jtySY0qJWJWrDQB5Ktu8-HERLbmcEymRwXrS8scqJwJCuLIHxN_rJNHmG1rfWjgKaKtL3cSGQSP9qb4x-ILuKePMTqJObC7aDo4zqJVdyXgURVMiq5UClB7wrOV3KGzY3QqItDCE78Y"/>
         <h4>Les aprems</h4>
-        <p>Pour caler ma sieste dans ces journées bien remplies, je pique un somme dès qu’on roule (ou parfois sur les épaules de papa, quand je suis vraiment trop fatiguée). Parfois je me réveille toute seule dans la voiture, et je dois attendre que papa et maman viennent me chercher… Quand on est dans des cafés, papa et maman fixent leurs écrans alors que regarder les gens de la table d’à côté, c’est tellement plus intéressant ! Ils veulent que je colorie toute seule, ils ont pas compris que c’est plus drôle ensemble. Mais au moins mon air desespéré, s'il n'attire pas l'attention de papa et maman, interpelle les personnes autour et parfois les gens m’offrent des “gaces” (ndlr: glace), ça c’est pas mal. 
+        <p>Pour caler ma sieste dans ces journées bien remplies, je pique un somme dès qu'on roule (ou parfois sur les épaules de papa, quand je suis vraiment trop fatiguée). Parfois je me réveille toute seule dans la voiture, et je dois attendre que papa et maman viennent me chercher… Quand on est dans des cafés, papa et maman fixent leurs écrans alors que regarder les gens de la table d'à côté, c'est tellement plus intéressant ! Ils veulent que je colorie toute seule, ils ont pas compris que c'est plus drôle ensemble. Mais au moins mon air desespéré, s'il n'attire pas l'attention de papa et maman, interpelle les personnes autour et parfois les gens m'offrent des "gaces" (ndlr: glace), ça c'est pas mal. 
         </p>
         <img fluid class="mb-3 card-img" src="https://lh3.googleusercontent.com/pWu71uE_kPzqn8whVIDd3cp3e-B25HgwS_-BRdByczVeiyz_XovvbfVZ97uUHSAb0CtPIsPg6a8oCpK7p7RyO9NIUDUaioGFl65cyHdzKRt1OTI6k5Zm1LFkMq0VN2vvHjtfo1pXZ5A"/>
         <h4>Les soirs</h4>
-        <p>Mon moment préféré c’est quand je peux jouer à la balle avec papa, alors j’essaye souvent de la sortir pour lui proposer de jouer, ça ne marche qu'une fois sur dix mais ça en vaut la peine. Parfois on doit aller chercher des "owl" (ndlr: chouettes) le soir : j’essaye de rester réveillée pour les entendre, mais à chaque fois je m’endors avant… J'vous dis, vivre avec des chercheurs de zazos, c'est pas de tout repos !</p>
+        <p>Mon moment préféré c'est quand je peux jouer à la balle avec papa, alors j'essaye souvent de la sortir pour lui proposer de jouer, ça ne marche qu'une fois sur dix mais ça en vaut la peine. Parfois on doit aller chercher des "owl" (ndlr: chouettes) le soir : j'essaye de rester réveillée pour les entendre, mais à chaque fois je m'endors avant… J'vous dis, vivre avec des chercheurs de zazos, c'est pas de tout repos !</p>
         <img fluid class="mb-3 card-img" src="https://lh3.googleusercontent.com/BIe81h4X-NBeD2ClUSFbgBvL46PAQXNbBBqzmT9tXhwIMty2iMZg6Ez4C06W5c1v8DBbwV4d-5rhpKDUqCBG47GgPpCWxnrMPPxvruzAaMv2iCejCgWJHcJYLti_WwKm2MjZPPlSMkc"/>
         `,
         newsView: false
@@ -789,6 +789,119 @@ const posts_hard = [
         `,
         newsView: false
     },
+
+    {
+        title: "John Stott Birding Day",
+        lon: -117.273914,
+        lat: 32.850818,
+        date: new Date(2023, 4, 13),
+        author: "Améline",
+        weather: "cloud-fill", // sun-fill cloud-fill, cloud-rain-heavy-fill
+        location: "San Diego",
+        region: "california", //
+        content: `
+
+        <p>Le samedi 13 mai marque la journée de birding organisée par eBird, le <a href="https://ebird.org/globalbigday" target="_blank">Big Day</a>, où tout le monde est invité à observer un maximum d'oiseaux sur une journée. Se joignant à cet effort, il y a trois ans, A Rocha a lancé le <a href="https://johnstottbirdingday.com/en/" target="_blank">John Stott Birding Day</a>, pour mettre à l'honneur le théologien passionné d'oiseaux, John Stott, et mobiliser le réseau A Rocha à travers le monde.</p>
+
+        <img fluid class="mb-3 card-img" src="https://drive.google.com/uc?export=view&id=11wq0JyjioQrtrjTJakIqIQCVkOX3leKM"/>
+        
+        <p>C'est toujours chouette de voir plein de groupes A Rocha participer à cet évènement à travers les frontières ! Raph a contribué au projet en créant le site web - avec une <a href="https://bird-race.johnstottbirdingday.com/" target="_blank">carte interactive</a> qui permet de visualiser toutes les équipes et espèces vues.
+        </p>
+        <img fluid class="mb-3 card-img" src="https://lh3.googleusercontent.com/_qibOCGZi8UkrRPW2OET6WGZw7Vw8vNQd6IFSzubIMUbSJ7ihV4u9-u4_CMb-fFKVUR6syQKF_1aH8drYXSLld5Pa3LX7ZeykcRh4pDqM4f_37vkjhBykwMMnPGsGh8kfTDChnIJoas"/>
+        
+        <p>De notre côté, ça n'a pas changé grand chose à notre quotidien depuis 1 mois et demi : chercher des oiseaux ! A San Diego pour la journée, on a pu observer des <a href="https://ebird.org/checklist/S137472123" target="_blank">oiseaux marins</a> le long de la côte (ainsi que beaucoup d'otaries très vocales !), des espèces exotiques du Sud, et <a href="https://ebird.org/checklist/S137512548" target"=_blank">un perroquet</a> vu uniquement à San Diego aux US. 
+        </p>
+
+        <div class="iframe-wrapper">
+        <iframe src="https://macaulaylibrary.org/asset/573050311/embed" frameborder="0"></iframe>
+    </div>
+        <p>Ces premiers jours en Californie sont en effet marqués par la chasse aux perroquets, qui nous amènent dans des endroits inattendus (le jardin d'une dame fort sympathique, des petits parcs de ville, des canyons…). C'est une famille d'espèces qu'on trouve plutôt difficile à chercher, on est jamais sûr de ce qu'on trouve ! Il font beaucoup de mouvements en journée et sont plus durs à localiser, le plus simple est de trouver leur site de repos en soirée et matinée. 
+        </p>
+        <img fluid class="mb-3 card-img" src="https://lh3.googleusercontent.com/dtUeHhJYPl3HJOQPDutY4xCAt9i8b6DvsqauZ0uZYxcNUdZ1FQtwAUz8wCoMIEduhQWRoldQ9hGmGTGMBSd-x95zKmMhJZug_uRDKBF3qpZGEvR4IOUrNAyIkqFtsmJ2F_7kyfu2ams"/>
+        
+
+        <p>Après l'avoir vu au Texas et en Arizona, on a aussi retrouvé le fameux mur de la frontière en Californie (non, non, on essaye pas de traverser, contrairement à ce que l'on pourrait croire au vu de notre parcours !). 
+
+        </p>
+    
+        `,
+        newsView: false
+    },
+    {
+        title: "Au dessus des nuages",
+        lon: -118.393064,
+        lat: 34.360032,
+        date: new Date(2023, 4, 14),
+        author: "Améline",
+        weather: "sun-fill", // sun-fill cloud-fill, cloud-rain-heavy-fill
+        location: "Bear Divide",
+        region: "california", //
+        content: `
+
+        <p>Jusqu’à présent, la Californie ne livre pas sa météo tant idéalisée : on a eu plus de brouillard ces trois derniers jours que pendant tout le voyage ! C’est donc un plaisir de passer au-dessus des nuages le temps d’une journée, en allant visiter un col au nord de Los Angeles, où se tient tous les printemps un <a href=”https://www.beardivide.org/” target=”_blank”>comptage d’oiseaux migratoires</a> et un projet de baguage d’oiseaux. 
+        </p>
+        <img fluid class="mb-3 card-img" src="https://lh3.googleusercontent.com/pw/AJFCJaVWwGVNUChWu_4i9OqLLvZeNAC3vgLS03Jst4m5hj9-DGHrY8Fg-_ZQ5vywS6ng010frjzeTRc1Y8HPgtEzTlEcb9Z43YgguuQ0OD7wKfNAmQVdhVOZ"/>
+        
+        
+        <p>On y arrive de nuit la veille, et, pensant avoir une nuit calme dans les montagnes, vous imaginez notre surprise d’y trouver une rave party en plein air juste à côté du col - on est bien à côté de LA ! Heureusement, la fatigue est plus forte que la techno, et on s’endort tous bercés par ces rythmes effrénés. 
+
+        </p>
+        <img fluid class="mb-3 card-img" src="https://lh3.googleusercontent.com/pw/AJFCJaU0QBLgcgtv4b0MGYL-gQkTttPGPkbkKMmvGJLcDIxQkizB6RZlcolN3G6tK5cej-4GUD8sq_BNaZlKN17xRp6XYq-PTAHANaNatXaZtdl3duNZT_4a"/>
+        
+        <p>Raph se fait un plaisir de rejoindre le comptage de “viz’ mig” : la migration que l’on peut visualiser, contrairement à la grosse majorité de la migration, qui a lieu la nuit. Il s’agit principalement de passereaux qui continuent à voler dans les heures matinales, et, un peu plus tard, de rapaces qui migrent de jour. Les oiseaux longent la côte vers le Nord, et, après avoir passé le bassin de Los Angeles, rencontrent cette première chaîne de montagnes, et se concentrent donc au-dessus de ce col, offrant un passage plus facile. On peut y voir <a href=”https://ebird.org/checklist/S134119149”>jusqu’à 20 000 oiseaux en une matinée</a> !
+        </p>
+
+        
+        <p>On y rencontre plusieurs autres personnes sur place, et Raph se fait remarquer en repérant un rapace rare (mais habituellement sur la côte Est) - <a href=”https://ebird.org/species/brwhaw" target=”_blank”>la Petite buse </a>.
+        </p>
+        <div class="iframe-wrapper">
+        <iframe src="https://macaulaylibrary.org/asset/573051771/embed" frameborder="0"></iframe>
+    </div>
+    
+        `,
+        newsView: false
+    },
+
+    {
+        title: "Bateau eau !",
+        lon: -119.559948,
+        lat: 34.048209,
+        date: new Date(2023, 4, 15),
+        author: "Mady",
+        weather: "cloud-fill", // sun-fill cloud-fill, cloud-rain-heavy-fill
+        location: "Santa Cruz",
+        region: "california", //
+        content: `
+
+        <p>Je vous avais parlé des bus dans les pac’ - aujourd’hui on a fait encore mieux : on a pris un bateau pour aller sur une île <i>(ndlr: l’île de Santa Cruz, qui fait partie du parc national des Channel Islands)</i>. Sur l’île, il y avait plein de petits renards à qui je voulais faire des canins <i>(ndlr: câlins à l'espèce de renard endémique à l'île)</i>. 
+
+        </p>
+        <img fluid class="mb-3 card-img" src="https://lh3.googleusercontent.com/pw/AJFCJaULCNP_iNhohQisCluPdrWOaeOxjc1zG9XUwPPlsKiValX_B6UsE4KVUJTF1qLvyw09oXc2KEwWahEnSdBKBtstSt24drj-qrx_E1fqkuyRU0UU5AL2"/>
+        
+        
+        <p>On y trouve aussi quelques traditions bizarres qui m’ont bien plu : 
+
+
+        </p>
+        
+        <h4>Les jambes à l'air</h4>
+        <p>J’ai pu me promener sur le ponton sans pantalon, c’était trop cool ! <i>(ndlr: maman a oublié de changer Mady et de prendre des habits de rechange…!)</i>. Après on a tous enlevé nos chaussures et chaussettes, c’est bien plus agréable de marcher pieds nus, enfin papa et maman ont compris ça ! 
+        </p>
+        <img fluid class="mb-3 card-img" src="https://lh3.googleusercontent.com/pw/AJFCJaU0QBLgcgtv4b0MGYL-gQkTttPGPkbkKMmvGJLcDIxQkizB6RZlcolN3G6tK5cej-4GUD8sq_BNaZlKN17xRp6XYq-PTAHANaNatXaZtdl3duNZT_4a"/>
+        
+        <h4>La sieste dans l’herbe</h4>
+        <p>Ici, la sieste c’est couché dans l’herbe ! C’est super confortable, je recommande. Même papa a testé et a piqué un somme à côté de moi, c’est bien la première fois ! <i>(ndlr: Mady a dormi quasiment deux heures en sandwich entre nos deux k-way - il a fallu la réveiller pour pouvoir aller explorer l'île !)</i>.
+        </p>
+        <img fluid class="mb-3 card-img" src="https://lh3.googleusercontent.com/_4zR8AB3T4mnzOM6Q-wnw_tRCcWFmNJMzXfU9-neC6pOMqgr_mh3vTODy7wlTqARzvoC1qAcZ3BJAnWg1a8v1_jM_MzKOOYYvGW_bonJS9CKYh_Mrouknamh4QtbciiJ3lNd6fRtIGY"/>
+        <h4>Des cris bizarres</h4>
+        <p>Les enfants faisaient beaucoup de sons bizarres : j'ai bien essayé d'analyser leurs cris, mais j’arrivais pas à savoir s’ils étaient contents ou fâchés... En tout cas ils faisaient beaucoup de bruit et se couraient après <i>(ndlr: il y avait une sortie de classe sur le bateau, Mady était fascinée par les enfants)</i>. A un moment ils ont tous crié encore plus fort et pointé vers la mer <i>(ndlr: excitation liée à des centaines de dauphins autour du bateau)</i>, je crois qu’ils voulaient sauter dans l'eau rejoindre les dauphins... 
+        </p>
+        <img fluid class="mb-3 card-img" src="https://lh3.googleusercontent.com/Znr9s8HsK_UlkAWd2ewyx80nvpZbfO0OckaeFrrAuWFFXkNE0QwBJryF4xqdvayE-PeCdbIhlZDFsaJ_Fa_eFo40tFL_DhE7hid2TBERPuWnlm2uCgyEm_rCCTskVFFHu-ZWhhaJguc"/>
+       
+    
+        `,
+        newsView: false
+    },
 ]
 export default posts_hard
 
@@ -803,7 +916,7 @@ export default posts_hard
         location: "",
         region: "arizona", //
         content: `
-<h4>Tout s’accélère</h4>
+<h4>Tout s'accélère</h4>
 <p></p>
 <img fluid class="mb-3 card-img" src="https://lh3.googleusercontent.com/fN5yxa2BC7YFEZ0EHuCyUzHjp7cU2mKhRecc6BXaX-o_SDucLFTds9_JUpjfMPafIi9qecrdcLlZIsNtouuzCnyRvsWPheFHsuZOaHO5gx123CCeU3zGqOZOGe0nZgPzP06LR2JRa7s"/>
         `,
