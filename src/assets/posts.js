@@ -807,7 +807,7 @@ const posts_hard = [
         
         <p>C'est toujours chouette de voir plein de groupes A Rocha participer à cet évènement à travers les frontières ! Raph a contribué au projet en créant le site web - avec une <a href="https://bird-race.johnstottbirdingday.com/" target="_blank">carte interactive</a> qui permet de visualiser toutes les équipes et espèces vues.
         </p>
-        <img fluid class="mb-3 card-img" src="https://lh3.googleusercontent.com/_qibOCGZi8UkrRPW2OET6WGZw7Vw8vNQd6IFSzubIMUbSJ7ihV4u9-u4_CMb-fFKVUR6syQKF_1aH8drYXSLld5Pa3LX7ZeykcRh4pDqM4f_37vkjhBykwMMnPGsGh8kfTDChnIJoas"/>
+        <img fluid class="mb-3 card-img" src="https://lh3.googleusercontent.com/ge_Nnp1nrAWwyR1u5yD20VEN-HHYYR6sz34jVoKG_SPG8tNmVzKzy7HKHYoaqXq2gaGn35zUban_T4cTtSK0Pgus9AwGHE2MDN87ZBVxmr5jyZ-mNTi6JkzdqfPZ0cX-FAaqF-p--s8"/>
         
         <p>De notre côté, ça n'a pas changé grand chose à notre quotidien depuis 1 mois et demi : chercher des oiseaux ! A San Diego pour la journée, on a pu observer des <a href="https://ebird.org/checklist/S137472123" target="_blank">oiseaux marins</a> le long de la côte (ainsi que beaucoup d'otaries très vocales !), des espèces exotiques du Sud, et <a href="https://ebird.org/checklist/S137512548" target"=_blank">un perroquet</a> vu uniquement à San Diego aux US. 
         </p>
@@ -838,17 +838,17 @@ const posts_hard = [
         region: "california", //
         content: `
 
-        <p>Jusqu’à présent, la Californie ne livre pas sa météo tant idéalisée : on a eu plus de brouillard ces trois derniers jours que pendant tout le voyage ! C’est donc un plaisir de passer au-dessus des nuages le temps d’une journée, en allant visiter un col au nord de Los Angeles, où se tient tous les printemps un <a href=”https://www.beardivide.org/” target=”_blank”>comptage d’oiseaux migratoires</a> et un projet de baguage d’oiseaux. 
+        <p>Jusqu'à présent, la Californie ne livre pas sa météo tant idéalisée : on a eu plus de brouillard ces trois derniers jours que pendant tout le voyage ! C'est donc un plaisir de passer au-dessus des nuages le temps d'une journée, en allant visiter un col au nord de Los Angeles, où se tient tous les printemps un <a href="https://www.beardivide.org/" target=”_blank”>comptage d'oiseaux migratoires</a> et un projet de baguage d'oiseaux. 
         </p>
         <img fluid class="mb-3 card-img" src="https://lh3.googleusercontent.com/pw/AJFCJaVWwGVNUChWu_4i9OqLLvZeNAC3vgLS03Jst4m5hj9-DGHrY8Fg-_ZQ5vywS6ng010frjzeTRc1Y8HPgtEzTlEcb9Z43YgguuQ0OD7wKfNAmQVdhVOZ"/>
         
         
-        <p>On y arrive de nuit la veille, et, pensant avoir une nuit calme dans les montagnes, vous imaginez notre surprise d’y trouver une rave party en plein air juste à côté du col - on est bien à côté de LA ! Heureusement, la fatigue est plus forte que la techno, et on s’endort tous bercés par ces rythmes effrénés. 
+        <p>On y arrive de nuit la veille, et, pensant avoir une nuit calme dans les montagnes, vous imaginez notre surprise d'y trouver une rave party en plein air juste à côté du col - on est bien à côté de LA ! Heureusement, la fatigue est plus forte que la techno, et on s'endort tous bercés par ces rythmes effrénés. 
 
         </p>
         <img fluid class="mb-3 card-img" src="https://lh3.googleusercontent.com/pw/AJFCJaU0QBLgcgtv4b0MGYL-gQkTttPGPkbkKMmvGJLcDIxQkizB6RZlcolN3G6tK5cej-4GUD8sq_BNaZlKN17xRp6XYq-PTAHANaNatXaZtdl3duNZT_4a"/>
         
-        <p>Raph se fait un plaisir de rejoindre le comptage de “viz’ mig” : la migration que l’on peut visualiser, contrairement à la grosse majorité de la migration, qui a lieu la nuit. Il s’agit principalement de passereaux qui continuent à voler dans les heures matinales, et, un peu plus tard, de rapaces qui migrent de jour. Les oiseaux longent la côte vers le Nord, et, après avoir passé le bassin de Los Angeles, rencontrent cette première chaîne de montagnes, et se concentrent donc au-dessus de ce col, offrant un passage plus facile. On peut y voir <a href=”https://ebird.org/checklist/S134119149”>jusqu’à 20 000 oiseaux en une matinée</a> !
+        <p>Raph se fait un plaisir de rejoindre le comptage de "viz' mig” : la migration que l'on peut visualiser, contrairement à la grosse majorité de la migration, qui a lieu la nuit. Il s'agit principalement de passereaux qui continuent à voler dans les heures matinales, et, un peu plus tard, de rapaces qui migrent de jour. Les oiseaux longent la côte vers le Nord, et, après avoir passé le bassin de Los Angeles, rencontrent cette première chaîne de montagnes, et se concentrent donc au-dessus de ce col, offrant un passage plus facile. On peut y voir <a href=”https://ebird.org/checklist/S134119149”>jusqu'à 20 000 oiseaux en une matinée</a> !
         </p>
 
         
@@ -873,30 +873,30 @@ const posts_hard = [
         region: "california", //
         content: `
 
-        <p>Je vous avais parlé des bus dans les pac’ - aujourd’hui on a fait encore mieux : on a pris un bateau pour aller sur une île <i>(ndlr: l’île de Santa Cruz, qui fait partie du parc national des Channel Islands)</i>. Sur l’île, il y avait plein de petits renards à qui je voulais faire des canins <i>(ndlr: câlins à l'espèce de renard endémique à l'île)</i>. 
+        <p>Je vous avais parlé des bus dans les pac' - aujourd'hui on a fait encore mieux : on a pris un bateau pour aller sur une île ! <i>(ndlr: l'île de Santa Cruz, qui fait partie du parc national des Channel Islands)</i>. Sur l'île, il y avait plein de petits renards à qui je voulais faire des "canins" <i>(ndlr: câlins à l'espèce de renard endémique à l'île)</i>. 
 
         </p>
         <img fluid class="mb-3 card-img" src="https://lh3.googleusercontent.com/pw/AJFCJaULCNP_iNhohQisCluPdrWOaeOxjc1zG9XUwPPlsKiValX_B6UsE4KVUJTF1qLvyw09oXc2KEwWahEnSdBKBtstSt24drj-qrx_E1fqkuyRU0UU5AL2"/>
         
         
-        <p>On y trouve aussi quelques traditions bizarres qui m’ont bien plu : 
+        <p>On y trouve aussi quelques traditions bizarres qui m'ont bien plu : 
 
 
         </p>
         
         <h4>Les jambes à l'air</h4>
-        <p>J’ai pu me promener sur le ponton sans pantalon, c’était trop cool ! <i>(ndlr: maman a oublié de changer Mady et de prendre des habits de rechange…!)</i>. Après on a tous enlevé nos chaussures et chaussettes, c’est bien plus agréable de marcher pieds nus, enfin papa et maman ont compris ça ! 
+        <p>J'ai pu me promener sur le ponton sans pantalon, c'était trop cool ! <i>(ndlr: maman a oublié de changer Mady et de prendre des habits de rechange…!)</i>. Après on a tous enlevé nos chaussures et chaussettes, c'est bien plus agréable de marcher pieds nus, enfin papa et maman ont compris ça ! 
         </p>
-        <img fluid class="mb-3 card-img" src="https://lh3.googleusercontent.com/pw/AJFCJaU0QBLgcgtv4b0MGYL-gQkTttPGPkbkKMmvGJLcDIxQkizB6RZlcolN3G6tK5cej-4GUD8sq_BNaZlKN17xRp6XYq-PTAHANaNatXaZtdl3duNZT_4a"/>
+        <img fluid class="mb-3 card-img" src="https://lh3.googleusercontent.com/rRv0E2V_OVIUdBNvthZik9ACz7INmYDbXyzIz8Ucnr7HWlaKRA12AluaEvWk9xeEaptcrOgqGPrbsBKVHUDdnDzMXgjqOzjyQWkQG17WNuO5tvf5BU32I2av2UpYm2gB3vgo3NnSX0Q 89"/>
         
-        <h4>La sieste dans l’herbe</h4>
-        <p>Ici, la sieste c’est couché dans l’herbe ! C’est super confortable, je recommande. Même papa a testé et a piqué un somme à côté de moi, c’est bien la première fois ! <i>(ndlr: Mady a dormi quasiment deux heures en sandwich entre nos deux k-way - il a fallu la réveiller pour pouvoir aller explorer l'île !)</i>.
+        <h4>La sieste dans l'herbe</h4>
+        <p>Ici, la sieste c'est couché dans l'herbe ! C'est super confortable, je recommande. Même papa a testé et a piqué un somme à côté de moi, c'est bien la première fois ! <i>(ndlr: Mady a dormi quasiment deux heures en sandwich entre nos deux k-way - il a fallu la réveiller pour pouvoir aller explorer l'île !)</i>.
         </p>
         <img fluid class="mb-3 card-img" src="https://lh3.googleusercontent.com/_4zR8AB3T4mnzOM6Q-wnw_tRCcWFmNJMzXfU9-neC6pOMqgr_mh3vTODy7wlTqARzvoC1qAcZ3BJAnWg1a8v1_jM_MzKOOYYvGW_bonJS9CKYh_Mrouknamh4QtbciiJ3lNd6fRtIGY"/>
         <h4>Des cris bizarres</h4>
-        <p>Les enfants faisaient beaucoup de sons bizarres : j'ai bien essayé d'analyser leurs cris, mais j’arrivais pas à savoir s’ils étaient contents ou fâchés... En tout cas ils faisaient beaucoup de bruit et se couraient après <i>(ndlr: il y avait une sortie de classe sur le bateau, Mady était fascinée par les enfants)</i>. A un moment ils ont tous crié encore plus fort et pointé vers la mer <i>(ndlr: excitation liée à des centaines de dauphins autour du bateau)</i>, je crois qu’ils voulaient sauter dans l'eau rejoindre les dauphins... 
+        <p>Les enfants faisaient beaucoup de sons bizarres : j'ai bien essayé d'analyser leurs cris, mais j'arrivais pas à savoir s'ils étaient contents ou fâchés... En tout cas ils faisaient beaucoup de bruit et se couraient après <i>(ndlr: il y avait une sortie de classe sur le bateau, Mady était fascinée par les enfants)</i>. A un moment ils ont tous crié encore plus fort et pointé vers la mer <i>(ndlr: excitation liée à des centaines de dauphins autour du bateau)</i>, je crois qu'ils voulaient sauter dans l'eau rejoindre les dauphins... 
         </p>
-        <img fluid class="mb-3 card-img" src="https://lh3.googleusercontent.com/Znr9s8HsK_UlkAWd2ewyx80nvpZbfO0OckaeFrrAuWFFXkNE0QwBJryF4xqdvayE-PeCdbIhlZDFsaJ_Fa_eFo40tFL_DhE7hid2TBERPuWnlm2uCgyEm_rCCTskVFFHu-ZWhhaJguc"/>
+        <img fluid class="mb-3 card-img" src="https://lh3.googleusercontent.com/pMsg-3o79LaIzDd0KkcJeOZ2SpuIlK2LJhYPWlongFTYPeUWQm9f_iVSnuHXykQaXzCHdZY5hx-4S66VyI3bsWb5PCG0-6TP5Lsf8RbTsL3z59DF0oAJtCgM1PQF2QHF-WtdzJ5sNp4"/>
        
     
         `,
