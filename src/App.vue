@@ -974,9 +974,7 @@ export default {
           return sp;
         });
         let uslifercount = this.species_list.filter((sp) => (!sp.US_lifer | sp.seen) & (sp.exotic != "X")).length;
-        //Lilac-crowned Parrot exotic in florida but P in california, but red-crown parrot is the opposite.
-        //uslifercount = uslifercount;
-        this.animateUSliferCount(uslifercount - 1);
+        this.animateUSliferCount(uslifercount);
       })
       .catch((error) => console.error(error));
 
