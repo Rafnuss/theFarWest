@@ -740,7 +740,7 @@ export default {
           const [lat, lon, time] = row.split(",");
           return { time: parseInt(time), lat: parseFloat(lat), lon: parseFloat(lon) };
         })
-        .filter((row) => row.time > 1683417300);
+        .filter((row) => row.time > 1684268400);
       this.last_update = new Date(locations[locations.length - 1].time * 1000);
       locations = detectOutliers(locations, 2, 2);
       locations = locations.map((l) => [l.lat, l.lon]);
