@@ -37,20 +37,38 @@
 32.74776,-116.45132,california,Kitchen Creek Trailhead,<p>Part of PCT to look for Bell’s Sparrow + Mountain Quail</p>,,12.05.23,1
 32.59145,-117.11367,california,San Diego,<p>Océan Pacifique!</p>,,13.05.23,1
 33.98168,-118.22507,california,Los Angeles,<p>La visite de Hollywood est un incontournable pour nous</p>,,15.05.23,1
-34.276019, -119.290370,california,Santa Cruz Island,<p>Tour en bateau pour découvrir cette ile au large de la côte</p>,,16.05.23,1
+34.276019,-119.29037,california,Santa Cruz Island,<p>Tour en bateau pour découvrir cette ile au large de la côte</p>,,16.05.23,1
 34.67302,-119.51635,california,Los Padres National Forest ,<p>A la recherche du fameux condor!</p>,,18.05.23,1
 37.17117,-122.22265,california,Redwoods state park,<p>Un pengouin perdu dans une forêt</p>,,19.05.23,1
 37.80789,-122.472855,california,San Fransisco,<p>sur les traces des Dumont</p>,,21.05.23,1
 37.835,-119.847,california,Yosemite,<p>Great Grey Owl</p>,,22.05.23,1
-39.30919, -120.68431,california,Sierra Nevada,<p>Un tétras de suie dans la Tahoe National Forest</p>,,23.05.23,1
+39.30919,-120.68431,california,Sierra Nevada,<p>Un tétras de suie dans la Tahoe National Forest</p>,,23.05.23,1
 39.468348,-120.002843,california,California end,,,,0
-39.468348,-120.002843,mountainwest,Mountain West start,,,,0
-40.60869, -115.37383,mountainwest,Tétraogalle de l'Himalaya,<p>Lamoille Canyon</p>,,25.05.23,1
-42.19012, -114.27313,mountainwest,Entrée dans Idaho,<p>Bec-croisé de Cassia</p>,,26.05.23,1
-44.65868, -111.09744,mountainwest,Yellowstone,"<p>Les big 5 : bison, renne, loup, ours et élan</p>",,28.05.23,1
-46.59177, -109.76559,mountainwest,Sur les traces de Pierrick,"<p>Après les montagnes, les plaines du Montana</p>",,30.05.23,1
-47.696883, -117.048610,mountainwest,Mountain West end,,,,0
-47.696883, -117.048610,cascadia,Cascadia start,,,,0
+39.468348,-120.002843,cascadia,cascadia start,,,,
+40.60869,-115.37383,cascadia,Tétraogalle de l'Himalaya,<p>Lamoille Canyon</p>,,25.05.23,1
+42.19012,-114.27313,cascadia,Entrée dans Idaho,<p>Bec-croisé de Cassia</p>,,26.05.23,1
+44.65868,-111.09744,cascadia,Yellowstone,"<p>Les big 5 : bison, renne, loup, ours et élan</p>",,28.05.23,1
+46.59177,-109.76559,cascadia,Sur les traces de Pierrick,"<p>Après les montagnes, les plaines du Montana</p>",,30.05.23,1
+47.696883,-117.04861,cascadia,Mountain West end,,,,0
 48.01209,-123.37131,cascadia,Olympic National Park,<p>Mer et montagne</p>,,01.06.23,1
 48.39011,-124.71735,cascadia,Le cap de la flatterie,<p>Seawatch</p>,,02.06.23,1
 49.032879,-122.687726,cascadia,A Rocha Canada,"<p>Visite à nos amis anciennement Ithacois, qui travaillent désormais à A Rocha Canada</p>",,03.06.23,1
+49.306802,-124.489076,cascadia,Vancouver Island,,,,1
+48.945885,-125.562788,cascadia,Vancouver Island,,,,1
+52.011353,-119.336918,cascadia,Road to Jasper,,,,1
+52.863934,-118.08994,cascadia,Jasper,,,,1
+52.212201,-117.154592,cascadia,Japser south,,,,1
+51.088634,-114.279483,cascadia,Banff,,,,1
+51.088634,-114.279483,cascadia,cascadia end (Calgary),,,,1
+51.086564,-114.279273,pothole,pothole start (Calgary),,,,1
+49.951141,-110.236157,pothole,canadian prairies,,,,1
+48.606789,-106.422877,pothole,montana prairies,,,,1
+46.963763,-103.189554,pothole,dakota prairies,,,,1
+47.716497,-99.271594,pothole,dakota prairies 2,,,,1
+47.325257,-95.965497,pothole,minesota,,,,1
+47.244482,-92.415908,pothole,,,,,1
+43.497834,-88.195091,pothole,Kettle Moraine State Forest,,,,1
+43.685328,-87.720806,pothole,grey tit,,,,1
+42.426253,-87.805721,pothole,goldinch,,,,1
+44.867188,-84.609543,pothole,kirtland warbler,,,,1
+42.999112,-82.424703,pothole,detroit bridge to canada,,,,1

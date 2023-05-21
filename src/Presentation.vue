@@ -214,8 +214,47 @@
     </p>
     <b-card-img fluid class="mb-3" src="https://drive.google.com/uc?export=view&id=1EASlwdMvofQfDBG6jOKZiacVdi0XsATM" />
   </div>
-  <div v-else-if="region == 'mountainwest'"></div>
-  <div v-else-if="region == 'cascadia'"></div>
+  <div v-else-if="region == 'cascadia'">
+    <h2>Casca-quoi ?</h2>
+
+    <p>
+      Cascadia fait référence à une biorégion qui s’étend sur 4 000 km du nord de San Francisco au sud de l’Alaska, et
+      jusqu’à Yellowstone à l’est, et comprend plusieurs écosystèmes distincts. Le concept de biorégion a été développé
+      dans les années 1970, basé sur l’idée que frontières politiques devraient suivre les lignes écologiques et
+      culturelles. Le concept est utilisé à la fois en sciences environnementales et sociales pour restaurer et
+      maintenir les systèmes naturels locaux et mettre en œuvre des méthodes durables pour satisfaire les besoins
+      humains fondamentaux. A Cascadia, cela a même donné lieu à des
+      <a href="https://en.wikipedia.org/wiki/Cascadia_movement" target="_blank">mouvements d'indépendance</a> !
+    </p>
+
+    <p>
+      Quittant la côte, on remontera vers le nord en passant par le Nevada, Idaho, et Montana avant de rejoindre la côte
+      à Seattle, et traverser la frontière canadienne pour aller à Vancouver.
+    </p>
+    <div class="iframe-wrapper">
+      <iframe src="https://macaulaylibrary.org/asset/166179861/embed" frameborder="0"></iframe>
+    </div>
+    <h2>Pourquoi ce détour ?</h2>
+    <p>
+      On retourne dans les montagnes pour y chercher des espèces montagnardes se trouvant plus au nord, tels que le
+      bec-croisé et le tétras (et aussi simplement parce qu’on aime les montagnes ;) ). On ira rendre visite aux bisons
+      (et peut-être même aux ours ?) dans les parcs nationaux de Grand Teton et Yellowstone, connus pour leurs montagnes
+      et geysers. On fera ensuite un crochet par le Montana pour y chercher quelques espèces de prairies nicheuses,
+      avant de repartir vers l’Ouest direction Seattle.
+    </p>
+
+    <b-card-img fluid class="mb-3" src="https://drive.google.com/uc?export=view&id=1xAKEyi4BWh-07r-85UjN9lnKGlfssjsY" />
+
+    <h2>Des US au Canada</h2>
+    <p>
+      Mettant en pause notre aventure américaine, on a prévu de passer un peu de temps dans l’Ouest du Canada. On en
+      profitera tout d’abord pour rendre visite à des amis d’Ithaca qui travaillent maintenant au centre
+      <a href="https://arocha.ca/" target="_blank">A Rocha Canada</a>. On passera ensuite quelques jours sur Vancouver
+      Island, avant d’aller faire un tour dans les Rocheuses, en passant par le Jasper National Park et Banff.
+    </p>
+    <b-card-img fluid class="mb-3" src="https://drive.google.com/uc?export=view&id=1LV3_t9qgQsR1ooNJ6LvtNuF5a6mI_CGh" />
+  </div>
+  <div v-else-if="region == 'pothole'"></div>
   <div v-else></div>
 </template>
 

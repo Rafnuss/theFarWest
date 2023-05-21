@@ -525,7 +525,7 @@
                       :key="r.region"
                       :lat-lngs="r.route"
                       :color="r.color"
-                      :opacity="i == i_region ? 0.8 : 0.4"
+                      :opacity="i == i_region ? 0.9 : 0.5"
                       :weight="6"
                       @click="i_region = r.active ? i : i_region"
                     />
@@ -654,6 +654,7 @@ export default {
         { text: "Découvrez le parcours", value: "route" },
       ],
       route: route_json.map((s) => {
+        console.log(s);
         s.route = polyUtil.decode(s.route);
         s.color = regions.find((r) => r.region == s.region).color;
         return s;

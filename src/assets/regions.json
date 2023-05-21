@@ -2,8 +2,6 @@
     {
         "region": "midwest",
         "name": "Mid West",
-        "start_date": "2023-3-31",
-        "end_date": "2023-4-08",
         "color": "#dfa95e",
         "ebirdcode": "US-KS",
         "active": true
@@ -11,8 +9,6 @@
     {
         "region": "colorado",
         "name": "Colorado",
-        "start_date": "2023-4-08",
-        "end_date": "2023-4-17",
         "color": "#634435",
         "ebirdcode": "US-CO",
         "active": true
@@ -20,8 +16,6 @@
     {
         "region": "texas",
         "name": "Texas",
-        "start_date": "2023-4-17",
-        "end_date": "2023-5-1",
         "color": "#a9641c",
         "ebirdcode": "US-TX",
         "active": true
@@ -29,8 +23,6 @@
     {
         "region": "arizona",
         "name": "Arizona",
-        "start_date": "2023-5-1",
-        "end_date": "2023-5-1",
         "color": "#9e8e6d",
         "ebirdcode": "US-AZ",
         "active": true
@@ -38,28 +30,24 @@
     {
         "region": "california",
         "name": "California",
-        "start_date": "2023-5-1",
-        "end_date": "2023-5-24",
         "color": "#4e8c9b",
         "ebirdcode": "US-CA",
         "active": true
-    },
-    {
-        "region": "mountainwest",
-        "name": "Mountain West",
-        "start_date": "2023-5-24",
-        "end_date": "2023-6-10",
-        "color": "#c6ac90",
-        "ebirdcode": "US-MT",
-        "active": false
     },
     {
         "region": "cascadia",
         "name": "Cascadia",
         "start_date": "2023-6-10",
         "end_date": "2023-6-31",
-        "color": "#95bfb6",
+        "color": "#c6ac90",
         "ebirdcode": "US-WA",
+        "active": false
+    },
+    {
+        "region": "pothole",
+        "name": "Prairie Pothole",
+        "color": "#95bfb6",
+        "ebirdcode": "US-MI",
         "active": false
     }
 ]

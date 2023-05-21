@@ -5,7 +5,7 @@ const GOOGLE_MAP_API = "AIzaSyCaVWdIpSvq8BoF7PvEK4oY3LByPYTQ2Xs"
 
 const route_stops = await csvtojson.csv().fromFile("data/route_stops.csv")
 
-const regions = [...new Set(route_stops.map(rs => rs.region))];
+const regions = [...new Set(route_stops.map(rs => rs.region))]
 
 const route = await Promise.all(regions.map(async (r, i) => {
 
@@ -58,8 +58,7 @@ const route = await Promise.all(regions.map(async (r, i) => {
 
     const route = await response.json()
     if (!route.routes) {
-        console.log(stops_r)
-        stop
+        console.log(route)
     }
     return {
         region: r,
