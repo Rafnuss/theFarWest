@@ -902,6 +902,125 @@ const posts_hard = [
         `,
         newsView: false
     },
+
+    {
+        title: "Des nouveaux sommets à Yosemite",
+        lon: -119.657200,
+        lat: 37.535432,
+        date: new Date(2023, 4, 17),
+        author: "Améline",
+        weather: "sun-fill", // sun-fill cloud-fill, cloud-rain-heavy-fill
+        location: "Yosemite",
+        region: "california", //
+        content: `
+
+        <p>Après avoir tellement entendu parler de la météo idéale en Californie, je me suis trouvée un peu surprise : on a eu beaucoup de matinées plutôt nuageuses et fraîches sur la côte (pull et veste de rigueur). A peine quelques heures de route vers l'intérieur des terres, et on se retrouve avec plus de 35 degrés, quel contraste ! On aurait donc jamais imaginé que le parc national Sequoia vers lequel on se dirigeait, à peine 2h plus loin dans les hauteurs des montagnes, était fermé car les routes étaient encore trop enneigées ! Cette impression d'avoir 4 saisons dans la journée me rappelle un peu l'Angleterre ;) On a donc directement pris la route pour le parc national de Yosemite, un peu plus au Nord.</p>
+        
+        <img fluid class="mb-3 card-img" src="https://lh3.googleusercontent.com/fYRtibtcfSdrwQUhEuWbN-q6qDsdVWiGlAzJT2VNUIeg66aK1JLOvscbR1U6FVUEUtwJ3tXAbHxLHi8Dno15enr3qOSzOSWGPSghlakhY0TPqO80PW7Xw2YnHiTY6eanBc8LjBY_RCY"/>
+        
+        <p>On a tous déjà vu des photos des falaises de Yosemite (surtout si on a un Mac), donc la découverte de ce parc avait un air familier de déjà vu. Néanmoins, l'appréhender en personne permet de réaliser l'échelle des paysages et de s'approprier les lieux un peu plus en y créant des expériences personnelles. 
+
+        </p>
+        <img fluid class="mb-3 card-img" src="https://lh3.googleusercontent.com/1M-7IRFESb7-SGtCmhi85IR_VSYrPNXXEA-mAZw0sF2ZHewVFQ97h3ajq6Ifes7y0ZZCeKMFhp0AuDxAcJ1nsV53pFI2zFFLGso9JfCWJGNne2-8ZAkeh0v_V_GSURRLyD9Tz1eU1_U"/>
+        
+        <p>On a particulièrement apprécié se promener en forêt tôt le matin, avant les foules, et profiter du "dawn song" (la chorale matinale de tous les oiseaux au lever du soleil) entourés d'arbres géants. 
+
+        </p>
+        <img fluid class="mb-3 card-img" src="https://lh3.googleusercontent.com/pA6-HJwFo8kfn46Yqvd7aRFHGrWrsYa_Jw2hCB6Ory9fdB8D6li_wN6A0Aee0fNeNatlFqHGtVPwKY8u89Al7G6Crj8c4IWt3mI9bv6TvMb5PH7dXZMnwbXU0XaAxnTElOaPzCVwGBY"/>
+        
+        
+        <p>C'est à cette occasion qu'on a pu voir le <a href="https://ebird.org/species/whhwoo" target="_blank">pic à tête blanche</a> et le <a href="https://ebird.org/species/rebsap" target="_blank">pic à poitrine rouge</a>, deux lifers qui nous amènent à 650 espèces pour les US ! C'était un cap qu'on n'était pas sûr d'atteindre à la fin du trip, donc c'est une belle étape à passer déjà en Californie :) Bien sûr la barre est maintenant décalée a 670, Raph ne s'arrête jamais !
+        </p>
+        <div class="iframe-wrapper">
+        <iframe src="https://macaulaylibrary.org/asset/574116391/embed" frameborder="0"></iframe>
+    </div>
+        
+
+        <p>Dans l'après midi, on a exploré les cascades du parc, particulièrement impressionantes en cette saison, à cause de toute la neige qui fond. Passer à côté, c'est la douche assurée ! Plutôt rafraichissant - ça dérange moins Mady que son papa !
+        </p>
+        <img fluid class="mb-3 card-img" src="https://lh3.googleusercontent.com/HIz-a8mJtUEysGbsvtD_scflF70ah5YugR4iJzU30HK_Y4mhrBXC_tDG93UiwDCmA0qXISMqcpCnGmxY4IIK5kpEvnulWVs2p1mqwp3TD7XQ3jstwdoHUKJeD7ybaknJrMHOP3EEGlA"/>
+       
+    
+        `,
+        newsView: false
+    },
+
+    {
+        title: "Pelagic trip",
+        lon: -121.967125,
+        lat: 36.782324,
+        date: new Date(2023, 4, 20),
+        author: "Raphaël",
+        weather: "cloud-fill", // sun-fill cloud-fill, cloud-rain-heavy-fill
+        location: "Monterey Bay",
+        region: "california", //
+        content: `
+
+        <p>Parmi les espèces communes (ou regulières) d'Amérique du Nord qu'il reste à voir, une grosse partie sont des oiseaux marins. Ces oiseaux passent la plupart de leur temps au large et sont donc difficiles à observer. On peut les observer depuis la terre a la longue vue ("seawatch") ou réserver une sortie en bateau en pleine mer ("pélagique"). 
+        </p>
+        
+        <img fluid class="mb-3 card-img" src="https://lh3.googleusercontent.com/KBeJpsb3o3wAL74pBjNZsnV28M196zI5qdNGhy7Kn3o6OJ97uwvGFumu7m_30E28WbAXjIbeX6yLOFPFBgpg-8kff-e0BruQW8gR4t1wl-RnjK138LA9BbiIX8KucWNg9vmHbeAw5ns"/>
+
+        <p>Ayant vécu en Alsace, Suisse, et Ithaca, je n'ai pas eu beaucoup d'opportunités de faire du seawatch (sauf au Kenya), mais je profite de toutes les occasions qui s'offrent à moi pour relever ce défi d'identification et de comptage !</p>
+        <img fluid class="mb-3 card-img" src="https://lh3.googleusercontent.com/RZROp-YIHJRhQpSsgtaajlPf7iwfbkMeCZKKjGRSNcOxgVljy_0aDFZfHk8TJStth5jVOU662XtIV_Xg2tWPoXpyLPLV3g76KcLFnK8jyyBHL-9XWGNKWrtDmH5_8pzf56jc1silrug"/>
+        
+        
+        <p>Les sorties pélagiques sont toujours sources d'émotions mixtes. D'un coté le plaisir de pouvoir observer autant d'oiseaux marins proches et souvent rares. Mais de l'autre coté, l'incomfort d'être une journée entière à la mercie des vagues (ainsi que le coût élevé de ces sorties). 
+
+        </p>
+        <div class="iframe-wrapper">
+        <iframe src="https://macaulaylibrary.org/asset/576017871/embed" frameborder="0"></iframe>
+    </div>
+        
+        <p>Ce n'était pas la saison idéale pour observer les oiseaux de mer, mais la sortie a quand même permi d'observer plusieurs espèces dont <a href="https://media.ebird.org/catalog?mediaType=photo&userId=USER497615&sort=rating_rank_desc&regionCode=US-CA-053" target="_blank">quatre lifers US</a>.
+        </p>
+        <div class="iframe-wrapper">
+        <iframe src="https://macaulaylibrary.org/asset/576058921/embed" frameborder="0"></iframe>
+    </div>
+       
+    <p>L'objectif officiel de cette sortie était d'observer les baleines et orques. Accompagnés de biologistes spécialisés dans l'étude des cétacés, on a suivi un groupe d'orques dans l'espoir de les voir attaquer un phoque ou une otarie (en vain...). Clairement le plus gros lifer du voyage !
+</p>
+<img fluid class="mb-3 card-img" src="https://lh3.googleusercontent.com/fL6yN2v8Eqm29goes6NSFpznos8DsUFXfUJvE9jNoexboTaZNwtaMGBhDbwxps9hnllWZBhHSXbwTU_82495y7a1lszohb64PJND0xmqnjdweaqHz_35rjrE1RKMLUgcdJ5C4hGiuuI"/>
+
+<img fluid class="mb-3 card-img" src="https://lh3.googleusercontent.com/dN1Sh1drBtXn9r9fCH1f2X1bT3oP7LbEg974KTH3qhDUEIIF3aoRY2_JJZQ-n2aj6kpGitYdaY9_d2u8f0_4ub3JhI9ytSka37wKFknFj0AStmybpf7ZaJrgMqc3-Ol1ql6LPNiUt1s"/>
+        `,
+        newsView: false
+    },
+
+    {
+        title: "Narratrice de la vie",
+        lon: -120.837647,
+        lat: 38.714198,
+        date: new Date(2023, 4, 22),
+        author: "Mady",
+        weather: "sun-fill", // sun-fill cloud-fill, cloud-rain-heavy-fill
+        location: "Sacramento",
+        region: "california", //
+        content: `
+
+        <p>Alors que je maîtrise de mieux en mieux votre langage à vous les grands, je m'amuse à décrire tout ce que je vois - maman dit que je fais la narratrice de sa vie. Mais ce que papa et maman ne réalisent pas, c'est que toutes ces paroles répétées à longueur de journée resteront dans les souvenirs du voyage, car ce qui est dit influence ce dont on se souvient, non ? </p>
+        <img fluid class="mb-3 card-img" src="https://lh3.googleusercontent.com/pw/AJFCJaUPa0J9Ygf1aHyou6BbuQlwnB10KXutvTMB-if4GGIIUkFMPcUfUh8l8KD_sr--CUJr1QWpozT_mkhR2sixh7K-o4QqYrxkqVKA89OzqWelMj-tEUnf8hoFAERRkEHa23qjUdKVj_4lI7QtAzYvrlWyRg=w2040-h1530-s-no?authuser=0"/>
+        
+
+        <p>Alors je leur répète quelques messages qui me paraissent importants : (peut-être une nouvelle devise de la France ?)</p>
+        
+        <h4>Egalité</h4>
+        <p>C'est important que papa, maman, et moi aient toujours la même chose à manger. Je m'assure toujours que papa ait son "fofage" <i>(stick de fromage)</i> avant de manger le mien <i>(ndlr: on en est réduits au string cheese… vivement le retour en France)</i>. Pareil pour les "yayut" <i>(yaourts)</i>, je fais la distribution à papa et maman, comme ça chacun à le sien. Après je m'assure bien de pointer "yayut papa”, "yayut maman”, "yayut taty”, pour que les choses soient claires. </p>
+        <img fluid class="mb-3 card-img" src="https://lh3.googleusercontent.com/zt3d3-72j2MwzV6rA3fM6H8zoaceEOJy0HtloQQc1Z0nuzoD5clvGowzefONmJ5bQ6PkcPuGqX_VmjhZ5Cmm-FIdB_otfQhiIZgzM3MW2NrnJCF19owXnANvGBNYUa8WWYWqQbAgtOQ"/>
+        
+
+        <h4>Propriété</h4>
+        <p>Très important aussi de savoir à qui sont les choses ! Je passe ma journée à le répéter : "cuyer  maman” <i>(cuillère)</i>, "cuyer taty”, "umi papa” <i>(jumelles)</i>, "umi taty”, "andale maman” <i>(sandales)</i>, "andale taty”, … bref vous voyez l'idée : a chaque objet son propriétaire. Parfois on déroge à la règle et j'ai le droit de mettre la "cassette maman" <i>(casquette)</i>, bien plus cool que "sapo taty” <i>(chapeau)</i> !</p>
+        <img fluid class="mb-3 card-img" src="https://lh3.googleusercontent.com/5XZWr-aIS_bIX8Ew5PkniKRhU0nRF0P9-APudyWPDSGmftIZiryWk4qiWgq9lZw_p_FfhkgGvwRj4gsO5pEpoIvBYZh7JBFj1BagvYDQPP29aSDNoeWivHgLLCl4H3WCxk6zqnBHFk4"/>
+        
+        <h4>Répéter</h4>
+        
+        <p>Contrairement à papa, j'aime la répétition. Je pense même qu'elle est très utile. A force de répéter "donner main, "donner main, "donner main", papa ou maman finit toujours par me donner la main. Je repète aussi "café papa" régulièrement pour qu'il n'oublie pas son café quotidien, heureusement que je suis là pour le lui rappeler ! La répétition aide aussi à la compréhension - desfois je dois répéter "vid” cinq fois avant que papa comprenne que je veux mon livre (j'ai fait le tour de mes livres avec toutes les heures de route, donc je me mets aux livres de papa). </p>
+        <img fluid class="mb-3 card-img" src="https://lh3.googleusercontent.com/FLblHMxI-Z6WGmnqNFgIUNG6Vj06QhpPO1IALfH2fIg26OmabwsKnAC3jiY7kCX2ws71hFhOFW-gTudVTZ7gTRn0psOcQ4mqFqZ6e9smkJgZGjOfZluz-R3KPOmoWpq0QKcmb3_r9bE"/>
+
+        `,
+        newsView: false
+    },
 ]
 export default posts_hard
 
