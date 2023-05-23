@@ -23,18 +23,18 @@ const tripreport = [
     },
     {
         id: 112352,
-        status: "live",
+        status: "past",
         retion: "california",
     },
     {
         id: 112353,
-        status: "future",
-        retion: "mountainwest",
+        status: "live",
+        retion: "cascadia",
     },
     {
         id: 112354,
         status: "future",
-        retion: "cascadia",
+        retion: "pothole",
     }
 ];
 
