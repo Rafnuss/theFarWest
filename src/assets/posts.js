@@ -838,7 +838,7 @@ const posts_hard = [
         region: "california", //
         content: `
 
-        <p>Jusqu'à présent, la Californie ne livre pas sa météo tant idéalisée : on a eu plus de brouillard ces trois derniers jours que pendant tout le voyage ! C'est donc un plaisir de passer au-dessus des nuages le temps d'une journée, en allant visiter un col au nord de Los Angeles, où se tient tous les printemps un <a href="https://www.beardivide.org/" target=”_blank”>comptage d'oiseaux migratoires</a> et un projet de baguage d'oiseaux. 
+        <p>Jusqu'à présent, la Californie ne livre pas sa météo tant idéalisée : on a eu plus de brouillard ces trois derniers jours que pendant tout le voyage ! C'est donc un plaisir de passer au-dessus des nuages le temps d'une journée, en allant visiter un col au nord de Los Angeles, où se tient tous les printemps un <a href="https://www.beardivide.org/" target="_blank">comptage d'oiseaux migratoires</a> et un projet de baguage d'oiseaux. 
         </p>
         <img fluid class="mb-3 card-img" src="https://lh3.googleusercontent.com/pw/AJFCJaVWwGVNUChWu_4i9OqLLvZeNAC3vgLS03Jst4m5hj9-DGHrY8Fg-_ZQ5vywS6ng010frjzeTRc1Y8HPgtEzTlEcb9Z43YgguuQ0OD7wKfNAmQVdhVOZ"/>
         
@@ -848,11 +848,11 @@ const posts_hard = [
         </p>
         <img fluid class="mb-3 card-img" src="https://lh3.googleusercontent.com/pw/AJFCJaU0QBLgcgtv4b0MGYL-gQkTttPGPkbkKMmvGJLcDIxQkizB6RZlcolN3G6tK5cej-4GUD8sq_BNaZlKN17xRp6XYq-PTAHANaNatXaZtdl3duNZT_4a"/>
         
-        <p>Raph se fait un plaisir de rejoindre le comptage de "viz' mig” : la migration que l'on peut visualiser, contrairement à la grosse majorité de la migration, qui a lieu la nuit. Il s'agit principalement de passereaux qui continuent à voler dans les heures matinales, et, un peu plus tard, de rapaces qui migrent de jour. Les oiseaux longent la côte vers le Nord, et, après avoir passé le bassin de Los Angeles, rencontrent cette première chaîne de montagnes, et se concentrent donc au-dessus de ce col, offrant un passage plus facile. On peut y voir <a href=”https://ebird.org/checklist/S134119149”>jusqu'à 20 000 oiseaux en une matinée</a> !
+        <p>Raph se fait un plaisir de rejoindre le comptage de "viz' mig" : la migration que l'on peut visualiser, contrairement à la grosse majorité de la migration, qui a lieu la nuit. Il s'agit principalement de passereaux qui continuent à voler dans les heures matinales, et, un peu plus tard, de rapaces qui migrent de jour. Les oiseaux longent la côte vers le Nord, et, après avoir passé le bassin de Los Angeles, rencontrent cette première chaîne de montagnes, et se concentrent donc au-dessus de ce col, offrant un passage plus facile. On peut y voir <a href="https://ebird.org/checklist/S134119149">jusqu'à 20 000 oiseaux en une matinée</a> !
         </p>
 
         
-        <p>On y rencontre plusieurs autres personnes sur place, et Raph se fait remarquer en repérant un rapace rare (mais habituellement sur la côte Est) - <a href=”https://ebird.org/species/brwhaw" target=”_blank”>la Petite buse </a>.
+        <p>On y rencontre plusieurs autres personnes sur place, et Raph se fait remarquer en repérant un rapace rare (mais habituellement sur la côte Est) - <a href="https://ebird.org/species/brwhaw" target="_blank">la Petite buse </a>.
         </p>
         <div class="iframe-wrapper">
         <iframe src="https://macaulaylibrary.org/asset/573051771/embed" frameborder="0"></iframe>
@@ -1005,19 +1005,111 @@ const posts_hard = [
         <p>Alors je leur répète quelques messages qui me paraissent importants : (peut-être une nouvelle devise de la France ?)</p>
         
         <h4>Egalité</h4>
-        <p>C'est important que papa, maman, et moi aient toujours la même chose à manger. Je m'assure toujours que papa ait son "fofage" <i>(stick de fromage)</i> avant de manger le mien <i>(ndlr: on en est réduits au string cheese… vivement le retour en France)</i>. Pareil pour les "yayut" <i>(yaourts)</i>, je fais la distribution à papa et maman, comme ça chacun à le sien. Après je m'assure bien de pointer "yayut papa”, "yayut maman”, "yayut taty”, pour que les choses soient claires. </p>
+        <p>C'est important que papa, maman, et moi aient toujours la même chose à manger. Je m'assure toujours que papa ait son "fofage" <i>(stick de fromage)</i> avant de manger le mien <i>(ndlr: on en est réduits au string cheese… vivement le retour en France)</i>. Pareil pour les "yayut" <i>(yaourts)</i>, je fais la distribution à papa et maman, comme ça chacun à le sien. Après je m'assure bien de pointer "yayut papa", "yayut maman", "yayut taty", pour que les choses soient claires. </p>
         <img fluid class="mb-3 card-img" src="https://lh3.googleusercontent.com/zt3d3-72j2MwzV6rA3fM6H8zoaceEOJy0HtloQQc1Z0nuzoD5clvGowzefONmJ5bQ6PkcPuGqX_VmjhZ5Cmm-FIdB_otfQhiIZgzM3MW2NrnJCF19owXnANvGBNYUa8WWYWqQbAgtOQ"/>
         
 
         <h4>Propriété</h4>
-        <p>Très important aussi de savoir à qui sont les choses ! Je passe ma journée à le répéter : "cuyer  maman” <i>(cuillère)</i>, "cuyer taty”, "umi papa” <i>(jumelles)</i>, "umi taty”, "andale maman” <i>(sandales)</i>, "andale taty”, … bref vous voyez l'idée : a chaque objet son propriétaire. Parfois on déroge à la règle et j'ai le droit de mettre la "cassette maman" <i>(casquette)</i>, bien plus cool que "sapo taty” <i>(chapeau)</i> !</p>
+        <p>Très important aussi de savoir à qui sont les choses ! Je passe ma journée à le répéter : "cuyer  maman" <i>(cuillère)</i>, "cuyer taty", "umi papa" <i>(jumelles)</i>, "umi taty", "andale maman" <i>(sandales)</i>, "andale taty", … bref vous voyez l'idée : a chaque objet son propriétaire. Parfois on déroge à la règle et j'ai le droit de mettre la "cassette maman" <i>(casquette)</i>, bien plus cool que "sapo taty" <i>(chapeau)</i> !</p>
         <img fluid class="mb-3 card-img" src="https://lh3.googleusercontent.com/5XZWr-aIS_bIX8Ew5PkniKRhU0nRF0P9-APudyWPDSGmftIZiryWk4qiWgq9lZw_p_FfhkgGvwRj4gsO5pEpoIvBYZh7JBFj1BagvYDQPP29aSDNoeWivHgLLCl4H3WCxk6zqnBHFk4"/>
         
         <h4>Répéter</h4>
         
-        <p>Contrairement à papa, j'aime la répétition. Je pense même qu'elle est très utile. A force de répéter "donner main, "donner main, "donner main", papa ou maman finit toujours par me donner la main. Je repète aussi "café papa" régulièrement pour qu'il n'oublie pas son café quotidien, heureusement que je suis là pour le lui rappeler ! La répétition aide aussi à la compréhension - desfois je dois répéter "vid” cinq fois avant que papa comprenne que je veux mon livre (j'ai fait le tour de mes livres avec toutes les heures de route, donc je me mets aux livres de papa). </p>
+        <p>Contrairement à papa, j'aime la répétition. Je pense même qu'elle est très utile. A force de répéter "donner main, "donner main, "donner main", papa ou maman finit toujours par me donner la main. Je repète aussi "café papa" régulièrement pour qu'il n'oublie pas son café quotidien, heureusement que je suis là pour le lui rappeler ! La répétition aide aussi à la compréhension - desfois je dois répéter "vid" cinq fois avant que papa comprenne que je veux mon livre (j'ai fait le tour de mes livres avec toutes les heures de route, donc je me mets aux livres de papa). </p>
         <img fluid class="mb-3 card-img" src="https://lh3.googleusercontent.com/FLblHMxI-Z6WGmnqNFgIUNG6Vj06QhpPO1IALfH2fIg26OmabwsKnAC3jiY7kCX2ws71hFhOFW-gTudVTZ7gTRn0psOcQ4mqFqZ6e9smkJgZGjOfZluz-R3KPOmoWpq0QKcmb3_r9bE"/>
 
+        `,
+        newsView: false
+    },
+
+    {
+        title: "La chasse au tétraogalle",
+        lon: -115.387860,
+        lat: 40.648358,
+        date: new Date(2023, 4, 24),
+        author: "Améline",
+        weather: "sun-fill", // sun-fill cloud-fill, cloud-rain-heavy-fill
+        location: "Lamoille Canyon",
+        region: "cascadia", //
+        content: `
+
+        <p>Vous avez peut-être vu sur notre liste de lifer un oiseau de l'Himalaya, le <a href="https://ebird.org/species/himsno" target="_blank">Himalayan snowcock</a>, ou tétraogalle de l'Himalaya en français. Non, nous n'avons pas dévié notre route par le Népal, l'oiseau était bien ici aux Etats Unis ! Mais comment s'est-il retrouvé là ? </p>
+
+        <img fluid class="mb-3 card-img" src="https://lh3.googleusercontent.com/pw/AJFCJaUMcwwyFKQXFs7tR40YgHAJVHUDAOQtCp26bH4jLidCcKisDH_1k6geGyqttImDmCndSpiZ3AeEdIOl8-yb9BfK--a_Uo62_4Ag06k7jurwAYCPbpLK"/>
+
+        <p>Il se trouve que l'état du Nevada, fort de 96 000 km<sup>2</sup> de terres à haute altitude mais pauvre en gibier à plumes, est connu pour l'introduction d'espèces exotiques à chasser - c'est les US, la chasse est une institution ! N'étant probablement plus satisfaits avec le faisan (introduit partout aux US pour la chasse), ils ont introduit la <a href="https://ebird.org/species/chukar" target="_blank">Perdrix choukar</a>, originalement du Moyen Orient, désormais l'espèce la plus populaire à chasser dans la région.</p>
+        
+        <p>Cherchant ensuite une espèce qui pourrait s'intégrer dans la niche écologique des hautes montagnes (à environ 3 000m d'altitude), ils ont introduit la Tétraogalle de l'Himalaya. Suite à l'introduction graduelle d'un total de 2 000 individus de 1970-1980, il existe actuellement une petite population de 200-500 individus. Cachée dans les hauteurs des falaises dans un canyon, cette espèce difficile d'accès est devenue le graal des chasseurs.</p>
+
+        <div class="iframe-wrapper">
+        <iframe src="https://macaulaylibrary.org/asset/576747861/embed" frameborder="0"></iframe>
+    </div>
+    
+
+        <p>Depuis, cette espèce attire aussi les birders, qui veulent l'ajouter à leur liste US, comme nous ! Il existe même des tours en hélicoptère pour éviter une longue randonnée ardue et les voir plus confortablement.</p>
+
+        <p>Étant en fin de saison hivernale, et l'oiseau n'étant pas vu très souvent (seulement 2 obs cette année) on ne savait pas vraiment à quoi s'attendre ou quelle stratégie adopter pour tenter de voir cet émigré asiatique : combien de neige y aura-t-il ? Est-ce possible de randonner ? Des personnes ayant trouvé l'oiseau la semaine dernière ont mentionné que la route était inaccessible et qu'ils ont été pris en stop par des snowmobiles, j'avais donc un petit espoir qu'on ait la même expérience… (en vain).</p>
+
+
+        <img fluid class="mb-3 card-img" src="https://lh3.googleusercontent.com/vC8vJcTpPhh6GYg6Sg_CxDFb69QCnGMp9iobjP1qDuhPgYO8d34ABXBOQLPmwCG07TRPstFVGzEIu9NShIU-r3G6sieMTx6EhWxv5fGpR9P2pHEuXdcVk6bJVGYtjup30l7LmNjWUOc"/>
+        
+        <p>Arrivés dans le canyon en début de soirée, on scanne l'arête des montagnes, où sa silhouette est parfois vue au loin. Mis à part une chèvre de montagne se reposant tranquillement au sommet, pas d'oiseau à l'horizon. La route jusqu'au départ de la marche étant bloquée par des coulées de neige, on se prépare donc à faire une plutôt longue marche le lendemain pour tenter de le voir, chargés de la longue vue, Mady, appareil photo, etc. </p>
+
+        <img fluid class="mb-3 card-img" src="https://lh3.googleusercontent.com/pw/AJFCJaU2lIZNAjnFavy8VEJEuJYJYKAcDby8Et7Q0EjBJvTQ0O7K3Qz-UWLB29LtEtprehQDucZUkcseIEQqI9RUc8CxvteIcEU6b_o0YsPgZ6to0j1EqvYm"/>
+
+        <p>C'est donc un soulagement quand Raph, à peine sorti de la voiture à 5h30, l'aperçoit sur la crête de la montagne ! C'est toujours plus facile de profiter d'une rando sans la pression (ou le stress, pour certains ;) ) de dénicher le lifer en question ! Quelques km de marche plus loin, on en voit un deuxième, toujours sur l'arête, cette fois éclairé au soleil. On voit aussi plusieurs aigles royaux et autres espèces de montagne. On marche sur la route, enjambant des successions de coulées de neige qui ont arraché tous les arbres sur leur passage - plutôt impressionnant voir… Finalement, c'est une belle matinée en montagne, malgré les pieds mouillés et les épaules chargées !</p>
+
+        <img fluid class="mb-3 card-img" src="https://lh3.googleusercontent.com/pw/AJFCJaUHaf51DkR4esWOW1Qf9tVwbscKkzn7MUd3C7tx3FIR4tuCcEDYEzfXliEpgwHhOJAjZ4Zwh2ltRJw12CmmgvT7ZqyV4MJc7-Jr3MZem_d8Aq65S7ps"/>
+        
+        `,
+        newsView: false
+    },
+
+
+    {
+        title: "Une histoire d'écureuils ",
+        lon: -114.277910,
+        lat: 42.171740,
+        date: new Date(2023, 4, 24),
+        author: "Améline",
+        weather: "cloud-rain-heavy-fill", // sun-fill cloud-fill, cloud-rain-heavy-fill
+        location: "Albion Mountains",
+        region: "cascadia", //
+        content: `
+
+        <p>Les écureuils d'Idaho ont eu une grande influence sur notre trajet… ou plus précisément leur absence. </p>
+
+        <p>Les écureuils roux sont présents dans la plupart des forêts de pin tordus, une espèce d'arbre particulièrement prisée par les bec-croisés, qui se nourrissent de leurs pommes de pin. Lorsqu'ils sont présents, les écureuils, gourmands de ces mêmes pommes de pin, prennent le dessus sur les bec-croisés, mais dans une petite zone de 70km<sup>2</sup> des Rocheuses, dans l'état d'Idaho, ces écureuils sont absents. Par conséquent, les becs-croisés sont 20 fois plus communs qu'ailleurs ! 
+</p>
+
+<div class="iframe-wrapper">
+        <iframe src="https://macaulaylibrary.org/asset/555595781/embed" frameborder="0"></iframe>
+    </div>
+        
+
+
+        
+       <h4>Des bec-croisés particuliers </h4>
+        
+        <p>Il y a beaucoup de sous-espèces de bec-croisés, mais cette population en particulier a été élevée au rang d'espèce, <a href="https://ebird.org/species/redcro9" target="_blank">le Bec-croisé de l'Idaho</a>, suite à des études démontrant qu'elle avait un génotype distinct. Son nom latin rappelle son lien avec son habitat : <i>sinesciuris</i> (sans écureuils). Les pins tordus auraient même évolué de façon spécifique dans cette région pour se défendre contre les becs-croisés plutôt que contre les écureuils.
+        </p>
+
+    
+        <h4>Un ratio inefficace</h4>
+
+        <p>Cette espèce nous a bien fait tourner en rond dans l'Idaho : la première route est fermée, nous forçant à faire demi tour après 30min de route non-goudronnée, et la deuxième nous balade dans la campagne d'Idaho, avant d'arriver enfin sur la route montant dans cette petite zone de montagne. On roule à nouveau le long de forêts brûlées, une vue malheureusement bien trop fréquente dans l'Ouest…
+        </p>
+
+        <img fluid class="mb-3 card-img" src="https://lh3.googleusercontent.com/pw/AJFCJaVE2XXxUtwPLhHxTbSzRKwZtQSU2G-gWJlHTY76fTy6oHc2sAqN99UBlAGPvdyPpVZVXnROUIqJLIs39HlQ0_P-ONiIYKsMge9Ta3n_-T_HDrGiRQzh"/>
+
+        <p>Enfin arrivés dans la forêt en question, l'orage qui grondait depuis un moment s'intensifie, avec le duo de pluie et grêle qui vont avec. Pendant que Mady et moi préparons un café sous l'abri du toit de la voiture, Raph fait un tour rapide autour de la voiture et, au bout de 10min, entre deux averses de grêle, trouve un petit groupe de bec croisés au sol, visiblement moins dérangés par la pluie que nous. Malheureusement ceux-ci disparaissent rapidement et l'orage persiste… On décide donc de poursuivre notre route. Décidément l'espèce avec le pire ratio entre le temps passé sur place et la route pour y arriver ! 
+        </p>
+
+
+        <img fluid class="mb-3 card-img" src="https://lh3.googleusercontent.com/pw/AJFCJaXPIriNqkudcFAOn1DpX2K9EUZdQnaVEkS_MkQolAjyiMPcNZKiT1W4fHGHHgxldeqLx6colbr2_LPw20Cn0KermaFPCCn7ezKA8polFlKsNBVsrqCu"/>
+        
+        
+        
         `,
         newsView: false
     },
