@@ -41,7 +41,7 @@
         "end_date": "2023-6-31",
         "color": "#c6ac90",
         "ebirdcode": "US-WA",
-        "active": false
+        "active": true
     },
     {
         "region": "pothole",
