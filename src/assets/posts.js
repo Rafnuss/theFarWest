@@ -1113,6 +1113,57 @@ const posts_hard = [
         `,
         newsView: false
     },
+
+    {
+        title: "Les Big Five",
+        lon: -110.305382,
+        lat: 44.920124,
+        date: new Date(2023, 4, 27),
+        author: "Améline",
+        weather: "cloud-fill", // sun-fill cloud-fill, cloud-rain-heavy-fill
+        location: "Yellowstone",
+        region: "cascadia", //
+        content: `
+
+        <p>Le parc national de Yellowstone est connu pour ses Big 5 - les cinq plus grands mammifères du parc, un clin d'œil aux Big 5 d'Afrique (lion, éléphant, buffle, rhinocéros, léopard).</p>
+
+       <p>Après le Kenya et l'Afrique du Sud, on a fait l'expérience d'un safari aux États Unis. Ambiance safari, tant par la quantité d'animaux que de voitures, appareils photos et longues vues sur la route ! On a eu la chance d'avoir des bonnes vues de ces cinq animaux dans le parc et ses alentours.  
+        </p>
+
+       <h4>1. L'élan</h4>
+       <img fluid class="mb-3 card-img" src="https://static.inaturalist.org/photos/283852103/medium.jpg" >
+        <p>Caché derrière un arbre, notre premier élan nous a surpris en Idaho, à l'ouest de la région de Yellowstone. On en a ensuite revu deux - une mère et un jeune mâle - le lendemain, au bord du chemin lors d'une rando dans le parc national de Grand Téton.</p>
+       <p> L'élan est le plus grand dans la famille des cervidés, mais n'est pas évident à voir car il se trouve principalement dans la forêt et se déplace seul ou en petits groupes familiaux. Il y aurait moins de 200 élans dans le parc et leur population diminue, principalement à cause de la perte d'habitat liée aux feux de forêts.</p>
+        
+       <h4>2. Le wapiti</h4>
+        
+       <img fluid class="mb-3 card-img" src="https://static.inaturalist.org/photos/283852979/medium.jpg">
+        <p>Ce même matin en Idaho, derrière l'élan nous attendaient deux wapitis - le safari avait commencé avant l'heure ! Cela a donné lieu à un petit débat sur la terminologie autour de ces espèces - en Angleterre le mot "elk" fait référence à l'élan ("moose" aux US) alors qu'aux US "elk" signifie wapiti… de quoi créer la confusion!</p>
+       <p> Les wapitis sont les grands mammifères les plus répandus dans le parc (10 000 - 20 000). On aura l'occasion de revoir des wapitis à plusieurs reprises, à Grand Teton et Yellowstone. Les mâles sont particulièrement beaux avec leurs bois couverts de velours ! </p>
+
+    
+        <h4>3. Les ours</h4>
+
+        <img fluid class="mb-3 card-img" src="https://static.inaturalist.org/photos/283855895/medium.jpg">
+        <p>La région de Yellowstone est connue pour les ours - et la crainte des grizzlis est bien présente (plusieurs accidents fataux), incitant tout le monde à se promener avec du spray et des clochettes pour les chasser. 
+        </p>
+        <p>On a eu la chance de pouvoir observer les deux espèces d'ours plusieurs fois dans le parc. L'ours brun (grizzly), le plus gros et le plus dangereux, n'est trouvé que dans la région de Yellowstone et le nord ouest du Montana aux US, tandis que l'ours noir, plus petit, est plus répandu. 
+        </p>
+        <p>Les meilleures vues d'ours étaient à Yellowstone, où on a pu les observer manger une carcasse de bison, se promener en bord de rivière ou dans une petite clairière, mais notre première rencontre avec un ours restera la plus mémorable. </p><p>Alors qu'on emprunte le sentier équestre pour éviter le monde, Raph voit du mouvement derrière les arbres à quelques centaines de mètres. A son mouvement, on réalise vite que c'est un ours brun, que l'on aperçoit clairement dans une petite ouverture. Petite frayeur et quelques pas en arrière quand l'ours tourne la tête vers nous et nous fixe quelques secondes, avant de poursuivre son chemin suivi de trois petits qui trottinent derrière ! Pas de "canin" (câlin) de Mady pour cette espèce ! 
+        </p>
+        <iframe class="mb-3 card-img" height="260px;" width="100%" src="https://www.youtube-nocookie.com/embed/EPkTkeUqCzc?modestbranding&loop=1" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
+        <h4>4. Les bisons</h4>
+        <img fluid class="mb-3 card-img" src="https://static.inaturalist.org/photos/283853580/medium.jpg" style="width:66%;margin-left: 16%;">
+        <p>Les bisons se sont fait attendre mais ensuite ont été bien présents ! Raph en a compté 1 823 en une matinée (quand le comptage devient une petite obsession…). Un gros mâle seul sur la route, en grand troupeaux avec des petits, on a de multiples occasions d'observer ces bêtes imposantes. Alors qu'il en restait moins de 100 au début du 20<sup>è</sup> siècle, il y en a aujourd'hui plus de 4 000 dans le parc ! Les bisons ont peu de prédateurs naturels, c'est pourquoi les services du parc autorisent la chasse (sous certaines conditions) pour éviter la surpopulation. </p>
+        
+        <h4>5. Les loups</h4>
+        <img fluid class="mb-3 card-img" src="https://static.inaturalist.org/photos/283802510/medium.jpeg">
+        <p>Pensant les avoir entendus lors de notre première nuit dans la région, il nous restait à les voir. Cela a été rendu possible grâce aux indications d'autres observateurs, qui nous ont pointé vers une petite meute de loups au loin avec des petits. </p><p>L'éradication des loups dans les années 1920 (et la diminition d'autres carnivores tels que les ours) a eu des ramifications sur toute la chaîne alimentaire et perturbé l'écosystème du parc. Dans les années 1990, <a href="https://www.youtube.com/watch?v=ysa5OBhXz-Q" target="_blank">41 loups ont été réintroduits dans le parc</a>, et leur population est aujourd'hui estimée à un peu plus d'une centaine, divisée en dix meutes. 
+        </p>
+        `,
+        newsView: false
+    },
 ]
 export default posts_hard
 
