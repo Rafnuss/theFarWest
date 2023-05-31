@@ -795,7 +795,7 @@
         <p>Notre humble demeure comprend même une table et des bancs pour s'asseoir à l'intérieur... mais finalement on préfère souvent profiter de l'espace et des vues et manger dehors. La base de la table a d'ailleurs cassé lors de notre voyage et cela n'a pas changé grand-chose à notre quotidien ! 
         </p>
         <h4>Suite et fin</h4>
-        <p>A quelques semaines de la fin du voyage, on entame les démarches pour vendre cette belle maison. On ne tient pas debout dedans et on y est parfois un peu serrés, mais c'est notre petit espace de sécurité et familiarité pendant ce long périple - et on s'y attache un peu. Finalement, cette première maison construite de nos mains n'était qu'un tout petit échauffement pour le projet de construction bien plus grand qui nous attend a notre retour en Alsace ! 
+        <p>A quelques semaines de la fin du voyage, on entame les démarches pour vendre cette belle maison. On ne tient pas debout dedans et on y est parfois un peu serrés, mais c'est notre petit espace de sécurité et familiarité pendant ce long périple - et on s'y attache un peu. Finalement, cette première maison construite de nos mains n'était qu'un tout petit échauffement pour le projet de construction bien plus grand qui nous attend à notre retour en Alsace ! 
         </p>
 
         <img fluid class="mb-3 card-img" src="https://lh3.googleusercontent.com/pvpzvfdk3g5y2eOW3tQTBU-2XohZifd60dL_OBimB41h-peoZKp-nOYN70kWx3CkGNGTBnt36ipB8hzwZ-6m13NXm63c0TMgvlhTLxcarc-NRq8jUVsqQiQw9DxW63IQlIrRB0NQ6lU"/>
