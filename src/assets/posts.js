@@ -1164,6 +1164,81 @@ const posts_hard = [
         `,
         newsView: false
     },
+
+    {
+        title: "Tour de la maison",
+        lon: -121.419684,
+        lat: 47.428783,
+        date: new Date(2023, 4, 29),
+        author: "Améline",
+        weather: "sun-fill", // sun-fill cloud-fill, cloud-rain-heavy-fill
+        location: "Snoqualmie Pass",
+        region: "cascadia", //
+        content: `
+
+        <p>Alors qu'on entame notre troisième mois dans notre petite maison, il est temps de vous faire visiter ! On aurait préféré faire une crémaillère, mais la logistique paraît compliquée…
+        </p>
+        
+
+       <p>Avant même notre arrivée aux US, on avait pour projet de voyager en van pour découvrir le pays. C'est la raison pour laquelle on a acheté le modèle <i>Dodge Grand Caravan</i>, plutôt grand pour seulement trois personnes, mais où les sièges peuvent être pliés au niveau du sol, permettant de voyager avec Mady (c'aurait été dommage de la laisser à la maison), et, le soir, de replier son siège pour créer de l'espace pour un lit. 
+        </p>
+
+        <img fluid class="mb-3 card-img" src="https://drive.google.com/uc?export=view&id=19pMUnKtxLkfYh8shNh6hRvxtXL9_f9pE"/>       
+    
+       <p>Le projet était de construire un kit amovible, permettant de camper dans la voiture quand on part en voyage, et d'utiliser la voiture sans le kit le reste du temps. On souhaitait créer un kit en bois, léger mais solide - l'occasion d'apprendre un peu le travail du bois. Basé sur notre expérience de camping en Europe, on a voulu continuer dans la voie de la simplicité, sans électricité ou robinet. On s'est inspiré de modèles en ligne pour concevoir un <a href="https://cad.onshape.com/documents/5a34a297c3c7e13d7e052a8c/w/4326efacb375e4cad01fc4b6/e/f2bafdf64819e7d19595b435?renderMode=0&uiState=63cdea9d0cbe834b358bb57c" target="_blank">modèle 3D</a> sur mesure pour notre voiture. 
+       <img fluid class="mb-3 card-img" src="https://drive.google.com/uc?export=view&id=1aLxprv32ETT0NgztpHZiclDr1P-ep_Aq"/>
+       
+       On a ensuite envoyé ces plans à une entreprise qui a découpé toutes les pièces avec un Router CNC, que l'on a ensuite assemblées avec l'aide de Joël et Denise en visite à ce moment-là.    
+       </p>
+       <img fluid class="mb-3 card-img" src="https://drive.google.com/uc?export=view&id=1sP83K-2-xsuncoA9iu3G_4j050GMLTkp"/>
+
+       Voici un petit tour de la maison !
+       
+
+       <h4>La salle de vie</h4>
+       <img fluid class="mb-3 card-img" src="https://drive.google.com/uc?export=view&id=1Dh3Rehb3XJQ0gVthiRODanGLlWZFXjH9"/>
+
+      <p>Le kit est composé de plusieurs caisses de bois (offrant de l'espace de stockage) que l'on empile en journée pour pouvoir rouler avec les sièges arrière ouverts. Cela demande un peu d'installation et de rangement chaque matin et soir, mais, avec l'expérience, on y arrive en quelques minutes ! Avec le froid ou les moustiques, on apprend vite à accélérer les choses… 
+      </p>
+
+
+
+    
+        <h4>La chambre à coucher</h4>
+
+        <img fluid class="mb-3 card-img" src="https://drive.google.com/uc?export=view&id=19LCk2Egd_Uvo_OqLtomPZgimhEoISKTL"/>
+        <p>Le soir, on replie le siège de Mady et on aligne toutes nos caisses de rangement pour créer une grande surface plane, sur laquelle on aligne nos coussins pour créer un matelas. La voiture étant de taille américaine, le lit est plutôt grand ! Cela nous donne la place de dormir confortablement, avec Mady à nos pieds ;) (en théorie… en pratique on observe beaucoup de dispositions différentes au fil de la nuit - c'est une gigoteuse !) 
+        </p>
+
+        <img fluid class="mb-3 card-img" src="https://drive.google.com/uc?export=view&id=1hD4FgZFOe_QwQaLF1Z6abvS3X09UxCgi"/>
+           
+        
+        <h4>La cuisine</h4>
+        <img fluid class="mb-3 card-img" src="https://drive.google.com/uc?export=view&id=18lIZO9WaCgYGrajUnpC_0Q-Y5UGn-SYi"/>
+    
+        <p>La cuisine se trouve à l'arrière de la voiture, ou on a installé des tiroirs qui s'ouvrent sur l'extérieur - toujours à l'abri du toit ! Ayant enlevé la rangée de sièges à l'arrière, on peut utiliser cet espace pour stocker nourriture et bidons d'eau. 
+        </p>
+        <img fluid class="mb-3 card-img" src="https://drive.google.com/uc?export=view&id=1XaIww4A7WZ6hcTWN-qU4Iv6YzQbj0vdX"/>
+        <h4>Le salon</h4>
+        <img fluid class="mb-3 card-img" src="https://drive.google.com/uc?export=view&id=1ntXph8vb7IeCMnD8I5ggh4NjdbeTVL8U"/>
+        <p>Notre humble demeure comprend même une table et des bancs pour s'asseoir à l'intérieur... mais finalement on préfère souvent profiter de l'espace et des vues et manger dehors. La base de la table a d'ailleurs cassé lors de notre voyage et cela n'a pas changé grand-chose à notre quotidien ! 
+        </p>
+        <h4>Suite et fin</h4>
+        <p>A quelques semaines de la fin du voyage, on entame les démarches pour vendre cette belle maison. On ne tient pas debout dedans et on y est parfois un peu serrés, mais c'est notre petit espace de sécurité et familiarité pendant ce long périple - et on s'y attache un peu. Finalement, cette première maison construite de nos mains n'était qu'un tout petit échauffement pour le projet de construction bien plus grand qui nous attend a notre retour en Alsace ! 
+        </p>
+
+        <img fluid class="mb-3 card-img" src="https://lh3.googleusercontent.com/pvpzvfdk3g5y2eOW3tQTBU-2XohZifd60dL_OBimB41h-peoZKp-nOYN70kWx3CkGNGTBnt36ipB8hzwZ-6m13NXm63c0TMgvlhTLxcarc-NRq8jUVsqQiQw9DxW63IQlIrRB0NQ6lU"/>
+
+        <img fluid class="mb-3 card-img" src="https://lh3.googleusercontent.com/bt_bAyFu3axToMZTztP-VZnCZLR7ptfb3sbkp7akzlaETLo9t-1hHCRGRX4ELFCgrPb2mtC402-92OvA0ZBiXBiPtz8DrsnbG0CaRQCCA8wPvQ2ndRO9_DucqgSyiL_HQlrQVzKqlkw"/>
+        <img fluid class="mb-3 card-img" src="https://lh3.googleusercontent.com/65pUh3SWgXHNFC0mzAnj5ESMusYV763HkSh4ML4zB98YuZzJXEt4ZjZM9kFIf3ZaKJ9RYgpncPMUgGsUT03ZAqLuhrtVwOZvmGYuaUcTCk2enMISqody0rQwTSqeBPi_BbcDqFxEI9o"/>
+        <img fluid class="mb-3 card-img" src="https://lh3.googleusercontent.com/ZjuYuyuxtsh1CHENZfUwVFvF3Vyo5DTqMWB5yJ9TGWkHDzpfjv4dXq0R4JW32FufL-lLsVi4U2qC_mVld_eInPE4XKm-x242fc2ab6KqUEWm3OfOP8oPb42GCt_LDwM730sQh_Cl_bQ"/>
+        
+        
+        
+        
+        `,
+        newsView: false
+    },
 ]
 export default posts_hard
 
