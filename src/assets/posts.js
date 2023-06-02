@@ -1239,6 +1239,41 @@ const posts_hard = [
         `,
         newsView: false
     },
+
+    {
+        title: "Changement de destination",
+        lon: -122.292930,
+        lat: 47.656910,
+        date: new Date(2023, 4, 30),
+        author: "Améline",
+        weather: "sun-fill", // sun-fill cloud-fill, cloud-rain-heavy-fill
+        location: "Seattle",
+        region: "cascadia", //
+        content: `
+
+        <p>Les journées sont plus longues (et en toute logique, les nuits plus courtes), les paysages plus verts, et les moustiques de retour - on est dans le nord ! On aura seulement passé quelques jours dans l’Etat de Washington, mais on en mesure déjà la diversité et on goûte à sa beauté - entre randos dans la neige en montagne, balade à Seattle avec un collègue de Raph, et la côte sauvage au nord-ouest, on découvre de jolis coins moins fréquentés que dans le sud.
+
+        </p>
+        
+        <img fluid class="mb-3 card-img" src="https://lh3.googleusercontent.com/XeXREAVg1_zDAGHMPltbbNDayrbjnks1c3aCm3l_Gz_mGGZlx5uZ2qiZ2Ihd5i8VpfSetN1qD-9T-cXjxXXGymVh7uG6Mig2D8V4e8XyMd4yO5FPl6UyabCplX9IXHnpsprMcHaDCKU"/>
+
+       <p>Deux mois après notre départ, nous voici arrivés à Seattle, la fin théorique de notre périple à travers le continent… Mais comme tout bon road trip, les plans changent de jour en jour ! On a décidé de boucler la boucle et de rentrer à Toronto en voiture plutôt que de prendre l’avion comme prévu initialement. 
+
+        </p>
+        <img fluid class="mb-3 card-img" src="https://lh3.googleusercontent.com/goJKO1HHAQcie9Pc_Z65aw0TESsn0lLMNepuHvcT5z2P2hJfrsYbcZYTOZjruhLYKSRetVhIh83VVDWMZtAprpqh2HwVDeC8RjtvDbsA0k2uVbZ0B-DF-tPvIyERV9gfPfYmas6fO18"/>       
+    
+       <p>Ayant déjà tout le dispositif pour voyager et camper facilement, on s’est dit que c’était le moment d’en profiter pour poursuivre notre voyage en passant un peu plus de temps au Canada. 
+       </p>
+       <img fluid class="mb-3 card-img" src="https://lh3.googleusercontent.com/QINzZk9JRW3H4lW3eyNsBSALVci16fXZth8itp6k5oeVUckdsXz7plTyNwcNGvA3CWPQqECyCk1f_NKNvW2IQFi-pCerVDMO45aDKps55xUwykdK5U5bZKLSBQAjVxJ6MsfobxMWiSg"/>  
+
+
+        
+        <p>On mettra donc en pause les USA pour découvrir la région de Vancouver, rendre visite à nos amis à A Rocha Canada, et explorer les Rocheuses canadiennes avec les parcs nationaux de Jasper et Banff. On continuera ensuite la route vers la région des prairies et “potholes” (cuvettes et fondrières des prairies) où Raph avait déjà été lors de son Master, pour finir avec les grands lacs au Nord Est. L’objectif est de faire la traversée d’Ouest en Est pendant les trois prochaines semaines et de vendre le van dans la région des grands lacs. C’est parti pour le Canada !
+
+        </p>
+        `,
+        newsView: false
+    },
 ]
 export default posts_hard
 
