@@ -835,9 +835,9 @@
         <img fluid class="mb-3 card-img" src="https://lh3.googleusercontent.com/omBjurT7M-BSNWKS4o_jrtN98ADDvxyuN66x4w-fBOjWqIP0hHNoketOfB5X4OOqbxGMsRFieyVpU_1gBgBGpMT1t31taqMAFO60xVdLDu90XF1DjYxz88jIa_l6nZ4fjO3t2Sb-xww"/> 
         
 
-       <p>Inx fait tout avec moi, je l'amène dans toutes nos aventures. Quand on se promène pour "gader zazos", "papa pote ongue-vue, maman pote sac, taty ien inx" (les "t" aussi c'est dur). Inx participe a toutes nos tâches quotidiennes : il nous aide à presser le café de papa, il prie avec nous, mange avec nous, et fait même de la balançoire avec moi !</p>
+       <p>Inx fait tout avec moi, je l'amène dans toutes nos aventures. Quand on se promène pour "gader zazos", "papa pote ongue-vue, maman pote sac, taty ien inx" (les "t" aussi c'est dur). Inx participe a toutes nos tâches quotidiennes : il nous aide à presser le café de papa, prie avec nous, mange avec nous, et fait même de la balançoire avec moi !</p>
         <img fluid class="mb-3 card-img" src="https://lh3.googleusercontent.com/KtRm1trnaH2BD6MlqyBAX2VLAaox7AJ7awrBYlaG81skI2kGfW8OmOnOcpfNzTiPYiO7NKxGRCVdADaIKIDzk7KVuvxWh4Nfgt3XOQSGJ6oe22ZHC9Tm_blxNcmPG1B4fuiOv-XSFeA"/>   
-        <img fluid class="mb-3 card-img" src="https://lh3.googleusercontent.com/88gbFlj40GphyGrXsteGikNH0ICXu9lYoy71GJA1oP8iPVkpKmXHdx_3KXsO-t4VqMa2caNLlUIlFU_iQCBCNBrps_4Vr5s-PgdNWFJN7ivICC4Nu-VBjRg3e5Hcq71TjWCSmrWWwCc"/> 
+        <img fluid class="mb-3 card-img" src="https://lh3.googleusercontent.com/BtI_xPH2XBFzUWUEHk8_M8FTEa5EG245LCW9aExIwIy8IqDX2FeuhMFooB_MFOSkQ9cP2pkT0N6h1o2v-eFm-3JS4tWQS9e2arrFbN7IA2V1F8H3wBtk5hDrFSqiMEOKMEXbj_qswpE"/> 
         
     
        <p>Je m'occupe bien de lui, comme une grande : je lui fait des "canins" <i>(ndlr: câlins)</i>, je lui montre la route, je lui apprend à jouer au foot, je lui raconte des histoires, je lui partage mon dessert et je lui nettoie ensuite la moustache quand elle est sale, et je lui change même la couche. Je serais bientôt prête pour faire la même chose avec mon petit frère ou petite sœur !</p>
