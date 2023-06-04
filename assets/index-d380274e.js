@@ -840,7 +840,7 @@
         <img fluid class="mb-3 card-img" src="https://lh3.googleusercontent.com/BtI_xPH2XBFzUWUEHk8_M8FTEa5EG245LCW9aExIwIy8IqDX2FeuhMFooB_MFOSkQ9cP2pkT0N6h1o2v-eFm-3JS4tWQS9e2arrFbN7IA2V1F8H3wBtk5hDrFSqiMEOKMEXbj_qswpE"/> 
         
     
-       <p>Je m'occupe bien de lui, comme une grande : je lui fait des "canins" <i>(ndlr: câlins)</i>, je lui montre la route, je lui apprend à jouer au foot, je lui raconte des histoires, je lui partage mon dessert et je lui nettoie ensuite la moustache quand elle est sale, et je lui change même la couche. Je serais bientôt prête pour faire la même chose avec mon petit frère ou petite sœur !</p>
+       <p>Je m'occupe bien de lui, comme une grande : je lui fait des "canins" <i>(ndlr: câlins)</i>, je lui montre la route, je lui apprend à jouer au foot, lui raconte des histoires, lui partage mon dessert et lui nettoie ensuite la moustache quand elle est sale, et lui change même la couche. Je serais bientôt prête pour faire la même chose avec mon petit frère ou petite sœur !</p>
        <img fluid class="mb-3 card-img" src="https://lh3.googleusercontent.com/5tRVHDtSlxgDmnsC3rgzly4DgtpJKlNGwBqDUoeA7wdpGEoYDG_IWSprkguuLNHgHBe4Ez0ASw7YMc5l0wiuorLOW3tr1Tc-HPj8fkwqT-vnYzKOx5w7R44O4Nv047nCYeTI1GsF8F4"/>  
         `,newsView:!1},{title:"Les joies du seawatch",lon:-125.541088,lat:48.921459,date:new Date(2023,5,4),author:"Raphaël",weather:"sun-fill",location:"Ucluelet",region:"cascadia",content:`
 
