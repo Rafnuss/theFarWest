@@ -974,7 +974,7 @@ export default {
           sp.hasMedia = sp.seen ? spmedia[id] : 0;
           return sp;
         });
-        let uslifercount = this.species_list.filter((sp) => (!sp.US_lifer | sp.seen) & (sp.exotic != "X")).length;
+        let uslifercount = this.species_list.filter((sp) => (!sp.US_lifer | sp.seen) & (sp.exotic != "X")).length - 1;
         this.animateUSliferCount(uslifercount);
       })
       .catch((error) => console.error(error));
