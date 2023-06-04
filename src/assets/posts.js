@@ -1274,6 +1274,76 @@ const posts_hard = [
         `,
         newsView: false
     },
+
+    {
+        title: "Mon copain 'inx",
+        lon: -123.57,
+        lat: 48.5,
+        date: new Date(2023, 5, 2),
+        author: "Mady",
+        weather: "sun-fill", // sun-fill cloud-fill, cloud-rain-heavy-fill
+        location: "Goldstream Provincial Park",
+        region: "cascadia", //
+        content: `
+
+        <p>J'aimerais vous présenter mon compagnon de voyage: "inx" (j'ai encore un peu de mal avec les "l")<i>(ndlr: lynx)</i>. J'aime bien partager mes expériences avec lui et je lui raconte tout ce qui se passe dans la journée.</p>
+        <img fluid class="mb-3 card-img" src="https://lh3.googleusercontent.com/omBjurT7M-BSNWKS4o_jrtN98ADDvxyuN66x4w-fBOjWqIP0hHNoketOfB5X4OOqbxGMsRFieyVpU_1gBgBGpMT1t31taqMAFO60xVdLDu90XF1DjYxz88jIa_l6nZ4fjO3t2Sb-xww"/> 
+        
+
+       <p>Inx fait tout avec moi, je l'amène dans toutes nos aventures. Quand on se promène pour "gader zazos", "papa pote ongue-vue, maman pote sac, taty ien inx" (les "t" aussi c'est dur). Inx participe a toutes nos tâches quotidiennes : il nous aide à presser le café de papa, il prie avec nous, mange avec nous, et fait même de la balançoire avec moi !</p>
+        <img fluid class="mb-3 card-img" src="https://lh3.googleusercontent.com/KtRm1trnaH2BD6MlqyBAX2VLAaox7AJ7awrBYlaG81skI2kGfW8OmOnOcpfNzTiPYiO7NKxGRCVdADaIKIDzk7KVuvxWh4Nfgt3XOQSGJ6oe22ZHC9Tm_blxNcmPG1B4fuiOv-XSFeA"/>   
+        <img fluid class="mb-3 card-img" src="https://lh3.googleusercontent.com/88gbFlj40GphyGrXsteGikNH0ICXu9lYoy71GJA1oP8iPVkpKmXHdx_3KXsO-t4VqMa2caNLlUIlFU_iQCBCNBrps_4Vr5s-PgdNWFJN7ivICC4Nu-VBjRg3e5Hcq71TjWCSmrWWwCc"/> 
+        
+    
+       <p>Je m'occupe bien de lui, comme une grande : je lui fait des "canins" <i>(ndlr: câlins)</i>, je lui montre la route, je lui apprend à jouer au foot, je lui raconte des histoires, je lui partage mon dessert et je lui nettoie ensuite la moustache quand elle est sale, et je lui change même la couche. Je serais bientôt prête pour faire la même chose avec mon petit frère ou petite sœur !</p>
+       <img fluid class="mb-3 card-img" src="https://lh3.googleusercontent.com/5tRVHDtSlxgDmnsC3rgzly4DgtpJKlNGwBqDUoeA7wdpGEoYDG_IWSprkguuLNHgHBe4Ez0ASw7YMc5l0wiuorLOW3tr1Tc-HPj8fkwqT-vnYzKOx5w7R44O4Nv047nCYeTI1GsF8F4"/>  
+        `,
+        newsView: false
+    },
+
+    {
+        title: "Les joies du seawatch",
+        lon: -125.541088,
+        lat: 48.921459,
+        date: new Date(2023, 5, 4),
+        author: "Raphaël",
+        weather: "sun-fill", // sun-fill cloud-fill, cloud-rain-heavy-fill
+        location: "Ucluelet",
+        region: "cascadia", //
+        content: `
+
+        <p>Je vous parlais il y a quelques jours des sorties en bateau qui permettent d'observer les oiseaux de mer de proche. Ces sorties doivent être réservées à l'avance et sont assez chères, donc restent plutôt exceptionnelles.</p>
+        <div class="iframe-wrapper">
+        <iframe src="https://macaulaylibrary.org/asset/576060181/embed" frameborder="0"></iframe>
+    </div>
+
+       <p>L'alternative pour observer ces oiseaux est le seawatch. Cet exercice implique de se poster à un bon point de vue sur la côte (idéalement une extrémité qui avance dans la mer) et de rester stationnaire pour y observer les oiseaux qui passent. L'outil indispensable du seawatcher : la longue vue ! Elle permet de transformer ce qui à première vue ressemble à une vaste étendue bleue et vide en une véritable autoroute d'oiseaux de mer. </p>
+        <img fluid class="mb-3 card-img" src="https://lh3.googleusercontent.com/yIdyHDnlz-Y2Ru0TENvv30DF37OJY1OGExz-sdMVeLdKkiXWiKQnRSBgh0pgZJaxcclL-HsqnLgVnJtrASJUM32JmhqIwcB6q8y6SVUmFE-nm22Ob_7ViZXVZsPSjT9leq_fofl4tZk"/>       
+    
+       <h4>Migration de mer</h4>
+       <p>Ce qui m'intéresse particulièrement chez les oiseaux, vous l'aurez compris, c'est le phénomène de la migration. Le seawatch permet d'apprécier la migration des oiseaux de mer qui longent la côte du sud au nord au printemps. </p><p>Les conditions de vent ont une grande influence sur le nombre d'oiseaux qui passent, et contrairement aux rapaces, un vent de face ou perpendiculaire à la côte est préférable pour pousser les oiseaux vers la côte. Cependant, il reste difficile de prédire précisément une bonne journée de seawatch. Comme la migration en général, on a une bonne compréhension du phénomène à grande échelle, mais les détails ont encore une part d'aléatoire. Peut être que cet aléatoire est simplement une combinaison d'effets encore mal compris ? C'est justement ça qui rend la recherche dans ce domaine passionnante ! </p>
+       </p>
+       
+       <div class="iframe-wrapper">
+       <iframe src="https://macaulaylibrary.org/asset/573084881/embed" frameborder="0"></iframe>
+   </div>
+
+        <h4>Un défi à relever</h4>
+        <p>Le seawatch est un exercice plutôt difficile qui demande pas mal de pratique pour s'améliorer. En effet, alors que sur la terre, on identifie principalement les oiseaux à leur son (surtout au printemps), le seawatch demande de bien connaître les tailles, formes, et façons de voler de chaque espèce pour pouvoir s'y retrouver. La plupart des oiseaux sont vus au loin et disparaissent fréquemment derrière les vagues, mais au fur et à mesure des heures (ou journées) passées, on commence à connaître chaque espèce et on augmente la distance à laquelle on peut les identifier !</p>
+        <img fluid class="mb-3 card-img" src="https://lh3.googleusercontent.com/_un7xWlWOpaipdh1NOGaseqAnr67r2UnTf9wsby6WVi4Mxw29Mvr0Rrvtt5JzPC2BGnnLBd-yNwIlj6eqXUAqa-RGEUQhSy-dlw_YF6voY2rRAsARO4LlefZosz1nfF98xbadsqAn7U"/> 
+        
+        <p>L'autre défi, tenir des comptes corrects, surtout quand les oiseaux volent dans plusieurs directions. Lorsqu'il y a beaucoup de passage, ça aide d'avoir un scribe qui note pendant que l'un garde les yeux dans la longue vue. </p>
+
+        
+
+        <p>Comme tout exercice difficile, il y a une appréciation particulière quand on commence a y arriver, c'est pourquoi j'aime relever ce défi ! Cela offre aussi de bonnes surprises telles que dauphins, loutres ou baleines :) </p>
+        <img fluid class="mb-3 card-img" src="https://static.inaturalist.org/photos/282274635/medium.jpg">
+    
+
+       <p> Si je vous ai convaincu de relever ce défi, voici quelques-uns de mes coins préférés : <a href="https://goo.gl/maps/irLgz8UwybiK1L1EA" target="_blank">Cap Gris-Nez</a> (France), <a href="https://goo.gl/maps/WrYtAWjJ9VYQAmKn9" target="_blank">Estaca de Bares</a> (Espagne), <a href="https://goo.gl/maps/EL6zgvEYTvUN6K5N8" target="_blank">Cap Cod</a> (US), <a href="https://goo.gl/maps/NpMhSTQBkcjbq6yw9" taregt="_blank">Ras Ngomeni</a> (Kenya), et <a href="https://goo.gl/maps/sKSx7M7oSyuQJMcr9" target="_blank">Cape Sable Island</a> (Canada). </p>
+        `,
+        newsView: false
+    },
 ]
 export default posts_hard
 
