@@ -1314,7 +1314,7 @@ const posts_hard = [
 
         <p>Je vous parlais il y a quelques jours des sorties en bateau qui permettent d'observer les oiseaux de mer de proche. Ces sorties doivent être réservées à l'avance et sont assez chères, donc restent plutôt exceptionnelles.</p>
         <div class="iframe-wrapper">
-        <iframe src="https://macaulaylibrary.org/asset/576060181/embed" frameborder="0"></iframe>
+        <iframe src="https://macaulaylibrary.org/asset/573084881/embed" frameborder="0"></iframe>
     </div>
 
        <p>L'alternative pour observer ces oiseaux est le seawatch. Cet exercice implique de se poster à un bon point de vue sur la côte (idéalement une extrémité qui avance dans la mer) et de rester stationnaire pour y observer les oiseaux qui passent. L'outil indispensable du seawatcher : la longue vue ! Elle permet de transformer ce qui à première vue ressemble à une vaste étendue bleue et vide en une véritable autoroute d'oiseaux de mer. </p>
@@ -1325,7 +1325,7 @@ const posts_hard = [
        </p>
        
        <div class="iframe-wrapper">
-       <iframe src="https://macaulaylibrary.org/asset/573084881/embed" frameborder="0"></iframe>
+       <iframe src="https://macaulaylibrary.org/asset/581218041/embed" frameborder="0"></iframe>
    </div>
 
         <h4>Un défi à relever</h4>
