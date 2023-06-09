@@ -1344,6 +1344,57 @@ const posts_hard = [
         `,
         newsView: false
     },
+
+    {
+        title: "Pause avant le retour",
+        lon: -122.688080,
+        lat: 49.032858,
+        date: new Date(2023, 5, 7),
+        author: "Améline",
+        weather: "sun-fill", // sun-fill cloud-fill, cloud-rain-heavy-fill
+        location: "A Rocha Canada",
+        region: "cascadia", //
+        content: `
+
+        <p>Après quelques jours de pause au centre <a href="https://arocha.ca/" target="_blank">A Rocha Canada</a>, nous voici de nouveau sur les routes. On entame la grande traversée dans l'autre sens ! 
+        </p>
+        <h4>Un changement de rythme bienvenu</h4>
+
+       <p>C'était un plaisir de retrouver nos amis, anciennement basés à Ithaca, qui travaillent désormais tous les deux au centre A Rocha. 
+       Ils nous avaient accueillis chez eux lors de nos premiers jours à Ithaca, et nous ont généreusement accueillis à nouveau alors que nous nous apprêtons à repartir - la boucle est bouclée :)
+       </p>
+        <img fluid class="mb-3 card-img" src="https://lh3.googleusercontent.com/emBlpVxZfMPLaC0tA7oBGVPlCyGmYKouyssr3OZthxh_eIERJBJpn3j9t4PO1FzA32gKQJvT936lK7pK-_xW34MxrA9KgE8KRLfUCmucdtHwn3qXMNjAcTD6Nu4vv8-i7ld863YKyas"/>       
+    
+       
+       <p>On a passé trois jours sur le centre - un nouveau record de dormir plus de deux nuits consécutives au même endroit, offrant un peu de répit pour nous et notre voiture ! L'hospitalité chaleureuse de nos amis, les bons repas partagés au soleil (avec légumes fraichement cueillis sur la ferme juste à côté), les discussions intéressantes, et les rencontres avec le staff sur place font de cette pause une parenthèse rafraîchissante dans notre quête aux oiseaux et petit rythme à trois (ou 3.5). 
+       </p>
+       <img fluid class="mb-3 card-img" src="https://lh3.googleusercontent.com/2IR2yMrwBkfIznzP-v-_Mk-TCrTnMz3hAwF9R_-F1cAMgzgEcb0pSUsjVcaiJtY4ZMcS7IH3zwjU_TCB9ibpUGPzLV7ymrJ0P2P-6iTlRfzlcXXAkJtwbL2fRcCckAZbGc3OeGEnSGk"/>  
+       
+
+        <h4><a href="https://arocha.ca/" target="_blank">Brooksdale Environmental Centre</a>
+        </h4>
+        <p>On repart inspirés par la passion et le travail assidu des staff, que ce soit dans les partenariats locaux pour de nombreux projets de conservation, la créativité dans l'éducation à l'environnement, ou la motivation de l'équipe agriculture qui venait d'effectuer leur première récolte (et ont planté plus de 200 variétés de légumes en tous genres !). Toute cette activité crée un centre très dynamique dans un cadre idyllique. </p>
+        <img fluid class="mb-3 card-img" src="https://lh3.googleusercontent.com/gMW1cFjQnnguT9MX69ku_cV3fH_3qDLTMJdUgAQTyn7LOGyTmzMNkfpyG_aGO_MTJJAS2la97PVn-hR8-f9PWXlhkeMGTuYkxp53u7-oqg7NRhfABW52-jqVi7T3lH_tgRGlBxH-hGg"/> 
+        
+        <p>Ayant passé du temps à A Rocha Kenya et connaissant bien le centre en France, on retrouve des connections communes, des façons de faire, et des réflexions, qui facilitent les échanges et les rendent d'autant plus riches.
+        </p>
+       
+        <h4>Taty ravie</h4>
+        <img fluid class="mb-3 card-img" src="https://lh3.googleusercontent.com/welPSgNsI480_aJED4LhGNSPxOvKZF4Y3uDg3fbXFzzlO6ozbJYQxzFb7Rqbq3PYdXjxHjmZLLmeZyQclxwpOWkUeCuapZfVb8YZR7pSMywXZPpf_CO-oYyOX1Tp5rV4FDXTPPzTFso"/> 
+        <p>
+        Entre une copine avec qui jouer, une multitude de nouveaux jouets à découvrir, et des grands-parents (en visite a ce moment là) aux petits soins, Mady était ravie ! Elle aussi a battu des nouveaux records de grasse matinée, et a pu s'adonner à son activité préférée avec sa copine Junia : jeter des cailloux dans la petite rivière qui traverse le centre (site très important de reproduction de saumon). 
+        </p>
+
+    
+        <img fluid class="mb-3 card-img" src="https://lh3.googleusercontent.com/FYpeR1rGLD3Z51RtxAg12YPeSssXO6pedU_BKX5ZgsAN1W1MbF2okhPBIioVu9CkLOwPO8T5Bib79m1k9U4MuSgbl1ZK9LXEAXRHwobq9JOQduVxPsM2r13WhMvLUsPFtSfZFy7jjJY"/>     
+
+        <p>Après cette pause agréable, on se remet dans le rythme du voyage, avec comme première étape les Rocheuses canadiennes ! 
+        </p>
+
+        <img fluid class="mb-3 card-img" src="https://lh3.googleusercontent.com/pw/AJFCJaVY_lCwQmvve0GaE_fTcMoJD2Sef1bAL27j8c47ZlLfQ_g__bYNy6ivq6U8WDSuyzvEMJewVU0stEDHF_rNk2x0YsUkCGhGda6G1qdlCO38X5RYY4zY"/>  
+        `,
+        newsView: false
+    },
 ]
 export default posts_hard
 
