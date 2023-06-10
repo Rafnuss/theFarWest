@@ -1391,7 +1391,7 @@ const posts_hard = [
         <p>Après cette pause agréable, on se remet dans le rythme du voyage, avec comme première étape les Rocheuses canadiennes ! 
         </p>
 
-        <img fluid class="mb-3 card-img" src="https://lh3.googleusercontent.com/pw/AJFCJaVY_lCwQmvve0GaE_fTcMoJD2Sef1bAL27j8c47ZlLfQ_g__bYNy6ivq6U8WDSuyzvEMJewVU0stEDHF_rNk2x0YsUkCGhGda6G1qdlCO38X5RYY4zY"/>  
+        <img fluid class="mb-3 card-img" src="https://lh3.googleusercontent.com/dTxGwAD4kLFNIAkEE_dBiNIKfkpJbXepQHYtyv0rVfrd6hQUw7MzhxSqTsQDJuYUR7LXmOlb6vlyzRouE3b2MqLWEWhwA9xRno9o5pxMwMidHDzm62F8kRqvFw6iSG_zfyB-6wP9Pec"/>  
         `,
         newsView: false
     },
