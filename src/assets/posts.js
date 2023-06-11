@@ -1395,6 +1395,51 @@ const posts_hard = [
         `,
         newsView: false
     },
+
+    {
+        title: "Rencontres dans les Rocheuses",
+        lon: -117.200330,
+        lat: 52.223355,
+        date: new Date(2023, 5, 9),
+        author: "Raphaël",
+        weather: "sun-fill", // sun-fill cloud-fill, cloud-rain-heavy-fill
+        location: "Jasper",
+        region: "cascadia", //
+        content: `
+
+        <p>Notre chemin du retour passant par le Canada, on vise à nouveau des lieux où il y a une diversité d’habitats et d’espèces. On est déjà allés au Canada quelques fois, mais uniquement sur la côte Est, ainsi qu’un séjour à Saksatoon pour moi - il nous reste donc beaucoup d’espèces faciles typiques de l’Ouest, que l’on avait déjà cherché aux US. </p>
+
+        <p>Après avoir fait les espèces restreintes à la côte à Vancouver Island, on se dirige vers les Rocheuses canadiennes avec les deux parcs nationaux les plus connus - Jasper et Banff. Voici ci-dessous quelques moments mémorables de ces quelques jours en montagne : </p>
+        <img fluid class="mb-3 card-img" src="https://lh3.googleusercontent.com/pw/AJFCJaU3qtrheP3C_O7xPFDf61roIlVAaicudlztasf6d01uboQ4To-oOP9jDhULB1wi2xkJajEcLKZ92Hj_HxJJ2VMGwR1tQmVJCjV9hk6q-KxkVFBw-Dtl"/>
+
+        <h4>Lagopède à queue blanche</h4
+        <p>Vous vous souvenez peut-être de ce lagopède qu’on avait cherché au Colorado dans un col enneigé, qui s’est fait attendre mais où on avait été récompensés avec un joli mâle chanteur. </p>
+        <p>On se préparait donc à une espèce assez compliquée à trouver, moins vocale à cette période de l’année mais plus commune dans les Rocheuses canadiennes. Alors que la plupart des observations se font au sommet d’une télécabine, on a visé l’expérience plus authentique avec une rando plus ardue. Effectivemment, c’est seulement au bout de 6km de montée, au sommet de la marche, que je l’ai trouvé sagement posé au bord du chemin, m’attendant pour une petite séance photo...</p>
+        <div class="iframe-wrapper">
+            <iframe src="https://macaulaylibrary.org/asset/582988251/embed" frameborder="0"></iframe>
+        </div>
+
+        <h4>Bruant à couronne dorée</h4>
+        <p>On avait déjà “twitché” (voir une espèce rare déjà trouvée par d’autres) le bruant à couronne dorée en Ontario, mais je souhaitais voir un male chanteur dans son habitat de nidification. Son aire de nidifcation est principalement en Alaska, mais on trouve quelques couples nicheurs dans les Rocheuses canadiennes. Avec seulement quelques observations par année, on savait que ce n’était pas gagné, et probablement dans un habitat difficile d’accès. L’ayant loupé la veille dans le meilleur endroit, on s’est lancé sur cette deuxième rando en sachant qu’il faudrait redoubler nos efforts pour le trouver. </p>
+
+        <p>Il se trouve dans un habitat alpin, au dessus de la limite des forêts, dans quelques petits sapins isolés et paysages plus rocheux. Une fois arrivés dans l’habitat en question, pendant que Mady et Améline expérimentent les lois de la gravité au bord du lac (ndlr: jetter des cailloux), j’arpente les pentes plus raides des alentours. Un grand soulagement quand j’entends enfin les longues notes de sifflement pur de son chant ! </p>
+        <div class="iframe-wrapper">
+            <iframe src="https://macaulaylibrary.org/asset/583593781/embed" frameborder="0"></iframe>
+        </div>
+
+        <p>On continue ensuite ensemble vers les tas de neige qui restent de l’hiver, où le Roselin se nourrit en été. Alors que je m’apprêtais à redescendre, je les entends crier au loin - à nouveau une jolie récompense après tout l’effort !</p>
+        <div class="iframe-wrapper">
+        <iframe src="https://macaulaylibrary.org/asset/583587841/embed" frameborder="0"></iframe>
+    </div>
+
+        <h4>Lynx canadien</h4>
+        <p>Lors de nos nombreuses balades dans les Vosges et Alpes, j’ai souvent rêvé voir un lynx. C’était donc une belle surprise de le voir aussi proche du chemin - il s’est figé pour me regarder, et je ne pouvais que faire de même pour l’admirer. La rencontre a été brêve mais mémorable ! Ce n’était pas un lynx roux (plus commun), mais le lynx canadien, plus alpin. Après le lynx de Mady, les lynx continuent de nous accompagner sur notre route !</p>
+
+        <a href="https://www.inaturalist.org/observations/166516305"><img fluid class="mb-3 card-img" src="https://static.inaturalist.org/photos/288364673/medium.jpg"></a>
+  
+        `,
+        newsView: false
+    },
 ]
 export default posts_hard
 
