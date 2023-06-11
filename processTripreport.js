@@ -28,12 +28,12 @@ const tripreport = [
     },
     {
         id: 112353,
-        status: "live",
+        status: "past",
         retion: "cascadia",
     },
     {
         id: 112354,
-        status: "future",
+        status: "live",
         retion: "pothole",
     }
 ];

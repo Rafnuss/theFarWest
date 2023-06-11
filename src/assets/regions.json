@@ -48,6 +48,6 @@
         "name": "Prairie Pothole",
         "color": "#95bfb6",
         "ebirdcode": "US-MI",
-        "active": false
+        "active": true
     }
 ]

@@ -641,7 +641,7 @@ export default {
   },
   data() {
     return {
-      live_tripreport_id: 112353,
+      live_tripreport_id: 112354,
       google_api_key: "AIzaSyCaVWdIpSvq8BoF7PvEK4oY3LByPYTQ2Xs",
       mapboxToken: "pk.eyJ1IjoicmFmbnVzcyIsImEiOiIzMVE1dnc0In0.3FNMKIlQ_afYktqki-6m0g",
       map: null,
@@ -974,7 +974,7 @@ export default {
           sp.hasMedia = sp.seen ? spmedia[id] : 0;
           return sp;
         });
-        let uslifercount = this.species_list.filter((sp) => (!sp.US_lifer | sp.seen) & (sp.exotic != "X")).length - 1;
+        let uslifercount = this.species_list.filter((sp) => (!sp.US_lifer | sp.seen) & (sp.exotic != "X")).length - 3;
         this.animateUSliferCount(uslifercount);
       })
       .catch((error) => console.error(error));
