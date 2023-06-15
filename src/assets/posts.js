@@ -1251,24 +1251,24 @@ const posts_hard = [
         region: "cascadia", //
         content: `
 
-        <p>Les journées sont plus longues (et en toute logique, les nuits plus courtes), les paysages plus verts, et les moustiques de retour - on est dans le nord ! On aura seulement passé quelques jours dans l’Etat de Washington, mais on en mesure déjà la diversité et on goûte à sa beauté - entre randos dans la neige en montagne, balade à Seattle avec un collègue de Raph, et la côte sauvage au nord-ouest, on découvre de jolis coins moins fréquentés que dans le sud.
+        <p>Les journées sont plus longues (et en toute logique, les nuits plus courtes), les paysages plus verts, et les moustiques de retour - on est dans le nord ! On aura seulement passé quelques jours dans l'Etat de Washington, mais on en mesure déjà la diversité et on goûte à sa beauté - entre randos dans la neige en montagne, balade à Seattle avec un collègue de Raph, et la côte sauvage au nord-ouest, on découvre de jolis coins moins fréquentés que dans le sud.
 
         </p>
         
         <img fluid class="mb-3 card-img" src="https://lh3.googleusercontent.com/XeXREAVg1_zDAGHMPltbbNDayrbjnks1c3aCm3l_Gz_mGGZlx5uZ2qiZ2Ihd5i8VpfSetN1qD-9T-cXjxXXGymVh7uG6Mig2D8V4e8XyMd4yO5FPl6UyabCplX9IXHnpsprMcHaDCKU"/>
 
-       <p>Deux mois après notre départ, nous voici arrivés à Seattle, la fin théorique de notre périple à travers le continent… Mais comme tout bon road trip, les plans changent de jour en jour ! On a décidé de boucler la boucle et de rentrer à Toronto en voiture plutôt que de prendre l’avion comme prévu initialement. 
+       <p>Deux mois après notre départ, nous voici arrivés à Seattle, la fin théorique de notre périple à travers le continent… Mais comme tout bon road trip, les plans changent de jour en jour ! On a décidé de boucler la boucle et de rentrer à Toronto en voiture plutôt que de prendre l'avion comme prévu initialement. 
 
         </p>
         <img fluid class="mb-3 card-img" src="https://lh3.googleusercontent.com/goJKO1HHAQcie9Pc_Z65aw0TESsn0lLMNepuHvcT5z2P2hJfrsYbcZYTOZjruhLYKSRetVhIh83VVDWMZtAprpqh2HwVDeC8RjtvDbsA0k2uVbZ0B-DF-tPvIyERV9gfPfYmas6fO18"/>       
     
-       <p>Ayant déjà tout le dispositif pour voyager et camper facilement, on s’est dit que c’était le moment d’en profiter pour poursuivre notre voyage en passant un peu plus de temps au Canada. 
+       <p>Ayant déjà tout le dispositif pour voyager et camper facilement, on s'est dit que c'était le moment d'en profiter pour poursuivre notre voyage en passant un peu plus de temps au Canada. 
        </p>
        <img fluid class="mb-3 card-img" src="https://lh3.googleusercontent.com/QINzZk9JRW3H4lW3eyNsBSALVci16fXZth8itp6k5oeVUckdsXz7plTyNwcNGvA3CWPQqECyCk1f_NKNvW2IQFi-pCerVDMO45aDKps55xUwykdK5U5bZKLSBQAjVxJ6MsfobxMWiSg"/>  
 
 
         
-        <p>On mettra donc en pause les USA pour découvrir la région de Vancouver, rendre visite à nos amis à A Rocha Canada, et explorer les Rocheuses canadiennes avec les parcs nationaux de Jasper et Banff. On continuera ensuite la route vers la région des prairies et “potholes” (cuvettes et fondrières des prairies) où Raph avait déjà été lors de son Master, pour finir avec les grands lacs au Nord Est. L’objectif est de faire la traversée d’Ouest en Est pendant les trois prochaines semaines et de vendre le van dans la région des grands lacs. C’est parti pour le Canada !
+        <p>On mettra donc en pause les USA pour découvrir la région de Vancouver, rendre visite à nos amis à A Rocha Canada, et explorer les Rocheuses canadiennes avec les parcs nationaux de Jasper et Banff. On continuera ensuite la route vers la région des prairies et “potholes” (cuvettes et fondrières des prairies) où Raph avait déjà été lors de son Master, pour finir avec les grands lacs au Nord Est. L'objectif est de faire la traversée d'Ouest en Est pendant les trois prochaines semaines et de vendre le van dans la région des grands lacs. C'est parti pour le Canada !
 
         </p>
         `,
@@ -1407,36 +1407,169 @@ const posts_hard = [
         region: "cascadia", //
         content: `
 
-        <p>Notre chemin du retour passant par le Canada, on vise à nouveau des lieux où il y a une diversité d’habitats et d’espèces. On est déjà allés au Canada quelques fois, mais uniquement sur la côte Est, ainsi qu’un séjour à Saksatoon pour moi - il nous reste donc beaucoup d’espèces faciles typiques de l’Ouest, que l’on avait déjà cherché aux US. </p>
+        <p>Notre chemin du retour passant par le Canada, on vise à nouveau des lieux où il y a une diversité d'habitats et d'espèces. On est déjà allés au Canada quelques fois, mais uniquement sur la côte Est, ainsi qu'un séjour à Saksatoon pour moi. Il nous reste donc beaucoup d'espèces faciles typiques de l'Ouest, que l'on avait déjà cherché aux US. </p>
 
-        <p>Après avoir fait les espèces restreintes à la côte à Vancouver Island, on se dirige vers les Rocheuses canadiennes avec les deux parcs nationaux les plus connus - Jasper et Banff. Voici ci-dessous quelques moments mémorables de ces quelques jours en montagne : </p>
-        <img fluid class="mb-3 card-img" src="https://lh3.googleusercontent.com/pw/AJFCJaU3qtrheP3C_O7xPFDf61roIlVAaicudlztasf6d01uboQ4To-oOP9jDhULB1wi2xkJajEcLKZ92Hj_HxJJ2VMGwR1tQmVJCjV9hk6q-KxkVFBw-Dtl"/>
+        <p>Après avoir cherché les espèces restreintes à la côte à Vancouver Island, on se dirige vers les Rocheuses canadiennes avec les deux parcs nationaux les plus connus - Jasper et Banff. Voici ci-dessous quelques moments mémorables de ces quelques jours en montagne : </p>
+        <img fluid class="mb-3 card-img" src="https://lh3.googleusercontent.com/pw/AJFCJaXVlEru4h5UgYVwDM-KRx_leAuL2W2T-w0_bY8tsDTpvcLMlyJzrfOYv4tZiBTf4xzKnXpzrR4z_tyPh_R8DzBaxCxDkvd4wCLg3zA49Ve7bAAGAfPu"/>
 
         <h4>Lagopède à queue blanche</h4
-        <p>Vous vous souvenez peut-être de ce lagopède qu’on avait cherché au Colorado dans un col enneigé, qui s’est fait attendre mais où on avait été récompensés avec un joli mâle chanteur. </p>
-        <p>On se préparait donc à une espèce assez compliquée à trouver, moins vocale à cette période de l’année mais plus commune dans les Rocheuses canadiennes. Alors que la plupart des observations se font au sommet d’une télécabine, on a visé l’expérience plus authentique avec une rando plus ardue. Effectivemment, c’est seulement au bout de 6km de montée, au sommet de la marche, que je l’ai trouvé sagement posé au bord du chemin, m’attendant pour une petite séance photo...</p>
+        <p>Vous vous souvenez peut-être de ce lagopède qu'on avait cherché au Colorado dans un col enneigé, qui s'est fait attendre mais où on avait été récompensés avec un joli mâle chanteur. </p>
+        <p>On se préparait donc à une espèce assez compliquée à trouver, moins vocale à cette période de l'année mais plus commune dans les Rocheuses canadiennes. Alors que la plupart des observations se font au sommet d'une télécabine, on a visé l'expérience plus authentique avec une rando plus ardue. Effectivemment, c'est seulement au bout de 6km de montée, au sommet de la marche, que je l'ai trouvé sagement posé au bord du chemin, m'attendant pour une petite séance photo...</p>
         <div class="iframe-wrapper">
             <iframe src="https://macaulaylibrary.org/asset/582988251/embed" frameborder="0"></iframe>
         </div>
 
         <h4>Bruant à couronne dorée</h4>
-        <p>On avait déjà “twitché” (voir une espèce rare déjà trouvée par d’autres) le bruant à couronne dorée en Ontario, mais je souhaitais voir un male chanteur dans son habitat de nidification. Son aire de nidifcation est principalement en Alaska, mais on trouve quelques couples nicheurs dans les Rocheuses canadiennes. Avec seulement quelques observations par année, on savait que ce n’était pas gagné, et probablement dans un habitat difficile d’accès. L’ayant loupé la veille dans le meilleur endroit, on s’est lancé sur cette deuxième rando en sachant qu’il faudrait redoubler nos efforts pour le trouver. </p>
+        <p>On avait déjà “twitché” (= voir une espèce rare déjà trouvée par d'autres) le bruant à couronne dorée en Ontario, mais je souhaitais voir un male chanteur dans son habitat de nidification. Son aire de nidifcation se trouve principalement en Alaska, mais on peut trouver quelques couples nicheurs dans les Rocheuses canadiennes. Avec seulement quelques observations par année, on savait que ce n'était pas gagné, et probablement dans un habitat difficile d'accès. L'ayant loupé la veille dans le meilleur endroit, on s'est lancé sur cette deuxième rando en sachant qu'il faudrait redoubler nos efforts pour le trouver. </p>
 
-        <p>Il se trouve dans un habitat alpin, au dessus de la limite des forêts, dans quelques petits sapins isolés et paysages plus rocheux. Une fois arrivés dans l’habitat en question, pendant que Mady et Améline expérimentent les lois de la gravité au bord du lac (ndlr: jetter des cailloux), j’arpente les pentes plus raides des alentours. Un grand soulagement quand j’entends enfin les longues notes de sifflement pur de son chant ! </p>
+        <p>Il se trouve dans un habitat alpin au dessus de la limite des forêts, dans quelques petits sapins isolés et paysages plus rocheux. Une fois arrivés dans l'habitat en question, pendant que Mady et Améline expérimentent les lois de la gravité au bord du lac (ndlr: jeter des cailloux), j'arpente les pentes plus raides des alentours. Un grand soulagement quand j'entends enfin les longues notes de sifflement pur de son chant ! </p>
         <div class="iframe-wrapper">
             <iframe src="https://macaulaylibrary.org/asset/583593781/embed" frameborder="0"></iframe>
         </div>
 
-        <p>On continue ensuite ensemble vers les tas de neige qui restent de l’hiver, où le Roselin se nourrit en été. Alors que je m’apprêtais à redescendre, je les entends crier au loin - à nouveau une jolie récompense après tout l’effort !</p>
+        <p>On continue ensuite ensemble vers les tas de neige qui restent de l'hiver, où les roselins à tête grise se nourrissent en été. Alors que je m'apprêtais à redescendre, je les entends crier au loin - à nouveau une jolie récompense après tout l'effort !</p>
         <div class="iframe-wrapper">
         <iframe src="https://macaulaylibrary.org/asset/583587841/embed" frameborder="0"></iframe>
     </div>
 
         <h4>Lynx canadien</h4>
-        <p>Lors de nos nombreuses balades dans les Vosges et Alpes, j’ai souvent rêvé voir un lynx. C’était donc une belle surprise de le voir aussi proche du chemin - il s’est figé pour me regarder, et je ne pouvais que faire de même pour l’admirer. La rencontre a été brêve mais mémorable ! Ce n’était pas un lynx roux (plus commun), mais le lynx canadien, plus alpin. Après le lynx de Mady, les lynx continuent de nous accompagner sur notre route !</p>
+        <p>Lors de nos nombreuses balades dans les Vosges et Alpes, j'ai souvent rêvé de voir un lynx. C'était donc une belle surprise de le voir aussi proche du chemin - il s'est figé pour me regarder, et je ne pouvais que faire de même pour l'admirer. La rencontre a été brêve mais mémorable ! Ce n'était pas un lynx roux (plus commun), mais le lynx canadien, plus alpin. Après le lynx de Mady, les lynx continuent de nous accompagner sur notre route !</p>
 
         <a href="https://www.inaturalist.org/observations/166516305"><img fluid class="mb-3 card-img" src="https://static.inaturalist.org/photos/288364673/medium.jpg"></a>
   
+        `,
+        newsView: false
+    },
+
+    {
+        title: "Une chouette surprise",
+        lon: -114.626,
+        lat: 51.591,
+        date: new Date(2023, 5, 10),
+        author: "Raphaël",
+        weather: "sun-fill", // sun-fill cloud-fill, cloud-rain-heavy-fill
+        location: "Calgary",
+        region: "pothole", //
+        content: `
+
+        <p>On a déjà évoqué les joies et défis de nos recherches de chouettes pendant ce voyage. Entre celles qui ne chantent que la nuit, nous forçant à rester réveillés quand on veut dormir, et celles qui sont souvent silencieuses, elles ont chacune leur histoire et specificité. </p>
+
+        <p>La dernière chouette du voyage est la <a href="https://ebird.org/species/grgowl#" target="_blank">chouette laponne</a>, une espèce mythique des forêts boréales trouvée à travers tout l'hémisphère nord.  Ces chouettes sont principalement recherchées en hiver, lorsque le froid les pousse plus au sud et les arbres dénudés les rendent plus facile à trouver. Connue pour sa tête disproportionnellement large par rapport à son corps, ses grands disques faciaux lui permettent de détecter les rongeurs sous la couche de neige.</p>
+        
+        <div class="iframe-wrapper">
+        <iframe src="https://macaulaylibrary.org/asset/585094391/embed" frameborder="0"></iframe>
+    </div>
+
+        <p>Contrairement à la plupart des chouettes, elle est largement silencieuse et peut être observée au crépuscule. Nous l'avons déjà cherché à plusieurs reprises à la tombée de la nuit et au lever du jour, espérant la voir perchée en bordure de forêt. Vous connaissez peut-être ce sentiment quand vous cherchez un objet perdu depuis longtemps sans plus trop y croire, et vous êtes surpris de le retrouver. C'est ce sentiment qui nous a habité lorsque, alors qu'on s'apprêtait à arrêter les recherches pour aller dormir, Améline voit du coin de l'œil un gros oiseau s'envoler et se percher dans un arbre à quelques mètres du chemin. 
+        </p>
+
+        <div class="iframe-wrapper">
+        <iframe src="https://macaulaylibrary.org/asset/585094491/embed" frameborder="0"></iframe>
+    </div>
+
+        <p>Cette chouette ayant une ouïe particulièrement fine, elle se tournait vers nous et nous fixait de son visage imposant au moindre son - une expérience remplie d'effroi ! Elle a posé pour nous quelques minutes avant d'être dérangée par un merle. Quelques instants plus tard, elle est réapparue de la forêt et s'est perchée à quelques mètres de la voiture. Même Mady a pu observer son 'owl' qu'elle avait tellement regardé dans le guide !
+        </p>
+
+        <img fluid class="mb-3 card-img" src="https://lh3.googleusercontent.com/A_aYeHXNn4GqkpAeOWxrQL9hsIm-0w0L-gb7RObhzTK1M91b7fwGI7kR7JRalTlrZHC1Q2ColJaj65z9gkMLdcLDJMCgKbbX8yQz3VCAiJwBDXVD_18Ed5ff_mAHsYk9jz0U49I_otc"/>
+        
+  
+        `,
+        newsView: false
+    },
+
+    {
+        title: "Les prairies canadiennes ",
+        lon: -107.545,
+        lat: 49.16,
+        date: new Date(2023, 5, 12),
+        author: "Améline",
+        weather: "sun-fill", // sun-fill cloud-fill, cloud-rain-heavy-fill
+        location: "Grasslands National Park",
+        region: "pothole", //
+        content: `
+
+        <p>On pensait avoir fini les parcs nationaux mais, à notre surprise, les prairies ont aussi leur parc national ! Les stats, par contre, sont revues à la baisse, avec deux bisons plutôt que 2000, mais aussi deux visiteurs plutôt que 2000 ;)</p>
+        <img fluid class="mb-3 card-img" src="https://lh3.googleusercontent.com/NkgXXd8rWrdJDd6mRplH4gprauB5TDnLuCEasAHhQkw9b08QJX91MJlgijRP_yUnjc2LJZZs0-FWN51RMwi-b_k6zTYOqlYLV8gd-lNdPmWtjNVGYdAda-TxAQGX6OvgotjQbrNlNKk"/>
+        <p>Blague à part, les paysages des prairies m'ont surpris par leur beauté. L'immensité des étendues d'herbe, le côté sauvage et moins fréquenté, et les ambiances sonores du matin, contribuent tous à créer une atmosphère unique. Après deux années de secheresse, cet hiver a vu beaucoup de neige, ce qui en été remplit les "potholes" (cuvettes) d'eau et crée beaucoup de zones humides propices à de nombreux oiseaux. </p>
+        <p>On y a aussi trouvé coyote, renard, antilopes américaines, bisons, et un grand nombre de chien de prairie à queue noire. Dans le genre homo sapiens, on a fait la rencontre d'un rancher de 3ème génération, dont les grands-parents avaient émigré de France au début du siècle !</p>
+        <img fluid class="mb-3 card-img" src="https://lh3.googleusercontent.com/pw/AJFCJaXfYpJpdJHu2zAOI2oHXNnAKkMjxi_1_BRkeKQrI51-xwb6kenHAQ1OcmJHyjHZpKSdDBIMPj_lI2FD9rpk9Fd2ECtyfEod48iK_OkIF8NI1uw1I6MR"/>
+        <p>Les prairies sont souvent vues comme une zone qui doit être traversée pour passer rapidement d'une côte à l'autre, où les grandes villes et montagnes attirent d'avantage. Les seuls attirés semblent être les moustiques, qui eux sont bien présents ! </p>
+        <p>Cet habitat est un lieu critique de nidification pour un grand nombre d'oiseaux. On avait cherché certaines de ces espèces en hiver au début de notre voyage, mais les observer sur leur lieu de nidification, chanteurs, et dans leur plumage nuptial (le plus beau) est bien plus agréable ! </p>
+        <p>Voici ci-dessous quelques espèces caractéristiques des prairies :</p>
+        <div class="iframe-wrapper">
+        <iframe src="https://macaulaylibrary.org/asset/585098941/embed" frameborder="0"></iframe>
+    </div>
+
+    <div class="iframe-wrapper">
+        <iframe src="https://macaulaylibrary.org/asset/585099071/embed" frameborder="0"></iframe>
+    </div>
+
+    <div class="iframe-wrapper">
+        <iframe src="https://macaulaylibrary.org/asset/585096831/embed" frameborder="0"></iframe>
+    </div>
+
+    <div class="iframe-wrapper">
+        <iframe src="https://macaulaylibrary.org/asset/585097701/embed" frameborder="0"></iframe>
+    </div>
+
+    <div class="iframe-wrapper">
+        <iframe src="https://macaulaylibrary.org/asset/585097511/embed" frameborder="0"></iframe>
+    </div>
+
+    <div class="iframe-wrapper">
+        <iframe src="https://macaulaylibrary.org/asset/585096021/embed" frameborder="0"></iframe>
+    </div>
+  
+        `,
+        newsView: false
+    },
+
+    {
+        title: "L'équipement du birder",
+        lon: -94.296,
+        lat: 48.762,
+        date: new Date(2023, 5, 14),
+        author: "Raphaël",
+        weather: "cloud-fill", // sun-fill cloud-fill, cloud-rain-heavy-fill
+        location: "Sable Islands",
+        region: "pothole", //
+        content: `
+
+        <p>L'observation des oiseaux n'est pas seulement une lubie de passionnés qui ne font que ça pendant 3 mois (qui donc ferait ça ?). C'est un sport <i>(ndlr: ce terme est sujet à débat)</i> ouvert à tous : n'importe qui peut se balader dehors et regarder ou écouter les oiseaux. Mais comme tout sport, avoir un peu de matériel de bonne qualité peut faire une grande différence.</p>
+        
+        <h4> Jumelles</h4>
+        <p>J'ai commencé en 2013 avec la base : une paire de jumelles. Les oiseaux se laissant rarement approcher à plus de 10-20 mètres, les jumelles permettent de zoomer (x8 ou x10) sur l'oiseau et observer les détails du plumage, ou d'identifier les oiseaux au loin.</p>
+        <img fluid class="mb-3 card-img" src="https://lh3.googleusercontent.com/VsbLPt-PJCZy71bOaxciZeoX1Gmq2MX_kAF9enXu6S3gRvTV2xOr3N1Px8adZH0UYeWztMS55QMqvmqZuAGJXJapI0nvUMFY2CPtmByxbyOYRPutp8gLALUsmHSczA7xdbtcn1rtDVI"/>
+        
+
+        <h4>Longue vue</h4>
+        <p>Quand la distance augmente, le problème n'est pas tant dans le zoom des jumelles que dans les bras de l'observateur. Maintenir stables des jumelles lourdes à portée de bras n'est pas évident. C'est là que la longue vue devient particulièrement utile. Avec un zooom de x40 à x60, la longue vue permet d'identifier des canards au loin dans un grand lac ou sur l'océan, ou bien des rapaces en migration haut dans le ciel. Notre première longue vue nous a été léguée par mes beaux-parents en 2014. Malheureusement un tunisien a pensé qu'il en ferait meilleur usage que nous, et on a donc dû la remplacer depuis... </p>
+        <img fluid class="mb-3 card-img" src="https://lh3.googleusercontent.com/RZROp-YIHJRhQpSsgtaajlPf7iwfbkMeCZKKjGRSNcOxgVljy_0aDFZfHk8TJStth5jVOU662XtIV_Xg2tWPoXpyLPLV3g76KcLFnK8jyyBHL-9XWGNKWrtDmH5_8pzf56jc1silrug"/>
+
+        
+        <h4>Appareil photo</h4>
+        <p>L'étape suivante, qui a changé ma façon d'observer les oiseaux - l'appareil photo. Celui-ci permet d'immobiliser et d'immortaliser un oiseau observé brièvement sur le terrain, avec parfois des vues limitées. La photo permet d'étudier les différents critères identification, de demander l'avis d'autres birders, et donne plus de confiance dans les observations. C'est un peu mon auto-correcteur : les photos me servent à valider ou corriger mes identifications, typiquement très important lors de voyages dans des régions avec de nouvelles espèces.</p>
+        <img fluid class="mb-3 card-img" src="https://lh3.googleusercontent.com/_8ctLqymenygjh42Pi9AoRjSP4wxbLJ0QgcC2F5CqgHKIS00hUngej-xbOKq4JWN6qjWDZv4nB-VfFksGdKkSQ0Tuyh7YPdG06oCJZJGOH45WOr3_SrZzbUmJFI7iv5tUr1Qkiy3sCc"/>
+        
+
+        <h4>Micro</h4>
+        <p>La dernière évolution dans l'équipement ornithologique : le micro. Enregistrer les chants et cris des oiseaux est extrêmement utile pour les identifier, et potentiellement différencier des espèces qui d'apparence se ressemblent. Les avantages des audio sont similaires à la photo, et comme 90% des obs sont faites au son, l'audio est un outil indispensable. La plupart des birders se concentrant sur la photo uniquement, cet outil est sous-utilisé de mon point de vue.</p>
+        <img fluid class="mb-3 card-img" src="https://lh3.googleusercontent.com/9bKB8OljL3quqxrPzk2yKWTauckmhYPvjP_N44EeAEtz6ZIjshtPDma_1Uju9WLf2AzVKLVejoO4auW0QiRMzuNf1259SNwYlSaW9fcgVOPvnKLKfxjJXilj4cRLQJw2cVQXDN4zg1U"/>
+
+       
+        <h4>Reconnaissance par intelligence artificielle</h4>
+        <p>Les évolutions décrites au-dessus sont plutôt anciennes, et les améliorations technologiques récentes plutôt limitées. La vraie révolution des 10 dernières années est liée à l'identification d'oiseaux par intelligence artificielle. Pour les photos, cette technologie marche très bien depuis plusieurs années, mais nécessite d'avoir son appareil photo sur soi, avec grand zoom, pour arriver à une identification correcte.</p>
+
+        <img fluid class="mb-3 card-img" src="https://lh3.googleusercontent.com/C1z1oJbnvaAIrz1y-hApJkkvUznKevhiyXjinLH1XgN-seWsk4Nsp0s-4uLDW19xzTLlIwCX1iiaRaUB7r1D_l0zFMoi4D2w0WoW5vqlH7WHgHGkQflqrDSFrGKY4r9K8ZvILAlvyMw"/>
+        
+        <p>Plus récemment, l'identification par le son, désormais accessible avec un simple téléphone, a pris beaucoup d'ampleur. L'utilisation de l'intelligence artificielle permet d'identifer les oiseaux en live sur le terrain - un Shazam pour les sons d'oiseaux en gros. La meilleure application pour faire cela, Merlin, a été développée par le Cornell Lab. Des milliers d'enregistrements ont été annotés (pour délimiter le début et fin du son de l'espèce en question) afin d'affiner la base de données. Contrairement aux autres systèmes, l'intelligence artificielle analyse le visuel du sonogramme plutôt que l'audio, ce qui rend l'identification plus précise. Même si Merlin a aussi ses bêtes noires qu'il confond parfois, le résultat est époustouflant : l'application entend et identifie des oiseaux qu'on arrive à peine à détecter ! </p>
+        <img fluid class="mb-3 card-img" src="https://lh3.googleusercontent.com/neSyaKfVPqYB8ft8ctnlnQEghRE-sh2Bzxgw_zI6PbilSkEspjFBeWFrKsf8PPdfHdN8jarCbXQLJqkPLEcCIJArPZ7AMj3aIk3b4G7x1TFYOpLN2AldtWSo1b8ouAqujPGDnngF4kI"/>
+        
+
+        <p>On a beaucoup (pour ne pas dire énormément) utilisé Merlin pendant ce voyage. Pour améliorer la qualité du son, on branche un micro au téléphone, mais le téléphone peut être utilisé directement aussi. On est toujours bluffé par combien d'oiseaux Merlin détecte - il a l'oreille bien plus fine que nous...</p>
+        <p>Vous voulez tester ? <a href="https://merlin.allaboutbirds.org/download/" target="_blank">Téléchargez l'application gratuitement</a> et à vous de jouer !</p>
+
+
         `,
         newsView: false
     },
