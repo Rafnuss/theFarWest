@@ -1573,6 +1573,94 @@ const posts_hard = [
         `,
         newsView: false
     },
+
+    {
+        title: "Dernier lifer américain",
+        lon: -83.520477,
+        lat: 44.369174,
+        date: new Date(2023, 5, 17),
+        author: "Raphaël",
+        weather: "sun-fill", // sun-fill cloud-fill, cloud-rain-heavy-fill
+        location: "East Tawas",
+        region: "pothole", //
+        content: `
+
+        <p>Une des raisons qui nous a motivé à rentrer en voiture jusqu'à la côte Est était de pouvoir aller voir la <a href="https://ebird.org/species/kirwar" target="_blank">Paruline de Kirtland</a>, une des plus grosses parulines des US, endémique au Michigan mais qui n'arrivait sur son lieu de nidification qu'après qu'on soit partis en mars. C'est donc le dernier lifer US de ce trip, une très jolie fin !
+        </p>
+
+        <h4>Un accueil chaleureux</h4>
+        <img fluid class="mb-3 card-img" src="https://lh3.googleusercontent.com/aRpHZfrYAjdajRE8QMeufwCt0idY807LJahWKFM0JnVlTIVsMyDAVeq6OT27LPC1iazU50zGSWGD9EcuBMSy3OOwXqajSrL5SvaB2d5HZe7nDoVkHzNcfByW2Bs9dSiqJaKbUQqsqB8"/>
+        <p>Une deuxième raison d'ordre plus relationelle se greffe à la première : Sam Burckhardt vit à deux pas de l'une des zones les plus denses en Parulines. On a été généreusement accueillis dans sa grande maison au style unique (années 1970), sur un magnifique havre de 15 hectares de nature. Sam est un saxophoniste professionnel et birder originaire de la région de Bâle, qui habite depuis 40 ans aux US. C'est lui qui m'a initié au rôle de "reviewer eBird" en Suisse - on collabore ensemble pour s'assurer de la qualité des observations. C'est un plaisir d'échanger avec lui et son mari sur plein de sujets, de la nature à l'histoire, aux différences culturelles entre Suisse et US, le tout autour de bons repas. </p>
+        
+        <img fluid class="mb-3 card-img" src="https://lh3.googleusercontent.com/pw/AJFCJaXPxc4AvxSjhuk8XQnMfidSCZ7FVOULCeeopel7__979pkx9r20eoCFhq33RWII85bQouLtmyPYNDGMPnt6ih90xIytNjV5iJ817lm5PQbDK7ZOA4lm=w1920-h1080"/>
+
+        
+        <p>Mady s'est vite attachée à ces deux papys qui jouaient avec elle : jeter des graines aux dindons ensemble, lui mettre les chaussures, et la réconforter quand elle tombe. C'est un plaisir de la voir s'épanouir avec d'autres personnes et apprivoiser des nouveaux lieux aussi rapidement. </p>
+        
+        <h4>Success story</h4>
+
+        <p>Découverte en 1851 sur sa route de migration, le premier nid de cette espèce à seulement été trouvé 50 ans plus tard, en 1903. Cette paruline est alors étudiée par plusieurs ornithologues, qui anticipent son déclin, lié à la spécificité de son habitat. Effectivemment, dans les années 1970, seulement 400 individus sont recencés. Ce déclin est attribué à deux raisons principales : la diminution et fragmentation de son habitat, et le parasitage de leurs nids par les Vachers à tête brune. Il est alors inscrit sur la liste des espèces menacées, et un plan de conservation est mis en place, avec comme objectif d'atteindre 1000 couples nicheurs. En 2012, plus de 2000 paires sont recensées - un bel exemple de succès en conservation ! C'est encouragent d'entendre des histoires positives dans ce domaine, mais ce n'est pas toujours aussi simple : les espèces ont souvent des aires de distribution plus grandes, les causes du déclin sont moins clairement identifiés, et il n'y a pas toujours autant de moyens disponibles. 
+        </p>
+
+        <div class="iframe-wrapper">
+        <iframe src="https://macaulaylibrary.org/asset/585874311/embed" frameborder="0"></iframe>
+    </div>
+        
+        <p>Sam participe au suivi de la population de ces Parulines et fait réglièrement des relevés sur le terrain pour chercher leurs nids. Il connait très bien la biologie de cette espèce et nous a facilement guidé vers l'habitat idéal, où on a pu entendre plusieurs mâles chanter à tue-tête, levant la tête vers le ciel pour déclamer leur chant. </p>
+       
+    <img fluid class="mb-3 card-img" src="https://lh3.googleusercontent.com/pw/AJFCJaW7tQJyyJvK7Ti_aRrTk9dDii0lx_ZU2VJhXtc3YgjxfH_SRcGLL354NPn644IBN8uoITEDOkpnqSNaPZACg4AtOzRpgQ0Zj7Z5btVDrRkp2PLLMXic"/>
+        
+        
+        
+
+
+
+   
+  
+        `,
+        newsView: false
+    },
+
+    {
+        title: "Un air de fin",
+        lon: -83.934005,
+        lat: 43.430854,
+        date: new Date(2023, 5, 18),
+        author: "Améline",
+        weather: "sun-fill", // sun-fill cloud-fill, cloud-rain-heavy-fill
+        location: "Saginaw",
+        region: "pothole", //
+        content: `
+
+        <p>Je commençais ce blog avec un article intitulé “Tout s'accélère”, lorsque nous déménagions d'Ithaca il y a presque trois mois. Je revis un peu ce sentiment ces jours-ci, alors qu'on essaye de vendre la voiture. Même si ça fait un moment qu'on en parle, ces transitions ont toujours un côté assez abrupt lorsqu'elles ont lieu.</p>
+        <img fluid class="mb-3 card-img" src="https://lh3.googleusercontent.com/pw/AJFCJaX9albKAyucmLEnjKGszrtQR5L_g3h1GqD0k9FcC-WqFoyaLBmEAaFM6nkZR9KILedUV847zK69lWC4FLaot4xXkgX2axfXD-dJIu5oERutm7_IjmuH"/>
+        <h4>Game theory</h4>
+
+        <p>Ces derniers jours ont été rythmés par les nombreuses communications avec toutes sortes de personnes intéressées par le kit et/ou la voiture. On doit réorganiser nos plans de retour à plusieurs reprises ainsi qu'anticiper tous les options possibles. Cela donne lieu à beaucoup de discussions sur la meilleure approche de vente à adopter, et la logistique qui découle de chaque scénario, sachant que l'on vend notre voiture et notre maison en même temps ! </p>
+        <img fluid class="mb-3 card-img" src="https://lh3.googleusercontent.com/pw/AJFCJaWupTZ8JfIAO6LWdFbET1afVX-ioH22VOR8cWaC5UI4X__j6qngQLf0qhDn5y6P3NOf2K6Ey67KzeaD6D-yf3kX0jT8XZ4yBS94itolnDmzXCNYagl3"/>
+        <p>Alors que pour moi cela devient parfois un peu un casse-tête, heureusement Raph garde un esprit rationnel, cherchant à tourner les difficultés en jeu d'optimiztation ("game theory"), où il faut savoir comment prendre position sur une offre sans forcément connaître les autres offres qui pourraient suivre.
+        </p>
+        
+        <h4>Le grand nettoyage</h4>
+
+        <p>Après trois mois d'utilisation intensive, plus de 27 000km parcourus, des routes de terre, de la poussière, de nombreux repas partagés à l'intérieur, et 80 nuits à dormir dedans, vous imaginez que la voiture a besoin d'un nettoyage de fond en comble ! On fait un premier passage dans un nettoyage automatique pour enlever le plus gros, et on s'attelle au rangement, aux réparations du kit, et aux finitions chez Sam. Cela paraît être une montagne, mais ensemble on y arrive, même Mady s'y met !</p>
+        <img fluid class="mb-3 card-img" src="https://lh3.googleusercontent.com/pw/AJFCJaVsaSrordDMC9c-j2tk0qVyvDb-jvKvJ7gBlZ3aZKdqGCR-r6XDYeaR6E-X8WolpP1YnEqAJpq9jppKc67kUOca4p8N-z3spDBOVKD8Cx9nC1jYZTsK"/>
+
+    
+    <h4>“Bye car !” </h4>
+    <p>Finalement la journée est là, avec nos premiers rdv avec des potentiels acheteurs. C'est avec des émotions mixtes qu'on roule à la rencontre du premier intéressé : l'espoir de pouvoir la vendre, le stress de savoir comment et où la journée va finir, comment être sûrs de ne pas se faire escroquer, et en même temps le coeur lourd de se séparer de notre chez-nous dans lequel on avait nos habitudes. 
+    </p>
+    <img fluid class="mb-3 card-img" src="https://lh3.googleusercontent.com/pw/AJFCJaUc2-gVbu4NyQULKufWOnOy1INw8i5Oo9lc8dU5J75iFoGjpE7YgpwV0zDGf-C0x6uMbi-PPJX0a5Z9Kv7h0BQzS_02roTEK9qGmGoDMbEaJR11LWcm"/>
+   <p>Les choses se font très rapidement, car le premier acheteur est prêt à prendre la voiture au prix proposé - finalement on aurait pas pu faire plus simple ! Jim va l'amener revivre des aventures dans l'Ouest américain avec sa chienne. A 9h du matin, nous voici donc sans abri et sans voiture, l'aventure continue à pied et en bus :) </p>
+   
+   <img fluid class="mb-3 card-img" src="https://lh3.googleusercontent.com/kJbDDVhwD6DlzGhgw0xon-1mLzf_YBY9CJRkKMebQ7ARq3WmHi-M2tZbxjsXLyo7BaqAktV-Z3_yemixM5KqWwa8rsWJbBgnB1g_aH9Qj0tBB1PLZjM6Kb93RbznvymgQ7_zpNVSNnQ"/>
+   <p>Ayant prié dans la voiture que Dieu guide cette journée, on le voit à l'oeuvre à travers non seulement la vente bien plus facile qu'attendu, mais aussi dans plein d'actions autour de nous : un homme se sent appelé à nous offrir le petit dejeuner à Tim Hortons dans ces instants particuliers juste après la vente, et un peu plus tard quelqu'un propose spontanément de nous conduire à l'arrêt de bus pour éviter de marcher avec toutes nos affaires. On se sent bénis, les débuts sans voiture se passent plutôt bien ! </p>
+   
+  
+  
+        `,
+        newsView: false
+    },
 ]
 export default posts_hard
 
