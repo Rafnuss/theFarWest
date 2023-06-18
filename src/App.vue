@@ -862,7 +862,7 @@ export default {
       })
       .catch((error) => console.error(error));
 
-    fetch(
+    /*fetch(
       "https://sheets.googleapis.com/v4/spreadsheets/12VqL_Epf2l6NnHHQM3Osd_3nh0h61bPvD66uCSsPAXg/values/A1:Z100?key=" +
         this.google_api_key
     )
@@ -898,7 +898,7 @@ export default {
         this.i_post = this.posts.length - 1;
       })
       .catch((error) => console.error(error));
-
+*/
     // Taxon
     fetch("https://tripreport.raphaelnussbaumer.com/tripreport-internal/v1/taxon-list/" + this.live_tripreport_id)
       .then((response) => response.json())
