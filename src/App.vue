@@ -77,80 +77,60 @@
             </div>
           </div>
           <b-card-body class="overflow-auto flex-grow-1">
-            <template v-if="posts[i_post].content">
-              <span v-html="posts[i_post].content"></span>
-
-              <div v-if="posts[i_post].newsView">
-                <template v-if="!newsView">
+            <span v-html="posts[i_post].content" />
+            <div v-if="posts[i_post].newsView">
+              <template v-if="!newsView">
+                <p>
+                  <a href="#" v-b-modal.modal-defis>
+                    Merci pour tous les défis que vous m'avez donné pour m'occuper pendant ce voyage ! J'ai fait de bons
+                    progrès mais je travaille encore sur quelques uns.
+                  </a>
+                </p>
+                <h4>A mon tour de vous mettre au défi !</h4>
+                <p>
+                  J'ai un message à vous communiquer, mais d'abord, il faut que vous appreniez à décoder mon language.
+                  Associez le bon mot à chacune des mes expressions !
+                </p>
+                <b-list-group>
+                  <b-list-group-item v-for="(e, i) in game" :key="e.audio">
+                    <audio controls class="w-100">
+                      <source :src="e.audio" />
+                    </audio>
+                    <b-form-select v-model="game_selected[i]" :options="game_options" size="sm"></b-form-select>
+                  </b-list-group-item>
+                </b-list-group>
+                <b-button @click="checkNews" class="w-100 mt-2">Vérifier</b-button>
+                <b-button
+                  @click="
+                    newsView = true;
+                    map.flyToBounds([
+                      [32, -100],
+                      [60, 7],
+                    ]);
+                  "
+                  variant="link"
+                  class="mt-2 w-100"
+                  size="sm"
+                >
+                  J'abandonne. Désolé Mady, je ne te comprends pas !
+                </b-button>
+                <b-alert show variant="danger" class="mt-2" v-if="newsTry > 0">
+                  <h4 class="alert-heading">Nope ! Essai: {{ newsTry }}</h4>
+                  <p>Pas tout à fait juste !</p>
+                </b-alert>
+              </template>
+              <template v-else>
+                <b-alert show variant="success">
+                  <h4 class="alert-heading">Bravo !</h4>
                   <p>
-                    <a href="#" v-b-modal.modal-defis
-                      >Merci pour tous les défis que vous m'avez donné pour m'occuper pendant ce voyage ! J'ai fait de
-                      bons progrès mais je travaille encore sur quelques uns.
-                    </a>
+                    Maintenant que vous arrivez à décoder mon language, je peux vous révéler une info scoop :
+                    <audio controls class="w-100 mt-4">
+                      <source src="https://drive.google.com/uc?export=view&id=1PHVPpLkHw6koDrOJYYEbMH3G1NSmwlej" />
+                    </audio>
                   </p>
-                  <h4>A mon tour de vous mettre au défi !</h4>
-                  <p>
-                    J'ai un message à vous communiquer, mais d'abord, il faut que vous appreniez à décoder mon language.
-                    Associez le bon mot à chacune des mes expressions !
-                  </p>
-                  <b-list-group>
-                    <b-list-group-item v-for="(e, i) in game" :key="e.audio">
-                      <audio controls class="w-100">
-                        <source :src="e.audio" />
-                      </audio>
-                      <b-form-select v-model="game_selected[i]" :options="game_options" size="sm"></b-form-select>
-                    </b-list-group-item>
-                  </b-list-group>
-                  <b-button @click="checkNews" class="w-100 mt-2">Vérifier</b-button>
-                  <b-button
-                    @click="
-                      newsView = true;
-                      map.flyToBounds([
-                        [32, -100],
-                        [60, 7],
-                      ]);
-                    "
-                    variant="link"
-                    class="mt-2 w-100"
-                    size="sm"
-                  >
-                    J'abandonne. Désolé Mady, je ne te comprends pas !
-                  </b-button>
-                  <b-alert show variant="danger" class="mt-2" v-if="newsTry > 0">
-                    <h4 class="alert-heading">Nope ! Essai: {{ newsTry }}</h4>
-                    <p>Pas tout à fait juste !</p>
-                  </b-alert>
-                </template>
-                <template v-else>
-                  <b-alert show variant="success">
-                    <h4 class="alert-heading">Bravo !</h4>
-                    <p>
-                      Maintenant que vous arrivez à décoder mon language, je peux vous révéler une info scoop :
-                      <audio controls class="w-100 mt-4">
-                        <source src="https://drive.google.com/uc?export=view&id=1PHVPpLkHw6koDrOJYYEbMH3G1NSmwlej" />
-                      </audio>
-                    </p>
-                  </b-alert>
-                </template>
-              </div>
-            </template>
-            <template v-else>
-              <b-card-text v-if="posts[i_post].subtitle">
-                <h4>{{ posts[i_post].subtitle }}</h4>
-              </b-card-text>
-              <b-card-text>
-                {{ posts[i_post].text1 }}
-              </b-card-text>
-              <b-card-img v-if="posts[i_post].photo1" :src="posts[i_post].photo1" class="mb-1"></b-card-img>
-              <b-card-text>
-                {{ posts[i_post].text2 }}
-              </b-card-text>
-              <b-card-img v-if="posts[i_post].photo2" :src="posts[i_post].photo2" class="mb-1"></b-card-img>
-              <b-card-text>
-                {{ posts[i_post].text3 }}
-              </b-card-text>
-              <b-card-img v-if="posts[i_post].photo3" :src="posts[i_post].photo3" class="mb-1"></b-card-img>
-            </template>
+                </b-alert>
+              </template>
+            </div>
           </b-card-body>
           <b-card-footer class="w-100 p-0">
             <b-input-group>
@@ -309,7 +289,7 @@
                     {{ newsView ? 1 : USliferCount }}
                   </div>
                 </div>
-                <div v-if="(latestLifer[1] != '#N/A') | newsView">
+                <div>
                   <small> dernière addition: </small>
                   <b-link
                     v-if="newsView"
@@ -319,8 +299,12 @@
                   >
                     Mady Nuss
                   </b-link>
-                  <b-link v-else class="text-secondary" @click="openSpeciesChecklist(latestLifer[2])">
-                    {{ latestLifer[1] }}
+                  <b-link
+                    v-else
+                    class="text-secondary"
+                    @click="window.open('https://ebird.org/checklist/S141822540#kirwar', '_blank')"
+                  >
+                    Kirtland's Warbler
                   </b-link>
                 </div>
               </div>
@@ -365,8 +349,9 @@
                   "
                   href="#"
                   class="text-secondary"
-                  >Liste des cibles US</a
                 >
+                  Liste des cibles US
+                </a>
                 <b-modal
                   id="modal-full-list"
                   scrollable
@@ -378,10 +363,8 @@
                 >
                   <TableSpecies :regions="regions" :mode="TableSpeciesMode" />
                 </b-modal>
-
-                <!-- <a
-                  v-if="locations.length > 0"
-                  
+                <a
+                  v-if="(locations.length > 0) & false"
                   :href="
                     'https://alert.birdcast.info/?latLng=' +
                     locations[locations.length - 1][0] +
@@ -394,9 +377,9 @@
                 >
                   <div class="mr-2">Prévisions de migration</div>
                   <b-img src="birdcast.svg" class="h-16" />
-                </a>-->
+                </a>
                 <a
-                  v-if="locations.length > 0"
+                  v-if="(locations.length > 0) & false"
                   :href="
                     'https://dashboard.birdcast.info/region/' +
                     regions.reduce((acc, r) => (acc = r.active ? r.ebirdcode : acc), '')
@@ -419,6 +402,7 @@
                   <div class="mr-2">Oiseaux rares</div>
                   <!--<b-img src="birdcast.svg" class="h-16" />-->
                 </a>
+                <!--<b-button size="sm" v-b-modal.modal-bilan>Bilan ornithologique</b-button>-->
               </div>
               <div class="d-flex flex-column" v-if="newsView">
                 <strong>EXPLORER D'AVANTAGE</strong>
