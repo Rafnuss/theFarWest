@@ -325,10 +325,6 @@
                 </div>
               </div>
               <div class="d-flex flex-column justify-content-around">
-                <!--<div class="align-items-center">
-                  {{ liferCount() }}
-                  Lifer#
-                </div>-->
                 <div class="d-flex flex-row align-items-center">
                   <IconBase name="pokedex-outline" width="40" height="40" />
                   <div class="d-flex flex-column justify-content-center px-2">
@@ -662,9 +658,9 @@ export default {
       checklists: [],
       selectedLocId: null,
       posts: posts_hard,
-      i_post: 0,
+      i_post: posts_hard.length - 1,
       locations: [],
-      latestLifer: [],
+      //latestLifer: [],
       taxon: [],
       showChecklist: false,
       species_list: species_list,
@@ -749,7 +745,7 @@ export default {
       this.locations = [...locations_hard, ...locations];
       this.map.setView(this.locations[this.locations.length - 1], 14);
     },
-    async openSpeciesChecklist(spCode) {
+    /*async openSpeciesChecklist(spCode) {
       fetch(
         "https://tripreport.raphaelnussbaumer.com/tripreport-internal/v1/taxon-detail/" +
           this.live_tripreport_id +
@@ -765,7 +761,7 @@ export default {
           window.open(url, "_blank");
         })
         .catch((error) => console.error(error));
-    },
+    },*/
     formatNumber(num) {
       if (num >= 1000000) {
         return (num / 1000000).toFixed(1) + "M";
@@ -777,9 +773,6 @@ export default {
     },
     numberWithSpaces(x) {
       return x.toString().replace(/\B(?=(\d{3})+(?!\d))/g, " ");
-    },
-    liferCount() {
-      return 1839 + this.taxon.filter((t) => t.isLifer & (t.category == "species")).length;
     },
     animateUSliferCount(lifer) {
       clearInterval(this.USliferCountInterval);
@@ -974,11 +967,11 @@ export default {
           sp.hasMedia = sp.seen ? spmedia[id] : 0;
           return sp;
         });
-        let uslifercount = this.species_list.filter((sp) => (!sp.US_lifer | sp.seen) & (sp.exotic != "X")).length - 3;
-        this.animateUSliferCount(uslifercount);
+        //let uslifercount = this.species_list.filter((sp) => (!sp.US_lifer | sp.seen) & (sp.exotic != "X")).length - 3;
       })
       .catch((error) => console.error(error));
 
+    /*
     fetch(
       "https://sheets.googleapis.com/v4/spreadsheets/1tJUNjqhX6L7bXPapc1VMyymRk9KbMjARpWB24J2tbK4/values/Sheet3!A1:C1?key=" +
         this.google_api_key
@@ -988,6 +981,8 @@ export default {
         this.latestLifer = data.values[0];
       })
       .catch((error) => console.error(error));
+*/
+    this.animateUSliferCount(673);
   },
   watch: {
     modeSelected(val) {
