@@ -92,8 +92,8 @@ export default {
         },
         {
           name: "Que mes parents me préparent un sac avec des objets surprises pour la voiture",
-          done: false,
-          src: "",
+          done: true,
+          src: "https://drive.google.com/uc?export=view&id=1XcXhuHVdTbgkO8_mh8H-zPCxjdpNMo2w",
           diff: 2,
         },
         {
@@ -110,8 +110,8 @@ export default {
         },
         {
           name: "Faire 10 photos de Land'art comprenant au minimum 3 éléments de la nature différents",
-          done: false,
-          src: "",
+          done: true,
+          src: "https://drive.google.com/uc?export=view&id=1ejchAkiem2Rk_M68EnGQQoLGVZxRgPLR",
           diff: 1,
         },
         {
@@ -122,8 +122,8 @@ export default {
         },
         {
           name: "Faire un 'Hallelujah' dans une mégachurch",
-          done: false,
-          src: "",
+          done: true,
+          src: "https://drive.google.com/uc?export=view&id=1wd027t-v_FZa2xM4T_VjO4C-N_JqFbHG",
           diff: 2,
         },
       ],

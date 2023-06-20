@@ -1489,7 +1489,7 @@ const posts_hard = [
         region: "pothole", //
         content: `
         <p>Je commençais ce blog avec un article intitulé “Tout s'accélère”, lorsque nous déménagions d'Ithaca il y a presque trois mois. Je revis un peu ce sentiment ces jours-ci, alors qu'on essaye de vendre la voiture. Même si ça fait un moment qu'on en parle, ces transitions ont toujours un côté assez abrupt lorsqu'elles ont lieu.</p>
-        <img fluid class="mb-3 card-img" src="https://lh3.googleusercontent.com/pw/AJFCJaX9albKAyucmLEnjKGszrtQR5L_g3h1GqD0k9FcC-WqFoyaLBmEAaFM6nkZR9KILedUV847zK69lWC4FLaot4xXkgX2axfXD-dJIu5oERutm7_IjmuH"/>
+        <img fluid class="mb-3 card-img" src="https://lh3.googleusercontent.com/pw/AJFCJaUDnpRgMbZ0Rg5jPeIcyS2AzCspQW_-FucZz5LuDQe7UfjYWSe6_XCjJ53g_7yRUJRCdt1rttXMLXuBK8TaIepaZSn2sjqmP4C017MJkQIeL8AKwlgV"/>
         <h4>Game theory</h4>
         <p>Ces derniers jours ont été rythmés par les nombreuses communications avec toutes sortes de personnes intéressées par le kit et/ou la voiture. On doit réorganiser nos plans de retour à plusieurs reprises ainsi qu'anticiper tous les options possibles. Cela donne lieu à beaucoup de discussions sur la meilleure approche de vente à adopter, et la logistique qui découle de chaque scénario, sachant que l'on vend notre voiture et notre maison en même temps ! </p>
         <img fluid class="mb-3 card-img" src="https://lh3.googleusercontent.com/pw/AJFCJaWupTZ8JfIAO6LWdFbET1afVX-ioH22VOR8cWaC5UI4X__j6qngQLf0qhDn5y6P3NOf2K6Ey67KzeaD6D-yf3kX0jT8XZ4yBS94itolnDmzXCNYagl3"/>
@@ -1505,6 +1505,53 @@ const posts_hard = [
         <p>Les choses se font très rapidement, car le premier acheteur est prêt à prendre la voiture au prix proposé - finalement on aurait pas pu faire plus simple ! Jim va l'amener revivre des aventures dans l'Ouest américain avec sa chienne. A 9h du matin, nous voici donc sans abri et sans voiture, l'aventure continue à pied et en bus :) </p>
         <img fluid class="mb-3 card-img" src="https://lh3.googleusercontent.com/kJbDDVhwD6DlzGhgw0xon-1mLzf_YBY9CJRkKMebQ7ARq3WmHi-M2tZbxjsXLyo7BaqAktV-Z3_yemixM5KqWwa8rsWJbBgnB1g_aH9Qj0tBB1PLZjM6Kb93RbznvymgQ7_zpNVSNnQ"/>
         <p>Ayant prié dans la voiture que Dieu guide cette journée, on le voit à l'oeuvre à travers non seulement la vente bien plus facile qu'attendu, mais aussi dans plein d'actions autour de nous : un homme se sent appelé à nous offrir le petit dejeuner à Tim Hortons dans ces instants particuliers juste après la vente, et un peu plus tard quelqu'un propose spontanément de nous conduire à l'arrêt de bus pour éviter de marcher avec toutes nos affaires. On se sent bénis, les débuts sans voiture se passent plutôt bien ! </p>
+        `,
+        newsView: false
+    },
+
+
+    {
+        title: "Le bêtisier du Far West",
+        lon: -83.0401078,
+        lat: 42.3235226,
+        date: new Date(2023, 5, 19),
+        author: "Améline",
+        weather: "sun-fill", // sun-fill cloud-fill, cloud-rain-heavy-fill
+        location: "Detroit",
+        region: "pothole", //
+        content: `
+        
+        <p>Ces derniers trois mois sur les routes nous ont fait passer par des hauts et des bas, du chaud et du froid, et tout un volet d'émotions ! On vous a parlé des bons moments, des trouvailles de zazos, des beaux paysages, mais derrière tout ça se cachent aussi des moments de frustration, d'erreurs, et de bêtises - certaines drôles, d'autres un peu moins. </p><p>Autant d'occasions pour moi d'apprendre à réagir avec patience et à me faire grâce, à moi-même et à ceux autour de moi, même quand les heures de sommeil viennent à manquer. Après tout, mieux vaut en rire qu'en pleurer ! 
+        </p>
+        <img fluid class="mb-3 card-img" src="https://lh3.googleusercontent.com/pw/AJFCJaX7X2HEYMYjXjkSdKleLd1z65zZfRfJVBmv-8z_YvckZ2FgLE2oWX0VFRdQLU5lcC-ufqbQfEFh__1i45gXOs0oz9_XDU8QXFX4gT_imVg0cnMbVMzZ"/>
+        <p>En voici quelques exemples :</p> 
+
+        <ul>
+        <li>La fois où Mady a re-décoré le plafond de la voiture avec ses crayons de couleurs</li>
+        <li>La fois où Raph a failli oublier son téléphone aux US, alors qu'on était déjà sur le ferry pour le Canada</li>
+        <li>La fois où Améline était convaincue qu'on pouvait continuer à longer la rivière en hors piste, mais a fini par tomber dedans </li>
+        <li>La fois où Mady s'est pris toute une gourde d'eau sur la tête alors qu'elle essayait de boire avant de dormir (mal fermée..)</li>
+        <li>La fois où Améline a malencontreusement écrasé en roulant une perdrix qu'on avait passé plusieurs heures à chercher à peine une semaine plus tôt </li>
+        <li>La fois où Mady a vidé tous les contenants de la crème solaire dans la voiture </li>
+        <li>La fois où on a failli rester embourbé dans la boue sur une route de chemin agricole dans le Montana</li>
+        <li>La fois où la batterie a fait des siennes et la voiture ne démarrait plus</li>
+        <li>Les soirs où on a passé une heure à faire la chasse aux moustiques avant de pouvoir dormir (un carnage) </li>
+        <li>La fois où tous les magasins aux alentours étaient fermés à cause d'une panne de courant liée aux feux de forêt, et il nous restait qu'une seule couche propre et un paquet de pâtes</li>
+        <li>La fois où on a commandé de quoi nourrir un bataillon à KFC (comment savoir que les portions sont 4 fois plus grandes qu'à McDo?!)</li>
+        <li>La fois où Mady s'est réveillée quasi toutes les heures la nuit juste avant une grosse rando </li>
+        <li>La fois où les bananes, achetées vertes pour tenir plus longtemps, n'ont jamais muri car la voiture était trop froide</li>
+        <li>Toutes les fois où on a essayé de faire un enregistrement d'oiseau alors que Mady chante, pleure, ou répète "shhhhtt" aussi fort que possible</li>
+        <li>La fois où la couche de Mady a fui (correctement) et on avait pas amené de rechange (je pourrais faire un blog entier sur des histoires de couches, mais je vous épargne les détails)</li>
+        <li>La fois où on a roulé plus de 4 000 km entre deux douches </li>
+        <li>Toutes les fois où on a cherché des zazos plusieurs heures sans succès (eh oui, c'est aussi arrivé !)</li>
+        <li>La fois où Mady a renversé la tasse de café de papa deux fois de suite </li>
+        <li>La fois où le jus d'orange est devenu pétillant avec la chaleur</li>
+
+        </ul>
+        <img fluid class="mb-3 card-img" src="https://lh3.googleusercontent.com/pw/AJFCJaVfVFd1pM2R3n7k9YwZaQQz8QInIJ2JrfTlNW3YbSvar_DqipevPl4Z5RlicCXwDSFM-mP6u9qkFe5Sh4beA8Rq3jH0kQG5jdZEA5dtKLcQmMtR09WX"/>
+
+        <p>C'est la tête pleine de souvenirs et le coeur reconnaissant pour cette belle aventure que l'on traverse une dernière fois la frontière et que l'on quitte les US pour de bon... Bye USA !</p> 
+        
         `,
         newsView: false
     },
