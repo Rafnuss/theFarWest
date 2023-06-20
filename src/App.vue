@@ -94,7 +94,7 @@
                 <b-list-group>
                   <b-list-group-item v-for="(e, i) in game" :key="e.audio">
                     <audio controls class="w-100">
-                      <source :src="e.audio" />
+                      <source :src="'mots_mady/' + e.audio + '.mp3'" />
                     </audio>
                     <b-form-select v-model="game_selected[i]" :options="game_options" size="sm"></b-form-select>
                   </b-list-group-item>
@@ -656,19 +656,19 @@ export default {
       game: [
         {
           name: "Viens Papa!",
-          audio: "https://drive.google.com/uc?export=view&id=1urknXTcekfe7SdpKBKqGbxsAVrkjSZGv",
+          audio: "viens_papa",
         },
         {
           name: "Clé",
-          audio: "https://drive.google.com/uc?export=view&id=1o0NV0MqzelqJYbFFpOqo0RXiSS0kvz-S",
+          audio: "clee",
         },
         {
           name: "Avocat",
-          audio: "https://drive.google.com/uc?export=view&id=1JBx6Fz4WPgXGIGlkoDNJuQo1z79xqhRb",
+          audio: "avocat",
         },
         {
           name: "Tracteur",
-          audio: "https://drive.google.com/uc?export=view&id=14hgXbRPsnYvuXGho4415hYcy6O8DwIIF",
+          audio: "tracteur",
         },
         /* {
           name: "Livre",
@@ -680,7 +680,7 @@ export default {
         },*/
         {
           name: "Oiseau",
-          audio: "https://drive.google.com/uc?export=view&id=1idFn9TcGHJm9-VZJHglzx7wDlXfSt2jt",
+          audio: "oiseaux1",
         },
         /*{
           name: "Avion",
@@ -688,11 +688,11 @@ export default {
         },*/
         {
           name: "Banane",
-          audio: "https://drive.google.com/uc?export=view&id=1x0AWJS-VWUGwI9mdHMXzfPLLlJiD1fVy",
+          audio: "banane",
         },
         {
           name: "Jus",
-          audio: "https://drive.google.com/uc?export=view&id=1CuHWfjTQkgP9X7YdYiDvPlY4PQ-bMZzr",
+          audio: "jus",
         },
       ],
       game_options: [],
