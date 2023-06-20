@@ -33,7 +33,7 @@ const tripreport = [
     },
     {
         id: 112354,
-        status: "live",
+        status: "past",
         retion: "pothole",
     }
 ];
