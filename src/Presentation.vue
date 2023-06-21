@@ -16,7 +16,7 @@
       <a href="https://fr.wikipedia.org/wiki/Midwest#Agriculture" target="_blank">ici</a> pour ceux que ça intéresse).
       La région compte une population équivalente à la France, sur un territoire deux fois plus grand.
     </p>
-    <b-card-img fluid class="mb-3" src="https://drive.google.com/uc?export=view&id=1UgljLa7NGmix3Bs14v2B0qCnSLGtua2v" />
+    <b-card-img fluid class="mb-3" src="photos/midwest1.jpg" />
 
     <h2>Qu'est-ce qu'on va y faire?</h2>
     <p>
@@ -26,7 +26,7 @@
       fera en version “driveover". On est pas encore assez américains pour faire les 30 heures de route en une traite
       (je pense que Mady aurait quelques objections aussi).
     </p>
-    <b-card-img fluid class="mb-3" src="https://drive.google.com/uc?export=view&id=1elHDyfbz72U2G_uuYk6OXHjxB79KyrbY" />
+    <b-card-img fluid class="mb-3" src="photos/midwest2.jpg" />
     <p>
       Ces régions peuvent paraître vides de prime abord, mais se remplissent d'oiseaux nicheurs au début de l'été
       (particulièrement dans les Etats du Nord), donnant une atmosphère particulière aux prairies bourdonnant de chants
@@ -55,7 +55,7 @@
       le tourisme de montagne et des industries de pointe, en accueillant des centres scientifiques et agences fédérales
       telles que la base spatiale américaine.
     </p>
-    <b-card-img fluid class="mb-3" src="https://drive.google.com/uc?export=view&id=1ErmWNuEX7iKWHllcDIm5Ncc6kGgYXAya" />
+    <b-card-img fluid class="mb-3" src="photos/colorado1.jpg" />
 
     <h2>Un démarrage en plaine</h2>
     <p>
@@ -83,7 +83,7 @@
       vers Seattle.
     </p>
 
-    <b-card-img fluid class="mb-3" src="https://drive.google.com/uc?export=view&id=1bXP_Fh3hGV6aNBjZ9N3TtfiiIw7WCtjb" />
+    <b-card-img fluid class="mb-3" src="photos/colorado2.jpg" />
 
     <p>On s'arrêtera aussi à Denver voir des amis américains rencontrés à l'église internationale en Suisse.</p>
   </div>
@@ -102,7 +102,7 @@
       fait la frontière avec le Mexique (haut lieu de migration, pas seulement ornithologique…).
     </p>
 
-    <b-card-img fluid class="mb-3" src="https://drive.google.com/uc?export=view&id=1WLfNrF1vxiyT5pbh34AtqhUQ9zqHPPuH" />
+    <b-card-img fluid class="mb-3" src="photos/texas1.jpg" />
 
     <h2>A la pointe sud du pays</h2>
     <p>
@@ -115,7 +115,7 @@
       aussi goûter à la mer (première vue de notre voyage !), et aux spécialités culinaires mexicaines ;)
     </p>
 
-    <b-card-img fluid class="mb-3" src="https://drive.google.com/uc?export=view&id=1Mth2ew5OigashTxCrIF04F2J1zpdKv4D" />
+    <b-card-img fluid class="mb-3" src="photos/texas2.jpg" />
 
     <h2>Premier parc national</h2>
     <p>
@@ -125,7 +125,7 @@
       sera de mise pour randonner jusqu'au sommet des montagnes du Chisos et y voir les quelques espèces endémiques
       avant qu'elles se cachent à l'ombre...
     </p>
-    <b-card-img fluid class="mb-3" src="https://drive.google.com/uc?export=view&id=1eOBqVU_2FhTNpIuLqSDhar8HEVcm_U0A" />
+    <b-card-img fluid class="mb-3" src="photos/texas3.png" />
   </div>
   <div v-else-if="region == 'arizona'">
     <p>
@@ -143,7 +143,7 @@
       et Chimichanga (tortilla frite).
     </p>
 
-    <b-card-img fluid class="mb-3" src="https://drive.google.com/uc?export=view&id=1Q1W75BogCuFzGd5WETvTuzG-ZwfN1nau" />
+    <b-card-img fluid class="mb-3" src="photos/arizona1.jpg" />
 
     <h2>Le pays des colibris</h2>
     <p>
@@ -174,7 +174,7 @@
       vers la Californie.
     </p>
 
-    <b-card-img fluid class="mb-3" src="https://drive.google.com/uc?export=view&id=1oHkXd_poVr_WhujQnrqfPXlJje29RPtn" />
+    <b-card-img fluid class="mb-3" src="photos/arizona2.jpeg" />
   </div>
   <div v-else-if="region == 'california'">
     <p>Après les plaines, montagnes, déserts, cactus, et canyons, ça y est, on atteint la côte Ouest !</p>
@@ -185,7 +185,7 @@
       découverte du pétrole dans les années 1920, à l'industrie du cinéma et, plus récemment, à l'essor de l'industrie
       de pointe et haute technologie, la Californie est le symbole du rêve américain.
     </p>
-    <b-card-img fluid class="mb-3" src="https://drive.google.com/uc?export=view&id=18jNAc__U1GDgp4GS-Wt--YREgxqVfO54" />
+    <b-card-img fluid class="mb-3" src="photos/california1.jpg" />
     <h2>L'État des extrêmes</h2>
     <p>
       On y trouve le sommet le plus haut des Etats-Unis hors Alaska (Mount Whitney à 4 421m), ainsi que le point le plus
@@ -212,7 +212,7 @@
       temps disponible, on fera peut-être un crochet dans la Sierra Nevada, avant de prendre la route vers l'intérieur
       des terres.
     </p>
-    <b-card-img fluid class="mb-3" src="https://drive.google.com/uc?export=view&id=1EASlwdMvofQfDBG6jOKZiacVdi0XsATM" />
+    <b-card-img fluid class="mb-3" src="photos/california2.jpg" />
   </div>
   <div v-else-if="region == 'cascadia'">
     <h2>Casca-quoi ?</h2>
@@ -243,7 +243,7 @@
       avant de repartir vers l'Ouest direction Seattle.
     </p>
 
-    <b-card-img fluid class="mb-3" src="https://drive.google.com/uc?export=view&id=1xAKEyi4BWh-07r-85UjN9lnKGlfssjsY" />
+    <b-card-img fluid class="mb-3" src="photos/cascadia1.jpg" />
 
     <h2>Des US au Canada</h2>
     <p>
@@ -252,7 +252,7 @@
       <a href="https://arocha.ca/" target="_blank">A Rocha Canada</a>. On passera ensuite quelques jours sur Vancouver
       Island, avant d'aller faire un tour dans les Rocheuses, en passant par le Jasper National Park et Banff.
     </p>
-    <b-card-img fluid class="mb-3" src="https://drive.google.com/uc?export=view&id=1LV3_t9qgQsR1ooNJ6LvtNuF5a6mI_CGh" />
+    <b-card-img fluid class="mb-3" src="photos/cascadia2.jpg" />
   </div>
   <div v-else-if="region == 'pothole'">
   <h2>Les potholes</h2>
@@ -260,7 +260,7 @@
       Après les déserts, montagnes, côtes, forêts, nous irons découvrir la région des “potholes”, appelés cuvettes ou fondrières en français. Les potholes font référence à une zone de plus de 700 000 km<sup>2</sup> au nord des prairies d'Amérique du Nord (USA et Canada), parsemée de milliers de petites mares. Ces paysages uniques ont été formés par les glaciers lors de la période glaciaire. Pour plus de questions sur l'hydrologie de cette région, adressez-vous à Raph, qui y a consacré son travail de master en 2014 !
 
     </p>
-    <b-card-img fluid class="mb-3" src="https://drive.google.com/uc?export=view&id=1CY3i2JDeVD8WMhHMXS1ZT9uzSVuRrWr1" />
+    <b-card-img fluid class="mb-3" src="photos/pothole1.jpg" />
 
     <p>
       Cette région est essentielle pour la nidification de nombreuses espèces aquatiques - il est estimé que la région contribue à la reproduction de la population nord-américaine de canards à hauteur de 50 % à 80 %.
@@ -274,7 +274,7 @@
     <p>
       Cette traversée d'ouest en est nous fera aussi passer par la vaste zone des prairies d'Amérique du Nord, pour y observer le spectacle de milliers d'oiseaux nicheurs. Cette région aux terres fertiles est menacée par l'exploitation agricole, le développement des villes et routes, et l'exploitation de puits de pétrole. 
     </p>
-    <b-card-img fluid class="mb-3" src="https://drive.google.com/uc?export=view&id=1aY4qDjv4zzq2wdQ9mXxFcPIcJZ8wh27G" />
+    <b-card-img fluid class="mb-3" src="photos/pothole2.jpg" />
 
     <p>En plus d'apprécier la chorale matinale des prairies qui s'éveillent et d'observer des espèces en grand nombres, on espère y trouver le <a href=”https://ebird.org/species/lecspa” target=”_blank”>Bruant de LeConte</a>, qui nous a échappé à plusieurs reprises. On le cherchera cette fois-ci dans sa zone de nidification, ce qui devrait être plus facile. 
 </p>

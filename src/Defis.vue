@@ -57,43 +57,43 @@ export default {
         {
           name: "Ecouter <i>Histoires pour les oreilles</i>",
           done: true,
-          src: "https://drive.google.com/uc?export=view&id=1FCRIWo4E53LPKKtJkOeC-5IdpByKNiyC",
+          src: "photos/defi1.jpg",
           diff: 1,
         },
         {
           name: "Écouter en boucle <i>Jésus est le rocher de ma vie</i> jusqu’à connaître les paroles",
           done: true,
-          src: "https://drive.google.com/uc?export=view&id=1jGTSXUxc9MHqHat5LjAr9MUJcKp6sgjs",
+          src: "photos/defi2.jpg",
           diff: 1,
         },
         {
           name: "Prendre une photo sur un gros tracteur John Deere",
           done: true,
-          src: "https://drive.google.com/uc?export=view&id=129Oj_6zzwx88nHrkKGRtaFkQNRlREM-8",
+          src: "photos/defi3.jpg",
           diff: 2,
         },
         {
           name: "Collecter un maximum de containers à frites McDo",
           done: true,
-          src: "https://drive.google.com/uc?export=view&id=1UENMzJsF-zRQzvDCXenU5PeL5kqwRvvw",
+          src: "photos/defi4.jpg",
           diff: 2,
         },
         {
           name: "Compléter : <i> tape tape petites ..., tourne, tourne petit ..., vole vole petit ..., nage nage petit ... dans l'eau !</i>",
           done: true,
-          src: "https://drive.google.com/uc?export=view&id=1VZXpzmEgvdAPpamjWl9hdXaACtQzp76Y",
+          src: "photos/defi5.jpg",
           diff: 3,
         },
         {
           name: "Prier dans un monastère",
           done: true,
-          src: "https://drive.google.com/uc?export=view&id=1elJLmDPaEU20IvBoh69gmpQ_A4BYmvB5",
+          src: "photos/defi6.jpg",
           diff: 3,
         },
         {
           name: "Que mes parents me préparent un sac avec des objets surprises pour la voiture",
           done: true,
-          src: "https://drive.google.com/uc?export=view&id=1XcXhuHVdTbgkO8_mh8H-zPCxjdpNMo2w",
+          src: "photos/defi7.jpg",
           diff: 2,
         },
         {
@@ -111,7 +111,7 @@ export default {
         {
           name: "Faire 10 photos de Land'art comprenant au minimum 3 éléments de la nature différents",
           done: true,
-          src: "https://drive.google.com/uc?export=view&id=1ejchAkiem2Rk_M68EnGQQoLGVZxRgPLR",
+          src: "photos/defi8.jpg",
           diff: 1,
         },
         {
@@ -123,7 +123,7 @@ export default {
         {
           name: "Faire un 'Hallelujah' dans une mégachurch",
           done: true,
-          src: "https://drive.google.com/uc?export=view&id=1wd027t-v_FZa2xM4T_VjO4C-N_JqFbHG",
+          src: "photos/defi9.jpg",
           diff: 2,
         },
       ],
