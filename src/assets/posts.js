@@ -113,14 +113,14 @@ const posts_hard = [
         lat: 39.0347133,
         author: "Améline",
         content: `
-        <h4>"Deuxième nuit - tornade ou tranquille ?</h4>
+        <h4>Deuxième nuit - tornade ou tranquille ?</h4>
         <p>On était plutôt contents de quitter la pluie en allant vers l'ouest... c'etait sans compter qu'on allait se retrouver dans une tornade ! Après des vents assez forts dans l'après midi, on pensait que ça s'était un peu calmé, on a même pu cuisiner dehors. Alors qu'on s'apprêtait à aller se poser pour la nuit vers 22h, nos deux téléphones se mettent à vibrer et sonner avec un message d'alerte à la tornade, suivi par les sirènes de la ville. Les conseils étaient de s'abriter (et aller au sous sol si dans une maison) - on décide donc de dormir sur le parking d'une église proche de la ville au lieu d'aller s'isoler en pleine nature. 
         </p>
-        <img fluid class="mb-3 card-img" src="https://drive.google.com/uc?export=view&id=1k03deacN7D7wYf_vSVBwZQ-ygv7OT502"/>
+        <img fluid class="mb-3 card-img" src="photos/tornade1.jpg"/>
         <p>La voiture est un peu secouée par les vents forts en début de nuit, mais ça n'a pas empêché Mady et Raphaël de s'endormir facilement ;) . La nuit dans le van était plutôt paisible, au milieu de cette tornade, Dieu merci !</p>
-        <img fluid class="mb-3 card-img" src="https://drive.google.com/uc?export=view&id=1yxmKzYhO-R8l9mZo7yQpcnApPsLM8KTB"/>
+        <img fluid class="mb-3 card-img" src="photos/tornade2.jpg"/>
         <p>Le lendemain, après un beau lever de soleil, les vents reprennent, et, en roulant un peu autour de nous, on commence à remarquer les dégâts : beaucoup de routes sont fermées à cause des débris sur la route, on voit des debris éparpillés dans les champs, des arbres tombés, des toits arrachés, et des maisons entières détruites... L'impact semble fort le long de la trajectoire, mais quasiment aucun dégât notable à peine 100m plus loin. C'est assez impressionnant à voir. On est reconnaissants pour la protection de Dieu sur notre petite voiture, et nos prières vont vers les victimes des dégâts.</p>
-        <img fluid class="mb-3 card-img" src="https://drive.google.com/uc?export=view&id=1dbBj9H9fLF7k-x57TxMN6KosM15dWxn0"/>
+        <img fluid class="mb-3 card-img" src="tornade3.jpg"/>
         `,
         weather: "tornado",
         location: "Goose Pond",
@@ -159,9 +159,9 @@ const posts_hard = [
         content: `
         <h4>Les parents se sont perdus ?</h4>
         <p>Le chemin du retour de chez ma copine semble plus long que d'habitude, je sais pas pourquoi on rentre pas à la maison. En attendant, la voiture semble être la nouvelle maison, donc j'enlève mes chaussures à chaque fois que j'y entre. L'avantage c'est qu'il fait pas aussi froid maintenant, j'ai plus besoin de mettre deux pantalons, les gants et le bonnet a chaque fois qu'on sort, c'est plus pratique pour courir !</p>
-        <img fluid class="mb-3 card-img" src="https://drive.google.com/uc?export=view&id=1qor7gLxnRteRKb8gdy_PfMviE5CRjUzZ"/>
+        <img fluid class="mb-3 card-img" src="photos/taty1.jpg"/>
         <p>Je passe quand même beaucoup de temps dans la voiture, et desfois je m'ennuie un peu à l'arrière. Quand papa cherche ses oiseaux, je peux m'amuser dehors avec des bâtons ou des cailloux, mais j'aimerais bien avoir ma propre liste à cocher comme les grands. Est-ce que vous pouvez m'aider ?</p>
-        <img fluid class="mb-3 card-img" src="https://drive.google.com/uc?export=view&id=1M9ON_yPXlZ2tWSc4H7X6oMNQxZ8Bx_C0"/>
+        <img fluid class="mb-3 card-img" src="photos/taty2.jpg"/>
         <p> Papa et maman m'ont dit que je pouvais vous demander des idées de défis, occupations, ou surprises que je devrais faire pendant ce voyage (mais papa a bien précisé qu'il ne pourra pas faire trop de déviations de son parcours). Si vous avez des idées pour moi, vous pouvez me les partager ici :</p>
         <a href="https://docs.google.com/forms/d/e/1FAIpQLSeposcoqcu7mKpzoE4phDZxLwHmq39UHPzbnLFjHkrnovJnpw/viewform?usp=sf_link" target="_blank" class="btn w-100 mb-2 text-white btn-secondary btn-sm">Donne-moi un défi !</a>
         <p>Je vous tiendrai au courant de mes progrès bien sûr. Bye !</p>
@@ -271,11 +271,11 @@ const posts_hard = [
         title: "Dedans dehors",
         content: `
         <h4>Des parents indécis</h4>
-        <p>Après beaucoup de temps dans la voiture, on sort enfin et je commence à étudier les cailloux, quand, à peine commencé, on doit déjà retourner dans la voiture. J'étais pas trop contente, je pensais qu'on était arrivé ! Je leur ai répété “dehors dehors dehors” en boucle, et, finalement, ils se sont arrêtés rapidement après. Ouf, ils ont compris ! </p>
-        <img fluid class="mb-3 card-img" src="https://drive.google.com/uc?export=view&id=1ZdBVJu638XNdmLRJk9qJFYNpIP_4ramt"/>
-        <p>Je reprends mon étude des cailloux, et quelques minutes plus tard, rebelote, on doit rentrer dans la voiture ! Je ne comprends plus rien. On ne fait que rentrer et sortir ! Je ne savais pas que les champs les intéressaient tellement. Je fais de mon mieux pour constituer ma collection de cailloux au fil de tous ces arrêts. Finalement, une pause était un peu plus longue et les parents avaient l'air contents, sans doute parce que j'ai rempli la voiture de mes jolis petits cailloux. Papa s'est précipité à la voiture pour chercher l'appareil photo et m'est presque rentré dedans (j'ai l'habitude).</p>
-        <img fluid class="mb-3 card-img" src="https://drive.google.com/uc?export=view&id=1v0RfwGZSbcsHfUO2F7J9NOZ38hr7b5xo"/>
-        <p>Dans la voiture, papa m'a appris à utiliser son compteur d'oiseaux : il faut trouver un oiseau dehors, et après on a le droit de cliquer dessus, j'étais plutôt contente de pouvoir l'aider !</p>
+        <p>Après beaucoup de temps dans la voiture, on sort enfin et je commence à étudier les cailloux, quand, à peine commencé, on doit déjà retourner dans la voiture. J’étais pas trop contente, je pensais qu’on était arrivé ! Je leur ai répété “dehors dehors dehors” en boucle, et, finalement, ils se sont arrêtés rapidement après. Ouf, ils ont compris ! </p>
+        <img fluid class="mb-3 card-img" src="photos/dedans1.jpg"/>
+        <p>Je reprends mon étude des cailloux, et quelques minutes plus tard, rebelote, on doit rentrer dans la voiture ! Je ne comprends plus rien. On ne fait que rentrer et sortir ! Je ne savais pas que les champs les intéressaient tellement. Je fais de mon mieux pour constituer ma collection de cailloux au fil de tous ces arrêts. Finalement, une pause était un peu plus longue et les parents avaient l’air contents, sans doute parce que j’ai rempli la voiture de mes jolis petits cailloux. Papa s’est précipité à la voiture pour chercher l’appareil photo et m’est presque rentré dedans (j’ai l’habitude).</p>
+        <img fluid class="mb-3 card-img" src="photos/dedans2.jpg"/>
+        <p>Dans la voiture, papa m’a appris à utiliser son compteur d’oiseaux : il faut trouver un oiseau dehors, et après on a le droit de cliquer dessus, j’étais plutôt contente de pouvoir l’aider !</p>
         `,
         lon: -103.318121,
         lat: 39.25918,
@@ -336,11 +336,11 @@ const posts_hard = [
         content: `
         <h4>... et des nouvelles sensations</h4>
         <p>Un conseil d'ami : c'est pas une bonne idée d'enlever ses gants à 3 100m d'altitude quand le vent souffle, même si vous trouvez le plus beau caillou… J'en ai fait l'expérience et je recommande pas ces sensations, d'un coup mes mains piquaient très fort. Finalement j'ai développé une technique pour porter des cailloux avec les moufles et on s'est entraînées à les lancer loin avec maman. Leçon apprise, je le saurais pour la prochaine fois (ou du moins c'est ce que mes parents espèrent).        </p>
-        <img fluid class="mb-3 card-img" src="https://drive.google.com/uc?export=view&id=1kACfNjGIA2Xw4mgqSLV2Td4OAVuJHopD"/>
+        <img fluid class="mb-3 card-img" src="photos/copains1.jpg"/>
         <p>Après cet épisode froid, c'etait chouette d'avoir un peu de chaleur à Denver, plus besoin de gants ou vestes ! On s'est promenés dans un parc avec des cailloux GEANTS. Par contre, il y'avait d'un coup beaucoup de monde autour de moi qui marchait dans tous les sens, j'ai plus trop l'habitude. Après on a fait de la balançoire, c'est encore plus rigolo quand papa et maman en font avec moi ! Le soir, j'avais les joues toutes chaudes, drôle de sensation.</p>
-        <img fluid class="mb-3 card-img" src="https://drive.google.com/uc?export=view&id=1yBk2MG9U3Hkf4U-YfrSfnerDjW2AsPjy"/>
+        <img fluid class="mb-3 card-img" src="photos/copains2.jpeg"/>
         <p>Hier soir on a mangé avec les amis de papa et maman, ils sont sympas, Jono a même fait du foot avec moi ! D'habitude les adultes ont pas beaucoup de temps pour jouer avec moi… Après j'ai eu le droit de m'asseoir à côté de lui pour manger, j'imitais tous ses gestes pour faire comme lui.\n\nMon moment préféré aujourd'hui c'est quand on est allés manger une glace (l'excitation était déjà à son comble) et, en plus, le monsieur a côté de nous à gonflé des longs ballons et les a plié pour faire des lapins et des fleurs! J'ai même pu les amener dans la voiture avec moi. Il s'appelle Ed, et sait faire plein de formes, si jamais vous voulez votre ballon !</p>
-        <img fluid class="mb-3 card-img" src="https://drive.google.com/uc?export=view&id=1xdj3xZ6TKoptvTb90netfOjDusjJPFQo"/>
+        <img fluid class="mb-3 card-img" src="photos/copains3.jpg"/>
         `,
         date: new Date(2023, 3, 11),
         lon: -105.992778,
@@ -397,11 +397,11 @@ const posts_hard = [
         <p>Les Etats Unis (excluant Alaska et Hawaï) comptent <a href="https://ebird.org/region/lower48" target="_blank">987 oiseaux observés</a> dont 678 espèces ABA 1 ou 2. Au début du voyage j'en avais 419, l'objectif est d'en rajouter autour de 250 - ça fait beaucoup à voir en quelques mois ! Il faut donc réfléchir à un trajet qui prend en compte quand et où chaque espèce peut être vue le plus facilement. </p>
         <h3>Vue d'ensemble</h3>
         <p>On a choisi de partir fin mars pour être au Colorado début avril, pour cibler à la fois la saison de parade des tétras qui ne dure que quelques semaines en avril, et les espèces montagnardes qui sont encore en basse altitude avec la neige. Après cela, il faut rapidement filer vers le Sud (Texas et Arizona) pour y trouver les nombreuses espèces qui nichent tôt dans l'année. Une fois qu'un oiseau a pondu, il est généralement silencieux et donc plus dûr à trouver. On suit ensuite les migrateurs en remontant vers le Nord en même temps qu'eux. Ce trajet optimise le nombre d'espèces à ajouter à notre liste US, mais nous fait rater les quelques hivernants de la cote Nord Ouest ainsi que les espèces océaniques.</p>
-        <img fluid class="mb-3 card-img" src="https://drive.google.com/uc?export=view&id=17Cn0WBemDUhgtC8YZzrK--Vnw67_IxZN"/>       
+        <img fluid class="mb-3 card-img" src="photos/bigdata1.png"/>       
         <h3>Plus en détail </h3>
         <p>Pour identifier où et quand voir chaque espèce, j'utilise les données de <a href="https://ebird.org/home" target="_blank">eBird</a>. J'ai passé plusieurs jours à naviguer les cartes de distribution des 265 espèces cibles pour déterminer le meilleur endroit pour les trouver sur notre parcours. </p>       
-        <img fluid class="mb-3 card-img" src="https://drive.google.com/uc?export=view&id=1-RWZnDyhk63xb3TgWVpG5sgRXRyZP71A"/>
-        <img fluid class="mb-3 card-img" src="https://drive.google.com/uc?export=view&id=1zZn1vErzBXRO61EBflKz1jblmsubqtxE"/>
+        <img fluid class="mb-3 card-img" src="photos/bigdata2.png"/>
+        <img fluid class="mb-3 card-img" src="photos/bigdata3.png"/>
         <p>J'utilise aussi des vues satellites pour visualiser les habitats et l'accès, pour au final produire une carte détaillée de l'endroit précis à viser pour chaque espèce cible. Je me focalise sur les espèces plus difficiles à voir (les espèces cibles listées dans la description de chaque région), les espèces faciles à trouver ne nécéssitent pas de recherches particulières : à force d'être dehors, on est sûr des les trouver à un moment ! Ce processus peut paraître fastidieux mais ça me plaît d'utiliser toutes les informations disponibles pour préparer le voyage de cette façon :)</p>
         <h3>Nouvelle fonctionnalité</h3>
         <p> Maintenant que vous savez tout sur la méthodologie des espèces cibles, vous pouvez voir la liste complète de ces espèces dans le nouvel onglet en haut à droite et suivre lesquelles on a coché. </p>
@@ -457,11 +457,11 @@ const posts_hard = [
         title: "Rendez-vous directement à la case… garage",
         content: `
         <p>Après plusieurs journées de grosse route sans problèmes, on commençait tout juste à être optimistes concernant la voiture. C'est là que notre petit voyant préféré nous prend au dépourvu en de manifestant alors qu'on est en route vers la mer. On sent rapidement que les vitesses ne passent plus bien, et on s'arrête à un magasin de pièces de voiture, où on remarque qu'il y a une grosse fuite du liquide de transmission. On achète du liquide, en espérant encore arriver à faire les 30 minutes de route dans l'autre sens vers la ville avec des garages spécialisés pour les transmissions (oui, ça existe aux US, fait croire qu'on est pas les seuls a qui ça arrive !). La voiture roule de moins en moins bien, et à chaque feu rouge on se demande si elle va arriver à embrayer… mais on y arrive ! </p>
-        <img fluid class="mb-3 card-img" src="https://drive.google.com/uc?export=view&id=1S8ikoGbu5KDDhcfn6_H0_X3FcwsfhK0C"/>
+        <img fluid class="mb-3 card-img" src="photos/garage1.jpg"/>
         <p>Sur place, les employés du garage sont très sympas (faut dire qu'un bébé et notre situation particulière voiture-maison, ça interpelle…). Ils confirment rapidement que la transmission est cassée (à ce stade, pas besoin d'être Sherlock, c'est plutôt clair !) et qu'il faut la remplacer. Ça y est, le moment tant redouté du voyage est là ! Finalement, même dans ces circonstances, on est pas trop mal tombés : on est dans une ville (avec même pas mal d'oiseaux à voir!), on a rencontré des personnes qui essayent de nous aider, et le remplacement pourra se faire plutôt rapidement normalement (même si l'affaire encore en cours). </p>
-        <img fluid class="mb-3 card-img" src="https://drive.google.com/uc?export=view&id=1ctEnmFyjOnCsLNniPzMLSa_9rDtV7OEO"/>
+        <img fluid class="mb-3 card-img" src="photos/garage2.jpg"/>
         <p>En attendant, on en profite pour découvrir le campus universitaire à côté du garage et on tente le birding urbain à pied - avec un total de 7 lifers sans voiture ! On attend actuellement de voir si la pièce pourra être livrée et remplacée aujourd'hui, ou si cela débordera sur demain, avec une deuxième nuit au garage...</p>
-        <img fluid class="mb-3 card-img" src="https://drive.google.com/uc?export=view&id=1UY0_oRnZGNtIwEsr0CUtO0B_Muohz-gC"/>
+        <img fluid class="mb-3 card-img" src="photos/garage3.jpg"/>
         `,
         date: new Date(2023, 3, 19),
         lon: -97.490895,
@@ -488,7 +488,7 @@ const posts_hard = [
         <h4>Haut lieu de migration</h4>
         <p>Le sud du Texas est connu pour être un couloir de migration important pour les oiseaux. Bien que ce ne soit pas directement notre objectif de chercher les espèces de passage, on a pu voir quelques espèces rares, observer les limicoles et fauvettes (warblers) en migration sur la côte, et des centaines de rapaces en migration plus à l'intérieur des terres.</p>
         <p>Ce mouvement synchrone de plusieurs milliards d'oiseaux à travers tous les continents est un des aspects des oiseaux qui me passionne le plus, et j'ai la chance de pouvoir travailler dessus ! Pour visualiser la migration avec nous, vous pouvez cliquer sur "Prévisions de migration" en haut à droite, pour suivre les conditions de migration prédites par Birdcast (mon groupe de recherche à Ithaca).
-        <img fluid class="mb-3 card-img" src="https://drive.google.com/uc?export=view&id=1subBNe3QCp8mbpIGsHCtuVkuOV7GRaQm"/>
+        <img fluid class="mb-3 card-img" src="photos/migration1.png"/>
         <h4>Quel lien avec mon travail ?</h4>
         <p>J'en profite pour vous partager un peu l'objet de ma recherche sur la migration. Jusqu'à présent, Birdcast utilise des radars météo pour étudier des oiseaux migratoires en vol. Cela permet, entre autres, d'identifier les lieux de forte migration à l'avance et de mettre en place des mesures de conservation (éteindre les lumières des bâtiments pour ne pas désorienter les oiseaux, arrêter les éoliennes, etc.).</p> 
         <p>Ma recherche vise à étendre l'utilisation de données radar pour comprendre les mouvements des oiseaux vers et depuis le sol pendant leur migration. La plupart des oiseaux migrent de nuit et se posent au sol en journée pour se reposer et reprendre des forces. Protéger les oiseaux migratoires nécessite donc aussi de comprendre où ils se posent. Mon projet ces deux dernières années a été de montrer que notre approche est cohérente avec les informations sur les oiseaux au sol (données eBird). Similaire aux cartes déjà disponibles sur la migration en l'air, j'espère pouvoir créer des cartes live montrant où les oiseaux se sont posés au sol chaque jour. </p>
@@ -627,7 +627,7 @@ const posts_hard = [
         <img fluid class="mb-3 card-img" src="https://lh3.googleusercontent.com/pw/AJFCJaXjAFidt22RcZyyCaxKtrrfZFk0Ci7clN0_PpU2z2wlkPN7oYHi12kcvx5vEFT7svVpYWYArmE7pqH6xhx4UCubL2CwVMB7cuj4rcJk_3_13M8ggaiE"/>
         <p>Vivre dans une voiture offre beaucoup de flexibilité sur la route empruntée et l'endroit où dormir, mais a quelques lacunes en services électroniques. Nous devons donc nous arrêter tous les jours (ou presque) dans un lieu pour recharger les batteries, planifier la suite du trip, écrire les blogs, etc. Souvent, ça se finit au McDo (1$ le café avec wifi et prises à disposition - c'est dur à battre !). Mady s'occupe en jouant dans leurs aires de jeux avec d'autres d'enfants ou à faire du coloriage.</p>
         <p>De notre côté, on fait aussi une forme de coloriage. Au-dela de l'objectif principal du trip de voir un max d'espèces aux US, on a quelques objectifs secondaires : voir un max d'espèces dans chaque état et essayer de voir au moins une espèce dans chaque "county" (=comté) que l'on traverse. Pourquoi ? Ne pas m'ennuyer en roulant, travailler mon identification par jizz et, comme Mady, colorier la carte ! En effet, eBird offre un <a href ="https://ebird.org/profile/NDk3NjE1/US" target="_blank">visuel sympa pour voir le nombre d'espèces vues par région à differentes échelles</a>.</p>
-        <a href ="https://ebird.org/profile/NDk3NjE1/US-TX" target="_blank"><img fluid class="mb-3 card-img" src="https://drive.google.com/uc?export=view&id=11Wg3SOjfYlS8W0ha26d6iyeksBYYmohe"/></a>
+        <a href ="https://ebird.org/profile/NDk3NjE1/US-TX" target="_blank"><img fluid class="mb-3 card-img" src="photos/coloriage1.png"/></a>
     
         <h4>Le Texas en quelques chiffres</h4>
         <p>Le Texas a été très prolifique pour tous nos objectifs : en deux semaines, on a eu 105 US lifers (95 lifers monde) ! Avec un total de 308 espèces, le Texas est passé devant l'état de New York où on à passé plus d'un an et demi (286 espèces), avec presque autant d'espèces que la Suisse où j'ai habité 8 ans (311 espèces). On a aussi pris <a href="https://media.ebird.org/catalog?searchField=user&userId=USER497615&sort=rating_rank_desc&unconfirmed=incl&regionCode=US-TX&beginMonth=4&endMonth=12&beginYear=2023&endYear=2023" target="_blank">500 photos et presque 100 audios</a> ! </p>
@@ -794,7 +794,7 @@ const posts_hard = [
         region: "california", //
         content: `       
         <p>Le samedi 13 mai marque la journée de birding organisée par eBird, le <a href="https://ebird.org/globalbigday" target="_blank">Big Day</a>, où tout le monde est invité à observer un maximum d'oiseaux sur une journée. Se joignant à cet effort, il y a trois ans, A Rocha a lancé le <a href="https://johnstottbirdingday.com/en/" target="_blank">John Stott Birding Day</a>, pour mettre à l'honneur le théologien passionné d'oiseaux, John Stott, et mobiliser le réseau A Rocha à travers le monde.</p>       
-        <img fluid class="mb-3 card-img" src="https://drive.google.com/uc?export=view&id=11wq0JyjioQrtrjTJakIqIQCVkOX3leKM"/>
+        <img fluid class="mb-3 card-img" src="photos/stott1.png"/>
         <p>C'est toujours chouette de voir plein de groupes A Rocha participer à cet évènement à travers les frontières ! Raph a contribué au projet en créant le site web - avec une <a href="https://bird-race.johnstottbirdingday.com/" target="_blank">carte interactive</a> qui permet de visualiser toutes les équipes et espèces vues.
         </p>
         <img fluid class="mb-3 card-img" src="https://lh3.googleusercontent.com/ge_Nnp1nrAWwyR1u5yD20VEN-HHYYR6sz34jVoKG_SPG8tNmVzKzy7HKHYoaqXq2gaGn35zUban_T4cTtSK0Pgus9AwGHE2MDN87ZBVxmr5jyZ-mNTi6JkzdqfPZ0cX-FAaqF-p--s8"/>
@@ -1108,20 +1108,20 @@ const posts_hard = [
 
        <p>Avant même notre arrivée aux US, on avait pour projet de voyager en van pour découvrir le pays. C'est la raison pour laquelle on a acheté le modèle <i>Dodge Grand Caravan</i>, plutôt grand pour seulement trois personnes, mais où les sièges peuvent être pliés au niveau du sol, permettant de voyager avec Mady (c'aurait été dommage de la laisser à la maison), et, le soir, de replier son siège pour créer de l'espace pour un lit. 
         </p>       
-        <img fluid class="mb-3 card-img" src="https://drive.google.com/uc?export=view&id=19pMUnKtxLkfYh8shNh6hRvxtXL9_f9pE"/>       
+        <img fluid class="mb-3 card-img" src="photos/kit0.jpg"/>       
     
        <p>Le projet était de construire un kit amovible, permettant de camper dans la voiture quand on part en voyage, et d'utiliser la voiture sans le kit le reste du temps. On souhaitait créer un kit en bois, léger mais solide - l'occasion d'apprendre un peu le travail du bois. Basé sur notre expérience de camping en Europe, on a voulu continuer dans la voie de la simplicité, sans électricité ou robinet. On s'est inspiré de modèles en ligne pour concevoir un <a href="https://cad.onshape.com/documents/5a34a297c3c7e13d7e052a8c/w/4326efacb375e4cad01fc4b6/e/f2bafdf64819e7d19595b435?renderMode=0&uiState=63cdea9d0cbe834b358bb57c" target="_blank">modèle 3D</a> sur mesure pour notre voiture. 
-       <img fluid class="mb-3 card-img" src="https://drive.google.com/uc?export=view&id=1aLxprv32ETT0NgztpHZiclDr1P-ep_Aq"/>
+       <img fluid class="mb-3 card-img" src="photos/kit1.png"/>
        
        On a ensuite envoyé ces plans à une entreprise qui a découpé toutes les pièces avec un Router CNC, que l'on a ensuite assemblées avec l'aide de Joël et Denise en visite à ce moment-là.    
        </p>
-       <img fluid class="mb-3 card-img" src="https://drive.google.com/uc?export=view&id=1sP83K-2-xsuncoA9iu3G_4j050GMLTkp"/>
+       <img fluid class="mb-3 card-img" src="photos/kit3.jpg"/>
 
        Voici un petit tour de la maison !
        
 
        <h4>La salle de vie</h4>
-       <img fluid class="mb-3 card-img" src="https://drive.google.com/uc?export=view&id=1Dh3Rehb3XJQ0gVthiRODanGLlWZFXjH9"/>
+       <img fluid class="mb-3 card-img" src="photos/kit4.jpeg"/>
 
       <p>Le kit est composé de plusieurs caisses de bois (offrant de l'espace de stockage) que l'on empile en journée pour pouvoir rouler avec les sièges arrière ouverts. Cela demande un peu d'installation et de rangement chaque matin et soir, mais, avec l'expérience, on y arrive en quelques minutes ! Avec le froid ou les moustiques, on apprend vite à accélérer les choses… 
       </p>
@@ -1130,19 +1130,19 @@ const posts_hard = [
 
     
         <h4>La chambre à coucher</h4>       
-        <img fluid class="mb-3 card-img" src="https://drive.google.com/uc?export=view&id=19LCk2Egd_Uvo_OqLtomPZgimhEoISKTL"/>
+        <img fluid class="mb-3 card-img" src="photos/kit6.jpeg"/>
         <p>Le soir, on replie le siège de Mady et on aligne toutes nos caisses de rangement pour créer une grande surface plane, sur laquelle on aligne nos coussins pour créer un matelas. La voiture étant de taille américaine, le lit est plutôt grand ! Cela nous donne la place de dormir confortablement, avec Mady à nos pieds ;) (en théorie… en pratique on observe beaucoup de dispositions différentes au fil de la nuit - c'est une gigoteuse !) 
         </p>       
-        <img fluid class="mb-3 card-img" src="https://drive.google.com/uc?export=view&id=1hD4FgZFOe_QwQaLF1Z6abvS3X09UxCgi"/>
+        <img fluid class="mb-3 card-img" src="photos/kit5.jpg"/>
           
         <h4>La cuisine</h4>
-        <img fluid class="mb-3 card-img" src="https://drive.google.com/uc?export=view&id=18lIZO9WaCgYGrajUnpC_0Q-Y5UGn-SYi"/>
+        <img fluid class="mb-3 card-img" src="photos/kit7.jpeg"/>
     
         <p>La cuisine se trouve à l'arrière de la voiture, ou on a installé des tiroirs qui s'ouvrent sur l'extérieur - toujours à l'abri du toit ! Ayant enlevé la rangée de sièges à l'arrière, on peut utiliser cet espace pour stocker nourriture et bidons d'eau. 
         </p>
-        <img fluid class="mb-3 card-img" src="https://drive.google.com/uc?export=view&id=1XaIww4A7WZ6hcTWN-qU4Iv6YzQbj0vdX"/>
+        <img fluid class="mb-3 card-img" src="photos/kit8.jpg"/>
         <h4>Le salon</h4>
-        <img fluid class="mb-3 card-img" src="https://drive.google.com/uc?export=view&id=1ntXph8vb7IeCMnD8I5ggh4NjdbeTVL8U"/>
+        <img fluid class="mb-3 card-img" src="photos/kit9.jpeg"/>
         <p>Notre humble demeure comprend même une table et des bancs pour s'asseoir à l'intérieur... mais finalement on préfère souvent profiter de l'espace et des vues et manger dehors. La base de la table a d'ailleurs cassé lors de notre voyage et cela n'a pas changé grand-chose à notre quotidien ! 
         </p>
         <h4>Suite et fin</h4>

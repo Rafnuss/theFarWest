@@ -94,7 +94,7 @@
                 <b-list-group>
                   <b-list-group-item v-for="(e, i) in game" :key="e.audio">
                     <audio controls class="w-100">
-                      <source :src="e.audio" />
+                      <source :src="'mots_mady/' + e.audio + '.mp3'" />
                     </audio>
                     <b-form-select v-model="game_selected[i]" :options="game_options" size="sm"></b-form-select>
                   </b-list-group-item>
@@ -125,7 +125,7 @@
                   <p>
                     Maintenant que vous arrivez à décoder mon language, je peux vous révéler une info scoop :
                     <audio controls class="w-100 mt-4">
-                      <source src="https://drive.google.com/uc?export=view&id=1PHVPpLkHw6koDrOJYYEbMH3G1NSmwlej" />
+                      <source src="mots_mady/bebe_maman.mp3" />
                     </audio>
                   </p>
                 </b-alert>
@@ -181,7 +181,7 @@
               />
               <div class="d-flex align-items-center">
                 <b-img :src="regions[i_region].region + '.png'" class="mr-2" style="height: 2rem" />
-                <h1 class="cursor-pointer mb-0">{{ regions[i_region].name }}</h1>
+                <h2 class="cursor-pointer mb-0">{{ regions[i_region].name }}</h2>
               </div>
               <b-icon
                 icon="chevron-right"
@@ -299,13 +299,9 @@
                   >
                     Mady Nuss
                   </b-link>
-                  <b-link
-                    v-else
-                    class="text-secondary"
-                    @click="window.open('https://ebird.org/checklist/S141822540#kirwar', '_blank')"
-                  >
+                  <a href="https://ebird.org/checklist/S141822540#kirwar" target="_blank" class="text-secondary">
                     Kirtland's Warbler
-                  </b-link>
+                  </a>
                 </div>
               </div>
               <div class="d-flex flex-column justify-content-around">
@@ -332,9 +328,9 @@
               </div>
               <div class="d-flex flex-column" v-if="true && !newsView">
                 <strong>EXPLORER D'AVANTAGE</strong>
-                <a class="text-secondary" :href="'https://ebird.org/tripreport/' + live_tripreport_id" target="_blank">
+                <!--<a class="text-secondary" :href="'https://ebird.org/tripreport/' + live_tripreport_id" target="_blank">
                   eBird Trip Report
-                </a>
+                </a>-->
                 <a
                   class="text-secondary"
                   href="https://media.ebird.org/catalog?searchField=user&userId=USER497615&sort=rating_rank_desc&unconfirmed=incl&regionCode=US&beginMonth=4&endMonth=12&beginYear=2023&endYear=2023"
@@ -402,7 +398,7 @@
                   <div class="mr-2">Oiseaux rares</div>
                   <!--<b-img src="birdcast.svg" class="h-16" />-->
                 </a>
-                <!--<b-button size="sm" v-b-modal.modal-bilan>Bilan ornithologique</b-button>-->
+                <b-button size="sm" v-b-modal.modal-bilan>Bilan ornithologique</b-button>
               </div>
               <div class="d-flex flex-column" v-if="newsView">
                 <strong>EXPLORER D'AVANTAGE</strong>
@@ -479,6 +475,7 @@
                             v-for="c in selectedChecklist"
                             :key="c.subId"
                             :href="'https://ebird.org/checklist/' + c.subId"
+                            target="_blank"
                             class="mr-2"
                           >
                             {{ c.subId }}
@@ -599,6 +596,9 @@ import {
   LImageOverlay,
 } from "vue2-leaflet";
 
+const spcode = past_taxon.map((t) => t.speciesCode);
+const spmedia = past_taxon.map((t) => t.numMedia);
+
 export default {
   components: {
     LMap,
@@ -639,36 +639,41 @@ export default {
         s.color = regions.find((r) => r.region == s.region).color;
         return s;
       }),
-      checklists: [],
+      checklists: past_checklists,
       selectedLocId: null,
       posts: posts_hard,
       i_post: posts_hard.length - 1,
-      locations: [],
+      locations: locations_hard,
       //latestLifer: [],
-      taxon: [],
+      taxon: past_taxon,
       showChecklist: false,
-      species_list: species_list,
+      species_list: species_list.map((sp) => {
+        const id = spcode.findIndex((s) => s == sp.species_code);
+        sp.seen = id > 0;
+        sp.hasMedia = sp.seen ? spmedia[id] : 0;
+        return sp;
+      }),
       USliferCount: 0,
       USliferCountInterval: false,
       newsView: false,
       newsTry: 0,
-      last_update: new Date(2023, 2, 28),
+      last_update: new Date(2023, 5, 20),
       game: [
         {
           name: "Viens Papa!",
-          audio: "https://drive.google.com/uc?export=view&id=1urknXTcekfe7SdpKBKqGbxsAVrkjSZGv",
+          audio: "viens_papa",
         },
         {
           name: "Clé",
-          audio: "https://drive.google.com/uc?export=view&id=1o0NV0MqzelqJYbFFpOqo0RXiSS0kvz-S",
+          audio: "clee",
         },
         {
           name: "Avocat",
-          audio: "https://drive.google.com/uc?export=view&id=1JBx6Fz4WPgXGIGlkoDNJuQo1z79xqhRb",
+          audio: "avocat",
         },
         {
           name: "Tracteur",
-          audio: "https://drive.google.com/uc?export=view&id=14hgXbRPsnYvuXGho4415hYcy6O8DwIIF",
+          audio: "tracteur",
         },
         /* {
           name: "Livre",
@@ -680,7 +685,7 @@ export default {
         },*/
         {
           name: "Oiseau",
-          audio: "https://drive.google.com/uc?export=view&id=1idFn9TcGHJm9-VZJHglzx7wDlXfSt2jt",
+          audio: "oiseaux1",
         },
         /*{
           name: "Avion",
@@ -688,11 +693,11 @@ export default {
         },*/
         {
           name: "Banane",
-          audio: "https://drive.google.com/uc?export=view&id=1x0AWJS-VWUGwI9mdHMXzfPLLlJiD1fVy",
+          audio: "banane",
         },
         {
           name: "Jus",
-          audio: "https://drive.google.com/uc?export=view&id=1CuHWfjTQkgP9X7YdYiDvPlY4PQ-bMZzr",
+          audio: "jus",
         },
       ],
       game_options: [],
@@ -712,7 +717,7 @@ export default {
         <text x="50%" y="43%" fill="#ffff" dominant-baseline="middle" text-anchor="middle">${i}</text></svg>`, //${i}
       });
     },
-    async loadLocations() {
+    /*async loadLocations() {
       const response = await fetch("https://farwest-locations.raphaelnussbaumer.com/locations.csv");
       const text = await response.text();
       const rows = text.trim().split("\n");
@@ -728,7 +733,7 @@ export default {
       locations = filterLatLngArray(locations, 1 / 111 / 100);
       this.locations = [...locations_hard, ...locations];
       this.map.setView(this.locations[this.locations.length - 1], 14);
-    },
+    },*/
     /*async openSpeciesChecklist(spCode) {
       fetch(
         "https://tripreport.raphaelnussbaumer.com/tripreport-internal/v1/taxon-detail/" +
@@ -821,25 +826,26 @@ export default {
       return this.checklists.filter((c) => c.locId == this.selectedLocId);
     },
     jourNb() {
-      const ref = this.newsView ? new Date("2023-09-21") : new Date("2023-03-28");
-      return Math.floor((new Date() - ref) / (1000 * 60 * 60 * 24));
+      //const ref = this.newsView ? new Date("2023-09-21") : new Date("2023-03-28");
+      //return Math.floor((new Date() - ref) / (1000 * 60 * 60 * 24));
+      return 83;
     },
   },
   created: function () {
     this.game_options = shuffle(this.game.map((g) => g.name));
     this.game_selected = shuffle(this.game.map((g) => g.name));
 
-    this.loadLocations();
-
     // Checklsit
+    /*
     fetch("https://tripreport.raphaelnussbaumer.com/tripreport-internal/v1/checklists/" + this.live_tripreport_id)
       .then((response) => response.json())
       .then((data) => {
         this.checklists = [...past_checklists, ...data];
       })
       .catch((error) => console.error(error));
-
-    /*fetch(
+    */
+    /*
+    fetch(
       "https://sheets.googleapis.com/v4/spreadsheets/12VqL_Epf2l6NnHHQM3Osd_3nh0h61bPvD66uCSsPAXg/values/A1:Z100?key=" +
         this.google_api_key
     )
@@ -877,57 +883,14 @@ export default {
       .catch((error) => console.error(error));
 */
     // Taxon
+    /*
     fetch("https://tripreport.raphaelnussbaumer.com/tripreport-internal/v1/taxon-list/" + this.live_tripreport_id)
       .then((response) => response.json())
       .then((data) => {
         // Add new taxon from latest tripreport
         this.taxon = [
           ...past_taxon,
-          ...data,
-          {
-            speciesCode: "fepowl",
-            category: "species",
-            commonName: "Ferruginous Pygmy-Owl",
-            sciName: "Glaucidium brasilianum",
-            hideFlags: "S",
-            numIndividuals: 2,
-            numChecklists: 1,
-            numPhotos: 7,
-            numAudio: 0,
-            numVideo: 0,
-            isLifer: true,
-            isPhotoLifer: true,
-            numMedia: 7,
-          },
-          {
-            speciesCode: "spoowl",
-            category: "species",
-            commonName: "Spotted Owl",
-            sciName: "Strix occidentalis",
-            hideFlags: "S",
-            numIndividuals: 3,
-            numChecklists: 2,
-            numPhotos: 4,
-            numAudio: 0,
-            numVideo: 0,
-            isLifer: true,
-            numMedia: 4,
-          },
-          {
-            speciesCode: "gusgro",
-            category: "species",
-            commonName: "Gunnison Sage-Grouse",
-            sciName: "Centrocercus minimus",
-            hideFlags: "S",
-            numIndividuals: 10,
-            numChecklists: 1,
-            numPhotos: 3,
-            numAudio: 0,
-            numVideo: 0,
-            isLifer: true,
-            isPhotoLifer: true,
-            numMedia: 3,
-          },
+          ...data
         ].reduce((acc, curr) => {
           const foundIndex = acc.findIndex((item) => item.speciesCode === curr.speciesCode);
           if (foundIndex !== -1) {
@@ -954,7 +917,7 @@ export default {
         //let uslifercount = this.species_list.filter((sp) => (!sp.US_lifer | sp.seen) & (sp.exotic != "X")).length - 3;
       })
       .catch((error) => console.error(error));
-
+    */
     /*
     fetch(
       "https://sheets.googleapis.com/v4/spreadsheets/1tJUNjqhX6L7bXPapc1VMyymRk9KbMjARpWB24J2tbK4/values/Sheet3!A1:C1?key=" +
@@ -966,7 +929,8 @@ export default {
       })
       .catch((error) => console.error(error));
 */
-    this.animateUSliferCount(673);
+    let uslifercount = this.species_list.filter((sp) => (!sp.US_lifer | sp.seen) & (sp.exotic != "X")).length - 3;
+    this.animateUSliferCount(uslifercount);
   },
   watch: {
     modeSelected(val) {
@@ -982,9 +946,11 @@ export default {
   },
   mounted() {
     this.map = this.$refs.map.mapObject;
+    //this.map.setView(this.locations[this.locations.length - 1], 14);
+    this.map.fitBounds(this.locations);
   },
 };
-
+/*
 function detectOutliers(data, halfWindowSize, threshold) {
   // Create an empty array to store the outliers
   const outliers = [];
@@ -1065,6 +1031,7 @@ function filterLatLngArray(array, threshold) {
     return accumulator;
   }, []);
 }
+*/
 
 function getDistanceFromLatLng(lat1, lng1, lat2, lng2) {
   // Calculation of distance between two latitude-longitude pairs
