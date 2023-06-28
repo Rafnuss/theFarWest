@@ -271,11 +271,11 @@ const posts_hard = [
         title: "Dedans dehors",
         content: `
         <h4>Des parents indécis</h4>
-        <p>Après beaucoup de temps dans la voiture, on sort enfin et je commence à étudier les cailloux, quand, à peine commencé, on doit déjà retourner dans la voiture. J’étais pas trop contente, je pensais qu’on était arrivé ! Je leur ai répété “dehors dehors dehors” en boucle, et, finalement, ils se sont arrêtés rapidement après. Ouf, ils ont compris ! </p>
+        <p>Après beaucoup de temps dans la voiture, on sort enfin et je commence à étudier les cailloux, quand, à peine commencé, on doit déjà retourner dans la voiture. J'étais pas trop contente, je pensais qu'on était arrivé ! Je leur ai répété “dehors dehors dehors” en boucle, et, finalement, ils se sont arrêtés rapidement après. Ouf, ils ont compris ! </p>
         <img fluid class="mb-3 card-img" src="https://drive.google.com/uc?export=view&id=1ZdBVJu638XNdmLRJk9qJFYNpIP_4ramt"/>
-        <p>Je reprends mon étude des cailloux, et quelques minutes plus tard, rebelote, on doit rentrer dans la voiture ! Je ne comprends plus rien. On ne fait que rentrer et sortir ! Je ne savais pas que les champs les intéressaient tellement. Je fais de mon mieux pour constituer ma collection de cailloux au fil de tous ces arrêts. Finalement, une pause était un peu plus longue et les parents avaient l’air contents, sans doute parce que j’ai rempli la voiture de mes jolis petits cailloux. Papa s’est précipité à la voiture pour chercher l’appareil photo et m’est presque rentré dedans (j’ai l’habitude).</p>
+        <p>Je reprends mon étude des cailloux, et quelques minutes plus tard, rebelote, on doit rentrer dans la voiture ! Je ne comprends plus rien. On ne fait que rentrer et sortir ! Je ne savais pas que les champs les intéressaient tellement. Je fais de mon mieux pour constituer ma collection de cailloux au fil de tous ces arrêts. Finalement, une pause était un peu plus longue et les parents avaient l'air contents, sans doute parce que j'ai rempli la voiture de mes jolis petits cailloux. Papa s'est précipité à la voiture pour chercher l'appareil photo et m'est presque rentré dedans (j'ai l'habitude).</p>
         <img fluid class="mb-3 card-img" src="https://drive.google.com/uc?export=view&id=1v0RfwGZSbcsHfUO2F7J9NOZ38hr7b5xo"/>
-        <p>Dans la voiture, papa m’a appris à utiliser son compteur d’oiseaux : il faut trouver un oiseau dehors, et après on a le droit de cliquer dessus, j’étais plutôt contente de pouvoir l’aider !</p>
+        <p>Dans la voiture, papa m'a appris à utiliser son compteur d'oiseaux : il faut trouver un oiseau dehors, et après on a le droit de cliquer dessus, j'étais plutôt contente de pouvoir l'aider !</p>
         `,
         lon: -103.318121,
         lat: 39.25918,
@@ -1552,6 +1552,58 @@ const posts_hard = [
 
         <p>C'est la tête pleine de souvenirs et le coeur reconnaissant pour cette belle aventure que l'on traverse une dernière fois la frontière et que l'on quitte les US pour de bon... Bye USA !</p> 
         
+        `,
+        newsView: false
+    },
+
+    {
+        title: "La boucle est bouclée",
+        lon: -79.886567,
+        lat: 43.249570,
+        date: new Date(2023, 5, 27),
+        author: "Améline",
+        weather: "cloud-fill", // sun-fill cloud-fill, cloud-rain-heavy-fill
+        location: "Hamilton",
+        region: "pothole", //
+        content: `
+        
+        <p>Il y a exactement trois mois, on déménageait d'Ithaca, avec une première étape chez nos amis proches à Hamilton. C'est depuis chez eux qu'on s'est élancés dans cette aventure sur les routes. C'est donc symbolique de passer la dernière semaine sur le continent américain avec eux à nouveau - on boucle cette grande boucle avec succès ! </p>
+
+        <img fluid class="mb-3 card-img" src="https://lh3.googleusercontent.com/pw/AJFCJaXR67eydFkd1MNmo370VW1tML8zigjN_rT6IIU137f37qWWFRK2u60KEwpfgRNNxFAOT29YewbVa_ZWJLuEH2UxOg9xyJFVdNBkDuxBmjmEMdWm3Q5P"/>
+
+        </p>
+        <h4>Du minivan aux bus</h4>
+        <p>Suite à la vente de la voiture, on expérimente l'Amérique en transports en commun, avec un total de 3 bus pour arriver chez nos amis. Entre les bus vides et ceux remplis d'étudiants et d'étrangers, on découvre un autre côté des US. Malgré les valises à tirer et les sacs à porter, les trajets se passent bien et on arrive à bon port. </p>
+
+        <img fluid class="mb-3 card-img" src="https://lh3.googleusercontent.com/pw/AJFCJaUoJ-_4fm4jYoIjWwpSwoEsb5pYhxVLSgs6a0hTP_WDPBeqF63bU0-lsXwvCxpM1jjBiqqQwmnGOMDOmczPq1aVCFTSVcfCu11oDSlnRxxdeE7nwOMO"/>
+        
+        <h4>Les retrouvailles</h4>
+
+        
+        <p>Après trois mois passés la plupart du temps juste à trois, on est heureux de retrouver des relations, d'autant plus faciles quand on a habité un an ensemble en Suisse, et qu'on a partagé des temps forts tels que les naissances des premiers enfants. Cette semaine nous rappelle de bons souvenirs de la vie en communauté en Suisse.</p> 
+
+        <img fluid class="mb-3 card-img" src="https://lh3.googleusercontent.com/pw/AJFCJaW-nRrWu63U9TdRhNwnM2pPtBpq5bgE14Gm-5GnfqJlflm4Kn8xzu9yHPsOSVHhTgb1jXlgA08A-jLI06JofjF9wnkeQtiGZkk6SSMcvdx6_WcV4jr3"/>
+
+        <p>Mady retrouve avec joie Avery et Carson, ses deux complices pour jouer, faire de la trottinette, de la balançoire, jeter des cailloux dans le lac, et toutes sortes d'activités bien plus drôles avec des copains. Cela implique aussi de se ré-habituer à dormir dans son petit lit, et non dans le lit des parents, et d'apprendre à partager (lynx n'était pas trop regardant à ce niveau-là). De notre côté, on savoure la simplicité des temps passés ensemble, le confort d'une maison, et le repos d'une semaine de transition. 
+        </p> 
+
+        <h4>Le cottage</h4>
+
+        <img fluid class="mb-3 card-img" src="https://lh3.googleusercontent.com/pw/AJFCJaVJtn1mIN2cbrDU4uAslxnum1MMODk1W_Pw7IxqzZFoGVvVFvgi_Wv9J7iLHKvPryigdx5OgTv3vFtSe8yBvfqF_tgvP8FZZgn4Ph8IlPtupyG6P70A"/>
+        
+        <p>On finit notre temps au Canada avec quelques jours dans un “cottage” au bord d'un lac dans un cadre magnifique - un véritable cadeau ! Les parents de Jenny nous ont généreusement accueillis dans leur maison de vacances, où on a profité de tours en bateau, baignades, pickleball (on vous laisse <a href="https://www.youtube.com/watch?v=kqLRRNOpe8U" target="_blank">découvrir</a>), et bonnes discussions. Le seul inconvénient : ces temps précieux passés ensemble rendent les adieux plus difficiles !
+
+        </p>
+
+        <h4>Une page se tourne</h4>
+
+        <img fluid class="mb-3 card-img" src="https://lh3.googleusercontent.com/pw/AJFCJaUw-WZ8tad4Jihpo0fw8uWqZOdj1IeytLUqhvJPu064Lqb8aNsLHotTlP-dEMV8xU2gaYjdgA7HH2potu6TztfC6psEykUNv05TakQGRQhizBaTqOVl"/>
+        <p>Ça y est, nous voici sur le point d'embarquer pour notre vol vers la France - la fin du voyage mais aussi de notre période aux US, une page qui se tourne ! Merci de nous avoir suivi pendant ce périple, on a apprécié vos retours et on s'est sentis accompagnés dans cette aventure. </p>
+        <p>On vous laisse avec un petit bilan ornithologique du voyage (vous l'aurez compris d'ici maintenant, les oiseaux et les données - les grandes passions de Raph !), comprenant quelques uns de nos photos et audios préférés. Cliquez sur le bouton orange en haut à droite pour y accéder.</p>
+
+        <p>L'aventure continue à Altkirch - on se réjouit de vous y accueillir quand vous y passez ! </p>
+
+
         `,
         newsView: false
     },
