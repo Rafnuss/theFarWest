@@ -236,14 +236,22 @@
           </ol>
         </b-card>
       </b-collapse>
-      <p>
-        Ce qui nous reste pour une autre fois : les hivernants de la cote ouest (Surfbird, Black Turnstone, Pacific
-        Golden Plover, Rock Sandpiper, Yellow-billed Diver), pas mal d'oiseaux marins (Ancien, Parakeet, et Cassin's
-        Auklets, Sabine's gull, Horned puffin, Laysin albatros, Black Storm petrel, Northern Fulmar, Black-vented
-        shearwater, Atlantic Puffin) et des espèces vues de façon très rare en Floride, Texas ou Arizona. Il reste
-        également des espèces hivernantes dans l'Est, certaines très rare, principalement des chouettes (Hawk Owl, Great
-        Grey Owl, Long-eared Owl, Arctic Redpoll).
-      </p>
+      <h3>Ce qui nous reste pour une autre fois</h3>
+      <ul>
+        <li>
+          les hivernants de la cote ouest (Surfbird, Black Turnstone, Pacific Golden Plover, Rock Sandpiper,
+          Yellow-billed Diver),
+        </li>
+        <li>
+          pas mal d'oiseaux marins (Ancien, Parakeet, et Cassin's Auklets, Sabine's gull, Horned puffin, Laysin
+          albatros, Black Storm petrel, Northern Fulmar, Black-vented shearwater, Atlantic Puffin),
+        </li>
+        <li>
+          des espèces hivernantes dans l'Est, certaines très rare, principalement des chouettes (Hawk Owl, Great Grey
+          Owl, Long-eared Owl, Arctic Redpoll),
+        </li>
+        <li>des espèces vues de façon très rare en Floride, Texas ou Arizona.</li>
+      </ul>
 
       <h4>Statistiques</h4>
       Nous avons birdé un total de 570 heures (notre moyenne pour toute l'année d'habitude !). Essayant de valoriser la
@@ -326,7 +334,6 @@ export default {
       top10photos: [
         "554249831",
         "567019731",
-        "559931871",
         "573047761",
         "559165981",
         "559157971",
