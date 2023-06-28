@@ -94,7 +94,7 @@
                 <b-list-group>
                   <b-list-group-item v-for="(e, i) in game" :key="e.audio">
                     <audio controls class="w-100">
-                      <source :src="'mots_mady/' + e.audio + '.mp3'" />
+                      <source :src="'/mots_mady/' + e.audio + '.mp3'" />
                     </audio>
                     <b-form-select v-model="game_selected[i]" :options="game_options" size="sm"></b-form-select>
                   </b-list-group-item>
@@ -125,7 +125,7 @@
                   <p>
                     Maintenant que vous arrivez à décoder mon language, je peux vous révéler une info scoop :
                     <audio controls class="w-100 mt-4">
-                      <source src="mots_mady/bebe_maman.mp3" />
+                      <source src="/mots_mady/bebe_maman.mp3" />
                     </audio>
                   </p>
                 </b-alert>
