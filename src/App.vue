@@ -299,13 +299,9 @@
                   >
                     Mady Nuss
                   </b-link>
-                  <b-link
-                    v-else
-                    class="text-secondary"
-                    @click="window.open('https://ebird.org/checklist/S141822540#kirwar', '_blank')"
-                  >
+                  <a href="https://ebird.org/checklist/S141822540#kirwar" target="_blank" class="text-secondary">
                     Kirtland's Warbler
-                  </b-link>
+                  </a>
                 </div>
               </div>
               <div class="d-flex flex-column justify-content-around">
@@ -402,7 +398,7 @@
                   <div class="mr-2">Oiseaux rares</div>
                   <!--<b-img src="birdcast.svg" class="h-16" />-->
                 </a>
-                <!--<b-button size="sm" v-b-modal.modal-bilan>Bilan ornithologique</b-button>-->
+                <b-button size="sm" v-b-modal.modal-bilan>Bilan ornithologique</b-button>
               </div>
               <div class="d-flex flex-column" v-if="newsView">
                 <strong>EXPLORER D'AVANTAGE</strong>
@@ -479,6 +475,7 @@
                             v-for="c in selectedChecklist"
                             :key="c.subId"
                             :href="'https://ebird.org/checklist/' + c.subId"
+                            target="_blank"
                             class="mr-2"
                           >
                             {{ c.subId }}
@@ -660,7 +657,7 @@ export default {
       USliferCountInterval: false,
       newsView: false,
       newsTry: 0,
-      last_update: new Date(2023, 2, 28),
+      last_update: new Date(2023, 5, 20),
       game: [
         {
           name: "Viens Papa!",
@@ -932,7 +929,7 @@ export default {
       })
       .catch((error) => console.error(error));
 */
-    let uslifercount = this.species_list.filter((sp) => (!sp.US_lifer | sp.seen) & (sp.exotic != "X")).length - 2;
+    let uslifercount = this.species_list.filter((sp) => (!sp.US_lifer | sp.seen) & (sp.exotic != "X")).length - 3;
     this.animateUSliferCount(uslifercount);
   },
   watch: {
@@ -953,7 +950,7 @@ export default {
     this.map.fitBounds(this.locations);
   },
 };
-
+/*
 function detectOutliers(data, halfWindowSize, threshold) {
   // Create an empty array to store the outliers
   const outliers = [];
@@ -1034,6 +1031,7 @@ function filterLatLngArray(array, threshold) {
     return accumulator;
   }, []);
 }
+*/
 
 function getDistanceFromLatLng(lat1, lng1, lat2, lng2) {
   // Calculation of distance between two latitude-longitude pairs
