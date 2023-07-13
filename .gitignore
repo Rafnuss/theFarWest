@@ -7,4 +7,3 @@ build/
 chrome-user-data
 .vscode
 dist/
-public/photos/*
