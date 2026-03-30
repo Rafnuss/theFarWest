@@ -555,7 +555,7 @@
             </b-card>
           </b-col>
         </b-row>
-        <b-row>
+        <b-row v-if="showPhotoSlider">
           <Photos :newsView="newsView" />
         </b-row>
       </b-col>
@@ -656,6 +656,8 @@ export default {
       USliferCount: 0,
       USliferCountInterval: false,
       newsView: false,
+      // Keep the slider component in code, but hidden by default to give map more room.
+      showPhotoSlider: false,
       newsTry: 0,
       last_update: new Date(2023, 5, 20),
       game: [
