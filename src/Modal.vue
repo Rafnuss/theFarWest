@@ -1,6 +1,6 @@
 <template>
   <div>
-    <b-modal id="modal-aba" scrollable title="Légende des espèces ABA" size="l" hide-footer centered>
+    <b-modal id="modal-aba" scrollable title="Légende des espèces ABA" hide-footer centered>
       <p>La American Birding Association (ABA) classe les espèces d'Amérique du Nord par niveau de rarité :</p>
       <b-row class="mb-2">
         <b-col>
@@ -23,7 +23,7 @@
       </b-row>
       <b-button href="https://www.aba.org/aba-checklist/" target="_blank"> Plus d'informations </b-button>
     </b-modal>
-    <b-modal id="modal-exotic" scrollable title="Légende des espèces exotiques" size="l" hide-footer centered>
+    <b-modal id="modal-exotic" scrollable title="Légende des espèces exotiques" hide-footer centered>
       <p>
         Toutes les observations d’espèces exotiques dans eBird sont classées dans l’une des trois catégories suivantes :
       </p>
@@ -85,6 +85,8 @@
         <b-carousel-slide v-for="t in top10photos" :key="t">
           <template #img>
             <iframe
+              loading="lazy"
+              title="Média Macaulay Library"
               :src="'https://macaulaylibrary.org/asset/' + t + '/embed'"
               height="530"
               width="60%"
@@ -106,6 +108,8 @@
         <b-carousel-slide v-for="t in top10audios" :key="t">
           <template #img>
             <iframe
+              loading="lazy"
+              title="Média Macaulay Library"
               :src="'https://macaulaylibrary.org/asset/' + t + '/embed'"
               height="390"
               width="640"
@@ -121,8 +125,8 @@
         On vous a parlé des réussites, mais il y a aussi eu quelques loupés. Au total, il nous manque 15 espèce que je
         pensais possibles (mais difficiles).
       </p>
-      <b-button v-b-toggle.collapse-1 variant="primary" class="mb-2">Voir les loupés</b-button>
-      <b-collapse id="collapse-1" class="mt-2 mb-2">
+      <b-button v-b-toggle.collapse-misses variant="primary" class="mb-2">Voir les loupés</b-button>
+      <b-collapse id="collapse-misses" class="mt-2 mb-2">
         <b-card>
           <ol>
             <li>
@@ -259,7 +263,7 @@
       qu'en mouvement. Avec 254 espèces ajoutées (pour un total de 673 aux Etats-Unis) notre liste est bien remplie ! Il
       y a quand même 714 personnes qui ont une liste encore plus exhaustive sur eBird, mais à ce stade de l'année,
       quatre personnes seulement ont vu plus d'espèces que nous aux US (Alaska et Hawai exclus).
-      <iframe width="100%" height="300px" frameborder="0" scrolling="no" src="//plotly.com/~rafnuss/99.embed"></iframe>
+      <!-- The Plotly Chart Studio embed (plotly.com/~rafnuss/99) is no longer available (HTTP 410). -->
 
       <h3>Quelques chiffres</h3>
       <b-row>
@@ -315,14 +319,14 @@
       <h3>Le coloriage de birder</h3>
       Pour aider à faire passer le temps lors des trajets en voiture, on a essayé de faire une liste pour chaque
       "county" (conté) traversé !
-      <b-img src="USCountyMap.png" fluid />
+      <b-img src="USCountyMap.png" fluid loading="lazy" />
 
       <h3>Nombre d'espèces observées/jour</h3>
       <p>
         On visait plutôt la liste US dans son ensemble que de voir un maximum d'espèces chaque jour, donc la plupart des
         jours sont plutôt bas. Record battu le jour de l'anniversaire de Mady. Beau cadeau, non ?
       </p>
-      <b-img src="SpeciesCalendar.jpg" fluid />
+      <b-img src="SpeciesCalendar.jpg" fluid loading="lazy" />
     </b-modal>
   </div>
 </template>

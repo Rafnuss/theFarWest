@@ -6,8 +6,8 @@
       soumises à proximité des villes, certaines espèces localisées dans des lieux reclus peuvent apparaître comme rares
       alors que, si on la cherche dans le bon habitat, elle n'est pas très difficile à trouver.
     </p>
-    <b-button v-b-toggle.collapse-1 variant="primary" size="sm" class="mb-2">Ajuster les filtres d'affichage</b-button>
-    <b-collapse id="collapse-1" class="mb-2">
+    <b-button v-b-toggle.collapse-filters variant="primary" size="sm" class="mb-2">Ajuster les filtres d'affichage</b-button>
+    <b-collapse id="collapse-filters" class="mb-2">
       <b-card class="bg-light">
         <b-form @submit="onSubmit">
           <b-row>
@@ -162,7 +162,6 @@ export default {
     },
   },
   created() {
-    console.log(this.mode);
     if (this.mode == "list") {
       this.onlyTarget = false;
       this.exclureLifer = false;

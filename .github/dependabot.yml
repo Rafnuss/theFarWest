@@ -1,0 +1,21 @@
+version: 2
+updates:
+  - package-ecosystem: npm
+    directory: /
+    schedule:
+      interval: monthly
+    groups:
+      minor-and-patch:
+        update-types: [minor, patch]
+    ignore:
+      # The app is built on Vue 2 + BootstrapVue (Bootstrap 4); @vitejs/plugin-vue2 supports Vite <= 7.
+      - dependency-name: vue
+        update-types: [version-update:semver-major]
+      - dependency-name: bootstrap
+        update-types: [version-update:semver-major]
+      - dependency-name: vite
+        update-types: [version-update:semver-major]
+  - package-ecosystem: github-actions
+    directory: /
+    schedule:
+      interval: monthly

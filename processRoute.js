@@ -1,7 +1,12 @@
 import csvtojson from "csvtojson";
 import fs from "fs";
 
-const GOOGLE_MAP_API = "AIzaSyCaVWdIpSvq8BoF7PvEK4oY3LByPYTQ2Xs"
+// Provide the key via the environment, e.g. `GOOGLE_MAP_API=... npm run processRoute`. Never commit it.
+const GOOGLE_MAP_API = process.env.GOOGLE_MAP_API
+if (!GOOGLE_MAP_API) {
+    console.error("Missing GOOGLE_MAP_API environment variable.")
+    process.exit(1)
+}
 
 const route_stops = await csvtojson.csv().fromFile("data/route_stops.csv")
 

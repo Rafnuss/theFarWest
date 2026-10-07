@@ -1,5 +1,24 @@
 # Far West
 
+Live site: https://raphaelnussbaumer.com/theFarWest/
+
+## Development
+
+Requires Node.js ≥ 20.19 (see `.nvmrc`).
+
+```bash
+npm ci
+npm run dev       # local dev server
+npm run build     # production build in dist/ (deployed to gh-pages by GitHub Actions on push to master)
+npm run preview   # serve the production build locally
+```
+
+Data scripts (regenerate files in `src/assets/` from `data/`):
+
+- `npm run processTripreport`: checklists and taxon list from eBird trip reports.
+- `npm run processSpecies`: species list from `data/species_list.csv`.
+- `GOOGLE_MAP_API=<key> npm run processRoute`: planned route via the Google Routes API (never commit the key).
+
 ## 1. Aims & Objective
 
 ### Temporal

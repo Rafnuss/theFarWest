@@ -49,15 +49,15 @@ const posts_hard = [
         <h4>Petite nyctale</h4>
         De la taille d'une mésange, cette chouette qui se laisse approcher facilement est en fait assez difficile à trouver. Nous profitons d'un lieu de suivi de rapace nocturne migratoire dans le "Owl Woods" de Braddock Bay sur la côte sud du lac Ontario pour avoir des infos précises et actualisées. On a même été mis en contact avec un birder local. Malheureusement, aucune chouette n'a été vue le matin de notre visite. Mais on ne lâche pas l'affaire, on retentera notre chance d'ici quelques jours. Affaire à suivre! </p>
         <div class="iframe-wrapper">
-        <iframe src="https://macaulaylibrary.org/asset/320501371/embed" frameborder="0"></iframe>
+        <iframe loading="lazy" src="https://macaulaylibrary.org/asset/320501371/embed" frameborder="0"></iframe>
         </div>
         <h4>Petit dernier pour la route</h4>
         Après notre arrivée chez nos amis du Canada, je fais une petite sortie à la tombée de la nuit avec Matt pour aller écouter les <a href="https://ebird.org/species/amewoo" target="_blank">bécasses d'Amérique</a>, un petit limicole au long bec, difficile à voir de jour car il est camouflé dans la forêt mais qui, pendant la période de reproduction, fait des vols de parade au crépuscule avec une série de sons assez uniques !
         <div class="iframe-wrapper iframe-wrapper-100">
-        <iframe src="https://macaulaylibrary.org/asset/548676431/embed" frameborder="0"></iframe>
+        <iframe loading="lazy" src="https://macaulaylibrary.org/asset/548676431/embed" frameborder="0"></iframe>
         </div>       
         <div class="iframe-wrapper iframe-wrapper-100">
-        <iframe src="https://macaulaylibrary.org/asset/548676441/embed" frameborder="0"></iframe>
+        <iframe loading="lazy" src="https://macaulaylibrary.org/asset/548676441/embed" frameborder="0"></iframe>
         </div>
         `,
     newsView: false,
@@ -96,7 +96,7 @@ const posts_hard = [
     content: `
         <p>Notre premier lifer du trip est <a href="https://ebird.org/species/smilon/US-IN" target="_blank">le plectrophane de Smith</a> (vous comprenez pourquoi on a une préférence pour les noms anglais ?), un joli bruant aux teintes oranges avec un masque noir en plumage nuptial - nettement moins marqué en plumage d'hiver mais sympa à trouver quand même ! Comportement typique des oiseaux de plaines, ils se regroupent à plusieurs centaines en hiver et se nourrissent des graines laissées dans les champs.</p>
         <div class="iframe-wrapper">
-        <iframe src="https://macaulaylibrary.org/asset/551925521/embed" frameborder="0"></iframe>
+        <iframe loading="lazy" src="https://macaulaylibrary.org/asset/551925521/embed" frameborder="0"></iframe>
         </div>       
         <h4>Coche facile, photo difficile</h4>       
         <p>Après un début de journée dans la grisaille et sous la pluie, on décide de prendre la route vers l'ouest pour aller dans le sens opposé de la pluie. 4 heures de route plus tard, on a gagné 15 degrés, mais le vent souffle d'autant plus fort. J'ai à peine le temps de sortir de la voiture que je vois deux plectrophanes s'envoler du champ à quelques mètres de moi, presque trop facile ! Par contre, ils se camouflent extrêmement bien : ils peuvent être à 2 mètres sans qu'on les voie, jusqu'à ce qu'on s'approche et ils s'envolent. Photographier ces oiseaux n'a pas été simple !</p>       
@@ -116,11 +116,11 @@ const posts_hard = [
         <h4>Deuxième nuit - tornade ou tranquille ?</h4>
         <p>On était plutôt contents de quitter la pluie en allant vers l'ouest... c'était sans compter qu'on allait se retrouver dans une tornade ! Après des vents assez forts dans l'après midi, on pensait que ça s'était un peu calmé, on a même pu cuisiner dehors. Alors qu'on s'apprêtait à aller se poser pour la nuit vers 22h, nos deux téléphones se mettent à vibrer et sonner avec un message d'alerte à la tornade, suivi par les sirènes de la ville. Les conseils étaient de s'abriter (et aller au sous sol si dans une maison) - on décide donc de dormir sur le parking d'une église proche de la ville au lieu d'aller s'isoler en pleine nature. 
         </p>
-        <img fluid class="mb-3 card-img" src="photos/tornade1.jpg"/>
+        <img loading="lazy" fluid class="mb-3 card-img" src="photos/tornade1.jpg"/>
         <p>La voiture est un peu secouée par les vents forts en début de nuit, mais ça n'a pas empêché Mady et Raphaël de s'endormir facilement ;) . La nuit dans le van était plutôt paisible, au milieu de cette tornade, Dieu merci !</p>
-        <img fluid class="mb-3 card-img" src="photos/tornade2.jpg"/>
+        <img loading="lazy" fluid class="mb-3 card-img" src="photos/tornade2.jpg"/>
         <p>Le lendemain, après un beau lever de soleil, les vents reprennent, et, en roulant un peu autour de nous, on commence à remarquer les dégâts : beaucoup de routes sont fermées à cause des débris sur la route, on voit des débris éparpillés dans les champs, des arbres tombés, des toits arrachés, et des maisons entières détruites... L'impact semble fort le long de la trajectoire, mais quasiment aucun dégât notable à peine 100m plus loin. C'est assez impressionnant à voir. On est reconnaissants pour la protection de Dieu sur notre petite voiture, et nos prières vont vers les victimes des dégâts.</p>
-        <img fluid class="mb-3 card-img" src="photos/tornade3.jpg"/>
+        <img loading="lazy" fluid class="mb-3 card-img" src="photos/tornade3.jpg"/>
         `,
     weather: "tornado",
     location: "Goose Pond",
@@ -140,7 +140,7 @@ const posts_hard = [
         <h4>Remède contre le mal du pays</h4>
         <p>Douze individus auraient été introduits d'Allemagne en 1870 pour que les immigrants européens du Missouri aient des oiseaux  familiers sur ce nouveau continent… En tant qu'immigrants français, c'est à notre tour de le chercher ! 150 ans plus tard, l'espèce s'est intégrée à l'écosystème local, mais reste localisée autour de St Louis. Avec le temps, les moineaux friquets américains ont développé des différences  en termes de taille, génétique, et chant (les oiseaux aussi prennent l'accent américain). </p>
         <div class="iframe-wrapper">
-        <iframe src="https://macaulaylibrary.org/asset/552854781/embed" frameborder="0"></iframe>
+        <iframe loading="lazy" src="https://macaulaylibrary.org/asset/552854781/embed" frameborder="0"></iframe>
         </div>
         <p>A nouveau, une espèce plutôt facile et répandue dans la région, qu'on a pu observer à deux reprises dans la journée - ces petits moineaux étaient nos voisins de table lors de notre repas au soleil. Mais des espèces plus difficiles nous attendent ces prochains jours, à suivre ! </p>
         <!-- removed broken Google Photos URL: https://lh3.googleusercontent.com/pw/AMWts8C4JOv9u8Cx8y3mjqywirIpdujbcDvxWtF29D9Ve2CtgEVJ3sg__3lbgf6E22Ul__g6yfrxVxxPxL9hb7bt_bHFICInP7g-57T64b2JAFSUURPpanhJ -->
@@ -159,9 +159,9 @@ const posts_hard = [
     content: `
         <h4>Les parents se sont perdus ?</h4>
         <p>Le chemin du retour de chez ma copine semble plus long que d'habitude, je sais pas pourquoi on rentre pas à la maison. En attendant, la voiture semble être la nouvelle maison, donc j'enlève mes chaussures à chaque fois que j'y entre. L'avantage c'est qu'il fait pas aussi froid maintenant, j'ai plus besoin de mettre deux pantalons, les gants et le bonnet a chaque fois qu'on sort, c'est plus pratique pour courir !</p>
-        <img fluid class="mb-3 card-img" src="photos/taty1.jpg"/>
+        <img loading="lazy" fluid class="mb-3 card-img" src="photos/taty1.jpg"/>
         <p>Je passe quand même beaucoup de temps dans la voiture, et des fois je m'ennuie un peu à l'arrière. Quand papa cherche ses oiseaux, je peux m'amuser dehors avec des bâtons ou des cailloux, mais j'aimerais bien avoir ma propre liste à cocher comme les grands. Est-ce que vous pouvez m'aider ?</p>
-        <img fluid class="mb-3 card-img" src="photos/taty2.jpg"/>
+        <img loading="lazy" fluid class="mb-3 card-img" src="photos/taty2.jpg"/>
         <p> Papa et maman m'ont dit que je pouvais vous demander des idées de défis, occupations, ou surprises que je devrais faire pendant ce voyage (mais papa a bien précisé qu'il ne pourra pas faire trop de déviations de son parcours). Si vous avez des idées pour moi, vous pouvez me les partager ici :</p>
         <a href="https://docs.google.com/forms/d/e/1FAIpQLSeposcoqcu7mKpzoE4phDZxLwHmq39UHPzbnLFjHkrnovJnpw/viewform?usp=sf_link" target="_blank" class="btn w-100 mb-2 text-white btn-secondary btn-sm">Donne-moi un défi !</a>
         <p>Je vous tiendrai au courant de mes progrès bien sûr. Bye !</p>
@@ -180,7 +180,7 @@ const posts_hard = [
     content: `
         <p>Voyager pour voir des oiseaux, c'est un mélange de planification à l'avance et d'improvisation sur le terrain en fonction de la météo et des espèces rares signalées dans la région. Alors quand on voit qu'une sarcelle d'été (un autre oiseau européen, vu en moyenne une fois par an aux US) a été vue à 1h de notre route, on décide de réorganiser notre itinéraire. C'est l'avantage de la flexibilité de la voiture !</p>
         <div class="iframe-wrapper">
-        <iframe src="https://macaulaylibrary.org/asset/553223021/embed" frameborder="0"></iframe>
+        <iframe loading="lazy" src="https://macaulaylibrary.org/asset/553223021/embed" frameborder="0"></iframe>
         </div>
         <p>Mais trouver cette petite sarcelle n'a pas été facile : elle se cachait au milieu de 18 000 autres canards, autant dire que c'est comme chercher une aiguille dans une botte de foin. Heureusement, on n'était pas les seuls à chercher, et un autre birder nous a partagé sa localisation. Et comme les espèces rares rassemblent du monde, c'était aussi l'occasion d'échanger avec des locaux fort sympathiques.</p>
         <!-- removed broken Google Photos URL: https://lh3.googleusercontent.com/NySfo2UzkTt3WipGfOA59tzzBAAMNXVhS1RmOWvNCP5H3thp0I-BqdVE8oZRtp_dNIVklpWw45j2nx3A4z8eX6O0gX5aMOo4rRIWV1Xo0fSW8dPEEtaMHHjB3txGO3T4k85z-HWWZUA -->
@@ -202,13 +202,13 @@ const posts_hard = [
         <h4>Le tétras des prairies</h4>
         Des oiseaux dodus ressemblant à des poules, les tétras des prairies se trouvent... dans les prairies ! Au printemps, les mâles se rassemblent sur leurs aires de parade et font une danse particulière pour attirer les femelles : ils s'inclinent vers le sol, relèvent leur plumes ressemblant à des oreilles dépassant de la tête, et gonflent leur peau jaune-orange sur le cou (appelés des sacs gulaires, pour ceux que ça intéresse). Ils font aussi des duels avec des petits sauts, qui nous ont un peu rappelé l'escrime (sans l'épée ;).        
         <div class="iframe-wrapper">
-        <iframe src="https://macaulaylibrary.org/asset/553778811/embed" frameborder="0"></iframe>
+        <iframe loading="lazy" src="https://macaulaylibrary.org/asset/553778811/embed" frameborder="0"></iframe>
         </div>
         <p><a href="https://media.ebird.org/catalog?taxonCode=grpchi&sort=rating_rank_desc&userId=USER497615" target="_blank">Cliquer ici pour voir plus de photo et vidéo.</a></p>
         <h4>Spectacle naturel</h4>
         C'était une expérience unique de graduellement découvrir ces tétras alors que le soleil se lève, au son de leurs cris ressemblant à lorsqu'on souffle dans une bouteille vide, camouflés dans notre petite cabane à quelques mètres d'eux. C'est un peu comme si on venait observer une performance théâtrale ou un match sportif, mis à part qu'on ne connaît pas les règles : comment les femelles décryptent ces mouvements et choisissent leur mâle reste un mystère pour moi !       
         <div class="iframe-wrapper">
-        <iframe src="https://macaulaylibrary.org/asset/553778941/embed" frameborder="0"></iframe>
+        <iframe loading="lazy" src="https://macaulaylibrary.org/asset/553778941/embed" frameborder="0"></iframe>
         </div>
         <h4>"Co-co-qui !"</h4>
         Toute une étiquette est associée à l'observation de ces tétras : il faut arriver à la cabane 1h avant le lever du soleil (6h), pour ne pas déranger l'arrivée des oiseaux, et y rester jusqu'à ce que le dernier oiseau reparte (dans notre cas, 9h30), en faisant le moins de bruit possible tout du long bien sûr... 
@@ -232,14 +232,14 @@ const posts_hard = [
         <!-- removed broken Google Photos URL: https://lh3.googleusercontent.com/SJxDoj33cJGwO2OrMIYFnWBdYTGCNnnX66z4XOqqXcF0Yv5Gwd48LuHaHq7WqWmbFwdCNfXFA9oGAPtaqY7jn44VHtZyPrvET-A8BIS1T_0QhcW5h6HIx9VCK9MufPT8oYo1BX6gTz4 -->
         <p>Alors qu'on progresse au Nebraska, on perd quasiment 20 degrés en à peine quelques heures de route, un petit choc au système ! On passe notre première nuit dans des températures négatives (ressenti -16 à cause des vents froids) à quelques mètres du plus grand rassemblement de grues des Etats-Unis. En soirée, on a pu observer près de 100 000 grues en vol et posées, rejoignant leur site de repos, plutôt exceptionnel ! Le matin, on se réveille au son particulier des grues, qu'on peut observer alors que le soleil se lève, posées dans le lit de la rivière, une belle vue pour le réveil ! Difficile d'estimer de telles quantités, mais au total, on aura vu près de 200 000 grues sur les dernières 24h. </p>
         <div class="iframe-wrapper">
-        <iframe src="https://macaulaylibrary.org/asset/553779281/embed" frameborder="0"></iframe>
+        <iframe loading="lazy" src="https://macaulaylibrary.org/asset/553779281/embed" frameborder="0"></iframe>
         </div>
         <h4>Regroupement migratoire</h4>
         <p>Plus de 80% de la population mondiale des grues du Canada se rassemble dans ce tronçon de la Platte River entre février et avril avant de continuer leur migration qui les amènent jusqu'en Sibérie orientale. Après avoir parcouru environ 1 000 km depuis le sud-ouest américain, elles se gavent des restes dans les champs de maïs, prenant 20 % de leur poids en prévision des milliers de kilomètres qu'il leur reste à parcourir.</p>
         <h4>Encore une espèce européenne</h4>
         <p>Parmi cette masse de grues, on a pu en trouver une que vous connaissez sans doute, la grue cendrée, signalée dans un champ de maïs pas loin de la rivière. Elle nous a même fait sa petite danse typique des grues, sympa non ?</p>
         <div class="iframe-wrapper">
-        <iframe src="https://macaulaylibrary.org/asset/553561091/embed" frameborder="0"></iframe>
+        <iframe loading="lazy" src="https://macaulaylibrary.org/asset/553561091/embed" frameborder="0"></iframe>
         </div>
         `,
     newsView: false,
@@ -272,9 +272,9 @@ const posts_hard = [
     content: `
         <h4>Des parents indécis</h4>
         <p>Après beaucoup de temps dans la voiture, on sort enfin et je commence à étudier les cailloux, quand, à peine commencé, on doit déjà retourner dans la voiture. J’étais pas trop contente, je pensais qu’on était arrivé ! Je leur ai répété “dehors dehors dehors” en boucle, et, finalement, ils se sont arrêtés rapidement après. Ouf, ils ont compris ! </p>
-        <img fluid class="mb-3 card-img" src="photos/dedans1.jpg"/>
+        <img loading="lazy" fluid class="mb-3 card-img" src="photos/dedans1.jpg"/>
         <p>Je reprends mon étude des cailloux, et quelques minutes plus tard, rebelote, on doit rentrer dans la voiture ! Je ne comprends plus rien. On ne fait que rentrer et sortir ! Je ne savais pas que les champs les intéressaient tellement. Je fais de mon mieux pour constituer ma collection de cailloux au fil de tous ces arrêts. Finalement, une pause était un peu plus longue et les parents avaient l’air contents, sans doute parce que j’ai rempli la voiture de mes jolis petits cailloux. Papa s’est précipité à la voiture pour chercher l’appareil photo et m’est presque rentré dedans (j’ai l’habitude).</p>
-        <img fluid class="mb-3 card-img" src="photos/dedans2.jpg"/>
+        <img loading="lazy" fluid class="mb-3 card-img" src="photos/dedans2.jpg"/>
         <p>Dans la voiture, papa m’a appris à utiliser son compteur d’oiseaux : il faut trouver un oiseau dehors, et après on a le droit de cliquer dessus, j’étais plutôt contente de pouvoir l’aider !</p>
         `,
     lon: -103.318121,
@@ -300,7 +300,7 @@ const posts_hard = [
         <!-- removed broken Google Photos URL: https://lh3.googleusercontent.com/pw/AMWts8B4pgUG52kn7gwkxVKKBth95XzI1WiWGUMxX4-Q5Mi9YEeWizHE5ac8fWMwlmwFbMqEhLQQA_p1nzKaALueG5Ip_PkAOjo3uT2w-IEc2fFX3UdSBA5C -->
         <p>On profite de rester sous la couette un peu plus longtemps, admirer les montagnes à l'aube, et observer ces oiseaux faire leur parade tellement unique. Ces tétras sont parmi les plus bizarres que j'ai observés (Dieu a vraiment un sens de l'humour) - la vidéo ci-dessous vous donne un petit aperçu… </p>       
         <div class="iframe-wrapper">
-        <iframe src="https://macaulaylibrary.org/asset/555610451/embed" frameborder="0"></iframe>
+        <iframe loading="lazy" src="https://macaulaylibrary.org/asset/555610451/embed" frameborder="0"></iframe>
         </div>       
         <p>On réarrange aussi les meubles à plusieurs reprises pour l'expert photographe - voici la disposition la plus concluante ! <a href="https://media.ebird.org/catalog?userId=USER497615&taxonCode=saggro&sort=rating_rank_desc" target="_blank">Vous pouvez regarder les résultats en photos et vidéos ici</a>. </p>
         <!-- removed broken Google Photos URL: https://lh3.googleusercontent.com/pw/AMWts8AnCxSkHlZN6ZihWaYeCaj-SC1Xzq42xOsJeYxEvKl6X8-WC5sN5dBBHzkqDw_Hic6yvfdm1pzaJbJfOFx4KK6sgguzbaMQLn7UQQ0kBN3DAck9SC7V=w1920-h1080 -->
@@ -336,11 +336,11 @@ const posts_hard = [
     content: `
         <h4>... et des nouvelles sensations</h4>
         <p>Un conseil d'ami : c'est pas une bonne idée d'enlever ses gants à 3 100m d'altitude quand le vent souffle, même si vous trouvez le plus beau caillou… J'en ai fait l'expérience et je recommande pas ces sensations, d'un coup mes mains piquaient très fort. Finalement j'ai développé une technique pour porter des cailloux avec les moufles et on s'est entraînées à les lancer loin avec maman. Leçon apprise, je le saurais pour la prochaine fois (ou du moins c'est ce que mes parents espèrent).        </p>
-        <img fluid class="mb-3 card-img" src="photos/copains1.jpg"/>
+        <img loading="lazy" fluid class="mb-3 card-img" src="photos/copains1.jpg"/>
         <p>Après cet épisode froid, c'était chouette d'avoir un peu de chaleur à Denver, plus besoin de gants ou vestes ! On s'est promenés dans un parc avec des cailloux GEANTS. Par contre, il y avait d'un coup beaucoup de monde autour de moi qui marchait dans tous les sens, j'ai plus trop l'habitude. Après on a fait de la balançoire, c'est encore plus rigolo quand papa et maman en font avec moi ! Le soir, j'avais les joues toutes chaudes, drôle de sensation.</p>
-        <img fluid class="mb-3 card-img" src="photos/copains2.jpeg"/>
+        <img loading="lazy" fluid class="mb-3 card-img" src="photos/copains2.jpeg"/>
         <p>Hier soir on a mangé avec les amis de papa et maman, ils sont sympas, Jono a même fait du foot avec moi ! D'habitude les adultes ont pas beaucoup de temps pour jouer avec moi… Après j'ai eu le droit de m'asseoir à côté de lui pour manger, j'imitais tous ses gestes pour faire comme lui.\n\nMon moment préféré aujourd'hui c'est quand on est allés manger une glace (l'excitation était déjà à son comble) et, en plus, le monsieur a côté de nous à gonflé des longs ballons et les a plié pour faire des lapins et des fleurs! J'ai même pu les amener dans la voiture avec moi. Il s'appelle Ed, et sait faire plein de formes, si jamais vous voulez votre ballon !</p>
-        <img fluid class="mb-3 card-img" src="photos/copains3.jpg"/>
+        <img loading="lazy" fluid class="mb-3 card-img" src="photos/copains3.jpg"/>
         `,
     date: new Date(2023, 3, 11),
     lon: -105.992778,
@@ -363,18 +363,18 @@ const posts_hard = [
         <p>On espère que vous avez eu votre dose de photos de tétras, car c'est la fin, on a coché les deux dernières de notre liste ! On a eu une belle rencontre avec le <a href="https://ebird.org/species/dusgro" target="_blank">Tétras obscur</a>, tétras plus montagnard, qui nous attendait juste sur le bord du chemin (trop proche pour l'appareil de Raph!) lors d'une belle rando en montagne hier matin. 
         </p>       
         <div class="iframe-wrapper">
-        <iframe src="https://macaulaylibrary.org/asset/557084951/embed" frameborder="0"></iframe>
+        <iframe loading="lazy" src="https://macaulaylibrary.org/asset/557084951/embed" frameborder="0"></iframe>
     </div>       
         <p>Puis ce matin, on a pu observer, de très loin cette fois, le <a href="https://ebird.org/species/gusgro" target="_blank">Tétras du Gunnison</a>, une espèce menacée que l'on trouve uniquement dans cette région précise du Colorado. On a joué les rebelles, car en arrivant sur place tard hier soir, on réalise que le site est officiellement fermé une semaine pour ne pas déranger les oiseaux… mais c'est le seul endroit et moment pour les voir donc on tente le coup, nous disant qu'on ne sortira pas de la voiture pour éviter tout dérangement. Vers 5h30, l'employée de l'agence de conservation locale nous réveille mais nous autorise à rester. On fait un max d'efforts pour être super discrets pendant 2h (à peine on ose ouvrir la fenêtre au cas où Mady se manifeste), seulement pour réaliser ensuite que les tétras sont bien trop loin pour nous entendre, à plusieurs km de nous… 
         </p>
         <div class="iframe-wrapper">
-        <iframe src="https://macaulaylibrary.org/asset/556821511/embed" frameborder="0"></iframe>
+        <iframe loading="lazy" src="https://macaulaylibrary.org/asset/556821511/embed" frameborder="0"></iframe>
     </div>       
            
         <p>Ensuite nous attendaient nos dernières espèces de montagne, les roselins. Ceux-ci viennent se nourrir aux mangeoires en hiver et sont plus dures à observer plus tard dans la saison car elles montent haut en altitude. Après avoir essayé plusieurs mangeoires ces derniers jours, on commençait vaguement à perdre espoir (du moins moi), se disant qu'on était sans doute trop tard pour les deux espèces qui nous manquaient. C'est sans compter sur la persévérance de Raph, qui a trouvé une espèce dans la matinée, et la deuxième lors d'une dernière tentative après la pause déjeuner ! Un petit miracle pour moi, qui avait déjà abandonné l'affaire ;) 
         </p>
         <div class="iframe-wrapper">
-        <iframe src="https://macaulaylibrary.org/asset/557102541/embed" frameborder="0"></iframe>
+        <iframe loading="lazy" src="https://macaulaylibrary.org/asset/557102541/embed" frameborder="0"></iframe>
     </div>       
         <p>C'est la fin de la neige et des montagnes, et, à peine 2-3h de route plus tard, on se retrouve en t-shirt dans de magnifiques canyons rocheux, parsemés de cactus et petits buissons - quel contraste ! Qui dit nouvel habitat dit nouveaux lifers, et on en coche quelques uns facilement en se baladant dans ces canyons en soirée. Le Colorado continue de nous offrir des beaux paysages à découvrir !</p>
         <!-- removed broken Google Photos URL: https://lh3.googleusercontent.com/PpUTDPDujn2xlAcFJWXaMsSzGfAoQNM4NAyaQ2JPr1qN6L7hHS4XbMlN81KkiuMQA8E12AtPU5GTDKBPiA8UtbPYGaP_I0MgE6mYbqo3nWR0PIh1oplQl8s_bPUx7sd7ZW5Ffi-e6Lg -->
@@ -397,11 +397,11 @@ const posts_hard = [
         <p>Les Etats Unis (excluant Alaska et Hawaï) comptent <a href="https://ebird.org/region/lower48" target="_blank">987 oiseaux observés</a> dont 678 espèces ABA 1 ou 2. Au début du voyage j'en avais 419, l'objectif est d'en rajouter autour de 250 - ça fait beaucoup à voir en quelques mois ! Il faut donc réfléchir à un trajet qui prend en compte quand et où chaque espèce peut être vue le plus facilement. </p>
         <h3>Vue d'ensemble</h3>
         <p>On a choisi de partir fin mars pour être au Colorado début avril, pour cibler à la fois la saison de parade des tétras qui ne dure que quelques semaines en avril, et les espèces montagnardes qui sont encore en basse altitude avec la neige. Après cela, il faut rapidement filer vers le Sud (Texas et Arizona) pour y trouver les nombreuses espèces qui nichent tôt dans l'année. Une fois qu'un oiseau a pondu, il est généralement silencieux et donc plus dur à trouver. On suit ensuite les migrateurs en remontant vers le Nord en même temps qu'eux. Ce trajet optimise le nombre d'espèces à ajouter à notre liste US, mais nous fait rater les quelques hivernants de la côte Nord-Ouest ainsi que les espèces océaniques.</p>
-        <img fluid class="mb-3 card-img" src="photos/bigdata1.png"/>       
+        <img loading="lazy" fluid class="mb-3 card-img" src="photos/bigdata1.jpg"/>       
         <h3>Plus en détail </h3>
         <p>Pour identifier où et quand voir chaque espèce, j'utilise les données de <a href="https://ebird.org/home" target="_blank">eBird</a>. J'ai passé plusieurs jours à naviguer les cartes de distribution des 265 espèces cibles pour déterminer le meilleur endroit pour les trouver sur notre parcours. </p>       
-        <img fluid class="mb-3 card-img" src="photos/bigdata2.png"/>
-        <img fluid class="mb-3 card-img" src="photos/bigdata3.png"/>
+        <img loading="lazy" fluid class="mb-3 card-img" src="photos/bigdata2.jpg"/>
+        <img loading="lazy" fluid class="mb-3 card-img" src="photos/bigdata3.jpg"/>
         <p>J'utilise aussi des vues satellites pour visualiser les habitats et l'accès, pour au final produire une carte détaillée de l'endroit précis à viser pour chaque espèce cible. Je me focalise sur les espèces plus difficiles à voir (les espèces cibles listées dans la description de chaque région), les espèces faciles à trouver ne nécéssitent pas de recherches particulières : à force d'être dehors, on est sûr des les trouver à un moment ! Ce processus peut paraître fastidieux mais ça me plaît d'utiliser toutes les informations disponibles pour préparer le voyage de cette façon :)</p>
         <h3>Nouvelle fonctionnalité</h3>
         <p> Maintenant que vous savez tout sur la méthodologie des espèces cibles, vous pouvez voir la liste complète de ces espèces dans le nouvel onglet en haut à droite et suivre lesquelles on a coché. </p>
@@ -444,7 +444,7 @@ const posts_hard = [
         <p>Ce nouvel habitat regorge évidemment d'oiseaux à découvrir - et donc aussi de chants d'oiseaux avec lesquels se familiariser. Merci à <a href="https://merlin.allaboutbirds.org/" target="_blank">Merlin</a>, une application qui détecte les sons et identifie les oiseaux avec une précision remarquable ! On trouve plein de <a href="https://ebird.org/species/gchwar" target="_blank">Parulines à dos noir</a>, l'oiseau cible de cette réserve, dont on vous partageait la carte de distribution hier. En plus, on a droit à quelques bonnes surprises, donc la <a href="https://ebird.org/species/tropar" target="_blank">Paruline à joues noires</a>, une espèce rare mais qui avait déjà été vue dans la région. Une bonne surprise car cela nous évite plusieurs autres arrêts sur la route pour la chercher, nous offrant un rythme un peu plus relax pour l'après midi (juste 4h de route…).
         </p>       
         <div class="iframe-wrapper">
-        <iframe src="https://macaulaylibrary.org/asset/559157941/embed" frameborder="0"></iframe>
+        <iframe loading="lazy" src="https://macaulaylibrary.org/asset/559157941/embed" frameborder="0"></iframe>
     </div>
     <h3>Hallelujah !</h3>
         <p>Mady exprime régulièrement des "Hallelujah" (approximatifs) en levant les bras au ciel - c'est un bon rappel pour nous, qui me semble pertinent pour ce début de voyage a pas mal de niveaux. Récemment, les trois journées avec pas mal de route se sont très bien passées, Mady était coopérative, les oiseaux au rdv, le sommeil va mieux, et le voyant moteur ne s'est plus manifesté depuis notre arrivée au Texas ! Hallelujah ! Que cette nouvelle saison chaude soit vécue avec tout autant de Hallelujah :) 
@@ -457,11 +457,11 @@ const posts_hard = [
     title: "Rendez-vous directement à la case… garage",
     content: `
         <p>Après plusieurs journées de grosse route sans problèmes, on commençait tout juste à être optimistes concernant la voiture. C'est là que notre petit voyant préféré nous prend au dépourvu en de manifestant alors qu'on est en route vers la mer. On sent rapidement que les vitesses ne passent plus bien, et on s'arrête à un magasin de pièces de voiture, où on remarque qu'il y a une grosse fuite du liquide de transmission. On achète du liquide, en espérant encore arriver à faire les 30 minutes de route dans l'autre sens vers la ville avec des garages spécialisés pour les transmissions (oui, ça existe aux US, fait croire qu'on est pas les seuls a qui ça arrive !). La voiture roule de moins en moins bien, et à chaque feu rouge on se demande si elle va arriver à embrayer… mais on y arrive ! </p>
-        <img fluid class="mb-3 card-img" src="photos/garage1.jpg"/>
+        <img loading="lazy" fluid class="mb-3 card-img" src="photos/garage1.jpg"/>
         <p>Sur place, les employés du garage sont très sympas (faut dire qu'un bébé et notre situation particulière voiture-maison, ça interpelle…). Ils confirment rapidement que la transmission est cassée (à ce stade, pas besoin d'être Sherlock, c'est plutôt clair !) et qu'il faut la remplacer. Ça y est, le moment tant redouté du voyage est là ! Finalement, même dans ces circonstances, on est pas trop mal tombés : on est dans une ville (avec même pas mal d'oiseaux à voir!), on a rencontré des personnes qui essayent de nous aider, et le remplacement pourra se faire plutôt rapidement normalement (même si l'affaire encore en cours). </p>
-        <img fluid class="mb-3 card-img" src="photos/garage2.jpg"/>
+        <img loading="lazy" fluid class="mb-3 card-img" src="photos/garage2.jpg"/>
         <p>En attendant, on en profite pour découvrir le campus universitaire à côté du garage et on tente le birding urbain à pied - avec un total de 7 lifers sans voiture ! On attend actuellement de voir si la pièce pourra être livrée et remplacée aujourd'hui, ou si cela débordera sur demain, avec une deuxième nuit au garage...</p>
-        <img fluid class="mb-3 card-img" src="photos/garage3.jpg"/>
+        <img loading="lazy" fluid class="mb-3 card-img" src="photos/garage3.jpg"/>
         `,
     date: new Date(2023, 3, 19),
     lon: -97.490895,
@@ -488,7 +488,7 @@ const posts_hard = [
         <h4>Haut lieu de migration</h4>
         <p>Le sud du Texas est connu pour être un couloir de migration important pour les oiseaux. Bien que ce ne soit pas directement notre objectif de chercher les espèces de passage, on a pu voir quelques espèces rares, observer les limicoles et fauvettes (warblers) en migration sur la côte, et des centaines de rapaces en migration plus à l'intérieur des terres.</p>
         <p>Ce mouvement synchrone de plusieurs milliards d'oiseaux à travers tous les continents est un des aspects des oiseaux qui me passionne le plus, et j'ai la chance de pouvoir travailler dessus ! Pour visualiser la migration avec nous, vous pouvez cliquer sur "Prévisions de migration" en haut à droite, pour suivre les conditions de migration prédites par Birdcast (mon groupe de recherche à Ithaca).
-        <img fluid class="mb-3 card-img" src="photos/migration1.png"/>
+        <img loading="lazy" fluid class="mb-3 card-img" src="photos/migration1.jpg"/>
         <h4>Quel lien avec mon travail ?</h4>
         <p>J'en profite pour vous partager un peu l'objet de ma recherche sur la migration. Jusqu'à présent, Birdcast utilise des radars météo pour étudier des oiseaux migratoires en vol. Cela permet, entre autres, d'identifier les lieux de forte migration à l'avance et de mettre en place des mesures de conservation (éteindre les lumières des bâtiments pour ne pas désorienter les oiseaux, arrêter les éoliennes, etc.).</p> 
         <p>Ma recherche vise à étendre l'utilisation de données radar pour comprendre les mouvements des oiseaux vers et depuis le sol pendant leur migration. La plupart des oiseaux migrent de nuit et se posent au sol en journée pour se reposer et reprendre des forces. Protéger les oiseaux migratoires nécessite donc aussi de comprendre où ils se posent. Mon projet ces deux dernières années a été de montrer que notre approche est cohérente avec les informations sur les oiseaux au sol (données eBird). Similaire aux cartes déjà disponibles sur la migration en l'air, j'espère pouvoir créer des cartes live montrant où les oiseaux se sont posés au sol chaque jour. </p>
@@ -558,7 +558,7 @@ const posts_hard = [
         <p>Ce qui devait être un rapide détour le temps d'une soirée s'est transformé en aventure un peu plus longue...
         </p>
         <div class="iframe-wrapper">
-        <iframe src="https://macaulaylibrary.org/asset/563197781/embed" frameborder="0"></iframe>
+        <iframe loading="lazy" src="https://macaulaylibrary.org/asset/563197781/embed" frameborder="0"></iframe>
     </div>
         <p>L'idée était de passer à Christmas Mountain Oasis, un hotspot connu pour voir les <a href="https://ebird.org/species/luchum" target="_blank">Colibri Lucifer</a>. Par contre notre planning n'avait pas pris en compte que la route pour y arriver était de plus en plus accidentée, plutôt conçue pour des pick up/4x4 que pour notre minivan ! Mais une fois engagés, difficile de faire demi tour… à quelques km de l'arrivée, après déjà 15-20 min de route non-goudronnée, on se retrouve face à un panneau "Private property, No trespassing", à côté d'un panneau indiquant une réserve d'oiseaux… que faire ? On est au Texas après tout, on ne rigole pas avec les propriétés privées. Et en même temps, c'est la seule route d'accès, comment les gens y arriveraient autrement ? Vu qu'on est déjà si proches du but, on décide de s'aventurer plus loin… c'est assez anxieux que l'on gravit les pentes rocailleuses pour arriver à cet oasis perdue au milieu de la montagne : la voiture va-t-elle tenir ? Y'aura-t-il une barrière nous forçant à faire marche arrière ? Le propriétaire nous attend-t-il au prochain virage avec un fusil ? (scénario à peine exagéré au Texas)</p>
         <!-- removed broken Google Photos URL: https://lh3.googleusercontent.com/URVP-Ahg9AhY67vgszh3ColNzcyAfEbKxfKn9Mz-8Q38RpFw7Hhu566LJGL4KNwTX_uOaike-WpKggXwrkrxgYxpMjWnY0WLweQwyMdGekX9DSEWtKK9Q5Ww9mzeWbNwh3ENhFQq-oQ -->
@@ -627,7 +627,7 @@ const posts_hard = [
         <!-- removed broken Google Photos URL: https://lh3.googleusercontent.com/pw/AJFCJaXjAFidt22RcZyyCaxKtrrfZFk0Ci7clN0_PpU2z2wlkPN7oYHi12kcvx5vEFT7svVpYWYArmE7pqH6xhx4UCubL2CwVMB7cuj4rcJk_3_13M8ggaiE -->
         <p>Vivre dans une voiture offre beaucoup de flexibilité sur la route empruntée et l'endroit où dormir, mais a quelques lacunes en services électroniques. Nous devons donc nous arrêter tous les jours (ou presque) dans un lieu pour recharger les batteries, planifier la suite du trip, écrire les blogs, etc. Souvent, ça se finit au McDo (1$ le café avec wifi et prises à disposition - c'est dur à battre !). Mady s'occupe en jouant dans leurs aires de jeux avec d'autres d'enfants ou à faire du coloriage.</p>
         <p>De notre côté, on fait aussi une forme de coloriage. Au-delà de l'objectif principal du trip de voir un max d'espèces aux US, on a quelques objectifs secondaires : voir un max d'espèces dans chaque état et essayer de voir au moins une espèce dans chaque "county" (=comté) que l'on traverse. Pourquoi ? Ne pas m'ennuyer en roulant, travailler mon identification par jizz et, comme Mady, colorier la carte ! En effet, eBird offre un <a href="https://ebird.org/profile/NDk3NjE1/US" target="_blank">visuel sympa pour voir le nombre d'espèces vues par région à différentes échelles</a>.</p>
-        <a href="https://ebird.org/profile/NDk3NjE1/US-TX" target="_blank"><img fluid class="mb-3 card-img" src="photos/coloriage1.png"/></a>
+        <a href="https://ebird.org/profile/NDk3NjE1/US-TX" target="_blank"><img loading="lazy" fluid class="mb-3 card-img" src="photos/coloriage1.png"/></a>
     
         <h4>Le Texas en quelques chiffres</h4>
         <p>Le Texas a été très prolifique pour tous nos objectifs : en deux semaines, on a eu 105 US lifers (95 lifers monde) ! Avec un total de 308 espèces, le Texas est passé devant l'état de New York où on à passé plus d'un an et demi (286 espèces), avec presque autant d'espèces que la Suisse où j'ai habité 8 ans (311 espèces). On a aussi pris <a href="https://media.ebird.org/catalog?searchField=user&userId=USER497615&sort=rating_rank_desc&unconfirmed=incl&regionCode=US-TX&beginMonth=4&endMonth=12&beginYear=2023&endYear=2023" target="_blank">500 photos et presque 100 audios</a> ! </p>
@@ -718,7 +718,7 @@ const posts_hard = [
         <p>Arrivés à Phoenix, la capitale de l'Arizona, on sent qu'on est à un tournant dans le voyage. Avec le Colorado, Texas, et Arizona, on clôture le premier chapitre du voyage, intense et riche en nombre d'espèces à chercher. Pour donner une idée, on aura vu 200 nouvelles espèces en un mois, et il en reste environ 30 à chercher dans les deux prochains mois ! Un autre rythme donc ;) On est reconnaissant d'avoir pu voir quasiment tout ce qu'on avait espéré, à quelques exceptions près en Arizona (espèces pas encore arrivées ou inaccessibles avec notre voiture) - jusqu'ici l'objectif est en bonne voie d'être atteint ! 
         </p>
         <div class="iframe-wrapper">
-        <iframe src="https://macaulaylibrary.org/asset/567022721/embed" frameborder="0"></iframe>
+        <iframe loading="lazy" src="https://macaulaylibrary.org/asset/567022721/embed" frameborder="0"></iframe>
     </div>
         <p>Les oiseaux du sud nous en ont mis plein les yeux avec leurs couleurs vives et chants en tous genres. C'était une chouette expérience de les chercher chacun dans leurs habitats respectifs - faut dire qu'ils nous ont amené à découvrir des beaux coins de nature ! Tous ces oiseaux qui n'étaient avant qu'une image théorique dans un guide sont maintenant associés à des expériences personnelles et lieux précis. 
         </p>
@@ -727,14 +727,14 @@ const posts_hard = [
         <h4>Arizona du sud</h4>
         <p>On a beaucoup aimé le sud de l'Arizona, en particulier explorer les petits canyons arborés lors des matinées encore fraîches et y découvrir les parulines qui s'y cachent, se familiariser avec les colibris qui virevoltent autour des plantes en fleurs ou mangeoires, et se balader parmi les cactus géants bien connus dans la région.</p>
         <div class="iframe-wrapper">
-        <iframe src="https://macaulaylibrary.org/asset/567019731/embed" frameborder="0"></iframe>
+        <iframe loading="lazy" src="https://macaulaylibrary.org/asset/567019731/embed" frameborder="0"></iframe>
     </div>
     <h4>Les chouettes au RDV</h4>
         <p>On y trouve aussi les trois espèces de chouette qui nous manquaient, et qu'on pensait plutôt difficiles : la Chevêchette naine, qu'on pensait (à tort) avoir entendu au Colorado, que j'ai vue perchée en plein jour lors d'une marche seule - elle est connue pour être active de jour mais c'était quand même une belle surprise !</p>
         <!-- removed broken Google Photos URL: https://lh3.googleusercontent.com/pw/AJFCJaW11ofQRma4-jEqfl6sJeM0ND-cNMGDCXlbl_1t8quM9nOlHpCYEUOLLqPJ5l6i-Lt8G45cv3tjYwydaE543zYVlxDJh6k4OXMQLx06qKipvwjT4-CZ -->
         <p>On est ensuite allé chercher sa cousine, la Chevêchette brune, dans une plaine désertique avec des cactus. Alors qu'elle nous avait échappé au Texas, là elle nous a donné la totale : chant et pleine vue au lever du soleil. Et enfin, dans la même journée, on entend le Petit-duc nain peu après le coucher du soleil plus haut en montagne - un soulagement de ne pas avoir à se lever pour le chercher au milieu de la nuit !</p>
         <div class="iframe-wrapper">
-        <iframe src="https://macaulaylibrary.org/asset/567943731/embed" frameborder="0"></iframe>
+        <iframe loading="lazy" src="https://macaulaylibrary.org/asset/567943731/embed" frameborder="0"></iframe>
 
     </div>
     <h4>La suite</h4>
@@ -794,14 +794,14 @@ const posts_hard = [
     region: "california", //
     content: `       
         <p>Le samedi 13 mai marque la journée de birding organisée par eBird, le <a href="https://ebird.org/globalbigday" target="_blank">Big Day</a>, où tout le monde est invité à observer un maximum d'oiseaux sur une journée. Se joignant à cet effort, il y a trois ans, A Rocha a lancé le <a href="https://johnstottbirdingday.com/en/" target="_blank">John Stott Birding Day</a>, pour mettre à l'honneur le théologien passionné d'oiseaux, John Stott, et mobiliser le réseau A Rocha à travers le monde.</p>       
-        <img fluid class="mb-3 card-img" src="photos/stott1.png"/>
+        <img loading="lazy" fluid class="mb-3 card-img" src="photos/stott1.jpg"/>
         <p>C'est toujours chouette de voir plein de groupes A Rocha participer à cet évènement à travers les frontières ! Raph a contribué au projet en créant le site web - avec une <a href="https://bird-race.johnstottbirdingday.com/" target="_blank">carte interactive</a> qui permet de visualiser toutes les équipes et espèces vues.
         </p>
         <!-- removed broken Google Photos URL: https://lh3.googleusercontent.com/ge_Nnp1nrAWwyR1u5yD20VEN-HHYYR6sz34jVoKG_SPG8tNmVzKzy7HKHYoaqXq2gaGn35zUban_T4cTtSK0Pgus9AwGHE2MDN87ZBVxmr5jyZ-mNTi6JkzdqfPZ0cX-FAaqF-p--s8 -->
         <p>De notre côté, ça n'a pas changé grand-chose à notre quotidien depuis 1 mois et demi : chercher des oiseaux ! A San Diego pour la journée, on a pu observer des <a href="https://ebird.org/checklist/S137472123" target="_blank">oiseaux marins</a> le long de la côte (ainsi que beaucoup d'otaries très vocales !), des espèces exotiques du Sud, et <a href="https://ebird.org/checklist/S137512548" target="_blank">un perroquet</a> vu uniquement à San Diego aux US. 
         </p>       
         <div class="iframe-wrapper">
-        <iframe src="https://macaulaylibrary.org/asset/573050311/embed" frameborder="0"></iframe>
+        <iframe loading="lazy" src="https://macaulaylibrary.org/asset/573050311/embed" frameborder="0"></iframe>
     </div>
         <p>Ces premiers jours en Californie sont en effet marqués par la chasse aux perroquets, qui nous amènent dans des endroits inattendus (le jardin d'une dame fort sympathique, des petits parcs de ville, des canyons…). C'est une famille d'espèces qu'on trouve plutôt difficile à chercher, on est jamais sûr de ce qu'on trouve ! Il font beaucoup de mouvements en journée et sont plus durs à localiser, le plus simple est de trouver leur site de repos en soirée et matinée. 
         </p>
@@ -836,7 +836,7 @@ const posts_hard = [
         <p>On y rencontre plusieurs autres personnes sur place, et Raph se fait remarquer en repérant un rapace rare (mais habituellement sur la côte Est) - <a href="https://ebird.org/species/brwhaw" target="_blank">la Petite buse </a>.
         </p>
         <div class="iframe-wrapper">
-        <iframe src="https://macaulaylibrary.org/asset/573051771/embed" frameborder="0"></iframe>
+        <iframe loading="lazy" src="https://macaulaylibrary.org/asset/573051771/embed" frameborder="0"></iframe>
     </div>
     
         `,
@@ -900,7 +900,7 @@ const posts_hard = [
         <p>C'est à cette occasion qu'on a pu voir le <a href="https://ebird.org/species/whhwoo" target="_blank">pic à tête blanche</a> et le <a href="https://ebird.org/species/rebsap" target="_blank">pic à poitrine rouge</a>, deux lifers qui nous amènent à 650 espèces pour les US ! C'était un cap qu'on n'était pas sûr d'atteindre à la fin du trip, donc c'est une belle étape à passer déjà en Californie :) Bien sûr la barre est maintenant décalée a 670, Raph ne s'arrête jamais !
         </p>
         <div class="iframe-wrapper">
-        <iframe src="https://macaulaylibrary.org/asset/574116391/embed" frameborder="0"></iframe>
+        <iframe loading="lazy" src="https://macaulaylibrary.org/asset/574116391/embed" frameborder="0"></iframe>
     </div>
           
         <p>Dans l'après midi, on a exploré les cascades du parc, particulièrement impressionantes en cette saison, à cause de toute la neige qui fond. Passer à côté, c'est la douche assurée ! Plutôt rafraichissant - ça dérange moins Mady que son papa !
@@ -931,12 +931,12 @@ const posts_hard = [
         <p>Les sorties pélagiques sont toujours sources d'émotions mixtes. D'un coté le plaisir de pouvoir observer autant d'oiseaux marins proches et souvent rares. Mais de l'autre coté, l'incomfort d'être une journée entière à la mercie des vagues (ainsi que le coût élevé de ces sorties).        
         </p>
         <div class="iframe-wrapper">
-        <iframe src="https://macaulaylibrary.org/asset/576017871/embed" frameborder="0"></iframe>
+        <iframe loading="lazy" src="https://macaulaylibrary.org/asset/576017871/embed" frameborder="0"></iframe>
     </div>
         <p>Ce n'était pas la saison idéale pour observer les oiseaux de mer, mais la sortie a quand même permis d'observer plusieurs espèces dont <a href="https://media.ebird.org/catalog?mediaType=photo&userId=USER497615&sort=rating_rank_desc&regionCode=US-CA-053" target="_blank">quatre lifers US</a>.
         </p>
         <div class="iframe-wrapper">
-        <iframe src="https://macaulaylibrary.org/asset/576058921/embed" frameborder="0"></iframe>
+        <iframe loading="lazy" src="https://macaulaylibrary.org/asset/576058921/embed" frameborder="0"></iframe>
     </div>
        
     <p>L'objectif officiel de cette sortie était d'observer les baleines et orques. Accompagnés de biologistes spécialisés dans l'étude des cétacés, on a suivi un groupe d'orques dans l'espoir de les voir attaquer un phoque ou une otarie (en vain...). Clairement le plus gros lifer du voyage !
@@ -991,7 +991,7 @@ const posts_hard = [
         <p>Il se trouve que l'état du Nevada, fort de 96 000 km<sup>2</sup> de terres à haute altitude mais pauvre en gibier à plumes, est connu pour l'introduction d'espèces exotiques à chasser - c'est les US, la chasse est une institution ! N'étant probablement plus satisfaits avec le faisan (introduit partout aux US pour la chasse), ils ont introduit la <a href="https://ebird.org/species/chukar" target="_blank">Perdrix choukar</a>, originalement du Moyen Orient, désormais l'espèce la plus populaire à chasser dans la région.</p>
         <p>Cherchant ensuite une espèce qui pourrait s'intégrer dans la niche écologique des hautes montagnes (à environ 3 000m d'altitude), ils ont introduit la Tétraogalle de l'Himalaya. Suite à l'introduction graduelle d'un total de 2 000 individus de 1970-1980, il existe actuellement une petite population de 200-500 individus. Cachée dans les hauteurs des falaises dans un canyon, cette espèce difficile d'accès est devenue le graal des chasseurs.</p>       
         <div class="iframe-wrapper">
-        <iframe src="https://macaulaylibrary.org/asset/576747861/embed" frameborder="0"></iframe>
+        <iframe loading="lazy" src="https://macaulaylibrary.org/asset/576747861/embed" frameborder="0"></iframe>
     </div>
           
         <p>Depuis, cette espèce attire aussi les birders, qui veulent l'ajouter à leur liste US, comme nous ! Il existe même des tours en hélicoptère pour éviter une longue randonnée ardue et les voir plus confortablement.</p>       
@@ -1021,7 +1021,7 @@ const posts_hard = [
 </p>
 
 <div class="iframe-wrapper">
-        <iframe src="https://macaulaylibrary.org/asset/555595781/embed" frameborder="0"></iframe>
+        <iframe loading="lazy" src="https://macaulaylibrary.org/asset/555595781/embed" frameborder="0"></iframe>
     </div>
         
        
@@ -1060,31 +1060,31 @@ const posts_hard = [
         </p>
 
        <h4>1. L'élan</h4>
-       <img fluid class="mb-3 card-img" src="https://static.inaturalist.org/photos/283852103/medium.jpg" >
+       <img loading="lazy" fluid class="mb-3 card-img" src="https://static.inaturalist.org/photos/283852103/medium.jpg" >
         <p>Caché derrière un arbre, notre premier élan nous a surpris en Idaho, à l'ouest de la région de Yellowstone. On en a ensuite revu deux - une mère et un jeune mâle - le lendemain, au bord du chemin lors d'une rando dans le parc national de Grand Téton.</p>
        <p> L'élan est le plus grand dans la famille des cervidés, mais n'est pas évident à voir car il se trouve principalement dans la forêt et se déplace seul ou en petits groupes familiaux. Il y aurait moins de 200 élans dans le parc et leur population diminue, principalement à cause de la perte d'habitat liée aux feux de forêts.</p>
         
        <h4>2. Le wapiti</h4>
         
-       <img fluid class="mb-3 card-img" src="https://static.inaturalist.org/photos/283852979/medium.jpg">
+       <img loading="lazy" fluid class="mb-3 card-img" src="https://static.inaturalist.org/photos/283852979/medium.jpg">
         <p>Ce même matin en Idaho, derrière l'élan nous attendaient deux wapitis - le safari avait commencé avant l'heure ! Cela a donné lieu à un petit débat sur la terminologie autour de ces espèces - en Angleterre le mot "elk" fait référence à l'élan ("moose" aux US) alors qu'aux US "elk" signifie wapiti… de quoi créer la confusion!</p>
        <p> Les wapitis sont les grands mammifères les plus répandus dans le parc (10 000 - 20 000). On aura l'occasion de revoir des wapitis à plusieurs reprises, à Grand Teton et Yellowstone. Les mâles sont particulièrement beaux avec leurs bois couverts de velours ! </p>
 
     
         <h4>3. Les ours</h4>       
-        <img fluid class="mb-3 card-img" src="https://static.inaturalist.org/photos/283855895/medium.jpg">
+        <img loading="lazy" fluid class="mb-3 card-img" src="https://static.inaturalist.org/photos/283855895/medium.jpg">
         <p>La région de Yellowstone est connue pour les ours - et la crainte des grizzlis est bien présente (plusieurs accidents fataux), incitant tout le monde à se promener avec du spray et des clochettes pour les chasser. 
         </p>
         <p>On a eu la chance de pouvoir observer les deux espèces d'ours plusieurs fois dans le parc. L'ours brun (grizzly), le plus gros et le plus dangereux, n'est trouvé que dans la région de Yellowstone et le nord ouest du Montana aux US, tandis que l'ours noir, plus petit, est plus répandu. 
         </p>
         <p>Les meilleures vues d'ours étaient à Yellowstone, où on a pu les observer manger une carcasse de bison, se promener en bord de rivière ou dans une petite clairière, mais notre première rencontre avec un ours restera la plus mémorable. </p><p>Alors qu'on emprunte le sentier équestre pour éviter le monde, Raph voit du mouvement derrière les arbres à quelques centaines de mètres. A son mouvement, on réalise vite que c'est un ours brun, que l'on aperçoit clairement dans une petite ouverture. Petite frayeur et quelques pas en arrière quand l'ours tourne la tête vers nous et nous fixe quelques secondes, avant de poursuivre son chemin suivi de trois petits qui trottinent derrière ! Pas de "canin" (câlin) de Mady pour cette espèce ! 
         </p>
-        <iframe class="mb-3 card-img" height="260px;" width="100%" src="https://www.youtube-nocookie.com/embed/EPkTkeUqCzc?modestbranding&loop=1" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>       
+        <iframe loading="lazy" class="mb-3 card-img" height="260px;" width="100%" src="https://www.youtube-nocookie.com/embed/EPkTkeUqCzc?modestbranding&loop=1" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>       
         <h4>4. Les bisons</h4>
-        <img fluid class="mb-3 card-img" src="https://static.inaturalist.org/photos/283853580/medium.jpg" style="width:66%;margin-left: 16%;">
+        <img loading="lazy" fluid class="mb-3 card-img" src="https://static.inaturalist.org/photos/283853580/medium.jpg" style="width:66%;margin-left: 16%;">
         <p>Les bisons se sont fait attendre mais ensuite ont été bien présents ! Raph en a compté 1 823 en une matinée (quand le comptage devient une petite obsession…). Un gros mâle seul sur la route, en grand troupeaux avec des petits, on a de multiples occasions d'observer ces bêtes imposantes. Alors qu'il en restait moins de 100 au début du 20<sup>è</sup> siècle, il y en a aujourd'hui plus de 4 000 dans le parc ! Les bisons ont peu de prédateurs naturels, c'est pourquoi les services du parc autorisent la chasse (sous certaines conditions) pour éviter la surpopulation. </p>
         <h4>5. Les loups</h4>
-        <img fluid class="mb-3 card-img" src="https://static.inaturalist.org/photos/283802510/medium.jpeg">
+        <img loading="lazy" fluid class="mb-3 card-img" src="https://static.inaturalist.org/photos/283802510/medium.jpeg">
         <p>Pensant les avoir entendus lors de notre première nuit dans la région, il nous restait à les voir. Cela a été rendu possible grâce aux indications d'autres observateurs, qui nous ont pointé vers une petite meute de loups au loin avec des petits. </p><p>L'éradication des loups dans les années 1920 (et la diminution d'autres carnivores tels que les ours) a eu des ramifications sur toute la chaîne alimentaire et perturbé l'écosystème du parc. Dans les années 1990, <a href="https://www.youtube.com/watch?v=ysa5OBhXz-Q" target="_blank">41 loups ont été réintroduits dans le parc</a>, et leur population est aujourd'hui estimée à un peu plus d'une centaine, divisée en dix meutes. 
         </p>
         `,
@@ -1107,20 +1107,20 @@ const posts_hard = [
 
        <p>Avant même notre arrivée aux US, on avait pour projet de voyager en van pour découvrir le pays. C'est la raison pour laquelle on a acheté le modèle <i>Dodge Grand Caravan</i>, plutôt grand pour seulement trois personnes, mais où les sièges peuvent être pliés au niveau du sol, permettant de voyager avec Mady (c'aurait été dommage de la laisser à la maison), et, le soir, de replier son siège pour créer de l'espace pour un lit. 
         </p>       
-        <img fluid class="mb-3 card-img" src="photos/kit0.jpg"/>       
+        <img loading="lazy" fluid class="mb-3 card-img" src="photos/kit0.jpg"/>       
     
        <p>Le projet était de construire un kit amovible, permettant de camper dans la voiture quand on part en voyage, et d'utiliser la voiture sans le kit le reste du temps. On souhaitait créer un kit en bois, léger mais solide - l'occasion d'apprendre un peu le travail du bois. Basé sur notre expérience de camping en Europe, on a voulu continuer dans la voie de la simplicité, sans électricité ou robinet. On s'est inspiré de modèles en ligne pour concevoir un <a href="https://cad.onshape.com/documents/5a34a297c3c7e13d7e052a8c/w/4326efacb375e4cad01fc4b6/e/f2bafdf64819e7d19595b435?renderMode=0&uiState=63cdea9d0cbe834b358bb57c" target="_blank">modèle 3D</a> sur mesure pour notre voiture. 
-       <img fluid class="mb-3 card-img" src="photos/kit1.png"/>
+       <img loading="lazy" fluid class="mb-3 card-img" src="photos/kit1.png"/>
        
        On a ensuite envoyé ces plans à une entreprise qui a découpé toutes les pièces avec un Router CNC, que l'on a ensuite assemblées avec l'aide de Joël et Denise en visite à ce moment-là.    
        </p>
-       <img fluid class="mb-3 card-img" src="photos/kit3.jpg"/>
+       <img loading="lazy" fluid class="mb-3 card-img" src="photos/kit3.jpg"/>
 
        Voici un petit tour de la maison !
        
 
        <h4>La salle de vie</h4>
-       <img fluid class="mb-3 card-img" src="photos/kit4.jpeg"/>
+       <img loading="lazy" fluid class="mb-3 card-img" src="photos/kit4.jpeg"/>
 
       <p>Le kit est composé de plusieurs caisses de bois (offrant de l'espace de stockage) que l'on empile en journée pour pouvoir rouler avec les sièges arrière ouverts. Cela demande un peu d'installation et de rangement chaque matin et soir, mais, avec l'expérience, on y arrive en quelques minutes ! Avec le froid ou les moustiques, on apprend vite à accélérer les choses… 
       </p>
@@ -1129,19 +1129,19 @@ const posts_hard = [
 
     
         <h4>La chambre à coucher</h4>       
-        <img fluid class="mb-3 card-img" src="photos/kit6.jpeg"/>
+        <img loading="lazy" fluid class="mb-3 card-img" src="photos/kit6.jpeg"/>
         <p>Le soir, on replie le siège de Mady et on aligne toutes nos caisses de rangement pour créer une grande surface plane, sur laquelle on aligne nos coussins pour créer un matelas. La voiture étant de taille américaine, le lit est plutôt grand ! Cela nous donne la place de dormir confortablement, avec Mady à nos pieds ;) (en théorie… en pratique on observe beaucoup de dispositions différentes au fil de la nuit - c'est une gigoteuse !) 
         </p>       
-        <img fluid class="mb-3 card-img" src="photos/kit5.jpg"/>
+        <img loading="lazy" fluid class="mb-3 card-img" src="photos/kit5.jpg"/>
           
         <h4>La cuisine</h4>
-        <img fluid class="mb-3 card-img" src="photos/kit7.jpeg"/>
+        <img loading="lazy" fluid class="mb-3 card-img" src="photos/kit7.jpeg"/>
     
         <p>La cuisine se trouve à l'arrière de la voiture, ou on a installé des tiroirs qui s'ouvrent sur l'extérieur - toujours à l'abri du toit ! Ayant enlevé la rangée de sièges à l'arrière, on peut utiliser cet espace pour stocker nourriture et bidons d'eau. 
         </p>
-        <img fluid class="mb-3 card-img" src="photos/kit8.jpg"/>
+        <img loading="lazy" fluid class="mb-3 card-img" src="photos/kit8.jpg"/>
         <h4>Le salon</h4>
-        <img fluid class="mb-3 card-img" src="photos/kit9.jpeg"/>
+        <img loading="lazy" fluid class="mb-3 card-img" src="photos/kit9.jpeg"/>
         <p>Notre humble demeure comprend même une table et des bancs pour s'asseoir à l'intérieur... mais finalement on préfère souvent profiter de l'espace et des vues et manger dehors. La base de la table a d'ailleurs cassé lors de notre voyage et cela n'a pas changé grand-chose à notre quotidien ! 
         </p>
         <h4>Suite et fin</h4>
@@ -1223,7 +1223,7 @@ const posts_hard = [
     content: `       
         <p>Je vous parlais il y a quelques jours des sorties en bateau qui permettent d'observer les oiseaux de mer de proche. Ces sorties doivent être réservées à l'avance et sont assez chères, donc restent plutôt exceptionnelles.</p>
         <div class="iframe-wrapper">
-        <iframe src="https://macaulaylibrary.org/asset/573084881/embed" frameborder="0"></iframe>
+        <iframe loading="lazy" src="https://macaulaylibrary.org/asset/573084881/embed" frameborder="0"></iframe>
     </div>
 
        <p>L'alternative pour observer ces oiseaux est le seawatch. Cet exercice implique de se poster à un bon point de vue sur la côte (idéalement une extrémité qui avance dans la mer) et de rester stationnaire pour y observer les oiseaux qui passent. L'outil indispensable du seawatcher : la longue vue ! Elle permet de transformer ce qui à première vue ressemble à une vaste étendue bleue et vide en une véritable autoroute d'oiseaux de mer. </p>
@@ -1234,7 +1234,7 @@ const posts_hard = [
        </p>
        
        <div class="iframe-wrapper">
-       <iframe src="https://macaulaylibrary.org/asset/581218041/embed" frameborder="0"></iframe>
+       <iframe loading="lazy" src="https://macaulaylibrary.org/asset/581218041/embed" frameborder="0"></iframe>
    </div>       
         <h4>Un défi à relever</h4>
         <p>Le seawatch est un exercice plutôt difficile qui demande pas mal de pratique pour s'améliorer. En effet, alors que sur la terre, on identifie principalement les oiseaux à leur son (surtout au printemps), le seawatch demande de bien connaître les tailles, formes, et façons de voler de chaque espèce pour pouvoir s'y retrouver. La plupart des oiseaux sont vus au loin et disparaissent fréquemment derrière les vagues, mais au fur et à mesure des heures (ou journées) passées, on commence à connaître chaque espèce et on augmente la distance à laquelle on peut les identifier !</p>
@@ -1242,7 +1242,7 @@ const posts_hard = [
         <p>L'autre défi, tenir des comptes corrects, surtout quand les oiseaux volent dans plusieurs directions. Lorsqu'il y a beaucoup de passage, ça aide d'avoir un scribe qui note pendant que l'un garde les yeux dans la longue vue. </p>       
            
         <p>Comme tout exercice difficile, il y a une appréciation particulière quand on commence a y arriver, c'est pourquoi j'aime relever ce défi ! Cela offre aussi de bonnes surprises telles que dauphins, loutres ou baleines :) </p>
-        <img fluid class="mb-3 card-img" src="https://static.inaturalist.org/photos/282274635/medium.jpg">
+        <img loading="lazy" fluid class="mb-3 card-img" src="https://static.inaturalist.org/photos/282274635/medium.jpg">
     
 
        <p> Si je vous ai convaincu de relever ce défi, voici quelques-uns de mes coins préférés : <a href="https://goo.gl/maps/irLgz8UwybiK1L1EA" target="_blank">Cap Gris-Nez</a> (France), <a href="https://goo.gl/maps/WrYtAWjJ9VYQAmKn9" target="_blank">Estaca de Bares</a> (Espagne), <a href="https://goo.gl/maps/EL6zgvEYTvUN6K5N8" target="_blank">Cap Cod</a> (US), <a href="https://goo.gl/maps/NpMhSTQBkcjbq6yw9" target="_blank">Ras Ngomeni</a> (Kenya), et <a href="https://goo.gl/maps/sKSx7M7oSyuQJMcr9" target="_blank">Cape Sable Island</a> (Canada). </p>
@@ -1313,21 +1313,21 @@ const posts_hard = [
         <p>Vous vous souvenez peut-être de ce lagopède qu'on avait cherché au Colorado dans un col enneigé, qui s'est fait attendre mais où on avait été récompensés avec un joli mâle chanteur. </p>
         <p>On se préparait donc à une espèce assez compliquée à trouver, moins vocale à cette période de l'année mais plus commune dans les Rocheuses canadiennes. Alors que la plupart des observations se font au sommet d'une télécabine, on a visé l'expérience plus authentique avec une rando plus ardue. Effectivement, c'est seulement au bout de 6km de montée, au sommet de la marche, que je l'ai trouvé sagement posé au bord du chemin, m'attendant pour une petite séance photo...</p>
         <div class="iframe-wrapper">
-        <iframe src="https://macaulaylibrary.org/asset/582988251/embed" frameborder="0"></iframe>
+        <iframe loading="lazy" src="https://macaulaylibrary.org/asset/582988251/embed" frameborder="0"></iframe>
         </div>       
         <h4>Bruant à couronne dorée</h4>
         <p>On avait déjà “twitché” (= voir une espèce rare déjà trouvée par d'autres) le bruant à couronne dorée en Ontario, mais je souhaitais voir un male chanteur dans son habitat de nidification. Son aire de nidifcation se trouve principalement en Alaska, mais on peut trouver quelques couples nicheurs dans les Rocheuses canadiennes. Avec seulement quelques observations par année, on savait que ce n'était pas gagné, et probablement dans un habitat difficile d'accès. L'ayant loupé la veille dans le meilleur endroit, on s'est lancé sur cette deuxième rando en sachant qu'il faudrait redoubler nos efforts pour le trouver. </p>       
         <p>Il se trouve dans un habitat alpin au dessus de la limite des forêts, dans quelques petits sapins isolés et paysages plus rocheux. Une fois arrivés dans l'habitat en question, pendant que Mady et Améline expérimentent les lois de la gravité au bord du lac (ndlr: jeter des cailloux), j'arpente les pentes plus raides des alentours. Un grand soulagement quand j'entends enfin les longues notes de sifflement pur de son chant ! </p>
         <div class="iframe-wrapper">
-        <iframe src="https://macaulaylibrary.org/asset/583593781/embed" frameborder="0"></iframe>
+        <iframe loading="lazy" src="https://macaulaylibrary.org/asset/583593781/embed" frameborder="0"></iframe>
         </div>       
         <p>On continue ensuite ensemble vers les tas de neige qui restent de l'hiver, où les roselins à tête grise se nourrissent en été. Alors que je m'apprêtais à redescendre, je les entends crier au loin - à nouveau une jolie récompense après tout l'effort !</p>
         <div class="iframe-wrapper">
-        <iframe src="https://macaulaylibrary.org/asset/583587841/embed" frameborder="0"></iframe>
+        <iframe loading="lazy" src="https://macaulaylibrary.org/asset/583587841/embed" frameborder="0"></iframe>
     </div>       
         <h4>Lynx canadien</h4>
         <p>Lors de nos nombreuses balades dans les Vosges et Alpes, j'ai souvent rêvé de voir un lynx. C'était donc une belle surprise de le voir aussi proche du chemin - il s'est figé pour me regarder, et je ne pouvais que faire de même pour l'admirer. La rencontre a été brêve mais mémorable ! Ce n'était pas un lynx roux (plus commun), mais le lynx canadien, plus alpin. Après le lynx de Mady, les lynx continuent de nous accompagner sur notre route !</p>       
-        <a href="https://www.inaturalist.org/observations/166516305"><img fluid class="mb-3 card-img" src="https://static.inaturalist.org/photos/288364673/medium.jpg"></a>
+        <a href="https://www.inaturalist.org/observations/166516305"><img loading="lazy" fluid class="mb-3 card-img" src="https://static.inaturalist.org/photos/288364673/medium.jpg"></a>
   
         `,
     newsView: false,
@@ -1346,12 +1346,12 @@ const posts_hard = [
         <p>On a déjà évoqué les joies et défis de nos recherches de chouettes pendant ce voyage. Entre celles qui ne chantent que la nuit, nous forçant à rester réveillés quand on veut dormir, et celles qui sont souvent silencieuses, elles ont chacune leur histoire et spécificité. </p>       
         <p>La dernière chouette du voyage est la <a href="https://ebird.org/species/grgowl#" target="_blank">chouette laponne</a>, une espèce mythique des forêts boréales trouvée à travers tout l'hémisphère nord.  Ces chouettes sont principalement recherchées en hiver, lorsque le froid les pousse plus au sud et les arbres dénudés les rendent plus facile à trouver. Connue pour sa tête disproportionnellement large par rapport à son corps, ses grands disques faciaux lui permettent de détecter les rongeurs sous la couche de neige.</p>
         <div class="iframe-wrapper">
-        <iframe src="https://macaulaylibrary.org/asset/585094391/embed" frameborder="0"></iframe>
+        <iframe loading="lazy" src="https://macaulaylibrary.org/asset/585094391/embed" frameborder="0"></iframe>
     </div>       
         <p>Contrairement à la plupart des chouettes, elle est largement silencieuse et peut être observée au crépuscule. Nous l'avons déjà cherché à plusieurs reprises à la tombée de la nuit et au lever du jour, espérant la voir perchée en bordure de forêt. Vous connaissez peut-être ce sentiment quand vous cherchez un objet perdu depuis longtemps sans plus trop y croire, et vous êtes surpris de le retrouver. C'est ce sentiment qui nous a habité lorsque, alors qu'on s'apprêtait à arrêter les recherches pour aller dormir, Améline voit du coin de l'œil un gros oiseau s'envoler et se percher dans un arbre à quelques mètres du chemin. 
         </p>       
         <div class="iframe-wrapper">
-        <iframe src="https://macaulaylibrary.org/asset/585094491/embed" frameborder="0"></iframe>
+        <iframe loading="lazy" src="https://macaulaylibrary.org/asset/585094491/embed" frameborder="0"></iframe>
     </div>       
         <p>Cette chouette ayant une ouïe particulièrement fine, elle se tournait vers nous et nous fixait de son visage imposant au moindre son - une expérience remplie d'effroi ! Elle a posé pour nous quelques minutes avant d'être dérangée par un merle. Quelques instants plus tard, elle est réapparue de la forêt et s'est perchée à quelques mètres de la voiture. Même Mady a pu observer son 'owl' qu'elle avait tellement regardé dans le guide !
         </p>       
@@ -1381,27 +1381,27 @@ const posts_hard = [
         <p>Cet habitat est un lieu critique de nidification pour un grand nombre d'oiseaux. On avait cherché certaines de ces espèces en hiver au début de notre voyage, mais les observer sur leur lieu de nidification, chanteurs, et dans leur plumage nuptial (le plus beau) est bien plus agréable ! </p>
         <p>Voici ci-dessous quelques espèces caractéristiques des prairies :</p>
         <div class="iframe-wrapper">
-        <iframe src="https://macaulaylibrary.org/asset/585098941/embed" frameborder="0"></iframe>
+        <iframe loading="lazy" src="https://macaulaylibrary.org/asset/585098941/embed" frameborder="0"></iframe>
     </div>
 
     <div class="iframe-wrapper">
-        <iframe src="https://macaulaylibrary.org/asset/585099071/embed" frameborder="0"></iframe>
+        <iframe loading="lazy" src="https://macaulaylibrary.org/asset/585099071/embed" frameborder="0"></iframe>
     </div>
 
     <div class="iframe-wrapper">
-        <iframe src="https://macaulaylibrary.org/asset/585096831/embed" frameborder="0"></iframe>
+        <iframe loading="lazy" src="https://macaulaylibrary.org/asset/585096831/embed" frameborder="0"></iframe>
     </div>
 
     <div class="iframe-wrapper">
-        <iframe src="https://macaulaylibrary.org/asset/585097701/embed" frameborder="0"></iframe>
+        <iframe loading="lazy" src="https://macaulaylibrary.org/asset/585097701/embed" frameborder="0"></iframe>
     </div>
 
     <div class="iframe-wrapper">
-        <iframe src="https://macaulaylibrary.org/asset/585097511/embed" frameborder="0"></iframe>
+        <iframe loading="lazy" src="https://macaulaylibrary.org/asset/585097511/embed" frameborder="0"></iframe>
     </div>
 
     <div class="iframe-wrapper">
-        <iframe src="https://macaulaylibrary.org/asset/585096021/embed" frameborder="0"></iframe>
+        <iframe loading="lazy" src="https://macaulaylibrary.org/asset/585096021/embed" frameborder="0"></iframe>
     </div>
   
         `,
@@ -1470,7 +1470,7 @@ const posts_hard = [
         <p>Découverte en 1851 sur sa route de migration, le premier nid de cette espèce à seulement été trouvé 50 ans plus tard, en 1903. Cette paruline est alors étudiée par plusieurs ornithologues, qui anticipent son déclin, lié à la spécificité de son habitat. Effectivement, dans les années 1970, seulement 400 individus sont recensés. Ce déclin est attribué à deux raisons principales : la diminution et fragmentation de son habitat, et le parasitage de leurs nids par les Vachers à tête brune. Il est alors inscrit sur la liste des espèces menacées, et un plan de conservation est mis en place, avec comme objectif d'atteindre 1000 couples nicheurs. En 2012, plus de 2000 paires sont recensées - un bel exemple de succès en conservation ! C'est encourageant d'entendre des histoires positives dans ce domaine, mais ce n'est pas toujours aussi simple : les espèces ont souvent des aires de distribution plus grandes, les causes du déclin sont moins clairement identifiés, et il n'y a pas toujours autant de moyens disponibles. 
         </p>
         <div class="iframe-wrapper">
-        <iframe src="https://macaulaylibrary.org/asset/585874311/embed" frameborder="0"></iframe>
+        <iframe loading="lazy" src="https://macaulaylibrary.org/asset/585874311/embed" frameborder="0"></iframe>
         </div>
         <p>Sam participe au suivi de la population de ces Parulines et fait régulièrement des relevés sur le terrain pour chercher leurs nids. Il connaît très bien la biologie de cette espèce et nous a facilement guidé vers l'habitat idéal, où on a pu entendre plusieurs mâles chanter à tue-tête, levant la tête vers le ciel pour déclamer leur chant. </p>
         <!-- removed broken Google Photos URL: https://lh3.googleusercontent.com/pw/AJFCJaW7tQJyyJvK7Ti_aRrTk9dDii0lx_ZU2VJhXtc3YgjxfH_SRcGLL354NPn644IBN8uoITEDOkpnqSNaPZACg4AtOzRpgQ0Zj7Z5btVDrRkp2PLLMXic -->

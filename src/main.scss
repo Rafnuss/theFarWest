@@ -9,21 +9,14 @@ $theme-colors: (
 
 //"orange": #fbbd58
 
-@import "node_modules/bootstrap/scss/bootstrap.scss";
-@import "node_modules/bootstrap-vue/src/index.scss";
+@import "bootstrap/scss/bootstrap";
+@import "bootstrap-vue/src/index";
 
-@import url("https://fonts.googleapis.com/css2?family=Jost:wght@200;400&display=swap");
+// The "Jost" web font is loaded from Google Fonts via <link> in index.html (non-blocking, with preconnect).
 
 @font-face {
   font-family: pokemon;
   src: url(./assets/pokemon_monk.ttf);
-  font-weight: 400;
-  font-style: normal;
-  font-display: block;
-}
-@font-face {
-  font-family: andy;
-  src: url(./assets/andy.ttf);
   font-weight: 400;
   font-style: normal;
   font-display: block;
@@ -72,10 +65,6 @@ h2 {
 }
 .pokemon {
   font-family: pokemon;
-  line-height: 1em;
-}
-.andy {
-  font-family: andy;
   line-height: 1em;
 }
 .h-16 {

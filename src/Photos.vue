@@ -1,7 +1,6 @@
 <template>
   <b-col class="pt-2" style="height: 200px">
     <b-card no-body class="bg-photo h-100 p-1" ref="resizeContainer">
-      <!--slides-per-view="4"-->
       <swiper-container
         :slides-per-view="slidesPerView"
         grab-cursor="true"
@@ -15,14 +14,9 @@
             <b-img class="h-100 cursor-pointer" :src="p.url" @click="openModal(i)" />
           </template>
           <template v-else>
-            <b-img-lazy class="h-100 cursor-pointer" :src="p.url" @click="openModal(i)" />
+            <b-img class="h-100 cursor-pointer" loading="lazy" :src="p.url" @click="openModal(i)" />
           </template>
         </swiper-slide>
-        <!-- <swiper-slide>
-          <div class="h-100 d-flex justify-content-center align-items-center bg-light">
-            <a href="https://photos.app.goo.gl/VPdgZR1rM6jrhfr57" target="_blank">See more photos... </a>
-          </div>
-        </swiper-slide>-->
       </swiper-container>
       <div id="see-all-photos" class="bg-photo px-2" v-if="!newsView">
         <a href="https://photos.app.goo.gl/VPdgZR1rM6jrhfr57" target="_blank">See all photos </a>
@@ -54,16 +48,13 @@
 import { register } from "swiper/element/bundle";
 register();
 
-import "swiper/css";
-
-import "swiper/css/free-mode";
-import "swiper/css/pagination";
+const PHOTOS_URL = "https://farwest-photos.raphaelnussbaumer.com/";
+const MAX_TRIES = 3;
 
 export default {
   props: ["newsView"],
   data() {
     return {
-      modal_link: "",
       photos_google: [],
       photos_news: [
         { url: "photos/annonce1.jpg" },
@@ -82,30 +73,16 @@ export default {
       this.$refs["modal"].show();
     },
     async loadPhotos() {
-      const response = await fetch("https://farwest-photos.raphaelnussbaumer.com/");
-      if (!response.ok) {
-        throw new Error("Network response was not OK");
-      }
-      const json = await response.json();
-      if (json != null) {
-        this.photos_google = json;
-        /*this.photos = [
-          "PXL_20230123_003245995.PORTRAIT.jpg",
-          "PXL_20230212_174355161.jpg",
-          "PXL_20230301_134654730.PORTRAIT.jpg",
-          "PXL_20230122_161840068.jpg",
-          "PXL_20230123_004238371.PORTRAIT.jpg",
-          "PXL_20230218_135634997.PORTRAIT.jpg",
-          "PXL_20230301_134658774.PORTRAIT.jpg",
-          "PXL_20230123_003224393.jpg",
-          "PXL_20230211_000205467.PORTRAIT.jpg",
-          "PXL_20230218_142137347.jpg",
-        ].map((e) => {
-          return { url: "photos/" + e };
-        });*/
-        return true;
-      } else {
-        return false;
+      for (let tries = 1; tries <= MAX_TRIES; tries++) {
+        try {
+          const response = await fetch(PHOTOS_URL);
+          if (!response.ok) throw new Error(`HTTP ${response.status}`);
+          const json = await response.json();
+          if (Array.isArray(json)) this.photos_google = json;
+          return;
+        } catch (error) {
+          console.warn(`Loading photos failed (try ${tries}/${MAX_TRIES}):`, error);
+        }
       }
     },
     handleResize(entries) {
@@ -124,23 +101,11 @@ export default {
     },
   },
   created() {
-    const maxTries = 3;
-    let tries = 0;
-    while (tries < maxTries) {
-      let res = this.loadPhotos();
-      //console.log(JSON.stringify(re, null, 2))
-      if (res) {
-        console.log(`Success after: ${tries}.`);
-        tries = maxTries;
-      } else {
-        tries++;
-        console.log(`Error: ${tries}. Retrying...`);
-      }
-    }
+    this.loadPhotos();
   },
   mounted() {
     this.observer = new ResizeObserver(this.handleResize);
-    this.observer.observe(this.$refs.resizeContainer);
+    this.observer.observe(this.$refs.resizeContainer.$el || this.$refs.resizeContainer);
   },
   beforeDestroy() {
     this.observer.disconnect();
