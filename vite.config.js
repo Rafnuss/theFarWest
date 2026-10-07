@@ -8,7 +8,7 @@ const CSP = [
   "script-src 'self'",
   "style-src 'self' 'unsafe-inline' https://fonts.googleapis.com",
   "font-src 'self' https://fonts.gstatic.com",
-  "img-src 'self' data: blob: https://api.mapbox.com https://static.inaturalist.org https://*.googleusercontent.com",
+  "img-src 'self' data: blob: https://api.mapbox.com https://tile.openstreetmap.org https://static.inaturalist.org https://*.googleusercontent.com",
   "media-src 'self'",
   "connect-src 'self' https://farwest-photos.raphaelnussbaumer.com",
   "frame-src https://macaulaylibrary.org https://www.youtube-nocookie.com",

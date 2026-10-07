@@ -393,10 +393,10 @@
                   </b-container>
                 </l-control>
                 <l-tile-layer
-                  :url="
-                    'https://api.mapbox.com/styles/v1/mapbox/streets-v9/tiles/{z}/{x}/{y}?access_token=' + mapboxToken
-                  "
-                  attribution='© <a href="https://www.mapbox.com/about/maps/" target="_blank" rel="noopener">Mapbox</a> © <a href="https://www.openstreetmap.org/copyright" target="_blank" rel="noopener">OpenStreetMap</a>'
+                  :key="tileLayer.url"
+                  :url="tileLayer.url"
+                  :attribution="tileLayer.attribution"
+                  @tileerror="onTileError"
                 />
                 <template v-if="!newsView">
                   <template v-if="modeSelected == 'route' && route.length > 0">
@@ -478,6 +478,24 @@ import regions from "./assets/regions.json";
 
 // GPS track of the trip, stored as an encoded polyline (precision 1e-5°).
 const locations = polyUtil.decode(locations_json.polyline);
+// Mapbox is the preferred basemap; if its tiles keep failing (token revoked, style retired...),
+// fall back to OpenStreetMap so the map never stays blank.
+const MAPBOX_TOKEN = "pk.eyJ1IjoicmFmbnVzcyIsImEiOiIzMVE1dnc0In0.3FNMKIlQ_afYktqki-6m0g";
+const OSM_ATTRIBUTION =
+  '© <a href="https://www.openstreetmap.org/copyright" target="_blank" rel="noopener">OpenStreetMap</a>';
+const TILE_LAYERS = {
+  mapbox: {
+    url: "https://api.mapbox.com/styles/v1/mapbox/streets-v9/tiles/{z}/{x}/{y}?access_token=" + MAPBOX_TOKEN,
+    attribution:
+      '© <a href="https://www.mapbox.com/about/maps/" target="_blank" rel="noopener">Mapbox</a> ' + OSM_ATTRIBUTION,
+  },
+  osm: {
+    url: "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+    attribution: OSM_ATTRIBUTION,
+  },
+};
+const MAX_TILE_ERRORS = 3;
+
 const NEWS_BOUNDS = [
   [32, -100],
   [60, 7],
@@ -505,9 +523,9 @@ export default {
   },
   data() {
     return {
-      // Public Mapbox token (pk.*): restrict it to the site URL in the Mapbox account settings.
-      mapboxToken: "pk.eyJ1IjoicmFmbnVzcyIsImEiOiIzMVE1dnc0In0.3FNMKIlQ_afYktqki-6m0g",
       map: null,
+      tileLayer: TILE_LAYERS.mapbox,
+      tileErrors: 0,
       baseUrl: import.meta.env.BASE_URL,
       regions: regions,
       max_region: nbActiveRegions - 1,
@@ -565,6 +583,12 @@ export default {
         html: `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 25 33"><path fill="${color}" stroke="#ffffff" stroke-width="1px" d="m12.02,32.98c-.32,0-.81-.11-1.29-.67-3.01-3.51-5.41-6.84-7.31-10.17-1.45-2.54-2.39-4.71-2.95-6.8C-.5,11.74.04,8.37,2.05,5.34,3.77,2.76,6.19,1.06,9.23.33c.43-.1.87-.17,1.31-.23.19-.03.39-.06.58-.09h1.69c.27.03.47.06.66.09.44.06.88.13,1.31.23,3.4.85,6.01,2.85,7.75,5.95.85,1.53,1.35,3.25,1.45,5.12.15,2.62-.66,4.95-1.38,6.69-1.24,2.97-2.98,5.97-5.34,9.17-1.02,1.39-2.12,2.75-3.19,4.06l-.79.99c-.46.57-.94.69-1.27.69v-.02Z"/>
         <text x="50%" y="43%" fill="#ffff" dominant-baseline="middle" text-anchor="middle">${i}</text></svg>`,
       });
+    },
+    onTileError() {
+      this.tileErrors += 1;
+      if (this.tileErrors >= MAX_TILE_ERRORS && this.tileLayer !== TILE_LAYERS.osm) {
+        this.tileLayer = TILE_LAYERS.osm;
+      }
     },
     numberWithSpaces(x) {
       return x.toString().replace(/\B(?=(\d{3})+(?!\d))/g, " ");
